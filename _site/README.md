@@ -1,1 +1,1 @@
-# jekyll-template
+# brightcove docs-support-home
