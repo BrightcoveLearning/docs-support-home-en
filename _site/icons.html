@@ -1,0 +1,953 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  
+  <title>Brightcove Icons</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/prism.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/styles.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/tabs.css">
+  <link rel="stylesheet" href="/assets/css/local.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/381443caa8.js" crossorigin="anonymous"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/google-analytics.js"></script>
+  <script src="/assets/js/sajari-head.js"></script>
+</head>
+
+<body class="body">
+
+<header>
+  <div class="div-header">
+    <a href="/"><img class="product-logo" src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/product-logos/logo-bc-social.svg" alt="product logo" style="max-height: 100px;max-width: 232px;"></a>
+<!-- GTranslate: https://gtranslate.io/ -->
+<select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en">English</option><option value="en|zh-TW">繁體中文</option><option value="en|fr">Français</option><option value="en|de">Deutsch</option><option value="en|ja">日本語</option><option value="en|ko">한국어</option><option value="en|es">Español</option></select>
+
+<script>
+/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
+/* ]]> */
+</script>
+
+    <select id="site_select" class="bcls-select" style="margin-right: 1rem;">
+      <option value="">Other Brightcove Docs</option>
+      
+        
+          <option value="https://support.brightcove.com">Documentation Home</option>
+        
+      
+        
+          <option value="https://audience.support.brightcove.com">Brightcove Audience</option>
+        
+      
+        
+          <option value="https://beacon.support.brightcove.com">Brightcove Beacon</option>
+        
+      
+        
+          <option value="https://campaign.support.brightcove.com">Brightcove Campaign</option>
+        
+      
+        
+          <option value="https://engage.support.brightcove.com">Brightcove Engage</option>
+        
+      
+        
+          <option value="https://live.support.brightcove.com">Brightcove Live</option>
+        
+      
+        
+          <option value="https://gallery.support.brightcove.com">Brightcove Gallery</option>
+        
+      
+        
+          <option value="https://ssai.support.brightcove.com">Brightcove SSAI</option>
+        
+      
+        
+          <option value="https://social.support.brightcove.com">Brightcove Social</option>
+        
+      
+        
+          <option value="https://studio.support.brightcove.com">Video Cloud Studio</option>
+        
+      
+        
+          <option value="https://player.support.brightcove.com">Brightcove Player Development</option>
+        
+      
+        
+          <option value="https://apis.support.brightcove.com">Video Cloud Platform APIs</option>
+        
+      
+        
+          <option value="https://sdks.support.brightcove.com">Video Cloud Device SDKs</option>
+        
+      
+        
+          <option value="https://integrations.support.brightcove.com">Integration / CMS Connectors</option>
+        
+      
+        
+          <option value="https://general.support.brightcove.com">Video Cloud General</option>
+        
+      
+        
+          <option value="https://zencoder.support.brightcove.com">Zencoder</option>
+        
+      
+    </select>
+
+
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?language=en_US"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/support.png" alt="support"> Contact Support</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/status.png" alt="system status"> System Status</a></span>
+    <br>
+    
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      
+      
+      
+      <li class="breadcrumb-item active" aria-current="page">Brightcove Icons</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-3 left-side-bar">
+        <nav class="sidenav">
+          
+            
+            <h5><a href="/">Home</a></h5>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/get-started/">Getting Started <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/get-started/getting-started-brightcove-social.html">Getting Started with Audience</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/social-training-videos.html">Social Training Videos</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/general/">General Information <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/general/creating-social-media-publishing-destinations.html">Creating Publishing Destinations</a></li>
+                  
+                
+                  
+                    <li><a href="/general/creating-video-clip-using-brightcove-social.html">Creating a Video Clip</a></li>
+                  
+                
+                  
+                    <li><a href="/general/publishing-videos-social-media-platforms.html">Publishing Videos to Social Media</a></li>
+                  
+                
+                  
+                    <li><a href="/general/setting-privacy-status-video.html">Setting the Privacy Status for a Video</a></li>
+                  
+                
+                  
+                    <li><a href="/general/using-auto-sync-synchronize-videos-social-media-accounts.html">Using Auto Sync</a></li>
+                  
+                
+                  
+                    <li><a href="/general/viewing-videos-published-social-media.html">Viewing Videos Published to Social Media</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/analytics/">Reviewing Analytics <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/analytics/reviewing-social-analytics.html">Reviewing Social Analytics</a></li>
+                  
+                
+                  
+                    <li><a href="/analytics/reviewing-social-engagement-analytics.html">Reviewing Social Engagement Analytics</a></li>
+                  
+                
+                  
+                    <li><a href="/analytics/reviewing-social-views-analytics.html">Reviewing Social Views Analytics</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/develop/">Developers <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/develop/overview-social-api.html">Overview: Social API</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/quick-start-social-api.html">Quick Start: Social API</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/reference.html">Social API Reference</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/social-api-error-reference.html">Social API: Error Reference</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/support/">Support <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/support/opening-case-with-brightcove-support.html">Opening a Support Case</a></li>
+                  
+                
+                  
+                    <li><a href="/support/viewing-brightcove-system-status-page.html">Viewing System Status</a></li>
+                  
+                
+              </ul>
+            
+          
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+  <!-- bootstrap layout -->
+
+<!-- search bar -->
+<div id="nav-search-box" style="margin-top: 1rem;"></div>
+  
+    
+
+
+<style>
+  td i.fas,
+  td i.fab,
+  td i.far,
+  td i.fal,
+  td img {
+    font-size: 2rem;
+
+    color: rgb(142, 33, 162);
+  }
+</style>
+<meta name="robots" content="noindex" />
+<article class="landing-page-wrapper">
+  <h1>Standard Icons</h1>
+  <p>You can set the color and size of the icon using the style attribute - for example:</p>
+  <pre class="line-numbers"><code class="language-html">&lt;i class=&quot;fal fa-tools&quot; style="font-size:2rem;color:#33333;"&gt;&lt;/i&gt;</code></pre>
+  <section class="bcls-section">
+    <h2 id="Fontawesome_icons">Fontawesome icons</h2>
+    <table class="bcls-table">
+      <caption class="bcls-caption--table">Fontawesome Icons</caption>
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Icon</th>
+          <th>Code</th>
+          <th>Standard Use</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><i class="fal fa-tools"></i></td>
+          <td><code>&lt;i class="&gt;fal fa-tools"&gt;&lt;/i&gt;</code></td>
+          <td>Administration</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-ad"></i></td>
+          <td><code>&lt;i class="&gt;far fa-ad"&gt;&lt;/i&gt;</code></td>
+          <td>Advertising</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-chart-bar"></i></td>
+          <td><code>&lt;i class="far fa-chart-bar"&gt;&lt;/i&gt;</code></td>
+          <td>Analytics</td>
+        </tr>
+        <tr>
+        <tr>
+          <td><i class="far fa-shapes"></i>/td>
+          <td><code>&lt;i class="far fa-shapes"&gt;&lt;/i&gt;</code></td>
+          <td>Basics</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-brackets-curly"></i></td>
+          <td><code>&lt;i class="far fa-brackets-curly"&gt;&lt;/i&gt;</code></td>
+          <td>Code</td>
+        </tr>
+        <tr>
+          <td><i class="fab fa-connectdevelop"></i></td>
+          <td><code>&lt;i class="fab fa-connectdevelop"&gt;&lt;/i&gt;</code></td>
+          <td>Code Solutions</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-mobile-android-alt"></i></td>
+          <td><code>&lt;i class="fas fa-mobile-android-alt"&gt;&lt;/i&gt;</code></td>
+          <td>Create Mobile App</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-browser"></i></td>
+          <td><code>&lt;i class="far fa-browser"&gt;&lt;/i&gt;</code></td>
+          <td>Create a Web App</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-edit"></i></td>
+          <td><code>&lt;i class="far fa-edit"&gt;&lt;/i&gt;</code></td>
+          <td>Create App Design</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-phone-laptop"></i></td>
+          <td><code>&lt;i class="far fa-phone-laptop"&gt;&lt;/i&gt;</code></td>
+          <td>Create Experience</td>
+        </tr>
+        <tr>
+          <td><i class="fal fa-users-medical"></i></td>
+          <td><code>&lt;i class="fal fa-users-medical"&gt;&lt;/i&gt;</code></td>
+          <td>Create Users</td>
+        </tr>
+        <tr>
+          <td><i class="fal fa-phone-laptop"></i></td>
+          <td><code>&lt;i class="fal fa-phone-laptop"&gt;&lt;/i&gt;</code></td>
+          <td>Creating Apps</td>
+        </tr>
+        <tr>
+          <td><i class="fal fa-rocket-launch"></i></td>
+          <td><code>&lt;i class="fal fa-rocket-launch"&gt;&lt;/i&gt;</code></td>
+          <td>Creating your Application</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-th-list"></i></td>
+          <td><code>&lt;i class="fas fa-th-list"&gt;&lt;/i&gt;</code></td>
+          <td>Create Playlist</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-tachometer-fast"></i></td>
+          <td><code>&lt;i class="far fa-tachometer-fast"&gt;&lt;/i&gt;</code></td>
+          <td>Dashboard</td>
+        </tr>
+        <tr>
+          <td><i class="fal fa-filter"></i></td>
+          <td><code>&lt;i class="fal fa-filter"&gt;&lt;/i&gt;</code></td>
+          <td>Data Collection</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-pencil-ruler"></i></td>
+          <td><code>&lt;i class="far fa-pencil-ruler"&gt;&lt;/i&gt;</code></td>
+          <td>Design Considerations</td>
+        </tr>
+        <tr>
+          <td><i class="fal fa-code-merge"></i></td>
+          <td><code>&lt;i class="fal fa-code-merge"&gt;&lt;/i&gt;</code></td>
+          <td>Delivery System</td>
+        </tr>
+        <tr>
+          <td><i class="fal fa-code"></i></td>
+          <td><code>&lt;i class="fal fa-code"&gt;&lt;/i&gt;</code></td>
+          <td>Developer</td>
+        </tr>
+        <tr>
+          <td><i class="fal fa-file-alt"></i></td>
+          <td><code>&lt;i class="fal fa-file-alt"&gt;&lt;/i&gt;</code></td>
+          <td>Documentation</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-fast-forward"></i></td>
+          <td><code>&lt;i class="fas fa-fast-forward"&gt;&lt;/i&gt;</code></td>
+          <td>Encoding Guides</td>
+        </tr>
+        <tr>
+          <td><i class="fal fa-cogs"></i></td>
+          <td><code>&lt;i class="fal fa-cogs"&gt;&lt;/i&gt;</code></td>
+          <td>Encoding Settings</td>
+        </tr>
+        <tr>
+          <td><i class="fal fa-exclamation-triangle"></i></td>
+          <td><code>&lt;i class="fal fa-exclamation-triangle"&gt;&lt;/i&gt;</code></td>
+          <td>Errors/Troubleshooting</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-external-link-square-alt"></i></td>
+          <td><code>&lt;i class="far fa-external-link-square-alt"&gt;&lt;/i&gt;</code></td>
+          <td>External Link</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-info-circle"></i></td>
+          <td><code>&lt;i class="far fa-info-circle"&gt;&lt;/i&gt;</code></td>
+          <td>General Information</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-location-arrow"></i></td>
+          <td><code>&lt;i class="far fa-location-arrow"&gt;&lt;/i&gt;</code></td>
+          <td>Getting Started</td>
+        </tr>
+        <tr>
+          <td><i class="fal fa-map-signs"></i></td>
+          <td><code>&lt;i class="fal fa-map-signs"&gt;&lt;/i&gt;</code></td>
+          <td>Guides</td>
+        </tr>
+        <tr>
+          <td><i class="fal fa-project-diagram"></i></td>
+          <td><code>&lt;i class="fal fa-project-diagram"&gt;&lt;/i&gt;</code></td>
+          <td>Implementation Phases</td>
+        </tr>
+        <tr>
+          <td><i class="fab fa-ioxhost"></i></td>
+          <td><code>&lt;i class="fab fa-ioxhost"&gt;&lt;/i&gt;</code></td>
+          <td>Ingest Profiles</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-plug"></i></td>
+          <td><code>&lt;i class="far fa-plug"&gt;&lt;/i&gt;</code></td>
+          <td>Install Chrome Plugin</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-mobile-alt"></i></td>
+          <td><code>&lt;i class="fas fa-mobile-alt"&gt;&lt;/i&gt;</code></td>
+          <td>Install on your device</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-handshake-alt"></i></td>
+          <td><code>&lt;i class="far fa-handshake-alt"&gt;&lt;/i&gt;</code></td>
+          <td>Integration</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-book-reader"></i></td>
+          <td><code>&lt;i class="far fa-book-reader"&gt;&lt;/i&gt;</code></td>
+          <td>Learning Guide</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-satellite-dish"></i></td>
+          <td><code>&lt;i class="fas fa-satellite-dish"&gt;&lt;/i&gt;</code></td>
+          <td>Live Video</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-film"></i></td>
+          <td><code>&lt;i class="fas fa-film"&gt;&lt;/i&gt;</code></td>
+          <td>Managing Videos</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-compass"></i></td>
+          <td><code>&lt;i class="far fa-compass"&gt;&lt;/i&gt;</code></td>
+          <td>Navigate the UI</td>
+        </tr>
+        <tr>
+          <td><i class="fal fa-play-circle"></i></td>
+          <td><code>&lt;i class="fal fa-play-circle"&gt;&lt;/i&gt;</code></td>
+          <td>Playback</td>
+        </tr>
+        <tr>
+          <td><i class="fal fa-bring-front"></i></td>
+          <td><code>&lt;i class="fal fa-bring-front"&gt;&lt;/i&gt;</code></td>
+          <td>Playback API</td>
+        </tr>
+        <tr>
+          <td><i class="fal fa-photo-video"></i></td>
+          <td><code>&lt;i class="fal fa-photo-video"&gt;&lt;/i&gt;</code></td>
+          <td>Player Management API</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-plug"></i></td>
+          <td><code>&lt;i class="far fa-plug"&gt;&lt;/i&gt;</code></td>
+          <td>Plugins</td>
+        </tr>
+        <tr>
+          <td><i class="fal fa-key"></i></td>
+          <td><code>&lt;i class="fal fa-key"&gt;&lt;/i&gt;</code></td>
+          <td>Policy API</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-browser"></i></td>
+          <td><code>&lt;i class="far fa-browser"&gt;&lt;/i&gt;</code></td>
+          <td>Publish</td>
+        </tr>
+        <tr>
+          <td><i class="fal fa-books"></i></td>
+          <td><code>&lt;i class="fal fa-books"&gt;&lt;/i&gt;</code></td>
+          <td>References</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-bell"></i></td>
+          <td><code>&lt;i class="far fa-bell"&gt;&lt;/i&gt;</code></td>
+          <td>Release Notes</td>
+        </tr>
+        <tr>
+          <td><i class="fal fa-search"></i></td>
+          <td><code>&lt;i class="fal fa-search"&gt;&lt;/i&gt;</code></td>
+          <td>Search</td>
+        </tr>
+        <tr>
+          <td><i class="fal fa-lock-alt"></i></td>
+          <td><code>&lt;i class="fal fa-lock-alt"&gt;&lt;/i&gt;</code></td>
+          <td>Security, OAuth, DRM</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-hat-wizard"></i></td>
+          <td><code>&lt;i class="far fa-hat-wizard"&gt;&lt;/i&gt;</code></td>
+          <td>Styling</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-question-circle"></i></td>
+          <td><code>&lt;i class="far fa-question-circle"&gt;&lt;/i&gt;</code></td>
+          <td>Support</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-sync"></i></td>
+          <td><code>&lt;i class="far fa-sync"&gt;&lt;/i&gt;</code></td>
+          <td>Syncing</td>
+        </tr>
+        <tr>
+          <td><i class="fal fa-rss"></i></td>
+          <td><code>&lt;i class="fal fa-rss"&gt;&lt;/i&gt;</code></td>
+          <td>Syndication</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-exclamation-triangle"></i></td>
+          <td><code>&lt;i class="far fa-exclamation-triangle"&gt;&lt;/i&gt;</code></td>
+          <td>Troubleshooting</td>
+        </tr>
+        <tr>
+          <td><i class="far fa-cloud-upload-alt"></i></td>
+          <td><code>&lt;i class="far fa-cloud-upload-alt"&gt;&lt;/i&gt;</code></td>
+          <td>Upload</td>
+        </tr>
+        <tr>
+          <td><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/product-logos/beacon-nut.svg"></td>
+          <td><code>&lt;img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/product-logos/beacon-nut.svg"&gt;</code></td>
+          <td>Using {product} (need to create the icon)</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="bc_icons">Brightcove.com icons</h2>
+    <table class="bcls-table">
+      <caption class="bcls-caption--table">BC Icons</caption>
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Icon</th>
+          <th>Code</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><i class="icon-enterprise"></i></td>
+          <td><code>&lt;i class=&quot;icon-enterprise&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-ad-insertion"></i></td>
+          <td><code>&lt;i class=&quot;icon-ad-insertion&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-add"></i></td>
+          <td><code>&lt;i class=&quot;icon-add&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-advertising"></i></td>
+          <td><code>&lt;i class=&quot;icon-advertising&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-analytics"></i></td>
+          <td><code>&lt;i class=&quot;icon-analytics&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-arrow-left-inverted"></i></td>
+          <td><code>&lt;i class=&quot;icon-arrow-left-inverted&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-arrow-left"></i></td>
+          <td><code>&lt;i class=&quot;icon-arrow-left&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-arrow-right-inverted"></i></td>
+          <td><code>&lt;i class=&quot;icon-arrow-right-inverted&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-arrow-right"></i></td>
+          <td><code>&lt;i class=&quot;icon-arrow-right&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-automation"></i></td>
+          <td><code>&lt;i class=&quot;icon-automation&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-badge"></i></td>
+          <td><code>&lt;i class=&quot;icon-badge&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-calendar"></i></td>
+          <td><code>&lt;i class=&quot;icon-calendar&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-case-study"></i></td>
+          <td><code>&lt;i class=&quot;icon-case-study&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-cdn"></i></td>
+          <td><code>&lt;i class=&quot;icon-cdn&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-chat"></i></td>
+          <td><code>&lt;i class=&quot;icon-chat&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-check-mark"></i></td>
+          <td><code>&lt;i class=&quot;icon-check-mark&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-chevron-down"></i></td>
+          <td><code>&lt;i class=&quot;icon-chevron-down&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-close"></i></td>
+          <td><code>&lt;i class=&quot;icon-close&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-connected-tv"></i></td>
+          <td><code>&lt;i class=&quot;icon-connected-tv&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-delivery"></i></td>
+          <td><code>&lt;i class=&quot;icon-delivery&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-desktop-player"></i></td>
+          <td><code>&lt;i class=&quot;icon-desktop-player&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-discover"></i></td>
+          <td><code>&lt;i class=&quot;icon-discover&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-distribution"></i></td>
+          <td><code>&lt;i class=&quot;icon-distribution&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-document"></i></td>
+          <td><code>&lt;i class=&quot;icon-document&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-ecommerce"></i></td>
+          <td><code>&lt;i class=&quot;icon-ecommerce&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-education"></i></td>
+          <td><code>&lt;i class=&quot;icon-education&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-folder"></i></td>
+          <td><code>&lt;i class=&quot;icon-folder&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-food"></i></td>
+          <td><code>&lt;i class=&quot;icon-food&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-gallery"></i></td>
+          <td><code>&lt;i class=&quot;icon-gallery&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-health"></i></td>
+          <td><code>&lt;i class=&quot;icon-health&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-hex"></i></td>
+          <td><code>&lt;i class=&quot;icon-hex&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-idea"></i></td>
+          <td><code>&lt;i class=&quot;icon-idea&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-ingest"></i></td>
+          <td><code>&lt;i class=&quot;icon-ingest&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-laptop"></i></td>
+          <td><code>&lt;i class=&quot;icon-laptop&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-location"></i></td>
+          <td><code>&lt;i class=&quot;icon-location&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-loyalty"></i></td>
+          <td><code>&lt;i class=&quot;icon-loyalty&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-mobile-video"></i></td>
+          <td><code>&lt;i class=&quot;icon-mobile-video&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-mobile"></i></td>
+          <td><code>&lt;i class=&quot;icon-mobile&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-monetize"></i></td>
+          <td><code>&lt;i class=&quot;icon-monetize&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-multi-platform"></i></td>
+          <td><code>&lt;i class=&quot;icon-multi-platform&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-news"></i></td>
+          <td><code>&lt;i class=&quot;icon-news&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-ott"></i></td>
+          <td><code>&lt;i class=&quot;icon-ott&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-recommendation"></i></td>
+          <td><code>&lt;i class=&quot;icon-recommendation&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-schedule"></i></td>
+          <td><code>&lt;i class=&quot;icon-schedule&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-search"></i></td>
+          <td><code>&lt;i class=&quot;icon-search&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-security"></i></td>
+          <td><code>&lt;i class=&quot;icon-security&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-settings"></i></td>
+          <td><code>&lt;i class=&quot;icon-settings&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-social"></i></td>
+          <td><code>&lt;i class=&quot;icon-social&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-speaker"></i></td>
+          <td><code>&lt;i class=&quot;icon-speaker&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-star"></i></td>
+          <td><code>&lt;i class=&quot;icon-star&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-stream"></i></td>
+          <td><code>&lt;i class=&quot;icon-stream&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-subtract"></i></td>
+          <td><code>&lt;i class=&quot;icon-subtract&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-tablet"></i></td>
+          <td><code>&lt;i class=&quot;icon-tablet&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-touch"></i></td>
+          <td><code>&lt;i class=&quot;icon-touch&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-user"></i></td>
+          <td><code>&lt;i class=&quot;icon-user&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-users"></i></td>
+          <td><code>&lt;i class=&quot;icon-users&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+        <tr>
+          <td><i class="icon-video"></i></td>
+          <td><code>&lt;i class=&quot;icon-video&quot;&gt;&lt;/i&gt;</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</article>
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<div class="last-updated">
+  Page last updated on 12 Apr 2020
+</div>
+
+
+
+<footer class="bcls-footer" role="contentinfo">
+  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>Brightcove Support</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">System Status</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?language=en_US">Contact Support</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">Documentation</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>Training</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://support.brightcove.com/online-training-courses">Online Courses</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/register-training">Register for a course</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">Brightcove.com</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?language=en_US" data-drupal-link-system-path="https://supportportal.brightcove.com/s/login/?language=en_US">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> Brightcove Inc. All rights reserved.</div>
+            </td>
+            <td><a href="https://www.brightcove.com/en/legal/privacy">Privacy</a> | <a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+<div id="talla_wrapper">
+  <p style="text-align: right;position: relative;"><button style="background:rgb(142, 33, 162);color:Snow;padding:.3rem;position:fixed;right:0;bottom:1em;z-index:9999999" onclick="javascript:displayChat()">Have a question? </button> </p>
+  <div id="talla_chat">
+</div>
+</div>
+<script>
+      
+  var searchBox = sajari.init({
+    mode: "search-box",
+    project: "1588255093746585379", // Set this to your project.
+    collection: "brightcove-documenation", // Set this to your collection.
+    instantPipeline: "autocomplete", // Pipeline used as you type
+    inputPlaceholder: "Search", // Input element placeholder
+    maxSuggestions: 5, // Maximum number of suggestions to show
+    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
+  });
+  
+    searchBox("sub", "pipeline.search-sent", function (_, query) {
+      window.location = "/search.html?q=" + encodeURIComponent(query.q);
+    });
+  
+
+</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/https-fix.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/setDate.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/prism.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/site.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/tabs.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/toc.js"></script>
+  
+  <script src="/assets/js/sites_nav.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/bcls-utils.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/local-link-fix.js"></script>
+  <script src="/assets/js/feedback.js"></script>
+  
+  <script src="/assets/js/sajari-search-foot.js"></script>
+  
+  <!-- <script src="/assets/js/sajari-index.js"></script> -->
+  <script src="https://assets.talla.com/latest/embeddedjs/talla.js"></script>
+  <script src="/assets/js/talla-init.js"></script>
+  <style>
+    a.sj-paginator__page-number.sj-paginator__page-number--current.css-so0ov7 {
+      background-color: lightblue;
+    }
+    div.sj-tabs__tab {
+      margin-top: 3rem;
+      border-top-left-radius: .4rem;
+      border-top-right-radius: .4rem;
+      background-color:#E8E8E8;
+    }
+
+    div.sj-tabs__tab.sj-tabs__tab--selected {
+      border-bottom-color: crimson;
+      background-color: lightgray;
+    }
+
+    p.sj-results__result__description.css-p9jvyt {
+      font-size: 1rem;
+    }
+
+    .sj-result__text.css-31l7gp h3 {
+      color: navy;
+      font-size: 1.4rem;
+    }
+    </style>
+
+</body>
+
+</html>
