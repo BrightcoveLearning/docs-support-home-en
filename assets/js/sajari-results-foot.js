@@ -35,6 +35,6 @@ layout: null
       maxSuggestions: 5, // Maximum number of suggestions to show.
       results: {"showImages": false }, // Configure the results.
       values: {"q.override": true, "resultsPerPage": "10","q": getUrlParam("q")}, // Set default values.
-      tabFilters: {defaultTab:"This Site",tabs:[{title:"This Site",filter:filter}, {title:"All Brightcove Documentation",filter:lang_filter}]}, // User selectable filters
+      tabFilters: {defaultTab:"All Brightcove Documentation",tabs:[{title:"All Brightcove Documentation",filter:lang_filter}]}, // User selectable filters
       styling: { theme: { colors: { brand: { primary: "#333" }}}}
   });
