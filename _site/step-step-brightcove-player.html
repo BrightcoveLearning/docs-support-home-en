@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="sites/default/files/favicon-64.png" type="image/png" />
+<link rel="alternate" hreflang="en" href="step-step-brightcove-player.html" />
+<link rel="canonical" href="step-step-brightcove-player.html" />
+<link rel="shortlink" href="step-step-brightcove-player.html" />
+<link rel="revision" href="step-step-brightcove-player.html" />
+
+    <title>Step-by-Step: Brightcove Player | Brightcove Learning</title>
+    <link rel="stylesheet" media="all" href="sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw_q23msc.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4_q23msc.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on" />
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  </head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="navigation-secondary clearfix">
+          <div class="region region-navigation-secondary">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary Navigation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="contact-support.html" title="Create a Support Request" data-drupal-link-system-path="node/18632">Support Request</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://status.brightcove.com/">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://university.brightcove.com/">Brightcove University</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gtranslate">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" style="font-weight:bold;background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">English</option><option value="en|fr" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">French</option><option value="en|de" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">German</option><option value="en|ja" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">Japanese</option><option value="en|ko" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">Korean</option><option value="en|es" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">Spanish</option></select>
+</div>
+<div class="gtranslate__credits">
+  Translations Provided by Google Translate
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="navbar-header col-md-3">
+                  <a class="logo navbar-btn pull-left" href="index.html" title="Home" rel="home">
+            <img src="themes/custom/bcdocs/images/brightcove.png" alt="Home" />
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" title="Home page" data-drupal-link-system-path="node/18643">Home</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Products
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="video-cloud.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://gallery.support.brightcove.com">Gallery</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a href="social.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ssai.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Quick Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="analytics-api.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience-api.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-api.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-connectors-video-cloud.html" data-drupal-link-system-path="node/18662">CMS Connectors for Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="data-collection-api.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="delivery-system-api.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="developer-tools-and-concepts.html" data-drupal-link-system-path="node/18430">Developer Tools and Concepts</a>
+                  </li>
+                              <li class="expanded">
+        <a href="native-player-sdks.html" data-drupal-link-system-path="node/18367">Device SDKs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="dynamic-ingest-api.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="getting-started-brightcove-apis-0.html" data-drupal-link-system-path="node/18711">Getting Started - Brightcove APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="page-experience-api.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ingest-profiles-api.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="oauth-api.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="platform-api-code-samples.html" data-drupal-link-system-path="node/18675">Platform API Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="playback-api.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-code-samples.html" data-drupal-link-system-path="node/18630">Player Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-developer.html" data-drupal-link-system-path="node/18362">Player Developer</a>
+                  </li>
+                              <li class="expanded">
+        <a href="player-management-api.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="policy-api.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="release-notes.html" data-drupal-link-system-path="node/18687">Release Notes</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Training
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="https://university.brightcove.com">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a Course</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a href="brightcove-support-documentation-announcements.html" title="See what&#039;s new in Brightcove Documentation" data-drupal-link-system-path="node/18896">What&#039;s New</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="full-width-headline">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" role="heading">
+            <div class="region region-header">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      Documentation
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="main-container container  js-quickedit-main-content">
+    <div class="row">
+
+                              <aside class="col-sm-3" role="complementary">
+              <div class="region region-sidebar-first">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="step-step-brightcove-player.html" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group">
+      <label for="edit-search" class="control-label sr-only">Search</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="Search" />
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-tmwl7by7t7xjcel-73rfug2i6o0encymfts0ygkjmno" type="hidden" name="form_build_id" value="form-tMwL7bY7t7xJCEL-73rFug2I6O0enCYmFts0yGKJMNo" /><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form" /><div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix">
+  
+      <h2 class="block-title">On This Page</h2>
+    
+
+      <div class="bc-ipnav-block"></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="highlighted">  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a id="main-content"></a>
+            <div class="region region-content">
+        <h1 class="page-header"><span>Step-by-Step: Brightcove Player</span>
+</h1>
+
+  
+<div class="node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+      </div>
+
+  <div class="group-second-row">
+  
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+          <div class="field--item">Brightcove Player</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Player Developer</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Get Started with Player Development</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item"><p>This document provides a hands-on introduction to creating a Brightcove Player, then using two different code implementations to publish a video using the newly created player. You will also programmatically start the video playing and then add a plugin to the player.</p>
+      <article class="bcls-article"><section class="bcls-section"><h2 id="Overview">Overview</h2>
+
+<p class="language-editable">In this quick start you will perform the following tasks:</p>
+
+<ul><li class="language-editable">Create a player using Studio</li>
+	<li class="language-editable">Publish a video in the player using Studio</li>
+	<li class="language-editable">Use the iframe player implementation</li>
+	<li class="language-editable">Use the In-page embed implementation</li>
+	<li class="language-editable">Programmatically play the video</li>
+	<li class="language-editable">Add the overlay plugin to the player</li>
+</ul></section><section class="bcls-section"><h2 id="createplayer">Create player</h2>
+
+<p class="language-editable">To create a new player, follow these steps.</p>
+
+<ol class="bcls-tasklist"><li class="language-editable">Login to Studio at <a href="https://studio.brightcove.com/">https://studio.brightcove.com/</a>.</li>
+	<li class="language-editable">The current account name will appear in the upper right corner of the page. If you have multiple accounts, click the <strong>current account</strong> link and select the account in which you would like to create the player.
+	<figure class="bcls-figure"><img class="bcls-image" alt="select current account" src="https://learning-services-media.brightcove.com/doc-assets/player-development/getting-started/quick-start/current-account.png" /></figure></li>
+	<li class="language-editable">Click the <strong>Players</strong> link in the navigation header.</li>
+	<li class="language-editable">Click the <strong>New Player</strong> button.</li>
+	<li class="language-editable">Enter a <strong> Name </strong>and <strong>Short Description</strong> for the player. For this quick start, the player name will be <strong>Sample Player</strong>.
+	<figure class="bcls-figure"><img class="bcls-image" alt="player diaglo" src="https://learning-services-media.brightcove.com/doc-assets/player-development/getting-started/quick-start/new-player-dialog.png" /></figure></li>
+	<li class="language-editable">Confirm that the newly created player appears in the list of players.
+	<figure class="bcls-figure"><img class="bcls-image" alt="list of players" src="https://learning-services-media.brightcove.com/doc-assets/player-development/getting-started/quick-start/list-of-players.png" /></figure></li>
+</ol></section><section class="bcls-section"><h2 id="publishvideo">Publish video in player</h2>
+
+<div class="video-cloud-only">
+<p class="language-editable">You publish a video in the newly created player in the Media module. Once you associate the video with your player you publish the video and will then have access to three implementations in which to view the video in your player.</p>
+
+<p class="language-editable">To publish a video in your player, follow these steps:</p>
+
+<ol class="bcls-tasklist"><li class="language-editable">In Studio navigate to the Media module by clicking on the <strong>Media</strong> link in the main menu.</li>
+	<li class="language-editable">Click in the row for the video THAT DOES NOT HAVE AN AUDIO TRACK that you wish to publish in your player, then click <strong>Publish and Embed...</strong>.
+	<aside class="bcls-aside bcls-aside--tip language-editable">Note: If the video has an audio track it will not automatically play, wish you want to have happen later in the document. See the document <a href="autoplay-considerations.html">Autoplay Considerations</a> for more information about videos playing without user interaction.</aside><div>
+	<figure class="bcls-figure"><img class="bcls-image" alt="select video" src="https://learning-services-media.brightcove.com/doc-assets/player-development/getting-started/quick-start/qs-select-video.png" /></figure></div>
+	</li>
+	<li class="language-editable">From the <strong>Select a Player</strong> dropdown menu, choose your newly created player.
+	<div>
+	<figure class="bcls-figure"><img class="bcls-image" alt="publish UI" src="https://learning-services-media.brightcove.com/doc-assets/player-development/getting-started/quick-start/qs-publish-ui-select.png" /></figure></div>
+	</li>
+	<li class="language-editable">You now have access to the three implementations of the player: <strong>Standard</strong> (iframe), <strong>Advanced</strong> (In-Page) and a <strong>Preview in browser</strong> URL. Do not close this window as you will be copying code from it numerous times later in this quick start.
+	<div>
+	<figure class="bcls-figure"><img class="bcls-image" alt="publish UI" src="https://learning-services-media.brightcove.com/doc-assets/player-development/getting-started/quick-start/qs-publish-ui.png" /></figure></div>
+	</li>
+</ol><aside class="bcls-aside bcls-aside--tip language-editable">Note: If curious, you can see "under the hood" of the player configuration using the URL code. Click on the <strong>Preview in browser</strong> URL link. In the browser, change the <strong>index.html</strong> at the end of the URL to <strong>config.json</strong>. You will see a JSON object detailing the current configuration of the player you just created.</aside></div>
+
+<div class="player-only">
+<p class="language-editable">You will use the JSON editor to add a video to the player. To configure the video content, follow these steps.</p>
+
+<ol class="bcls-tasklist"><li class="language-editable">Click the link for the Sample Player to open the player properties page.</li>
+	<li>Click <strong>JSON Editor</strong> in the left navigation menu.</li>
+	<li>Place a comma after the SECOND TO THE LAST brace in the JSON.</li>
+	<li>Just above the last closing brace, add the following to assign a video and poster to the player. Of course, you can substitute your own video and poster.
+	<pre class="line-numbers">
+<code class="language-javascript">"media": {
+  "sources": [{
+    "src": "//solutions.brightcove.com/bcls/assets/videos/BirdsOfAFeather.mp4",
+    "type": "video/mp4"
+  }],
+    "poster": {
+      "highres": "//solutions.brightcove.com/bcls/assets/images/BirdsOfAFeather.jpg"
+    }
+}</code></pre>
+	</li>
+	<li>Your JSON should appear similar to the following (the added text is highlighted in yellow):
+	<figure class="bcls-figure"><img class="bcls-image" alt="json editor" src="https://learning-services-media.brightcove.com/doc-assets/player-development/getting-started/quick-start/json-editor.png" /></figure></li>
+	<li class="language-editable">Click <strong>Save</strong>.</li>
+</ol><aside class="bcls-aside bcls-aside--information language-editable">Publishing the player will push the changes to the published player. For more information on preview players, published players and player publishing code, see <a href="generating-player-embed-code.html">Generating Player Embed Code</a>. To publish the player, follow these steps</aside><ol class="bcls-tasklist"><li class="language-editable">Click <strong>Publish &amp; Embed</strong> and then <strong>Publish Changes</strong> to publish your player.</li>
+	<li>On the same dialog where you published your changes you can also copy the Standard (iframe) or Advanced (in-page embed) player implementation code. Note that the implementation code will reflect the <strong>Sizing</strong> (<em>Responsive</em> or <em>Fixed</em>), <em>Aspect Ratio</em> and <em>Dimensions</em> choices made and saved in the <strong>Player Information</strong> options.</li>
+	<li class="language-editable">Copy both of the code implementation types to a text file for later use.</li>
+</ol></div>
+</section><section class="bcls-section"><h2 id="useiframe">Use Standard code</h2>
+
+<aside class="bcls-aside bcls-aside--warning language-editable">Note: For the Standard code (iframe implementation), you will need to use a web server to browse the page because of iframe requirements. Simply viewing the page locally will not work.</aside><ol class="bcls-tasklist"><li class="language-editable">Create an HTML page and paste the <strong>Standard</strong> (iframe) code from the previous step into the body.</li>
+	<li class="language-editable">When you browse this page you will see the video reflects the <strong>Sizing</strong> (<em>Responsive</em> or <em>Fixed</em>), <strong>Aspect Ratio</strong> and <strong>Dimensions</strong> choices made.</li>
+</ol></section><section class="bcls-section"><h2 id="embedinpage">Use Advanced embed code</h2>
+
+<p class="language-editable">In this section you will use the Advanced (in-page embed) code implementation.</p>
+
+<ol class="bcls-tasklist"><li class="language-editable">Create an HTML page and paste the <strong>Advanced</strong> (in-page embed) code from above, into the body.</li>
+	<li class="video-cloud-only language-editable">Examine the code, which will appear similar to the following, and note the attributes:
+	<pre class="line-numbers">
+<code class="notranslate language-html">&lt;video-js data-account="1507807800001"
+  data-player="EUYJo0AOB"
+  data-embed="default"
+  controls=""
+  data-video-id="6071787405001"
+  data-playlist-id=""
+  data-application-id=""
+  width="640" height="360"&gt;&lt;/video-js&gt;
+&lt;script src="https://players.brightcove.net/1507807800001/default_default/index.min.js"&gt;&lt;/script&gt;</code></pre>
+
+	<ul><li class="language-editable"><code class="notranslate">data-account</code>: The account number</li>
+		<li class="language-editable"><code class="notranslate">data-player</code>: The ID of the Brightcove Player</li>
+		<li class="language-editable"><code class="notranslate">data-embed</code>: Either <code class="notranslate">default</code> if the player is a parent embed, or the ID of the parent player; see <a href="guide-embed-apis.html">Embed APIs Guide</a> for more information on embeds (parent/child players)</li>
+		<li class="language-editable"><code class="notranslate">controls</code>: Acts as a Boolean if the player controls should be present (<code class="notranslate">controls</code> attribute included in the tag), or not shown (<code class="notranslate">controls</code> attribute not present in the tag)</li>
+		<li class="language-editable"><code class="notranslate">data-video-id</code>: The ID of the Video Cloud video</li>
+		<li class="language-editable"><code class="notranslate">data-playlist-id</code>: The ID of the Video Cloud playlist</li>
+		<li class="language-editable"><code class="notranslate">data-application-id</code>: Allows you to re-use a single player, but differentiate analytics on a per-site or per-application basis; see <a href="adding-application-id-player-embed-code.html">Adding an Application ID to the Player Embed Code</a> for more information</li>
+		<li class="language-editable"><code class="notranslate">width &amp; height</code>: Sets player dimensions.</li>
+		<li class="language-editable"><code class="notranslate">&lt;script&gt;</code> tag: Any time you use in-page code there will be an accompanying <code class="notranslate">script</code> tag; the referenced JavaScript file contains all JavaScript and CSS associated with the particular player</li>
+	</ul></li>
+	<li class="player-only language-editable">Examine the code, which will appear similar to the following, and note the attributes:
+	<pre class="line-numbers">
+<code class="notranslate language-html">&lt;video data-account="1507807800001"
+  data-player="H15p1gTkg"
+  data-embed="default"
+  data-application-id
+  class="video-js"
+  controls&gt;&lt;/video&gt;
+&lt;script src="https://players.brightcove.net/1507807800001/H15p1gTkg_default/index.min.js"&gt;&lt;/script&gt;</code></pre>
+
+	<ul><li class="language-editable"><code class="notranslate">data-account</code>: The account number</li>
+		<li class="language-editable"><code class="notranslate">data-player</code>: The ID of the Brightcove Player</li>
+		<li class="language-editable"><code class="notranslate">data-embed</code>: Either <code class="notranslate">default</code> if the player is a parent embed, or the ID of the parent player; see <a href="guide-embed-apis.html">Embed APIs Guide</a> for more information on embeds (parent/child players)</li>
+		<li class="language-editable"><code class="notranslate">class</code>: The standard Brightcove Player CSS class associated with in-page embed code</li>
+		<li class="language-editable"><code class="notranslate">controls</code>: Acts as a Boolean if the player controls should be present (<code class="notranslate">controls</code> attribute included in the tag), or not shown (<code class="notranslate">controls</code> attribute not present in the tag)</li>
+		<li class="language-editable"><code class="notranslate">&lt;script&gt; tag</code>: All associated JavaScript and CSS associated with the particular player</li>
+	</ul></li>
+	<li class="language-editable">When you browse this page you will see the video reflects the <strong>Sizing</strong> (<em>Responsive</em> or <em>Fixed</em>), <strong>Aspect Ratio</strong> and <strong>Dimensions</strong> choices made.</li>
+</ol><aside class="bcls-aside bcls-aside--information language-editable">Note: The last two sections of this step-by-step activity use JavaScript to play the video as well as add the Overlay plugin to the player. If you are not comfortable with basic JavaScript these sections may not be relevant for you.</aside></section><section class="bcls-section"><h2 id="apitoplay">Programmatically play video</h2>
+
+<p class="language-editable">There is a rich API to use with Brightcove Player. In this section you will use the <code class="notranslate">play()</code> method to programmatically start the video playing.</p>
+
+<ol class="bcls-tasklist"><li class="language-editable">Add an <code class="notranslate">id</code> attribute to the <code class="notranslate">video</code> tag with a value of <strong>myPlayerID</strong>.
+
+	<pre class="line-numbers">
+<code class="notranslate language-javascript">&lt;video id="myPlayerID" </code></pre>
+	</li>
+	<li class="language-editable">Just above the closing <code class="notranslate">body</code> tag, insert a <code class="notranslate">script</code> block.
+	<pre class="line-numbers">
+<code class="notranslate language-javascript">&lt;script&gt;
+&lt;/script&gt;
+
+&lt;/body&gt;</code></pre>
+	</li>
+	<li class="language-editable">In the script block, use the <code class="notranslate">on()</code> method to listen for the <code class="notranslate">loadedmetadata</code> event. When the event is dispatched an anonymous event handler function is called.
+	<pre class="line-numbers">
+ <code class="notranslate language-javascript">videojs.getPlayer('myPlayerID').on('loadedmetadata', function() {
+});</code></pre>
+
+	<aside class="bcls-aside bcls-aside--information language-editable">Note: For more information about Brightcove Player's startup events see the <a href="player-events.html#startupevents">Startup events</a> section of the <strong>Understanding Player Events</strong> document.</aside></li>
+	<li class="language-editable">Create a variable local to the function, named <code class="notranslate">myPlayer</code>, that assigns the player instance, referenced as <code class="notranslate">this</code>, to that variable.
+	<pre class="line-numbers">
+<code class="notranslate language-javascript">var myPlayer = this;</code></pre>
+	</li>
+	<li class="language-editable">Since most browsers no longer allow autoplay for videos with an audio track, it is best to use the <code class="notranslate">muted()</code> method to mute the video and ensure the video will autoplay.
+	<pre class="line-numbers">
+<code class="notranslate language-javascript">myPlayer.muted(true);</code></pre>
+
+	<p class="language-editable">See the <a href="autoplay-considerations.html">Autoplay Considerations</a> document for more information on the autoplay issue.</p>
+	</li>
+	<li class="language-editable">Use the player's <code class="notranslate">play()</code> method to start the video.
+	<pre class="line-numbers">
+<code class="notranslate language-javascript">myPlayer.play();</code></pre>
+	</li>
+	<li class="language-editable">Confirm your script block appears as follows.
+	<pre class="line-numbers">
+ <code class="notranslate language-javascript">&lt;script&gt;
+  videojs.getPlayer('myPlayerID').on('loadedmetadata', function() {
+    var myPlayer = this;
+    myPlayer.muted(true);
+    myPlayer.play();
+  });
+&lt;/script&gt;</code></pre>
+	</li>
+	<li class="language-editable">Save your changes and refresh your page in the browser to see the video automatically start playing. If you chose a video that contained an audio track you will have to click the play button to play the video.</li>
+</ol></section><section class="bcls-section"><h2 id="addplugin">Add plugin</h2>
+
+<p class="language-editable">Brightcove Player has many plugins you can utilize to enhance the player. One such plugin is the Overlay Plugin. In this section you will add that plugin to the In-page Embed code you finished in the last section. For details on the plugin see the <a href="display-overlay-plugin.html">Display Overlay Plugin</a> document.</p>
+
+<p class="language-editable">When using a plugin you must supply the path to the JavaScript that is the plugin implementation. You may also have to supply the link to a CSS if needed by the plugin.</p>
+
+<ol class="bcls-tasklist"><li class="language-editable">Just above the closing <code class="notranslate">head</code> tag, insert the following link statement which points to the location of the CSS for the overlay plugin.
+
+	<pre class="line-numbers">
+ <code class="notranslate language-javascript">&lt;link href="https://players.brightcove.net/videojs-overlay/lib/videojs-overlay.css" rel='stylesheet'&gt;
+&lt;/head&gt;</code></pre>
+	</li>
+	<li class="language-editable">Just above the script block you added earlier, add the following <code class="notranslate">script</code> tag that is the actual JavaScript code that implements the overlay plugin functionality.
+	<pre class="line-numbers">
+<code class="notranslate language-javascript"><span class="bcls-highlight">&lt;script src="https://players.brightcove.net/videojs-overlay/lib/videojs-overlay.js"&gt;&lt;/script&gt;</span>
+
+&lt;script&gt;
+  videojs.getPlayer('myPlayerID').on('loadedmetadata', function() {</code></pre>
+	</li>
+	<li class="language-editable">Just after where the <code class="notranslate">play()</code> method is used, call the player's <code class="notranslate">overlay()</code> method, and add braces as a parameter to prepare for passing a JSON configuration object.
+	<pre class="line-numbers">
+<code class="notranslate language-javascript">myPlayer.overlay({
+});</code></pre>
+	</li>
+	<li class="language-editable">Multiple overlay objects can be passed as an array to the plugin to display different content at various times and in various locations. In this case, just one overlay object will be passed to display some text, and have it appear only when the video is playing. When the video is paused the overlay will not be displayed. To implement this, add the following overlay object as a configuration parameter.
+	<pre class="line-numbers">
+ <code class="notranslate language-javascript">overlays: [{
+  content: 'This event-triggered overlay message appears when the video is playing',
+  start: 'play',
+  end: 'pause'
+}]</code></pre>
+	</li>
+	<li class="language-editable">Confirm your script block appears as follows, and that the overlay plugin has been called and configured correctly.
+	<pre class="line-numbers">
+ <code class="notranslate language-html">  &lt;script&gt;
+    videojs.getPlayer('myPlayerID').on('loadedmetadata', function() {
+      var myPlayer = this;
+      myPlayer.muted(true);
+      myPlayer.play();
+      myPlayer.overlay({
+        overlays: [{
+          content: 'This event-triggered overlay message appears when the video is playing',
+          start: 'play',
+          end: 'pause'
+        }]
+      });
+    });
+  &lt;/script&gt;</code></pre>
+	</li>
+	<li class="language-editable">Save your changes and refresh your page in the browser to see the video automatically start playing. You will see the overlay appear when the video starts. Pause the video to see the overlay removed.
+	<aside class="bcls-aside bcls-aside--information language-editable">Note: The implementation of the Overlay Plugin show here will only be used with the player on the specific HTML page. You can add a plugin to be part of a player no matter where or how many times the player is used without having to copy and paste code repeatedly. See the <a href="step-step-plugin-development.html">Step-by-Step: Plugin Development</a> to see a developer oriented approach to the implementation, or the <a href="configuring-player-plugins.html">Configuring Player Plugins</a> document to see how to implement the plugin in the player using Studio.</aside></li>
+	<li class="language-editable">For your review, the entire page's HTML code can be viewed here:
+	<div class="video-cloud-only">
+	<pre class="line-numbers">
+<code class="notranslate language-html">&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Untitled Document&lt;/title&gt;
+  &lt;style&gt;
+    .video-js {
+      height: 344px;
+      width: 610px;
+    }
+  &lt;/style&gt;
+  &lt;link href="https://players.brightcove.net/videojs-overlay/lib/videojs-overlay.css" rel='stylesheet'&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+  &lt;video  id="myPlayerID"
+    data-video-id="4093372393001"
+    data-account="1507807800001"
+    data-player="H15p1gTkg"
+    data-embed="default"
+    data-application-id
+    class="video-js"
+    controls&gt;&lt;/video&gt;
+  &lt;script src="https://players.brightcove.net/1507807800001/H15p1gTkg_default/index.min.js"&gt;&lt;/script&gt;
+
+  &lt;script src="https://players.brightcove.net/videojs-overlay/lib/videojs-overlay.js"&gt;&lt;/script&gt;
+
+  &lt;script&gt;
+    videojs.getPlayer('myPlayerID').on('loadedmetadata', function() {
+      var myPlayer = this;
+      myPlayer.muted(true);
+      myPlayer.play();
+      myPlayer.overlay({
+        overlays: [{
+          content: 'This event-triggered overlay message appears when the video is playing',
+          start: 'play',
+          end: 'pause'
+        }]
+      });
+    });
+  &lt;/script&gt;
+
+  &lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+	</div>
+
+	<div class="player-only">
+	<pre class="line-numbers">
+<code class="notranslate language-html">&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Untitled Document&lt;/title&gt;
+  &lt;style&gt;
+    .video-js {
+      height: 344px;
+      width: 610px;
+    }
+  &lt;/style&gt;
+  &lt;link href="https://players.brightcove.net/videojs-overlay/lib/videojs-overlay.css" rel='stylesheet'&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;video id="myPlayerID"
+    data-account="3676484087001"
+    data-player="78ef7d78-18d9-4459-a6da-d94e46163076"
+    data-embed="default"
+    class="video-js"
+    controls&gt;&lt;/video&gt;
+  &lt;script src="https://players.brightcove.net/3676484087001/78ef7d78-18d9-4459-a6da-d94e46163076_default/index.min.js"&gt;&lt;/script&gt;
+  &lt;script src="https://players.brightcove.net/videojs-overlay/lib/videojs-overlay.js"&gt;&lt;/script&gt;
+  &lt;script&gt;
+    videojs.getPlayer('myPlayerID').on('loadedmetadata', function () {
+      var myPlayer = this;
+      myPlayer.play();
+      myPlayer.overlay({
+        overlays: [{
+          content: 'This event-triggered overlay message appears when the video is playing',
+          start: 'play',
+          end: 'pause'
+        }]
+      });
+    });
+  &lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+	</div>
+	</li>
+</ol></section></article></div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-by-field-block-1 clearfix" id="block-views-block-related-content-by-field-block-1">
+  
+    
+
+      <div class="form-group"><div class="view view-related-content-by-field view-id-related_content_by_field view-display-id-block_1 js-view-dom-id-6182a259107b862b171590113c7fac596aa84264b42f7825f9541d739416afce">
+  
+    
+      <div class="view-header">
+      <h2>Related content</h2>
+    </div>
+      
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="what-brightcove-player.html" hreflang="en">What is the Brightcove Player?</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="brightcove-player-system-requirements.html" hreflang="en">Brightcove Player System Requirements</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="row">
+            <div class="region region-footer-top-left col-md-9" style="margin-bottom: 1em;">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove Support</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://status.brightcove.com">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="contact-support.html" data-drupal-link-system-path="node/18632">Support - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.brightcove.com/en/contact/create">Support - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Documentation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Training</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="online-training-courses.html" data-drupal-link-system-path="node/18286">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a course</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://www.brightcove.com">Brightcove.com</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="region region-footer-top-right col-md-3">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Brightcove Inc. (NASDAQ: BCOV), is a leading global provider of powerful cloud solutions for delivering and monetizing video across connected devices.</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="row">
+            <div class="region region-footer-bottom-left col-md-8">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item">Brightcove Inc. All rights reserved.</div>
+      
+      <div class="field field--name-field-legal-links field--type-link field--label-hidden field--items">
+              <div class="field--item"><a href="https://www.brightcove.com/en/privacy">Privacy</a></div>
+              <div class="field--item"><a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="region region-footer-bottom-right col-md-4">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items">
+              <div class="field--item">
+
+<a href="https://www.linkedin.com/company/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://twitter.com/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://www.facebook.com/Brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://plus.google.com/100830370440271567091" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18209","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGkkHXlVrBldRXQE=","queueTime":0,"applicationTime":21,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

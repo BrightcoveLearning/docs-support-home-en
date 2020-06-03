@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="sites/default/files/favicon-64.png" type="image/png" />
+<link rel="alternate" hreflang="en" href="using-cms-api-managing-clips.html" />
+<link rel="canonical" href="using-cms-api-managing-clips.html" />
+<link rel="shortlink" href="using-cms-api-managing-clips.html" />
+<link rel="revision" href="using-cms-api-managing-clips.html" />
+
+    <title>Using the CMS API: Managing Clips | Brightcove Learning</title>
+    <link rel="stylesheet" media="all" href="sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw_q23msc.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4_q23msc.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on" />
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  </head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="navigation-secondary clearfix">
+          <div class="region region-navigation-secondary">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary Navigation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="contact-support.html" title="Create a Support Request" data-drupal-link-system-path="node/18632">Support Request</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://status.brightcove.com/">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://university.brightcove.com/">Brightcove University</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gtranslate">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" style="font-weight:bold;background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">English</option><option value="en|fr" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">French</option><option value="en|de" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">German</option><option value="en|ja" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">Japanese</option><option value="en|ko" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">Korean</option><option value="en|es" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">Spanish</option></select>
+</div>
+<div class="gtranslate__credits">
+  Translations Provided by Google Translate
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="navbar-header col-md-3">
+                  <a class="logo navbar-btn pull-left" href="index.html" title="Home" rel="home">
+            <img src="themes/custom/bcdocs/images/brightcove.png" alt="Home" />
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" title="Home page" data-drupal-link-system-path="node/18643">Home</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Products
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="video-cloud.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://gallery.support.brightcove.com">Gallery</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a href="social.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ssai.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Quick Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="analytics-api.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience-api.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-api.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-connectors-video-cloud.html" data-drupal-link-system-path="node/18662">CMS Connectors for Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="data-collection-api.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="delivery-system-api.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="developer-tools-and-concepts.html" data-drupal-link-system-path="node/18430">Developer Tools and Concepts</a>
+                  </li>
+                              <li class="expanded">
+        <a href="native-player-sdks.html" data-drupal-link-system-path="node/18367">Device SDKs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="dynamic-ingest-api.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="getting-started-brightcove-apis-0.html" data-drupal-link-system-path="node/18711">Getting Started - Brightcove APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="page-experience-api.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ingest-profiles-api.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="oauth-api.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="platform-api-code-samples.html" data-drupal-link-system-path="node/18675">Platform API Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="playback-api.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-code-samples.html" data-drupal-link-system-path="node/18630">Player Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-developer.html" data-drupal-link-system-path="node/18362">Player Developer</a>
+                  </li>
+                              <li class="expanded">
+        <a href="player-management-api.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="policy-api.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="release-notes.html" data-drupal-link-system-path="node/18687">Release Notes</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Training
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="https://university.brightcove.com">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a Course</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a href="brightcove-support-documentation-announcements.html" title="See what&#039;s new in Brightcove Documentation" data-drupal-link-system-path="node/18896">What&#039;s New</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="full-width-headline">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" role="heading">
+            <div class="region region-header">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      Documentation
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="main-container container  js-quickedit-main-content">
+    <div class="row">
+
+                              <aside class="col-sm-3" role="complementary">
+              <div class="region region-sidebar-first">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="using-cms-api-managing-clips.html" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group">
+      <label for="edit-search" class="control-label sr-only">Search</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="Search" />
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-rxjcfc64ki3tw20zqzg31eryshokiit1vcfvlmkrp00" type="hidden" name="form_build_id" value="form-RxjCfc64kI3Tw20ZQzg31eRYShokiit1VcfvLmkRp00" /><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form" /><div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix">
+  
+      <h2 class="block-title">On This Page</h2>
+    
+
+      <div class="bc-ipnav-block"></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="highlighted">  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a id="main-content"></a>
+            <div class="region region-content">
+        <h1 class="page-header"><span>Using the CMS API: Managing Clips</span>
+</h1>
+
+  
+<div class="node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+      </div>
+
+  <div class="group-second-row">
+  
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">API Developer</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Manage Videos</div>
+          <div class="field--item">Share Using Brightcove Social</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-topics field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Topic(s)</div>
+          <div class="field--items">
+              <div class="field--item">Live Streaming</div>
+          <div class="field--item">Social Sharing</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-apis field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">API(s)</div>
+          <div class="field--items">
+              <div class="field--item">CMS API</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item"><p>In this topic, you will learn how to manage video clips using the CMS API.</p>
+                <p>Clips are videos created from segments of other videos generated by <a href="creating-video-clip-using-brightcove-social.html">Brightcove Social</a> and other tools. If the clips are created for sharing via Brightcove Social, you may wish to remove their renditions to reduce your managed storage and/or disable them to prevent them from showing up in your video workflows.</p>
+
+<article class="bcls-article"><section id="findingClips" class="bcls-section"><h2>Finding clips</h2>
+
+<p>There are special search terms for the CMS API to help you locate clips in your account:</p>
+
+<ul><li><code>q=%2Bis_clip:true</code> - returns only clips</li>
+	<li><code>q=%2Dis_clip:true</code> - returns only non-clips</li>
+	<li><code>q=%2Bis_clip:false</code> - returns only non-clips (functionally identical to the previous item)</li>
+	<li><code>q=%2Bclip_source_video_id: <span class="bcls-input">video_id</span> </code> - returns clips generated from the specified video</li>
+</ul><aside class="bcls-aside bcls-aside--information">Notes:
+<ul><li><code>%2B</code> is a URI-encoded <code>+</code> sign</li>
+	<li><code>%2D</code> is a URI-encoded <code>-</code> sign</li>
+	<li>Remember that <code>limit</code> and <code>offset</code> apply: by default, CMS API queries return 10 videos (maximum: limit=100), so if there are many clips in the account, you will need to make multiple requests with appropriate <code>limit</code> and <code>offset</code> parameters to find them all. You can get a count of all clips by sending a GET request to the CMS API counts endpoint: <code>.../accounts/account_id/ <span class="bcls-highlight">counts</span>/videos/ <span class="bcls-highlight">q=%2Bis_clip:true</span> </code></li>
+</ul></aside><h3>Sample</h3>
+
+<h4>Request</h4>
+
+<pre class="line-numbers">
+<code class="language-http">https://cms.api.brightcove.com/v1/accounts/57838016001/videos?<span class="bcls-highlight">q=%2Bis_clip:true</span></code></pre>
+
+<h4>Response</h4>
+
+<pre class="line-numbers">
+<code class="language-json">[
+  {
+    "id": "5235328819001",
+    "account_id": "57838016001",
+    "ad_keys": null,
+    <span class="bcls-highlight">"clip_source_video_id": "4752143002001",</span>
+    "complete": true,
+    "created_at": "2016-12-04T17:06:20.562Z",
+    "cue_points": [],
+    "custom_fields": {
+      "subject": "Birds"
+    },
+    "delivery_type": "static_origin",
+    "description": null,
+    "digital_master_id": "5235339325001",
+    "duration": 24042,
+    "economics": "AD_SUPPORTED",
+    "folder_id": null,
+    "geo": null,
+    "has_digital_master": true,
+    "images": {
+      "thumbnail": {
+        "asset_id": "5235341448001",
+        "remote": false,
+        "src": "http://brightcove.vo.llnwd.net/v1/unsecured/media/57838016001/201612/2025/57838016001_5235341448001_5235328819001-th.jpg?pubId=57838016001&amp;videoId=5235328819001",
+        "sources": [
+          {
+            "src": "http://brightcove.vo.llnwd.net/v1/unsecured/media/57838016001/201612/2025/57838016001_5235341448001_5235328819001-th.jpg?pubId=57838016001&amp;videoId=5235328819001",
+            "height": 90,
+            "width": 160
+          },
+          {
+            "src": "https://brightcove.hs.llnwd.net/v2/unsecured/media/57838016001/201612/2025/57838016001_5235341448001_5235328819001-th.jpg?pubId=57838016001&amp;videoId=5235328819001",
+            "height": 90,
+            "width": 160
+          }
+        ]
+      },
+      "poster": {
+        "asset_id": "5235339121001",
+        "remote": false,
+        "src": "http://brightcove.vo.llnwd.net/v1/unsecured/media/57838016001/201612/2025/57838016001_5235339121001_5235328819001-vs.jpg?pubId=57838016001&amp;videoId=5235328819001",
+        "sources": [
+          {
+            "src": "http://brightcove.vo.llnwd.net/v1/unsecured/media/57838016001/201612/2025/57838016001_5235339121001_5235328819001-vs.jpg?pubId=57838016001&amp;videoId=5235328819001",
+            "height": 360,
+            "width": 640
+          },
+          {
+            "src": "https://brightcove.hs.llnwd.net/v2/unsecured/media/57838016001/201612/2025/57838016001_5235339121001_5235328819001-vs.jpg?pubId=57838016001&amp;videoId=5235328819001",
+            "height": 360,
+            "width": 640
+          }
+        ]
+      }
+    },
+    "link": null,
+    "long_description": null,
+    "name": "greatblueheron.mp4 - Clip-2016-12-04",
+    "original_filename": "2efadac9-8e36-423c-b988-afcf2cd23c49.mov",
+    "projection": null,
+    "published_at": "2016-12-04T17:06:20.562Z",
+    "reference_id": null,
+    "schedule": null,
+    "sharing": null,
+    "state": "ACTIVE",
+    "tags": [
+      "newtag"
+    ],
+    "text_tracks": [],
+    "updated_at": "2016-12-04T17:08:41.944Z"
+  },
+  {
+    "id": "5235312567001",
+    "account_id": "57838016001",
+    "ad_keys": null,
+    <span class="bcls-highlight">"clip_source_video_id": "5220368996001",</span>
+    "complete": true,
+    "created_at": "2016-12-04T17:07:58.450Z",
+    "cue_points": [],
+    "custom_fields": {
+      "subject": "Birds"
+    },
+    "delivery_type": "static_origin",
+    "description": "Mother and child owls...",
+    "digital_master_id": "5235341452001",
+    "duration": 39253,
+    "economics": "AD_SUPPORTED",
+    "folder_id": null,
+    "geo": null,
+    "has_digital_master": true,
+    "images": {
+      "thumbnail": {
+        "asset_id": "5235339124001",
+        "remote": false,
+        "src": "http://brightcove.vo.llnwd.net/v1/unsecured/media/57838016001/201612/1897/57838016001_5235339124001_5235312567001-th.jpg?pubId=57838016001&amp;videoId=5235312567001",
+        "sources": [
+          {
+            "src": "http://brightcove.vo.llnwd.net/v1/unsecured/media/57838016001/201612/1897/57838016001_5235339124001_5235312567001-th.jpg?pubId=57838016001&amp;videoId=5235312567001",
+            "height": 90,
+            "width": 160
+          },
+          {
+            "src": "https://brightcove.hs.llnwd.net/v2/unsecured/media/57838016001/201612/1897/57838016001_5235339124001_5235312567001-th.jpg?pubId=57838016001&amp;videoId=5235312567001",
+            "height": 90,
+            "width": 160
+          }
+        ]
+      },
+      "poster": {
+        "asset_id": "5235341824001",
+        "remote": false,
+        "src": "http://brightcove.vo.llnwd.net/v1/unsecured/media/57838016001/201612/1897/57838016001_5235341824001_5235312567001-vs.jpg?pubId=57838016001&amp;videoId=5235312567001",
+        "sources": [
+          {
+            "src": "http://brightcove.vo.llnwd.net/v1/unsecured/media/57838016001/201612/1897/57838016001_5235341824001_5235312567001-vs.jpg?pubId=57838016001&amp;videoId=5235312567001",
+            "height": 540,
+            "width": 960
+          },
+          {
+            "src": "https://brightcove.hs.llnwd.net/v2/unsecured/media/57838016001/201612/1897/57838016001_5235341824001_5235312567001-vs.jpg?pubId=57838016001&amp;videoId=5235312567001",
+            "height": 540,
+            "width": 960
+          }
+        ]
+      }
+    },
+    "link": null,
+    "long_description": null,
+    "name": "Great Horned Owl - Clip-2016-12-04",
+    "original_filename": "c0640095-e696-41ea-8e7e-2ebf4d090d69.mov",
+    "projection": null,
+    "published_at": "2016-12-04T17:07:58.450Z",
+    "reference_id": null,
+    "schedule": null,
+    "sharing": null,
+    "state": "ACTIVE",
+    "tags": [
+      "bird",
+      "nature",
+      "air"
+    ],
+    "text_tracks": [],
+    "updated_at": "2016-12-04T17:09:16.967Z"
+  }
+]</code></pre>
+</section><section id="removingAssets" class="bcls-section"><h2>Removing Assets</h2>
+
+<p>If you are not going to use your clips for any other purpose than sharing the to social media sites, you may wish to reduce your managed storage by removing assets from them. In terms of storage, the renditions make the most difference, but you can remove posters and thumbnails as well, if you wish (this would also help to identify the clips in Studio as not being videos for general use).</p>
+
+<aside class="bcls-aside bcls-aside--warning">You do <strong>not</strong> want to delete the clip itself, because if you do, you will no longer be able to get social analytics for it. You will also <strong>not</strong> get social analytics if you deactivate the clip or schedule it for a future date.</aside><p>To remove assets, you will use <a href="https://docs.brightcove.com/cms-api/v1/doc/index.html#api-assetGroup">the asset endpoints of the CMS API</a>. The logic is simple: first GET the assets to retrieve their ids in the Video Cloud system, and then DELETE them:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="Logic for Removing Rendtions" src="https://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/cms-api/guides/clips/clips.svg" /><figcaption class="bcls-caption--image">Logic for Removing Renditions</figcaption></figure><p>Usually there will be only a single poster and thumbnail to delete, but there will generally be multiple renditions, so if you are going to do this programmatically, you will need to loop over the array of objects returned by the GET renditions request and delete the renditions one by one. Below are the relevant API endpoints and some sample code (JavaScript + a proxy written in PHP to make the API requests) to perform the tasks of removing the assets.</p>
+</section><section id="assetEndpoints" class="bcls-section"><h2>Asset endpoints</h2>
+
+<p>Here are the relevant asset endpoints you will need to remove assets. For all these endpoints, the base URL is:</p>
+
+<pre class="line-numbers">
+<code class="language-http">https://cms.api.brightcove.com/v1/accounts</code></pre>
+
+<h3>Renditions</h3>
+
+<h4>GET renditions</h4>
+
+<pre class="line-numbers">
+<code class="language-http">/<span class="bcls-input">account_id</span>/videos/<span class="bcls-input">video_id</span>/assets/renditions</code></pre>
+
+<h4>DELETE a rendition</h4>
+
+<pre class="line-numbers">
+<code class="language-http">/<span class="bcls-input">account_id</span>/videos/<span class="bcls-input">video_id</span>/assets/renditions/<span class="bcls-input">rendition_id</span></code></pre>
+
+<h3>Posters</h3>
+
+<h4>GET posters</h4>
+
+<pre class="line-numbers">
+<code class="language-http">/<span class="bcls-input">account_id</span>/videos/<span class="bcls-input">video_id</span>/assets/poster</code></pre>
+
+<h4>DELETE a poster</h4>
+
+<pre class="line-numbers">
+<code class="language-http">/<span class="bcls-input">account_id</span>/videos/<span class="bcls-input">video_id</span>/assets/poster/<span class="bcls-input">poster_id</span></code></pre>
+
+<h3>Thumbnails</h3>
+
+<h4>GET thumbnails</h4>
+
+<pre class="line-numbers">
+<code class="language-http">/<span class="bcls-input">account_id</span>/videos/<span class="bcls-input">video_id</span>/assets/thumbnail</code></pre>
+
+<h4>DELETE a thumbnail</h4>
+
+<pre class="line-numbers">
+<code class="language-http">/<span class="bcls-input">account_id</span>/videos/<span class="bcls-input">video_id</span>/assets/thumbnail/<span class="bcls-input">thumbnail_id</span></code></pre>
+</section><section id="sampleCode" class="bcls-section"><h2>Sample app</h2>
+
+<p>Below is sample code for an app that finds all the clips in an account and then removes all renditions, as well as the poster and thumbnail for each clip.</p>
+
+<h3>HTML</h3>
+
+<pre class="line-numbers">
+<code class="language-html">&lt;fieldset&gt;
+    &lt;legend&gt;Inputs&lt;/legend&gt;
+    &lt;p&gt;Account id: &lt;input type="text" name="account_id" id="account_id" value=""&gt;&lt;/p&gt;
+    &lt;p&gt;Client id: &lt;input type="text" name="client_id" id="client_id" value=""&gt;&lt;/p&gt;
+    &lt;p&gt;Client secret: &lt;input type="text" name="client_secret" id="client_secret" value=""&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;button id="goBtn"&gt;Remove all clip assets&lt;/button&gt;&lt;/p&gt;
+&lt;/fieldset&gt;
+&lt;h2&gt;Results&lt;/h2&gt;
+&lt;pre id="status"&gt;&lt;/pre&gt;</code></pre>
+
+<h3>JavaScript</h3>
+
+<pre class="line-numbers">
+<code class="language-javascript">var BCLS = (function (window, document) {
+  /**
+   * this scripts assumes that HTML elements with ids shown
+   * in the following assignments exist in the page that
+   * calls this script.
+   * Alternatively, store the client_id and client_secret
+   * in the proxy (NOT in a client-side script!)
+   * and the account_id value here
+   */
+  var account_id      = document.getElementById('account_id'),
+      client_id       = document.getElementById('client_id'),
+      client_secret   = document.getElementById('client_secret'),
+      status          = document.getElementById('status'),
+      goBtn           = document.getElementById('goBtn'),
+      videoCount      = 0,
+      videoNumber     = 0,
+      totalCalls      = 0,
+      callNumber      = 0,
+      renditionNumber = 0,
+      videoData       = [],
+      renditionData   = [],
+      posterData      = {},
+      thumbnailData   = {};
+
+  /**
+   * sets up all API requests and handles the responses
+   * @param {String} type the request type
+   */
+  function setUpRequest(type) {
+      var baseURL = 'https://cms.api.brightcove.com/v1/accounts',
+          endpoint,
+          responseDecoded,
+          // recommended limit value for best performance with CMS API
+          limit   = 25,
+          options = {};
+      options.client_id = (client_id.value) ? client_id.value : null;
+      options.client_secret = (client_secret.value) ? client_secret.value : null;
+
+      switch (type) {
+          // get a count of clips
+          case 'getCount':
+              endpoint = '/' + account_id.value + '/counts/videos?q=%2Bis_clip:true';
+              options.url = baseURL + endpoint;
+              options.requestType = 'GET';
+              makeRequest(options, function(response) {
+                  if (response) {
+                      responseDecoded = JSON.parse(response);
+                      videoCount = parseInt(responseDecoded.count);
+                      // calculate total calls needed to get the video clips
+                      totalCalls = Math.ceil(videoCount / limit);
+                      setUpRequest('getVideoClips');
+                  }
+              });
+              break;
+          // retrieve the clips
+          case 'getVideoClips':
+              endpoint = '/' + account_id.value + '/videos?q=%2Bis_clip:true&amp;limit=' + limit + '&amp;offset=' + (limit * callNumber);
+              options.url = baseURL + endpoint;
+              options.requestType = 'GET';
+              makeRequest(options, function(response) {
+                  if (response) {
+                      responseDecoded = JSON.parse(response);
+                      // add new clips to videoData array
+                      videoData.push.apply(videoData, responseDecoded);
+                  }
+                  // increment the call number
+                  callNumber++;
+                  // are we done?
+                  if (callNumber &lt; totalCalls) {
+                      // get the next batch
+                      setUpRequest('getVideoClips');
+                  } else {
+                      // got all the clips
+                      // update status
+                      status.textContent =+ videoData.length + ' video clips found \n';
+                      // reset the callNumber
+                      callNumber = 0;
+                      setUpRequest('getRenditions');
+                  }
+              });
+              break;
+          case 'getRenditions':
+              endpoint = '/' + account_id.value + '/videos/' + videoData[videoNumber].id + '/assets/renditions';
+              options.url = baseURL + endpoint;
+              options.requestType = 'GET';
+              // update status
+              status.textContent =+ 'fetching renditions for clip ' + videoData[callNumber].name + ' \n';
+              makeRequest(options, function(response) {
+                if (response) {
+                    responseDecoded = JSON.parse(response);
+                    renditionData = responseDecoded;
+                    // update status
+                    status.textContent =+ renditionData.length + ' renditions found for clip ' + videoData[callNumber].name + ' \n';
+                    if (renditionData.length &gt; 0) {
+                        setUpRequest('deleteRendition');
+                    } else {
+                        setUpRequest('getPoster');
+                    }
+                } else {
+                    // no renditions
+                    status.textContent =+ 'no renditions found for clip number ' + videoData[callNumber].name + ' \n';
+                    setUpRequest('getPoster');
+                }
+              });
+              break;
+          case 'deleteRendition':
+              endpoint = '/' + account_id.value + '/videos/' + videoData[videoNumber].id + '/assets/renditions/' + renditionData[renditionNumber].id;
+              options.url = baseURL + endpoint;
+              options.requestType = 'DELETE';
+              makeRequest(options, function(response) {
+                // there should be no response unless there was an error
+                if (response) {
+                    status.textContent += 'Delete rendition response: ' + response + ' \n';
+                    // keep going anyway
+                    renditionNumber++;
+                    if (renditionNumber &lt; renditionData.length) {
+                        setUpRequest('deleteRendition');
+                    } else {
+                        // done with renditions, do poster
+                        setUpRequest('getPoster');
+                    }
+                } else {
+                    status.textContent += 'Rendition deleted for ' + videoData[callNumber].name + '\n';
+                    renditionNumber++;
+                    // check to see if there are more renditions
+                    if (renditionNumber &lt; renditionData.length) {
+                        setUpRequest('deleteRendition');
+                    } else {
+                        // do the poster
+                        setUpRequest('getPoster');
+                    }
+                }
+              });
+              break;
+          case 'getPoster':
+              endpoint = '/' + account_id.value + '/videos/' + videoData[videoNumber].id + '/assets/poster';
+              options.url = baseURL + endpoint;
+              options.requestType = 'GET';
+              makeRequest(options, function(response) {
+                if (response) {
+                    posterData = JSON.parse(response);
+                    setUpRequest('deletePoster');
+                } else {
+                    // no poster, do the thumbail
+                    setUpRequest('getThumbnail');
+                }
+              });
+              break;
+          case 'deletePoster':
+              endpoint = '/' + account_id.value + '/videos/' + videoData[videoNumber].id + '/assets/poster/' + posterData.id;
+              options.url = baseURL + endpoint;
+              options.requestType = 'DELETE';
+              makeRequest(options, function(response) {
+                // no response unless something went wront
+                if (response) {
+                    status.textContent += 'Delete poster response: ' + response + ' \n';
+                    // try thumbnail anyway
+                    setUpRequest('getThumbnail');
+                } else {
+                    // success; do thumbnail
+                    status.textContent += 'Poster deleted for ' + videoData[callNumber].name + ' \n';
+                    setUpRequest('getThumbnail');
+                }
+               });
+              break;
+          case 'getThumbnail':
+              endpoint = '/' + account_id.value + '/videos/' + videoData[callNumber].id + '/assets/thumbnail';
+              options.url = baseURL + endpoint;
+              options.requestType = 'GET';
+              makeRequest('options', function(response) {
+                if (response) {
+                    thumbnailData = JSON.parse(response);
+                    setUpRequest('deleteThumbnail');
+                } else {
+                    // if no thumbnail, go on
+                    videoNumber++;
+                    if (videoNumber &lt; videoCount) {
+                        setUpRequest('getRenditions');
+                    } else {
+                        // done
+                        status.textContent += 'Finished!';
+                    }
+                }
+              });
+              break;
+          case 'deleteThumbnail':
+              endpoint = '/' + account_id.value + '/videos/' + videoData[videoNumber].id + '/assets/thumbnail/' + thumbnailData.id;
+              options.url = baseURL + endpoint;
+              options.requestType = 'DELETE';
+              makeRequest(options, function(response) {
+                // no response unless something went wrong
+                if (response) {
+                    status.textContent += 'Delete thumbnail response: ' + response + ' \n';
+                    // do next video anyway if any
+                    videoNumber++;
+                    if (videoNumber &lt; videoCount) {
+                        setUpRequest('getRenditions');
+                    } else {
+                        // done
+                        status.textContent += 'Finished!';
+                    }
+                } else {
+                    // success
+                    status.textContent += 'Thumbnail deleted for ' + videoData[callNumber].name + ' \n';
+                    // do next video if any
+                    videoNumber++;
+                    if (videoNumber &lt; videoCount) {
+                        setUpRequest('getRenditions');
+                    } else {
+                        // done
+                        status.textContent += 'Finished!';
+                    }
+                }
+              });
+              break;
+          default:
+            if (console) {
+                console.log('default case: we should not be here');
+            }
+      }
+  }
+
+  /**
+   * send API request to the proxy
+   * @param  {Object} requestData options for the request
+   * @param  {Function} [callback] callback function
+   */
+  function makeRequest(options, callback) {
+    var httpRequest = new XMLHttpRequest(),
+      response,
+      requestParams,
+      dataString,
+      proxyURL = 'https://solutions.brightcove.com/bcls/bcls-proxy/clips-proxy.php',
+      // response handler
+      getResponse = function() {
+        try {
+          if (httpRequest.readyState === 4) {
+              if (httpRequest.status &gt;= 200 &amp;&amp; httpRequest.status &lt; 300) {
+                response = httpRequest.responseText;
+                console.log('raw response', response);
+                // some API requests return '{null}' for empty responses - breaks JSON.parse
+                if (response === '{null}') {
+                  response = null;
+                }
+                // return the response
+                callback(response);
+              } else {
+                alert('There was a problem with the request. Request returned ' + httpRequest.status);
+              }
+            }
+          } catch (e) {
+            alert('Caught Exception: ' + e);
+          }
+        };
+  /**
+   * set up request data
+   * the proxy used here takes the following request body:
+   * JSON.stringify(options)
+   */
+  // set response handler
+  httpRequest.onreadystatechange = getResponse;
+  // open the request
+  httpRequest.open('POST', proxyURL);
+  // set headers if there is a set header line, remove it
+  // open and send request
+  httpRequest.send(JSON.stringify(options));
+}</code></pre>
+
+<h3>Proxy</h3>
+
+<aside class="bcls-aside bcls-aside--information">In order to build your own version the sample app on this page, you must create and host your own proxy. (The proxies used by Brightcove Learning Services only accept requests from Brightcove domains.) You can download two versions of our proxy code:
+<ul><li><a href="https://learning-services-media.brightcove.com/doc-assets/proxy/bcls-proxy-for-distribution.php.zip">This is a general version that expects client credentials to be passed with the request</a></li>
+	<li><a href="https://learning-services-media.brightcove.com/doc-assets/proxy/doc-samples-proxy.php.zip">This version allows you to save your client credentials in the proxy itself on lines 25-26 (recommended)</a></li>
+</ul></aside></section></article></div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-by-field-block-1 clearfix" id="block-views-block-related-content-by-field-block-1">
+  
+    
+
+      <div class="form-group"><div class="view view-related-content-by-field view-id-related_content_by_field view-display-id-block_1 js-view-dom-id-ded4731cea41eca8a9e4bee22da2ccb5fb929e61528ec03f8b8692908bd8431a">
+  
+    
+      <div class="view-header">
+      <h2>Related content</h2>
+    </div>
+      
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="creating-video-clip-using-brightcove-social.html" hreflang="en">Creating a Video Clip Using Brightcove Social</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="row">
+            <div class="region region-footer-top-left col-md-9" style="margin-bottom: 1em;">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove Support</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://status.brightcove.com">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="contact-support.html" data-drupal-link-system-path="node/18632">Support - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.brightcove.com/en/contact/create">Support - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Documentation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Training</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="online-training-courses.html" data-drupal-link-system-path="node/18286">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a course</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://www.brightcove.com">Brightcove.com</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="region region-footer-top-right col-md-3">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Brightcove Inc. (NASDAQ: BCOV), is a leading global provider of powerful cloud solutions for delivering and monetizing video across connected devices.</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="row">
+            <div class="region region-footer-bottom-left col-md-8">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item">Brightcove Inc. All rights reserved.</div>
+      
+      <div class="field field--name-field-legal-links field--type-link field--label-hidden field--items">
+              <div class="field--item"><a href="https://www.brightcove.com/en/privacy">Privacy</a></div>
+              <div class="field--item"><a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="region region-footer-bottom-right col-md-4">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items">
+              <div class="field--item">
+
+<a href="https://www.linkedin.com/company/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://twitter.com/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://www.facebook.com/Brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://plus.google.com/100830370440271567091" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18006","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGkkHXlVrBldRXQE=","queueTime":0,"applicationTime":15,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="sites/default/files/favicon-64.png" type="image/png" />
+<link rel="alternate" hreflang="en" href="publishing-videos-social-media-platforms.html" />
+<link rel="canonical" href="publishing-videos-social-media-platforms.html" />
+<link rel="shortlink" href="publishing-videos-social-media-platforms.html" />
+<link rel="revision" href="publishing-videos-social-media-platforms.html" />
+
+    <title>Publishing Videos to Social Media Platforms | Brightcove Learning</title>
+    <link rel="stylesheet" media="all" href="sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw_q23msc.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4_q23msc.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on" />
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  </head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="navigation-secondary clearfix">
+          <div class="region region-navigation-secondary">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary Navigation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="contact-support.html" title="Create a Support Request" data-drupal-link-system-path="node/18632">Support Request</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://status.brightcove.com/">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://university.brightcove.com/">Brightcove University</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gtranslate">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" style="font-weight:bold;background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">English</option><option value="en|fr" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">French</option><option value="en|de" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">German</option><option value="en|ja" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">Japanese</option><option value="en|ko" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">Korean</option><option value="en|es" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">Spanish</option></select>
+</div>
+<div class="gtranslate__credits">
+  Translations Provided by Google Translate
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="navbar-header col-md-3">
+                  <a class="logo navbar-btn pull-left" href="index.html" title="Home" rel="home">
+            <img src="themes/custom/bcdocs/images/brightcove.png" alt="Home" />
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" title="Home page" data-drupal-link-system-path="node/18643">Home</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Products
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="video-cloud.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://gallery.support.brightcove.com">Gallery</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a href="social.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ssai.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Quick Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="analytics-api.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience-api.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-api.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-connectors-video-cloud.html" data-drupal-link-system-path="node/18662">CMS Connectors for Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="data-collection-api.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="delivery-system-api.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="developer-tools-and-concepts.html" data-drupal-link-system-path="node/18430">Developer Tools and Concepts</a>
+                  </li>
+                              <li class="expanded">
+        <a href="native-player-sdks.html" data-drupal-link-system-path="node/18367">Device SDKs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="dynamic-ingest-api.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="getting-started-brightcove-apis-0.html" data-drupal-link-system-path="node/18711">Getting Started - Brightcove APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="page-experience-api.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ingest-profiles-api.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="oauth-api.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="platform-api-code-samples.html" data-drupal-link-system-path="node/18675">Platform API Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="playback-api.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-code-samples.html" data-drupal-link-system-path="node/18630">Player Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-developer.html" data-drupal-link-system-path="node/18362">Player Developer</a>
+                  </li>
+                              <li class="expanded">
+        <a href="player-management-api.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="policy-api.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="release-notes.html" data-drupal-link-system-path="node/18687">Release Notes</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Training
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="https://university.brightcove.com">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a Course</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a href="brightcove-support-documentation-announcements.html" title="See what&#039;s new in Brightcove Documentation" data-drupal-link-system-path="node/18896">What&#039;s New</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="full-width-headline">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" role="heading">
+            <div class="region region-header">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      Documentation
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="main-container container  js-quickedit-main-content">
+    <div class="row">
+
+                              <aside class="col-sm-3" role="complementary">
+              <div class="region region-sidebar-first">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="publishing-videos-social-media-platforms.html" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group">
+      <label for="edit-search" class="control-label sr-only">Search</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="Search" />
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-tmwl7by7t7xjcel-73rfug2i6o0encymfts0ygkjmno" type="hidden" name="form_build_id" value="form-tMwL7bY7t7xJCEL-73rFug2I6O0enCYmFts0yGKJMNo" /><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form" /><div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix">
+  
+      <h2 class="block-title">On This Page</h2>
+    
+
+      <div class="bc-ipnav-block"></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="highlighted">  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a id="main-content"></a>
+            <div class="region region-content">
+        <h1 class="page-header"><span>Publishing Videos to Social Media Platforms</span>
+</h1>
+
+  
+<div class="node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+      </div>
+
+  <div class="group-second-row">
+  
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+          <div class="field--item">Social</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Studio User</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Share Using Brightcove Social</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item"><p>In this topic you will learn how to publish videos to social media using Brightcove Social.</p><div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="5018055033001"> </div>
+<script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script><p>Brightcove Social allows you to easily publish videos in your Video Cloud account out to YouTube, Facebook and Twitter. Before you can publish videos, you must create publishing destinations for the social accounts you wish to publish videos to. For information on creating publishing destinations, see <a href="creating-social-media-publishing-destinations.html">Creating Social Media Publishing Destinations</a>.</p>
+
+<p>Note that using Auto Sync and manually publishing videos using the Social module are independent operations. Auto Sync is not aware of which videos have been manually published using the Social module. If a video is tagged in a way that causes Auto Sync to publish it to one of your social destinations, it will do that regardless if that video has previously been manually published using the Social module.</p>
+
+<div class="BCL-concept">
+<h2 id="rules">Determining the rendition to publish</h2>
+
+<p>In order to distribute videos to a social platform, videos should have at least one MP4 rendition or a video master available. Videos uploaded using one of the Brightcove provided, standard ingest profiles will save a master by default. For more information on archiving masters, see the <a href="archiving-masters.html">Archiving Masters</a> document.</p>
+
+<p>When distributing videos to a social platform, Brightcove Social will attempt to distribute the highest quality rendition that meets the rules applied by the individual social platform. If the rendition sent to the social platform is rejected, there is no attempt to send another rendition.</p>
+
+<p>The rules to rank videos are as follows:</p>
+
+<ul><li>MP4 assets are better than any other video container. No attempt is made to order the other types of video containers.</li>
+	<li>If the video containers are of equivalent quality, the video with the higher encoding rate is considered better.</li>
+	<li>If the encoding rates are of equivalent quality, the video with the higher resolution is considered better. Note that because not all renditions of a video necessarily have the same aspect ratio, we compare videos based on a computed 'compound' proxy for the resolution by using the product of the height and the width of the respective videos.</li>
+</ul><p>Note that if one of the video assets is lacking any of the above information necessary to make the comparison, that video is considered 'worse' than the video that has all of the necessary information.</p>
+</div>
+
+<div class="BCL-concept">
+<h2 id="publish">Publishing videos to social media</h2>
+
+<p>Once you have <a href="creating-social-media-publishing-destinations.html">created publishing destinations</a>, follow these steps to publish videos to social media.</p>
+
+<ol class="bcls-tasklist"><li>Open Brightcove Social.</li>
+	<li>Click <strong>Videos</strong> in the left navigation. A list of videos in your Video Cloud account will display. Videos that haven't been published to a social media account will display a <strong>Status</strong> of <strong>Never Published</strong>. Videos that have been published will display <strong>Check Status</strong>. Click the link to see the publishing status of the video on the social media destinations.
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16344-video-list.png" /></div>
+	</li>
+	<li>Click on a video to publish and then click <strong>Publish</strong>.
+	<p class="BCL-aside">Note: Videos that are DRM enabled will display a lock icon in the video thumbnail. DRM enabled videos that were ingested using a Dynamic Delivery ingest profile can be published, however, they can't be downloaded or have clips created. These buttons will be disabled when a DRM enabled video is selected.</p>
+	</li>
+	<li>Select the destination(s) to publish the video to. You can also click <strong>Add New Destination</strong> to <a href="creating-social-media-publishing-destinations.html">create a new destination</a>.
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16344-publish-preview.png" /></div>
+
+	<p class="BCL-aside">Note: Destinations with an error will display an error icon (<img alt="" src="https://img.brightcove.com/node16344-error-icon.png" />) next to the name. Select the destination and then click <strong>Reconnect</strong> to resolve the issue.</p>
+	</li>
+	<li>Review the video metadata properties for each destination. The video properties will differ depending on the social media platform you are publishing to. For more information, see the sections for each social media platform:
+	<ul><li><a href="#youtube">YouTube</a></li>
+		<li><a href="#facebook">Facebook</a></li>
+		<li><a href="#twitter">Twitter</a></li>
+	</ul></li>
+	<li>Click the <strong>Publish to Destination</strong> button to publish the videos. Monitor the distribution status by clicking <strong>Published</strong> in the left navigation. For information on viewing the status of publishing streams, see <a href="viewing-videos-published-social-media.html">Viewing Your Social Media Publishing Streams</a>.</li>
+</ol><p>Publishing videos using the Publish button is a one-time publishing operation. Videos published using this method will not receive any metadata updates from the Social module after the initial upload.</p>
+</div>
+
+<div class="BCL-concept">
+<h2 id="youtube">Setting video properties for YouTube</h2>
+
+<p>By default, videos that are up to 15 minutes long can be uploaded to YouTube. For information on uploading longer videos, see <a href="enabling-longer-videos-youtube.html">Enabling Longer Videos In YouTube</a>. After a video is published to YouTube, any updates to the source video in Studio will not update on the YouTube side.</p>
+
+<p>When choosing a YouTube destination, the following video properties can be configured:</p>
+
+<ul><li><a href="#ytthumb">Thumbnail Source</a></li>
+	<li><a href="#ytpostinfo">Post Info</a></li>
+	<li><a href="#ytschedule">Schedule</a></li>
+	<li><a href="#ytcaptions">Captions</a></li>
+	<li><a href="#ytvisibility">Visibility</a></li>
+	<li><a href="#ytlicense">License</a></li>
+</ul><p class="BCL-aside">Note: <a href="creating-social-media-publishing-destinations.html#youtube_defaults">Default video properties for YouTube</a> can be set by editing the destination.</p>
+
+<p class="BCL-aside">Note: The YouTube API doesn't support disabling comments via their current API so there is no option to disable comments in the Social UI.</p>
+
+<div id="ytthumb" class="BCL-subsection">
+<h3>Configuring the thumbnail source</h3>
+
+<p>When posting to YouTube, the video thumbnail source can be set to:</p>
+
+<ul><li><strong>YouTube</strong> - YouTube will select a thumbnail</li>
+	<li><strong>Video Cloud</strong> - Use the Video Cloud thumbnail image as the YouTube thumbnail</li>
+	<li><strong>Custom Image</strong> - Browse and select a custom thumbnail image to use</li>
+</ul><div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16344-yt-thumb.png" /></div>
+
+<p>Checking <strong>Use for all destinations</strong> will use this thumbnail for all destinations currently being published to.</p>
+
+<p class="BCL-aside">Note: Before you can post custom video thumbnails from Brightcove Social to YouTube, your YouTube account must be verified. For information on verifying your YouTube account, see <a href="https://www.youtube.com/verify">this link</a>.</p>
+
+<p class="BCL-aside">Note: Updates to thumbnail images in Studio will not update the thumbnail image on the YouTube side.</p>
+</div>
+
+<div id="ytpostinfo" class="BCL-subsection">
+<h3>Configuring the Post Info properties</h3>
+
+<p>Click on the <strong>POST INFO Info</strong> link. The following YouTube video properties can be set:</p>
+
+<ul><li><strong>Title</strong> - Title of the video (defaults to Video Cloud title). YouTube supports up to 100 characters.</li>
+	<li><strong>Description</strong> - Description of the video (defaults to Video Cloud short description). YouTube supports up to 5000 characters.</li>
+	<li><strong>YouTube Category</strong> - Content category for the video</li>
+	<li><strong>Tags</strong> - Tags for the video (defaults to Video Cloud tags). There's no specific tag count limit; you can use max 30 characters per tag, and the text field accepts up to 500 characters.</li>
+</ul><aside class="bcls-aside bcls-aside--information">A few things to note about the character limit for tags:
+<ol><li>The property value is a list, and commas between items in the list count toward the 500 character limit.</li>
+	<li>If a tag contains a space, the API server handles the tag value as though it were wrapped in quotation marks, and the quotation marks count toward the character limit. So if you have a tag such as <code>late news</code>, this is treated as <code>"late news"</code> and counts as 11 characters (including the quotation marks).</li>
+	<li>If you exceed the character limit on tags, no error will be reported in the Social module. To verify that videos were shared successfully, click <strong>Published</strong> in the left navigation, check on YouTube or get the status using the <a href="overview-social-api.html">Social API</a>.</li>
+</ol></aside><div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16344-yt-post-info.png" /></div>
+</div>
+
+<div id="ytschedule" class="BCL-subsection">
+<h3>Configuring the Schedule properties</h3>
+
+<p>Click on the <strong>SCHEDULE</strong> link and select a schedule setting:</p>
+
+<ul><li><strong>Publish Immediately</strong> - To publish the video immediately</li>
+	<li><strong>Schedule Publish Date</strong> - To choose a publish date and time for the video.</li>
+</ul><div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16344-yt-schedule-info.png" /></div>
+
+<p class="BCL-aside">Note: The schedule date and time are sent to YouTube only once, when the video is sent to YouTube. If the schedule date and/or time needs to be changed, they must be changed in YouTube. The Social module will not update any schedule dates or times after the initial sync to YouTube.</p>
+
+<p class="BCL-aside">Note: To have the <a href="#ytvisibility">video visibility</a> set to <strong>Unlisted</strong> or <strong>Private</strong>, set the <strong>Schedule</strong> option to <strong>Publish Immediately</strong> and set the <strong>Visibility</strong> option to <strong>Unlisted</strong> or <strong>Private</strong>.</p>
+</div>
+
+<div id="ytcaptions" class="BCL-subsection">
+<h3>Configuring the Captions properties</h3>
+
+<p>Click on the <strong>CAPTIONS</strong> link. Select the source for the captions:</p>
+
+<ul><li><strong>Use Video Cloud captions</strong> - Uses the captions associated with the video. For information on working with captions in Video Cloud, see <a href="overview-adding-captions-video.html">Overview: Adding Captions to a Video</a>.</li>
+	<li><strong>No captions</strong> - No captions will be sent to Facebook</li>
+	<li><strong>Upload captions</strong> - Click <strong>Upload captions</strong> and browse and select a captions file. The captions file should be in .VTT or .SRT format. Select the caption <strong>Language</strong>, add a <strong>Label</strong> and select the <strong>Format</strong>. Click <strong>Add Caption File</strong>.</li>
+</ul><div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16344-yt-captions-info.png" /></div>
+</div>
+
+<div id="ytvisibility" class="BCL-subsection">
+<h3>Configuring the Visibility properties</h3>
+
+<p>Click on the <strong>VISIBILITY</strong> link and select a Privacy setting for the video. The following Privacy settings are available:</p>
+
+<ul><li><strong>Public</strong> - Anyone can view the video</li>
+	<li><strong>Unlisted</strong> - Anyone who has the link to the video can view it</li>
+	<li><strong>Private</strong> - Video can only be seen by you and the users you select</li>
+</ul><p class="BCL-aside">Note: With YouTube destinations, it is possible to dynamically assign the privacy setting using a custom field associated with the video. For information, see <a href="setting-privacy-status-video.html">Setting the Privacy Status for a Video</a>.</p>
+
+<p>There is also a setting to <strong>Notify subscribers when video is posted to YouTube</strong>. If checked, your subscribers will see your videos in their Subscriptions feed and may receive a notification that the video was uploaded.</p>
+
+<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16344-yt-privacy-info.png" /></div>
+
+<p class="BCL-aside">Note: For more information on the YouTube Privacy settings, see the <a href="https://support.google.com/youtube/answer/157177">YouTube documentation</a>.</p>
+</div>
+
+<div id="ytlicense" class="BCL-subsection">
+<h3>Configuring the License properties</h3>
+
+<p>Click on the <strong>LICENSE</strong> link and select a License and Rights Ownership setting for the video. The following settings are available:</p>
+
+<ul><li>Standard YouTube License</li>
+	<li>Creative Commons - Attribution</li>
+</ul><div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16344-yt-license-info.png" /></div>
+
+<p class="BCL-aside">Note: For more information on YouTube License and Rights Ownership, see the <a href="https://support.google.com/youtube/answer/2797468">YouTube documentation</a>.</p>
+</div>
+</div>
+
+<div class="BCL-concept">
+<h2 id="facebook">Setting video properties for Facebook</h2>
+
+<p>When choosing a Facebook destination, the following video properties can be configured:</p>
+
+<ul><li><a href="#fbthumb">Thumbnail</a></li>
+	<li><a href="#fbpostinfo">Post Info</a></li>
+	<li><a href="#fbschedule">Schedule</a></li>
+	<li><a href="#fbcaptions">Captions</a></li>
+	<li><a href="#fbtarget">Target</a></li>
+	<li><a href="#fbmonetize">Monetize</a></li>
+	<li><a href="#fbrights">Rights</a></li>
+	<li><a href="#fbdistribution">Distribution</a></li>
+	<li><a href="#fbtracking">Tracking</a></li>
+</ul><p>After a video is published to Facebook, any updates to the source video in Studio will not update on the Facebook side.</p>
+
+<p class="BCL-aside">Note: <a href="creating-social-media-publishing-destinations.html#facebook_defaults">Default video properties for Facebook</a> can be set by editing the destination.</p>
+
+<p class="BCL-aside">Note: Facebook does not allow .gif images. If your video is using a .gif for the thumbnail image, the publish to Facebook will fail.</p>
+
+<div id="fbthumb" class="BCL-subsection">
+<h3>Configuring the thumbnail source</h3>
+
+<p>When posting to Facebook, the video thumbnail source can be set to:</p>
+
+<ul><li><strong>Facebook</strong> - Facebook will select a thumbnail</li>
+	<li><strong>Video Cloud</strong> - Use the Video Cloud thumbnail image as the Facebook thumbnail</li>
+	<li><strong>Custom Image</strong> - Browse and select a custom thumbnail image to use</li>
+</ul><div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16344-fb-thumb.png" /></div>
+
+<p>Checking <strong>Use for all destinations</strong> will use this thumbnail for all destinations currently being published to.</p>
+
+<p class="BCL-aside">Note: Updates to thumbnail images in Studio will not update the thumbnail image on the Facebook side.</p>
+</div>
+
+<div id="fbpostinfo" class="BCL-subsection">
+<h3>Configuring the Post Info properties</h3>
+
+<p>Click on the <strong>POST INFO</strong> link. The following Facebook video properties can be set:</p>
+
+<ul><li><strong>Title</strong> - Title of the video (defaults to Video Cloud title). Facebook will truncate after 65 characters</li>
+	<li><strong>Status Message</strong> - Description of the video (defaults to Video Cloud short description). Note that Facebook has disabled their search API, therefore, it's not possible for us to auto complete a Facebook mention.</li>
+	<li><strong>Tags</strong> - Select a Facebook tag from the list. Note that Facebook manages the tags. The Social module must comply with them so Social checks the list when typing into the <strong>Tags</strong> field.</li>
+	<li><strong>Facebook Category</strong> - Content category for the video</li>
+</ul><div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16344-fb-post-info.png" /></div>
+</div>
+
+<div id="fbschedule" class="BCL-subsection">
+<h3>Configuring the Schedule properties</h3>
+
+<p>Click on the <strong>SCHEDULE</strong> link. Select <strong>Publish Immediately</strong> to publish the video immediately or select <strong>Schedule Publish Date</strong> and select a <strong>Publish Date &amp; Time</strong>. You can also set that <strong>Posts Never Expire</strong> or select <strong>Schedule Expiration </strong> and then select a <strong>Expiration Date and Time</strong>. A<strong> Time Zone</strong> can also be selected.</p>
+
+<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16344-fb-schedule-info.png" /></div>
+
+<p class="BCL-aside">Note: The schedule date and time are sent to Facebook only once, when the video is sent to Facebook. If the schedule date and/or time needs to be changed, they must be changed in Facebook. The Social module will not update any schedule dates or times after the initial sync to Facebook.</p>
+</div>
+
+<div id="fbcaptions" class="BCL-subsection">
+<h3>Configuring the Captions properties</h3>
+
+<p>Click on the <strong>CAPTIONS</strong> link. Select the source for the captions:</p>
+
+<ul><li><strong>Use Video Cloud captions</strong> - Uses the captions associated with the video. For information on working with captions in Video Cloud, see <a href="overview-adding-captions-video.html">Overview: Adding Captions to a Video</a>.
+
+	<p>For captions Facebook requires a <code class="notranslate">language</code>, which Social populates from the <code class="notranslate">language</code> on the text track, and a <code class="notranslate">name</code>, which Social populates from the <code class="notranslate">label</code> on the text track.</p>
+
+	<p>Be aware that the <code class="notranslate">name</code> will be visible to viewers in the Facebook player via the 'Setting' menu and the 'Closed Captions' menu. We recommend that text track labels be set to something that will be meaningful to viewers. (For example, Labelling captions in different languages in those languages.)</p>
+	</li>
+	<li><strong>No captions</strong> - No captions will be sent to YouTube</li>
+	<li><strong>Upload captions</strong> - Click <strong>Upload captions</strong> and browse and select a captions file. The captions file should be in .VTT or .SRT format. Select the caption <strong>Language</strong> and <strong>Format</strong>. Click <strong>Add Caption File</strong>.</li>
+</ul><p class="BCL-aside">Note: Facebook requires that the caption language include a country in addition to the language. e.g., en-US or en-UK. A language code of just a country code (i.e. 'us') will fail when syncing.</p>
+
+<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16344-fb-captions-info.png" /></div>
+</div>
+
+<div id="fbtarget" class="BCL-subsection">
+<h3>Configuring the Target properties</h3>
+
+<p>Click on the <strong>TARGET</strong> link to set where the video can be seen. The following options are available:</p>
+
+<ul><li><strong>Audience Optimization Interests</strong> - Add tags to describe the interests of people who are most likely to enjoy your post. For more information, see the <a href="https://www.facebook.com/facebookmedia/get-started/interest-targeting">Facebook documentation</a>.</li>
+	<li><strong>Location Restrictions</strong> - Add countries to include or exclude from seeing the post</li>
+</ul><div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16344-fb-targeting-info.png" /></div>
+</div>
+
+<div id="fbmonetize" class="BCL-subsection">
+<h3>Configuring the Monetize properties</h3>
+
+<p>Click on the<strong> MONETIZE </strong>link. The following properties can be set:</p>
+
+<ul><li><strong>Who is your business partner for posts to this destination?</strong> - Add a business partner for branded content posts. As you type, a list of matching businesses will appear. For information on Facebook branded content, see the <a href="https://www.facebook.com/facebookmedia/solutions/branded-content">Facebook documentation</a>.</li>
+	<li><strong>Allow business partner to boost posts</strong></li>
+</ul><div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16344-fb-monetize-info.png" /></div>
+</div>
+
+<div id="fbrights" class="BCL-subsection">
+<h3>Configuring the Rights properties</h3>
+
+<p class="BCL-aside">Note: Your Facebook account must have access to the Facebook Rights Manager for the Rights option to appear.</p>
+
+<p>Click on the<strong> RIGHTS </strong>link. The following properties can be set:</p>
+
+<ul><li><strong>Detect Matching Content</strong> - Check to enable Facebook rights management. For information, see the <a href="https://rightsmanager.fb.com">Facebook documentation</a>.</li>
+	<li><strong>Specify Ownership</strong> - Specify copyright ownership on video, audio, or both</li>
+	<li><strong>Country Selection</strong> - Select <strong>Worldwide</strong>, <strong>Include Countries</strong> or <strong>Exclude Countries</strong>. If include or exclude is selected, then add the <strong>Location Restrictions</strong>.</li>
+	<li><strong>Apply Match Rule</strong> - Select a rule. The <strong>Match Rule</strong> determines what automatic actions happen when people upload matched videos. Match Rules are managed inside of Facebook.</li>
+	<li><strong>Grant Permission</strong> - Authorize certain people or Pages or Instagram accounts to have permission to post videos matching your content.</li>
+</ul><div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16344-fb-rights-info.png" /></div>
+</div>
+
+<div id="fbdistribution" class="BCL-subsection">
+<h3>Configuring the Distribution properties</h3>
+
+<p>Click on the <strong>DISTRIBUTION</strong> link to set where the video can be seen. The following<strong> Custom Distribution and Moderation </strong>options are available:</p>
+
+<ul><li><strong>Show in News Feed</strong> - Shows video in News Feed</li>
+	<li><strong>Allow Embedding</strong> - Allow video embeds on third-party sites</li>
+	<li><strong>Add as Secret Video</strong> - Videos will be accessible only via a direct URL and are not searchable for people on Facebook
+	<ul><li><strong>Turn off Reactions, Comments and Shares</strong> - Disallows likes and comments</li>
+	</ul></li>
+</ul><div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16344-fb-distribution.png" /></div>
+</div>
+
+<div id="fbtracking" class="BCL-subsection">
+<h3>Configuring the Tracking properties</h3>
+
+<p>Click on the <strong>TRACKING</strong> link to assign a universal ID to track the video across systems. The following <strong>Universal ID</strong> options are available:</p>
+
+<ul><li>Leave Blank</li>
+	<li>Use Video ID from Video Cloud</li>
+	<li>Use Reference ID from Video Cloud, if present</li>
+</ul><div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16344-fb-tracking.png" /></div>
+</div>
+
+<div class="BCL-concept">
+<h2 id="twitter">Setting video properties for Twitter</h2>
+
+<p>When choosing a Twitter destination, the following properties can be configured:</p>
+
+<ul><li><a href="#twpostinfo">Post Info</a></li>
+</ul><p class="BCL-aside">After a video is published to Twitter, any updates to the source video in Studio will not update on the Twitter side.</p>
+
+<p class="BCL-aside">Note:<a href="creating-social-media-publishing-destinations.html#twitter_defaults"> Default video properties for Twitter</a> can be set by editing the destination.</p>
+
+<div id="twpostinfo" class="BCL-subsection">
+<h3>Configuring the Post Info properties</h3>
+
+<p>Click on the <strong>POST INFO</strong> link and enter the <strong>Tweet</strong> content. Note that @mentions will be converted to #hashtags when being sent to Twitter. For more information, see the blog post, <a href="https://www.brightcove.com/en/blog/2018/11/deprecation-twitter-mentions-brightcove-social">Deprecation of Twitter @mentions in Brightcove Social</a>.</p>
+
+<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16344-twitter-tweet.png" /></div>
+</div>
+</div>
+
+<div class="BCL-concept">
+<h2 id="clip">Creating a clip</h2>
+
+<p>Brightcove Social provides the ability to create video clips from existing videos in your Video Cloud account. Clips can be used as short, teaser videos that can be posted to social media. To create a clip, click <strong>Create Clip</strong>. For information on creating a clip, see <a href="creating-video-clip-using-brightcove-social.html">Creating a Video Clip Using Brightcove Social</a>.</p>
+</div>
+
+<div class="BCL-concept">
+<h2 id="download">Downloading videos</h2>
+
+<p>Brightcove Social provides the ability to copy the video URL or download a video source file. When downloading, the highest quality MP4 rendition will be downloaded. If there are no MP4 renditions, the <strong>Download</strong> link will be disabled.</p>
+
+<p class="BCL-aside">Note: You cannot download videos that have DRM enabled (lock appears in the video thumbnail). If you select a DRM enabled video, the <strong>Download</strong> button will be disabled.</p>
+
+<p>Follow these steps to download a video.</p>
+
+<ol class="bcls-tasklist"><li>Open Brightcove Social.</li>
+	<li>Click <strong>Videos</strong> in the left navigation. A list of videos in your Video Cloud account will display.</li>
+	<li>Click on the video to download and then click <strong>Download</strong>.</li>
+	<li>Copy the video URL or click the link to open the video in your browser. <span class="bcl-aside">Right click the video to save the source file locally.</span>
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16344-download-info1.png" /></div>
+	</li>
+	<li>Click <strong>Done</strong>.</li>
+</ol><p>The intention of the download link is to allow you to download the file or to use the URL as a value that can be provided to a social platform’s uploader module (for platforms that support upload from an URL). The URL is not intended to be a long-lived, publicly-accessible URL that you would paste into a public social platform post.</p>
+</div>
+
+<div class="BCL-concept">
+<h2 id="viewvc">Viewing videos in the Media module</h2>
+
+<p>Videos on the Videos page can be viewed in the Media module by clicking on a video and then clicking <strong>View in Media</strong>.</p>
+
+<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16344-view-in-vc.png" /></div>
+</div>
+
+<div class="BCL-concept">
+<h2 id="status">Viewing the published locations</h2>
+
+<p>Videos that have been attempted to be published to social media will display <strong>Check Status</strong> in the Status column.</p>
+
+<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16344-status1.png" /></div>
+
+<p>Clicking the <strong>Check Status</strong> link will display a list of social destinations that the video was published to and the status of the publish.</p>
+
+<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16344-published-locations1.png" /></div>
+</div>
+
+<div class="BCL-concept">
+<h2 id="360">Publishing 360° videos</h2>
+
+<p>Both YouTube, Facebook and the Brightcove Player support 360° video playback. When a 360° video is published to YouTube or Facebook using Brightcove Social, the video will playback in 360° mode. Note that there may be a delay while the 360° effect is processing. Before uploading 360° videos to Video Cloud, there are some things you must do. For information on working with 360° videos, see <a href="working-360deg-videos.html">Working with 360° Videos</a>. Once your video has been uploaded, the process to publish 360° videos is the same as regular videos.</p>
+
+<p class="BCL-aside">Note: Playback of 360° videos is limited to certain browsers.</p>
+
+<p class="BCL-aside">Note: When using the Social module to sync a 360° video, the ingest profile used to ingest the video must be configured to save the master file or the video won't sync in 360.</p>
+</div>
+<!-- End of Drupal content --></div>
+</div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-by-field-block-1 clearfix" id="block-views-block-related-content-by-field-block-1">
+  
+    
+
+      <div class="form-group"><div class="view view-related-content-by-field view-id-related_content_by_field view-display-id-block_1 js-view-dom-id-86a6c82b79b52c5621b94f293a0ada684ba1300bba37b7b08d1f39d23c7bc318">
+  
+    
+      <div class="view-header">
+      <h2>Related content</h2>
+    </div>
+      
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="creating-social-media-publishing-destinations.html" hreflang="en">Creating Social Media Publishing Destinations</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="getting-started-brightcove-social.html" hreflang="en">Getting Started with Brightcove Social</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="creating-video-clip-using-brightcove-social.html" hreflang="en">Creating a Video Clip Using Brightcove Social</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="enabling-longer-videos-youtube.html" hreflang="en">Enabling Longer Videos In YouTube</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="working-360deg-videos.html" hreflang="en">Working with 360° Videos</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="archiving-masters.html" hreflang="en">Archiving Masters</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="setting-privacy-status-video.html" hreflang="en">Setting the Privacy Status for a Video</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="row">
+            <div class="region region-footer-top-left col-md-9" style="margin-bottom: 1em;">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove Support</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://status.brightcove.com">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="contact-support.html" data-drupal-link-system-path="node/18632">Support - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.brightcove.com/en/contact/create">Support - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Documentation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Training</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="online-training-courses.html" data-drupal-link-system-path="node/18286">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a course</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://www.brightcove.com">Brightcove.com</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="region region-footer-top-right col-md-3">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Brightcove Inc. (NASDAQ: BCOV), is a leading global provider of powerful cloud solutions for delivering and monetizing video across connected devices.</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="row">
+            <div class="region region-footer-bottom-left col-md-8">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item">Brightcove Inc. All rights reserved.</div>
+      
+      <div class="field field--name-field-legal-links field--type-link field--label-hidden field--items">
+              <div class="field--item"><a href="https://www.brightcove.com/en/privacy">Privacy</a></div>
+              <div class="field--item"><a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="region region-footer-bottom-right col-md-4">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items">
+              <div class="field--item">
+
+<a href="https://www.linkedin.com/company/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://twitter.com/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://www.facebook.com/Brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://plus.google.com/100830370440271567091" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/16344","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGkkHXlVrBldRXQE=","queueTime":0,"applicationTime":13,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

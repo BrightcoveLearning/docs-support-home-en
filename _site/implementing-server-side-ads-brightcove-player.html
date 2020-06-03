@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="sites/default/files/favicon-64.png" type="image/png" />
+<link rel="alternate" hreflang="en" href="implementing-server-side-ads-brightcove-player.html" />
+<link rel="canonical" href="implementing-server-side-ads-brightcove-player.html" />
+<link rel="shortlink" href="implementing-server-side-ads-brightcove-player.html" />
+<link rel="revision" href="implementing-server-side-ads-brightcove-player.html" />
+
+    <title>Implementing Server-Side Ads with the Brightcove Player | Brightcove Learning</title>
+    <link rel="stylesheet" media="all" href="sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw_q23msc.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4_q23msc.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on" />
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  </head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="navigation-secondary clearfix">
+          <div class="region region-navigation-secondary">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary Navigation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="contact-support.html" title="Create a Support Request" data-drupal-link-system-path="node/18632">Support Request</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://status.brightcove.com/">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://university.brightcove.com/">Brightcove University</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gtranslate">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" style="font-weight:bold;background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">English</option><option value="en|fr" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">French</option><option value="en|de" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">German</option><option value="en|ja" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">Japanese</option><option value="en|ko" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">Korean</option><option value="en|es" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">Spanish</option></select>
+</div>
+<div class="gtranslate__credits">
+  Translations Provided by Google Translate
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="navbar-header col-md-3">
+                  <a class="logo navbar-btn pull-left" href="index.html" title="Home" rel="home">
+            <img src="themes/custom/bcdocs/images/brightcove.png" alt="Home" />
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" title="Home page" data-drupal-link-system-path="node/18643">Home</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Products
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="video-cloud.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://gallery.support.brightcove.com">Gallery</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a href="social.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ssai.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Quick Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="analytics-api.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience-api.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-api.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-connectors-video-cloud.html" data-drupal-link-system-path="node/18662">CMS Connectors for Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="data-collection-api.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="delivery-system-api.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="developer-tools-and-concepts.html" data-drupal-link-system-path="node/18430">Developer Tools and Concepts</a>
+                  </li>
+                              <li class="expanded">
+        <a href="native-player-sdks.html" data-drupal-link-system-path="node/18367">Device SDKs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="dynamic-ingest-api.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="getting-started-brightcove-apis-0.html" data-drupal-link-system-path="node/18711">Getting Started - Brightcove APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="page-experience-api.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ingest-profiles-api.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="oauth-api.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="platform-api-code-samples.html" data-drupal-link-system-path="node/18675">Platform API Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="playback-api.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-code-samples.html" data-drupal-link-system-path="node/18630">Player Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-developer.html" data-drupal-link-system-path="node/18362">Player Developer</a>
+                  </li>
+                              <li class="expanded">
+        <a href="player-management-api.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="policy-api.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="release-notes.html" data-drupal-link-system-path="node/18687">Release Notes</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Training
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="https://university.brightcove.com">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a Course</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a href="brightcove-support-documentation-announcements.html" title="See what&#039;s new in Brightcove Documentation" data-drupal-link-system-path="node/18896">What&#039;s New</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="full-width-headline">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" role="heading">
+            <div class="region region-header">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      Documentation
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="main-container container  js-quickedit-main-content">
+    <div class="row">
+
+                              <aside class="col-sm-3" role="complementary">
+              <div class="region region-sidebar-first">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="implementing-server-side-ads-brightcove-player.html" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group">
+      <label for="edit-search" class="control-label sr-only">Search</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="Search" />
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-g8knknekbhy-i19ep1w8-wk8qh2chp3if2qxaocaibe" type="hidden" name="form_build_id" value="form-g8KnknekBHy_I19Ep1W8-wk8qH2CHP3IF2QXaocaIBE" /><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form" /><div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix">
+  
+      <h2 class="block-title">On This Page</h2>
+    
+
+      <div class="bc-ipnav-block"></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="highlighted">  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a id="main-content"></a>
+            <div class="region region-content">
+        <h1 class="page-header"><span>Implementing Server-Side Ads with the Brightcove Player</span>
+</h1>
+
+  
+<div class="node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+      </div>
+
+  <div class="group-second-row">
+  
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+          <div class="field--item">SSAI</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Player Developer</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-topics field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Topic(s)</div>
+          <div class="field--items">
+              <div class="field--item">Advertising</div>
+          <div class="field--item">SSAI</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item">  <p>In this topic, you will learn how to use Server-Side Ad Insertion (SSAI) with the Brightcove Player to deliver ads stitched into your video streams.</p><article class="bcls-article"><section class="bcls-section"><h2 id="Overview">Overview</h2>
+
+<aside class="bcls-aside bcls-aside--information language-editable">This sample and associated code is provided as a guide for your production development. The code is not certified for production use nor officially supported.</aside><p>Server-Side Ad Insertion (SSAI) allows you to embed ads into your videos so that they can't be blocked by ad blockers in the browser. <a href="overview-dynamic-delivery.html">Dynamic Delivery</a> is the next generation ingest and delivery system which reduces your storage footprint and dynamically packages media.</p>
+
+<p>By default, SSAI enforces that all advertisements are watched, displaying an ad count-down timer while they play. You can easily customize this feature to skip advertisements.</p>
+
+<p>You can configure the Brightcove Player to use client-side ads when they are not blocked and automatically failover to SSAI when an adblocker is detected. For more information on how to enable this feature, see the <a href="ssai-ad-block-detection-and-auto-failover.html">Ad failover</a> document.</p>
+
+<aside class="bcls-aside bcls-aside--information"><p>Notes:</p>
+
+<ul><li>To use SSAI, your Video Cloud account needs to be configured for <a href="overview-dynamic-delivery.html">Dynamic Delivery</a> and enabled for SSAI. Contact your account manager to start using this feature.</li>
+	<li>SSAI for live playback does not require the SSAI plugin, and client-side features for SSAI playback are not available for live. For details, see the <a href="live-api-server-side-ad-insertion-ssai.html">Brightcove Live API with SSAI</a> document.</li>
+	<li>For a list of limitations, see the <a href="video-cloud-ssai-overview.html#Limitations">SSAI Overview</a> document.</li>
+</ul></aside><p>For a video overview, see the following:</p>
+
+<p><iframe src="https://players.brightcove.net/20318290001/E16-WGGOe_default/index.html?videoId=5995509672001" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" allow="encrypted-media" width="800" height="450"></iframe></p>
+</section><section class="bcls-section"><h2 id="Player_example">Player example</h2>
+<!-- UPDATE description -->
+
+<p>This example uses IMA ads defined in a VMAP file to deliver server-side ads in the video stream. You should see that there is a pre-roll, mid-roll and post-roll ad. The VMAP file is defined in the ad configuration.</p>
+<!-- UPDATE codepen here -->
+
+<p data-height="475" data-theme-id="34967" data-slug-hash="YEKXWx" data-default-tab="result" data-user="bcls1969" data-embed-version="2" data-pen-title="18468-advertising-ssai-plugin" class="codepen">See the Pen <a href="https://codepen.io/team/bcls1969/pen/YEKXWx/">18468-advertising-ssai-plugin</a> by Brightcove Learning Services (<a href="https://codepen.io/bcls1969">@bcls1969</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async="" src="https://production-assets.codepen.io/assets/embed/ei.js"></script><!-- UPDATE link to GitHub source --><p>View the <a href="https://github.com/BrightcoveLearning/18468-advertising-ssai-plugin">source code</a>.</p>
+<!-- <p>
+            To learn how to create an
+              ad configuration for your account, see the <a href="http://docs.brightcove.com/en/staging/ssai-api.html">Dynamic Delivery and SSAI Ad Config API</a> document.
+          </p> --></section><section class="bcls-section"><h2 id="Features">Features</h2>
+
+<p>Brightcove SSAI is a modern replacement for Once UX ad serving. The features include:</p>
+
+<ul><li>More complete VMAP/VAST parsing</li>
+	<li>Full support for VAST companion ads</li>
+	<li>New APIs for interacting with the timeline and linear ad rolls</li>
+	<li>Support for playlists, ad macros, and FairPlay</li>
+	<li>SSAI works with both DRM and non-DRM content.</li>
+	<li>One of the primary roles of SSAI is to enforce certain behaviors around seeking and ads.</li>
+	<li>Dual support for legacy Once UX VMAPs (using the uo namespace) and new Dynamic Delivery VMAPs (using the bc namespace)</li>
+</ul></section><section class="bcls-section"><h2 id="Getting_started">Getting started</h2>
+
+<p>To play server-side ads from Video Cloud, follow these steps:</p>
+
+<ol><li><a href="#Create_an_ad_configuration">Create an ad configuration</a></li>
+	<li><a href="#Create_a_Brightcove_player">Create a Brightcove player</a></li>
+	<li><a href="#Implementing_SSAI_using_Studio">Implement SSAI using Studio </a></li>
+</ol><p>That's it. Your Brightcove Player is now configured for Server-side ads. If you prefer, you can add SSAI programmatically, as shown in the <a href="#Implementing_SSAI_programmatically">Implement SSAI programmatically </a> section.</p>
+
+<h3 id="Create_an_ad_configuration">Create an ad configuration</h3>
+
+<p>The ad configuration defines various aspects of SSAI playback, including ad calls, beacons, and other configuration options. Your ad response can be VAST, VMAP or DFP Ad Rules. To create an ad configuration, follow these steps:</p>
+
+<ol class="bcls-tasklist__restart"><li>
+	<p>In Video Cloud Studio, expand the <strong>ADMIN</strong> menu and select <strong>Server-Side Ad Settings</strong>.</p>
+
+	<figure class="bcls-figure"><img class="bcls-image--no-border" alt="Ad configuration admin" src="https://learning-services-media.brightcove.com/doc-assets/player-development/plugins/ssai/ad-config-admin.png" /><figcaption class="bcls-caption--image">Ad configuration admin</figcaption></figure></li>
+	<li>
+	<p>Add information for your ad configuration and select <strong>Save</strong>.</p>
+
+	<figure class="bcls-figure"><img class="bcls-image--no-border" alt="Ad settings" src="https://learning-services-media.brightcove.com/doc-assets/player-development/plugins/ssai/ad-settings.png" /><figcaption class="bcls-caption--image">Ad settings</figcaption></figure></li>
+</ol><p>For details, see the <a href="configuring-server-side-ad-settings.html">Configuring Server-Side Ad Settings</a> document.</p>
+
+<p>To create an ad configuration using the SSAI API, see the <a href="video-cloud-ssai-ad-config-api.html">Video Cloud SSAI Ad Config API</a> document.</p>
+
+<h3 id="Create_a_Brightcove_player">Create a Brightcove player</h3>
+
+<p>Create a new Brightcove player using Video Cloud Studio. For details, see the <a href="video-cloud-basics-creating-player.html">Quick Start: Creating and Styling a Player</a> document.</p>
+
+<aside class="bcls-aside bcls-aside--information">You must use a Brightcove Player version 6.8.0+.</aside></section><section class="bcls-section"><h2 id="Implementing_SSAI_using_Studio">Implementing SSAI using Studio</h2>
+
+<p>The easiest way to configure your player for server-side ads is with Video Cloud Studio. Once you have created an ad configuration and player, then you are ready to configure the player for SSAI as follows:</p>
+
+<ol class="bcls-tasklist"><li>Open the <strong>PLAYERS</strong> module and locate the player to which you want to add advertising functionality.</li>
+	<li>Select the link for the player to open the player's properties.</li>
+	<li>Select <strong>Advertising</strong> in the left navigation menu.</li>
+	<li>Check the <strong>Enable Server-Side (SSAI)</strong> checkbox.</li>
+	<li>From the <strong>Select Configuration</strong> dropdown menu, select the ad configuration that you would like to associate with this player.</li>
+	<li>If you want overlays to display over your ads, check the <strong>Enable ad information overlays</strong> checkbox. This includes "Learn More" and ad count down overlays.</li>
+	<li>
+	<p>The completed form should look similar to this:</p>
+
+	<figure class="bcls-figure"><img class="bcls-image--no-border" alt="SSAI advertising in Players module" src="https://learning-services-media.brightcove.com/doc-assets/player-development/plugins/ssai/ssai-studio.png" /><figcaption class="bcls-caption--image">SSAI advertising in Players module</figcaption></figure></li>
+	<li>Select <strong>Save</strong>.</li>
+	<li>To publish the player, select <strong>Publish &amp; Embed &gt; Publish Changes</strong>.</li>
+</ol><p>When the changes to the advertising properties are saved, the SSAI plugin will be configured as part of the Plugin settings. The JavaScript and CSS will be hidden since you added them via the <strong>Advertising</strong> section.</p>
+
+<h3 id="Play_a_video_with_ads">Play a video with ads</h3>
+
+<p>Any video that you retrieve from Video Cloud that has been ingested with Dynamic Delivery, will include the ads specified in the VMAP file in your ad configuration. Note that the video needs to have an audio track associated with it for SSAI to work.</p>
+</section><section class="bcls-section"><h2 id="Implementing_SSAI_programmatically">Implementing SSAI programmatically</h2>
+
+<p>You can easily add SSAI to your player using Video Cloud Studio, as shown in the previous section. If you prefer to do this programmatically, follow these steps:</p>
+
+<ol><li><a href="#Add_the_SSAI_plugin">Add the SSAI plugin</a></li>
+	<li><a href="#Associate_ads_with_your_player">Associate ads with your player</a></li>
+	<li><a href="#Play_a_video_with_ads1">Play a video with ads</a></li>
+</ol><h3 id="Add_the_SSAI_plugin">Add the SSAI plugin</h3>
+
+<p>You can either add the SSAI plugin files to your HTML code, or you can add it to your player's configuration as shown here:</p>
+
+<ol class="bcls-tasklist__restart"><li>Open the <strong>PLAYERS</strong> module and either create a new player or locate the player to which you wish to add the plugin.</li>
+	<li>Click the link for the player to open the player's properties.</li>
+	<li>Click <strong>Plugins</strong> in the left navigation menu.</li>
+	<li>Next click <strong>Plugins</strong> from the three options.
+	<figure class="bcls-figure"><img class="bcls-image" alt="Select Plugin" src="https://learning-services-media.brightcove.com/doc-assets/general/players-plugin-options.png" /></figure></li>
+	<li>From the <strong>Add a Plugin</strong> select <strong>Custom Plugin</strong>.</li>
+	<li>For the <strong>Plugin Name</strong> enter <code>ssai</code>.</li>
+	<li>For the <strong>JavaScript</strong> URL, enter:
+	<pre>
+<code class="notranslate language-json">https://players.brightcove.net/videojs-ssai/1/videojs-ssai.js</code></pre>
+	</li>
+	<li>For the <strong>CSS</strong> URL, enter:
+	<pre>
+<code class="notranslate language-json">https://players.brightcove.net/videojs-ssai/1/videojs-ssai.css</code></pre>
+	</li>
+	<li>You do not have to enter any options for this plugin.</li>
+	<li>Click <strong>Save</strong>.</li>
+	<li>To publish the player, click <strong>Publish &amp; Embed &gt; Publish Changes</strong>.</li>
+	<li>To close the open dialog, click <strong>Close</strong>.</li>
+</ol><h3 id="Associate_ads_with_your_player">Associate ads with your player</h3>
+
+<p>Next, you will associate either your ad configuration to your Brightcove player. You can do this one of three ways:</p>
+
+<ul><li><a href="#Standard_embed_code">Standard embed code</a></li>
+	<li><a href="#Advanced_embed_code">Advanced embed code</a></li>
+	<li><a href="#Using_the_catalog">Using the catalog</a></li>
+	<li><a href="#Updating_your_player_configuration">Updating your player configuration</a></li>
+	<!-- <li><a href="#Using_the_src_method">Using the src method</a></li> -->
+</ul><h4 id="Standard_embed_code">Standard (iframe) embed code</h4>
+
+<p>With the Standard embed code, include the <code class="notranslate">adConfigId</code> query string parameter with the value of your ad config id:</p>
+
+<pre class="line-numbers">
+<code class="notranslate language-javascript">&lt;iframe src="https://players.brightcove.net/1752604059001/default_default/
+index.html?videoId=5625751316001&amp;<span class="bcls-highlight">adConfigId</span>=<span class="bcls-input">your ad config id</span>"
+	allowfullscreen
+	webkitallowfullscreen
+	mozallowfullscreen
+	width="640"
+	height="360"&gt;&lt;/iframe&gt;</code></pre>
+
+<h4 id="Advanced_embed_code">Advanced embed code</h4>
+
+<p>With the Advanced embed code, include the <code class="notranslate">data-ad-config-id</code> attribute with the value of your ad config id:</p>
+
+<pre class="line-numbers">
+<code class="notranslate language-javascript">&lt;video-js data-video-id="5625751316001"
+  data-account="1752604059001"
+  data-player="default"
+  data-embed="default"
+  data-application-id
+  <span class="bcls-highlight">data-ad-config-id</span>="<span class="bcls-input">your ad config id</span>"
+  class="video-js"
+  controls
+  width="640"
+  height="360"&gt;&lt;/video-js&gt;
+&lt;script src="https://players.brightcove.net/1752604059001/default_default/index.min.js"&gt;&lt;/script&gt;</code></pre>
+
+<h4 id="Using_the_catalog">Using the catalog</h4>
+
+<p>You can use the <code class="notranslate">player catalog</code> to associate ads with your video. The catalog works by making two requests:</p>
+
+<ol class="bcls-tasklist__restart"><li>Request video data from the player catalog. This will include a VMAP URL.</li>
+	<li>The player source is set with the VMAP URL, triggering a request for a VMAP document from Dynamic Delivery. The player source is set again with a valid VMAP XML document.</li>
+</ol><p>When using the <code class="notranslate">catalog</code> with SSAI, append your ad configuration id to the <code class="notranslate">getVideo()</code> call to the Playback API as follows:</p>
+
+<pre class="line-numbers">
+<code class="notranslate language-javascript"><span class="bcls-highlight">var adConfigId</span> = "<span class="bcls-input">your ad config id</span>";
+var myPlayer = videojs.getPlayer('myPlayerId');
+// If you added the SSAI plugin using the Players module, then the initialization
+// step is performed automatically. Uncomment the next line if you
+// did not use the Players module.
+//myPlayer.ssai();
+
+myPlayer.catalog.getVideo("<span class="bcls-input">your video id</span>", function(error, video) {
+	if (error) {
+		myPlayer.error(error);
+	} else {
+		myPlayer.catalog.load(video);
+	}
+}, <span class="bcls-highlight">adConfigId</span>);</code></pre>
+
+<h4 id="Updating_your_player_configuration">Updating your player configuration</h4>
+
+<p>Another way to associate ads is to include your ad config id in your Brightcove player configuration. To do this, you can use the <a href="player-management-api.html">Player Management API</a> as follows:</p>
+
+<ol class="bcls-tasklist__restart"><li>
+	<p>Use the <code class="notranslate">PATCH</code> command to include your <code class="notranslate">ad_config_id</code>. Here is an example of updating your player using cURL:</p>
+
+	<pre class="line-numbers" data-start="1">
+<code class="notranslate language-json">curl \
+  --header "Content-Type: application/json" \
+  --user <span class="bcls-input">$EMAIL</span> \
+  --request PATCH \
+  --data '{
+      "ad_config_id" : "<span class="bcls-input">$CONFIG_ID</span>"
+  }' \
+  https://players.api.brightcove.com/v1/accounts/<span class="bcls-input">$ACCOUNT_ID</span>/players/<span class="bcls-input">$PLAYER_ID</span>/configuration
+</code></pre>
+	</li>
+	<li>
+	<p>You can then publish your changes as follows:</p>
+
+	<pre class="line-numbers" data-start="1">
+<code class="notranslate language-json">curl \
+  --header "Content-Type: application/json" \
+  --user <span class="bcls-input">$EMAIL</span> \
+  --request POST \
+  https://players.api.brightcove.com/v1/accounts/<span class="bcls-input">$ACCOUNT_ID</span>/players/<span class="bcls-input">$PLAYER_ID</span>/publish
+</code></pre>
+	</li>
+	<li>
+	<p>Verify that the configuration for your Brightcove player includes <code class="notranslate">ad_config_id</code> set to your config id value and the ssai plugin with the associated plugin files. To do this, follow these steps:</p>
+
+	<ol><li>Navigate to your player in the Studio Players module. Click on the player name link to see details.</li>
+		<li>Select the <strong>Embed Code &amp; URL</strong> (either Preview or Published will work). Click on the <strong>Player URL</strong> link.</li>
+		<li>In the browser address bar, change the <strong>index.html</strong> to <strong>config.json</strong>, and browse the new URL.</li>
+	</ol><p>Your player configuration should look similar to this:</p>
+
+	<pre class="line-numbers">
+<code class="notranslate language-json">{
+  "account_id": "1752604059001",
+<span class="bcls-highlight">  "ad_config_id": "d6190656-2095-4ff3-8afe-123abcde",</span>
+  "compatibility": true,
+  "embed_id": "default",
+  "player": {
+    "template": {
+      "name": "single-video-template",
+      "version": "6.9.0"
+    }
+  },
+  "player_id": "rJCECV0RZ",
+  "player_name": "SSAI Player",
+<span class="bcls-highlight">  "plugins": [
+    {
+      "name": "ssai"
+    }
+  ],
+  "scripts": [
+    "https://players.brightcove.net/videojs-ssai/1/videojs-ssai.js"
+  ],
+  "stylesheets": [
+    "https://players.brightcove.net/videojs-ssai/1/videojs-ssai.css"
+  ],</span>
+  "updated_at": "2017-11-07T16:03:47.161Z",
+  "video_cloud": {
+    "policy_key": "ABCDE123456789",
+    "video": null
+  }
+}</code></pre>
+	</li>
+</ol><h4 id="Play_a_video_with_ads1">Playing a video with ads</h4>
+
+<p>Any video that you retrieve from Video Cloud that has been ingested with Dynamic Delivery, will include the ads specified in the VMAP file in your ad configuration. Note that the video needs to have an audio track associated with it for SSAI to work.</p>
+</section><section class="bcls-section"><h2 id="Options">Options</h2>
+
+<ul><li><code class="notranslate">debug</code>
+
+	<ul><li>If true, sets up debug messages in contrib-ads and logs extra information in the presence of videojs-bc-analytics-logger.</li>
+	</ul></li>
+	<li><code class="notranslate">hideOverlays</code>
+	<ul><li>If true, the countdown timer and <strong>Learn More</strong> click through overlays will not be shown while ads are playing.</li>
+	</ul></li>
+	<li><code class="notranslate">trackingBeacons</code>
+	<ul><li>If false, the tracking beacons parsed from the VMAP for ad view, impression, quartiles, etc. will not be sent.</li>
+	</ul></li>
+	<li><code class="notranslate">timeout</code>
+	<ul><li>The number of milliseconds after which an XHR to fetch a VMAP will time out.</li>
+	</ul></li>
+	<!-- <li><code class="notranslate">vmapXML</code>
+	<ul>
+		<li>Used to provide an initial VMAP XML document, which will be loaded into the player. See the <a href="#Using_the_src_method">Using the src() method</a> section.</li>
+	</ul>
+	</li>
+	<li><code class="notranslate">vmapURL</code>
+	<ul>
+		<li>Used to provide an initial URL to a VMAP, which will be fetched and loaded into the player. See the <a href="#Setting_from_a_URL">Setting from a URL</a> section.</li>
+	</ul>
+	</li> -->
+</ul></section><section class="bcls-section"><h2 id="Styling">Styling</h2>
+
+<p>There are several useful HTML classes applied to the player by this plugin that can be targeted to determine the plugin's state.</p>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>Class</th>
+			<th>Usage</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td style="width: 20%;"><code class="notranslate">vjs-ssai</code></td>
+			<td>Indicates that the SSAI plugin has been instantiated, but is not necessarily enabled. This will be present even when not playing an SSAI source.</td>
+		</tr><tr><td><code class="notranslate">vjs-ssai-enabled</code></td>
+			<td>The SSAI plugin is currently enabled. In other words, an SSAI source has been set on the player.</td>
+		</tr><tr><td><code class="notranslate">vjs-ssai-disabled</code></td>
+			<td>The SSAI plugin is not currently enabled.</td>
+		</tr><tr><td><code class="notranslate">vjs-ssai-waiting</code></td>
+			<td>The SSAI plugin is waiting for data or some other external process.</td>
+		</tr><tr><td><code class="notranslate">vjs-ssai-not-waiting</code></td>
+			<td>The SSAI plugin is not waiting for anything.</td>
+		</tr><tr><td><code class="notranslate">vjs-ssai-hide-overlays</code></td>
+			<td>The <code class="notranslate">hideOverlays</code> option has been set to <strong>true</strong>.</td>
+		</tr><tr><td><code class="notranslate">vjs-ssai-show-overlays</code></td>
+			<td>The <code class="notranslate">showOverlays</code> option is set to <strong>true</strong>. This is the default.</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Methods_properties">Methods/properties</h2>
+
+<p>Several public methods are available when using the SSAI plugin. Remember, you can also use the standard player methods.</p>
+
+<p>To use the SSAI methods, your JavaScript code will need to wait for the plugin to be loaded, as shown here:</p>
+
+<pre class="line-numbers">
+<code class="language-javascript">&lt;script&gt;
+	videojs.getPlayer('myPlayerID').ready(function () {
+		var myPlayer = this;
+		myPlayer.on("loadedmetadata", function () {
+			console.log(myPlayer.ssai().currentTimelineState());
+		});
+	});
+&lt;/script&gt;</code></pre>
+
+<h3>Timeline state methods</h3>
+
+<p>The <code>*TimelineState</code> methods return a <code>TimelineState</code> object. A timeline state object is a plain object with a specific interface that details the playback state of an SSAI stream at any point in the absolute timeline.</p>
+
+<p>The "absolute time" refers to a point in the complete timeline of a stream (with both ads and content included). The term "relative time" refers to the time relative to the current content (either ad or content).</p>
+
+<p><code>contentTimelineState()</code></p>
+
+<ul><li>Argument: single numeric <code>time</code></li>
+	<li>Get the timeline state at the specified content time <strong>(content, not counting ads)</strong>. For example, if your content is 100 seconds long, you can get the timeline state at halfway through the content using:
+	<pre>
+<code class="language-javascript">contentTimelineState(50)</code></pre>
+	</li>
+</ul><p><code>absoluteTimelineState()</code></p>
+
+<ul><li>Argument: single numeric <code>time</code></li>
+	<li>Get the timeline state at the specified absolute time <strong>(content + ads)</strong>. For example, if your content includes a 30 second pre-roll ad, you can get the timeline state at 30 seconds into your content using:
+	<pre>
+<code class="language-javascript">absoluteTimelineState(50)</code></pre>
+	</li>
+</ul><p>Here is a list of additional timeline state methods:</p>
+
+<p><code>currentTimelineState()</code><br /><code>relativeTimelineState()</code><br /><code>seekInAbsoluteTime()</code><br /><code>seekInRelativeTime()</code><br /><code>seekInContentTime()</code></p>
+
+<h3>Timeline state properties</h3>
+
+<p>To get the value of a timeline state property, you can use the following syntax:</p>
+
+<pre>
+<code class="language-javascript">myPlayer.ssai().absoluteTimelineState().absoluteDuration;
+</code></pre>
+ 
+
+<p>Here is a list of properties associated with the <code>TimelineState</code> object:</p>
+
+<p><code>absoluteTime</code></p>
+
+<ul><li>Type: Number</li>
+	<li>The absolute time in the stream.</li>
+</ul><p><code>absoluteDuration</code></p>
+
+<ul><li>Type: Number</li>
+	<li>The absolute duration of the stream.</li>
+</ul><p><code>relativeTime</code></p>
+
+<ul><li>Type: Number</li>
+	<li>The time in the stream relative either to the current linear ad or to the content itself.</li>
+</ul><p><code>relativeDuration</code></p>
+
+<ul><li>Type: Number</li>
+	<li>The duration of the current linear ad or the content itself.</li>
+</ul><p><code>linearAdRoll</code></p>
+
+<ul><li>Type: LinearAdRoll</li>
+	<li>An object representing the current linear ad for the absolute time.</li>
+</ul><p><code>linearAd</code></p>
+
+<ul><li>Type: LinearAd</li>
+	<li>An object representing the current linear ad for the absolute time.</li>
+</ul></section><section class="bcls-section"><h2 id="Events">Events</h2>
+
+<p>At the current time there is one SSAI-specific event dispatched by this plugin.</p>
+
+<aside class="bcls-aside bcls-aside--tip">SSAI ads dispatch the standard Brightcove ad events, and provide access to ad objects. Details are detailed in the <a href="ad-events-and-ad-objects.html">Ad Events and Ad Objects</a> document.</aside><p><code>bcov-ssai-click-through</code></p>
+
+<ul><li>This event is dispatched internally by the plugin to indicate that an ad click-through was requested.</li>
+</ul></section><section class="bcls-section"><h2 id="Configuration_notes">Configuration notes</h2>
+
+<ol><li>Preloading ads should not be done with SSAI. The reason for this is that if you preload the player will report an ad impression and probably the first quartile beacons before the video is played. This could lead to inaccurate ad analytics. If you configure SSAI in Studio, this will automatically be done, but if you happen to setup SSAI manually you need to be aware of this issue.</li>
+	<li>If the web player is using SSAI, and one of your motivations for doing so is to work around ad blockers, you should use server-side beacons. Client-side beacons should not be used as they will be blocked.</li>
+</ol></section><section class="bcls-section"><h2 id="Glossary">Glossary</h2>
+
+<p>This plugin distinguishes the concepts of <strong>absolute</strong> and <strong>content</strong> time within an SSAI stream. Traditional video players only have a concept of <strong>content</strong> time; times between start and end of the URI it is currently playing. Because an SSAI stream is essentially a number of <strong>content</strong> streams stitched together we've introduced the concept of <strong>absolute</strong> time which takes into account the complete stitched stream including the video advertisements.</p>
+
+<p>When you see the prefix <strong>absolute</strong> on a property or method, the times expected/returned are relative to the entire stitched stream. When you see the prefix <strong>content</strong>, the times expected/returned are relative only to a particular piece of content that was stitched into the stream (the main content or single linear advertisement).</p>
+
+<ul><li>
+	<p><strong>Absolute time</strong> : Refers to any given point in the total timeline of an SSAI stream. For example, a <strong>2:00</strong> video with a <strong>0:30</strong> pre-roll ad has a total absolute time of <strong>2:30</strong>. The absolute time of <strong>0:15</strong> is in the pre-roll and the absolute time of <strong>0:31</strong> is the first second of content.</p>
+	</li>
+	<li>
+	<p><strong>Relative time</strong> : Refers to the time relative to the current block of media - either content or ad. Expanding on the above, during the pre-roll, the relative time <strong>0:15</strong> is synonymous with the absolute time of <strong>0:15</strong>, but the absolute time <strong>0:31</strong> would equate to a relative time of <strong>0:01</strong>.</p>
+
+	<p>Generally, relative time is what you see in the player UI and much of the job of this plugin and associated middleware is translating from absolute time to relative time.</p>
+	</li>
+	<li>
+	<p><strong>Content time</strong> refers to a point in time within the content timeline of an SSAI stream - ignoring all ads. For example, a 2:00 video with a 0:30 pre-roll ad has a content time of 2:00. The content time of 0:15 is equivalent to an absolute time of 0:45 (pre-roll plus 15 seconds).</p>
+	</li>
+</ul></section><section class="bcls-section"><h2 id="Known_issues">Known issues</h2>
+
+<p>Here are the known issues for using the SSAI plugin:</p>
+
+<ul><li>Safari 10/11 sometimes show the last frame of the postroll at the end of the video.</li>
+	<li>SSAI won’t stitch overlay ads into the video stream.</li>
+</ul></section><section class="bcls-section"><h2 id="Changelog">Changelog</h2>
+
+<p>See the <a href="server-side-ads-plugin-changelog.html">changelog here</a>.</p>
+</section></article></div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-by-field-block-1 clearfix" id="block-views-block-related-content-by-field-block-1">
+  
+    
+
+      <div class="form-group"><div class="view view-related-content-by-field view-id-related_content_by_field view-display-id-block_1 js-view-dom-id-be3d52116aa7be3458cf98dfc092f2e4c2cce09f93a0367157b64e2e9c3acbe7">
+  
+    
+      <div class="view-header">
+      <h2>Related content</h2>
+    </div>
+      
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="video-cloud-ssai-overview.html" hreflang="en">Video Cloud SSAI Overview</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="video-cloud-ssai-ad-config-api.html" hreflang="en">Video Cloud SSAI Ad Config API</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="video-cloud-ssai-ad-tag-validation.html" hreflang="en">Video Cloud SSAI Ad Tag Validation</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="overview-playback-api.html" hreflang="en">Overview: Playback API</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="ad-error-beacons-ssai.html" hreflang="en">Ad Error Beacons with SSAI</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="row">
+            <div class="region region-footer-top-left col-md-9" style="margin-bottom: 1em;">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove Support</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://status.brightcove.com">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="contact-support.html" data-drupal-link-system-path="node/18632">Support - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.brightcove.com/en/contact/create">Support - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Documentation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Training</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="online-training-courses.html" data-drupal-link-system-path="node/18286">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a course</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://www.brightcove.com">Brightcove.com</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="region region-footer-top-right col-md-3">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Brightcove Inc. (NASDAQ: BCOV), is a leading global provider of powerful cloud solutions for delivering and monetizing video across connected devices.</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="row">
+            <div class="region region-footer-bottom-left col-md-8">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item">Brightcove Inc. All rights reserved.</div>
+      
+      <div class="field field--name-field-legal-links field--type-link field--label-hidden field--items">
+              <div class="field--item"><a href="https://www.brightcove.com/en/privacy">Privacy</a></div>
+              <div class="field--item"><a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="region region-footer-bottom-right col-md-4">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items">
+              <div class="field--item">
+
+<a href="https://www.linkedin.com/company/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://twitter.com/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://www.facebook.com/Brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://plus.google.com/100830370440271567091" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18468","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGn0UTEBVCWpxWhZdZHNWFFRscgpEX3cRUVRRXBQUDkYAWFZQFmhUVFoDUV9YAVNAcwtKVXRaElBfWg==","queueTime":0,"applicationTime":178,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

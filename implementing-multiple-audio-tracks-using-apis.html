@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="sites/default/files/favicon-64.png" type="image/png" />
+<link rel="alternate" hreflang="en" href="implementing-multiple-audio-tracks-using-apis.html" />
+<link rel="canonical" href="implementing-multiple-audio-tracks-using-apis.html" />
+<link rel="shortlink" href="implementing-multiple-audio-tracks-using-apis.html" />
+<link rel="revision" href="implementing-multiple-audio-tracks-using-apis.html" />
+
+    <title>Implementing Multiple Audio Tracks Using the APIs | Brightcove Learning</title>
+    <link rel="stylesheet" media="all" href="sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw_q23msc.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4_q23msc.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on" />
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  </head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="navigation-secondary clearfix">
+          <div class="region region-navigation-secondary">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary Navigation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="contact-support.html" title="Create a Support Request" data-drupal-link-system-path="node/18632">Support Request</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://status.brightcove.com/">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://university.brightcove.com/">Brightcove University</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gtranslate">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" style="font-weight:bold;background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">English</option><option value="en|fr" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">French</option><option value="en|de" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">German</option><option value="en|ja" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">Japanese</option><option value="en|ko" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">Korean</option><option value="en|es" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">Spanish</option></select>
+</div>
+<div class="gtranslate__credits">
+  Translations Provided by Google Translate
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="navbar-header col-md-3">
+                  <a class="logo navbar-btn pull-left" href="index.html" title="Home" rel="home">
+            <img src="themes/custom/bcdocs/images/brightcove.png" alt="Home" />
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" title="Home page" data-drupal-link-system-path="node/18643">Home</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Products
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="video-cloud.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://gallery.support.brightcove.com">Gallery</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a href="social.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ssai.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Quick Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="analytics-api.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience-api.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-api.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-connectors-video-cloud.html" data-drupal-link-system-path="node/18662">CMS Connectors for Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="data-collection-api.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="delivery-system-api.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="developer-tools-and-concepts.html" data-drupal-link-system-path="node/18430">Developer Tools and Concepts</a>
+                  </li>
+                              <li class="expanded">
+        <a href="native-player-sdks.html" data-drupal-link-system-path="node/18367">Device SDKs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="dynamic-ingest-api.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="getting-started-brightcove-apis-0.html" data-drupal-link-system-path="node/18711">Getting Started - Brightcove APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="page-experience-api.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ingest-profiles-api.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="oauth-api.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="platform-api-code-samples.html" data-drupal-link-system-path="node/18675">Platform API Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="playback-api.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-code-samples.html" data-drupal-link-system-path="node/18630">Player Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-developer.html" data-drupal-link-system-path="node/18362">Player Developer</a>
+                  </li>
+                              <li class="expanded">
+        <a href="player-management-api.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="policy-api.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="release-notes.html" data-drupal-link-system-path="node/18687">Release Notes</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Training
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="https://university.brightcove.com">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a Course</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a href="brightcove-support-documentation-announcements.html" title="See what&#039;s new in Brightcove Documentation" data-drupal-link-system-path="node/18896">What&#039;s New</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="full-width-headline">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" role="heading">
+            <div class="region region-header">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      Documentation
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="main-container container  js-quickedit-main-content">
+    <div class="row">
+
+                              <aside class="col-sm-3" role="complementary">
+              <div class="region region-sidebar-first">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="implementing-multiple-audio-tracks-using-apis.html" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group">
+      <label for="edit-search" class="control-label sr-only">Search</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="Search" />
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-tmwl7by7t7xjcel-73rfug2i6o0encymfts0ygkjmno" type="hidden" name="form_build_id" value="form-tMwL7bY7t7xJCEL-73rFug2I6O0enCYmFts0yGKJMNo" /><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form" /><div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix">
+  
+      <h2 class="block-title">On This Page</h2>
+    
+
+      <div class="bc-ipnav-block"></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="highlighted">  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a id="main-content"></a>
+            <div class="region region-content">
+        <h1 class="page-header"><span>Implementing Multiple Audio Tracks Using the APIs</span>
+</h1>
+
+  
+<div class="node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+      </div>
+
+  <div class="group-second-row">
+  
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">API Developer</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Add Videos/Assets</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-topics field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Topic(s)</div>
+          <div class="field--items">
+              <div class="field--item">Audio</div>
+          <div class="field--item">Dynamic Delivery</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-apis field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">API(s)</div>
+          <div class="field--items">
+              <div class="field--item">Dynamic Ingest API</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item"><p>This topic explains how to add and manage multiple audio tracks for videos using the Dynamic Ingest and CMS APIs.</p>
+                <article class="bcls-article"><section class="bcls-section"><h2 id="introduction">Introduction</h2>
+
+<p>The ability to associate multiple audio tracks with a single title can be useful in a couple of key scenarios:</p>
+
+<ul><li class="language-editable">Playing back the same video in different languages for a broader reach globally </li>
+	<li class="language-editable">Providing audio with descriptions for the visually challenged</li>
+</ul><p>Note that adding audio tracks can also be done in Studio - see <a href="adding-audio-tracks-videos-using-media-module.html">Adding Audio Tracks to Videos using the Media Module</a> for more details.</p>
+
+<h3>Video formats supported</h3>
+
+<p>Multiple audio tracks are supported for <code>HLS V4+</code> and <code>DASH</code> - with and without <code>DRM</code> protection.</p>
+
+<aside class="bcls-aside bcls-aside--information">Note:
+<ul><li class="language-editable">Multiple audio tracks can only be used with videos set up for <a href="overview-dynamic-ingest-api-dynamic-delivery.html">Dynamic Delivery</a>.</li>
+	<li class="language-editable">The account must be enabled for multiple audio tracks. To get your account enabled, contact your account manager.</li>
+	<li class="language-editable">If audio tracks are added after the video is ingested, the same ingest profile must be used that the video was ingested with</li>
+</ul></aside><h3>Sample</h3>
+
+<p>Below is a simple example of a video with multiple audio tracks.</p>
+<iframe src="https://players.brightcove.net/57838016001/default_default/index.html?videoId=5413700943001" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" width="600" height="337.5"></iframe></section><section class="bcls-section"><h2 id="setup">Setup</h2>
+
+<p>The setup for <span class="notranslate">Dynamic Ingest</span> requests is the same, whether you are ingesting a video, images, audio tracks, <span class="notranslate">WebVTT</span> files, or all of these:</p>
+
+<dl><dt class="language-editable">Request URL</dt>
+	<dd class="language-editable">
+	<pre class="line-numbers">
+	<code class="language-http notranslate">https://ingest.api.brightcove.com/v1/accounts/{account_id}/videos/{video_id}/ingest-requests</code></pre>
+	</dd>
+	<dt class="language-editable">Authentication</dt>
+	<dd class="language-editable">Authentication requires an access token passed as a <code>Bearer</code> token in an <code>Authorization</code> header:
+	<pre class="line-numbers">
+	<code class="language-bash notranslate">Authorization: Bearer {access_token}</code></pre>
+
+	<p>To get access tokens, you will need <strong>client credentials</strong> (see below). For the process of obtaining an access token, see <a href="getting-access-tokens.html">Get Access Tokens</a>.</p>
+	</dd>
+</dl><h3>Note on S3</h3>
+
+<p>If your source files will be pulled from a protected S3 bucket, you will need to set a bucket policy to allow <span class="notranslate">Video Cloud</span> to access the files. See <a href="using-dynamic-ingest-s3.html#setPolicy">Using <span class="notranslate">Dynamic Ingest</span> with S3</a> for details.</p>
+</section><section class="bcls-section"><h2 id="gettingCredentials" class="bcls-expander-head">Getting Credentials</h2>
+
+<div class="bcls-expander-content">
+<p>To get a <code>client_id</code> and <code>client_secret</code>, you will need to go to the OAuth UI and register this app:</p>
+
+<ul><li class="language-editable"><a href="managing-api-authentication-credentials.html">Managing API Authentication Credentials</a></li>
+</ul><p>These are the permissions you will need:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="&lt;span class=" notranslate="" />Dynamic Ingest Permissions" src="//learning-services-media.brightcove.com/doc-assets/video-cloud-apis/di-api/di-permissions.png" /&gt;
+<figcaption class="bcls-caption--image"><span class="notranslate">Dynamic Ingest</span> Permissions</figcaption></figure><p>You can also get your credentials via <span class="notranslate">CURL</span> or <span class="notranslate">Postman</span> - see:</p>
+
+<ul><li class="language-editable"><a href="oauth-create-client-credentials-using-curl.html">Get Client Credentials Using <span class="notranslate">CURL</span></a></li>
+	<li class="language-editable"><a href="oauth-create-client-credentials-using-postman.html">Get Client Credentials Using <span class="notranslate">Postman</span></a></li>
+</ul><p>If you are getting credentials directly from the API, these are the permissions you need:</p>
+
+<pre class="line-numbers">
+	<code class="language-json notranslate">[
+		"video-cloud/video/all",
+		"video-cloud/ingest-profiles/profile/read",
+		"video-cloud/ingest-profiles/account/read",
+		"video-cloud/upload-urls/read"
+	]</code></pre>
+</div>
+</section><section class="bcls-section"><h2 id="workflow">Workflow</h2>
+
+<p>There are two primary use cases:</p>
+
+<ul><li class="language-editable">Ingest a new video with multiple audio tracks
+	<figure class="bcls-figure"><img class="bcls-image" style="max-height:175px" alt="New Video Workflow" src="https://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/di-api/guides/multiple-audio-tracks/new-video-workflow.svg" /><figcaption class="bcls-caption--image">New Video Workflow</figcaption></figure></li>
+	<li class="language-editable">Add multiple audio tracks to an existing video
+	<figure class="bcls-figure"><img class="bcls-image" style="max-height:175px" alt="Existing Video Workflow" src="https://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/di-api/guides/multiple-audio-tracks/existing-video.svg" /><figcaption class="bcls-caption--image">Existing Video Workflow</figcaption></figure></li>
+</ul><p>We will look at the details of the API requests in a section below.</p>
+</section><section class="bcls-section"><h2 id="Audio_track_metadata">Audio track metadata</h2>
+
+<p>There are some metadata fields attached to audio tracks - some of these are set when you ingest the tracks, while others are created by <span class="notranslate">Video Cloud</span>. Some of these fields are read-only, and others can be updated by you. The metadata fields will be detailed below in the context of the relevant API requests, but two particular ones require some explanation here, as they are crucial in determining how the Brightcove Player will handle the multiple audio tracks.</p>
+
+<h3><code>language</code></h3>
+
+<p>The <code>language</code> field, set for each track during ingestion, specifies the language for the track. This is important if the track is a dub of spoken words in the video. The value of this field will be a two-letter code like <code>en</code> or <code>hi</code>. For a full list of language codes, see the <code>Subtag</code> values in <a href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry</a>.</p>
+
+<h3><code>variant</code></h3>
+
+<p>The <code>variant</code> field describes the kind of audio track. The possible values, with standard meanings are:</p>
+
+<ul><li class="language-editable"><code>main</code> - the main track, usually the one muxed into the video file</li>
+	<li class="language-editable"><code>alternate</code> - an alternate audio track</li>
+	<li class="language-editable"><code>commentary</code> - an audio track that provides commentary on the video track</li>
+	<li class="language-editable"><code>dub</code> - a track containing a dubbed version of spoken words in a different language</li>
+	<li class="language-editable"><code>descriptive</code> - track is descriptive of the video content in some way</li>
+</ul><h3>Account defaults</h3>
+
+<p>You can set account defaults for <code>language</code> and <code>variant</code> to determine what audio track will be treated as the default by the Brightcove Player (the default can also be overridden by updating the track metadata, as we will see in a section below). To set the defaults for your account, <a href="https://help.brightcove.com/en/contact">Contact Brightcove Support</a>.</p>
+</section><section class="bcls-section"><h2 id="Ingest_audio_tracks">Ingest audio tracks</h2>
+
+<p>Now we will look at the API calls to ingest audio tracks for the two use cases described earlier.</p>
+
+<h3>New video with multiple audio tracks</h3>
+
+<h4>Create the video object (<span class="notranslate">CMS API</span>)</h4>
+
+<ol class="blcs-tasklist"><li class="language-editable">You can add several items of video metadata when you create the video object, but here we will just add the minimum: a <code>name</code> for the video:
+
+	<pre class="line-numbers">
+	<code class="language-json notranslate">{
+			"name": "<span class="bcls-input">YOUR_VIDEO_NAME</span>"
+	}</code></pre>
+	</li>
+	<li class="language-editable">Submit the JSON above (with the placeholder text replaced by your video name) as the request body for <code>POST</code> request to <code>https://cms.api.brightcove.com/v1/accounts/<span class="bcls-input">YOUR_ACCOUNT_ID</span>/videos</code></li>
+	<li class="language-editable">You will get a lot of video metadata back in the response, but the important piece here is the <code>id</code> (the video id), which you need for the next step.</li>
+</ol><h4>Ingest the video and audio tracks</h4>
+
+<p>Next we will ingest the video and audio tracks (we could add other assets like images and text tracks, but we will keep it simple here). The one thing you may find a little confusing is that <code>audio_tracks</code> appears twice in the JSON for the request body:</p>
+
+<ul><li class="language-editable">An <code>audio_tracks</code> object within the <code>master</code> object contains metadata for the audio track included in the video file (if any - this is also referred to as the muxed in audio) - this will include metadata only, without a URL for the audio file, since the audio track is already included in the video file</li>
+	<li class="language-editable">A top-level <code>audio_tracks</code> object describing the additional audio tracks you are ingesting - these will include a URL for audio file, as well as other metadata</li>
+</ul><ol class="bcls-tasklist"><li class="language-editable">The JSON data to be sent in the request body is as follows:
+	<pre class="line-numbers">
+	<code class="language-json notranslate">{
+		"master": {
+				"url": "<span class="bcls-input">https://learning-services-media.brightcove.com/videos/Great_Blue_Heron.mp4</span>",
+				"audio_tracks": [
+						{
+								"language": "<span class="bcls-input">en</span>",
+								"variant": "main"
+						}
+				]
+		},
+		"audio_tracks": {
+				"merge_with_existing": true,
+				"masters": [
+						{
+								"url": "<span class="bcls-input">http://learning-services-media.brightcove.com/audio/celtic_lullaby.m4a</span>",
+								"language": "<span class="bcls-input">en</span>",
+								"variant": "<span class="bcls-input">alternate</span>"
+						},
+						{
+								"url": "<span class="bcls-input">http://learning-services-media.brightcove.com/audio/audio1.m4a</span>",
+								"language": "<span class="bcls-input">en</span>",
+								"variant": "<span class="bcls-input">commentary</span>"
+						}
+				]
+		},
+			"profile": "<span class="bcls-input">BoltIngestProfile</span>",
+			"capture-images": true,
+			"callbacks": [
+					"http://solutions.brightcove.com/bcls/di-api/di-callbacks.php"
+			]
+	}</code></pre>
+	</li>
+	<li class="language-editable">Send the JSON above, substituting your own URLs for the placeholders, and adjusting the <code>language</code> and <code>variant</code> values, in a <code>POST</code> request to <code>https://ingest.api.brightcove.com/v1/accounts/<span class="bcls-input">ACCOUNT_ID</span>/videos/<span class="bcls-input">ID/ingest-requests</span></code> (the <code>ID</code> here is the video id returned from request to create the video object)</li>
+</ol><h3 id="Add_audio_tracks_to_an_existing_video">Add audio tracks to an existing video</h3>
+
+<p>To add additional audio tracks to an existing video, the procedure is the same, except that you do not need to make the request to the <span class="notranslate">CMS API</span> to create the video, because it already exists. And in the request to the <span class="notranslate">Dynamic Ingest</span> API, you will not need to include the URL for the video file or the <code>audio_tracks</code> under <code>master</code> providing the metadata for the muxed in audio. You do, however, want to include the metadata for the muxed in audio track in the existing video. So the JSON for the ingest request will look like this:</p>
+
+<pre class="line-numbers">
+	<code class="language-json notranslate">{
+		"audio_tracks": {
+				"merge_with_existing": true,
+				"masters": [
+						{
+								"url": "<span class="bcls-input">http://learning-services-media.brightcove.com/audio/celtic_lullaby.m4a</span>",
+								"language": "<span class="bcls-input">en</span>",
+								"variant": "<span class="bcls-input">alternate</span>"
+						},
+						{
+								"url": "<span class="bcls-input">http://learning-services-media.brightcove.com/audio/audio1.m4a"</span>,
+								"language": "<span class="bcls-input">en</span>",
+								"variant": "<span class="bcls-input">commentary</span>"
+						}
+				]
+		},
+			"profile": "BoltIngestProfile",
+			"capture-images": true,
+			"callbacks": [
+					"http://solutions.brightcove.com/bcls/di-api/di-callbacks.php"
+			]
+	}</code></pre>
+
+<h3>Audio track fields for ingest</h3>
+
+<table class="bcls-table"><caption class="bcls-caption--table">Audio Track Fields</caption>
+	<thead class="bcls-table__head"><tr><th>Field</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><code>master.audio_tracks</code></td>
+			<td>Object[]</td>
+			<td>Metadata for the muxed in audio</td>
+		</tr><tr><td><code>master.audio_tracks.language</code></td>
+			<td>String</td>
+			<td>Language code for the muxed in audio from the subtags in <a href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry</a></td>
+		</tr><tr><td><code>master.audio_tracks.variant</code></td>
+			<td>String</td>
+			<td>The kind of audio track: <code>main</code>|<code>alternate</code>|<code>dub</code>|<code>commentary</code>|<code>descriptive</code> (<code>main</code> would generally be used for the muxed in audio)</td>
+		</tr><tr><td><code>audio_tracks</code></td>
+			<td>Object</td>
+			<td>Information for the additional audio tracks</td>
+		</tr><tr><td><code>audio_tracks.merge_with_existing</code></td>
+			<td>Boolean</td>
+			<td>Whether these tracks should be merged into existing ones or replace them</td>
+		</tr><tr><td><code>audio_tracks.masters</code></td>
+			<td>Object[]</td>
+			<td>Information for the individual audio tracks</td>
+		</tr><tr><td><code>audio_tracks.masters.url</code></td>
+			<td>String</td>
+			<td>Url for the audio track file</td>
+		</tr><tr><td><code>audio_tracks.masters.language</code></td>
+			<td>String</td>
+			<td>Language code for the audio track from the subtags in <a href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry</a></td>
+		</tr><tr><td><code>audio_tracks.masters.variant</code></td>
+			<td>String</td>
+			<td>The kind of audio track: <code>main</code>|<code>alternate</code>|<code>dub</code>|<code>commentary</code>|<code>descriptive</code> (<code>main</code> would generally be used for the muxed in audio)</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Notifications">Notifications</h2>
+
+<p>If you specify one or more <strong>callback</strong> URLs (as in the sample JSON for the ingest request above), <span class="notranslate">Video Cloud</span> will send a notification for each of the audio tracks you ingest. Notifications will look like this:</p>
+
+<pre class="line-numbers">
+	<code class="language-json notranslate">{
+		"entity": "default/audio128",
+		"entityType": "DYNAMIC_RENDITION",
+		"version": "1",
+		"action": "CREATE",
+		"jobId": "0f703adb-0f17-4a35-8395-21c7fcdd2649",
+		"videoId": "5298468208001",
+		"dynamicRenditionId": "default/audio128",
+		"accountId": "1910141565001",
+		"status": "SUCCESS",
+		"language" : "en",
+		"variant" : "alternate"
+	}</code></pre>
+
+<p>To identify notifications for audio tracks, look for the <code>language</code> and <code>variant</code> fields in the notification. The <code>"action": "CREATE"</code> and <code>"status": "SUCCESS"</code> fields indicate that the track was successfully ingested.</p>
+</section><section class="bcls-section"><h2 id="Managing_audio_tracks">Managing audio tracks</h2>
+
+<p>Once you have ingested the audio tracks, you can manage them via the <span class="notranslate">CMS API</span>.</p>
+
+<h3>Get all audio track metadata for a video</h3>
+
+<p>To retrieve the metadata for all audio tracks associated with a video, make a <code>GET</code> request to:</p>
+
+<pre class="line-numbers">
+	<code class="language-http notranslate">https://cms.api.brightcove.com/v1/accounts/<span class="bcls-input">account_id</span>/videos/<span class="bcls-input">video id</span>/audio_tracks</code></pre>
+
+<p>The response will be an array of objects containing metadata for each audio track. See the table of response fields below for details.</p>
+
+<pre class="line-numbers">
+	<code class="language-json notranslate">[
+		{
+			"id": "en_alternate",
+			"language": "en",
+			"variant": "alternate",
+			"duration": 86100,
+			"encoding_rates": [
+				64000,
+				96000,
+				127000
+			]
+		},
+		{
+			"id": "en_commentary",
+			"language": "en",
+			"variant": "commentary",
+			"duration": 34203,
+			"encoding_rates": [
+				10000,
+				13000,
+				15000
+			]
+		},
+		{
+			"id": "en_main",
+			"language": "en",
+			"variant": "main",
+			"duration": 31488,
+			"encoding_rates": [
+				62000,
+				94000,
+				125000
+			]
+		}
+	]</code></pre>
+
+<p>You can also view this information in Studio by viewing the video in the Media module:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="Audio Track Information in Studio" src="https://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/di-api/guides/multiple-audio-tracks/audio-tracks-in-studio.png" /><figcaption class="bcls-caption--image">Audio Track Information in Studio</figcaption></figure><h3>Get metadata for one audio track</h3>
+
+<p>To retrieve the metadata for one audio track associated with a video, make a <code>GET</code> request to:</p>
+
+<pre class="line-numbers">
+	<code class="language-http notranslate">https://cms.api.brightcove.com/v1/accounts/<span class="bcls-input">account_id</span>/videos/<span class="bcls-input">video id</span>/audio_tracks/<span class="bcls-input">audio_track_id</span></code></pre>
+
+<p>The response will be an object containing metadata for each audio track. See the table of response fields below for details.</p>
+
+<h3>Updating audio track metadata</h3>
+
+<p>You can update any writable metadata field for an audio track by making a <code>PATCH</code> request to:</p>
+
+<pre class="line-numbers">
+	<code class="language-http notranslate">https://cms.api.brightcove.com/v1/accounts/<span class="bcls-input">account_id</span>/videos/<span class="bcls-input">video id</span>/audio_tracks/<span class="bcls-input">audio_track_id</span></code></pre>
+
+<p>In the request body, include the field(s) you want to modify - for example:</p>
+
+<pre class="line-numbers">
+	<code class="language-json notranslate">{
+			"language": "es",
+			"is_default": true
+	}</code></pre>
+
+<h3>Delete an audio track</h3>
+
+<p>To delete an audio track, send a DELETE request to:</p>
+
+<pre class="line-numbers">
+	<code class="language-http notranslate">https://cms.api.brightcove.com/v1/accounts/<span class="bcls-input">account_id</span>/videos/<span class="bcls-input">video id</span>/audio_tracks/<span class="bcls-input">audio_track_id</span></code></pre>
+
+<p>Note that the success response code may be 202 (Accepted) rather than 204 (No content) because the deletion process is asynchronous and may not be completed immediately.</p>
+
+<table class="bcls-table"><caption class="bcls-caption--table">Audio Track Metadata Fields</caption>
+	<thead class="bcls-table__head"><tr><th>Field</th>
+			<th>Type</th>
+			<th>Read-only</th>
+			<th>Description</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><code>id</code></td>
+			<td>String</td>
+			<td>yes</td>
+			<td>Id for the track, formed as <strong>language_variant</strong> - note that the id may change if these values are changed</td>
+		</tr><tr><td><code>language</code></td>
+			<td>String</td>
+			<td>No</td>
+			<td>Language code for the audio track from the subtags in <a href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry</a></td>
+		</tr><tr><td><code>variant</code></td>
+			<td>String</td>
+			<td>No</td>
+			<td>The kind of audio track: <code>main</code>|<code>alternate</code>|<code>dub</code>|<code>commentary</code>|<code>descriptive</code> (<code>main</code> would generally be used for the muxed in audio)</td>
+		</tr><tr><td><code>duration</code></td>
+			<td>Number</td>
+			<td>Yes</td>
+			<td>The length of the track in milliseconds</td>
+		</tr><tr><td><code>encoding_rates</code></td>
+			<td>Number[]</td>
+			<td>Yes</td>
+			<td>A list of available encodings of this track, in bps</td>
+		</tr><tr><td><code>is_default</code></td>
+			<td>Boolean</td>
+			<td>No</td>
+			<td>If true, this will be used the default track for playback (overriding any account-level default)</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Playback">Playback</h2>
+
+<p>For information on how the Brightcove web and SDK players handle multiple audio tracks see:</p>
+
+<ul><li class="language-editable"><a href="multiple-audio-tracks.html">Multiple Audio Tracks (web player)</a></li>
+	<li class="language-editable"><a href="multiple-audio-tracks-native-sdks.html">Multiple Audio Tracks with the Native SDKs</a></li>
+</ul></section><section class="bcls-section"><h2 id="Known_issues">Known issues</h2>
+
+<dl><dt class="language-editable">Audio masters not stored</dt>
+	<dd class="language-editable">
+	<ul><li class="language-editable"><span class="notranslate">Video Cloud</span> will <strong>not</strong> store audio masters</li>
+		<li class="language-editable">If you retranscode the video from the video master, the additional audio tracks will be lost, and must be re-added using the <a href="#Add_audio_tracks_to_an_existing_video">Add audio tracks to an existing video</a> method described above</li>
+	</ul></dd>
+	<dt class="language-editable">Audio-only files must be used</dt>
+	<dd class="language-editable">Audio tracks must be audio-only files without video tracks</dd>
+	<dt class="language-editable"><code>HLSv3</code>, <code>HLS</code> with audio and video in the same segment</dt>
+	<dd class="language-editable">
+	<ul><li class="language-editable">The playback API will not return <code>HLSv3</code> manifests</li>
+		<li class="language-editable">All <code>HLS</code> manifests will include de-muxed video/audio</li>
+	</ul></dd>
+	<dt class="language-editable">Smooth Streaming</dt>
+	<dd class="language-editable">Smooth Streaming URLs will not be available.</dd>
+	<dt class="language-editable">Social Distribution</dt>
+	<dd class="language-editable">It is not possible to select which audio track will be used for distribution. The track included in the video source (the muxed in audio) will be used, always.</dd>
+	<dt class="language-editable">Studio</dt>
+	<dd class="language-editable">
+	<ul><li class="language-editable">Studio will display information about audio tracks</li>
+		<li class="language-editable">To add audio tracks using Studio, see <a href="multiple-audio-tracks.html">Multiple Audio Tracks</a></li>
+	</ul></dd>
+	<dt class="language-editable">Ordering of audio tracks beyond the one "default" track</dt>
+	<dd class="language-editable">
+	<ul><li class="language-editable">You can pick a default audio track with <span class="notranslate">CMS API</span> per title by setting the <code>is_default</code> field to <code>true</code></li>
+		<li class="language-editable">There is also an account default, which can be set by Support</li>
+		<li class="language-editable">This will only affect the "default" track in HLS manifests</li>
+		<li class="language-editable">No other ordering is possible</li>
+	</ul></dd>
+	<dt class="language-editable">Ingesting more than one audio track from a single source</dt>
+	<dd class="language-editable">We support <strong>one audio track from the source supplied in "<code>.master</code>"</strong>, and one for each source under "<code>.audio_tracks.masters</code>".</dd>
+	<dt class="language-editable">DRM protection on videos that include only audio</dt>
+	<dd class="language-editable">As soon as a video track is added, DRM protection will be enabled.</dd>
+	<dt class="language-editable">End-user friendly labels</dt>
+	<dd class="language-editable">We do not support custom labels for audio tracks. If you require that, you will need to make the change on the client side via the Player API.</dd>
+	<dt class="language-editable">In some instances, switching tracks may cause the Brightcove Player to become unstable</dt>
+	<dd class="language-editable">
+	<ul><li class="language-editable">Track switching before all audio segments have been downloaded</li>
+		<li class="language-editable">When the video is played back using the Silverlight plugin (in versions of IE less than 10, or any version of IE in versions of Window less than 8) - multiple audio tracks are <strong>not</strong> supported in Silverlight.</li>
+		<li class="language-editable">If the audio and video are different durations, the player will may stop whenever the shorter one runs out.</li>
+	</ul></dd>
+	<dt class="language-editable">Video "<code>duration</code>"</dt>
+	<dd class="language-editable">The video <code>duration</code> reported by the catalog/Playback API may be incorrect if the audio tracks have different durations.</dd>
+</dl></section></article></div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-by-field-block-1 clearfix" id="block-views-block-related-content-by-field-block-1">
+  
+    
+
+      <div class="form-group"><div class="view view-related-content-by-field view-id-related_content_by_field view-display-id-block_1 js-view-dom-id-11638018adf425939b23d402b04d8f761badb68527ab8f046715e0116ec088b1">
+  
+    
+      <div class="view-header">
+      <h2>Related content</h2>
+    </div>
+      
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="multiple-audio-tracks-native-sdks.html" hreflang="en">Multiple Audio Tracks with the Native SDKs</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="multiple-audio-tracks.html" hreflang="en">Multiple Audio Tracks</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="overview-dynamic-ingest-api-dynamic-delivery.html" hreflang="en"> Overview: Dynamic Ingest API for Dynamic Delivery</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="row">
+            <div class="region region-footer-top-left col-md-9" style="margin-bottom: 1em;">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove Support</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://status.brightcove.com">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="contact-support.html" data-drupal-link-system-path="node/18632">Support - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.brightcove.com/en/contact/create">Support - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Documentation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Training</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="online-training-courses.html" data-drupal-link-system-path="node/18286">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a course</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://www.brightcove.com">Brightcove.com</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="region region-footer-top-right col-md-3">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Brightcove Inc. (NASDAQ: BCOV), is a leading global provider of powerful cloud solutions for delivering and monetizing video across connected devices.</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="row">
+            <div class="region region-footer-bottom-left col-md-8">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item">Brightcove Inc. All rights reserved.</div>
+      
+      <div class="field field--name-field-legal-links field--type-link field--label-hidden field--items">
+              <div class="field--item"><a href="https://www.brightcove.com/en/privacy">Privacy</a></div>
+              <div class="field--item"><a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="region region-footer-bottom-right col-md-4">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items">
+              <div class="field--item">
+
+<a href="https://www.linkedin.com/company/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://twitter.com/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://www.facebook.com/Brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://plus.google.com/100830370440271567091" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/17937","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGn0UTEBVCWpxWhZdZHNWFFRscgpEX3cRUVRRXBQUDkYAWFZQFmhUVFoDUV9YAVNAcwtKVXRaElBfWg==","queueTime":0,"applicationTime":184,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

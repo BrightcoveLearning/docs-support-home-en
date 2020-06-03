@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="sites/default/files/favicon-64.png" type="image/png" />
+<link rel="alternate" hreflang="en" href="implementing-playlists.html" />
+<link rel="canonical" href="implementing-playlists.html" />
+<link rel="shortlink" href="implementing-playlists.html" />
+<link rel="revision" href="implementing-playlists.html" />
+
+    <title>Implementing Playlists | Brightcove Learning</title>
+    <link rel="stylesheet" media="all" href="sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw_q23msc.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4_q23msc.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on" />
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  </head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="navigation-secondary clearfix">
+          <div class="region region-navigation-secondary">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary Navigation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="contact-support.html" title="Create a Support Request" data-drupal-link-system-path="node/18632">Support Request</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://status.brightcove.com/">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://university.brightcove.com/">Brightcove University</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gtranslate">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" style="font-weight:bold;background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">English</option><option value="en|fr" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">French</option><option value="en|de" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">German</option><option value="en|ja" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">Japanese</option><option value="en|ko" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">Korean</option><option value="en|es" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">Spanish</option></select>
+</div>
+<div class="gtranslate__credits">
+  Translations Provided by Google Translate
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="navbar-header col-md-3">
+                  <a class="logo navbar-btn pull-left" href="index.html" title="Home" rel="home">
+            <img src="themes/custom/bcdocs/images/brightcove.png" alt="Home" />
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" title="Home page" data-drupal-link-system-path="node/18643">Home</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Products
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="video-cloud.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://gallery.support.brightcove.com">Gallery</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a href="social.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ssai.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Quick Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="analytics-api.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience-api.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-api.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-connectors-video-cloud.html" data-drupal-link-system-path="node/18662">CMS Connectors for Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="data-collection-api.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="delivery-system-api.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="developer-tools-and-concepts.html" data-drupal-link-system-path="node/18430">Developer Tools and Concepts</a>
+                  </li>
+                              <li class="expanded">
+        <a href="native-player-sdks.html" data-drupal-link-system-path="node/18367">Device SDKs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="dynamic-ingest-api.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="getting-started-brightcove-apis-0.html" data-drupal-link-system-path="node/18711">Getting Started - Brightcove APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="page-experience-api.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ingest-profiles-api.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="oauth-api.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="platform-api-code-samples.html" data-drupal-link-system-path="node/18675">Platform API Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="playback-api.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-code-samples.html" data-drupal-link-system-path="node/18630">Player Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-developer.html" data-drupal-link-system-path="node/18362">Player Developer</a>
+                  </li>
+                              <li class="expanded">
+        <a href="player-management-api.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="policy-api.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="release-notes.html" data-drupal-link-system-path="node/18687">Release Notes</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Training
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="https://university.brightcove.com">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a Course</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a href="brightcove-support-documentation-announcements.html" title="See what&#039;s new in Brightcove Documentation" data-drupal-link-system-path="node/18896">What&#039;s New</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="full-width-headline">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" role="heading">
+            <div class="region region-header">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      Documentation
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="main-container container  js-quickedit-main-content">
+    <div class="row">
+
+                              <aside class="col-sm-3" role="complementary">
+              <div class="region region-sidebar-first">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="implementing-playlists.html" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group">
+      <label for="edit-search" class="control-label sr-only">Search</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="Search" />
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-tmwl7by7t7xjcel-73rfug2i6o0encymfts0ygkjmno" type="hidden" name="form_build_id" value="form-tMwL7bY7t7xJCEL-73rFug2I6O0enCYmFts0yGKJMNo" /><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form" /><div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix">
+  
+      <h2 class="block-title">On This Page</h2>
+    
+
+      <div class="bc-ipnav-block"></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="highlighted">  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a id="main-content"></a>
+            <div class="region region-content">
+        <h1 class="page-header"><span>Implementing Playlists</span>
+</h1>
+
+  
+<div class="node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+      </div>
+
+  <div class="group-second-row">
+  
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+          <div class="field--item">Brightcove Player</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Player Developer</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Create &amp; Use Playlists</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-topics field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Topic(s)</div>
+          <div class="field--items">
+              <div class="field--item">Playlists</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item"><p>In this topic, you will learn the how to use playlists to display a collection of videos that are grouped together in a particular order for playback in a Brightcove Player.</p>
+      <article class="bcls-article"><section class="bcls-section"><h2 id="Overview">Overview</h2>
+
+<p>When using playlists the first decision you should make is where do you want the playlist in relation to the player. Normally, when using Brightcove Player you see playlists to the right of the player vertically or below the player horizontally. (As you will see later in this document, you have flexibility to locate the playlist in other places.) Implementations of a vertically and horizontally placed playlist follow.</p>
+
+<aside class="bcls-aside bcls-aside--tip">The following docs are essential information to complete the picture of using playlists:
+<ul><li><a href="playlist-ui-plugin.html">Playlist UI Plugin</a>: This document details options available to enhance the look and feel of playlist functionality.</li>
+	<li><a href="styling-playlists.html">Styling Playlists</a>: This document provides information on to customize the look of the playlists.</li>
+</ul></aside><h3>Vertical playlist example</h3>
+
+<p>The following shows a vertical playlist:</p>
+
+<div style="position: relative; display: block; max-width: 750px;">
+<div style="padding-top: 56.25%;"><iframe src="https://players.brightcove.net/1752604059001/S13cJdUBz_default/index.html?playlistId=5718313430001" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div>
+</div>
+
+<h3>Horizontal playlist example</h3>
+
+<p>The following shows a horizontal playlist:</p>
+
+<div style="position: relative; display: block; max-width: 750px;">
+<div style="padding-top: 70.6667%;"><iframe src="https://players.brightcove.net/1752604059001/ryhwJzBBf_default/index.html?playlistId=5718313430001" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div>
+</div>
+
+<p>Along with the direction of the playlist, you will also need to determine the HTML code you wish to use for implementation, <strong>Standard</strong> or <strong>Advanced</strong>. The following shows the four resulting options you have:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="playlist enable studio" src="https://learning-services-media.brightcove.com/doc-assets/player-development/playlists/general-information/using-playlists/playlists-decision-tree.png" /></figure><aside class="bcls-aside bcls-aside--tip">There are numerous options that can be used to modify playlists, including, as you have already seen, if the playlist should be displayed vertically or horizontally. The <a href="playlist-ui-plugin.html">Playlist UI Plugin</a> document details all the options.</aside></section><section class="bcls-section"><h2 id="Implementation_overview">Implementation overview</h2>
+
+<p>To use playlists, complete the follow tasks:</p>
+
+<ol><li><a href="#createplaylist">Create a playlist</a> either in Studio or manually using JavaScript.</li>
+	<li><a href="#enableplayer">Enable your player</a> to use playlists using Studio's player properties <strong>Styling</strong> option.</li>
+	<li>Implement the playlist using either the <a href="#iframe">Standard (iframe)</a> player or the <a href="#inpageembed">Advanced (in-page embed)</a> implementation.</li>
+	<li>If you wish to programmatically control the playlist, use the <a href="#playlistapi">Playlist API</a>.</li>
+</ol></section><section class="bcls-section video-cloud-only"><h2 id="Create_playlist">Create playlist</h2>
+
+<div class="video-cloud-only">
+<p>The following three documents show how to create playlists. The first two using Video Cloud Studio and the last one using JavaScript.</p>
+
+<ul><li><a href="creating-and-managing-playlists.html">Creating and Managing Playlists</a></li>
+	<li><a href="introduction-playlists.html">Working with Playlists</a></li>
+	<li><a href="guide-playlist-api.html#manualcreation">Guide: Playlist API</a></li>
+</ul></div>
+
+<div class="player-only">
+<p>To create a playlist you need to use the player's <code>playlist()</code> method along with JSON to define the videos in the playlist. The following code shows an example.</p>
+
+<pre class="line-numbers">
+  <code class="language-javascript">&lt;script type="text/javascript"&gt;
+  videojs.getPlayer('myPlayerID').ready(function() {
+      var myPlayer = this;
+      myPlayer.playlist([{
+          "sources": [{
+              "src": "http://solutions.brightcove.com/bcls/assets/videos/Sea_SeaHorse.mp4", "type": "video/mp4"
+          }],
+          "name": "Seahorse",
+          "thumbnail": "http://solutions.brightcove.com/bcls/assets/images/Sea_Seahorse_poster.png",
+          "poster": "http://solutions.brightcove.com/bcls/assets/images/Sea_Seahorse_poster.png"
+      }, {
+          "sources": [{
+              "src": "http://solutions.brightcove.com/bcls/assets/videos/Sea_Anemone.mp4", "type": "video/mp4"
+          }],
+          "name": "Sea Anemone",
+          "thumbnail": "http://solutions.brightcove.com/bcls/assets/images/Sea_Anemone_poster.png",
+          "poster": "http://solutions.brightcove.com/bcls/assets/images/Sea_Anemone_poster.png"
+      }, {
+          "sources": [{
+              "src": "http://solutions.brightcove.com/bcls/assets/videos/Tiger.mp4", "type": "video/mp4"
+          }],
+          "name": "Tiger",
+          "thumbnail": "http://solutions.brightcove.com/bcls/assets/images/Tiger_poster.png",
+          "poster": "http://solutions.brightcove.com/bcls/assets/images/Tiger_poster.png"
+      }, {
+          "sources": [{
+              "src": "http://solutions.brightcove.com/bcls/assets/videos/Sea_ClownFish.mp4", "type": "video/mp4"
+          }],
+          "name": "Clownfish",
+          "thumbnail": "http://solutions.brightcove.com/bcls/assets/images/Sea_ClownFish_poster.png",
+          "poster": "http://solutions.brightcove.com/bcls/assets/images/Sea_ClownFish_poster.png"
+      }, {
+          "sources": [{
+              "src": "http://solutions.brightcove.com/bcls/assets/videos/Sea_LionFish.mp4", "type": "video/mp4"
+          }],
+          "name": "Lionfish",
+          "thumbnail": "http://solutions.brightcove.com/bcls/assets/images/Sea_LionFish_poster.png",
+          "poster": "http://solutions.brightcove.com/bcls/assets/images/Sea_LionFish_poster.png"
+      }]);
+  });
+  &lt;/script&gt;</code></pre>
+</div>
+</section><section class="bcls-section"><h2 id="Enable_player">Enable player</h2>
+
+<p>You can use Studio to enable your player to use playlists. Follow these steps to do so:</p>
+
+<ol class="bcls-tasklist"><li>Open the <strong>PLAYERS</strong> module and either create a new player or locate the player to which you wish to enable for playlists.</li>
+	<li>Click the link for the player to open the player's properties.</li>
+	<li>In <strong>Player Information</strong>, for the <strong>Player Type</strong> click the <strong>Playlist</strong> radio button.</li>
+	<li>Click <strong>Save</strong>.</li>
+	<li>Click <strong>Styling</strong> in the left navigation menu.</li>
+	<li>Choose your desired <strong>Playlist Type</strong>:
+	<figure class="bcls-figure"><img class="bcls-image" alt="enable playlist in Studio" src="https://learning-services-media.brightcove.com/doc-assets/player-development/playlists/general-information/playlist-api/playlist-enable-in-studio.png" /></figure></li>
+	<li>Click <strong>Playback</strong> in the left navigation menu.</li>
+	<li>Check the radio buttons for the playlist options you wish to enable:
+	<figure class="bcls-figure"><img class="bcls-image" alt="playback section playlist options" src="https://learning-services-media.brightcove.com/doc-assets/player-development/playlists/general-information/playback-playlist-options.png" /></figure></li>
+	<li>To publish the player, click <strong>Publish &amp; Embed &gt; Publish Changes</strong>.</li>
+	<li>To close the open dialog, click <strong>Close</strong>.</li>
+</ol></section><section class="bcls-section"><h2 id="Standard_iframe_player">Standard (iframe) player</h2>
+
+<p>Once you have a playlist to use, and have enabled your player to use a playlist, you are ready to actually utilize the playlist with a player. As usual you have the Standard and Advanced player implementations available. In this section, instructions for using the playlist with the Standard implementation are shown. When using the Standard/Vertical Playlist implementation, the playlist will appear on the right side of the player, as you have seen in the example at the top of this document.</p>
+
+<p>You publish a playlist very similarly as you publish a video. In Studio's <strong>MEDIA</strong> module, select your playlist then click the <strong>Publish Playlist</strong> button. Be sure to select the correct player.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="playlist enable studio" src="https://learning-services-media.brightcove.com/doc-assets/player-development/playlists/general-information/using-playlists/studio-publishing.png" /></figure><p>Once you have published, you then choose your code. In this section, the <strong>Standard (iframe)</strong> code is demonstrated. You can select options for the code (highlighted) that deal with player sizing.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="playlist enable studio" src="https://learning-services-media.brightcove.com/doc-assets/player-development/playlists/general-information/using-playlists/studio-code.png" /></figure><p>If you wish to have a responsive player, which is an excellent option, the player code appears as shown here:</p>
+
+<pre class="line-numbers">
+  <code class="language-html">&lt;div style="position: relative; display: block; max-width: 640px;"&gt;
+    &lt;div style="padding-top: 56.25%;"&gt;
+      &lt;iframe src="https://players.brightcove.net/1752604059001/S13cJdUBz_default/index.html?playlistId=5718313430001"
+        allowfullscreen
+        webkitallowfullscreen
+        mozallowfullscreen
+        style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+
+<p>The two <code>div</code> elements and associated attributes are what make the player responsive.</p>
+
+<h3>Adjust <code>padding-top</code> for a horizontal playlist</h3>
+
+<p>The code just displayed is for the player ONLY. If you are using a <strong>horizontal</strong> playlist, you must manually adjust the code a bit to make room for the playlist. Use the following table to correctly change the <code>&lt;div style="padding-top: 56.25%;"&gt;</code> value.</p>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>Aspect Ration</th>
+			<th>padding-top with player only</th>
+			<th>padding-top with horizontal playlist</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td>4:3</td>
+			<td>75%</td>
+			<td>93.75%</td>
+		</tr><tr><td>16:9</td>
+			<td>56.25%</td>
+			<td>70.31%</td>
+		</tr></tbody></table><p>This means if you are using a video of 16:9 aspect ration, the <code>padding-top</code> value should appear as follows:</p>
+
+<pre class="line-numbers">
+  <code class="language-html">&lt;div style="padding-top: 70.31%;"&gt;</code></pre>
+
+<h3>Manually changing the playlist</h3>
+
+<p>If you wish to change the playlist used with the iframe implementation you simply need to change the <code>src</code> attribute of the iframe. If using an ID:</p>
+
+<pre class="line-numbers">
+  <code class="language-html">&lt;iframe src="https://players.brightcove.net/.../index.html<span class="bcls-highlight">?playlistId=1754200320001</span>"</code></pre>
+
+<p>or if you are using a reference ID:</p>
+
+<pre class="line-numbers">
+  <code class="language-html">&lt;iframe src="https://players.brightcove.net/.../index.html<span class="bcls-highlight">?playlistId=ref:myrefid001</span>"</code></pre>
+</section><section class="bcls-section"><h2 id="Advanced_in_page_embed_player">Advanced (in-page embed) player</h2>
+
+<p>After you have created a playlist in Studio's <strong>MEDIA</strong> module, and have enabled a playlist player in Studio's <strong>PLAYERS</strong> module, you are ready to implement the playlist with a player. With the <a href="#iframe">Standard embed code</a>, the plugin creates the playlist container and sizes it to fit the <code>iframe</code> element. With the Advanced In-Page embed code, you must provide the playlist container and use CSS to size the player and playlist appropriately.</p>
+
+<h3>Vertical playlist</h3>
+
+<p>To provide an iframe-like experience with a collapsable vertical tray, Brightcove has developed a <strong>Playlist Player Container</strong> for the Advanced in-page embed code.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="in-page embed playlist" src="https://learning-services-media.brightcove.com/doc-assets/player-development/playlists/general-information/using-playlists/in-page-vertical-demo.png" /></figure><p>To use the Playlist Player Container, wrap the Advanced embed code with the following:</p>
+
+<pre>
+<code class="language-html">&lt;div class="vjs-playlist-player-container"&gt;</code></pre>
+ 
+
+<h4>Fixed, vertical playlist</h4>
+
+<p>Follow these steps to create a fixed, vertical playlist:</p>
+
+<ol class="bcls-tasklist__restart"><li>
+	<p>Get the Advanced embed code. After you publish the playlist using your configured player (as detailed in the section above), choose the <strong>Advanced</strong> code. It should be similar to this:</p>
+
+	<pre class="line-numbers">
+<code class="language-html">&lt;video-js
+  data-account="1752604059001"
+  data-player="5dBwlwbNk"
+  data-embed="default"
+  controls=""
+  data-video-id=""
+  data-playlist-id="5686354139001"
+  data-application-id=""
+  width="960" height="540"&gt;
+&lt;/video-js&gt;</code></pre>
+
+	<p>If you viewed the player with the code above, you will NOT see a playlist. When using the Advanced implementation of the player you MUST wrap the player in the Playlist Player Container.</p>
+	</li>
+	<li>
+	<p>Wrap the advanced embed code with the Playlist Player Container, and add the following:</p>
+
+	<ul><li>
+		<p>A static CSS <code>width</code> that matches the player size</p>
+		</li>
+	</ul><pre class="line-numbers">
+<code class="language-html"><span class="bcls-highlight">&lt;div class="vjs-playlist-player-container" style="width: 960px;"&gt;</span>
+  &lt;video-js
+    data-account="1752604059001"
+    data-player="5dBwlwbNk"
+    data-embed="default"
+    controls=""
+    data-video-id=""
+    data-playlist-id="5686354139001"
+    data-application-id=""
+    width="960" height="540"&gt;
+  &lt;/video-js&gt;
+<span class="bcls-highlight">&lt;/div&gt;</span>
+&lt;script src="https://players.brightcove.net/1752604059001/5dBwlwbNk_default/index.min.js"&gt;&lt;/script&gt;</code></pre>
+	</li>
+</ol><h4>Responsive, vertical playlist</h4>
+
+<p>Follow these steps to create a responsive, vertical playlist:</p>
+
+<ol class="bcls-tasklist__restart"><li>
+	<p>Get the Advanced embed code. After you publish the playlist using your configured player (as detailed in the section above), choose the <strong>Advanced</strong> code. It should be similar to this:</p>
+
+	<pre class="line-numbers">
+<code class="language-html">&lt;div style="max-width: 960px;"&gt;
+	&lt;video-js
+		data-account="1752604059001"
+		data-player="5dBwlwbNk"
+		data-embed="default"
+		controls=""
+		data-video-id=""
+		data-playlist-id="5686354139001"
+		data-application-id=""
+		class="vjs-fluid"&gt;
+	&lt;/video-js&gt;
+&lt;/div&gt;
+&lt;script src="https://players.brightcove.net/1752604059001/5dBwlwbNk_default/index.min.js"&gt;&lt;/script&gt;</code></pre>
+
+	<p>If you viewed the player with the code above, you will NOT see a playlist. When using the Advanced implementation of the player you MUST wrap the player in the Playlist Player Container.</p>
+
+	<p>Notice that the responsive player uses the <code>max-width</code> style and the <code>vjs-fluid</code> class.</p>
+	</li>
+	<li>
+	<p>To the <code>&lt;div&gt;</code> wrapper around the <code>video-js</code> element, add the <code>vjs-playlist-player-container</code> class.</p>
+
+	<pre class="line-numbers">
+<code class="language-html"><span class="bcls-highlight">&lt;div class="vjs-playlist-player-container" style="max-width: 960px;"&gt;</span>
+	&lt;video-js
+		data-account="1752604059001"
+		data-player="5dBwlwbNk"
+		data-embed="default"
+		controls=""
+		data-video-id=""
+		data-playlist-id="5686354139001"
+		data-application-id=""
+		class="vjs-fluid"&gt;
+	&lt;/video-js&gt;
+&lt;/div&gt;
+&lt;script src="https://players.brightcove.net/1752604059001/5dBwlwbNk_default/index.min.js"&gt;&lt;/script&gt;</code></pre>
+	</li>
+</ol><h3>Horizontal playlist</h3>
+
+<p>To provide an iframe-like experience with a horizontal playlist, Brightcove has developed a <strong>Playlist Player Container</strong> for the Advanced in-page embed code.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="in-page embed playlist" src="https://learning-services-media.brightcove.com/doc-assets/player-development/playlists/general-information/using-playlists/in-page-horizontal-demo.png" /></figure><p>To use the Playlist Player Container, wrap the Advanced embed code with the following:</p>
+
+<pre>
+<code class="language-html">&lt;div class="vjs-playlist-player-container"&gt;</code></pre>
+ 
+
+<h4>Fixed, horizontal playlist</h4>
+
+<p>Follow these steps to create a fixed, horizontal playlist:</p>
+
+<ol class="bcls-tasklist__restart"><li>
+	<p>Get the Advanced embed code. After you publish the playlist using your configured player (as detailed in the section above), choose the <strong>Advanced</strong> code. It should be similar to this:</p>
+
+	<pre class="line-numbers">
+<code class="language-html">&lt;video-js
+  data-account="1752604059001"
+  data-player="5dBwlwbNk"
+  data-embed="default"
+  controls=""
+  data-video-id=""
+  data-playlist-id="5686354139001"
+  data-application-id=""
+  width="960" height="540"&gt;
+&lt;/video-js&gt;
+&lt;script src="https://players.brightcove.net/1752604059001/5dBwlwbNk_default/index.min.js"&gt;&lt;/script&gt;</code></pre>
+
+	<p>If you viewed the player with the code above, you will NOT see a playlist. When using the Advanced implementation of the player you MUST wrap the player in the Playlist Player Container.</p>
+	</li>
+	<li>
+	<p>Wrap the advanced embed code with the Playlist Player Container, and add the following:</p>
+
+	<ul><li>A static CSS <code>width</code> that matches the player size</li>
+		<li>
+		<p>A static CSS <code>height</code> equal to the player's height divided by 0.8. Because the horizontal playlist occupies 20% of the available space, you need to set the player height to occupy 80% of the available space. (e.g. 540px / .8 = 675px)</p>
+		</li>
+	</ul><pre class="line-numbers">
+<code class="language-html"><span class="bcls-highlight">&lt;div class="vjs-playlist-player-container" style="width: 960px; height: 675px;"&gt;</span>
+  &lt;video-js
+    data-account="1752604059001"
+    data-player="5dBwlwbNk"
+    data-embed="default"
+    controls=""
+    data-video-id=""
+    data-playlist-id="5686354139001"
+    data-application-id=""
+    width="960" height="540"&gt;
+  &lt;/video-js&gt;
+<span class="bcls-highlight">&lt;/div&gt;</span>
+&lt;script src="https://players.brightcove.net/1752604059001/5dBwlwbNk_default/index.min.js"&gt;&lt;/script&gt;</code></pre>
+	</li>
+</ol><h4>Responsive, horizontal playlist</h4>
+
+<p>This is the most complex customization because both the player and playlist need to be respsonsive with respect to width and height.</p>
+
+<ol class="bcls-tasklist__restart"><li>
+	<p>Get the Advanced embed code. After you publish the playlist using your configured player (as detailed in the section above), choose the <strong>Advanced</strong> code. It should be similar to this:</p>
+
+	<pre class="line-numbers">
+<code class="language-html">&lt;div style="max-width: 960px;"&gt;
+	&lt;video-js
+	  data-account="1752604059001"
+	  data-player="5dBwlwbNk"
+	  data-embed="default"
+	  controls=""
+	  data-video-id=""
+	  data-playlist-id="5686354139001"
+	  data-application-id=""
+	  class="vjs-fluid"&gt;
+	&lt;/video-js&gt;
+&lt;/div&gt;
+&lt;script src="https://players.brightcove.net/1752604059001/5dBwlwbNk_default/index.min.js"&gt;&lt;/script&gt;</code></pre>
+
+	<p>If you viewed the player with the code above, you will NOT see a playlist. When using the Advanced implementation of the player you MUST wrap the player in the Playlist Player Container.</p>
+
+	<p>Notice that the responsive player uses the <code>max-width</code> style and the <code>vjs-fluid</code> class.</p>
+	</li>
+	<li>
+	<p>In the <code>video-js</code> element, remove the <code>vjs-fluid</code> class and replace it with <code>vjs-fill</code>.</p>
+
+	<pre>
+<code class="language-html">class="vjs-fill"</code></pre>
+	</li>
+	<li>
+	<p>Wrap the <code>video-js</code> element with a <code>div</code> element as follows:</p>
+
+	<pre>
+<code class="language-html">&lt;div class="vjs-playlist-player-container" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"&gt;</code></pre>
+	</li>
+	<li>
+	<p>Wrap the previous container in a <code>div</code> element with CSS <code>padding-top</code> equal to: <code>aspectRatioHeight / aspectRatioWidth / 0.8 * 100</code>.</p>
+
+	<pre>
+<code class="language-html">&lt;div style="padding-top: 70.3125%;"&gt;</code></pre>
+	 
+
+	<p>Because the horizontal playlist occupies 20% of the available space, we need the height of the player to occupy 80% of the available space. This is how we figured the math:</p>
+
+	<ul><li><code>aspectRatioHeight / aspectRatioWidth</code> gives you the aspect ratio as a percentage (e.g. 9 / 16 = 0.5625)</li>
+		<li>This percentage divided by 0.8 gives us an adjusted percentage.</li>
+		<li>
+		<p>Multiplying by 100 gives us a number from 0 to 100 that will work as a <code>padding-top</code> value.</p>
+		</li>
+	</ul><p>Here are common aspect ratios and their pre-calculated percentages:</p>
+
+	<ul><li><code>16:9</code> yields <code>70.3125%</code></li>
+		<li><code>16:10</code> yields <code>78.125%</code></li>
+		<li><code>4:3</code> yields <code>93.75%</code></li>
+	</ul></li>
+	<li>
+	<p>Wrap the previous container with a <code>div</code> element as follows:</p>
+
+	<pre>
+<code class="language-html">&lt;div style="position: relative; display: block; max-width: 960px;"&gt;</code></pre>
+	</li>
+	<li>
+	<p>The complete code should look similar to this:</p>
+
+	<pre class="line-numbers">
+<code class="language-html"><span class="bcls-highlight">&lt;div style="position: relative; display: block; max-width: 960px;"&gt;
+	&lt;div style="padding-top: 70.3125%;"&gt;
+		&lt;div class="vjs-playlist-player-container" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"&gt;</span>
+			&lt;video-js
+			  data-account="1752604059001"
+			  data-player="5dBwlwbNk"
+			  data-embed="default"
+			  controls=""
+			  data-video-id=""
+			  data-playlist-id="5686354139001"
+			  data-application-id=""
+			  <span class="bcls-highlight">class="vjs-fill"&gt;</span>
+			&lt;/video-js&gt;
+		<span class="bcls-highlight">&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</span>
+&lt;script src="https://players.brightcove.net/1752604059001/5dBwlwbNk_default/index.min.js"&gt;&lt;/script&gt;</code></pre>
+	</li>
+</ol><!-- <p>If you viewed the player as shown above, you would NOT see a playlist. When using the Advanced implementation of the player you MUST add an HTML element that specifies the location of the playlist. The element is:</p>
+
+<pre class="line-numbers">
+  <code class="language-html">&lt;div class="vjs-playlist"&gt;&lt;/div&gt;</code></pre>
+
+<aside class="bcls-aside bcls-aside--information">
+<p>The playlist is actually an HTML ordered list and is injected into the <code>div</code> element with the class <code>vjs-playlist</code>. The following screenshot shows the actual elements where the playlist is placed:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="ordered list inside div" src="//learning-services-media.brightcove.com/doc-assets/player-development/playlists/general-information/using-playlists/ol-inside-div.png" /></figure>
+</aside>
+
+<p>Chances are you will wish to style the player and playlist to appear the way you wish. For instance, the styles used in the screenshot of the player just above are:</p>
+
+<pre class="line-numbers">
+  <code class="language-html">&lt;style type="text/css"&gt;
+      .video-js {
+        height: 350px;
+        width: 640px;
+        float: left;
+      }
+      .vjs-playlist {
+        width: 280px;
+        height: 350px;
+      }
+  &lt;/style&gt;</code></pre>
+
+<p>An example HTML page using the Advanced implementation with a vertical playlist follows (no responsive elements are used in this case):</p>
+
+<pre class="line-numbers">
+  <code class="language-html">&lt;!doctype html&gt;
+  &lt;html&gt;
+
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Untitled Document&lt;/title&gt;
+    &lt;style type="text/css"&gt;
+      .video-js {
+        height: 350px;
+        width: 640px;
+        float: left;
+      }
+      .vjs-playlist {
+        width: 280px;
+        height: 350px;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+
+    &lt;video-js data-playlist-id="5126480959001"
+      data-account="1752604059001"
+      data-player="f50a2d3c-af51-4d8c-84e3-0c7cdec0edbe"
+      data-embed="default"
+      data-application-id
+      class="video-js"
+      controls&gt;&lt;/video-js&gt;
+    &lt;script src="https://players.brightcove.net/1752604059001/f50a2d3c-af51-4d8c-84e3-0c7cdec0edbe_default/index.min.js"&gt;&lt;/script&gt;
+
+    <span class="bcls-highlight">&lt;div class="vjs-playlist"&gt;&lt;/div&gt;</span>
+
+  &lt;/body&gt;
+
+  &lt;/html&gt;</code></pre> --><!-- <h3>Making the playlist horizontal</h3>
+
+<p>If you wish to have a horizontal playlist, there are only a couple of things you need to do. They are:</p>
+
+<ol>
+	<li>As shown above, use Studio to set the style of the player to use a horizontal playlist.</li>
+	<li>Style the player and playlist: Add the following CSS. Of course you may need to make minor adjustments to match your player to your video size.
+	<pre class="line-numbers">
+  <code class="language-css">&lt;style type="text/css"&gt;
+    .video-js {
+      height: 350px;
+      width: 640px;
+    }
+
+    .vjs-playlist {
+      width: 640px;
+    }
+  &lt;/style&gt;</code></pre>
+	</li>
+</ol>
+
+<p>If you viewed the player as shown above you would NOT see a playlist. When using the Advanced implementation of the player you MUST add an HTML element that specifies the location of the playlist. The element is:</p>
+
+<pre class="line-numbers">
+  <code class="language-html">&lt;div class="vjs-playlist"&gt;&lt;/div&gt;</code></pre>
+
+<aside class="bcls-aside bcls-aside--information">
+<p>The playlist is actually an HTML ordered list and is injected into the <code>div</code> element with the class <code>vjs-playlist</code>. The following screenshot shows the actual elements where the playlist is placed:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="ordered list inside div" src="//learning-services-media.brightcove.com/doc-assets/player-development/playlists/general-information/using-playlists/ol-inside-div-horizontal.png" /></figure>
+</aside>
+
+<p>In the screenshot of the player below, you can see the playlist was separated from the actual player with relevant text added between them.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="playlist enable studio" src="//learning-services-media.brightcove.com/doc-assets/player-development/playlists/general-information/using-playlists/advanced-horizontal.png" /></figure>
+
+<p>An example HTML page using the Advanced implementation with a horizontal playlist is (no responsive elements are used in this case):</p>
+
+<pre class="line-numbers">
+  <code class="language-html">&lt;!doctype html&gt;
+  &lt;html&gt;
+
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Untitled Document&lt;/title&gt;
+    &lt;style type="text/css"&gt;
+      .video-js {
+        height: 350px;
+        width: 640px;
+      }
+
+      .vjs-playlist {
+        width: 640px;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+
+    &lt;video-js data-playlist-id="5718313430001"
+      data-account="1752604059001"
+      data-player="ryhwJzBBf"
+      data-embed="default"
+      data-application-id
+      class="video-js"
+      controls&gt;&lt;/video-js&gt;
+    &lt;p&gt;Pick your favorite video from the playlist!&lt;/p&gt;
+    <span class="bcls-highlight">&lt;div class="vjs-playlist"&gt;&lt;/div&gt;</span>
+
+    &lt;script src="https://players.brightcove.net/1752604059001/ryhwJzBBf_default/index.min.js"&gt;&lt;/script&gt;
+
+  &lt;/body&gt;
+
+  &lt;/html&gt;</code></pre> --></section><section class="bcls-section"><h2 id="Set_the_initial_video">Set the initial video</h2>
+
+<p>By default, the first video in the playlist is initially loaded into the player. If you wish to load another video in the playlist first, there are four possibilities:</p>
+
+<ol><li>If you are using the <strong>Advanced (in-page embed)</strong> player you can add the <code>data-playlist-video-id</code> as an attribute to set the initial video to play from the playlist, as shown here:
+
+	<pre class="line-numbers">
+  <code class="language-html">&lt;video-js data-playlist-id="5455901760001"
+    <span class="bcls-highlight">data-playlist-video-id="5357926703001"</span>
+    data-account="1507807800001"
+    data-player="BJQXwfiuG"
+    data-embed="default"
+    data-application-id
+    class="video-js"
+    controls&gt;&lt;/video-js&gt;
+  &lt;script src="https://players.brightcove.net/1507807800001/BJQXwfiuG_default/index.min.js"&gt;&lt;/script&gt;</code></pre>
+
+	<p>This is built in Brightcove Player functionality.</p>
+	</li>
+	<li>If you are using the <strong>Advanced (in-page embed)</strong> player on a page. You can add the following URL parameter to the <strong>page</strong> request:
+	<pre class="line-numbers">
+  <code class="language-html">?playlistVideoId=5510487311001</code></pre>
+	The player will automatically play the desired video from the playlist. This is built in Brightcove Player functionality.</li>
+	<li>If you are using a <strong>Standard (iframe)</strong> player on a page. You can add a URL parameter to the iframe's <code>src</code> attribute:
+	<pre class="line-numbers">
+  <code class="language-html">&lt;iframe src=".../index.html<span class="bcls-highlight">?playlistId=5531423971001&amp;playlistVideoId=5510487311001</span>" ...</code></pre>
+	The player will automatically play the desired video from the playlist. This is built in Brightcove Player functionality. A sample of this technique is shown here (You will need to scroll the code far to the right to see the use of the parameter):
+
+	<pre class="line-numbers">
+  <code class="language-html">&lt;div style="position: relative; display: block; max-width: 640px;"&gt;
+  &lt;div style="padding-top: 56.25%;"&gt;
+    &lt;iframe src="https://players.brightcove.net/1752604059001/HkYoUgMwW_default/index.html?playlistId=5531423971001<span class="bcls-input">&amp;playlistVideoId=5510487311001</span>"
+        allowfullscreen
+        webkitallowfullscreen
+        mozallowfullscreen
+        style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+	</li>
+	<li>You are using an iframe player and wish to pass the desired video's ID on the <strong>URL page request</strong>. This differs from #3 as you do not want to have to edit the iframe's code on the actual page, but use the URL from the page request. This is NOT built in Brightcove Player functionality, but can be done with custom code on the HTML page. A sample of this technique is shown next.</li>
+</ol><h3>Sample: Sending the video ID for the iframe on the <strong>page request</strong></h3>
+
+<p>At the highest level the logic behind the following code is a query parameter is read that contains the video ID for the video that should play first, then the iframe player is dynamically generated using that ID. In more detail, the logic behind this application is:</p>
+
+<ul><li>An insertion point is designated by creating an HTML <code>div</code> element.</li>
+	<li>The query parameter named <strong>playlistVideoId</strong> is read from the page request URL with assistance of a helper function.</li>
+	<li>An <code>iframe</code> element is dynamically built that includes a <code>src</code> attribute that contains the query parameter.</li>
+	<li>The dynamically created iframe is inserted into the page.</li>
+</ul><pre class="line-numbers">
+    <code class="language-html">&lt;!doctype html&gt;
+    &lt;html&gt;
+
+    &lt;head&gt;
+      &lt;meta charset="UTF-8"&gt;
+      &lt;title&gt;Untitled Document&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+
+      <span class="bcls-highlight">&lt;div id="place_player_here"&gt;&lt;/div&gt;</span>
+
+      &lt;script type="text/javascript"&gt;
+        var theParamValue,
+          <span class="bcls-highlight">iframe = document.createElement('iframe'),</span>
+          insertionPoint = document.getElementById("place_player_here");
+
+        // Use the helper function below to get the value of the parameter
+        theParamVideoID = getURLparam("playlistVideoId");
+
+        <span class="bcls-highlight">// Dynamically build the iframe
+        iframe.setAttribute('allowfullscreen', 'allowfullscreen');
+        iframe.setAttribute('webkitallowfullscreen', 'webkitallowfullscreen');
+        iframe.setAttribute('mozallowfullscreen', 'mozallowfullscreen');
+        iframe.setAttribute('style', "width: 610px;height: 344px");
+        iframe.src = 'https://players.brightcove.net/1752604059001/H1HpIEcCb_default/index.html?playlistId=4450721964001&amp;playlistVideoId=' + theParamVideoID;
+        // Insert the iframe into the page
+        insertionPoint.appendChild(iframe);</span>
+
+        // Helper function to get value for a specific URL parameter
+        function getURLparam(name) {
+          var regex, results;
+          name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+          regex = new RegExp("[\\?&amp;]" + name + "=([^&amp;#]*)");
+          results = regex.exec(location.search);
+          return results === null ?
+            "" :
+            decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+      &lt;/script&gt;
+
+    &lt;/body&gt;
+
+    &lt;/html&gt;</code></pre>
+
+<p>Below is a working sample where the video loaded in the player is not the first one in the playlist, but the second.</p>
+
+<div style="position: relative; display: block; max-width: 640px;">
+<div style="padding-top: 56.25%;"><iframe src="https://players.brightcove.net/1752604059001/ryy6Mxb1z_default/index.html?playlistId=5531423971001&amp;playlistVideoId=5510487311001" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div>
+</div>
+</section><section class="bcls-section"><h2 id="Playlist_API">Playlist API</h2>
+
+<p>The Playlist API gives you programmatic control over the usage of playlists, for instance <code>next()</code>, <code>previous()</code> and <code>autoadvance()</code> methods. The <a href="guide-playlist-api.html">Guide: Playlist API</a> document provides full details.</p>
+</section><section class="bcls-section"><h2 id="Implement_using_code">Implement using code</h2>
+
+<p>If you choose, you can implement playlists entirely in code and avoid Studio. The basic steps are:</p>
+
+<ul><li>Load the CSS and JavaScript for the <a href="playlist-ui-plugin.html">Playlist UI Plugin</a>.</li>
+	<li>Configure an <code>options</code> object to reflect your playlist setup.</li>
+	<li>Call the <code>bcPlaylistUi()</code> method, passing the configuration object as a parameter.</li>
+</ul><p>An example implementation follows:</p>
+
+<pre class="line-numbers">
+  <code class="language-html">&lt;!doctype html&gt;
+  &lt;html&gt;
+
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Untitled Document&lt;/title&gt;
+    &lt;style type="text/css"&gt;
+      .video-js {
+        height: 350px;
+        width: 625px;
+      }
+      .vjs-playlist {
+        width: 625px;
+      }
+    &lt;/style&gt;
+    <span class="bcls-highlight">&lt;link href="https://players.brightcove.net/videojs-bc-playlist-ui/3/videojs-bc-playlist-ui.css" rel="stylesheet"&gt;</span>
+  &lt;/head&gt;
+
+  &lt;body&gt;
+
+    &lt;video-js id="myPlayerID"
+      data-playlist-id="4450721964001"
+      data-account="1752604059001"
+      data-player="default"
+      data-embed="default"
+      data-application-id
+      class="video-js"
+      controls
+      autoplay&gt;&lt;/video-js&gt;
+    &lt;script src="https://players.brightcove.net/1752604059001/default_default/index.min.js"&gt;&lt;/script&gt;
+
+    &lt;!-- Location of the playlist --&gt;
+    <span class="bcls-highlight">&lt;div class="vjs-playlist"&gt;&lt;/div&gt;</span>
+
+    <span class="bcls-highlight">&lt;script src="https://players.brightcove.net/videojs-bc-playlist-ui/3/videojs-bc-playlist-ui.min.js"&gt;&lt;/script&gt;</span>
+
+    &lt;script type="text/javascript"&gt;
+      videojs.getPlayer('myPlayerID').ready(function() {
+        // Get a reference to the player
+        var myPlayer = this,
+          // Create an object in which you will place options
+          <span class="bcls-highlight">options = {};</span>
+        // Set options
+        <span class="bcls-highlight">options.horizontal = true;
+        options.autoadvance = 3;</span>
+        // Call plugins method passing in options object
+        <span class="bcls-highlight">myPlayer.bcPlaylistUi(options);</span>
+      });
+    &lt;/script&gt;
+
+  &lt;/body&gt;
+
+  &lt;/html&gt;</code></pre>
+</section></article></div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-by-field-block-1 clearfix" id="block-views-block-related-content-by-field-block-1">
+  
+    
+
+      <div class="form-group"><div class="view view-related-content-by-field view-id-related_content_by_field view-display-id-block_1 js-view-dom-id-b95dc4c83344e7abc9fb15ca7f73d931d428fe5333051c03ce5dc3a79f132153">
+  
+    
+      <div class="view-header">
+      <h2>Related content</h2>
+    </div>
+      
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="guide-playlist-api.html" hreflang="en">Guide: Playlist API</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="playlist-ui-plugin.html" hreflang="en">Playlist UI Plugin</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="styling-playlists.html" hreflang="en">Styling Playlists</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="row">
+            <div class="region region-footer-top-left col-md-9" style="margin-bottom: 1em;">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove Support</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://status.brightcove.com">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="contact-support.html" data-drupal-link-system-path="node/18632">Support - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.brightcove.com/en/contact/create">Support - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Documentation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Training</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="online-training-courses.html" data-drupal-link-system-path="node/18286">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a course</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://www.brightcove.com">Brightcove.com</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="region region-footer-top-right col-md-3">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Brightcove Inc. (NASDAQ: BCOV), is a leading global provider of powerful cloud solutions for delivering and monetizing video across connected devices.</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="row">
+            <div class="region region-footer-bottom-left col-md-8">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item">Brightcove Inc. All rights reserved.</div>
+      
+      <div class="field field--name-field-legal-links field--type-link field--label-hidden field--items">
+              <div class="field--item"><a href="https://www.brightcove.com/en/privacy">Privacy</a></div>
+              <div class="field--item"><a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="region region-footer-bottom-right col-md-4">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items">
+              <div class="field--item">
+
+<a href="https://www.linkedin.com/company/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://twitter.com/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://www.facebook.com/Brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://plus.google.com/100830370440271567091" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18055","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGkkHXlVrBldRXQE=","queueTime":0,"applicationTime":26,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

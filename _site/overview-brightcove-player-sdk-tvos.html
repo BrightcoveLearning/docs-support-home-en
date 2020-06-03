@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="sites/default/files/favicon-64.png" type="image/png" />
+<link rel="alternate" hreflang="en" href="overview-brightcove-player-sdk-tvos.html" />
+<link rel="canonical" href="overview-brightcove-player-sdk-tvos.html" />
+<link rel="shortlink" href="overview-brightcove-player-sdk-tvos.html" />
+<link rel="revision" href="overview-brightcove-player-sdk-tvos.html" />
+
+    <title>Overview: Brightcove Player SDK for tvOS | Brightcove Learning</title>
+    <link rel="stylesheet" media="all" href="sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw_q23msc.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4_q23msc.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on" />
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  </head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="navigation-secondary clearfix">
+          <div class="region region-navigation-secondary">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary Navigation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="contact-support.html" title="Create a Support Request" data-drupal-link-system-path="node/18632">Support Request</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://status.brightcove.com/">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://university.brightcove.com/">Brightcove University</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gtranslate">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" style="font-weight:bold;background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">English</option><option value="en|fr" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">French</option><option value="en|de" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">German</option><option value="en|ja" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">Japanese</option><option value="en|ko" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">Korean</option><option value="en|es" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">Spanish</option></select>
+</div>
+<div class="gtranslate__credits">
+  Translations Provided by Google Translate
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="navbar-header col-md-3">
+                  <a class="logo navbar-btn pull-left" href="index.html" title="Home" rel="home">
+            <img src="themes/custom/bcdocs/images/brightcove.png" alt="Home" />
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" title="Home page" data-drupal-link-system-path="node/18643">Home</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Products
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="video-cloud.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://gallery.support.brightcove.com">Gallery</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a href="social.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ssai.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Quick Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="analytics-api.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience-api.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-api.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-connectors-video-cloud.html" data-drupal-link-system-path="node/18662">CMS Connectors for Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="data-collection-api.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="delivery-system-api.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="developer-tools-and-concepts.html" data-drupal-link-system-path="node/18430">Developer Tools and Concepts</a>
+                  </li>
+                              <li class="expanded">
+        <a href="native-player-sdks.html" data-drupal-link-system-path="node/18367">Device SDKs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="dynamic-ingest-api.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="getting-started-brightcove-apis-0.html" data-drupal-link-system-path="node/18711">Getting Started - Brightcove APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="page-experience-api.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ingest-profiles-api.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="oauth-api.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="platform-api-code-samples.html" data-drupal-link-system-path="node/18675">Platform API Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="playback-api.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-code-samples.html" data-drupal-link-system-path="node/18630">Player Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-developer.html" data-drupal-link-system-path="node/18362">Player Developer</a>
+                  </li>
+                              <li class="expanded">
+        <a href="player-management-api.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="policy-api.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="release-notes.html" data-drupal-link-system-path="node/18687">Release Notes</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Training
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="https://university.brightcove.com">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a Course</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a href="brightcove-support-documentation-announcements.html" title="See what&#039;s new in Brightcove Documentation" data-drupal-link-system-path="node/18896">What&#039;s New</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="full-width-headline">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" role="heading">
+            <div class="region region-header">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      Documentation
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="main-container container  js-quickedit-main-content">
+    <div class="row">
+
+                              <aside class="col-sm-3" role="complementary">
+              <div class="region region-sidebar-first">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="overview-brightcove-player-sdk-tvos.html" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group">
+      <label for="edit-search" class="control-label sr-only">Search</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="Search" />
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-tmwl7by7t7xjcel-73rfug2i6o0encymfts0ygkjmno" type="hidden" name="form_build_id" value="form-tMwL7bY7t7xJCEL-73rFug2I6O0enCYmFts0yGKJMNo" /><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form" /><div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix">
+  
+      <h2 class="block-title">On This Page</h2>
+    
+
+      <div class="bc-ipnav-block"></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="highlighted">  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a id="main-content"></a>
+            <div class="region region-content">
+        <h1 class="page-header"><span>Overview: Brightcove Player SDK for tvOS</span>
+</h1>
+
+  
+<div class="node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+      </div>
+
+  <div class="group-second-row">
+  
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+          <div class="field--item">Brightcove Player</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Device SDK Developer</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Develop with the Native SDKs</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-sdk field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">SDK</div>
+          <div class="field--items">
+              <div class="field--item">Overview</div>
+          <div class="field--item">tvOS</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item"><p>Welcome to Brightcove's Player SDK for tvOS developer documentation. Here you will find information for playing video content on Apple TV.</p>
+            <article class="bcls-article"><section class="bcls-section"><h2 id="Overview">Overview</h2>
+
+<p>The Native SDK for tvOS allows you to create video-centric apps for the Apple TV.</p>
+
+<ul><li>Video Cloud customers can play Video Cloud library content</li>
+	<li>Brightcove Player customers can play videos with internet accessible URLs</li>
+</ul><p>When ingesting your content, we recommend using a high resolution profile for the best renditions for Apple TV. For more details, see Apple's <a href="https://www.apple.com/apple-tv/specs/">Video Formats for Apple TV</a> documentation.</p>
+
+<aside class="bcls-aside bcls-aside--tip">For a quick reference to all of the SDK documents, check out the <a href="native-player-sdks.html">Brightcove Native SDKs landing page</a>.</aside></section><!--                <p>At Brightcove, we strive to keep the documentation structured, clean and intuitive. As such, we leverage github READMEs for details on all our plugins and integrations. For your convenience, we've listed and linked to these plugins below.</p>--><section class="bcls-section"><h2 id="Supported_versions">Supported versions</h2>
+
+<p>The Native Player SDK for tvOS offers support for the following versions of tvOS:</p>
+
+<h3>Active support</h3>
+
+<p>Brightcove provides active support for the latest iOS SDK on the following tvOS versions:</p>
+
+<ul><li>tvOS 13</li>
+	<li>tvOS 12.4.1</li>
+	<li>tvOS 11.4.1</li>
+</ul><!-- <h3>Passive support</h3>
+
+<p>Brightcove provides passive support for the following tvOS versions:</p>
+
+<ul>
+	<li>tvOS 10.3.3</li>
+</ul> --><h3>Understanding support levels</h3>
+
+<p>Support is defined in terms of the <strong>[major version]</strong>.<strong>[minor version]</strong>.<strong>[patch version]</strong> of an OS (for example: tvOS 11.4.1). In order to take advantage of the latest technology improvements from Apple, we offer two levels of support:</p>
+
+<ul><li><strong>Active</strong>: Brightcove will test and fix bugs on these OS versions.</li>
+	<li><strong>Passive</strong>: Brightcove will test on these OS versions, but bug fixes will be handled on a case by case basis.</li>
+</ul><p>Generally, Brightcove provides active support for the versions of the OS that are used by 80% of the user base, and passive support for other versions used by at least 5% of the user base.</p>
+</section><section class="bcls-section"><h2 id="Getting_started">Getting started</h2>
+
+<p>Before beginning development with the Player SDK for tvOS, there are a few concepts you should learn about:</p>
+
+<ol class="bcls-tasklist"><li><strong>Media</strong>
+
+	<p>The current version of the Native Player SDK supports playing content from your Video Cloud account through the Playback API, or as remote assets with internet accessible URLs.</p>
+	</li>
+	<li><strong>Analytics</strong>
+	<p>With the Native Player SDK, Video Cloud customers automatically get robust analytics data reported in Video Cloud.</p>
+	</li>
+	<li><strong>Core SDK and Dependencies</strong>
+	<p>The Brightcove Player SDK for iOS and its plugins can be added to your project using the <a href="https://cocoapods.org/">CocoaPods</a> dependency manager. The podspecs for all of the Brightcove Player SDK components are hosted in the <a href="https://github.com/brightcove/BrightcoveSpecs">BrightcoveSpecs repository</a>.</p>
+	<!-- <p>Be sure to add this repository to your podfiles like this:</p>
+<pre class="line-numbers">
+<code class="notranslate language-swift">source 'https://github.com/brightcove/BrightcoveSpecs.git'</code></pre> -->
+
+	<aside class="bcls-aside bcls-aside--warning">CocoaPods version 1.0 or newer is required.</aside></li>
+	<li><strong>Native SDK Reference</strong>
+	<p>To aid in your understanding of the SDK, you can find a detailed breakdown of the architecture in the Player SDK. Learn how critical components interact to handle the complexities of controlling the native video player. <a href="https://github.com/brightcove/brightcove-player-sdk-ios">Player SDK installation, quick start and architecture</a></p>
+
+	<p>Here, you'll also find the latest beta version of the SDK, if one exists.</p>
+	</li>
+	<li><strong>Questions and Answers</strong>
+	<p>Join us in the <a href="https://groups.google.com/forum/#!forum/brightcove-native-player-sdks">SDK developer forum</a> where SDK related questions are answered by Brightcove engineers and the community. Search for previously answered questions or post a new one. As a public group, you can gain access by providing your email address.</p>
+	</li>
+</ol></section><section class="bcls-section"><h2 id="Download_the_SDK">Download the SDK</h2>
+
+<p>The Brightcove Player SDK for tvOS is contained within the Player SDK for iOS. Here, you will find a dynamic library framework which supports tvOS.</p>
+
+<p>Get the latest version of the Brightcove Native SDK for iOS:</p>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th style="border-bottom:1px solid #707070;"> </th>
+			<th style="border-bottom:1px solid #707070;">Package<br />
+			(Github Repo)</th>
+			<th style="border-bottom:1px solid #707070;">Podspec</th>
+			<th style="border-bottom:1px solid #707070;">Reference<br />
+			Documentation</th>
+			<th style="border-bottom:1px solid #707070;">Notes</th>
+			<th style="border-bottom:1px solid #707070;">Sample</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td style="background-color:#dbdbdb;font-weight: bold;">SDK</td>
+			<td><a href="https://github.com/brightcove/brightcove-player-sdk-ios/releases">Native SDK for iOS 6.7.5</a></td>
+			<td><!-- <a href="https://github.com/CocoaPods/Specs/blob/master/Specs/Brightcove-Player-SDK/5.2.0/Brightcove-Player-SDK.podspec.json">Brightcove-Player-SDK</a> --><a href="https://github.com/brightcove/BrightcoveSpecs">BrightcoveSpecs</a></td>
+			<td><a href="https://docs.brightcove.com/ios-sdk/index.html">SDK Reference</a></td>
+			<td><a href="https://github.com/brightcove/brightcove-player-sdk-ios/blob/master/CHANGELOG.md">Release Notes</a></td>
+			<td><a href="https://github.com/BrightcoveOS/ios-player-samples/tree/master/Player/AppleTV">Basic Apple TV sample</a></td>
+		</tr></tbody></table><p>or select this button:</p>
+<button class="bcls-button" type="button" title="iOS Player SDK" onclick="location.href='https://github.com/brightcove/brightcove-player-sdk-ios/releases/tag/v6.7.5';">Download the SDK</button><br />
+ 
+<p>To view the product updates for all of the Native SDKs and the associated plugins, see the <a href="release-notes-brightcove-native-sdks.html">Release Notes for the Brightcove Native SDKs</a> document.</p>
+
+<aside class="bcls-aside bcls-aside--tip"><p>Tips:</p>
+
+<ul><li>The Sidecar Subtitles component supports playback over AirPlay with captions. For details about keeping your subtitles in sync, see the <a href="synchronizing-webvtt-captions.html">Synchronizing WebVTT Captions</a> document.</li>
+</ul></aside><aside class="bcls-aside bcls-aside--information"><p>Notes:</p>
+
+<ul><li class="language-editable">The minimum Deployment Target for all Brightcove Native Player for iOS frameworks is now iOS 11.0 and tvOS 11.0.</li>
+	<li class="language-editable">The Brightcove Native SDK for iOS 6.5.0+ requires Xcode 11.0 or higher.</li>
+	<li>Automatic Reference Counting (ARC) is required in your project. This is the current default for Xcode projects.</li>
+	<li>The Brightcove Native SDK for tvOS is written to allow you to create custom apps using Obj-C and Swift, but it does not support Apple's Television Markup Language (TVML).</li>
+	<li>A known Apple issue with FairPlay streaming content is that it will not be rendered in AirPlay Mirroring mode. For more details, see the <a href="https://developer.apple.com/videos/play/wwdc2015/502/">WWDC presentation: Content Protection for HLS</a> (scroll about halfway through the transcript).</li>
+</ul></aside></section><section class="bcls-section"><h2 id="Integrations">Integrations</h2>
+
+<p>The following table contains links to get plugins integrated with your SDK implementation. The plugins can be downloaded from their respective Github Repos, and each repo contains a detailed README with instructions on how to setup the plugin.</p>
+
+<p>The sample applications demonstrate the basic functionality of each plugin integrated with the SDK. These sample apps are a good way to learn about each plugin, and serve as a reference point when debugging.</p>
+
+<aside class="bcls-aside bcls-aside--tip">The current release of the Native SDK for iOS includes all components with the same version number. When integrating components, the SDK and component version numbers must match. For example, when using the Once UX plugin component 6.5.0, you must use the Native SDK 6.5.0.</aside><p><a href="brightcove-player-sdk-tvos-previous-sdk-information.html">Previous integration versions</a></p>
+<!-- begin copy table for previous versions doc -->
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th style="border-bottom:1px solid #707070;">Category</th>
+			<th style="border-bottom:1px solid #707070;">Plugin<br />
+			(Github Repo)</th>
+			<th style="border-bottom:1px solid #707070;">Podspec</th>
+			<th style="border-bottom:1px solid #707070;">Reference Documentation</th>
+			<th style="border-bottom:1px solid #707070;">Sample Apps</th>
+			<th style="border-bottom:1px solid #707070;">Supported Partner/ Vendor Plugin</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td rowspan="5" style="background-color:#dbdbdb;font-weight: bold;border-bottom:1px solid #707070;">Advertising</td>
+			<td class="language-editable"><a href="https://github.com/brightcove/brightcove-player-sdk-ios-ima">IMA plugin 6.7.5</a> <sup><a href="#n1"> [1]</a></sup><sup><a href="#n2"> [2]</a></sup></td>
+			<td class="language-editable"><a href="https://github.com/brightcove/BrightcoveSpecs">Brightcove-Player-SDK-IMA</a></td>
+			<td class="language-editable"><a href="https://docs.brightcove.com/ios-plugins/ima/index.html">IMA Reference</a></td>
+			<td class="language-editable"><a href="https://github.com/BrightcoveOS/ios-player-samples/tree/master/IMA">Google IMA Samples</a></td>
+			<td class="language-editable">Google IMA 4.2.1</td>
+		</tr><tr><td><a href="https://github.com/brightcove/brightcove-player-sdk-ios-fw">FreeWheel plugin 6.7.5</a></td>
+			<td><a href="https://github.com/brightcove/BrightcoveSpecs">Brightcove-Player-SDK-FW</a></td>
+			<td><a href="https://docs.brightcove.com/ios-plugins/freewheel/index.html">FreeWheel Reference</a></td>
+			<td><a href="https://github.com/BrightcoveOS/ios-player-samples/tree/master/Freewheel">FreeWheel Samples</a></td>
+			<td>FreeWheel Ad Manager 6.26.0</td>
+		</tr><tr><td style="background-color:#dbdbdb;"><a href="https://github.com/brightcove/brightcove-player-sdk-ios-oux">Once UX plugin 6.4.3</a><br /><span style="color:#da861a;">(Deprecated)</span> <sup><a href="#n3"> [3]</a></sup></td>
+			<td style="background-color:#dbdbdb;"><a href="https://github.com/brightcove/BrightcoveSpecs">Brightcove-Player-SDK-OUX</a></td>
+			<td style="background-color:#dbdbdb;"><a href="https://docs.brightcove.com/ios-plugins/onceux/index.html">Once UX Reference</a></td>
+			<td style="background-color:#dbdbdb;"><a href="https://github.com/BrightcoveOS/ios-player-samples/tree/master/OUX/BasicOUXPlayer/objc">Once UX Sample</a></td>
+			<td style="background-color:#dbdbdb;">None</td>
+		</tr><tr><td class="language-editable"><a href="https://github.com/brightcove/brightcove-player-sdk-ios-pulse">Pulse plugin 6.7.5</a></td>
+			<td class="language-editable"><a href="https://github.com/brightcove/BrightcoveSpecs">Brightcove-Player-Pulse</a></td>
+			<td class="language-editable"><a href="https://docs.brightcove.com/ios-plugins/pulse/index.html">Pulse Reference</a></td>
+			<td class="language-editable"><a href="https://github.com/BrightcoveOS/ios-player-samples/tree/master/Pulse">Pulse Samples</a></td>
+			<td class="language-editable">Pulse SDK 2.5.19.9.0</td>
+		</tr><tr><td><a href="https://github.com/brightcove/brightcove-player-sdk-ios-ssai">SSAI plugin 6.7.5</a></td>
+			<td><a href="https://github.com/brightcove/BrightcoveSpecs">Brightcove-Player-SDK-FW</a></td>
+			<td><a href="https://docs.brightcove.com/ios-plugins/ssai/index.html">SSAI Reference</a></td>
+			<td><a href="https://github.com/BrightcoveOS/ios-player-samples/tree/master/SSAI/BasicSSAIPlayer">SSAI Samples</a></td>
+			<td>None</td>
+		</tr></tbody></table><!-- end copy table for previous versions doc --><aside class="bcls-aside bcls-aside--information"><p>The following notes refer to the integrations in the table above.</p>
+
+<p id="n1"><sup>[1]</sup> The current version of the IMA plugin supports Google's IMA iOS SDK v3, which supports iOS versions 9.0+. For details, see <a href="https://developers.google.com/interactive-media-ads/docs/sdks/ios/">Google's documentation</a>.</p>
+
+<p>The Brightcove Native SDKs support <a href="https://www.iab.com/guidelines/digital-video-multiple-ad-playlist-vmap-1-0-1/">VMAP</a> XML templates that contain the VAST protocol, including <a href="https://www.iab.com/guidelines/digital-video-ad-serving-template-vast-3-0/">VAST 3.0</a>, and limited support for <a href="https://www.iab.com/guidelines/digital-video-ad-serving-template-vast/">VAST 4.0</a>. For more details about VAST version compatibility, see <a href="https://developers.google.com/interactive-media-ads/docs/sdks/ios/compatibility">Google's Support and Compatibility document</a> for the IMA SDK for iOS. The Native SDKs also support the <a href="ima-open-measurement-native-sdks.html">IAB Open Measurement SDK</a>.</p>
+
+<p id="n2"><sup>[2]</sup> If you are using Swift, you must manually add Google's IMA libraries, instead of using CocoaPods. This is because Google's IMA library does not support dynamic frameworks, and Swift does not support building static libraries. For details, see the <strong>Manual</strong> section of the <a href="https://github.com/brightcove/brightcove-player-sdk-ios-ima#manual">IMA Plugin for Brightcove Player SDK for iOS</a> documentation. Even though Brightcove's IMA plugin uses a dynamic framework, the Google IMA library is only provided as a static framework.</p>
+
+<p id="n3"><sup>[3]</sup> The OnceUX plugin is deprecated. Brightcove recommends that you use the new SSAI plugin instead.</p>
+</aside></section><section class="bcls-section"><h2 id="Samples">Samples</h2>
+
+<p>The following table contains links to code samples that are in addition to the samples associated with the integrations in the previous section.</p>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th style="width:25%">Sample Application</th>
+			<th style="width:75%">Description</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a href="https://github.com/BrightcoveOS/ios-player-samples/tree/master/Player/AppleTV/swift">Apple TV</a></td>
+			<td>Create a basic app that plays videos from your Video Cloud library.</td>
+		</tr><tr><td><a href="adding-fairplay-protection-your-apple-tv-apps.html">Playback with FairPlay</a></td>
+			<td>Protect your content with FPS (FairPlay Streaming). For a complete sample, see the <a href="https://github.com/BrightcoveOS/ios-player-samples/tree/master/FairPlay/BasicFairPlayPlayer/swift">Basic FairPlay</a> iOS sample.</td>
+		</tr><tr><td><a href="https://github.com/BrightcoveOS/ios-player-samples/tree/master/SidecarSubtitles/BasicSidecarSubtitlesPlayer/objc">Sidecar Subtitles</a></td>
+			<td>Display captions for videos which include them in a separate file. This is an iOS sample, but should be relevant for tvOS.</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Solution_guides">Solution guides</h2>
+
+<p>The following table contains links to developer docs which will help you get started with your own app using the Brightcove Player SDK, and guide you through some of the features and functionality available.</p>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th style="width:25%">Guide</th>
+			<th style="width:75%">Description</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a href="https://github.com/brightcove/brightcove-player-sdk-ios/blob/master/TVPlayer.md">Working with Apple TV UI Controls</a></td>
+			<td>Learn how to leverage the Brightcove Native SDK for tvOS to use the TV player controls.</td>
+		</tr><tr><td><a href="step-step-simple-tv-video-app-using-swift.html">Simple Video Playback</a></td>
+			<td>Learn how to create a simple video app using the Brightcove Native SDK for tvOS.</td>
+		</tr><tr><td><a href="ios-source-selection.html">Source Selection</a></td>
+			<td>Learn about the default source selection process when playing a video.</td>
+		</tr><tr><td><a href="synchronizing-webvtt-captions.html">Using WebVTT Captions</a></td>
+			<td>Learn how to configure WebVTT captions for HLS videos when using the Native SDK for tvOS.</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Best_practices">Best practices</h2>
+
+<p>Here is additional information that you may find helpful when working with the Brightcove Native SDK.</p>
+
+<h3>Advertising</h3>
+
+<p>Companion ads and click-through ads are not supported on Apple TV. Because there is no web browser support on Apple TV, there is no destination for a click-through URL.</p>
+</section></article></div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-by-field-block-1 clearfix" id="block-views-block-related-content-by-field-block-1">
+  
+    
+
+      <div class="form-group"><div class="view view-related-content-by-field view-id-related_content_by_field view-display-id-block_1 js-view-dom-id-b04a915fd13f88fde151ebeb28dbefc4693c32762c01f92fc8bf22a2e7fbb162">
+  
+    
+      <div class="view-header">
+      <h2>Related content</h2>
+    </div>
+      
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="brightcove-native-player-sdks.html" hreflang="en">The Brightcove Native Player SDKs</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="overview-brightcove-player-sdk-ios.html" hreflang="en">Overview: Brightcove Player SDK for iOS</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="step-step-simple-tv-video-app-using-swift.html" hreflang="en">Step-by-Step: Simple TV Video App using Swift</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="training-demand-developing-brightcove-native-player-sdk-ios.html" hreflang="en">Training on Demand: Developing with the Brightcove Native Player SDK for iOS</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="architecture-brightcove-player-sdk-ios.html" hreflang="en">Architecture: Brightcove Player SDK for iOS</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="row">
+            <div class="region region-footer-top-left col-md-9" style="margin-bottom: 1em;">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove Support</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://status.brightcove.com">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="contact-support.html" data-drupal-link-system-path="node/18632">Support - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.brightcove.com/en/contact/create">Support - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Documentation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Training</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="online-training-courses.html" data-drupal-link-system-path="node/18286">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a course</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://www.brightcove.com">Brightcove.com</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="region region-footer-top-right col-md-3">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Brightcove Inc. (NASDAQ: BCOV), is a leading global provider of powerful cloud solutions for delivering and monetizing video across connected devices.</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="row">
+            <div class="region region-footer-bottom-left col-md-8">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item">Brightcove Inc. All rights reserved.</div>
+      
+      <div class="field field--name-field-legal-links field--type-link field--label-hidden field--items">
+              <div class="field--item"><a href="https://www.brightcove.com/en/privacy">Privacy</a></div>
+              <div class="field--item"><a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="region region-footer-bottom-right col-md-4">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items">
+              <div class="field--item">
+
+<a href="https://www.linkedin.com/company/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://twitter.com/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://www.facebook.com/Brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://plus.google.com/100830370440271567091" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18255","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGn0UTEBVCWpxWhZdZHNWFFRscgpEX3cRUVRRXBQUDkYAWFZQFmhUVFoDUV9YAVNAcwtKVXRaElBfWg==","queueTime":0,"applicationTime":192,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

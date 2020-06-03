@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="sites/default/files/favicon-64.png" type="image/png" />
+<link rel="alternate" hreflang="en" href="hls-plugin.html" />
+<link rel="canonical" href="hls-plugin.html" />
+<link rel="shortlink" href="hls-plugin.html" />
+<link rel="revision" href="hls-plugin.html" />
+
+    <title>HLS Plugin | Brightcove Learning</title>
+    <link rel="stylesheet" media="all" href="sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw_q23msc.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4_q23msc.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on" />
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  </head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="navigation-secondary clearfix">
+          <div class="region region-navigation-secondary">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary Navigation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="contact-support.html" title="Create a Support Request" data-drupal-link-system-path="node/18632">Support Request</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://status.brightcove.com/">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://university.brightcove.com/">Brightcove University</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gtranslate">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" style="font-weight:bold;background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">English</option><option value="en|fr" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">French</option><option value="en|de" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">German</option><option value="en|ja" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">Japanese</option><option value="en|ko" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">Korean</option><option value="en|es" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">Spanish</option></select>
+</div>
+<div class="gtranslate__credits">
+  Translations Provided by Google Translate
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="navbar-header col-md-3">
+                  <a class="logo navbar-btn pull-left" href="index.html" title="Home" rel="home">
+            <img src="themes/custom/bcdocs/images/brightcove.png" alt="Home" />
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" title="Home page" data-drupal-link-system-path="node/18643">Home</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Products
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="video-cloud.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://gallery.support.brightcove.com">Gallery</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a href="social.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ssai.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Quick Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="analytics-api.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience-api.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-api.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-connectors-video-cloud.html" data-drupal-link-system-path="node/18662">CMS Connectors for Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="data-collection-api.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="delivery-system-api.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="developer-tools-and-concepts.html" data-drupal-link-system-path="node/18430">Developer Tools and Concepts</a>
+                  </li>
+                              <li class="expanded">
+        <a href="native-player-sdks.html" data-drupal-link-system-path="node/18367">Device SDKs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="dynamic-ingest-api.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="getting-started-brightcove-apis-0.html" data-drupal-link-system-path="node/18711">Getting Started - Brightcove APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="page-experience-api.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ingest-profiles-api.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="oauth-api.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="platform-api-code-samples.html" data-drupal-link-system-path="node/18675">Platform API Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="playback-api.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-code-samples.html" data-drupal-link-system-path="node/18630">Player Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-developer.html" data-drupal-link-system-path="node/18362">Player Developer</a>
+                  </li>
+                              <li class="expanded">
+        <a href="player-management-api.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="policy-api.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="release-notes.html" data-drupal-link-system-path="node/18687">Release Notes</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Training
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="https://university.brightcove.com">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a Course</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a href="brightcove-support-documentation-announcements.html" title="See what&#039;s new in Brightcove Documentation" data-drupal-link-system-path="node/18896">What&#039;s New</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="full-width-headline">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" role="heading">
+            <div class="region region-header">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      Documentation
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="main-container container  js-quickedit-main-content">
+    <div class="row">
+
+                              <aside class="col-sm-3" role="complementary">
+              <div class="region region-sidebar-first">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="hls-plugin.html" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group">
+      <label for="edit-search" class="control-label sr-only">Search</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="Search" />
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-tmwl7by7t7xjcel-73rfug2i6o0encymfts0ygkjmno" type="hidden" name="form_build_id" value="form-tMwL7bY7t7xJCEL-73rFug2I6O0enCYmFts0yGKJMNo" /><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form" /><div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix">
+  
+      <h2 class="block-title">On This Page</h2>
+    
+
+      <div class="bc-ipnav-block"></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="highlighted">  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a id="main-content"></a>
+            <div class="region region-content">
+        <h1 class="page-header"><span>HLS Plugin</span>
+</h1>
+
+  
+<div class="node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+      </div>
+
+  <div class="group-second-row">
+  
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+          <div class="field--item">Brightcove Player</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Player Developer</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-topics field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Topic(s)</div>
+          <div class="field--items">
+              <div class="field--item">Playback</div>
+          <div class="field--item">Plugins</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item"><!-- content starts here --><p>The HLS plugin is a Brightcove player plugin that relies on W3C's Media Source Extensions (MSE) to play HTTP Live Streaming (HLS) video on platforms that do not natively support it. The HLS plugin is automatically included in the player.</p>
+            <article class="bcls-article"><section class="bcls-section"><h2 id="HLS_plugin_basics">HLS plugin basics</h2>
+
+<p>The following points help you understand and use the HLS plugin:</p>
+
+<ul><li class="language-editable">As mentioned in the opening sentence of this document, the plugin relies on W3C's Media Source Extensions (MSE). MSE is a W3C specification that allows JavaScript to send byte streams to media codecs within web browsers that support HTML5 video. Among other possible uses, this allows the implementation of client-side prefetching and buffering code for streaming media entirely in JavaScript.</li>
+	<li class="language-editable">With the plugin you can then use HLS (m3u8) video content in the player. For instance you could create a player using this configuration for the media section:
+	<pre class="line-numbers">
+  <code class="language-json">"media":{
+      "sources": [{
+          "src": "http://example.com/video.m3u8",
+          "type": "application/x-mpegURL"
+      }]
+  }</code></pre>
+	</li>
+	<li class="language-editable">Cross-origin resource sharing (CORS) can be an issue when using HLS. For more information about using CORS, see the <a href="concepts-cors.html">CORS guide</a>.</li>
+	<li class="language-editable">Flash will be used as a fallback to play HLS only on IE11 on Windows 7.</li>
+	<li class="language-editable">HLS is not supported on versions of IE earlier than IE11.</li>
+</ul></section><section class="bcls-section"><h2 id="overview">Overview</h2>
+
+<p><a href="https://developer.apple.com/streaming/">HTTP Live Streaming</a> (HLS) has become a de-facto standard for streaming video on mobile devices thanks to its native support on iOS and Android. Although, there are a number of reasons independent of platform to recommend the format:</p>
+
+<ul><li class="language-editable">Supports (client-driven) adaptive bitrate selection</li>
+	<li class="language-editable">Delivered over standard HTTP ports</li>
+	<li class="language-editable">Simple, text-based manifest format</li>
+	<li class="language-editable">No proprietary streaming servers required</li>
+</ul><p>Unfortunately, all the major desktop browsers except for Safari are missing HLS support. That leaves web developers in the unfortunate position of having to maintain alternate renditions of the same video and potentially having to forego HTML-based video entirely to provide the best desktop viewing experience.</p>
+
+<p>This plugin addresses the situation by providing a polyfill for HLS on browsers that have Media Source Extensions or Flash support. You can deploy a single HLS stream, code against the regular HTML5 video APIs, and create a fast, high-quality video experience across all the big web device categories.</p>
+
+<p>Currently, at this time there is <em>no</em> support for:</p>
+
+<ul><li class="language-editable">Alternate audio and video tracks</li>
+	<!--                        <li class="language-editable">Subtitles</li>-->
+	<li class="language-editable">Segment codecs <em>other than</em> H.264 with AAC audio</li>
+	<!--                        <li class="language-editable">Live streams</li>-->
+	<li class="language-editable">Internet Explorer &lt; 11</li>
+</ul><aside class="bcls-aside bcls-aside--information language-editable">Note: For maximum compatibility with all MSE implementations, Brightcove recommends setting <strong>audio_bitrate</strong> to no less than <strong>48</strong> in your ingest profiles.</aside></section><section class="bcls-section"><h2 id="options">Options</h2>
+
+<p>There are several options you can use to configure the HLS plugin.</p>
+
+<h3>withCredentials</h3>
+
+<p>Type: <code>boolean</code></p>
+
+<p>Can be used as:</p>
+
+<ul><li class="language-editable">a source option</li>
+	<li class="language-editable">an initialization option</li>
+</ul><p>When the <code>withCredentials</code> property is set to <code>true</code>, all XHR requests for manifests and segments would have <code>withCredentials</code> set to <code>true</code> as well. This enables storing and passing cookies from the server that the manifests and segments live on. This has some implications on CORS because when set, the <code>Access-Control-Allow-Origin</code> header cannot be set to <code>*</code>, also, the response headers require the addition of <code>Access-Control-Allow-Credentials</code> header which is set to <code>true</code>. See the <a href="http://www.html5rocks.com/en/tutorials/cors/">HTML5Rocks's article</a> for more info.</p>
+
+<aside class="bcls-aside bcls-aside--warning language-editable">Known Issue: <code>withCredentials</code> does NOT work with Safari on the desktop or devices.</aside><p>You can configure the plugin using the <a href="overview-player-management-api.html">Player Management API</a> using an HTTP <code>PATCH</code> method, as shown here:</p>
+
+<pre class="line-numbers">
+  <code class="language-json">curl \
+      --header "Content-Type: application/json" \
+      --user YOUR_EMAIL \
+      --request PATCH \
+      --data '{ "hls": { "withCredentials": true } }' \
+  https://players.api.brightcove.com/v2/accounts/YOUR_ACCOUNT_ID/players/YOUR_PLAYER_ID/configuration</code></pre>
+
+<p>You can also set the <code>withCredentials</code> option on a per source basis, rather than on a player basis as just shown. For instance, when setting the source you can include <code>withCredentials</code>, as shown here:</p>
+
+<pre class="line-numbers">
+  <code class="language-json">curl \
+    --header "Content-Type: application/json" \
+    --user $EMAIL \
+    --request POST \
+    --data '{
+        "name": "MySamplePlayer",
+        "configuration": {
+          "media": {
+            "sources": [{
+              "src":"http://solutions.brightcove.com/bcls/assets/videos/Tiger.mp4",
+              "type":"video/mp4",
+              "withCredentials": true
+            }]
+          }
+        }
+      }' \
+  https://players.api.brightcove.com/v2/accounts/$ACCOUNT_ID/players</code></pre>
+
+<h3 id="Runtime_configuration">Runtime configuration</h3>
+
+<p>You can configure <code>withCredentials</code> at runtime. You will see below two implementations:</p>
+
+<ul><li class="language-editable">Using <code>player.hls.xhr.beforeRequest</code></li>
+	<li class="language-editable">Using <code>player.src()</code></li>
+</ul><p>In the following code you are using the <code>player.hls.xhr.beforeRequest</code> to assign a function that will be called with an object containing options that will be used to create the <code>xhr</code> request. In this example you see only <code>withCredentials</code> is being configured.</p>
+
+<pre class="line-numbers">
+  <code class="language-javascript">if (videojs.Hls) {
+    videojs.Hls.xhr.beforeRequest = function (options) {
+      options.withCredentials = true;
+    }
+  }</code></pre>
+
+<p>You can also set the <code>withCredentials</code> options when setting the video source. You use the <code>player.src()</code> method, as shown here:</p>
+
+<aside class="bcls-aside bcls-aside--warning language-editable">There is a current known issue that this configuration option does not work when using Firefox with IMA3 ads. You can use <code>player.hls.xhr.beforeRequest</code> to avoid this issue.</aside><pre class="line-numbers">
+  <code class="language-javascript">player.src({
+    src: 'https://adomain.com/bipbop_16x9_variant.m3u8',
+    type: 'application/x-mpegURL',
+    withCredentials: true
+  });</code></pre>
+<!-- <h3>useCueTags</h3>
+  
+                                <p>Type: <code>boolean</code></p>
+  
+                                <p>Can be used as:</p>
+                                <ul>
+                                    <li class="language-editable">an initialization option</li>
+                                </ul>
+  
+  
+                                <p>When the <code>useCueTags</code> property is set to <code>true</code>, a text track is created with label 'ad-cues' and kind 'metadata'. The track is then added to player.textTracks(). Changes in active cue may be tracked by following the <a href="https://docs.brightcove.com/brightcove-player/current-release/TextTrack.html">cue points API for text tracks</a>. For example:</p>
+  
+                                <pre class="line-numbers"><code class="language-javascript">let textTracks = player.textTracks();
+                                let cuesTrack;
+  
+                                for (let i = 0; i &lt; textTracks.length; i++) {
+                                  if (textTracks[i].label === 'ad-cues') {
+                                    cuesTrack = textTracks[i];
+                                  }
+                                }
+  
+                                cuesTrack.addEventListener('cuechange', function() {
+                                  let activeCues = cuesTrack.activeCues;
+  
+                                  for (let i = 0; i &lt; activeCues.length; i++) {
+                                    let activeCue = activeCues[i];
+  
+                                    console.log('Cue runs from ' + activeCue.startTime +
+                                                ' to ' + activeCue.endTime);
+                                  }
+                                });</code></pre>
+  
+                                <p>You can configure the plugin using the <a href="/node/18269">Player Management API</a> using an HTTP <code>PATCH</code> method, as shown here:</p>
+  
+                                <pre class="line-numbers"><code class="language-json">curl \
+                                    --header "Content-Type: application/json" \
+                                    --user YOUR_EMAIL \
+                                    --request PATCH \
+                                    --data '{ "hls": { "useCueTags": true } }' \
+                                https://players.api.brightcove.com/v2/accounts/YOUR_ACCOUNT_ID/players/YOUR_PLAYER_ID/configuration</code></pre>
+  
+                                <h3>overrideNative</h3>
+  
+                                <p>Type: <code>boolean</code></p>
+  
+                                <p>Can be used as:</p>
+                                <ul>
+                                    <li class="language-editable">an initialization option</li>
+                                </ul>
+  
+                                <p>Try to use <code>videojs-contrib-hls</code> even on platforms that provide some level of HLS support natively. There are a number of platforms that technically play back HLS content but aren't very reliable or are missing features like CEA-608 captions support. When <code>overrideNative</code> is <code>true</code>, if the platform supports Media Source Extensions <code>videojs-contrib-hls</code> will take over HLS playback to provide a more consistent experience.</p>
+  
+                                <aside class="bcls-aside bcls-aside--information language-editable">If you use this option, you must also set <code>videojs.options.html5.nativeAudioTracks</code> and <code>videojs.options.html5.nativeVideoTracks</code> to <code>false</code>. <code>videojs-contrib-hls</code> relies on audio and video tracks to play streams with alternate audio and requires additional capabilities only supported by non-native tracks in video.js.</aside>
+  
+  
+                                <p>You can configure the plugin using the <a href="/node/18269">Player Management API</a> using an HTTP <code>PATCH</code> method, as shown here:</p>
+  
+                                <pre class="line-numbers"><code class="language-json">curl \
+                                    --header "Content-Type: application/json" \
+                                    --user YOUR_EMAIL \
+                                    --request PATCH \
+                                    --data '{ "hls": { "overrideNative": true } }' \
+                                https://players.api.brightcove.com/v2/accounts/YOUR_ACCOUNT_ID/players/YOUR_PLAYER_ID/configuration</code></pre>
+  
+                                <h3>blacklistDuration</h3>
+  
+                                <p>Type: <code>number</code></p>
+  
+                                <p>Can be used as:</p>
+                                <ul>
+                                    <li class="language-editable">an initialization option</li>
+                                </ul>
+  
+                                <p>When the <code>blacklistDuration</code> property is set to a time duration in seconds, if a playlist is blacklisted, it will be blacklisted for a period of that customized duration. This enables the blacklist duration to be configured by the user.</p>
+  
+                                <p>You can configure the plugin using the <a href="/node/18269">Player Management API</a> using an HTTP <code>PATCH</code> method, as shown here:</p>
+  
+                                <pre class="line-numbers"><code class="language-json">curl \
+                                    --header "Content-Type: application/json" \
+                                    --user YOUR_EMAIL \
+                                    --request PATCH \
+                                    --data '{ "hls": { "blacklistDuration": 10 } }' \
+                                https://players.api.brightcove.com/v2/accounts/YOUR_ACCOUNT_ID/players/YOUR_PLAYER_ID/configuration</code></pre>
+  
+                                <h3>bandwidth</h3>
+  
+                                <p>Type: <code>number</code></p>
+  
+                                <p>Can be used as:</p>
+                                <ul>
+                                    <li class="language-editable">an initialization option</li>
+                                </ul>
+  
+                                <p>When the <code>bandwidth</code> property is set (bits per second), it will be used in the calculation for initial playlist selection, before more bandwidth information is seen by the player.</p>
+  
+                                <p>You can configure the plugin using the <a href="/node/18269">Player Management API</a> using an HTTP <code>PATCH</code> method, as shown here:</p>
+  
+                                <pre class="line-numbers"><code class="language-json">curl \
+                                    --header "Content-Type: application/json" \
+                                    --user YOUR_EMAIL \
+                                    --request PATCH \
+                                    --data '{ "hls": { "bandwidth": 3000 } }' \
+                                https://players.api.brightcove.com/v2/accounts/YOUR_ACCOUNT_ID/players/YOUR_PLAYER_ID/configuration</code></pre> -->
+
+<h3>enableLowInitialPlaylist</h3>
+
+<p>Type: <code>boolean</code></p>
+
+<p>Default: <code>undefined</code>, except when a browser is viewed on an Android device; then it is set to <code>true</code>. You can change this behavior for Android devices, by patching the player, as shown below, with a value of <code>false</code>.</p>
+
+<p>Can be used as:</p>
+
+<ul><li class="language-editable">an initialization option</li>
+</ul><p>When <code>enableLowInitialPlaylist</code> is set to true, it will be used to select the lowest bitrate playlist initially. This helps to decrease playback start time.</p>
+
+<p>You can configure the plugin using the <a href="overview-player-management-api.html">Player Management API</a> using an HTTP <code>PATCH</code> method, as shown here:</p>
+
+<pre class="line-numbers">
+  <code class="language-json">curl \
+      --header "Content-Type: application/json" \
+      --user YOUR_EMAIL \
+      --request PATCH \
+      --data '{ "hls": { "enableLowInitialPlaylist": true } }' \
+  https://players.api.brightcove.com/v2/accounts/YOUR_ACCOUNT_ID/players/YOUR_PLAYER_ID/configuration</code></pre>
+</section><section class="bcls-section"><h2 id="runtimeproperties">Runtime properties</h2>
+
+<p>In general, you can access the HLS object this way:</p>
+
+<ul><li class="language-editable">Brightcove Player v5: <code>player.hls</code></li>
+	<li class="language-editable">Brightcove Player v6: <code>player.tech().hls</code>
+	<aside class="bcls-aside bcls-aside--information language-editable">Note that calling <code>player.tech()</code> will log a warning to the console as it is only recommended for advanced users. You can pass <code>player.tech(true)</code> to suppress the warning.</aside></li>
+</ul><h4>player.hls.playlists.master</h4>
+
+<p>Type: <code>object</code></p>
+
+<p>An object representing the parsed master playlist. If a media playlist is loaded directly, a master playlist with only one entry will be created.</p>
+
+<h4>player.hls.playlists.media</h4>
+
+<p>Type: <code>function</code></p>
+
+<p>A function that can be used to retrieve or modify the currently active media playlist. The active media playlist is referred to when additional video data needs to be downloaded. Calling this function with no arguments returns the parsed playlist object for the active media playlist. Calling this function with a playlist object from the master playlist or a URI string as specified in the master playlist will kick off an asynchronous load of the specified media playlist. Once it has been retrieved, it will become the active media playlist.</p>
+
+<h4>player.hls.bandwidth</h4>
+
+<p>Type: <code>number</code></p>
+
+<p>The number of bits downloaded per second in the last segment download. This value is used by the default implementation of <code>selectPlaylist</code> to select an appropriate bitrate to play. Before the first video segment has been downloaded, it's hard to estimate bandwidth accurately. The HLS tech uses a heuristic based on the playlist download times to do this estimation by default. If you have a more accurate source of bandwidth information, you can override this value as soon as the HLS tech has loaded to provide an initial bandwidth estimate.</p>
+
+<h4>player.hls.stats.bytesReceived</h4>
+
+<p>Type: <code>number</code></p>
+
+<p>The total number of content bytes downloaded by the HLS tech.</p>
+
+<h4 id="selectplaylist">player.hls.selectPlaylist</h4>
+
+<p>Type: <code>function</code></p>
+
+<p>A function that returns the media playlist object to use to download the next segment. It is invoked by the plugin immediately before a new segment is downloaded. You can override this function to provide your adaptive streaming logic. You must, however, be sure to return a valid media playlist object that is present in <code>player.hls.playlists.master</code>.</p>
+</section><section class="bcls-section"><h2 id="events">Events</h2>
+
+<h4>loadedmetadata</h4>
+
+<p>Fired after the first media playlist is downloaded for a stream.</p>
+
+<h4>loadedplaylist</h4>
+
+<p>Fired immediately after a new master or media playlist has been downloaded. By default, the plugin only downloads playlists as they are needed.</p>
+
+<h4>mediachange</h4>
+
+<p>Fired when a new playlist becomes the active media playlist. Note that the actual rendering quality change does not occur simultaneously with this event; a new segment must be requested and the existing buffer depleted first.</p>
+</section><section class="bcls-section"><h2 id="Reload_source_on_error">Reload source on error</h2>
+
+<p>When using the HLS plugin there is a method you can call that will reload the source at its current time when an error is emitted by the player. To turn on this feature you need to call the <code>reloadSourceOnError()</code> method. The following short video shows the method in action. All the code shown in the video is described later in this section.</p>
+
+<aside class="bcls-aside bcls-aside--information language-editable">Note: Although originally meant for live streaming, <code>reloadSourceOnError()</code> will also function with video on demand, as shown in the video.</aside><iframe src="https://players.brightcove.net/20318290001/E16-WGGOe_default/index.html?videoId=5246169715001" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" width="640" height="380"></iframe>
+
+<p>The syntax for the <code>reloadSourceOnError()</code> method is as follows:</p>
+
+<pre class="line-numbers">
+  <code class="language-javascript">reloadSourceOnError(optionsObject)</code></pre>
+
+<p>The optional <code>optionsObject</code> has the following properties:</p>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>Property</th>
+			<th>Data Type</th>
+			<td>Default Value</td>
+			<th>Description</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><code>errorInterval</code></td>
+			<td>Number</td>
+			<td>30</td>
+			<td>The minimum amount of time (in seconds) that has to pass between two errors for the reload to trigger. For example, if you set the time to 10, each time an error occurs the function will check to see if a reload has happened less than 10 seconds ago. If less than the time interval has passed, it will NOT reload the source. (This is to ensure that content with an error doesn't reload constantly.) If more time than the interval specified has passed, the video is reloaded at the point when the error occurred.</td>
+		</tr><tr><td><code>getSource()</code></td>
+			<td>Function</td>
+			<td>Retrieves current source</td>
+			<td>A function that is called to get a source object to load or reload. By default it gets the current source of the player.</td>
+		</tr></tbody></table><p>The following details the code used in the video demonstration above:</p>
+
+<ul><li class="language-editable">Lines 1-9: Standard in-page embed code with a player <code>id</code> added.</li>
+	<li class="language-editable">Line 11: Button to manually create errors.</li>
+	<li class="language-editable">Lines 22-24: Function called on button click to dispatch an error.</li>
+	<li class="language-editable">Line 19: Create an object in which to place configuration options.</li>
+	<li class="language-editable">Line 20: In the configuration object, create an <code>errorInterval</code> property and assign it a value.</li>
+	<li class="language-editable">Line 21: Call the <code>reloadSourceOnError()</code> method, passing the configuration object as an argument.</li>
+</ul><pre class="line-numbers">
+  <code class="language-html">&lt;video-js id="myPlayerID"
+    data-video-id="4607746980001"
+    data-account="1507807800001"
+    data-player="HJLp3Hvmg"
+    data-embed="default"
+    data-application-id
+    class="video-js"
+    controls
+  &gt;&lt;/video-js&gt;
+  
+  &lt;p&gt;&lt;button onclick="createError()"&gt;createError&lt;/button&gt;&lt;/p&gt;
+  
+  &lt;script src="https://players.brightcove.net/1507807800001/HJLp3Hvmg_default/index.min.js"&gt;&lt;/script&gt;
+  
+  &lt;script type="text/javascript"&gt;
+    var createError;
+    videojs.getPlayer('myPlayerID').ready(function() {
+      var myPlayer = this,
+        <span class="bcls-highlight">reloadOptions = {};
+      reloadOptions.errorInterval = 10;
+      myPlayer.reloadSourceOnError(reloadOptions);</span>
+      createError = function(){
+        myPlayer.error({code:'2'});
+      }
+    });
+  &lt;/script&gt;</code></pre>
+</section><section class="bcls-section"><h2 id="In-manifest_WebVTT">In-Manifest WebVTT</h2>
+
+<p>The HLS plugin supports in-manifest WebVTT. There is nothing you need to do to enable this feature as it is standard in the plugin. Videos need to be ingested with in-manifest WebVTT considered. For instance, the Brightcove Dynamic Ingest API can ingest videos and configure captions as in-manifest. See the <a href="overview-dynamic-ingest-api-legacy-ingest.html#ingest_captions">Overview: Dynamic Ingest API for Dynamic Delivery</a> document for more details.</p>
+
+<p>The player below is playing a video with in-manifest WebVTT captions. You can select the captions via the captions icon, as shown here:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="display captions icon" src="https://learning-services-media.brightcove.com/doc-assets/player-development/playback/HLS-plugin/in-manifest-webvtt-example.png" /></figure><p>After you start the video you will be able to choose the captions you wish to see.</p>
+<iframe src="https://players.brightcove.net/1752604059001/default_default/index.html?videoId=5427617218001" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" width="640" height="360"></iframe>
+
+<p>Simply to see, as this is something you would not build yourself, here is the manifest for the video shown in the player above:</p>
+
+<pre class="line-numbers">
+  <code class="language-javascript">#EXTM3U
+  #EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",NAME="Woofer",DEFAULT=NO,AUTOSELECT=YES,FORCED=NO,LANGUAGE="en",URI="subtitles/en/index.m3u8"
+  #EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",NAME="Woofer (Forced)",DEFAULT=NO,AUTOSELECT=NO,FORCED=YES,LANGUAGE="en",URI="subtitles/en_forced/index.m3u8"
+  #EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",NAME="Spanish",DEFAULT=NO,AUTOSELECT=YES,FORCED=NO,LANGUAGE="es",URI="subtitles/es/index.m3u8"
+  #EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",NAME="Spanish (Forced)",DEFAULT=NO,AUTOSELECT=NO,FORCED=YES,LANGUAGE="es",URI="subtitles/es_forced/index.m3u8"
+  #EXT-X-STREAM-INF:BANDWIDTH=865000,CODECS="mp4a.40.2, avc1.42001e",RESOLUTION=640x360,SUBTITLES="subs"
+  865/prog_index.m3u8
+  #EXT-X-STREAM-INF:BANDWIDTH=12140000,CODECS="mp4a.40.2, avc1.42001e",RESOLUTION=1280x720,SUBTITLES="subs"
+  12140/prog_index.m3u8</code></pre>
+
+<p>In it you can see references to the captions file.</p>
+
+<aside class="bcls-aside bcls-aside--tip language-editable">Note: Using in-manifest WebVTT is a better practice than using CEA-608 standard, mentioned in a <a href="#608captions">later section</a> of this document.</aside></section><section class="bcls-section"><h2 id="adaptiveswitching">Adaptive switching</h2>
+
+<h3>HLS rendition selection</h3>
+
+<p>During playback, the player will switch to a higher or lower rendition based on an algorithm. Inputs to this algorithm are:</p>
+
+<ul><li class="language-editable">Available bandwidth</li>
+	<li class="language-editable">Player dimensions</li>
+</ul><p>For a complete discussion of rendition selection, please see the <a href="determining-which-rendition-will-play.html#HLS_DASH_Rendition_Selection">Determining Which Rendition Will Play</a> document.</p>
+
+<h3>MP4 rendition selection</h3>
+
+<p>If for some reason Brightcove Player cannot playback HLS sources, it will fallback to playing MP4. In this case, if viewing a video on a mobile device and playing an MP4, the player will choose the MP4 that has a bitrate closest to .5 MB/s. If on a desktop or laptop device it will choose the MP4 rendition that is closest to 3 MB/s.</p>
+</section><section class="bcls-section"><h2 id="inbandmetadata">In-band metadata</h2>
+
+<p>Brightcove Player will recognize certain types of ID3 tag information embedded in an HLS video stream. The ID3 standard was originally used to provide metadata about MP3 audio tracks. (The acronym is from <strong>ID</strong>entify MP<strong>3</strong>.) When a stream is encountered with embedded metadata, an in-band metadata text track will automatically be created and populated with cues as they are encountered in the stream. A common use case is the ID3 data would direct when advertisements should be shown in a live stream.</p>
+
+<p>The ID3 standard defines many frame types, but only the following two UTF-8 encoded frames will be mapped to cue points and their values set as cue text:</p>
+
+<ul><li class="language-editable">WXXX - User defined URL link frame</li>
+	<li class="language-editable">TXXX - User defined text information frame</li>
+</ul><p>Cues are created for all other frame types and the data is attached to the generated cue:</p>
+
+<pre class="line-numbers">
+  <code class="language-javascript">cue.frame.data</code></pre>
+
+<p>For more information about text tracks in general see <a href="https://www.html5rocks.com/en/tutorials/track/basics/">Getting Started With the Track Element</a>. For information on Brightcove Player and cue points see <a href="displaying-ads-using-ad-cue-points.html">Using Cue Points</a>.</p>
+</section><section class="bcls-section"><h2 id="Debugging">Debugging</h2>
+
+<p>The information in this section is supplied for you to gather information that can then be passed to Brightcove Support to help resolve any HLS issues. That being said, some of the data reported could be of interest to you.</p>
+
+<p>Two methods and one property will be detailed that assist in HLS debugging.</p>
+
+<h3>Method: videojs.log.level()</h3>
+
+<p>The <code>videojs.log.level()</code> method gets or sets the current logging level. To turn on debugging you use:</p>
+
+<pre class="line-numbers">
+  <code class="language-javascript">videojs.log.level('debug');</code></pre>
+
+<h3>Method: videojs.log.history()</h3>
+
+<p>The <code>history()</code> method returns an array containing everything that has been logged to the history.</p>
+
+<p>Any message that gets logged through the <code>videojs.log</code> API will be appended to the <code>history</code> array. What information is placed into that array is dependent on what plugins are in use that use the API, and the state of the player. This means that the history can easily contain non-HLS information. An example display from the console of the <code>history</code> array follows:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="console display of history array" src="https://learning-services-media.brightcove.com/doc-assets/player-development/playback/HLS-plugin/history-array.png" /></figure><aside class="bcls-aside bcls-aside--tip language-editable">Both the <code>level()</code> and <code>history()</code> methods belong to the <code>log</code> class, whose reference document is located <a href="https://docs.brightcove.com/brightcove-player/current-release/module-create-logger-createLogger-log.html">here</a>.</aside><p>If you need to send the <code>history</code> array to support, the best thing to do is at the console type the following:</p>
+
+<pre class="line-numbers">
+  <code class="language-javascript">JSON.stringify(videojs.log.history())</code></pre>
+
+<p>You will get information similar to what is shown here:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="console display of history stringified" src="https://learning-services-media.brightcove.com/doc-assets/player-development/playback/HLS-plugin/stringify.png" /></figure><p>Copy the JSON that is generated and that can then be sent to support.</p>
+
+<h3>Property: player.tech().hls.stats</h3>
+
+<p>This object contains a summary of HLS and player related stats. The available properties are shown in the following table:</p>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>Property Name</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td>bandwidth</td>
+			<td>number</td>
+			<td>Rate of the last segment download in bits/second</td>
+		</tr><tr><td>buffered</td>
+			<td>array</td>
+			<td>List of time ranges of content that are in the SourceBuffer</td>
+		</tr><tr><td>currentSource</td>
+			<td>object</td>
+			<td>The source object; has the structure <code>{src: 'url', type: 'mimetype'}</code></td>
+		</tr><tr><td>currentTech</td>
+			<td>string</td>
+			<td>The name of the tech in use</td>
+		</tr><tr><td>currentTime</td>
+			<td>number</td>
+			<td>The current position of the player</td>
+		</tr><tr><td>duration</td>
+			<td>number</td>
+			<td>Duration of the video in seconds</td>
+		</tr><tr><td>master</td>
+			<td>object</td>
+			<td>The master playlist object</td>
+		</tr><tr><td>mediaBytesTransferred</td>
+			<td>number</td>
+			<td>Total number of content bytes downloaded</td>
+		</tr><tr><td>mediaRequests</td>
+			<td>number</td>
+			<td>Total number of media segment requests</td>
+		</tr><tr><td>mediaRequestsAborted</td>
+			<td>number</td>
+			<td>Total number of aborted media segment requests</td>
+		</tr><tr><td>mediaRequestsErrored</td>
+			<td>number</td>
+			<td>Total number of errored media segment requests</td>
+		</tr><tr><td>mediaRequestsTimeout</td>
+			<td>number</td>
+			<td>Total number of timedout media segment requests</td>
+		</tr><tr><td>mediaSecondsLoaded</td>
+			<td>number</td>
+			<td>Total number of content seconds downloaded</td>
+		</tr><tr><td>mediaTransferDuration</td>
+			<td>number</td>
+			<td>Total time spent downloading media segments in milliseconds</td>
+		</tr><tr><td>playerDimensions</td>
+			<td>object</td>
+			<td>Contains the width and height of the player</td>
+		</tr><tr><td>seekable</td>
+			<td>array</td>
+			<td>List of time ranges to which the player can seek</td>
+		</tr><tr><td>timestamp</td>
+			<td>number</td>
+			<td class="language-editable">Timestamp of when <code>hls.stats</code> was accessed</td>
+		</tr><tr><td>videoPlaybackQuality</td>
+			<td>object</td>
+			<td class="language-editable">Media playback quality metrics as specified by the <a href="https://wicg.github.io/media-playback-quality">W3C's Media Playback Quality API</a></td>
+		</tr></tbody></table><aside class="bcls-aside bcls-aside--warning language-editable">If you are using version 5 of Brightcove Player you should use <code>player.tech_.hls.stats</code> to get the HLS information shown in the table. Also, some properties are not available in the version 5 implementation.</aside><p>An example display from the console of the <code>stats</code> object follows:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="console display of stats object" src="https://learning-services-media.brightcove.com/doc-assets/player-development/playback/HLS-plugin/stats-object.png" /></figure><aside class="bcls-aside bcls-aside--tip language-editable">When in the console, to actually display a property value you need to click on the ellipsis (...).</aside><h3>Code example</h3>
+
+<p>If you wish to experiment with these debugging features, code based on the following can server as a starting point:</p>
+
+<pre class="line-numbers">
+  <code class="language-html">&lt;video-js id="myPlayerID" data-video-id="5622718636001"
+    data-account="1507807800001"
+    data-player="SkxERgnQM"
+    data-embed="default"
+    data-application-id
+    class="video-js"
+    controls
+    width="640"
+    height="360"&gt;&lt;/video-js&gt;
+  &lt;script src="https://players.brightcove.net/1507807800001/SkxERgnQM_default/index.min.js"&gt;&lt;/script&gt;
+  
+  &lt;script type="text/javascript"&gt;
+    videojs.getPlayer('myPlayerID').ready(function() {
+      var myPlayer = this;
+  
+      videojs.log.level('debug');
+  
+      myPlayer.on('ended', function(){
+        console.log('videojs.log.history(): ', videojs.log.history());
+        console.log('videojs.log.level(): ', videojs.log.level());
+        console.log('videojs.hls.stats: ', player.tech().hls.stats);
+      });
+    });
+  &lt;/script&gt;</code></pre>
+</section><section class="bcls-section"><h2 id="608captions">608 captions</h2>
+
+<p>Brightcove's HLS plugin has support for 608 captions. 608 captions, also known as CEA-608 captions, EIA-608 captions and Line 21 captions, are a standard for closed captioning for NTSC TV analog broadcasts in the United States and Canada. The 608 captions can be inserted into a live stream where they are mixed into the HLS' <strong>ts</strong> (transport stream) files.</p>
+</section><section class="bcls-section"><h2 id="hosting">Hosting issues</h2>
+
+<div class="BCL-concept">
+<p>Unlike a native HLS implementation, the HLS plugin has to comply with the browser's security policies. That means that all the files that make up the stream must be served from the same domain as the page hosting the video player or from a server that has appropriate <a href="https://developer.mozilla.org/en-US/docs/HTTP/Access_control_CORS">CORS headers</a> configured. Easy <a href="http://enable-cors.org/server.html">instructions are available</a> for popular webservers and most CDNs should have no trouble turning CORS on for your account.</p>
+</div>
+</section><section class="bcls-section"><h2 id="Errors">Errors</h2>
+
+<p>Errors during HLS playback will be reported using the type <strong>APPEND_BUFFER_ERR</strong>. The message will be what is retrieved from the browser's native error. For instance, <strong>The quota has been exceeded</strong>.</p>
+</section><section class="bcls-section"><h2 id="Known_issues">Known issues</h2>
+
+<h4>IE11/Win7 &amp; HLS playback delayed</h4>
+
+<p>A playback delay occurs on Internet Explorer 11/Windows 7 when using HLS. This is due to the FlasHLS library used for HLS playback on that browser/platform combination. There is a chance delay on other browsers could occur if a customer forces Flash playback.</p>
+</section><section class="bcls-section"><h2 id="changelog">Changelog</h2>
+
+<p>See the <a href="hls-plugin-changelog.html">changelog here</a>.</p>
+</section></article></div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-by-field-block-1 clearfix" id="block-views-block-related-content-by-field-block-1">
+  
+    
+
+      <div class="form-group"><div class="view view-related-content-by-field view-id-related_content_by_field view-display-id-block_1 js-view-dom-id-f0fc85b802c4d5f72d916fc4e48c0db8c0ce7bb58ee061be244db9f10c69c24f">
+  
+    
+      <div class="view-header">
+      <h2>Related content</h2>
+    </div>
+      
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="live-hls.html" hreflang="en">Live HLS</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="live-dvrux-plugin.html" hreflang="en">Live DVRUX Plugin</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="quality-selection-plugin.html" hreflang="en">Quality Selection Plugin</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="determining-which-rendition-will-play.html" hreflang="en">Determining Which Rendition Will Play</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="concepts-cors.html" hreflang="en">Concepts: CORS</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="row">
+            <div class="region region-footer-top-left col-md-9" style="margin-bottom: 1em;">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove Support</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://status.brightcove.com">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="contact-support.html" data-drupal-link-system-path="node/18632">Support - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.brightcove.com/en/contact/create">Support - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Documentation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Training</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="online-training-courses.html" data-drupal-link-system-path="node/18286">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a course</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://www.brightcove.com">Brightcove.com</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="region region-footer-top-right col-md-3">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Brightcove Inc. (NASDAQ: BCOV), is a leading global provider of powerful cloud solutions for delivering and monetizing video across connected devices.</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="row">
+            <div class="region region-footer-bottom-left col-md-8">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item">Brightcove Inc. All rights reserved.</div>
+      
+      <div class="field field--name-field-legal-links field--type-link field--label-hidden field--items">
+              <div class="field--item"><a href="https://www.brightcove.com/en/privacy">Privacy</a></div>
+              <div class="field--item"><a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="region region-footer-bottom-right col-md-4">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items">
+              <div class="field--item">
+
+<a href="https://www.linkedin.com/company/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://twitter.com/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://www.facebook.com/Brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://plus.google.com/100830370440271567091" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18087","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGkkHXlVrBldRXQE=","queueTime":0,"applicationTime":15,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

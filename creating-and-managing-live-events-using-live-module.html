@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="sites/default/files/favicon-64.png" type="image/png" />
+<link rel="alternate" hreflang="en" href="creating-and-managing-live-events-using-live-module.html" />
+<link rel="canonical" href="creating-and-managing-live-events-using-live-module.html" />
+<link rel="shortlink" href="creating-and-managing-live-events-using-live-module.html" />
+<link rel="revision" href="creating-and-managing-live-events-using-live-module.html" />
+
+    <title>Creating and Managing Live Events using the Live Module | Brightcove Learning</title>
+    <link rel="stylesheet" media="all" href="sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw_q23msc.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4_q23msc.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on" />
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  </head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="navigation-secondary clearfix">
+          <div class="region region-navigation-secondary">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary Navigation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="contact-support.html" title="Create a Support Request" data-drupal-link-system-path="node/18632">Support Request</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://status.brightcove.com/">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://university.brightcove.com/">Brightcove University</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gtranslate">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" style="font-weight:bold;background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">English</option><option value="en|fr" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">French</option><option value="en|de" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">German</option><option value="en|ja" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">Japanese</option><option value="en|ko" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">Korean</option><option value="en|es" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">Spanish</option></select>
+</div>
+<div class="gtranslate__credits">
+  Translations Provided by Google Translate
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="navbar-header col-md-3">
+                  <a class="logo navbar-btn pull-left" href="index.html" title="Home" rel="home">
+            <img src="themes/custom/bcdocs/images/brightcove.png" alt="Home" />
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" title="Home page" data-drupal-link-system-path="node/18643">Home</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Products
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="video-cloud.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://gallery.support.brightcove.com">Gallery</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a href="social.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ssai.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Quick Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="analytics-api.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience-api.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-api.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-connectors-video-cloud.html" data-drupal-link-system-path="node/18662">CMS Connectors for Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="data-collection-api.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="delivery-system-api.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="developer-tools-and-concepts.html" data-drupal-link-system-path="node/18430">Developer Tools and Concepts</a>
+                  </li>
+                              <li class="expanded">
+        <a href="native-player-sdks.html" data-drupal-link-system-path="node/18367">Device SDKs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="dynamic-ingest-api.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="getting-started-brightcove-apis-0.html" data-drupal-link-system-path="node/18711">Getting Started - Brightcove APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="page-experience-api.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ingest-profiles-api.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="oauth-api.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="platform-api-code-samples.html" data-drupal-link-system-path="node/18675">Platform API Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="playback-api.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-code-samples.html" data-drupal-link-system-path="node/18630">Player Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-developer.html" data-drupal-link-system-path="node/18362">Player Developer</a>
+                  </li>
+                              <li class="expanded">
+        <a href="player-management-api.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="policy-api.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="release-notes.html" data-drupal-link-system-path="node/18687">Release Notes</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Training
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="https://university.brightcove.com">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a Course</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a href="brightcove-support-documentation-announcements.html" title="See what&#039;s new in Brightcove Documentation" data-drupal-link-system-path="node/18896">What&#039;s New</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="full-width-headline">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" role="heading">
+            <div class="region region-header">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      Documentation
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="main-container container  js-quickedit-main-content">
+    <div class="row">
+
+                              <aside class="col-sm-3" role="complementary">
+              <div class="region region-sidebar-first">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="creating-and-managing-live-events-using-live-module.html" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group">
+      <label for="edit-search" class="control-label sr-only">Search</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="Search" />
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-tblobu45xrgbacpqajun4clxgjpxmz6lfu2qjsodfus" type="hidden" name="form_build_id" value="form-tBloBu45XrGBAcPQajUN4ClXgjPXMz6lfu2QJsODFus" /><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form" /><div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix">
+  
+      <h2 class="block-title">On This Page</h2>
+    
+
+      <div class="bc-ipnav-block"></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="highlighted">  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a id="main-content"></a>
+            <div class="region region-content">
+        <h1 class="page-header"><span>Creating and Managing Live Events using the Live Module</span>
+</h1>
+
+  
+<div class="node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+      </div>
+
+  <div class="group-second-row">
+  
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+          <div class="field--item">Live</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Studio User</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-topics field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Topic(s)</div>
+          <div class="field--items">
+              <div class="field--item">Live Module</div>
+          <div class="field--item">Live Streaming</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item"><p>In this topic you will learn how to create and manage live events using the Live module.</p><div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="2403492012001"> </div>
+<script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script><section class="bcls-section"><h2 id="introduction">Introduction</h2>
+
+<p>The Live module can be used to help you broadcast a live event to both desktop and mobile devices. After entering your event information into the Live module, you will be provided with a set of encoder settings that you plug into your on-site encoder. All transcoding is done in the cloud so you don't need a hardware based transcoder.</p>
+
+<p>Depending on your Live subscription, you may have the ability to create events, channels or both. Typically, events are created to stream shorter length, one time or recurring events. Channels are typically used when delivering 24/7 live events.</p>
+
+<p class="BCL-aside">Note: Live streaming support is available only for Video Cloud Pro and Enterprise publishers.</p>
+</section><section class="bcls-section"><h2 id="prerequisites">Prerequisites</h2>
+
+<p>Before you can broadcast a live event, the following items are required:</p>
+
+<ul><li class="language-editable">A Video Cloud Pro or Enterprise account with access to the Live module</li>
+	<li class="language-editable">A camera to broadcast the event</li>
+	<li class="language-editable">You must have your own encoding software, for example <a href="https://www.telestream.net/wirecast/overview.htm">Telestream's Wirecast</a> or <a href="https://obsproject.com">Open Broadcaster Software</a></li>
+</ul></section><section class="bcls-section"><h2 id="limitations">Limitations</h2>
+
+<ul><li class="language-editable">To create a Live stream with DVR on the Media module, you will need first to create a new remote asset from there and then fill a Live module playlist with a "playlist_dvr.m3u8" extension at the end of your URL stream.</li>
+	<li class="language-editable">Live streams with SSAI currently cannot be published via the Live module. If you wish to publish a Live stream with this feature, you must do it from the Media Module.</li>
+	<li class="language-editable">Live broadcasts will experience a 20-30 second delay.</li>
+	<li class="language-editable">Streaming must begin within 30 minutes of the event start (default-level account setting).</li>
+	<li class="language-editable">For users using Internet Explorer, version 10 or later is required.</li>
+	<li class="language-editable">Live streams with DVR are not supported when using the Brightcove Player SDKs. In this case, you should add the DVR playback URL to a remote asset and then use the remote asset URL with the SDK.</li>
+</ul></section><section class="bcls-section"><h2 id="manage">Managing live events</h2>
+
+<p>To access the Live module, login to Video Cloud Studio and click <strong> Live</strong> in the navigation header. After logging in, your Video Cloud account name will appear in the upper right corner of the page. If you have multiple accounts, use the account switcher dropdown to select the account you would like to work with. If the account you select hasn't been enabled for Live, an introductory "Brightcove Live" video page will appear. The Manage Events page displays three main tabs:</p>
+
+<ul><li class="language-editable"><strong>Live</strong> - Lists live events that are in progress</li>
+	<li class="language-editable"><strong>Standby</strong> - Lists <a href="#intro_recurring">recurring events</a> that are in standby mode</li>
+	<li class="language-editable"><strong>Completed</strong> - Lists completed events</li>
+</ul><div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18470-homepage.png" /></div>
+
+<p>Note: The ability to create live channels is based upon your Live subscription.</p>
+
+<p>The <strong>Show</strong> dropdown can be used to filter the events that appear on the <strong>Completed</strong> tab.</p>
+
+<p>The body of the page will display a list of live events with related information:</p>
+
+<ul><li class="language-editable">Job Status - Status of the live stream
+	<ul><li class="language-editable"><strong>Processing</strong> - Stream is live</li>
+		<li class="language-editable"><strong>Processing Error</strong> - The Live stream has encountered an error</li>
+		<li class="language-editable"><strong>Standby</strong> - Stream ready to be activated (static entry points only)</li>
+		<li class="language-editable"><strong>Stopping</strong> - The live stream is stopping and creating any associated VOD outputs</li>
+		<li class="language-editable"><strong>Completed</strong> - Live stream has completed</li>
+		<li class="language-editable"><strong>Cancelling</strong> - The live stream is stopping and will NOT process any pending VOD outputs</li>
+		<li class="language-editable"><strong>Cancelled</strong> - The live stream has been cancelled</li>
+		<li class="language-editable"><strong>Disconnected</strong> - The encoder has been disconnected</li>
+		<li class="language-editable"><strong>Deactivated</strong> - Recurring event is in a deactivated state</li>
+		<li class="language-editable"><strong>Not Activated</strong> - Recurring event has been activated but a stream start has not occurred</li>
+		<li class="language-editable"><strong>Waiting</strong> - Waiting for the RTMP stream (encoder to start)</li>
+		<li class="language-editable"><strong>Failed</strong> - The job has stopped as a result of a system error</li>
+		<li class="language-editable"><strong>Abandoned</strong> - The event finished without an encoder being connected</li>
+	</ul></li>
+	<li class="language-editable">Completed date and time</li>
+	<li class="language-editable">Event name and ID</li>
+	<li class="language-editable">Total views</li>
+	<li class="language-editable">Duration</li>
+	<li class="language-editable">Created date and time (for recurring events only)</li>
+</ul><p>To view the live event video properties, click on the event name to open the <a href="#controlroom">Control Room</a>.</p>
+</section><section class="bcls-section"><h2 id="create">Creating a new event</h2>
+
+<p>For a complete step-by-step guide to creating and streaming a live event using the Live module, see <a href="step-step-using-live-module-telestream-wirecast.html">Step-by-Step: Using the Live Module with Telestream Wirecast</a>.</p>
+
+<p>To create a new event, follow these steps.</p>
+
+<ol class="bcls-tasklist"><li class="language-editable">From the Manage Events page click <strong>Create Event</strong>. The Create Live Event or Create Live Channel page will open. The properties when creating events and channels are the same. The screen shots in this document cover creating an event.
+
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18470-new-event.png" /></div>
+	</li>
+	<li class="language-editable">Enter the event details:
+	<ul><li class="language-editable"><strong>Event Name</strong> - Name for the event; this name will also appear in the Media module if the video is saved as a video asset (max 255 characters)</li>
+		<li class="language-editable"><strong>Short Description</strong> - Description of the event (max 250 characters)</li>
+		<li class="language-editable"><strong>Tags</strong> - Tags to associate with the event; tags will be assigned to the video if the video is saved as a video asset (max 128 characters and 1200 tags)</li>
+		<li class="language-editable"><strong>Reference ID</strong> - Reference ID for the event; must be unique (max 150 characters)</li>
+	</ul></li>
+	<li class="language-editable">Any required custom fields for the account will be displayed. Assign values to the custom fields.</li>
+	<li class="language-editable">Setting <strong>Streaming to Social Media</strong> to <strong>Allowed</strong> will make the event available for streaming to social media platforms. This can be done <a href="#social">once the event has started streaming</a> or by using the <a href="publishing-live-event-facebook.html">Social module</a>.</li>
+	<li class="language-editable">Select a <strong>Live Ingest Profile</strong>. The dropdown list will list all Live ingest profiles. The ingest profile will control the quality and number of live renditions that are created. Clicking the <strong>Manage Profiles</strong> link will open the ingest profile editor in another browser tab. Note that you must be an account administrator to access the ingest profile editor. Click the <strong>RENDITIONS</strong> link to view the renditions that will be created using the selected ingest profile.
+	<aside class="bcls-aside bcls-aside--information language-editable">The bitrate and billing details of the three tiers are as follows:
+	<ul><li class="language-editable">Tier 1 allows up to 5,500 Kbps and is charged at 1.0x hours</li>
+		<li class="language-editable">Tier 2 allows up to 10,000 Kbps and is charged at 1.5x hours</li>
+		<li class="language-editable">Tier 3 allows up to 20,000 Kbps and is charged at 2.0x hours</li>
+	</ul></aside><p>Note: For information on creating Live ingest profiles, see <a href="creating-custom-live-ingest-profiles.html">Creating Custom Live Ingest Profiles</a>.</p>
+	</li>
+	<li class="language-editable">Select <strong>Convert event to video asset when complete</strong> to save a VOD version of the live video to your Video Cloud account. When this option is selected, the highest quality rendition from the selected <strong>Live Ingest Profile</strong> is used as the source for the VOD video. The default ingest profile for the account is used when creating renditions. <strong>Note that the VOD version is not available as soon as the live event ends, the video will be available once the ingestion process is complete.</strong>
+	<p>Note: This option is not supported when using a recurring event.</p>
+	</li>
+	<li class="language-editable">Click <strong>ADVANCED OPTIONS</strong> and <a href="#advanced">configure the advanced options</a>.</li>
+	<li class="language-editable">Click<strong> Create Event </strong>to start the live event. The <a href="#controlroom">Control Room page</a> will open with details about the live event including the <strong>Streaming Endpoint (RTMP URL)</strong> and <strong>Stream Name</strong> which will be used by your encoder.
+	<p>Note: It will take about a minute to process your streams.</p>
+
+	<p>Note: By default, the encoder must be started within 30 minutes from when a new event is created.</p>
+	</li>
+</ol><p>Click the <strong>Stop Streaming</strong> button to end the event.</p>
+
+<p>Note: Make sure the encoder is closed/stopped when the live stream is complete. Leaving a connection open between any encoder and Brightcove, even when no data is being sent, may result in unexpected connection charges.</p>
+</section><section class="bcls-section"><h2 id="advanced">Configuring advanced options</h2>
+
+<p>When creating a new event, advanced options can be configured. To configure the advanced options, click the <strong>ADVANCED OPTIONS</strong> link when creating the event.</p>
+
+<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18470-advanced-options.png" /></div>
+
+<p>The following options can be configured:</p>
+
+<p class="BCL-aside">Note: For VOD clips, no notification will be sent.</p>
+
+<p class="BCL-aside">Note: Please contact Brightcove Support in the case you are interested in a custom edge CDN hostname.</p>
+
+<ul><li class="language-editable"><strong>Reconnect Time</strong> - If the encoder is disconnected, this is the amount of time that the live stream will be kept available. This setting has no effect on how soon the encoder must be started when a new event is created.</li>
+	<li class="language-editable"><strong>Enable Server Side Ad Insertion (SSAI)</strong> - Enables server side ad insertion. Ads are configured as part of the <a href="configuring-server-side-ad-settings.html">server-side ad settings</a>. For information on working with server-side ads in the Live module, see <a href="implementing-server-side-ads-live-module.html">Implementing Server-Side Ads in the Live Module</a>.
+	<ul><li class="language-editable"><strong>Fill Slate</strong> - Select a fill slate. The fill slate will be displayed when there are gaps in a live stream ad break that cannot be filled with a dynamically-served ad. Create fill slates as part of the <a href="managing-live-settings.html">live settings</a>.</li>
+		<li class="language-editable"><strong>Ad Audio</strong> - When checked, normalizes the audio levels on ads based on the adjustment that is set. This can be used as a way to help make sure ads aren’t significantly louder than the content.</li>
+	</ul></li>
+	<li class="language-editable"><strong>Create Cloud DVR</strong> - Enables DVR capability. If the event is published using a Brightcove Player version earlier than 6.33.0, the <a href="live-dvrux-plugin.html">Live DVRUX Plugin</a> is required. Content is available for 7 days after the event finishes.
+	<ul><li class="language-editable"><strong>DVR Window</strong> - The amount of time, in seconds, to keep in the live DVR manifest.</li>
+	</ul></li>
+	<li class="language-editable"><strong>Input Format</strong> - The input format from the encoder that will be sent to the Live module. This feature enables additional metadata in a live stream like now, now-next, more flexibility in subtitles and captioning, audio tracks and enables streamlined digital experiences with standard broadcast level data. The following input formats are supported:
+	<ul><li class="language-editable"><strong>RTMP (default)</strong></li>
+		<li class="language-editable"><strong>Real-Time Transport Protocol (RTP)</strong></li>
+		<li class="language-editable"><strong>Secure Reliable Transport (SRT)</strong></li>
+	</ul></li>
+	<li class="language-editable"><strong>RTMP credentials to use</strong> - Select the RTMP credential used to secure the Streaming Endpoint. Note this option will only appear if the Input Format is RTMP and at least one RTMP credential was created as part of the <a href="managing-live-settings.html">Live settings</a>.</li>
+	<li class="language-editable"><strong>RTMP IP whitelist</strong> - Enter a set of IP addresses that are allowed to connect to the RTMP endpoint. This controls who can connect to the RTMP endpoint. Note this option will only appear if the Input Format is RTMP.</li>
+	<li class="language-editable"><strong>CIDR Whitelist</strong>  - Enter a set of IP addresses that are allowed to connect to the RTP or SRT endpoint. This controls who can connect to the RTP or SRT endpoints. Note this option will only appear if the Input Format is RTP or SRT.</li>
+	<li class="language-editable"><strong>Region</strong> - The Amazon Web Services (AWS) region to use. To reduce latency, you should select the region that is closest to where your encoder is located. <strong>By default, the region is set to Oregon (US West) which will produce bad results if you are streaming from another continent.</strong> The following regions are supported:
+	<ul><li class="language-editable">Oregon (US West) (default)</li>
+		<li class="language-editable">Virginia (US East)</li>
+		<li class="language-editable">Tokyo (Asia Pacific)</li>
+		<li class="language-editable">Singapore (Asia Pacific)</li>
+		<li class="language-editable">Sydney (Asia Pacific)</li>
+		<li class="language-editable">Mumbai (Asia Pacific)</li>
+		<li class="language-editable">Frankfurt (EU)</li>
+		<li class="language-editable">Ireland (EU)</li>
+	</ul></li>
+	<li class="language-editable"><strong>Content Encryption</strong> - Select the type of encryption to apply to the live stream:
+	<ul><li class="language-editable"><strong>None</strong> - No encryption is applied</li>
+		<li class="language-editable"><strong>AES-128</strong> - Secure the stream using AES-128 encryption. If this option is selected, you must enter your <strong>Encryption Key</strong>. The key must be 32 hexadecimal characters. For best results, use a <a href="https://www.allkeysgenerator.com/Random/Security-Encryption-Key-Generator.aspx">key generator</a>, choosing the <code>128-bit</code> and <code>Hex</code> options.
+		<p>&gt;Note: Clips can't be created from encrypted live streams.</p>
+		</li>
+		<li class="language-editable"><strong>Digital Rights Management (DRM)</strong> - Secure Premium content stream with Digital Rights Management technologies. For details, see the <a href="live-drm.html">Live DRM</a> document.
+		<ul><li>HLS + <a href="https://developer.apple.com/streaming/fps/">FairPlay</a></li>
+			<li>HLS (fMP4) + Widevine Modular</li>
+		</ul><p class="BCL-aside">Note: Your Live account must be enabled first by Brightcove Support in order to use DRM. To publish a DRM-enabled event, it is necessary to create and use a DRM enabled player v6.37.1 or greater.</p>
+		</li>
+	</ul></li>
+	<li class="language-editable"><strong>Enable stream status notifications</strong> - When checked, enter a <strong>Notification URL</strong>. An http request will be made to the <strong>Notification URL</strong> when there is a change in the job status. This can be used to update a server in response to changes in the job status. For more information on using API notifications, see the <a href="live-api-notifications.html">Live API Notifications</a> topic.</li>
+	<li class="language-editable"><strong>+ Add multi CDN configuration</strong> - Enter a <strong>label</strong> and <strong>URL</strong> for additional CDNs. This is a whitelist of CDNs that are allowed to ask our primary CDN for the video segments. You are responsible for configuring the secondary CDN correctly.</li>
+	<li class="language-editable"><strong>Create this as a recurring event using a Static Entry Point (SEP)</strong> - Allows a single live stream to be created and then activated/deactivated when needed. For information, see the <a href="#intro_recurring">Introduction to recurring events</a> section of this document.</li>
+</ul><p>Click <strong>Edit Configuration </strong> to view/edit the API request that will be made to create the live stream. Caution should be used when editing the API call directly.</p>
+</section><section class="bcls-section"><h2 id="intro_recurring">Introduction to recurring events</h2>
+
+<p>Selecting the <strong>Create this as a recurring event using a Static Entry Point (SEP)</strong> option allows for a long-running live stream that can be activated and deactivated while keeping the same entry point URL and playback URL. When using recurring events, the streaming endpoint URL and video ID will not change.</p>
+
+<p class="BCL-aside">Note that when you create a recurring event, a video is automatically created for it in the Media module. Do <strong>not</strong> delete this video, as it will be needed every time the event recurs.</p>
+
+<h3>Limitations</h3>
+
+<p>The following limitations apply when working with recurring events:</p>
+
+<ul><li class="language-editable">The <strong>Convert event to video asset when complete</strong> option is not available. An alternative is to use clipping to archive the full live event as a VOD. Clips can be created up until the next activation of the stream, or for 7 days, whichever is shorter. When the stream is re-activated, previous recording sessions are removed from the server and can no longer be clipped.</li>
+	<li class="language-editable">Job settings can not be modified, they are currently tied to the settings that initially created the recurring event.</li>
+	<li class="language-editable">Activating the stream can take up to 60 seconds for the event to become available. Some encoders have built-in retry (Wirecast, Elemental, etc.) so the encoders will reconnect as soon as the entry point is available.</li>
+	<li class="language-editable"><strong>Reconnect Time</strong> is still applicable for recurring events on encoder disconnects. If the <strong>Reconnect Time</strong> is reached, the recurring event will be set to a deactivated state. Brightcove recommends deactivating a stream when a job completes and setting the <strong>Reconnect Time</strong> to an acceptable window of time to wait in the event of a disconnect (input hour costs are accrued during this wait period).</li>
+	<li class="language-editable">You should always stop the encoder before deactivating a recurring event. Accounts are allocated a finite number of recurring events. If the limit is reached, you will need to stop one of your recurring events before you can create a new one. If you have reached the maximum number of recurring events and attempt to create another one, an error will be returned.</li>
+</ul></section><section class="bcls-section"><h2 id="work_recurring">Working with recurring events</h2>
+
+<p>To create a recurring event, select the <strong>Create this as a recurring event using a Static Entry Point (SEP)</strong> option when creating a live event and then click <strong>Create Event</strong>.</p>
+
+<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18470-recurring-event-selected.png" /></div>
+
+<p>When the recurring event is created, it will appear in the <strong>Standby</strong> tab on the Manage Events page.</p>
+
+<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18470-standby-tab.png" /></div>
+
+<p>The recurring event status can be one of:</p>
+
+<ul><li class="language-editable"><strong>Not Activated</strong> - Recurring event has been created and streaming has never started</li>
+	<li class="language-editable"><strong>Waiting</strong> - Recurring event is activated and waiting for stream</li>
+	<li class="language-editable"><strong>Streaming</strong> - Recurring event in progress</li>
+	<li class="language-editable"><strong>Disconnected</strong> - Recurring event is in the process of being stopped</li>
+	<li class="language-editable"><strong>Deactivated</strong> - Recurring event is deactivated</li>
+	<li class="language-editable"><strong>Archived</strong> - Recurring event has been archived</li>
+</ul><h3>Activating a recurring event</h3>
+
+<p>Activating a recurring event makes the job available for streaming. The recurring event should be activated before the encoder is started. To activate a recurring event:</p>
+
+<ol class="bcls-tasklist"><li class="language-editable">Click on the <strong>Standby</strong> tab.</li>
+	<li class="language-editable">Click on the event name to open the event in the Control Room.</li>
+	<li class="language-editable">Click <strong>Activate</strong>.</li>
+	<li class="language-editable">Start your encoder.</li>
+</ol><p>When the recurring event is activated, it will move from the <strong>Standby</strong> tab to the <strong>Live</strong> tab.</p>
+
+<h3>Deactivating a recurring event</h3>
+
+<p>Deactivating a recurring event disables the job for streaming. When the event is over, the recurring event should be deactivated. To deactivate a recurring event:</p>
+
+<ol class="bcls-tasklist"><li class="language-editable">Click on the <strong>Live</strong> tab.</li>
+	<li class="language-editable">Click on the event name to open the event in the Control Room.</li>
+	<li class="language-editable">Click <strong>Deactivate</strong>.</li>
+	<li class="language-editable">Stop your encoder.</li>
+</ol><h3>Archiving a recurring event</h3>
+
+<p>Archiving a recurring event permanently deactivates the job so it can't be enabled for streaming. Eventually the event will be deleted. Only events where streaming was started can be archived. If a recurring event was created and streaming never started, a <strong>Cancel</strong> button will appear vs. an <strong>Archive</strong> button.</p>
+
+<p>To archive a recurring event:</p>
+
+<ol class="bcls-tasklist"><li class="language-editable">Click on the <strong>Standby</strong> tab.</li>
+	<li class="language-editable">Click on the row for the event to select it.</li>
+	<li class="language-editable">Click <strong>Archive</strong>.</li>
+</ol></section><section class="bcls-section"><h2 id="controlroom">Viewing live event info using the Control Room</h2>
+
+<p>The Control Room page is used to view information about a live event. When you create a new live event and streaming begins, the Control Room page will open displaying the event information. A preview of the event will appear in the preview player. The Control Room page is also displayed when you click on an event on the Manage Live Events page. Click the <strong>Monitoring</strong> tab below the preview player to <a href="#monitor">view monitoring information</a> while the stream is in progress.</p>
+
+<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18470-control-room.png" /></div>
+
+<p>The Control Room page <strong>Event Information</strong> tab is organized into the following sections:</p>
+
+<ul><li class="language-editable"><a href="#eventstatus">Event Status</a></li>
+	<li class="language-editable"><a href="#eventinfo">Event Information</a></li>
+	<li class="language-editable"><a href="#clips">Clips</a></li>
+	<li class="language-editable"><a href="#renditions">Renditions</a></li>
+	<li class="language-editable"><a href="#rtmp">RTMP</a></li>
+	<li class="language-editable"><a href="#social_event">Social Event</a></li>
+</ul><p>Click the <strong>Monitoring</strong> tab below the preview player to <a href="#monitor">view monitoring information</a> while the stream is in progress.</p>
+
+<div>
+<h3 id="eventstatus">Event Status</h3>
+
+<p>The Event Status section is displayed only while an event is in progress. The following information is displayed:</p>
+
+<ul><li class="language-editable"><strong>Job Status</strong> - Current job status
+
+	<ul><li class="language-editable"><strong>Streaming</strong> - Stream is live</li>
+		<li class="language-editable"><strong>Processing Error</strong> - The Live stream has encountered an error</li>
+		<li class="language-editable"><strong>Standby</strong> - Stream ready to be activated (static entry points only)</li>
+		<li class="language-editable"><strong>Stopping</strong> - The live stream is stopping and creating any associated VOD outputs</li>
+		<li class="language-editable"><strong>Completed</strong> - Live stream has completed</li>
+		<li class="language-editable"><strong>Cancelling</strong> - The live stream is stopping and will NOT process any pending VOD outputs</li>
+		<li class="language-editable"><strong>Cancelled</strong> - The live stream has been cancelled</li>
+		<li class="language-editable"><strong>Disconnected</strong> - The encoder has been disconnected</li>
+		<li class="language-editable"><strong>Waiting</strong> - Waiting for the RTMP stream (encoder to start)</li>
+		<li class="language-editable"><strong>Failed</strong> - The job has stopped as a result of a system error</li>
+	</ul></li>
+	<li class="language-editable"><strong>Current Viewers</strong> - Number of current viewers. Please note this is just an estimation and the figure may not be accurate for events with a low number of viewers or spikes in the audience.</li>
+	<li class="language-editable"><strong>Elapsed Time - </strong>Stream elapsed time since it was <strong>started</strong> (not when it was created)</li>
+	<li class="language-editable"><strong>Current Time - </strong>Current UTC time</li>
+</ul></div>
+
+<div>
+<h3 id="eventinfo">Event Information</h3>
+
+<p>The Event Information section displays the following information:</p>
+
+<ul><li class="language-editable"><strong>Name</strong> - Name of the event</li>
+	<li class="language-editable"><strong>Job ID</strong> - Internal job ID</li>
+	<li class="language-editable"><strong>Video ID</strong></li>
+	<li class="language-editable"><strong>Short Description</strong></li>
+	<li class="language-editable"><strong>Tags</strong></li>
+	<li class="language-editable"><strong>Reference ID</strong></li>
+	<li class="language-editable"><strong>Streaming to Social Media</strong> - If <strong>Allowed</strong>, the live event can be assigned to a scheduled social event</li>
+	<li class="language-editable"><strong>Streaming Endpoint (RTMP URL</strong>) - Streaming endpoint used by the encoder</li>
+	<li class="language-editable"><strong>Stream Name</strong> - Stream name used by the encoder</li>
+	<li class="language-editable"><strong>Region</strong> - Streaming region</li>
+	<li class="language-editable"><strong>Playback URL</strong> - URL that can be used to view the live stream in a non-Brightcove Player</li>
+</ul></div>
+
+<div>
+<h3 id="clips">Clips</h3>
+
+<p>The Clips section displays all of the clips that were created from the live stream. Clicking the clip name will open the clip in the Media module. For information on creating a clip, see <a href="creating-video-clip-using-live-module.html">Creating a Video Clip Using the Live Module</a>.</p>
+</div>
+
+<div>
+<h3 id="renditions">Renditions</h3>
+
+<p>The Renditions section displays details about the renditions that were created. Clicking on a rendition link will show the encoding settings for the rendition.</p>
+</div>
+
+<div>
+<h3 id="rtmp">RTMP</h3>
+
+<p>The RTMP section can be used to add RTMP Outputs. This allows the live stream to be sent to other RTMP entry points. This can be used to send the live to stream to Facebook or YouTube for example.</p>
+
+<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18470-rtmp.png" /></div>
+
+<p>Enter the <strong>RTMP Output URL</strong> and the <strong>Rendition</strong> to send. Note that the format of the output URL may change depending on where the RTMP stream is being used. For more information, see <a href="using-live-rtmp-outputs-stream-facebook-and-youtube.html">Using Live RTMP Outputs to Stream to Facebook and YouTube</a>.</p>
+</div>
+
+<div>
+<h3 id="social_event">Social Event</h3>
+
+<p>The Social Event section will display information about the <a href="#social">scheduled social event</a> the live stream is assigned to, if any.</p>
+
+<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18470-social-event.png" /></div>
+</div>
+</section><section class="bcls-section"><h2 id="monitor">Monitoring an event</h2>
+
+<p>Click the <strong>Monitoring</strong> tab below the preview player to view monitoring information. The monitoring information is available while an event is in progress and for up to 1 hour after the event ends.</p>
+
+<p class="BCL-aside">Note: By default, the Monitor module will only display the Output and Input Drift graphs. If you would like the extended Monitor version, please contact your Brightcove account representative.</p>
+
+<p>Click <strong>Reporting</strong> in the left navigation to view <a href="reviewing-live-analytics.html">Live analytics</a>.</p>
+
+<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18470-monitoring.png" /></div>
+
+<p>Click <strong>Select Graphs</strong> to select which graphs appear and for a description of what each graph contains.</p>
+</section><section class="bcls-section"><h2 id="duplicate">Duplicating an event</h2>
+
+<p>Duplicating an event makes it easy to create another event with the same settings that were used to create a prior live event. To duplicate an event, follow these steps:</p>
+
+<ol class="bcls-tasklist"><li class="language-editable">Click on an event to open the Control Room page.</li>
+	<li class="language-editable">Click <strong>Duplicate Event</strong> at the top of the page. A new live event will be created using the settings from the prior live event. Make changes to the event properties as needed.</li>
+	<li class="language-editable">Click <strong>Create Event</strong>.</li>
+</ol></section><section class="bcls-section"><h2 id="publish">Generating the embed code for a live event</h2>
+
+<p>To generate the embed code for an event, click <strong>Publish and Embed &gt; Player Configuration</strong> in the left navigation. Two types of embed code are available:</p>
+
+<ul><li class="language-editable"><strong>Standard</strong> - iframe embed code. Recommended for most cases. This type places the player inside an &lt;iframe&gt; tag.</li>
+	<li class="language-editable"><strong>Advanced</strong> - In-page embed code. Allows the player to exist in the HTML page directly, not in an iframe. This offers developers the benefits of ease of accessing the player and associated properties and events.</li>
+</ul><p>You also have the ability to get the URL to the published player. This is useful for viewing the event in a browser.</p>
+
+<p>To generate the embed code for a live event, follow these steps:</p>
+
+<ol class="bcls-tasklist"><li class="language-editable">Click on an event to open the Control Room page.</li>
+	<li class="language-editable">Click<strong> Publish and Embed &gt; Player Configuration</strong> in the left navigation.</li>
+	<li class="language-editable">Select a <strong>Player</strong>.
+	<p>Note: If the event is configured to enable server-side ads (SSAI), DVR or multi-CDN, Brightcove Player version 6.18.3 and above must be used. Only version 6.18.3 and above players will appear in the dropdown list.</p>
+	</li>
+	<li class="language-editable">When <strong>Allow DVR</strong> is checked, the player will request the DVR manifest instead of the live manifest. This option is only available if the event was created with the <strong>Create Cloud DVR</strong> option selected. If the event is published using a Brightcove Player version earlier than 6.33.0, the <a href="live-dvrux-plugin.html">Live DVRUX Plugin</a> is required.
+	<aside class="bcls-aside bcls-aside--information">Note:
+	<ul><li class="language-editable">The "Allow DVR" feature is not compatible with the Gallery module at the moment.</li>
+		<li class="language-editable">By selecting the "Allow DVR" option, its value will be changed to <strong>adConfigId=live</strong>.</li>
+	</ul></aside></li>
+	<li class="language-editable">Click the <strong>Player URL</strong> to preview the event in a browser or copy the appropriate embed code to use.
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18470-publish-event.png" /></div>
+
+	<p>Another option to preview your Live Streaming is doing it through the API.</p>
+
+	<p>Copy the <strong>playback_url</strong> value returned from creating a Live job using the Live API, and paste it into the Safari browser. Since this browser supports native HLS playback, you should see your live stream.</p>
+
+	<div><img class="bcls-image--no-border" alt="" width="800" height="500" src="https://learning-services-media.brightcove.com/doc-assets/node/18470-creating-and-managing-live-events-using-live-module/0.png" /></div>
+
+	<p>Also, you can copy your URL and paste it into the Brightcove Player Reference App here:</p>
+
+	<p><a href="https://players.brightcove.net/3303963094001/player-reference-app/index.html">https://players.brightcove.net/3303963094001/player-reference-app/index.html </a></p>
+
+	<div><img class="bcls-image--no-border" alt="" width="800" height="500" src="https://learning-services-media.brightcove.com/doc-assets/node/18470-creating-and-managing-live-events-using-live-module/1.png" /></div>
+	</li>
+</ol></section><section class="bcls-section"><h2 id="social">Connecting to social media</h2>
+
+<p>It's possible to connect a live event to a social event that was scheduled in the Social module. Before you can connect a live event to a social event, you should <a href="publishing-live-event-facebook.html">create a live event in the Social module</a>. Only events that were created with the <strong>Streaming to Social Media</strong> setting set to <strong>Allowed</strong> can be assigned to a scheduled event.</p>
+
+<p>To connect a live event to a social event, follow these steps:</p>
+
+<ol class="bcls-tasklist"><li class="language-editable"><a href="publishing-live-event-facebook.html">Create a live event in the Social module</a>.</li>
+	<li class="language-editable">Click on an event to open the Control Room page.</li>
+	<li class="language-editable">Click <strong>Publish and Embed &gt; Connect to Social Media </strong>in the left navigation. A list of scheduled social events will display. If no events display, no scheduled events exist.</li>
+	<li class="language-editable">Click on a scheduled event and then click <strong>Connect</strong>.
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18470-select-social-event.png" /></div>
+	</li>
+</ol><p>Once the event is assigned using the Live module, return to the Social module to preview the event and start the streaming process to the social platform.</p>
+</section><section class="bcls-section"><h2 id="clip">Creating a clip</h2>
+
+<p>Clips can be created while the event is in progress or after the event has ended. If clips can't be created, a message will appear when hovering over <strong>Create Clip</strong> in the left navigation. For information on creating a clip, see <a href="creating-video-clip-using-live-module.html">Creating a Video Clip Using the Live Module</a>.</p>
+
+<aside class="bcls-aside bcls-aside--information">Note:
+<ul><li class="language-editable">
+	<p>Streams are available for clipping for 7 days after the live event has ended.</p>
+	</li>
+	<li class="language-editable">
+	<p>For Static Entry Point (recurring) streams: If during the 7 days after a stream, the stream is re-activated with a 2nd stream, the clipping will only be available for the content of the 2nd stream. The 1st stream will be cleared at that point, and there is no way to create create clips from it anymore, even if it is under 7 days after the stream was deactivated.</p>
+	</li>
+</ul></aside></section><section class="bcls-section"><h2 id="ad">Requesting an ad</h2>
+
+<p>If the <strong>Enable Server Side Ad Insertion (SSAI)</strong> option was selected when the event was created, the Control Room page will display a <strong>Goto Ad</strong> button. When clicked, the length of the ad break can be selected.</p>
+
+<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18470-goto-ad.png" /></div>
+
+<p>Click <strong>Insert</strong> to insert an ad break into the live stream. If the ad doesn't fill the entire ad break time, the fill slate will be displayed. For information on working with server-side ads in the Live module, see <a href="implementing-server-side-ads-live-module.html">Implementing Server-Side Ads in the Live Module</a>.</p>
+</section><section class="bcls-section"><h2 id="captions">Captions</h2>
+
+<p>Brightcove Live currently supports 608 captions in-band (inside h.264 headers). If captions are inside the h.264 input signal (correctly signaled in the user_data packet) those are passed through to the h.264 outputs.</p>
+
+<p>If you are using a broadcast Elemental live encoder you can get captions from SDI (EIA-608/CEA-608) or other sources (SCTE-20, SCC, Teletext, DVB-Sub, Ancillary, ARIB, TTML, SCTE-27, STL, SRT, SMI) and put them into the h.264 stream that you send to us. Other broadcast grade encoders probably can do the same, but we have not formally tested them.</p>
+
+<p>WebVTT captions are <strong>not</strong> supported for Live streams.</p>
+
+<p>The Brightcove Player has support for in-band captions.</p>
+</section><section class="bcls-section"><h2 id="trouble">Troubleshooting live stream issues</h2>
+
+<p>If you need further help getting your live event to work, you can <a href="https://support.brightcove.com/en/contact/create">contact us</a>. To make sure you get the fastest response possible, below is a list of what support will need to solve the problem.</p>
+
+<ul><li class="language-editable">The specific symptoms the stream is having. For example, does it not play at all or does it stutter or freeze?</li>
+	<li class="language-editable">Whether this stream worked correctly in the past</li>
+	<li class="language-editable">The entry point URL you are using in your encoder</li>
+	<li class="language-editable">The encoding software and hardware are you using</li>
+	<li class="language-editable">The URL to the player to which you have published the live event</li>
+	<li class="language-editable">The video ID of your live asset in Video Cloud Studio</li>
+	<li class="language-editable">The results of a trace-route from your encoder to the publishing point host</li>
+</ul></section><!-- End of Drupal content --></div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-by-field-block-1 clearfix" id="block-views-block-related-content-by-field-block-1">
+  
+    
+
+      <div class="form-group"><div class="view view-related-content-by-field view-id-related_content_by_field view-display-id-block_1 js-view-dom-id-4fb5bec89b08a1f266b825f142721043da986ed385a6c9fb2e087625ee08d5d7">
+  
+    
+      <div class="view-header">
+      <h2>Related content</h2>
+    </div>
+      
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="creating-video-clip-using-live-module.html" hreflang="en">Creating a Video Clip Using the Live Module</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="using-live-rtmp-outputs-stream-facebook-and-youtube.html" hreflang="en">Using Live RTMP Outputs to Stream to Facebook and YouTube</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="managing-live-settings.html" hreflang="en">Managing Live Settings</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="publishing-live-event-facebook.html" hreflang="en">Publishing a Live Event to Facebook</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="step-step-using-live-module-telestream-wirecast.html" hreflang="en">Step-by-Step: Using the Live Module with Telestream Wirecast</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="step-step-using-live-module-open-broadcaster-software-obs.html" hreflang="en">Step-by-Step: Using the Live Module with Open Broadcaster Software (OBS)</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="configuring-server-side-ad-settings.html" hreflang="en">Configuring Server-Side Ad Settings</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="implementing-server-side-ads-live-module.html" hreflang="en">Implementing Server-Side Ads in the Live Module</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="reviewing-live-analytics.html" hreflang="en">Reviewing Live Analytics</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="row">
+            <div class="region region-footer-top-left col-md-9" style="margin-bottom: 1em;">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove Support</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://status.brightcove.com">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="contact-support.html" data-drupal-link-system-path="node/18632">Support - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.brightcove.com/en/contact/create">Support - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Documentation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Training</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="online-training-courses.html" data-drupal-link-system-path="node/18286">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a course</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://www.brightcove.com">Brightcove.com</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="region region-footer-top-right col-md-3">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Brightcove Inc. (NASDAQ: BCOV), is a leading global provider of powerful cloud solutions for delivering and monetizing video across connected devices.</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="row">
+            <div class="region region-footer-bottom-left col-md-8">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item">Brightcove Inc. All rights reserved.</div>
+      
+      <div class="field field--name-field-legal-links field--type-link field--label-hidden field--items">
+              <div class="field--item"><a href="https://www.brightcove.com/en/privacy">Privacy</a></div>
+              <div class="field--item"><a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="region region-footer-bottom-right col-md-4">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items">
+              <div class="field--item">
+
+<a href="https://www.linkedin.com/company/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://twitter.com/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://www.facebook.com/Brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://plus.google.com/100830370440271567091" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18470","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGkkHXlVrBldRXQE=","queueTime":0,"applicationTime":28,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

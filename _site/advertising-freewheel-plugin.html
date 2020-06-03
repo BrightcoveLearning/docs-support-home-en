@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="sites/default/files/favicon-64.png" type="image/png" />
+<link rel="alternate" hreflang="en" href="advertising-freewheel-plugin.html" />
+<link rel="canonical" href="advertising-freewheel-plugin.html" />
+<link rel="shortlink" href="advertising-freewheel-plugin.html" />
+<link rel="revision" href="advertising-freewheel-plugin.html" />
+
+    <title>Advertising with the FreeWheel Plugin | Brightcove Learning</title>
+    <link rel="stylesheet" media="all" href="sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw_q23msc.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4_q23msc.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on" />
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  </head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="navigation-secondary clearfix">
+          <div class="region region-navigation-secondary">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary Navigation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="contact-support.html" title="Create a Support Request" data-drupal-link-system-path="node/18632">Support Request</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://status.brightcove.com/">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://university.brightcove.com/">Brightcove University</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gtranslate">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" style="font-weight:bold;background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">English</option><option value="en|fr" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">French</option><option value="en|de" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">German</option><option value="en|ja" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">Japanese</option><option value="en|ko" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">Korean</option><option value="en|es" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">Spanish</option></select>
+</div>
+<div class="gtranslate__credits">
+  Translations Provided by Google Translate
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="navbar-header col-md-3">
+                  <a class="logo navbar-btn pull-left" href="index.html" title="Home" rel="home">
+            <img src="themes/custom/bcdocs/images/brightcove.png" alt="Home" />
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" title="Home page" data-drupal-link-system-path="node/18643">Home</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Products
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="video-cloud.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://gallery.support.brightcove.com">Gallery</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a href="social.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ssai.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Quick Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="analytics-api.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience-api.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-api.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-connectors-video-cloud.html" data-drupal-link-system-path="node/18662">CMS Connectors for Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="data-collection-api.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="delivery-system-api.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="developer-tools-and-concepts.html" data-drupal-link-system-path="node/18430">Developer Tools and Concepts</a>
+                  </li>
+                              <li class="expanded">
+        <a href="native-player-sdks.html" data-drupal-link-system-path="node/18367">Device SDKs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="dynamic-ingest-api.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="getting-started-brightcove-apis-0.html" data-drupal-link-system-path="node/18711">Getting Started - Brightcove APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="page-experience-api.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ingest-profiles-api.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="oauth-api.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="platform-api-code-samples.html" data-drupal-link-system-path="node/18675">Platform API Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="playback-api.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-code-samples.html" data-drupal-link-system-path="node/18630">Player Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-developer.html" data-drupal-link-system-path="node/18362">Player Developer</a>
+                  </li>
+                              <li class="expanded">
+        <a href="player-management-api.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="policy-api.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="release-notes.html" data-drupal-link-system-path="node/18687">Release Notes</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Training
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="https://university.brightcove.com">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a Course</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a href="brightcove-support-documentation-announcements.html" title="See what&#039;s new in Brightcove Documentation" data-drupal-link-system-path="node/18896">What&#039;s New</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="full-width-headline">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" role="heading">
+            <div class="region region-header">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      Documentation
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="main-container container  js-quickedit-main-content">
+    <div class="row">
+
+                              <aside class="col-sm-3" role="complementary">
+              <div class="region region-sidebar-first">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="advertising-freewheel-plugin.html" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group">
+      <label for="edit-search" class="control-label sr-only">Search</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="Search" />
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-ou-jl4mlu0p5v-ol83aepbtovuduuxsw6bixbyct1-g" type="hidden" name="form_build_id" value="form-ou-Jl4mLU0P5v-oL83aEPbToVuduUxsW6BixBycT1-g" /><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form" /><div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix">
+  
+      <h2 class="block-title">On This Page</h2>
+    
+
+      <div class="bc-ipnav-block"></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="highlighted">  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a id="main-content"></a>
+            <div class="region region-content">
+        <h1 class="page-header"><span>Advertising with the FreeWheel Plugin</span>
+</h1>
+
+  
+<div class="node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+      </div>
+
+  <div class="group-second-row">
+  
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+          <div class="field--item">Brightcove Player</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Player Developer</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-topics field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Topic(s)</div>
+          <div class="field--items">
+              <div class="field--item">Advertising</div>
+          <div class="field--item">Plugins</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item"><!-- Place document intro sentence(s) here --><p>In this topic, you will learn how to use the FreeWheel plugin to enable advertisements with video playback, and how it can be implemented using Studio and through custom coding.</p>
+            <style type="text/css"><!--/*--><![CDATA[/* ><!--*/
+iframe {
+  width: 640px;
+  height: 360px;
+}
+
+.video-js {
+  width: 450px;
+  height: 240px;
+  float: left;
+  margin: 15px;
+}
+
+.vjs-playlist {
+  width: 250px;
+  float: left;
+  margin: 15px;
+}
+
+/*--><!]]>*/
+</style><article class="bcls-article"><section class="bcls-section"><h2 id="Overview">Overview</h2>
+
+<p>This plugin enables FreeWheel ad technology, for either Flash or HTML5, in Brightcove Player. The default rendering option for the FreeWheel plugin is set to <strong class="notranslate">Html5</strong> (for more information see the <code class="notranslate">adTechOrder</code> option below).</p>
+</section><section class="bcls-section"><h2 id="Using_versions_of_the_plugin">Using versions of the plugin</h2>
+
+<p>When using the FreeWheel plugin you will need to use versioned URLs.</p>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>Version</th>
+			<th>Type</th>
+			<th>Versioned URL</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td rowspan="3">Latest Release</td>
+			<td>JS</td>
+			<td><code class="notranslate">https://players.brightcove.net/videojs-freewheel/3/videojs-freewheel.min.js</code></td>
+		</tr><tr><td>CSS</td>
+			<td><code class="notranslate">https://players.brightcove.net/videojs-freewheel/3/videojs-freewheel.min.css</code></td>
+		</tr><tr><td>SWF *</td>
+			<td><code class="notranslate">https://players.brightcove.net/videojs-freewheel/3/videojs.freewheel.swf</code></td>
+		</tr></tbody></table><!-- <aside class="bcls-aside bcls-aside--information">* Compatible with FreeWheel Flash Plugin version 6.4.6</aside> --><p>For reference, the versions of the plugin and compatible SWFs are tracked in the <a href="plugin-version-reference.html">Plugin Version Reference</a> document.</p>
+</section><section class="bcls-section"><h2 id="Testing_the_ad_server">Testing the ad server</h2>
+
+<p>The first thing you should do is verify the validity of the ad tag you are planning to use. Be sure you have copied its URL and browse to the following page: <a target="_blank" rel="noopener noreferrer" href="https://vi.freewheel.tv/apc/dropzone">Ad Previewer</a> (clicking this link will cause the page to open in a new window or tab).</p>
+
+<p>Paste your ad tag URL into the indicated form input field. Click <strong class="notranslate">OPEN IN AD PREVIEWER</strong>. A popup titled <strong class="notranslate">Open In Ad Previewer</strong> will display, and you then click the <strong class="notranslate">OPEN</strong> button to test your ad. Click <strong class="notranslate">PLAY</strong> and, if functioning correctly, your ad will display interspersed with a video. If your ad tag is not working in this test environment, it will not work with Brightcove Player.</p>
+</section><section class="bcls-section"><h2 id="Using_the_correct_SDK_URL">Using the correct SDK URL</h2>
+
+<aside class="bcls-aside bcls-aside--warning language-editable">Before SDK version 6.24 FreeWheel provided an "auto upgrade" URL to the latest version of the JS AdManger SDK. This URL always pointed to the most current version of the SDK. This is no longer the case.</aside><p>The next two sections provide alternatives to implementing FreeWheel. In both sections you will use a <code>sdkurl</code>. In the past you could simply use <code>http://adm.fwmrm.net/p/[]/AdManager.js</code> for the value of the option, and know it would point to the latest version of the FreeWheel SDK. Now you will need to enter a URL pointing to a specific version, like <code>https://mssl.fwmrm.net/libs/adm/6.24.0/AdManager.js</code>. <strong>In addition</strong>, after initial setup, you will also need to update that value when a newer version of the SDK is released by FreeWheel, if you wish to be on the latest version. Note that after making this change, you will need to re-publish your Brightcove Player.</p>
+
+<p>If you do not update the URL and continue to use the auto upgrade URL, you will forever be pointing to version 6.23.</p>
+
+<p>You may want to manage your own SDK version in their Brightcove Player integration. This involves passing the <code>Html5.sdkurl</code> option to the FreeWheel plugin:</p>
+
+<pre class="line-numbers">
+<code class="language-javascript">player.FreeWheelPlugin({
+  Html5: {
+    sdkurl: '<em>preferred-sdk-url</em>'
+  }
+});</code></pre>
+</section><section class="bcls-section"><h2 id="Implement_using_Players_module">Implement using Players module</h2>
+
+<p>To implement the FreeWheel Plugin using the Players module, follow these steps:</p>
+
+<ol class="bcls-tasklist"><li>Open the <strong>PLAYERS</strong> module and either create a new player or locate the player to which you wish to add the plugin.</li>
+	<li>Click the link for the player to open the player's properties.</li>
+	<li>Click <strong>Plugins</strong> in the left navigation menu.</li>
+	<li>Next click <strong>Plugins</strong> from the three options.
+	<figure class="bcls-figure"><img class="bcls-image" alt="Select Plugin" src="https://learning-services-media.brightcove.com/doc-assets/general/players-plugin-options.png" /></figure></li>
+	<li>From the <strong>Add a Plugin</strong> select <strong>Custom Plugin</strong>.</li>
+	<li>For the <strong>Plugin Name</strong> enter <code>FreeWheelPlugin</code>.</li>
+	<li>For the <strong>JavaScript</strong> URL, enter:
+	<pre>
+<code class="language-json">https://players.brightcove.net/videojs-freewheel/3/videojs-freewheel.min.js</code></pre>
+	</li>
+	<li>For the <strong>CSS</strong> URL, enter:
+	<pre>
+<code class="language-json">https://players.brightcove.net/videojs-freewheel/3/videojs-freewheel.min.css</code></pre>
+	</li>
+	<li>Enter the configuration options in the <strong>Options(JSON)</strong> text box. The options provided in the form configure playback technology where <code class="notranslate">Flash</code> and <code class="notranslate">Html5</code> configuration sections are provided by FreeWheel. A slightly altered (for security reasons) complete configuration is shown <a href="#exampleconfiguration">below</a> . A stub example is shown here:
+	<pre class="line-numbers">
+<code class="language-json">{
+  "adTechOrder": ["html5"],
+  "Flash": {
+    "sdkurl": "https://mssl.fwmrm.net/libs/adm/<span class="bcls-highlight">{LATEST_VERSION}</span>/...",
+    "serverUrl": "http://cue.v.fwmrm.net/..."
+    "profile": "3aaa_profile",
+    ...
+  },
+  "Html5": {
+    "sdkurl": "https://mssl.fwmrm.net/libs/adm/<span class="bcls-highlight">{LATEST_VERSION}</span>/...",
+    "serverUrl": "http://cue.v.fwmrm.net/..."
+    "profile": "3aaa_profile",
+    ...
+  }
+}</code></pre>
+	</li>
+	<li>Click <strong>Save</strong>.</li>
+	<li>To publish the player, click <strong>Publish &amp; Embed &gt; Publish Changes</strong>.</li>
+	<li>To close the open dialog, click <strong>Close</strong>.</li>
+</ol></section><section class="bcls-section"><h2 id="Implement_using_code">Implement using code</h2>
+
+<p>To implement a plugin the player needs to know the location of the plugin code, a stylesheet if needed, the plugin name and plugin configuration options. The location of the plugin code and stylesheet are as follows:</p>
+
+<pre class="line-numbers">
+<code class="language-html notranslate">https://players.brightcove.net/videojs-freewheel/3/videojs-freewheel.min.js
+https://players.brightcove.net/videojs-freewheel/3/videojs-freewheel.min.css</code></pre>
+
+<p>The name of the plugin is <code class="notranslate">FreeWheelPlugin</code>. The options configure playback technology where <code class="notranslate">Flash</code> and <code class="notranslate">Html5</code> configuration sections are provided by FreeWheel. A slightly altered (for security reasons) complete configuration is shown <a href="#exampleconfiguration">below</a> . A stub example is shown here:</p>
+
+<pre class="line-numbers">
+<code class="language-json notranslate">{
+  adTechOrder: ["html5"],
+  Flash: {
+    sdkurl: "https://mssl.fwmrm.net/libs/adm/<span class="bcls-highlight">{LATEST_VERSION}</span>/...",
+    serverUrl: "http://cue.v.fwmrm.net/..."
+    profile: "3aaa_profile",
+    ...
+  },
+  Html5: {
+    sdkurl: "https://mssl.fwmrm.net/libs/adm/<span class="bcls-highlight">{LATEST_VERSION}</span>/...",
+    serverUrl: "http://cue.v.fwmrm.net/..."
+    profile: "3aaa_profile",
+    ...
+}</code></pre>
+
+<p>The following shows using the In-Page Embed implementation of the player to associate the FreeWheel Plugin with a single instance of a player.</p>
+
+<ul><li>Line 90: Uses a <code class="notranslate">link</code> tag to include the plugin's CSS in the <code class="notranslate">head</code> of the HTML page.</li>
+	<li>Line 92: Gives the <code class="notranslate">video</code> tag an <code class="notranslate">id</code> attribute, with some value, in this case <strong class="notranslate">myPlayerID</strong>.</li>
+	<li>Line 100: Uses a <code class="notranslate">script</code> tag to include the plugin's JavaScript in the <code class="notranslate">body</code> of the HTML page.</li>
+	<li>Lines 105-125: Initialize the plugin and pass in custom options.</li>
+	<li>Line 107: Creates a reference to the player.</li>
+</ul><pre class="line-numbers" data-start="90">
+<code class="language-html notranslate">&lt;link href="https://players.brightcove.net/videojs-freewheel/3/videojs-freewheel.min.css" rel="stylesheet"&gt;
+
+&lt;video-js id="myPlayerID"
+  data-account="3676484086001"
+  data-player="8fb8f3c6-5b2b-471f-953c-56d65267ff11"
+  data-embed="default"
+  class="video-js" controls&gt;&lt;/video-js&gt;
+
+&lt;script src="https://players.brightcove.net/3676484086001/8fb8f3c6-5b2b-471f-953c-56d65267ff11_default/index.min.js"&gt;&lt;/script&gt;
+
+&lt;script src="https://players.brightcove.net/videojs-freewheel/3/videojs-freewheel.min.js"&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  var myPlayer;
+
+  videojs.getPlayer('myPlayerID').ready(function() {
+    // get a reference to the player
+    myPlayer = this;
+
+    // initialize the FreeWheel plugin
+    myPlayer.FreeWheelPlugin({
+      adTechOrder: ["html5"],
+      Flash: {
+        sdkurl: "https://mssl.fwmrm.net/libs/adm/<span class="bcls-highlight">{LATEST_VERSION}</span>/...",
+        serverUrl: "http://cue.v.fwmrm.net/..."
+        profile: "3aaa_profile",
+        ...
+      },
+      Html5: {
+        sdkurl: "https://mssl.fwmrm.net/libs/adm/<span class="bcls-highlight">{LATEST_VERSION}</span>/...",
+        serverUrl: "http://cue.v.fwmrm.net/..."
+        profile: "3aaa_profile",
+        ...
+      }
+    });
+  });
+&lt;/script&gt;</code></pre>
+</section><section class="bcls-section"><h2 id="Rendering_options">Rendering options</h2>
+
+<p>The following table shows the Tech in which the FreeWheel plugin will render an ad (column 3) based on Tech selections in Brightcove Player (column 1) and the <code class="notranslate">adTechOrder</code> set in the plugin (column 2).</p>
+
+<table class="bcls-table"><tbody class="bcls-table__body"><tr><th>Brightcove Player<br />
+			Selected Tech</th>
+			<th>FreeWheelPlugin adTechOrder</th>
+			<th>FreeWheel Plugin<br />
+			Selected Ad Tech</th>
+		</tr><tr><td>html5</td>
+			<td>["flash","html5"]</td>
+			<td>flash</td>
+		</tr><tr><td>html5</td>
+			<td>["html5","flash"]</td>
+			<td>html5</td>
+		</tr><tr><td>html5</td>
+			<td>["html5"]</td>
+			<td>html5</td>
+		</tr><tr><td>html5</td>
+			<td>["flash"]</td>
+			<td>flash</td>
+		</tr><tr><td>flash</td>
+			<td>["flash","html5"]</td>
+			<td>flash</td>
+		</tr><tr><td>flash</td>
+			<td>["html5","flash"]</td>
+			<td>flash</td>
+		</tr><tr><td>flash</td>
+			<td>["html5"]</td>
+			<td>Not possible</td>
+		</tr><tr><td>flash</td>
+			<td>["flash"]</td>
+			<td>flash</td>
+		</tr></tbody></table><aside class="bcls-aside bcls-aside--information">Note: For the best user experience when delivering midrolls, you should use a segmented delivery format like HLS and deliver your content from a CDN that supports byte­range requests.</aside></section><section class="bcls-section"><h2 id="Configuration">Configuration</h2>
+
+<p>The following settings are used to configure the FreeWheel plugin:</p>
+
+<ul><li><strong class="notranslate">adTechOrder</strong>:
+
+	<ul><li>Type: <code class="notranslate">Array</code> Default Value: <code class="notranslate">["html5"]</code></li>
+		<li>The array contains the ad integration technologies to attempt to use, in order of descending precedence.</li>
+	</ul></li>
+	<li><strong class="notranslate">Flash</strong>:
+	<ul><li>Type: <code class="notranslate">Object</code></li>
+		<li>An object for Tech specific FreeWheel configuration (provided by FreeWheel). The object contains the following options:
+		<aside class="bcls-aside bcls-aside--information">These options can either be set dynamically (shown <a href="#Dynamic_server_URL_assignment">here</a>) or as part of the initial configuration (shown <a href="#exampleconfiguration">here</a>).</aside></li>
+		<li><strong class="notranslate">swfurl</strong>:
+		<ul><li>Type: <code class="notranslate">string</code> Default Value: <code class="notranslate">https://players.brightcove.net/videojs-freewheel/3/videojs.freewheel.swf</code> (compatible with FW Flash SDK v6.4.6)</li>
+			<li>Optional values can be used based on FreeWheel Flash Plugin Version. Those values can be found in the <strong class="notranslate">Using versions of the plugin</strong> section near the top of this document.</li>
+			<li>Must be a child property of the <code class="notranslate">Flash</code> object. This will be directly applied to the object element if the Flash ad tech is used.</li>
+		</ul></li>
+		<li><strong class="notranslate">autoplay</strong>:
+		<ul><li>Type: <code class="notranslate">boolean</code> Default Value: <code class="notranslate">true</code></li>
+			<li>Indicates if the content is autoplayed.</li>
+			<li>Must be a child property of the <code class="notranslate">Flash</code> object. This will be directly applied to the object element if the Flash ad tech is used.</li>
+		</ul></li>
+		<li><strong class="notranslate">unattendedPlay</strong>:
+		<ul><li>Type: <code class="notranslate">boolean</code> Default Value: <code class="notranslate">false</code></li>
+			<li>When <code class="notranslate">autoPlay</code> is set to true, <code class="notranslate">unattendedPlay</code> indicates whether the user is aware of the autoplaying.</li>
+			<li>Must be a child property of the <code class="notranslate">Flash</code> object. This will be directly applied to the object element if the Flash ad tech is used.</li>
+		</ul></li>
+		<li><strong class="notranslate">visitorCustomId</strong>:
+		<ul><li>Type: <code class="notranslate">string</code> Default Value: <code class="notranslate">unset</code></li>
+			<li>Allows publishers to pass a custom visitor id for the ad request. When set, this value will be passed in the visitor block of the request payload as <strong class="notranslate">customId="CustomID_001"</strong>. The id will be returned in the response to the ad request in the opening visitor tag as an attribute: <strong class="notranslate">customId="CustomID_001"</strong>.</li>
+			<li>Must be a child property of the <code class="notranslate">Flash</code> object. This will be directly applied to the object element if the Flash ad tech is used.</li>
+		</ul></li>
+	</ul></li>
+	<li><strong class="notranslate">Html5</strong>:
+	<ul><li>Type: <code class="notranslate">Object</code></li>
+		<li>An object for Tech specific FreeWheel configuration (provided by FreeWheel). The object contains the following options:
+		<aside class="bcls-aside bcls-aside--information">These options can either be set dynamically (shown <a href="#Dynamic_server_URL_assignment">here</a>) or as part of the initial configuration (shown <a href="#exampleconfiguration">here</a>).</aside></li>
+		<li><strong class="notranslate">autoPlayType</strong>:
+		<ul><li>Type: <code class="notranslate">integer</code> Default Value: <code class="notranslate">1</code></li>
+			<li>Indicates that the content video will autoPlay and the user is aware the content is autoplaying.</li>
+			<li>The values passed into autoPlayType sets flags in the ad request url sent to the FreeWheel ad server and can be one of three integer values which equate to the related FreeWheel SDK constants:
+			<ul><li><strong class="notranslate">1: tv.freewheel.SDK.VIDEO_ASSET_AUTO_PLAY_TYPE_ATTENDED</strong>: Means <code class="notranslate">autoPlay</code> is <strong class="notranslate">true</strong> and <code class="notranslate">unattendedPlay</code> is <strong class="notranslate">false</strong>. This sets flag = <strong class="notranslate">+play-uapl</strong>.</li>
+				<li><strong class="notranslate">2: tv.freewheel.SDK.VIDEO_ASSET_AUTO_PLAY_TYPE_UNATTENDED</strong>: means <code class="notranslate">autoPlay</code> is <strong class="notranslate">true</strong> and <code class="notranslate">unattendedPlay</code> is also <strong class="notranslate">true</strong>. This sets flag = <strong class="notranslate">+play+uapl</strong>.</li>
+				<li><strong class="notranslate">3: tv.freewheel.SDK.VIDEO_ASSET_AUTO_PLAY_TYPE_NONE</strong>: means <code class="notranslate">autoPlay</code> is <strong class="notranslate">false</strong> and <code class="notranslate">unattendedPlay</code> is <strong class="notranslate">unset</strong>. This sets flag = <strong class="notranslate">-play</strong>.</li>
+			</ul></li>
+			<li>Must be a child property of the <code class="notranslate">Html5</code> object. This will be directly applied to the object element if the Html5 ad tech is used.</li>
+		</ul></li>
+		<li><strong class="notranslate">visitorCustomId</strong>:
+		<ul><li>Type: <code class="notranslate">string</code> Default Value: <code class="notranslate">(optional)</code></li>
+			<li>The <code class="notranslate">visitorCustomId</code> option allows publishers to pass a custom visitor id for the ad request. When set, this value will be passed in the ad request URL as the queryString <strong class="notranslate">vcid=CustomID_001</strong>. The id will be returned in response of the ad request in the visitor JSON block as <strong class="notranslate">"customId" : "CustomID_001"</strong>.</li>
+			<li>Must be a child property of the <code class="notranslate">Html5</code> object. This will be directly applied to the object element if the Html5 ad tech is used.</li>
+		</ul></li>
+		<li id="subsessionToken"><strong class="notranslate">subsessionToken</strong>:
+		<ul><li>Type: <code class="notranslate">int</code> Default Value: <code class="notranslate">(optional)</code></li>
+			<li>The <code class="notranslate">subsessionToken</code> option allows publishers to start a subsession with the given token. When set, this value will be passed in the ad request URL as the queryString:
+			<pre>
+<code class="language-javascript notranslate"><strong class="notranslate">ssto=1234567890</strong></code></pre>
+			</li>
+			<li>Must be a child property of the <code class="notranslate">Html5</code> object. This will be directly applied to the object element if the Html5 ad tech is used.
+			<aside class="bcls-aside bcls-aside--information">Note: For the <code class="notranslate">subsessionToken</code> to function properly you must also include a capability in the ad request of <code class="notranslate">[flag=+sync]</code> as a parameter.</aside></li>
+		</ul></li>
+		<li id="compatibleDimensions"><strong class="notranslate">compatibleDimensions</strong>:
+		<ul><li>Type: <code class="notranslate">array</code> Default Value: <code class="notranslate">(optional)</code></li>
+			<li>
+			<p>The <code class="notranslate">compatibleDimensions</code> option allows publishers to pass an array of compatible dimensions. For example:</p>
+
+			<pre>
+<code class="language-javascript notranslate">compatibleDimensions: [ {width: A, height: B}, {width: X, height: Y} ]</code></pre>
+
+			<p>When set, this value will be passed in the ad request URL as the queryString:</p>
+
+			<pre>
+<code class="language-javascript notranslate"><strong class="notranslate">cd=widthA,heightA|widthX,heightY</strong></code></pre>
+			</li>
+			<li>Must be a child property of the <code class="notranslate">Html5</code> object. This will be directly applied to the object element if the Html5 ad tech is used.</li>
+		</ul></li>
+	</ul></li>
+	<li id="loadWithCookie"><strong class="notranslate">loadWithCookie</strong>:
+	<ul><li>Type: <code class="notranslate">boolean</code> Default Value: <code class="notranslate">false</code></li>
+		<li>Enables or disables cookies for VAST requests.</li>
+	</ul></li>
+	<li id="reqestAdsMode"><strong class="notranslate">requestAdsMode</strong>:
+	<ul><li>Type: <code class="notranslate">string</code> Default Value: <code class="notranslate">onload</code></li>
+		<li>Possible values for the property are:
+		<ul><li><code class="notranslate">onload</code>: Ads are requested when the player is completely loaded.</li>
+			<li><code class="notranslate">onplay</code>: Ads are requested when the video starts to play, either user initiated or autoplay.</li>
+			<li><code class="notranslate">oncue</code>: Ads are requested at the start time of the cue point. When using this property, also note:
+			<ul><li>Only functional when the <code class="notranslate">useMediaCuePoints</code> property is also set to <code class="notranslate">true</code>.</li>
+				<li>Video Cloud ad cue points must be set up on content video. See the <a href="working-cue-points-media-module.html">Working with Cue Points in the Media Module</a> document for instructions on how to create cue points in the content video.</li>
+				<li>If there is a <code class="notranslate">temporalSlots</code> option under the <code class="notranslate">Flash</code> or <code class="notranslate">Html5</code> properties, the setting is ignored.</li>
+			</ul></li>
+		</ul></li>
+	</ul><aside class="bcls-aside bcls-aside--warning">Note: When using cue point ads with the FreeWheel plugin, post-roll ads are not supported.</aside></li>
+	<li><strong class="notranslate">useMediaCuePoints</strong>:
+	<ul><li>Type: <code class="notranslate">boolean</code> Default Value: <code class="notranslate">false</code></li>
+		<li>Must be set to true to use Video Cloud ad cue points to trigger ads. Must be used in conjunction with <code class="notranslate">requestAdsMode: 'oncue'</code> property and assigned value.</li>
+	</ul></li>
+</ul></section><section class="bcls-section"><h2 id="Ad_macros">Ad macros</h2>
+
+<p>There are ad macros available to make your job easier when configuring FreeWheel. The ad macros are replaced with corresponding values anywhere in your configuration.</p>
+
+<p>The following is the complete list of variable for which substituted values will be used:</p>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th style="width:30%">Macro</th>
+			<th style="width:60%">Description</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td>{player.id}</td>
+			<td>Player ID</td>
+		</tr><tr><td>{mediainfo.id}</td>
+			<td>Video ID</td>
+		</tr><tr><td>{mediainfo.name}</td>
+			<td>Video title</td>
+		</tr><tr><td>{mediainfo.description}</td>
+			<td>Short description (250 chars max)</td>
+		</tr><tr><td>{mediainfo.tags}</td>
+			<td>Tags (metadata) associated with the video</td>
+		</tr><tr><td>{mediainfo.reference_id}</td>
+			<td>Reference ID</td>
+		</tr><tr><td>{mediainfo.duration}</td>
+			<td>Duration of the video as reported by Video Cloud</td>
+		</tr><tr><td>{mediainfo.ad_keys}</td>
+			<td>Free form text string that can be added and edited in the Media module of Studio; you should use the query parameter in the form
+			<pre class="line-numbers">
+<code class="language-javascript notranslate">cust_params={mediainfo.ad_keys}</code></pre>
+			</td>
+		</tr><tr><td>{player.duration}</td>
+			<td>Duration of video as measured by player (possibly slightly different from <code class="notranslate">mediainfo.duration</code> and probably more accurate)</td>
+		</tr><tr><td>{document.referrer}</td>
+			<td>Referring page URL</td>
+		</tr><tr><td>{window.location.href}</td>
+			<td>Current page URL</td>
+		</tr><tr><td>{player.url}</td>
+			<td>URL of the player</td>
+		</tr><tr><td>{timestamp}</td>
+			<td>Current local time in milliseconds since 1/1/70</td>
+		</tr><tr><td>{random}</td>
+			<td>A random number 0-1 trillion</td>
+		</tr></tbody></table><aside class="bcls-aside bcls-aside--information"><p>Note: If you are wishing to use the video ID as your FreeWheel <code class="notranslate">videoAssetCustomId</code>, you can do this using the <code class="notranslate">{mediainfo.id}</code> ad macro. For instance, in the configurations below you could do the following:</p>
+
+<pre class="line-numbers">
+<code class="language-javascript notranslate">'videoAssetCustomId' = '{mediainfo.id}';</code></pre>
+
+<p>One FreeWheel configuration issue to be aware of: If the video ID is not configured as an <code class="notranslate">Asset ID</code> in the FreeWheel Ad Manager configuration on the server, FreeWheel will return an error of <strong class="notranslate">INVALID_ASSET_CUSTOM_ID</strong>.</p>
+</aside></section><section class="bcls-section"><h2 id="Example_configuration">Example configuration</h2>
+
+<aside class="bcls-aside bcls-aside--information"><p>Note: If you need to use HTTPS URLs in the configuration, substitute the following for those shown in the configurations in this doc:</p>
+
+<table class="bcls-table"><tbody class="bcls-table__body"><tr><td>SDK URLs</td>
+			<td>https://mssl.fwmrm.net/p/release/latest-AS3/adm/prd/AdManager.swf<br />
+			https://mssl.fwmrm.net/p/release/latest-JS/adm/prd/AdManager.js</td>
+		</tr><tr><td>Server URL</td>
+			<td>https://cue.v.fwmrm.net/ad/g/1</td>
+		</tr></tbody></table></aside><p> </p>
+
+<pre class="line-numbers">
+<code class="language-json notranslate">"plugins": [{
+  "name": "FreeWheelPlugin",
+  "options": {
+    "Flash": {
+      "networkId": 99999,
+      "profile": "2aaa_profile",
+      "sdkurl": "https://mssl.fwmrm.net/libs/adm/<span class="bcls-highlight">{LATEST_VERSION}</span>/...",
+      "serverUrl": "http://cue.v.fwmrm.net/ad/h/5",
+      "siteSectionCustomId": "<strong class="notranslate">your value here</strong>",
+      "swfurl": "https://players.brightcove.net/videojs-freewheel/3/videojs.freewheel.swf",
+      "temporalSlots": [{
+        "adUnit": "preroll",
+        "id": "Preroll_1",
+        "timePosition": 0
+      }, {
+        "adUnit": "postroll",
+        "id": "Postroll_1",
+        "timePosition": 60
+      }, {
+        "adUnit": "midroll",
+        "id": "Midroll_1",
+        "timePosition": 5
+      }, {
+        "adUnit": "overlay",
+        "id": "Overlay_1",
+        "timePosition": 10
+      }],
+      "videoAssetCustomId": "<strong class="notranslate">your value here</strong>",
+      "videoAssetDuration": 500
+    },
+    "Html5": {
+      "keyValues": [{
+        "feature": "simpleAds",
+        "module": "DemoPlayer"
+      }, {
+        "feature": "trackingURLs"
+      }],
+      "networkId": 99999,
+      "profile": "global-js",
+      "sdkurl": "https://mssl.fwmrm.net/libs/adm/<span class="bcls-highlight">{LATEST_VERSION}</span>/...",
+      "serverUrl": "http://cue.v.fwmrm.net/ad/h/5",
+      "siteSectionCustomId": "<strong class="notranslate">your value here</strong>",
+      "temporalSlots": [{
+        "adUnit": "preroll",
+        "id": "Preroll_1",
+        "timePosition": 0
+      }, {
+        "adUnit": "postroll",
+        "id": "Postroll_1",
+        "timePosition": 60
+      }, {
+        "adUnit": "overlay",
+        "id": "Overlay_1",
+        "timePosition": 5
+      }],
+      "videoAssetCustomId": "<strong class="notranslate">your value here</strong>",
+      "videoAssetDuration": 500
+    },
+    "adTechOrder": [
+      "flash",
+      "html5"
+    ],
+    "debug": true,
+    "prerollTimeout": 1000,
+    "timeout": 5000
+  }
+}]</code></pre>
+</section><section class="bcls-section"><h2 id="Events">Events</h2>
+
+<p>The plugin emits some custom event types during loading, initialization, and playback. You can listen for the ad framework events just like you would any other event:</p>
+
+<pre class="line-numbers">
+<code class="language-javascript notranslate">player.on('ads-ad-started', function(event) {
+  console.log('event', event);
+});</code></pre>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th style="width:35%">Event</th>
+			<th style="width:65%">Dispatched when:</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td>ads-request</td>
+			<td>Upon request ad data.</td>
+		</tr><tr><td>ads-load</td>
+			<td>When ad data is available following an ad request.</td>
+		</tr><tr><td>ads-ad-started</td>
+			<td>An ad has started playing.</td>
+		</tr><tr><td>ads-ad-ended</td>
+			<td>An ad has finished playing.</td>
+		</tr><tr><td>ads-pause</td>
+			<td>An ad is paused.</td>
+		</tr><tr><td>ads-play</td>
+			<td>An ad is resumed from a pause.</td>
+		</tr><tr><td>ads-first-quartile</td>
+			<td>The ad has played 25% of its total duration.</td>
+		</tr><tr><td>ads-midpoint</td>
+			<td>The ad has played 50% of its total duration.</td>
+		</tr><tr><td>ads-third-quartile</td>
+			<td>The ad has played 75% of its total duration.</td>
+		</tr><tr><td>ads-click</td>
+			<td>A viewer clicked on the playing ad.</td>
+		</tr><tr><td>ads-volumechange</td>
+			<td>The volume of the playing ad has been changed.</td>
+		</tr><tr><td>ads-pod-started</td>
+			<td>The first ad in a linear ad pod (a sequenced group of ads) has started.</td>
+		</tr><tr><td>ads-pod-ended</td>
+			<td>The last ad in a linear ad pod (a sequenced group of ads) has finished.</td>
+		</tr><tr><td>ads-allpods-completed</td>
+			<td>All linear ads have finished playing.</td>
+		</tr><tr><td>fw-before-ad-request</td>
+			<td>This event is exposed on the player object and is triggered before submitting an ad request. Usually it is used in the context of playlists, to make updates to the FreeWheel Configuration settings via: <code class="notranslate">player.FreeWheelPlugin.settings.Html5</code> or <code class="notranslate">player.FreeWheelPlugin.settings.Flash</code></td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Dynamic_server_URL_assignment">Dynamic server URL assignment</h2>
+
+<p>You can use the <code class="notranslate">fw-before-ad-request</code> event to dynamically assign the server URL. You will use the <code class="notranslate">on()</code> method to listen for the ad request, then assign the desired server URL. Of course, you will need to supply your desired server URLs for the placeholders in the code:</p>
+
+<pre class="line-numbers">
+<code class="language-javascript notranslate">player.on('fw-before-ad-request', function () {
+  player.FreeWheelPlugin.settings.Html5.serverUrl = '[your server url]'
+  player.FreeWheelPlugin.settings.Flash.serverUrl = '[your server url]'
+})</code></pre>
+
+<p>If you have configured the server URLs previously, the code shown will override the previous configuration.</p>
+</section><section class="bcls-section"><h2 id="Demos">Demos</h2>
+
+<p>The following demos use slightly different FreeWheel configurations and the resulting player. Both configurations will play a pre-roll, a mid-roll at 5 seconds and then a post-roll. The configurations are the same, except that the <code class="notranslate">adtechOrder</code> is different. In the first demo <code class="notranslate">html5</code> is first, as shown here:</p>
+
+<pre class="line-numbers">
+<code class="language-json notranslate">"adTechOrder": [
+  "html5",
+  "flash"
+],</code></pre>
+
+<p>In the second the order is reversed.</p>
+
+<h3>adtech order: html5, flash</h3>
+
+<p>This demo uses <code class="notranslate">html5</code> first in the <code class="notranslate">adtechOder</code>.</p>
+<iframe src="https://players.brightcove.net/1752604059001/24351871-efb6-4c3a-9002-dc8acd9192c6_default/index.html?videoId=4172255216001" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+
+<p>Following is the actual configuration used with the player. Note that this can be used for the <strong class="notranslate">options</strong> value in Studio.</p>
+
+<pre class="line-numbers">
+<code class="language-json notranslate">{
+  "Flash": {
+    "networkId": 90750,
+    "profile": "3pqa_profile",
+    "sdkurl": "https://mssl.fwmrm.net/libs/adm/<span class="bcls-highlight">{LATEST_VERSION}</span>/...",
+    "serverUrl": "//cue.v.fwmrm.net/ad/g/1",
+    "siteSectionCustomId": "<strong class="notranslate">your value here</strong>",
+    "swfurl": "https://players.brightcove.net/videojs-freewheel/3/videojs.freewheel.swf",
+    "temporalSlots": [{
+      "adUnit": "preroll",
+      "id": "Preroll_1",
+      "timePosition": 0
+    }, {
+      "adUnit": "postroll",
+      "id": "Postroll_1",
+      "timePosition": 60
+    }, {
+      "adUnit": "midroll",
+      "id": "Midroll_1",
+      "timePosition": 5
+    }],
+    "videoAssetCustomId": "<strong class="notranslate">your value here</strong>",
+    "videoAssetDuration": 500
+  },
+  "Html5": {
+    "keyValues": [{
+      "feature": "simpleAds",
+      "module": "DemoPlayer"
+    }, {
+      "feature": "trackingURLs"
+    }],
+    "networkId": 96749,
+    "profile": "global-js",
+    "sdkurl": "https://mssl.fwmrm.net/libs/adm/<span class="bcls-highlight">{LATEST_VERSION}</span>/...",
+    "serverUrl": "//demo.v.fwmrm.net/ad/g/1",
+    "siteSectionCustomId": "<strong class="notranslate">your value here</strong>",
+    "temporalSlots": [{
+      "adUnit": "preroll",
+      "id": "Preroll_1",
+      "timePosition": 0
+    }, {
+      "adUnit": "postroll",
+      "id": "Postroll_1",
+      "timePosition": 60
+    }, {
+      "adUnit": "midroll",
+      "id": "Midroll_1",
+      "timePosition": 5
+    }],
+    "videoAssetCustomId": "<strong class="notranslate">your value here</strong>",
+    "videoAssetDuration": 500
+  },
+  "adTechOrder": [
+    "html5",
+    "flash"
+  ],
+  "debug": true,
+  "prerollTimeout": 1000,
+  "timeout": 5000
+}</code></pre>
+
+<h3>adtech order: flash, html5</h3>
+
+<p>This demo uses <code class="notranslate">flash</code> first in the <code class="notranslate">adtechOder</code>.</p>
+<iframe src="https://players.brightcove.net/1752604059001/616d343c-33f6-45c3-8484-b889eb8095e1_default/index.html?videoId=4172255216001" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+
+<p>Following is the actual configuration used with the player. Note that this can be used for the <strong class="notranslate">options</strong> value in Studio.</p>
+
+<pre class="line-numbers">
+<code class="language-json notranslate">{
+  "Flash": {
+    "networkId": 90750,
+    "profile": "3pqa_profile",
+    "sdkurl": "https://mssl.fwmrm.net/libs/adm/<span class="bcls-highlight">{LATEST_VERSION}</span>/...",
+    "serverUrl": "http://cue.v.fwmrm.net/ad/g/1",
+    "siteSectionCustomId": "<strong class="notranslate">your value here</strong>",
+    "temporalSlots": [{
+      "adUnit": "preroll",
+      "id": "Preroll_1",
+      "timePosition": 0
+    }, {
+      "adUnit": "postroll",
+      "id": "Postroll_1",
+      "timePosition": 60
+    }, {
+      "adUnit": "midroll",
+      "id": "Midroll_1",
+      "timePosition": 5
+    }],
+    "videoAssetCustomId": "<strong class="notranslate">your value here</strong>",
+    "videoAssetDuration": 500
+  },
+  "Html5": {
+    "keyValues": [{
+      "feature": "simpleAds",
+      "module": "DemoPlayer"
+    }, {
+      "feature": "trackingURLs"
+    }],
+    "networkId": 96749,
+    "profile": "global-js",
+    "sdkurl": "https://mssl.fwmrm.net/libs/adm/<span class="bcls-highlight">{LATEST_VERSION}</span>/...",
+    "serverUrl": "http://cue.v.fwmrm.net/ad/g/1",
+    "siteSectionCustomId": "<strong class="notranslate">your value here</strong>",
+    "temporalSlots": [{
+      "adUnit": "preroll",
+      "id": "Preroll_1",
+      "timePosition": 0
+    }, {
+      "adUnit": "postroll",
+      "id": "Postroll_1",
+      "timePosition": 60
+    }, {
+      "adUnit": "midroll",
+      "id": "Midroll_1",
+      "timePosition": 5
+    }],
+    "videoAssetCustomId": "<strong class="notranslate">your value here</strong>",
+    "videoAssetDuration": 500
+  },
+  "adTechOrder": [
+    "flash",
+    "html5"
+  ],
+  "debug": true,
+  "prerollTimeout": 1000,
+  "timeout": 5000
+}</code></pre>
+
+<h3>Playlist</h3>
+
+<p>This demo uses the HTML first configuration with a playlist. You will see for each video in the playlist a pre-roll, a mid-roll at the 5 second mark, and a post-roll.</p>
+<iframe src="https://players.brightcove.net/1752604059001/r1bhBb0Pe_default/index.html?playlistId=4845949311001" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" width="428" height="150"></iframe></section><section class="bcls-section"><h2 id="Player_Ad_Libraries">Player Ad Libraries</h2>
+
+<p>The <a href="https://github.com/videojs/videojs-contrib-ads">videojs/videojs-contrib-ads</a> GitHub repository contains a plugin which provides common functionality needed by video advertisement libraries working with Brightcove Player. The plugin provides common functionality needed by video ad integrations and takes care of a number of concerns for ad integrators, reducing the code you have to write for your ad integration.</p>
+
+<h3 id="contrib-ads-properties">Properties</h3>
+
+<p><strong class="notranslate">videojs-contrib-ads</strong> provides some properties that can be helpful. They are:</p>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>Name</th>
+			<th>Data Type</th>
+			<th>Description</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td>ads.ad.id</td>
+			<td>String</td>
+			<td>Unique identifier for an ad that plays</td>
+		</tr><tr><td>ads.ad.index</td>
+			<td>Number</td>
+			<td>The index of the ad that plays at a specified time; the index would identify the ordinal value of an ad in an ad pod</td>
+		</tr><tr><td>ads.ad.duration</td>
+			<td>Number</td>
+			<td>The duration of the ad in seconds</td>
+		</tr><tr><td>ads.ad.type</td>
+			<td>String</td>
+			<td>Either <strong class="notranslate">PREROLL</strong>, <strong class="notranslate">MIDROLL</strong> or <strong class="notranslate">POSTROLL</strong></td>
+		</tr><tr><td>ads.ad.currentTime()</td>
+			<td>Function</td>
+			<td>A function that returns the current time of ad playback</td>
+		</tr></tbody></table><p>The following code demonstrates the use of the properties:</p>
+
+<pre class="line-numbers">
+<code class="language-javascript notranslate">myPlayer.on('ads-ad-started',function( evt ){
+  console.log('*****ads-ad-started event passed to event handler', evt);
+<span class="bcls-highlight">  console.log('myPlayer.ads.ad.id',myPlayer.ads.ad.id);
+  console.log('myPlayer.ads.ad.index',myPlayer.ads.ad.index);
+  console.log('myPlayer.ads.ad.duration',myPlayer.ads.ad.duration);
+  console.log('myPlayer.ads.ad.type',myPlayer.ads.ad.type);</span>
+  setTimeout(function(){
+    <span class="bcls-highlight">console.log('****myPlayer.ads.ad.currentTime()',myPlayer.ads.ad.currentTime());</span>
+  },500);
+  setTimeout(function(){
+    <span class="bcls-highlight">console.log('****myPlayer.ads.ad.currentTime()',myPlayer.ads.ad.currentTime());</span>
+  },1000);
+});</code></pre>
+
+<p>The output in the console from the above code is shown here:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="console of contrib-ads properties" src="https://learning-services-media.brightcove.com/doc-assets/player-development/advertising/freewheel-plugin/contrib-ads-properties.png" /></figure><h3 id="contrib-ads-methods">Methods</h3>
+
+<p><strong class="notranslate">videojs-contrib-ads</strong> provides some methods that can be helpful. They are:</p>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>Method</th>
+			<th>Description</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td>inAdBreak()</td>
+			<td>This method returns true during the time between startLinearAdMode and endLinearAdMode where an integration may play ads. This is part of ad mode.</td>
+		</tr><tr><td>isAdPlaying()</td>
+			<td><strong class="notranslate">Deprecated</strong></td>
+		</tr><tr><td>isContentResuming()</td>
+			<td>Returns true if content is resuming after an ad. This is part of ad mode.</td>
+		</tr><tr><td>isInAdMode()</td>
+			<td>Returns true if the player is in ad mode.</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Known_issues">Known issues</h2>
+<!-- <h3>FreeWheel plugin keeps sending timeupdate events even if connection is lost and playback stops in IE11</h3>
+
+          <p>In Internet Explorer 11, timeupdate media events will continue to fire on a &lt;video&gt; element if playback stalls due to loss of network connection or lack of buffering. This is a browser issue beyond the control of the Brightcove Player.</p> -->
+
+<h3>Dynamically re-using the same player with FreeWheel</h3>
+
+<p>If you are loading videos dynamically and re-using the same player, the FreeWheel configuration settings will contain the same values as they were set at the time the FreeWheel plugin was instantiated, with two exceptions. The first exception is if you are using ad macros. The second exception is you can update the settings using <code class="notranslate">player.FreeWheelPlugin.settings.Html5</code> or <code class="notranslate">player.FreeWheelPlugin.settings.Flash</code> on an <code class="notranslate">fw-before-ad-request</code> event.</p>
+
+<h3>Resizing player during ad playback</h3>
+
+<p>If the player is resized during ad or video playback, ad content will not resize unless the player's dimensions function is called to resize the player. Resizing the player using other methods (for example: style width and height) will not resize the ad.</p>
+
+<p>When using <code class="notranslate">player.dimensions(width,height)</code> to resize the player, you will have to trigger the <code class="notranslate">fw-resizeplayer</code> event so that the plugin will know the dimensions have changed. This is because some VPAID ads retain the default dimensions of the ad and will not automatically resize when the player resizes.</p>
+
+<p>Here is an example:</p>
+
+<pre class="line-numbers">
+<code class="language-javascript notranslate">player.dimensions(960,540);
+player.trigger('fw-resizeplayer');</code></pre>
+
+<h3>Overlay ads</h3>
+
+<p>If the FreeWheel plugin is rendering an ad in Flash, overlay ads are not clickable. If the FreeWheel plugin is rendering an ad in HTML5, overlays are not displayed at correct coordinates. Clicking on an HTML5 overlay ad will not pause the content player when the click-url is followed.</p>
+
+<h3>FreeWheel Live</h3>
+
+<p>FreeWheel ads in a live stream can be implemented with assistance from <a href="https://www.brightcove.com/en/services">Brightcove Global Services (BGS)</a>.</p>
+
+<h3>VPAID</h3>
+
+<p>It is not possible to resume ads via VPAID controls if the ad control bar is enabled.</p>
+</section><section class="bcls-section"><h2 id="changelog">Changelog</h2>
+
+<p>See the <a href="advertising-freewheel-plugin-changelog.html">changelog here</a>.</p>
+</section></article></div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-by-field-block-1 clearfix" id="block-views-block-related-content-by-field-block-1">
+  
+    
+
+      <div class="form-group"><div class="view view-related-content-by-field view-id-related_content_by_field view-display-id-block_1 js-view-dom-id-21a746adb726fcc83aa8f845bbdc866268ee5bf2d74bf4d58dfba0062a2a7f6a">
+  
+    
+      <div class="view-header">
+      <h2>Related content</h2>
+    </div>
+      
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="learning-guide-video-advertising.html" hreflang="en">Learning Guide: Video Advertising</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="ad-events-and-ad-objects.html" hreflang="en">Ad Events and Ad Objects</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="advertising-ima3-plugin.html" hreflang="en">Advertising with the IMA3 Plugin</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="plugin-version-reference.html" hreflang="en">Plugin Version Reference</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="row">
+            <div class="region region-footer-top-left col-md-9" style="margin-bottom: 1em;">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove Support</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://status.brightcove.com">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="contact-support.html" data-drupal-link-system-path="node/18632">Support - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.brightcove.com/en/contact/create">Support - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Documentation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Training</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="online-training-courses.html" data-drupal-link-system-path="node/18286">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a course</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://www.brightcove.com">Brightcove.com</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="region region-footer-top-right col-md-3">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Brightcove Inc. (NASDAQ: BCOV), is a leading global provider of powerful cloud solutions for delivering and monetizing video across connected devices.</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="row">
+            <div class="region region-footer-bottom-left col-md-8">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item">Brightcove Inc. All rights reserved.</div>
+      
+      <div class="field field--name-field-legal-links field--type-link field--label-hidden field--items">
+              <div class="field--item"><a href="https://www.brightcove.com/en/privacy">Privacy</a></div>
+              <div class="field--item"><a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="region region-footer-bottom-right col-md-4">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items">
+              <div class="field--item">
+
+<a href="https://www.linkedin.com/company/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://twitter.com/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://www.facebook.com/Brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://plus.google.com/100830370440271567091" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18140","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGkkHXlVrBldRXQE=","queueTime":0,"applicationTime":13,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="sites/default/files/favicon-64.png" type="image/png" />
+<link rel="alternate" hreflang="en" href="customizing-player-appearance.html" />
+<link rel="canonical" href="customizing-player-appearance.html" />
+<link rel="shortlink" href="customizing-player-appearance.html" />
+<link rel="revision" href="customizing-player-appearance.html" />
+
+    <title>Customizing Player Appearance | Brightcove Learning</title>
+    <link rel="stylesheet" media="all" href="sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw_q23msc.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4_q23msc.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on" />
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  </head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="navigation-secondary clearfix">
+          <div class="region region-navigation-secondary">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary Navigation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="contact-support.html" title="Create a Support Request" data-drupal-link-system-path="node/18632">Support Request</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://status.brightcove.com/">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://university.brightcove.com/">Brightcove University</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gtranslate">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" style="font-weight:bold;background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">English</option><option value="en|fr" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">French</option><option value="en|de" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">German</option><option value="en|ja" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">Japanese</option><option value="en|ko" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">Korean</option><option value="en|es" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">Spanish</option></select>
+</div>
+<div class="gtranslate__credits">
+  Translations Provided by Google Translate
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="navbar-header col-md-3">
+                  <a class="logo navbar-btn pull-left" href="index.html" title="Home" rel="home">
+            <img src="themes/custom/bcdocs/images/brightcove.png" alt="Home" />
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" title="Home page" data-drupal-link-system-path="node/18643">Home</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Products
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="video-cloud.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://gallery.support.brightcove.com">Gallery</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a href="social.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ssai.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Quick Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="analytics-api.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience-api.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-api.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-connectors-video-cloud.html" data-drupal-link-system-path="node/18662">CMS Connectors for Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="data-collection-api.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="delivery-system-api.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="developer-tools-and-concepts.html" data-drupal-link-system-path="node/18430">Developer Tools and Concepts</a>
+                  </li>
+                              <li class="expanded">
+        <a href="native-player-sdks.html" data-drupal-link-system-path="node/18367">Device SDKs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="dynamic-ingest-api.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="getting-started-brightcove-apis-0.html" data-drupal-link-system-path="node/18711">Getting Started - Brightcove APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="page-experience-api.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ingest-profiles-api.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="oauth-api.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="platform-api-code-samples.html" data-drupal-link-system-path="node/18675">Platform API Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="playback-api.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-code-samples.html" data-drupal-link-system-path="node/18630">Player Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-developer.html" data-drupal-link-system-path="node/18362">Player Developer</a>
+                  </li>
+                              <li class="expanded">
+        <a href="player-management-api.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="policy-api.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="release-notes.html" data-drupal-link-system-path="node/18687">Release Notes</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Training
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="https://university.brightcove.com">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a Course</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a href="brightcove-support-documentation-announcements.html" title="See what&#039;s new in Brightcove Documentation" data-drupal-link-system-path="node/18896">What&#039;s New</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="full-width-headline">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" role="heading">
+            <div class="region region-header">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      Documentation
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="main-container container  js-quickedit-main-content">
+    <div class="row">
+
+                              <aside class="col-sm-3" role="complementary">
+              <div class="region region-sidebar-first">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="customizing-player-appearance.html" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group">
+      <label for="edit-search" class="control-label sr-only">Search</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="Search" />
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-tblobu45xrgbacpqajun4clxgjpxmz6lfu2qjsodfus" type="hidden" name="form_build_id" value="form-tBloBu45XrGBAcPQajUN4ClXgjPXMz6lfu2QJsODFus" /><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form" /><div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix">
+  
+      <h2 class="block-title">On This Page</h2>
+    
+
+      <div class="bc-ipnav-block"></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="highlighted">  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a id="main-content"></a>
+            <div class="region region-content">
+        <h1 class="page-header"><span>Customizing Player Appearance</span>
+</h1>
+
+  
+<div class="node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+      </div>
+
+  <div class="group-second-row">
+  
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+          <div class="field--item">Brightcove Player</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Player Developer</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-topics field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Topic(s)</div>
+          <div class="field--items">
+              <div class="field--item">Styling</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item"><!-- Place document intro sentence(s) here --><p>This topic is a primer on customizing the appearance of Brightcove Player. The content uses Chrome's development tools, but all modern browsers have equivalent functionality. For a brief introduction to using development tools in different browsers see the <a href="concepts-javascript-debugging-basics.html">Debugging Basics</a> document.</p>
+      <article class="bcls-article"><aside class="bcls-aside bcls-aside--information language-editable">This document customizes the player using CSS. There are a limited set of customization options available in Studio, which requires no knowledge of CSS to implement. See the <a href="styling-players.html">Styling Players</a> document for more information.</aside><section class="bcls-section"><h2 id="Create_own_skin">Create own skin</h2>
+
+<p class="language-editable">If you wish to not use the default skin and create your own, this is possible using the Player Management API. The <a href="player-configuration-guide.html#skin">Player Configuration Guide</a> provides the necessary information.</p>
+</section><section class="bcls-section"><h2 id="Player">Player</h2>
+
+<aside class="bcls-aside bcls-aside--information language-editable">Note: This document assumes some knowledge of CSS and using a browser's development tools to view HTML element's classes and examine applicable CSS. If you do not have the pre-requisite base knowledge it would be best if you work through the <a href="step-step-player-customization.html">Step-by-Step: Player Customization</a>.</aside><p class="language-editable">You can alter the appearance of the player, but you must first have a way to address it. To see this, browse an HTML page with the Advanced (in-page embed) code inserted. In the <strong><span class="notranslate">Elements</span></strong> section of the Development Tools locate the <code>&lt;video-js&gt;</code> tag and you will see it has a class with the value <code>video-js</code> assigned, among many others.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="customize-player-elements" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/player-elements.png" /></figure><p class="language-editable">Once you know this, you can use styles to alter the player itself. For instance, to include a border around the player you can use this style:</p>
+
+<pre class="line-numbers">
+<code class="language-html">&lt;style&gt;
+  .video-js {
+    border-style: double;
+    border-width: thick;
+    border-color: red;
+  }
+&lt;/style&gt;</code></pre>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="customize-player-elements" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/double-border.png" /></figure></section><section class="bcls-section"><h2 id="iframe_player">iframe player</h2>
+
+<p class="language-editable">If you are using the Standard (iframe) implementation of the player the situation is different. You will still see the player with the <code>video-js</code> class, but it will be, of course, inside the iframe, and inside the <code>video-js</code> tag.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="iframe-player-elements" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/iframe-elements.png" /></figure><p class="language-editable">The styles you create will still work with the player in the iframe, but a CSS file will need to be created and associated with the player using Studio. You do this by going to the <strong>Players</strong> module, then click on the player with which you wish to associate the CSS, then in the <strong>Plugins &gt; Stylesheets</strong> section add the path you your CSS file.</p>
+
+<p class="language-editable">If you do wish to customize the iframe itself, you can do this by using an element selector. Then use a <code>&lt;style&gt;</code> tag to modify as wished. In the example below a border is added around the player.</p>
+
+<pre class="line-numbers">
+<code class="language-html">&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Untitled Document&lt;/title&gt;
+  &lt;style&gt;
+    <span class="bcls-highlight">.video-js {
+      border-style: double;
+      border-width: thick;
+      border-color: red;
+    }</span>
+  &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;iframe src="https://players.brightcove.net/1507807800001/default_default/index.html?videoId=6065136830001"
+  allowfullscreen=""
+  allow="encrypted-media"
+  width="640" height="360"&gt;&lt;/iframe&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+</section><section class="bcls-section"><h2 id="Play_button">Play button</h2>
+
+<p class="language-editable">If you wish to alter the appearance of the play button you first need to know how to address it. In Chrome, right click on the button. From the selections that appear choose <strong><span class="notranslate">Inspect</span></strong>. When you select <strong><span class="notranslate">Inspect</span></strong>, Chrome's <strong>Development Tools</strong> will open.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="inspect-button" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/inspect-button.png" /></figure><p class="language-editable">In the <strong><span class="notranslate">Elements</span></strong> section of the Development Tools, you will see the HTML code that corresponds to the button element.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="big-play-button" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/big-play-button.png" /></figure><p class="language-editable">From the highlighted code above, you can see the class assigned to the button is <code>vjs-big-play-button</code>. The play button's color (to match the tiger) and opacity will be changed with these styles:</p>
+
+<pre class="line-numbers">
+<code class="language-css">.vjs-big-play-button {
+  background-color: #B37D5B;
+  opacity: .6;
+}</code></pre>
+
+<p class="language-editable">You would think that this approach would work, but it does not. When working with CSS you need to be aware of property specificity. This refers to how the browser determines which property values get applied to an element based on their relevance.</p>
+
+<p class="language-editable">One way to apply the button changes is to add another class in the selector. For instance, you can use the <code>.video-js</code> class to increase the selector's specificity. For more details, see the <a href="#specificity">CSS specificity</a> section</p>
+
+<p class="language-editable">Then, reference the player's big play button in the CSS as follows:</p>
+
+<pre class="line-numbers">
+<code class="language-css"><span class="bcls-highlight">.video-js</span> .vjs-big-play-button {
+  background-color: #B37D5B;
+  opacity: .6;
+}</code></pre>
+
+<p class="language-editable">Here is the result of changing the button from dark grey to orange:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="orange-play-button" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/orange-play-button.png" /></figure><h3>Hide play button</h3>
+
+<p class="language-editable">You can completely hide the play button by using the following style:</p>
+
+<pre class="line-numbers">
+<code class="language-javascript">display: none;</code></pre>
+
+<h3>Experiment</h3>
+
+<p class="language-editable">The following CodePen permits you to experiment with the play button. Note that the triangle in the play button is actually a font, and its size is controlled with a <code>font-size</code> style.</p>
+
+<p data-height="414" data-theme-id="14832" data-slug-hash="KVVNLX" data-default-tab="result" data-user="mboles" class="codepen">See the Pen <a href="http://codepen.io/mboles/pen/KVVNLX/">5.x Big Play Button Customization</a> by Matt Boles (<a href="http://codepen.io/mboles">@mboles</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async="" src="https://assets.codepen.io/assets/embed/ei.js"></script><h3>Change hover text</h3>
+
+<p class="language-editable">If you would like to change the text which displays when you hover over the big play button, which is <strong>Play Video</strong> by default, to something more specific to your videos, you can do that. Add the following JavaScript using your desired verbiage as the argument for the <code>controlText</code> method.</p>
+
+<pre class="line-numbers">
+<code class="language-javascript">videojs.getPlayer('myPlayerID').ready(function() {
+  var myPlayer = this;
+  myPlayer.getChild('bigPlayButton').controlText('Play Audio');
+});
+</code></pre>
+</section><section class="bcls-section"><h2 id="Controls_visibility">Controls visibility</h2>
+
+<p class="language-editable">You can control if you want the controlbar, and controls contained therein, visible or not. If you wish to hide the controlbar from the start of player creation you can use this style:</p>
+
+<pre class="line-numbers">
+<code class="language-css">.video-js .vjs-control-bar {
+  display: none;
+}</code></pre>
+
+<p class="language-editable">If you wish to do this dynamically based on some event, you can use the <code>controlBar.hide()/show()</code> methods. The code snippet below demonstrates the methods use (this assumes you have an <code>id</code> with a value of <code>myPlayer</code> on the video):</p>
+
+<pre class="line-numbers">
+<code class="language-javascript">&lt;video-js id="myPlayerID"
+	data-video-id="5781068653001"
+	data-account="1507807800001"
+	data-player="default"
+	data-embed="default"
+	data-application-id
+	class="video-js"
+	controls&gt;&lt;/video-js&gt;
+&lt;script src="https://players.brightcove.net/1507807800001/default_default/index.min.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;button onclick="hideBtn()"&gt;hide controls&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;&lt;button onclick="showBtn()"&gt;show controls&lt;/button&gt;&lt;/p&gt;
+
+&lt;script&gt;
+  var myPlayer;
+	videojs.getPlayer('myPlayerID').ready(function() {
+		myPlayer = this;
+	});
+
+	function hideBtn() {
+		myPlayer.controlBar.hide();
+	}
+
+	function showBtn() {
+		myPlayer.controlBar.show();
+	}
+&lt;/script&gt;</code></pre>
+
+<h3>Controls never hide</h3>
+
+<p class="language-editable">You can also make it so the controls never hide. To do this use the <code>transform.none</code> style. The selector is very long as six classes are used for the specificity of transforms.</p>
+
+<pre class="line-numbers">
+<code class="language-css">.video-js.not-hover.vjs-has-started.vjs-paused.vjs-user-active .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible),
+.video-js.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible),
+.video-js.not-hover.vjs-has-started.vjs-playing.vjs-user-active .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible),
+.video-js.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible),
+.video-js.vjs-has-started.vjs-paused.vjs-ad-playing.vjs-user-inactive .vjs-control-bar,
+.video-js.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible){
+  transform: none;
+  -webkit-transform: none;
+  -ms-transform: none;
+}</code></pre>
+
+<aside class="bcls-aside bcls-aside--information language-editable">Although considered a bit of a hack, you can simply repeat the class of the controlbar eight times to build its specificity to match the selector above:
+<pre class="line-numbers">
+<code class="language-css">.vjs-control-bar.vjs-control-bar.vjs-control-bar.vjs-control-bar.vjs-control-bar.vjs-control-bar.vjs-control-bar.vjs-control-bar {
+  transform: none;
+  -webkit-transform: none;
+  -ms-transform: none;
+}</code></pre>
+</aside><aside class="bcls-aside bcls-aside--tip language-editable">Using this CSS to stop the controlbar from disappearing is very helpful when right-clicking on elements in the controlbar to inspect them. If you don't do this, as you right-click the controlbar disappears. Also note, the first right-click displays the Brightcove Player information menu, and the <strong>second right-click will display the menu where you can choose to inspect</strong>.</aside></section><section class="bcls-section"><h2 id="Progress_bar">Progress bar</h2>
+
+<p class="language-editable">Now you will see how to change the color of the progress indicator. The default color for indicator is fuchsia, as shown here:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="customize-player-elements" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/play-progress-standard.png" /></figure><p class="language-editable">The challenge here is to find the class names for the elements. Using the same technique as described earlier in the document, right-clicking on an element and choosing <strong><span class="notranslate">Inspect</span></strong>, then drilling down you will see the <code>vjs-play-progress</code> class.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="progress-and-volume-elements" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/play-progress-element.png" /></figure><aside class="bcls-aside bcls-aside--tip language-editable">In browsers you can actually search for class names in the console. For instance, in Chrome simply use <strong>CTL-F</strong> then enter the class for which you are looking.</aside><p class="language-editable">The <code>background-color</code> changes the color of the element and needs to be styled. The needed style is shown here:</p>
+
+<pre class="line-numbers">
+<code class="language-css">.video-js .vjs-play-progress {
+  background-color: green;
+}</code></pre>
+
+<p class="language-editable">Notice that the <code>.video-js</code> class was added into the selector. This is done to increase the selector's CSS specificity.</p>
+
+<p class="language-editable">The results appear as follows, showing a now green progress bar:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="customize-player-elements" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/play-progress-green.png" /></figure></section><section class="bcls-section"><h2 id="Volume_controls">Volume controls</h2>
+
+<p class="language-editable">You can customize the volume control by using CSS or by passing in the <code>options</code> object during player creation.</p>
+
+<h3>Update using CSS</h3>
+
+<p class="language-editable">Now you will see how to change the color of the volume controls. The default look is shown here, a white volume button with a fuchsia volume level bar:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="customize-player-elements" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/volume-standard.png" /></figure><p class="language-editable">To change the color of the volume button, and the mute button when you click it, use the selector shown here:</p>
+
+<pre class="line-numbers">
+<code class="language-css">.vjs-volume-panel.vjs-control.vjs-volume-panel-horizontal {
+  color: yellow;
+}</code></pre>
+
+<p class="language-editable">To change the color of the volume bar, the <code>background-color</code> of the element needs to be styled. The needed style is shown here:</p>
+
+<pre class="line-numbers">
+<code class="language-css">.video-js .vjs-volume-level{
+  background-color: yellow;
+}</code></pre>
+
+<p class="language-editable">Notice that the <code>.video-js</code> class was added into the selector. This is done to increase the selector's CSS specificity.</p>
+
+<p class="language-editable">The results of styling the button and volume bar are shown here:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="customize-player-elements" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/volume-yellow.png" /></figure><h3>Update using options object</h3>
+
+<p class="language-editable">To change the layout of the volume control, you can pass the <code>options</code> object into the <a href="delaying-player-instantiation.html">bc() method</a> as follows:</p>
+
+<ol class="bcls-tasklist"><li class="language-editable">Delay player creation by removing the following attributes from the <code>video</code> tag:
+
+	<ul><li class="language-editable"><code>data-account</code></li>
+		<li class="language-editable"><code>data-player</code></li>
+		<li class="language-editable"><code>data-video-id</code></li>
+	</ul></li>
+	<li class="language-editable">Define the <code>options</code> object so that the <code>volumePanel</code> is vertical and not inline with the controlbar.
+	<pre class="line-numbers">
+<code class="language-css">var options = {
+  controlBar: {
+    volumePanel: {
+      inline: false,
+      vertical: true
+    }
+  }
+};</code></pre>
+	</li>
+	<li class="language-editable">Add the player attributes that were initially removed.</li>
+	<li class="language-editable">Create the player by calling the <a href="delaying-player-instantiation.html">bc() method</a> with the <code>options</code> object.
+	<pre>
+<code class="language-css">bc("myPlayerID", options);</code></pre>
+	</li>
+	<li class="language-editable">For details, see the <a href="brightcove-player-sample-vertical-volume-control.html">Vertical Volume Control</a> player sample.
+	<figure class="bcls-figure"><img class="bcls-image" alt="customize-player-elements" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/vertical-volume.png" /></figure></li>
+</ol></section><section class="bcls-section"><h2 id="Fonts">Fonts</h2>
+
+<p class="language-editable">The title and description appear when the player is first loaded, and when the user hovers over the player. You can change the style for the fonts for the title and description, either together or separately. The HTML for the <strong>dock</strong> appears as shown in the following screenshot. Note that there is a <code>&lt;div&gt;</code> element with a class of <code>vjs-dock-text</code> that contains two other <code>&lt;div&gt;</code> elements that contain the <strong>title</strong> and <strong>description</strong>.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="dock text selectors" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/dock-text-elements.png" /></figure><p class="language-editable">You can affect both the title and description by setting a style on the <code>vjs-dock-text</code> class. Note that styles set on the <code>.vjs-dock-title</code> and <code>.vjs-dock-description</code> will, of course, not be completely overridden by the style set at a higher level. Some styles are inherited, as shown by the following style and its result on the text:</p>
+
+<pre class="line-numbers">
+<code class="language-css">.video-js .vjs-dock-text {
+  color: yellow;
+  font-size: .7em;
+}</code></pre>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="dock text selector example" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/dock-text-selector.png" /></figure><p class="language-editable">You can directly style the individual title and description. The following shows styles set on the <code>.vjs-dock-title</code> and <code>.vjs-dock-description</code> class selectors, with the resulting text displaying the styles:</p>
+
+<pre class="line-numbers">
+<code class="language-css">.video-js .vjs-dock-title {
+  color: red;
+  font-size: 1.5em;
+}
+.video-js .vjs-dock-description {
+  color: yellow;
+  font-size: 1.0em;
+}</code></pre>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="title and description selectors" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/title-and-description-selectors.png" /></figure></section><section class="bcls-section"><h2 id="Controlbar_icon_manipulation">Controlbar icon manipulation</h2>
+
+<p class="language-editable">Controlbar icon order determined by the order of the HTML <code>&lt;div&gt;</code>s in the parent controlbar <code>&lt;div&gt;</code>. Here you see the controlbar <code>&lt;div&gt;</code> with all of its children.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="elements-controlbar-div" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/elements-controlbar-div.png" /></figure><p class="language-editable">Generally, this is the approach to take when placing in icon in the controlbar:</p>
+
+<ul><li class="language-editable">Dynamically build the element you wish to insert into the controlbar.</li>
+	<li class="language-editable">Get a reference to the controlbar element.</li>
+	<li class="language-editable">Get a reference to the element you wish to insert your new element in front of in the controlbar.</li>
+	<li class="language-editable">Use the JavaScript <code>insertBefore()</code> method to place the icon.</li>
+</ul><aside class="bcls-aside bcls-aside--tip language-editable"><p class="language-editable">The syntax for <code>insertBefore()</code> is:</p>
+
+<pre class="line-numbers">
+<code class="language-javascript">parent.insertBefore(newElement,insertBeforeElement)</code></pre>
+
+<p class="language-editable">This means in the detailed code below you will see JavaScript to get a reference to the controlbar (parent), a new <code>&lt;div&gt;</code> with an icon to insert into the controlbar, and lastly a reference to the element which the new icon will be inserted in from of.</p>
+</aside><p class="language-editable">Specifically, the following code is used to insert a download video icon in front of the volume icon:</p>
+
+<ul><li class="language-editable">Lines 280-285: Style for the download button.</li>
+	<li class="language-editable">Lines 291-295: Assign variables and create HTML elements for:
+	<ul><li class="language-editable">The <code>&lt;div&gt;</code> which will contain the icon for the download icon.</li>
+		<li class="language-editable">The anchor tag which make the icon clickable.</li>
+		<li class="language-editable">The icon image itself.</li>
+	</ul></li>
+	<li class="language-editable">Lines 297-2980: Assign and id and CSS classes to the new element.</li>
+	<li class="language-editable">Line 300: Assign a source to the image.</li>
+	<li class="language-editable">Line 301: Assign an <code>href</code> to the link.</li>
+	<li class="language-editable">Line 302: Append the image to the link.</li>
+	<li class="language-editable">Line 303: Append the link to the dynamically created <code>&lt;div&gt;</code>.</li>
+	<li class="language-editable">Line 306: Get a reference to the controlbar to use with <code>insertBefore()</code>.</li>
+	<li class="language-editable">Line 308: Get a reference to the element which the new icon will be insert in front of, to use with <code>insertBefore()</code>.</li>
+	<li class="language-editable">Line 310: Insert the dynamically created element.</li>
+</ul><pre class="line-numbers" data-start="279">
+<code class="language-javascript">&lt;!-- styles for page --&gt;
+  /* Style the download icon */
+  #downloadButton {
+      width: 34px;
+      height: 33px;
+      margin-top: 6px;
+  }
+&lt;/style&gt;
+
+&lt;script type="text/javascript"&gt;
+  videojs.getPlayer('myPlayerID').ready(function() {
+    // Create variables and new div, anchor and image for download icon
+    var myPlayer = this,
+      controlBar,
+      newElement = document.createElement('div'),
+      newLink = document.createElement('a'),
+      newImage = document.createElement('img');
+    // Assign id and classes to div for icon
+    newElement.id = 'downloadButton';
+    newElement.className = 'downloadStyle vjs-control';
+    // Assign properties to elements and assign to parents
+    newImage.setAttribute('src','http://solutions.brightcove.com/bcls/brightcove-player/download-video/file-download.png');
+    newLink.setAttribute('href','http://www.brightcove.com');
+    newLink.appendChild(newImage);
+    newElement.appendChild(newLink);
+    // Get controlbar and insert before elements
+    // Remember that getElementsByClassName() returns an array
+    controlBar = document.getElementsByClassName('vjs-control-bar')[0];
+    // Change the class name here to move the icon in the controlBar
+    insertBeforeNode = document.getElementsByClassName('vjs-volume-menu-button')[0];
+    // Insert the icon div in proper location
+    controlBar.insertBefore(newElement,insertBeforeNode);
+  });</code></pre>
+
+<p class="language-editable">Here you see the result of the code, with the newly inserted icon highlighted in yellow:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="download-icon-before-volume" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/download-icon-before-volume.png" /></figure><p class="language-editable">If you wish to have the icon in a different location, you need only to change the code which gets the element to insert in front of. For instance, to move the new icon in front of the fullscreen button, use this:</p>
+
+<pre class="line-numbers">
+<code class="language-javascript">insertBeforeNode = document.getElementsByClassName('vjs-fullscreen-control')[0];</code></pre>
+
+<p class="language-editable">The result would appear as follows:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="download-icon-before-fullscreen" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/download-icon-before-fullscreen.png" /></figure><h3>Icon on far right</h3>
+
+<p class="language-editable">If you wish the icon to appear at the far right of the controlbar, you would replace the <code>insertBefore()</code> with the <code>appendChild()</code> method, as shown here:</p>
+
+<pre class="line-numbers">
+<code class="language-javascript">controlBar.appendChild(newElement);</code></pre>
+
+<p class="language-editable">An example of adding an icon (for downloading a file in this case) is shown in the <a href="brightcove-player-sample-download-video-plugin.html">Brightcove Player Sample: Download Video Plugin</a> document.</p>
+
+<h3 id="spacer">Use the spacer</h3>
+
+<p class="language-editable">Although the techniques above work for placing icons on the controlbar, it is possible they will not be compatible with other code that manipulates the controlbar. Also, you most likely would not want to abstract the code into a plugin for general reuse.</p>
+
+<p class="language-editable">Weaknesses in the previous paragraph can be overcome by using the special <strong>spacer</strong> element inserted into the controlbar especially for adding icons. The drawback of the spacer is you do not have full control over where the icon can be placed, whereas you do using the techniques shown earlier in this section.</p>
+
+<p class="language-editable">The spacer element is located in the controlbar between the time information on the left and the fullscreen icon on the right, as shown in the following screenshot (highlighted in the green oval). Note in the <strong>Elements</strong> section of the Dev Tools the element is defined an HTML <code>&lt;div&gt;</code>.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="spacer" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/spacer.png" /></figure><p class="language-editable">To place an icon in the spacer element, you use the following code, which is very similar to the code shown earlier in this section. The result of the code is shown in the screenshot which follows the code snippet.</p>
+
+<pre class="line-numbers">
+<code class="language-javascript">// Get the spacer element
+spacer = document.getElementsByClassName('vjs-spacer')[0];
+// Place the new element in the spacer
+spacer.appendChild(newElement);</code></pre>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="spacer-left" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/spacer-left.png" /></figure><p class="language-editable">If you wish to place the icon on the right side of the spacer, another line of code needs to be used. The spacer layout is controlled by an HTML Flexbox. So adding a Flexbox style you can push the added icon to the right. The result of the code is shown in the screenshot which follows the code snippet.</p>
+
+<pre class="line-numbers">
+<code class="language-javascript">// Set the content of the spacer to be right justified
+spacer.setAttribute("style", "justify-content: flex-end;");</code></pre>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="spacer-right" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/spacer-right.png" /></figure></section><section class="bcls-section"><h2 id="Remove_fullscreen_icon">Remove fullscreen button</h2>
+
+<p class="language-editable">There can be issues if you permit fullscreen viewing of videos on iOS, detailed in the <a href="ios-and-brightcove-player.html">iOS and Brightcove Player</a> document. If you wish to remove the fullscreen button from the controlbar you can so using this code:</p>
+
+<pre class="line-numbers">
+<code class="language-html">&lt;script type="text/javascript"&gt;
+  videojs.getPlayer('myPlayerID').ready(function() {
+    var myPlayer = this,
+      <span class="bcls-highlight">fullScreenElement = document.getElementsByClassName("vjs-fullscreen-control")[0];
+    if (videojs.browser.IS_IOS ) {
+      fullScreenElement.parentNode.removeChild(fullScreenElement);
+    }</span>
+  });
+&lt;/script&gt;</code></pre>
+
+<p class="language-editable">Note the <code>if</code> statement so the button is only removed on iOS devices.</p>
+</section><section class="bcls-section"><h2 id="Controlbar_icon_glow">Controlbar icon "glow"</h2>
+
+<p class="language-editable">You can change the text shadow (sometimes referred to as the "glow") of the icons in the controlbar. For instance, you may want to change the color or increase the glow to bring more focus on the icon. The following screenshot shows the text shadow in red.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="red text shadow" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/red-glow.png" /></figure><p class="language-editable">The affect shown is done by changing the CSS <code>text-shadow</code>. The selector determines that the change will only occur with the icon has focus or hover states.</p>
+
+<pre class="line-numbers">
+<code class="language-css">.video-js .vjs-control:hover:before, .video-js .vjs-control:focus:before {
+  text-shadow: 0 0 1em #f00,0 0 1em #f00,0 0 1em #f00;
+}</code></pre>
+
+<p class="language-editable">For more information on the rather complex <code>text-shadow</code> style, see MDN's <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow">text-shadow</a> document.</p>
+</section><section class="bcls-section"><h2 id="Hover_gradient">Hover gradient</h2>
+
+<p class="language-editable">When the player is first loaded, and when you mouse over the player, you see the video title displayed, as well as a black to transparent gradient over the top portion of the player. This section will show you how to alter the gradient.</p>
+
+<p class="language-editable">The actual gradient is controlled by the CSS <code>linear-gradient</code> function in the <code>vjs-dock-text</code> HTML <code>&lt;div&gt;.</code> The size of the gradient can be controlled by the height of the <code>vjs-dock-text</code> HTML <code>&lt;div&gt;</code>. Here is that element, and its children, from the player:</p>
+
+<pre class="line-numbers">
+<code class="language-html">&lt;div class="vjs-dock-text"&gt;
+  &lt;h1 class="vjs-dock-title"&gt;Tiger&lt;/h1&gt;
+  &lt;h2 class="vjs-dock-description"&gt;&lt;/h2&gt;
+&lt;/div&gt;</code></pre>
+
+<p class="language-editable">The default values for the gradient use the <code>rgba()</code> (red-green-blue-alpha) function, as shown here:</p>
+
+<pre class="line-numbers">
+<code class="language-javascript">linear-gradient(180deg,rgba(0,0,0,.8) 25%,transparent 100%);</code></pre>
+
+<p class="language-editable">These values cause the gradient to horizontally fade from black, with an alpha of <strong>.8</strong>, to transparent. The value of <strong>25%</strong> is a cut off value, meaning the value set in the <code>rgba</code> function will be used for the first 25% of the space before the fading to transparent begins.</p>
+
+<p class="language-editable">For instructional purposes, as you would not use this gradient in production, the following style creates the gradient in the screenshot.</p>
+
+<pre class="line-numbers">
+<code class="language-css">.video-js .vjs-dock-text {
+  background: linear-gradient(45deg, rgba(0,0,255,.8) 35%, transparent);
+  height: 80%;
+}</code></pre>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="bad blue gradient" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/gradient-blue.png" /></figure><p class="language-editable">In this example, a blue gradient with a .8 alpha is applied at a 45 degree downhill angle. The color/alpha set in the linear gradient will be used for the first 35% of the gradient before it begins to fade. Also, 80% of the element height is used.</p>
+
+<p class="language-editable">The following CodePen permits you to experiment with values. Start the video and mouse in and out to see the subtle gradient used by default.</p>
+
+<p data-height="371" data-theme-id="14832" data-slug-hash="XXyKqx" data-default-tab="result" data-user="bcls" class="codepen">See the Pen <a href="http://codepen.io/team/bcls/pen/XXyKqx/">Hover Gradient Luna Skin</a> by Brightcove Learning Services (<a href="http://codepen.io/bcls">@bcls</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async="" src="https://assets.codepen.io/assets/embed/ei.js"></script></section><section class="bcls-section"><h2 id="Caption_list_items">Caption list items</h2>
+
+<p>If you wish to style/control the list items in the captions menu, the selectors are shown here:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="Selectors for caption list items" width="800" height="281" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/caption-list-items.png" /></figure><p>You can style all the items using the selector:</p>
+
+<pre class="line-numbers">
+<code class="language-javascript">.vjs-subs-caps-button .vjs-menu .vjs-menu-content .vjs-menu-item.</code></pre>
+</section><section class="bcls-section"><h2 id="CSS_specificity">CSS specificity</h2>
+
+<p class="language-editable">CSS specificity refers to the way browsers determine which property values get applied to an element based on their relevance. For details about this concept, review the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">Specificity</a> article.</p>
+
+<p class="language-editable">In Chrome, inspect the big play button. Notice that the <code>background</code> property is set using multiple classes. This means that we cannot use just the one <code>.vjs-big-play-button</code> class to override this property.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="play-button-classes" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/play-button-classes.png" /></figure><p class="language-editable">Here are three approaches to customize the big play button:</p>
+
+<ul><li class="language-editable">Reference an id assigned to the player.</li>
+	<li class="language-editable">Use multiple classes to raise the relevance of the properties.</li>
+	<li class="language-editable">Use JavaScript to set the id attribute on the player and then reference it in the CSS.</li>
+</ul><h3>Referencing an id</h3>
+
+<p class="language-editable">Since an <code>id</code> attribute has a high relevance regarding CSS specificity, adding an <code>id</code> to the CSS selector will override the <code>background-color</code> property.</p>
+
+<p class="language-editable">If you haven't already done so, add an <code>id</code> attribute to the <code>video</code> element as follows:</p>
+
+<pre class="line-numbers">
+<code class="language-html"><span class="bcls-highlight">&lt;video-js id="video_1"</span>
+  data-account="1752604059001"
+  data-player="68f30408-8fb4-431d-accb-8c5baa8c4790"
+  data-embed="default"
+  class="video-js" controls&gt;&lt;/video-js&gt;</code></pre>
+
+<p class="language-editable">In the CSS, add the id value to the <code>.vjs-big-play-button</code> class selector. Override the background color and opacity as follows:</p>
+
+<pre class="line-numbers">
+<code class="language-html">&lt;style&gt;
+<span class="bcls-highlight">  #video_1 .vjs-big-play-button {
+      background-color: #B37D5B;
+      opacity: .6;
+    }</span>
+    .video-js {
+      width: 640px;
+      height: 360px;
+    }
+&lt;/style&gt;</code></pre>
+
+<p class="language-editable">You should see that the big play button is now orange.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="orange-play-button.png" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/orange-play-button.png" /></figure><h3>Using multiple classes</h3>
+
+<p class="language-editable">Since the <code>background</code> property for the big play button is set using two classes, you will need at least two classes in the CSS selector to override this property.</p>
+
+<p class="language-editable">Add the <code>.video-js</code> class to the <code>.vjs-big-play-button</code> class selector. Remember that the <code>.video-js</code> class is set on the video container.</p>
+
+<p class="language-editable">With these values, we are saying select all elements with a class name of <code>vjs-big-play-button</code> which are decedents of elements with a class name of <code>.video-js</code>.</p>
+
+<pre class="line-numbers">
+<code class="language-html">&lt;style&gt;
+<span class="bcls-highlight">  .video-js .vjs-big-play-button {</span>
+    background-color: #B37D5B;
+    opacity: .6;
+  }
+  .video-js {
+    width: 640px;
+    height: 360px;
+  }
+&lt;/style&gt;</code></pre>
+
+<p class="language-editable">You should see that the big play button is now orange. Working with multiple classes can be tricky and may affect multiple elements, whereas an id is specific to one element.</p>
+
+<h3>Using JavaScript</h3>
+
+<p class="language-editable">You can also use JavaScript to dynamically add an id to the big play button. Then you can reference that id from the CSS.</p>
+
+<p class="language-editable">Add code to add an id to the big play button element.</p>
+
+<ul><li class="language-editable">Line 173: Gets a reference to the first element which has a class of <code>vjs-big-play-button</code>.</li>
+	<li class="language-editable">Line 174: Adds an <code>id</code> attribute to the big play button.</li>
+</ul><pre class="line-numbers" data-start="171">
+<code class="language-html">  &lt;script type="text/JavaScript"&gt;
+
+    var playButton = document.getElementsByClassName("vjs-big-play-button")[0];
+    playButton.setAttribute("id", "myPlayButton");
+
+  &lt;/script&gt;</code></pre>
+
+<p class="language-editable">In the CSS, change the selector to use the <code>myPlayButton</code> id name.</p>
+
+<pre class="line-numbers">
+<code class="language-html">&lt;style&gt;
+<span class="bcls-highlight">    #myPlayButton {</span>
+      background-color: #B37D5B;
+      opacity: .6;
+    }
+    .video-js {
+      width: 640px;
+      height: 360px;
+    }
+  &lt;/style&gt;</code></pre>
+
+<p class="language-editable">You should see that the big play button is now orange.</p>
+</section><section class="bcls-section"><h2 id="Component_selectors">Component selectors</h2>
+
+<p class="language-editable">These screenshots and following table show the components and the CSS selectors needed to manipulate that component. For more information on the components themselves see the <a href="overview-components.html">Components Overview</a> doc.</p>
+
+<h3>On player load and hover</h3>
+
+<figure class="bcls-figure"><img style="max-width: none" width="794" height="352" alt="components on load" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/5x-components-onload.png" /></figure><h3>During playback</h3>
+
+<figure class="bcls-figure"><img class="bcls-image" style="max-width: none" width="831" height="525" alt="components playback" src="https://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/6x-components.png" /></figure><h3>Summary of component selectors</h3>
+
+<table class="table-styles"><thead><tr><th style="width:30%">Component</th>
+			<th style="width:70%">Selector</th>
+		</tr></thead><tbody><tr><td>BigPlayButton</td>
+			<td><code>.video-js.vjs-mouse .vjs-big-play-button</code></td>
+		</tr><tr><td>ControlBar</td>
+			<td><code>.video-js .vjs-control-bar</code> (Inherited by icons in the ControlBar, but NOT the ProgressControl)</td>
+		</tr><tr><td>    PlayToggle</td>
+			<td><code>.video-js .vjs-play-control</code></td>
+		</tr><tr><td>    MuteToggle</td>
+			<td><code>.vjs-volume-panel.vjs-control.vjs-volume-panel-horizontal</code></td>
+		</tr><tr><td>        VolumeBar</td>
+			<td><code>.vjs-volume-bar.vjs-slider-bar.vjs-slider.vjs-slider-horizontal</code></td>
+		</tr><tr><td>            VolumeLevel</td>
+			<td><code>.video-js .vjs-volume-level</code></td>
+		</tr><tr><td>    CurrentTimeDisplay</td>
+			<td><code>.video-js .vjs-current-time</code></td>
+		</tr><tr><td>    TimeDivider</td>
+			<td><code>.video-js .vjs-time-divider</code></td>
+		</tr><tr><td>    DurationDisplay</td>
+			<td><code>.video-js .vjs-duration</code></td>
+		</tr><tr><td>        SeekBar</td>
+			<td><code>.video-js .vjs-progress-control.vjs-control</code></td>
+		</tr><tr><td>        LoadProgressBar</td>
+			<td><code>.video-js .vjs-load-progress</code></td>
+		</tr><tr><td>        PlayProgressBar</td>
+			<td><code>.video-js .vjs-play-progress.vjs-slider-bar</code></td>
+		</tr><tr><td>    ChaptersButton</td>
+			<td><code>.video-js .vjs-chapters-button.vjs-menu-button</code></td>
+		</tr><tr><td>    CaptionsButton</td>
+			<td><code>.video-js .vjs-captions-button.vjs-menu-button</code></td>
+		</tr><tr><td>    FullScreenToggle</td>
+			<td><code>.video-js .vjs-fullscreen-control.vjs-control</code></td>
+		</tr><tr><td>DockText</td>
+			<td><code>.vjs-dock-text</code> (Inherited by both DockTitle and DockDescription)</td>
+		</tr><tr><td>    DockTitle</td>
+			<td><code>.vjs-dock-title</code></td>
+		</tr><tr><td>    DockDescription</td>
+			<td><code>.vjs-dock-description</code></td>
+		</tr></tbody></table><p class="language-editable">If the selector you are seeking is not in the table, please let us know by emailing the <a id="selectorrequest" href="mailto:docs@brightcove.com">Knowledge Team</a> and we will get it into the table.</p>
+</section><section class="bcls-section"><h2 id="PLAYER_CLASS">{PLAYER_CLASS}</h2>
+
+<p class="language-editable">The <code>{PLAYER_CLASS}</code> is a selector and will be replaced with the actual class specific selector for the player, for example:</p>
+
+<pre class="line-numbers">
+<code class="language-css">.bc-player-oH9IdGudo_default</code></pre>
+
+<p class="language-editable"><code>{PLAYER_CLASS}</code> helps you make your CSS specific enough to overwrite the built-in styles without having to make CSS for each player individually or use something like:</p>
+
+<pre class="line-numbers">
+<code class="language-css">.video-js.video-js</code></pre>
+
+<p class="language-editable">For instance, say you want to override the loading spinner, you might use:</p>
+
+<pre class="line-numbers">
+<code class="language-css">.video-js.video-js .vjs-loading-spinner {...}</code></pre>
+
+<p class="language-editable">That is specific enough to override the default, but if you happen to have a second player on the page. Using the following would NOT affect any other player in the page:</p>
+
+<pre class="line-numbers">
+<code class="language-css">.video-js{PLAYER_CLASS} .vjs-loading-spinner {...}</code></pre>
+
+<p>Note that the <code>{PLAYER_CLASS}</code> selector can only be used in CSS files that are added to a player configuration stylesheets array (for example, via Studio or the Player Management API) and built directly into the player. This selector will not work with Advanced implementation code CSS separately included via <code>&lt;style&gt;&lt;/style&gt;</code> or <code>&lt;link&gt;&lt;/link&gt;</code> tags.</p>
+</section></article></div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-by-field-block-1 clearfix" id="block-views-block-related-content-by-field-block-1">
+  
+    
+
+      <div class="form-group"><div class="view view-related-content-by-field view-id-related_content_by_field view-display-id-block_1 js-view-dom-id-1f5258c9b48aca84a1ec1601528ef5fda2b7e8b6e886c06996ef6bba438ff7e5">
+  
+    
+      <div class="view-header">
+      <h2>Related content</h2>
+    </div>
+      
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="step-step-player-customization.html" hreflang="en">Step-by-Step: Player Customization</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="styling-players.html" hreflang="en">Styling Players</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="skins-and-player-versions.html" hreflang="en">Skins and Player Versions</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="sizing-player.html" hreflang="en">Sizing the Player</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="overview-components.html" hreflang="en">Overview: Components</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="row">
+            <div class="region region-footer-top-left col-md-9" style="margin-bottom: 1em;">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove Support</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://status.brightcove.com">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="contact-support.html" data-drupal-link-system-path="node/18632">Support - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.brightcove.com/en/contact/create">Support - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Documentation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Training</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="online-training-courses.html" data-drupal-link-system-path="node/18286">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a course</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://www.brightcove.com">Brightcove.com</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="region region-footer-top-right col-md-3">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Brightcove Inc. (NASDAQ: BCOV), is a leading global provider of powerful cloud solutions for delivering and monetizing video across connected devices.</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="row">
+            <div class="region region-footer-bottom-left col-md-8">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item">Brightcove Inc. All rights reserved.</div>
+      
+      <div class="field field--name-field-legal-links field--type-link field--label-hidden field--items">
+              <div class="field--item"><a href="https://www.brightcove.com/en/privacy">Privacy</a></div>
+              <div class="field--item"><a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="region region-footer-bottom-right col-md-4">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items">
+              <div class="field--item">
+
+<a href="https://www.linkedin.com/company/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://twitter.com/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://www.facebook.com/Brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://plus.google.com/100830370440271567091" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18066","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGn0UTEBVCWpxWhZdZHNWFFRscgpEX3cRUVRRXBQUDkYAWFZQFmhUVFoDUV9YAVNAcwtKVXRaElBfWg==","queueTime":0,"applicationTime":368,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="sites/default/files/favicon-64.png" type="image/png" />
+<link rel="alternate" hreflang="en" href="brightcove-player-code-samples.html" />
+<link rel="canonical" href="brightcove-player-code-samples.html" />
+<link rel="shortlink" href="brightcove-player-code-samples.html" />
+<link rel="revision" href="brightcove-player-code-samples.html" />
+
+    <title>Brightcove Player Code Samples | Brightcove Learning</title>
+    <link rel="stylesheet" media="all" href="sites/default/files/css/css_82QNz3isZauK2z7uRssc53Bs_g5IxmONDHsLVxMTLtw_q23msc.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4_q23msc.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on" />
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  </head>
+  <body class="path-node page-node-type-landing-page has-glyphicons">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="navigation-secondary clearfix">
+          <div class="region region-navigation-secondary">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary Navigation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="contact-support.html" title="Create a Support Request" data-drupal-link-system-path="node/18632">Support Request</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://status.brightcove.com/">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://university.brightcove.com/">Brightcove University</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gtranslate">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" style="font-weight:bold;background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">English</option><option value="en|fr" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">French</option><option value="en|de" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">German</option><option value="en|ja" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">Japanese</option><option value="en|ko" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">Korean</option><option value="en|es" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">Spanish</option></select>
+</div>
+<div class="gtranslate__credits">
+  Translations Provided by Google Translate
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="navbar-header col-md-3">
+                  <a class="logo navbar-btn pull-left" href="index.html" title="Home" rel="home">
+            <img src="themes/custom/bcdocs/images/brightcove.png" alt="Home" />
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" title="Home page" data-drupal-link-system-path="node/18643">Home</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Products
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="video-cloud.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://gallery.support.brightcove.com">Gallery</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a href="social.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ssai.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded active dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Quick Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="analytics-api.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience-api.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-api.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-connectors-video-cloud.html" data-drupal-link-system-path="node/18662">CMS Connectors for Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="data-collection-api.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="delivery-system-api.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="developer-tools-and-concepts.html" data-drupal-link-system-path="node/18430">Developer Tools and Concepts</a>
+                  </li>
+                              <li class="expanded">
+        <a href="native-player-sdks.html" data-drupal-link-system-path="node/18367">Device SDKs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="dynamic-ingest-api.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="getting-started-brightcove-apis-0.html" data-drupal-link-system-path="node/18711">Getting Started - Brightcove APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="page-experience-api.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ingest-profiles-api.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="oauth-api.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="platform-api-code-samples.html" data-drupal-link-system-path="node/18675">Platform API Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="playback-api.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded active">
+        <a href="brightcove-player-code-samples.html" data-drupal-link-system-path="node/18630" class="is-active">Player Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-developer.html" data-drupal-link-system-path="node/18362">Player Developer</a>
+                  </li>
+                              <li class="expanded">
+        <a href="player-management-api.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="policy-api.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="release-notes.html" data-drupal-link-system-path="node/18687">Release Notes</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Training
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="https://university.brightcove.com">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a Course</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a href="brightcove-support-documentation-announcements.html" title="See what&#039;s new in Brightcove Documentation" data-drupal-link-system-path="node/18896">What&#039;s New</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="full-width-headline">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" role="heading">
+            <div class="region region-header">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      Brightcove Player Code Samples
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="main-container container-fluid  js-quickedit-main-content">
+    <div class="row">
+
+            
+                  <section class="col-sm-12">
+
+                                      <div class="highlighted">  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a id="main-content"></a>
+            <div class="region region-content">
+      <div class="row">
+    <div class="col-sm-12">
+    
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"></div>
+      
+      <div class="field field--name-field-landing-page-element field--type-entity-reference-revisions field--label-hidden field--items">
+              <div class="field--item"><div style="background-image: url(sites/default/files/2018-07/cta-block-bg_5_0.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat;" class="paragraph paragraph--type--search-block paragraph--view-mode--default">
+    <div class="container">
+        
+            <div class="field field--name-field-block field--type-block-field field--label-hidden field--item"><section class="block block-bc-search-fixes block-bc-search-fixes-search-block clearfix">
+  
+    
+
+      <form class="bc-search-fixes-search-block-form" data-drupal-selector="bc-search-fixes-search-block-form" action="brightcove-player-code-samples.html" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group">
+      <label for="edit-search" class="control-label sr-only">Search</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="Search" />
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-otlcrsll8gkzozvphk5uqbdcxm8d4pk-8z9qdtrzh2a" type="hidden" name="form_build_id" value="form-OTlCrsll8gKZozVpHk5uqbDCxM8d4pK-8Z9QDtRzH2A" /><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form" /><div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+</div>
+      
+    </div>
+</div></div>
+              <div class="field--item"><div style="background-color: #FFFFFF; color: #000000;" class="paragraph paragraph--type--full-width-text paragraph--view-mode--default">
+    <div class="container">
+        
+            <div class="field field--name-field-full-width-text field--type-text-long field--label-hidden field--item"><p>The following code samples demonstrate customizations and enhancements to Brightcove Player. Samples marked with double asterisks ** are partially or wholly dependent on Video Cloud features. You can also find an alphabetical list of samples <a href="brightcove-player-developer-code-samples.html">here</a>.</p>
+</div>
+      
+    </div>
+</div></div>
+              <div class="field--item"><div style="background-color: #FFFFFF; color: #000000;" class="paragraph paragraph--type--full-width-text paragraph--view-mode--default">
+    <div class="container">
+        
+            <div class="field field--name-field-full-width-text field--type-text-long field--label-hidden field--item"><link href="https://learning-services-media.brightcove.com/doc-assets/css/samples-pages/samples.css" rel="stylesheet" /><!-- if there are no groups, the following tag should be commented out, though it won't break anything if it's there --><section class="buttons-wrapper" id="buttons_wrapper"></section><!-- wrapper for all sample blocks --><section class="samples-wrapper" id="samples_wrapper"><!-- wrapper for a sample block --><section class="samples-section advertising"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-outstream-ad-only-player.html">
+        <div class="samples-div">
+          <img alt="Outstream (Ad-Only) Player" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/outstream_player.png" /><h2 class="sample-title">Outstream (Ad-Only) Player</h2>
+          <p class="sample-description">This sample provides helper JavaScript functions that demonstrate how to dynamically adjust the size of a <code class="notranslate">&lt;div&gt;</code> element in the page DOM, inject the Brightcove player there, load and play an ad, and then remove the player</p>
+      </div>
+    </a>
+  </section><section class="samples-section advertising"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-scrolling-player-view.html">
+        <div class="samples-div">
+          <img alt="Scrolling Player into View with Ads" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/scrolling_player_into_view_with_ads.png" /><h2 class="sample-title">Scrolling Player into View with Ads</h2>
+          <p class="sample-description">In the player, notice the horizontal volume control bar replaces the default vertical control bar.</p>
+      </div>
+    </a>
+  </section><section class="samples-section customize_ui"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-register-play-after-preview.html">
+        <div class="samples-div">
+          <img alt="Horizontal Volume Control (1.x Player Only)" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/horizontal_volume_control.png" /><h2 class="sample-title">Horizontal Volume Control (1.x Player Only)</h2>
+          <p class="sample-description">In the player, a horizontal volume control bar replaces the default vertical control bar.</p>
+      </div>
+    </a>
+  </section><section class="samples-section customize_ui"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-vertical-volume-control.html">
+        <div class="samples-div">
+          <img alt="Vertical Volume" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/vertical-volume.png" /><h2 class="sample-title">Vertical Volume</h2>
+          <p class="sample-description">Set the volume control to display a vertical slider instead of the default horizontal layout.</p>
+      </div>
+    </a>
+  </section><section class="samples-section advertising"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-ad-indicators-playback-bar.html">
+        <div class="samples-div">
+          <img alt="Ad Indicators in Playback Bar" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/Ad_Indicators_in_Playback_Bar.png" /><h2 class="sample-title">Ad Indicators in Playback Bar</h2>
+          <p class="sample-description">This sample shows a player where the three ad cue points associated with the video are displayed in the playback bar as blue markers.</p>
+      </div>
+    </a>
+  </section><section class="samples-section advertising"><a class="nturl" style="text-decoration:none" href="implementing-server-side-ads-brightcove-player.html">
+      <div class="samples-div">
+        <img alt="Advertising with the SSAI Plugin" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/advertising_with_the_ssai_plugin.png" /><h2 class="sample-title">Advertising with the SSAI Plugin</h2>
+        <p class="sample-description">This example uses IMA ads defined in a VMAP file to deliver server-side ads in the video stream. There is a pre-roll, mid-roll and post-roll ad. The VMAP file is defined in the ad configuration.</p>
+    </div>
+  </a>
+  </section><section class="samples-section advertising"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-ad-countdown-timer.html">
+        <div class="samples-div">
+          <img alt="Ad Countdown Timer" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/ad-countdown-timer.png" /><h2 class="sample-title">Ad Countdown Timer</h2><p class="sample-description">Create a countdown timer for an advertisement using the Overlay plugin.</p>
+      </div>
+    </a>
+  </section><section class="samples-section player_functionality"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-age-gate-modaldialog.html">
+        <div class="samples-div">
+          <img alt="Age Gate with ModalDialog" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/age_gate_using_modaldialog.png" /><h2 class="sample-title">Age Gate with ModalDialog</h2>
+          <p class="sample-description">This sample uses the ModalDialog to initially cover the player. When the user confirms their age by clicking on the modal window, controls are displayed and the video plays.</p>
+      </div>
+    </a>
+  </section><section class="samples-section player_functionality"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-cue-points-display-cta.html">
+        <div class="samples-div">
+          <img alt="Cue Points Display CTA" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/cue_points_display_cta.png" /><h2 class="sample-title">Cue Points Display CTA**</h2>
+          <p class="sample-description">The player shows two different CTAs displayed based on cue points. The first CTA is displayed at 3 seconds, for a duration of 5 seconds. The second CTA is displayed at 13 seconds for a duration of 3 seconds.</p>
+      </div>
+    </a>
+  </section><section class="samples-section player_functionality"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-dynamic-call-action.html">
+        <div class="samples-div">
+          <img alt="Dynamic Call to Action**" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/dynamic_call_to_action.png" /><h2 class="sample-title">Dynamic Call to Action**</h2>
+          <p class="sample-description">You will be able to see three different call to action display techniques with this player.</p>
+      </div>
+    </a>
+  </section><section class="samples-section player_functionality popular"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-playpause-video-iframe-parent.html">
+        <div class="samples-div">
+          <img alt="Play/Pause Video from iframe Parent" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/pause_video_from_iframe_parent.png" /><h2 class="sample-title">Play/Pause Video from iframe Parent</h2>
+          <p class="sample-description">Click either the play or pause button, which is part of the iframe's parent page, to see it initiate play/pause of the video in the iframe player.</p>
+      </div>
+    </a>
+  </section><section class="samples-section player_functionality"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-display-thumbnails-hover.html">
+        <div class="samples-div">
+          <img alt="Age Gate" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/age_gate.png" /><h2 class="sample-title">Age Gate</h2>
+          <p class="sample-description">This sample displays an overlay that hides the player controls and play button. When the user confirms their age by clicking on the overlay, controls are displayed and the video plays.</p>
+      </div>
+    </a>
+  </section><section class="samples-section playback_behavior popular"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-autoplay-unmute-button.html">
+      <div class="samples-div">
+        <img alt="Autoplay with Unmute Button" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/autoplay-unmute.png" /><h2 class="sample-title">Autoplay with Unmute Button</h2>
+        <p class="sample-description">The video will behave differently depending on the browser/platform on which you run the video. If the video will autoplay with audio, it does so. If not, the video begin to play, but an unmute button will appear.</p>
+    </div>
+  </a>
+  </section><section class="samples-section playlists_and_groups playback_behavior"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-background-video-random-playlist.html">
+      <div class="samples-div">
+        <img alt="Background Video Random Playlist" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/background_video_random_playlist.png" /><h2 class="sample-title">Background Video Random Playlist**</h2>
+        <p class="sample-description">In the player you will see videos randomly selected from a playlist that continually play as background videos. At the start of each video the title and description of each video are displayed.</p>
+    </div>
+  </a>
+  </section><section class="samples-section playlists_and_groups playback_behavior"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-background-video-playlist.html">
+      <div class="samples-div">
+        <img alt="Background Video Playlist" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/background_video_playlist.png" /><h2 class="sample-title">Background Video Playlist**</h2>
+        <p class="sample-description">In the player you will see there are four videos that continually play as background videos. Also, at the start of each video the title and description of each video are displayed overlaying the background video.</p>
+    </div>
+  </a>
+  </section><section class="samples-section playlists_and_groups playback_behavior"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-full-window-background-video.html">
+      <div class="samples-div">
+        <img alt="Full Window Background Video" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/full-backgroun-video.png" /><h2 class="sample-title">Full Window Background Video**</h2>
+        <p class="sample-description">In this topic, you will learn how to use a playlist to supply background videos, and automatically resize the player when the browser window is resized so that the video entirely fills the browser window.</p>
+    </div>
+  </a>
+  </section><section class="samples-section playback_behavior popular"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-creating-video-loop.html">
+        <div class="samples-div">
+          <img alt="Creating a Video Loop" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/creating_a_video_loop.png" /><h2 class="sample-title">Creating a Video Loop</h2>
+          <p class="sample-description">There are some situations where you may want to use a looping video. This example loops the video 3 times and then stops video playback.</p>
+      </div>
+    </a>
+  </section><section class="samples-section player_functionality customize_ui player_styling"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-disable-progress-scrubber.html">
+      <div class="samples-div">
+        <img alt="Disable the Progress Scrubber" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/disabling_the_progress_scrubber.png" /><h2 class="sample-title">Disable the Progress Scrubber</h2>
+        <p class="sample-description">Play the video. Notice that you cannot use the progress scrubber to advance the video.</p>
+    </div>
+  </a>
+  </section><section class="samples-section player_functionality playback_behavior popular"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-stopping-other-players-page-when-video-starts.html">
+        <div class="samples-div">
+          <img alt="Stopping Other Players on the Page when a Video Starts" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/stopping_other_players_on_the_page_when_a_video_starts.png" /><h2 class="sample-title">Stopping Other Players on the Page when a Video Starts</h2>
+          <p class="sample-description">Start playing one of the videos. Next, play the video in a different player and see that video playback stops in the other player that was playing.</p>
+      </div>
+    </a>
+  </section><section class="samples-section player_functionality playback_behavior popular"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-variable-speed-playback.html">
+      <div class="samples-div">
+        <img alt="Variable Speed Playback" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/variable_speed_playback.png" /><h2 class="sample-title">Variable Speed Playback</h2>
+        <p class="sample-description">Start video playback and select the playback rate button in the control bar (default is 1x). Choose a different rate to see how video playback speed changes.</p>
+    </div>
+  </a>
+</section><section class="samples-section player_functionality popular"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-loading-player-dynamically.html">
+      <div class="samples-div">
+        <img alt="Loading the Player Dynamically" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/loading_the_player_dynamically.png" /><h2 class="sample-title">Loading the Player Dynamically</h2>
+        <p class="sample-description">In this sample you click the Add Player button to dynamically build and load the player, and then play the video.</p>
+    </div>
+  </a>
+</section><section class="samples-section player_functionality"><a class="nturl" style="text-decoration:none" href="requirejs-and-brightcove-player.html">
+      <div class="samples-div">
+        <img alt="RequireJS and Brightcove Player" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/requirejs_and_brightcove_player.png" /><h2 class="sample-title">RequireJS and Brightcove Player</h2>
+        <p class="sample-description">In this topic, you will learn how to use RequireJS, a JavaScript file and module loader, with Brightcove Player. </p>
+    </div>
+  </a>
+</section><section class="samples-section player_functionality popular"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-dynamically-change-source-videos.html">
+      <div class="samples-div">
+        <img alt="Dynamically Change Source Videos**" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/dynamically_change_source_videos.png" /><h2 class="sample-title">Dynamically Change Source Videos**</h2>
+        <p class="sample-description">Click the button below the player to dynamically change the source video.</p>
+    </div>
+  </a>
+</section><section class="samples-section player_functionality playback_behavior"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-kiosk-app.html">
+      <div class="samples-div">
+        <img alt="Kiosk App**" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/kiosk_app.png" /><h2 class="sample-title">Kiosk App**</h2>
+        <p class="sample-description">The player will be playing a video from the array of video objects in an infinite loop.</p>
+    </div>
+  </a>
+</section><section class="samples-section player_functionality customize_ui"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-caption-animation.html">
+      <div class="samples-div">
+        <img alt="Caption Animation" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/caption_animation.png" /><h2 class="sample-title">Caption Animation</h2>
+        <p class="sample-description">Start video playback. As you move your mouse over and away from the player, the captions will animate to stay above the control bar.</p>
+    </div>
+  </a>
+</section><section class="samples-section player_functionality customize_ui"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-display-related-link.html">
+      <div class="samples-div">
+        <img alt="Display Related Link**" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/display_related_link.png" /><h2 class="sample-title">Display Related Link**</h2>
+        <p class="sample-description">For this sample you see the text associated with the video displayed below the player. You use Studio's MEDIA &gt; VIDEO INFORMATION section to supply the text and associated link. </p>
+    </div>
+  </a>
+</section><section class="samples-section customize_ui player_styling"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-display-views-controlbar.html">
+      <div class="samples-div">
+        <img alt="Display Views in Controlbar" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/display_views_in_controlbar.png" /><h2 class="sample-title">Display Views in Controlbar</h2>
+        <p class="sample-description">When the video plays you will see the video views in the controlbar. There may be a slight delay before the information displays as the Analytics API is asynchronously queried for the data.</p>
+    </div>
+  </a>
+</section><section class="samples-section customize_ui"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-display-thumbnails-hover.html">
+      <div class="samples-div">
+        <img alt="Display Thumbnails on Hover" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/display_thumbnails_on_hover.png" /><h2 class="sample-title">Display Thumbnails on Hover</h2>
+        <p class="sample-description">This example uses the ModalDialog to display four thumbnail images taken from various points in the video. This allows the user to get a sneak peak at what is in the video.</p>
+    </div>
+  </a>
+</section><section class="samples-section player_functionality"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-display-random-bumpers.html">
+      <div class="samples-div">
+        <img alt="Display Random Bumpers" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/display_random_bumpers.png" /><h2 class="sample-title">Display Random Bumpers</h2>
+        <p class="sample-description">In this sample, randomly selected bumpers are played before each video from a playlist. In this case the bumpers are ads, but not drawn from an ad server, instead they are videos defined in the Video Cloud library.</p>
+    </div>
+  </a>
+</section><section class="samples-section customize_ui"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-hyperlinked-company-logo.html">
+      <div class="samples-div">
+        <img alt="Hyperlinked Company Logo" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/hyperlinked_company_logo.png" /><h2 class="sample-title">Hyperlinked Company Logo</h2>
+        <p class="sample-description">This example displays a company logo in the player's control bar. Selecting the logo will redirect you to the company's website.</p>
+    </div>
+  </a>
+</section><section class="samples-section customize_ui player_functionality"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-lightbox-carousel.html">
+      <div class="samples-div">
+        <img alt="Lightbox Carousel" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/lightbox_carousel.png" /><h2 class="sample-title">Lightbox Carousel</h2>
+        <p class="sample-description">Navigate through the videos in the carousel. Select a thumbnail to play the video in a lightbox container. With the lightbox displayed, select the Close link to hide the lightbox container.</p>
+    </div>
+  </a>
+</section><section class="samples-section player_functionality customize_ui"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-lightbox-scroller.html">
+      <div class="samples-div">
+        <img alt="Lightbox with Scroller" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/lightbox_with_scroller.png" /><h2 class="sample-title">Lightbox with Scroller</h2>
+        <p class="sample-description">Drag the scrollbar below the thumbnail images to navigate through the videos. Select a video to play the video in a lightbox container. With the lightbox displayed, select the Close link to hide the lightbox container.</p>
+    </div>
+  </a>
+</section><section class="samples-section customize_ui"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-simple-lightbox.html">
+      <div class="samples-div">
+        <img alt="Simple Lightbox" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/simple_lightbox.png" /><h2 class="sample-title">Simple Lightbox</h2>
+        <p class="sample-description">This example displays an interactive video poster image that opens a lightbox with the Brightcove player. Select the poster image to play the video in a lightbox container.</p>
+    </div>
+  </a>
+</section><section class="samples-section player_functionality customize_ui"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-logo-overlay-plugin.html">
+      <div class="samples-div">
+        <img alt="Logo Overlay Plugin" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/simple_lightbox.png" /><h2 class="sample-title">Logo Overlay Plugin</h2>
+        <p class="sample-description">In the following example you see a logo displayed in the lower-left of the player. At five seconds into the video the logo will slowly fade out.</p>
+    </div>
+  </a>
+</section><section class="samples-section player_functionality playback_behavior"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-multiple-session-playback.html">
+      <div class="samples-div">
+        <img alt="Multiple Session Playback" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/multiple_session_playback.png" /><h2 class="sample-title">Multiple Session Playback</h2>
+        <p class="sample-description">Play the video and stop it at some point during playback. When you refresh the page, the video will resume playing where you left off.</p>
+    </div>
+  </a>
+</section><section class="samples-section player_functionality"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-navigate-video-end.html">
+      <div class="samples-div">
+        <img alt="Navigate on Video End" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/navigate_on_video_end.png" /><h2 class="sample-title">Navigate on Video End</h2>
+        <p class="sample-description">Upon completion of the very short video you will see an overlay appear with a link to the Brightcove Home Page. The Brightcove supplied Overlay Plugin is used, so no JavaScript is needed. CSS is used to style the overlay.</p>
+    </div>
+  </a>
+</section><section class="samples-section playback_behavior player_functionality"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-scrolling-player-view.html">
+      <div class="samples-div">
+        <img alt="Scrolling Player into View" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/scrolling_player_into_view.png" /><h2 class="sample-title">Scrolling Player into View</h2>
+        <p class="sample-description">Scroll the player in and out of view. When the player is fully scrolled into view, the video will start playing. When you scroll the player out of view, the video will stop playing.</p>
+    </div>
+  </a>
+</section><section class="samples-section customize_ui player_functionality"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-toggling-overlay.html">
+      <div class="samples-div">
+        <img alt="Toggling an Overlay" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/toggling_an_overlay.png" /><h2 class="sample-title">Toggling an Overlay</h2>
+        <p class="sample-description">This example allows you to toggle the display of an interactive overlay. Select the Toggle Overlay button to show and hide the overlay.</p>
+    </div>
+  </a>
+</section><section class="samples-section player_functionality"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-trigger-rewind-custom-event.html">
+      <div class="samples-div">
+        <img alt="Trigger Rewind with a Custom Event" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/trigger_rewind_with_a_custom_event.png" /><h2 class="sample-title">Trigger Rewind with a Custom Event</h2>
+        <p class="sample-description">Start video playback. Then click on the rewind video button. You should see that video playback goes back 5 seconds.</p>
+    </div>
+  </a>
+</section><section class="samples-section player_functionality customize_ui popular"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-download-video-plugin.html">
+      <div class="samples-div">
+        <img alt="Download Video Plugin" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/download_video_plugin.png" /><h2 class="sample-title">Download Video Plugin**</h2>
+        <p class="sample-description">You will see a download icon located on the right side of the control bar to download the highest quality MP4 rendition of the video loaded in the player.</p>
+    </div>
+  </a>
+</section><section class="samples-section customize_ui"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-live-custom-error-message.html">
+      <div class="samples-div">
+        <img alt="Live Custom Error Message" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/live_custom_error_message.png" /><h2 class="sample-title">Live Custom Error Message</h2>
+        <p class="sample-description">The player will not be able to connect to the live stream. A ModalDialog object is created, a custom image placed in it, and then the ModalDialog displayed. If the ModalDialog is closed, the default error is shown.</p>
+    </div>
+  </a>
+</section><section class="samples-section player_styling"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-player-styling-playground.html">
+      <div class="samples-div">
+        <img alt="Player Styling Playground" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/player_styling_playground.png" /><h2 class="sample-title">Player Styling Playground</h2>
+        <p class="sample-description">In this topic you will use a Codepen, shown below, as a styling playground. View it in on the codepen.io site to make changes, and feel free to fork the Codepen for your own use.</p>
+    </div>
+  </a>
+</section><section class="samples-section playlists_and_groups customize_ui"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-horizontal-responsive-playlist.html">
+      <div class="samples-div">
+        <img alt="Horizontal Responsive Playlist" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/horizontal_responsive_playlist.png" /><h2 class="sample-title">Horizontal Responsive Playlist</h2>
+        <p class="sample-description">You will see the horizontal playlist below the player. If you resize your browser, you will see the player and playlist both resize.</p>
+    </div>
+  </a>
+</section><section class="samples-section playlists_and_groups"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-most-watched-videos-playlist.html">
+      <div class="samples-div">
+        <img alt="Most Watched Videos in Playlist**" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/most_watched_videos_in_playlist.png" /><h2 class="sample-title">Most Watched Videos in Playlist**</h2>
+        <p class="sample-description">In the following example, you will see the player with a playlist appearing to the right. The playlist is populated by retrieving the most popular videos, based on most number of plays, using the Brightcove Player catalog.</p>
+    </div>
+  </a>
+</section><section class="samples-section playlists_and_groups"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-newest-videos-playlist.html">
+      <div class="samples-div">
+        <img alt="Newest Videos in Playlist**" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/newest_videos_in_playlist.png" /><h2 class="sample-title">Newest Videos in Playlist**</h2>
+        <p class="sample-description">In the following player, you see a playlist that contains the 10 most recent videos added to the Knowledge Team's account.</p>
+    </div>
+  </a>
+</section><section class="samples-section playlists_and_groups"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-playback-api-paging.html">
+      <div class="samples-div">
+        <img alt="Playback API Paging" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/playback_api_paging.png" /><h2 class="sample-title">Playback API Paging**</h2>
+        <p class="sample-description">This example uses a Brightcove player to display a video in the player along with the first 3 videos in the playlist. Select the Next Videos button to display the next 3 videos in the playlist.</p>
+    </div>
+  </a>
+</section><section class="samples-section playlists_and_groups customize_ui"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-popular-videos-overlay.html">
+      <div class="samples-div">
+        <img alt="Popular Videos Overlay" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/popular_videos_overlay.png" /><h2 class="sample-title">Popular Videos Overlay**</h2>
+        <p class="sample-description">The overlay will appear when you pause a video, or the video ends. The request to the Analytics API to get the 6 most viewed videos in the past 24 hours is shown, along with the API response.</p>
+    </div>
+  </a>
+</section><section class="samples-section playlists_and_groups"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-popular-videos-overlay.html">
+      <div class="samples-div">
+        <img alt="Popular Videos Playlist" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/popular_videos_playlist.png" /><h2 class="sample-title">Popular Videos Playlist**</h2>
+        <p class="sample-description">The playlist will appear automatically as soon as the video data is retrieved. The request to the Analytics API to get the 6 most viewed videos in the past 24 hours is shown, along with the API response.</p>
+    </div>
+  </a>
+</section><section class="samples-section playlists_and_groups customize_ui"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-related-videos-playlist.html">
+      <div class="samples-div">
+        <img alt="Related Videos from a Playlist" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/related_videos_from_a_playlist.png" /><h2 class="sample-title">Related Videos from a Playlist**</h2>
+        <p class="sample-description">This example displays an interactive overlay of related video thumbnails when playback is paused or has ended. </p>
+    </div>
+  </a>
+</section><section class="samples-section playlists_and_groups customize_ui"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-related-videos-tags-cms-api.html">
+      <div class="samples-div">
+        <img alt="Related Videos via Tags" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/related_videos_via_tags.png" /><h2 class="sample-title">Related Videos via Tags (CMS API)**</h2>
+        <p class="sample-description">This example displays an interactive overlay of related video thumbnails when playback is paused or has ended. </p>
+    </div>
+  </a>
+</section><section class="samples-section playlists_and_groups customize_ui"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-related-videos-tags-playback-api.html">
+      <div class="samples-div">
+        <img alt="Related Videos via Tags" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/related_videos_via_tags_playback_api.png" /><h2 class="sample-title">Related Videos via Tags (Playback API)**</h2>
+        <p class="sample-description">This example displays an interactive overlay of related video thumbnails when playback is paused or has ended.</p>
+    </div>
+  </a>
+</section><section class="samples-section playlists_and_groups customize_ui"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-tabbed-playlist.html">
+      <div class="samples-div">
+        <img alt="Tabbed Playlist" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/tabbed_playlist.png" /><h2 class="sample-title">Tabbed Playlist**</h2>
+        <p class="sample-description">Select a tab in the tabbed navigation to switch between playlists. Select a video within a playlist to start video playback.</p>
+    </div>
+  </a>
+</section><section class="samples-section customize_ui player_functionality"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-all-time-video-views.html">
+      <div class="samples-div">
+        <img alt="All Time Video Views" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/all_time_video_views.png" /><h2 class="sample-title">All Time Video Views</h2>
+        <p class="sample-description">The player below includes a playlist to show you that the code used to retrieve all time views will work with playlists. It will also work with a single video player.</p>
+    </div>
+  </a>
+</section><section class="samples-section playlists_and_groups"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-play-video-playlist.html">
+        <div class="samples-div">
+          <img alt="Video Before Playlist" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/video-before-playlist.png" /><h2 class="sample-title">Video Before Playlist</h2><p class="sample-description">Create a playlist-enabled player to start with a video not in the playlist.</p>
+      </div>
+    </a>
+  </section><section class="samples-section playlists_and_groups"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-play-video-end-playlist.html">
+        <div class="samples-div">
+          <img alt="Video at End of Playlist" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/video_at_end_of_playlist.png" /><h2 class="sample-title">Video at End of Playlist</h2><p class="sample-description">You see that the playlist has three videos in it. After those three videos play, another video NOT in the playlist will play. After the video not in the playlist plays, video playback stops.</p>
+      </div>
+    </a>
+  </section><section class="samples-section player_functionality customize_ui"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-playback-rate-adjuster.html">
+        <div class="samples-div">
+          <img aalt="Playback Rate Adjuster" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/playback-rate-adjuster.png" /><h2 class="sample-title">Playback Rate Adjuster</h2><p class="sample-description">Add a playback rate button to the Brightcove Player control bar.</p>
+      </div>
+    </a>
+  </section><section class="samples-section player_styling popular"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-background-video.html">
+        <div class="samples-div">
+          <img alt="Background Video" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/bkgd-video.png" /><h2 class="sample-title">Background Video</h2><p class="sample-description">Use a Brightcove player for a background video on your web page.</p>
+      </div>
+    </a>
+  </section><section class="samples-section player_functionality customize_ui"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-get-seeked-time.html">
+        <div class="samples-div">
+          <img alt="Get Seeked Time" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/get_seeked_time.png" /><h2 class="sample-title">Get Seeked Time</h2>
+          <p class="sample-description">As you click in the seekbar you will see the times at which you clicked displayed below the player.</p>
+      </div>
+    </a>
+  </section><section class="samples-section player_functionality customize_ui playback_behavior"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-chapter-markers-progress-bar.html">
+        <div class="samples-div">
+          <img alt="Chapter Markers in Progress Bar" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/chapter-markers-progress-bar.png" /><h2 class="sample-title">Chapter Markers in Progress Bar</h2>
+          <p class="sample-description">Create markers in the progress bar to display defined chapters.</p>
+      </div>
+    </a>
+  </section><section class="samples-section playback_behavior"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-dynamic-custom-endscreens.html">
+        <div class="samples-div">
+          <img alt="Dynamic Custom Endscreen" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/dynamic-custom-endscreen.png" /><h2 class="sample-title">Dynamic Custom Endscreen</h2>
+          <p class="sample-description">Add a link associated with video data in the custom endscreen.</p>
+      </div>
+    </a>
+  </section><section class="samples-section playback_behavior"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-are-you-still-watching.html">
+        <div class="samples-div">
+          <img alt="Are You Still Watching?" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/are-you-still-watching.png" /><h2 class="sample-title">Are You Still Watching?</h2>
+          <p class="sample-description">In this topic, you will learn how to create a Brightcove player that detects when the viewer has stopped watching, while leaving the video playing.</p>
+      </div>
+    </a>
+  </section><section class="samples-section playback_behavior"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-enlarge-player-mouseover.html">
+        <div class="samples-div">
+          <img alt="Enlarge Player on Mouseover" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/enlarge-player-mouseover.png" /><h2 class="sample-title">Enlarge Player on Mouseover</h2>
+          <p class="sample-description">In this topic, you will learn how to use JavaScript and CSS to enlarge a small player when you mouse over it, and then shrink it to small size when you mouse off.</p>
+      </div>
+    </a>
+  </section><section class="samples-section playback_behavior"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-floating-player.html">
+        <div class="samples-div">
+          <img alt="Floating Player" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/floating-player.png" /><h2 class="sample-title">Floating Player</h2>
+          <p class="sample-description">In this topic, you will learn how to configure the HTML/CSS/JavaScript to allow the player to be dragged to a new position. The player position will then remain fixed even when the user scrolls up and down the page.</p>
+      </div>
+    </a>
+  </section><section class="samples-section playback_behavior"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-limited-plays.html">
+        <div class="samples-div">
+          <img alt="Limited Plays" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/limited-plays.png" /><h2 class="sample-title">Limited Plays</h2>
+          <p class="sample-description">In this topic, you will learn how to use a Brightcove player that limits how many times a user can view a video in a single day.</p>
+      </div>
+    </a>
+  </section><section class="samples-section playback_behavior"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-register-play.html">
+        <div class="samples-div">
+          <img alt="Register to Play" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/register-play.png" /><h2 class="sample-title">Register to Play</h2>
+          <p class="sample-description">In this topic, you will learn how to use a Brightcove player where the user must fill in a form to view the video.</p>
+      </div>
+    </a>
+  </section><section class="samples-section playback_behavior"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-register-play-after-preview.html">
+        <div class="samples-div">
+          <img alt="Register to Play after Preview" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/register-play.png" /><h2 class="sample-title">Register to Play after Preview</h2>
+          <p class="sample-description">In this topic, you will learn how to use a Brightcove player where the user must fill in a form to view the video, after a short preview is shown. </p>
+      </div>
+    </a>
+  </section><section class="samples-section playback_behavior"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-password-view-video.html">
+        <div class="samples-div">
+          <img alt="Password to View Video" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/password-view-video.png" /><h2 class="sample-title">Password to View Video</h2>
+          <p class="sample-description">In this topic, you will learn how to ask for a password to view the video.</p>
+      </div>
+    </a>
+  </section><section class="samples-section customize_ui"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-toggle-controlbar.html">
+        <div class="samples-div">
+          <img alt="Toggle controlbar" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/toggle-controlbar.png" /><h2 class="sample-title">Toggle Controlbar</h2>
+          <p class="sample-description">In this topic, you will learn how to have a button toggle the display of the controlbar.</p>
+      </div>
+    </a>
+  </section><section class="samples-section customize_ui playback_behavior"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-back-and-forward-buttons.html">
+        <div class="samples-div">
+          <img alt="Back and forward buttons" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/back-forward-buttons.png" /><h2 class="sample-title">Back Forward Buttons</h2>
+          <p class="sample-description">In this topic, you will learn how to place buttons in the controlbar that rewind and advance the video a specified number of seconds.</p>
+      </div>
+    </a>
+  </section><section class="samples-section customize_ui playback_behavior"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-add-country-flag-caption-label.html">
+        <div class="samples-div">
+          <img alt="Add Country Flag to Caption Label" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/add-country-flag-caption-label.png" /><h2 class="sample-title">Add Country Flag to Caption Label</h2>
+          <p class="sample-description">In this topic, you will learn how to add a country flag in front of the country caption label.</p>
+      </div>
+    </a>
+  </section><section class="samples-section customize_ui"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-download-transcript.html">
+        <div class="samples-div">
+          <img alt="Download Transcript" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/download-transcript.png" /><h2 class="sample-title">Download Transcript</h2>
+          <p class="sample-description">In this topic, you will learn how to use the captions WebVTT file and convert it into a downloadable transcript.</p>
+      </div>
+    </a>
+  </section><section class="samples-section player_functionality customize_ui"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-download-audio-plugin.html">
+        <div class="samples-div">
+          <img alt="Download Audio" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/download-audio.png" /><h2 class="sample-title">Download Audio</h2>
+          <p class="sample-description">In this topic, you will learn how to create a link to allow downloading the best quality MP4 of an audio asset playing in Brightcove Player.</p>
+      </div>
+    </a>
+  </section><section class="samples-section playback_behavior"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-automatically-set-caption-language.html">
+        <div class="samples-div">
+          <img alt="Set caption language" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/automatically-set-caption-language.png" /><h2 class="sample-title">Automatically Set Caption Language</h2>
+          <p class="sample-description">In this topic, you will learn how to set the default caption language based on the browser language.</p>
+      </div>
+    </a>
+  </section><section class="samples-section playback_behavior"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-automatically-set-audio-track-language.html">
+        <div class="samples-div">
+          <img alt="Set audio track language" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/automatically-set-audio-track-language.png" /><h2 class="sample-title">Automatically Set Audio Track Language</h2>
+          <p class="sample-description">In this topic, you will learn how to set the default audio track language based on the browser language.</p>
+      </div>
+    </a>
+  </section><section class="samples-section player_styling playback_behavior"><a class="nturl" style="text-decoration:none" href="brightcove-player-sample-vertical-video.html">
+        <div class="samples-div">
+          <img alt="Set audio track language" src="https://learning-services-media.brightcove.com/doc-assets/node/18630-popular-brightcove-player-samples/vertical-video.png" /><h2 class="sample-title">Vertical Video</h2>
+          <p class="sample-description">In this topic, you will learn how to display a vertical video with the Brightcove Player. </p>
+      </div>
+    </a>
+  </section></section><script src="https://learning-services-media.brightcove.com/doc-assets/js/samples/samples.js"></script><script>
+<!--//--><![CDATA[// ><!--
+
+  // if the sample_groups array is empty, all samples will be shown
+  var group_names = [
+        'popular',
+        'all',
+        'advertising',
+        'playback_behavior',
+        'player_functionality',
+        'customize_ui',
+        'player_styling',
+        'playlists_and_groups'
+      ];
+  if (group_names.length > 0) {
+    BCLS_player_samples(group_names);
+  }
+
+//--><!]]>
+</script></div>
+      
+    </div>
+</div></div>
+          </div>
+  
+  </div>
+  </div>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="row">
+            <div class="region region-footer-top-left col-md-9" style="margin-bottom: 1em;">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove Support</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://status.brightcove.com">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="contact-support.html" data-drupal-link-system-path="node/18632">Support - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.brightcove.com/en/contact/create">Support - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Documentation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Training</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="online-training-courses.html" data-drupal-link-system-path="node/18286">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a course</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://www.brightcove.com">Brightcove.com</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="region region-footer-top-right col-md-3">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Brightcove Inc. (NASDAQ: BCOV), is a leading global provider of powerful cloud solutions for delivering and monetizing video across connected devices.</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="row">
+            <div class="region region-footer-bottom-left col-md-8">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item">Brightcove Inc. All rights reserved.</div>
+      
+      <div class="field field--name-field-legal-links field--type-link field--label-hidden field--items">
+              <div class="field--item"><a href="https://www.brightcove.com/en/privacy">Privacy</a></div>
+              <div class="field--item"><a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="region region-footer-bottom-right col-md-4">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items">
+              <div class="field--item">
+
+<a href="https://www.linkedin.com/company/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://twitter.com/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://www.facebook.com/Brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://plus.google.com/100830370440271567091" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18630","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="sites/default/files/js/js_dYlzogjLAmkM6MoOxrsnOZ4ZYKZIrmjQ4nCzj_oEOuc.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGkkHXlVrBldRXQE=","queueTime":0,"applicationTime":15,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

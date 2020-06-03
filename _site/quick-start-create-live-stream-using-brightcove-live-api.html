@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="sites/default/files/favicon-64.png" type="image/png" />
+<link rel="alternate" hreflang="en" href="quick-start-create-live-stream-using-brightcove-live-api.html" />
+<link rel="canonical" href="quick-start-create-live-stream-using-brightcove-live-api.html" />
+<link rel="shortlink" href="quick-start-create-live-stream-using-brightcove-live-api.html" />
+<link rel="revision" href="quick-start-create-live-stream-using-brightcove-live-api.html" />
+
+    <title>Quick Start: Create a Live Stream Using the Brightcove Live API | Brightcove Learning</title>
+    <link rel="stylesheet" media="all" href="sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw_q23msc.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4_q23msc.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on" />
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  </head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="navigation-secondary clearfix">
+          <div class="region region-navigation-secondary">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary Navigation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="contact-support.html" title="Create a Support Request" data-drupal-link-system-path="node/18632">Support Request</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://status.brightcove.com/">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://university.brightcove.com/">Brightcove University</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gtranslate">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" style="font-weight:bold;background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">English</option><option value="en|fr" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">French</option><option value="en|de" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">German</option><option value="en|ja" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">Japanese</option><option value="en|ko" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">Korean</option><option value="en|es" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">Spanish</option></select>
+</div>
+<div class="gtranslate__credits">
+  Translations Provided by Google Translate
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="navbar-header col-md-3">
+                  <a class="logo navbar-btn pull-left" href="index.html" title="Home" rel="home">
+            <img src="themes/custom/bcdocs/images/brightcove.png" alt="Home" />
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" title="Home page" data-drupal-link-system-path="node/18643">Home</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Products
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="video-cloud.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://gallery.support.brightcove.com">Gallery</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a href="social.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ssai.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Quick Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="analytics-api.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience-api.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-api.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-connectors-video-cloud.html" data-drupal-link-system-path="node/18662">CMS Connectors for Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="data-collection-api.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="delivery-system-api.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="developer-tools-and-concepts.html" data-drupal-link-system-path="node/18430">Developer Tools and Concepts</a>
+                  </li>
+                              <li class="expanded">
+        <a href="native-player-sdks.html" data-drupal-link-system-path="node/18367">Device SDKs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="dynamic-ingest-api.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="getting-started-brightcove-apis-0.html" data-drupal-link-system-path="node/18711">Getting Started - Brightcove APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="page-experience-api.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ingest-profiles-api.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="oauth-api.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="platform-api-code-samples.html" data-drupal-link-system-path="node/18675">Platform API Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="playback-api.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-code-samples.html" data-drupal-link-system-path="node/18630">Player Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-developer.html" data-drupal-link-system-path="node/18362">Player Developer</a>
+                  </li>
+                              <li class="expanded">
+        <a href="player-management-api.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="policy-api.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="release-notes.html" data-drupal-link-system-path="node/18687">Release Notes</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Training
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="https://university.brightcove.com">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a Course</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a href="brightcove-support-documentation-announcements.html" title="See what&#039;s new in Brightcove Documentation" data-drupal-link-system-path="node/18896">What&#039;s New</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="full-width-headline">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" role="heading">
+            <div class="region region-header">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      Documentation
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="main-container container  js-quickedit-main-content">
+    <div class="row">
+
+                              <aside class="col-sm-3" role="complementary">
+              <div class="region region-sidebar-first">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="quick-start-create-live-stream-using-brightcove-live-api.html" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group">
+      <label for="edit-search" class="control-label sr-only">Search</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="Search" />
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-tmwl7by7t7xjcel-73rfug2i6o0encymfts0ygkjmno" type="hidden" name="form_build_id" value="form-tMwL7bY7t7xJCEL-73rFug2I6O0enCYmFts0yGKJMNo" /><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form" /><div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix">
+  
+      <h2 class="block-title">On This Page</h2>
+    
+
+      <div class="bc-ipnav-block"></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="highlighted">  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a id="main-content"></a>
+            <div class="region region-content">
+        <h1 class="page-header"><span>Quick Start: Create a Live Stream Using the Brightcove Live API</span>
+</h1>
+
+  
+<div class="node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+      </div>
+
+  <div class="group-second-row">
+  
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+          <div class="field--item">Live</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">API Developer</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-topics field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Topic(s)</div>
+          <div class="field--items">
+              <div class="field--item">Code Samples</div>
+          <div class="field--item">Live Streaming</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-apis field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">API(s)</div>
+          <div class="field--items">
+              <div class="field--item">Live API</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item"><p>This tutorial will walk you through creating a live stream job using the Live API.</p>
+                <article class="bcls-article"><section class="bcls-section"><h2 id="What_you_need">What you need</h2>
+
+<p>To complete this tutorial, you need the following.</p>
+
+<ul><li>An account set up for the Live API</li>
+	<li>An api key for the Live API (provided to you when the account is set up)</li>
+	<li>A Video Cloud account (not required to create the live stream job, but needed to set up playback in the Brightcove Player)</li>
+	<li>If you will be using the CMS API to create the Video Cloud video rather than Studio, you will need client credentials with video/read and video/write permissions - if you are not familiar with the process of getting client credentials, see the <a href="#authentication">authentication</a> section below.</li>
+	<li>The ability to make REST API requests either via <a href="oauth-create-client-credentials-using-curl.html">cURL</a> or a REST client such as <a href="use-insomnia-api-requests.html">Insomnia</a> or <a href="oauth-create-client-credentials-using-postman.html">Postman</a>.
+	<p>To help you, we've prepared some Insomnia and Postman imports you can use for the exercise (at Brightcove Learning Services, we prefer and use Insomnia, but Postman will also work if that is what you have):</p>
+
+	<p>In each of the zip files, you will find a readme page to help you along.</p>
+
+	<ul><li><a href="https://learning-services-media.brightcove.com/doc-assets/node/17765-quick-start-brightcove-live-api/insomnia-imports.zip">Insomnia Workspace import</a></li>
+		<li><a href="https://learning-services-media.brightcove.com/doc-assets/node/17765-quick-start-brightcove-live-api/postman-imports.zip">Postman Collection and Environment import</a></li>
+	</ul></li>
+	<li>To create an actual live stream, you will need either a software or hardware encoder for live streaming. The instructions below will include steps for setting up the live stream using Wirecast ( <a href="http://www.telestream.net/controls/wirecast/download-wirecast.htm">sign up for a trial</a>). If you are using a different encoder, the process will be different but should be similar in terms of the information you need from the Live API response.</li>
+</ul></section><section class="bcls-section"><h2 id="getCredentials" class="bcls-expander-head">Get credentials for the CMS API</h2>
+
+<div class="bcls-expander-content">
+<p>To use the CMS API you will need proper credentials.</p>
+
+<p>The easiest way to get credentials in most cases is through the Studio Admin API Authentication section (requires admin permissions on your account). See <a href="managing-api-authentication-credentials.html">Managing API Authentication Credentials</a> for details. In this case, the permissions you need are for <strong>sharing relationships</strong> - you need both read and write permissions:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="Sharing Relationship Permissions" src="https://learning-services-media.brightcove.com/doc-assets/node/17765-quick-start-brightcove-live-api/17765-api-permissions.png" /><figcaption class="bcls-caption--image">Sharing Relationship Permissions</figcaption></figure><p>If the permissions you need are not available in Studio, or if you prefer to get them directly from the OAuth API, use your choice of the <strong>Get Client Credentials</strong> documents listed below. Whichever option you choose, you will need to ask for the correct operation permissions. The following can be used with cURL or Postman to get the proper permissions:</p>
+
+<pre class="line-numbers">
+    <code class="language-json notranslate">"operations": [
+    "video-cloud/videos/read",
+    "video-cloud/videos/create",
+    "video-cloud/videos/update"]</code></pre>
+
+<ul><li><a href="oauth-create-client-credentials-using-curl.html">OAuth: Get Client Credentials Using cURL</a></li>
+	<li><a href="oauth-create-client-credentials-using-postman.html">OAuth: Get Client Credentials Using Postman</a></li>
+</ul></div>
+</section><section class="bcls-section"><h2 id="Create_live_job">Create live job</h2>
+
+<p>First we will create the live job.</p>
+
+<ol class="bcls-tasklist"><li>For this step, you will submit a <code class="notranslate">POST </code> request to:
+
+	<pre class="line-numbers">
+<code class="language-http">https://api.bcovlive.io/v1/jobs
+</code>
+</pre>
+
+	<p>Use the following as the request body:</p>
+
+	<pre class="line-numbers">
+<code class="language-json notranslate">{
+    "live_stream": true,
+    "region": "us-west-2",
+    "reconnect_time": 1800,
+    "outputs": [
+        {
+            "label": "hls720p",
+            "live_stream": true,
+            "width": 1280,
+            "height": 720,
+            "video_codec": "h264",
+            "h264_profile": "high",
+            "video_bitrate": 2100,
+            "segment_seconds": 4,
+            "keyframe_interval": 60
+        },
+        {
+            "label": "hls540p",
+            "live_stream": true,
+            "width": 960,
+            "height": 540,
+            "video_codec": "h264",
+            "h264_profile": "main",
+            "video_bitrate": 1500,
+            "segment_seconds": 4,
+            "keyframe_interval": 60
+        },
+        {
+            "label": "hls360p",
+            "live_stream": true,
+            "width": 640,
+            "height": 360,
+            "video_codec": "h264",
+            "h264_profile": "main",
+            "video_bitrate": 800,
+            "segment_seconds": 4,
+            "keyframe_interval": 60
+        }
+    ]
+}
+</code>
+</pre>
+	</li>
+	<li>If you are using a REST client such as <a href="use-insomnia-api-requests.html">Insomnia</a> or <a href="use-postman-api-requests.html">Postman</a>, you will need to add the following headers for your request:
+	<table class="bcls-table"><thead><tr><th>Key</th>
+				<th>Value</th>
+			</tr></thead><tbody><tr><td>X-API-KEY</td>
+				<td><span class="bcls-input">YOUR API KEY</span></td>
+			</tr><tr><td>Content-Type</td>
+				<td>application/json</td>
+			</tr></tbody></table><p>Use the request body shown in step 1 above, and be sure to send the request using the POST method.</p>
+
+	<aside class="bcls-aside bcls-aside--information">If you prefer to use cURL, you will find the <a href="#curlCreateLiveJob">equivalent cURL command below</a>.</aside></li>
+	<li>The response from the API should look similar to this:
+	<pre class="line-numbers">
+<code class="language-json notranslate">{
+    "id": "15981d93877e490185e6ebc9af2c79a3",
+    "outputs": [
+        {
+            "id": "0-15981d93877e490185e6ebc9af2c79a3",
+            "playback_url": "http://bcovlive-a.akamaihd.net/15981d93877e490185e6ebc9af2c79a3/us-west-2/profile_0/chunklist.m3u8",
+            "playback_url_dvr": "http://bcovlive-a.akamaihd.net/15981d93877e490185e6ebc9af2c79a3/us-west-2/profile_0/chunklist_dvr.m3u8",
+            "playback_url_vod": "http://bcovlive-a.akamaihd.net/15981d93877e490185e6ebc9af2c79a3/us-west-2/profile_0/chunklist_vod.m3u8",
+            "label": "hls720p"
+        },
+        {
+            "id": "1-15981d93877e490185e6ebc9af2c79a3",
+            "playback_url": "http://bcovlive-a.akamaihd.net/15981d93877e490185e6ebc9af2c79a3/us-west-2/profile_1/chunklist.m3u8",
+            "playback_url_dvr": "http://bcovlive-a.akamaihd.net/15981d93877e490185e6ebc9af2c79a3/us-west-2/profile_1/chunklist_dvr.m3u8",
+            "playback_url_vod": "http://bcovlive-a.akamaihd.net/15981d93877e490185e6ebc9af2c79a3/us-west-2/profile_1/chunklist_vod.m3u8",
+            "label": "hls540p"
+        },
+        {
+            "id": "2-15981d93877e490185e6ebc9af2c79a3",
+            "playback_url": "http://bcovlive-a.akamaihd.net/15981d93877e490185e6ebc9af2c79a3/us-west-2/profile_2/chunklist.m3u8",
+            "playback_url_dvr": "http://bcovlive-a.akamaihd.net/15981d93877e490185e6ebc9af2c79a3/us-west-2/profile_2/chunklist_dvr.m3u8",
+            "playback_url_vod": "http://bcovlive-a.akamaihd.net/15981d93877e490185e6ebc9af2c79a3/us-west-2/profile_2/chunklist_vod.m3u8",
+            "label": "hls360p"
+        },
+        {
+            "id": "3-15981d93877e490185e6ebc9af2c79a3",
+            "playlist_type": "defaultS3",
+            "type": "playlist",
+            "filename": "playlist.m3u8",
+            "dvr_filename": "playlist_dvr.m3u8",
+            "playback_url": "http://bcovlive-a.akamaihd.net/15981d93877e490185e6ebc9af2c79a3/us-west-2/playlist.m3u8",
+            "playback_url_dvr": "http://bcovlive-a.akamaihd.net/15981d93877e490185e6ebc9af2c79a3/us-west-2/playlist_dvr.m3u8",
+            "ssai_playback_urls": {
+                "685b239f582c42fca49da33be4f2328e": {
+                    "playback_url": "http://bcovlive-a.akamaihd.net/15981d93877e490185e6ebc9af2c79a3/us-west-2/685b239f582c42fca49da33be4f2328e/playlist_ssaiM.m3u8",
+                    "playback_url_dvr": "http://bcovlive-a.akamaihd.net/15981d93877e490185e6ebc9af2c79a3/us-west-2/685b239f582c42fca49da33be4f2328e/playlist_dvr_ssaiM.m3u8",
+                    "playback_added_cdns": [],
+                    "description": "House Ads - a95ac581551b4478b27910e5675db1f8",
+                    "type": "ads"
+                },
+                "c96e2d00d6744c65a3eddb15425e4a51": {
+                    "playback_url": "http://bcovlive-a.akamaihd.net/15981d93877e490185e6ebc9af2c79a3/us-west-2/counter/playlist_ssaiM.m3u8",
+                    "playback_url_dvr": "http://bcovlive-a.akamaihd.net/15981d93877e490185e6ebc9af2c79a3/us-west-2/counter/playlist_dvr_ssaiM.m3u8",
+                    "playback_added_cdns": [],
+                    "description": "House Counter - a95ac581551b4478b27910e5675db1f8",
+                    "type": "counter"
+                }
+            }
+        }
+        ],
+        <span class="bcls-highlight">"stream_url": "rtmp://ep1-apse2.bcovlive.io:1935/15981d93877e490185e6ebc9af2c79a3"</span>,
+        <span class="bcls-highlight">"stream_name": "alive"</span>,
+        "encryption": {},
+        "playback_url": "http://bcovlive-a.akamaihd.net/15981d93877e490185e6ebc9af2c79a3/us-west-2/playlist.m3u8",
+        "playback_url_dvr": "http://bcovlive-a.akamaihd.net/15981d93877e490185e6ebc9af2c79a3/us-west-2/playlist_dvr.m3u8",
+        "ssai_playback_urls": {
+            "685b239f582c42fca49da33be4f2328e": {
+            "playback_url": "http://bcovlive-a.akamaihd.net/15981d93877e490185e6ebc9af2c79a3/us-west-2/685b239f582c42fca49da33be4f2328e/playlist_ssaiM.m3u8",
+            "playback_url_dvr": "http://bcovlive-a.akamaihd.net/15981d93877e490185e6ebc9af2c79a3/us-west-2/685b239f582c42fca49da33be4f2328e/playlist_dvr_ssaiM.m3u8",
+            "playback_added_cdns": [],
+            "description": "House Ads - a95ac581551b4478b27910e5675db1f8",
+            "type": "ads"
+            },
+            "c96e2d00d6744c65a3eddb15425e4a51": {
+            "playback_url": "http://bcovlive-a.akamaihd.net/15981d93877e490185e6ebc9af2c79a3/us-west-2/counter/playlist_ssaiM.m3u8",
+            "playback_url_dvr": "http://bcovlive-a.akamaihd.net/15981d93877e490185e6ebc9af2c79a3/us-west-2/counter/playlist_dvr_ssaiM.m3u8",
+            "playback_added_cdns": [],
+            "description": "House Counter - a95ac581551b4478b27910e5675db1f8",
+            "type": "counter"
+        }
+    }
+}
+</code>
+</pre>
+	</li>
+	<li>For our purposes, the important fields in the response are:
+	<ul><li>stream_url (line 51)</li>
+		<li>stream_name (line 52)</li>
+		<li>playback_url (line 54)</li>
+	</ul><aside class="bcls-aside bcls-aside--information">Note that you can also use the <code class="notranslate">playback_url_dvr</code> if you want DVR capability; the <code class="notranslate">playback_url_vod</code> is for internal use only.</aside><aside class="bcls-aside bcls-aside--information">Note that DVR capability will only work if the player supports it. See <a href="live-dvrux-plugin.html">Live DVRUX Plugin</a> for the Brightcove Player plugin required.</aside><p>You will need the values of these fields - from your own response - in the steps that follow.</p>
+	</li>
+</ol></section><section class="bcls-section"><h2 id="Set_up_Video_Cloud_video">Set up Video Cloud video</h2>
+
+<p>Now that we have the live stream information, we will set up a remote video in Video Cloud so that we can play it in a Brightcove Player.</p>
+
+<div>In these steps, we set the video up using the <a href="cms-api.html">CMS API</a>, but this can also be done in Video Cloud Studio, if you prefer - see the <a href="#useStudio">alternative steps below</a>.
+
+<p>If you are using Insomnia or Postman, you will need to set up OAuth2 authentication using your client credentials. See one of the following guides if you need help:</p>
+
+<ul><li><a href="use-insomnia-api-requests.html">Use Insomnia for API Requests</a></li>
+	<li><a href="use-postman-api-requests.html">Use Postman for API Requests</a></li>
+</ul><ol class="bcls-tasklist"><li>
+	<p>First, you will need to create a new video by making a <code class="notranslate">POST</code> request to:</p>
+
+	<pre>
+<code class="language-http">https://cms.api.brightcove.com/v1/accounts/<span class="bcls-input">account_id</span>/videos</code></pre>
+	</li>
+	<li>
+	<p>The request body can include several pieces of metadata (see <a href="https://docs.brightcove.com/cms-api/v1/doc/index.html#/Videos/CreateVideo">the API reference</a> for details), but the only thing required is a <code class="notranslate">name</code>:</p>
+
+	<pre class="line-numbers">
+<code class="language-json notranslate">{
+    "name": "<span class="bcls-input">some name for your live stream</span>"
+}</code></pre>
+	</li>
+	<li>
+	<p>The response will contain all the video metadata, but the important field is the <code class="notranslate">id</code>, which you will need to add the remote asset.</p>
+	</li>
+	<li>
+	<p>To add the HLS stream, you will make another <code class="notranslate">POST</code> request to:</p>
+
+	<pre>
+<code class="language-http">https://cms.api.brightcove.com/v1/accounts/<span class="bcls-input">account_id</span>/videos/<span class="bcls-input">video_id</span>/assets/hls_manifest</code></pre>
+	</li>
+	<li>
+	<p>This time, the request body will be:</p>
+
+	<pre class="line-numbers">
+<code class="language-json notranslate">{
+    "remote_url": "<span class="bcls-input">playback_url for your live stream</span>"
+}</code></pre>
+	</li>
+</ol></div>
+</section><section class="bcls-section"><h2 id="Add_video_to_player">Add video to a player</h2>
+
+<p>Now we will create a simple HTML page and add a player to it with the video we just created.</p>
+
+<aside class="bcls-aside bcls-aside--information">Here again we will use Studio to get the player publishing code - you can also do this using the <a href="overview-player-management-api.html">Player Management API</a> if you prefer.</aside><ol class="bcls-tasklist"><li>Create a simple HTML page to test the live stream player. You can include any other content you like, or none at all.</li>
+	<li>In the Studio Media Module, select the video created in the previous steps and click <strong>Publish and Embed &gt; Web Player</strong>:
+	<figure class="bcls-figure"><img class="bcls-image" alt="Publish Video" src="https://learning-services-media.brightcove.com/doc-assets/node/17765-quick-start-brightcove-live-api/17765-publish-video.png" /><figcaption class="bcls-caption--image">Publish Video</figcaption></figure></li>
+	<li>In the Publish dialog, select a player (the Brightcove Default Player is fine):
+	<figure class="bcls-figure"><img class="bcls-image" alt="Select Player" src="https://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/live-api/getting-started/quick-start/select-player.png" /><figcaption class="bcls-caption--image">Select Player</figcaption></figure></li>
+	<li>Scroll down, set the size the player as you wish, and then click in code block to select the Standard player code - copy this code and paste into the body of your html page:
+	<figure class="bcls-figure"><img class="bcls-image" alt="Get Publishing Code" src="https://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/live-api/getting-started/quick-start/get-publishing-code.png" /><figcaption class="bcls-caption--image">Get Publishing Code</figcaption></figure></li>
+	<li>Save your html page to a remote or local web server so that you can browse it.</li>
+	<li>Open the page in your web browser. Since we haven't started steaming, you will see a media error:
+	<figure class="bcls-figure"><img class="bcls-image" alt="Media Error" src="https://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/live-api/getting-started/quick-start/media-error.png" /><figcaption class="bcls-caption--image">Media Error</figcaption></figure></li>
+</ol></section><section class="bcls-section"><h2 id="curl_commands">cURL commands</h2>
+
+<p>This section provides alternative cURL commands for those who do not use a REST client such as Insomnia or Postman.</p>
+
+<h3 id="curlCreateLiveJob">cURL for creating a live job</h3>
+
+<pre class="line-numbers">
+<code class="language-bash notranslate">## Create Job - Simple
+curl -X "POST" "https://api.bcovlive.io/v1/jobs" \
+-H "X-API-KEY: <span class="bcls-input">YOUR_API_KEY_HERE</span>" \
+-H "Content-Type: application/json" \
+-d $'{
+"outputs": [
+{
+"height": 720,
+"video_bitrate": 2100,
+"segment_seconds": 4,
+"keyframe_interval": 60,
+"width": 1280,
+"video_codec": "h264",
+"label": "hls720p",
+"h264_profile": "high",
+"live_stream": true
+},
+{
+"height": 540,
+"video_bitrate": 1500,
+"segment_seconds": 4,
+"keyframe_interval": 60,
+"width": 960,
+"video_codec": "h264",
+"label": "hls540p",
+"h264_profile": "main",
+"live_stream": true
+},
+{
+"height": 360,
+"video_bitrate": 800,
+"segment_seconds": 4,
+"keyframe_interval": 60,
+"width": 640,
+"video_codec": "h264",
+"label": "hls360p",
+"h264_profile": "main",
+"live_stream": true
+}
+],
+"region": "us-west-2",
+"reconnect_time": 1800,
+"live_stream": true
+}'</code></pre>
+
+<p>Copy this code into a text editor, and replace <code class="notranslate">YOUR_API_KEY_HERE </code> with your own api key. Then copy and paste the code at a command line and run it.</p>
+</section><section class="bcls-section"><h2 id="useStudio">Use Studio to create the video</h2>
+
+<p>Here are alternative steps for creating the video in Studio.</p>
+
+<ol class="bcls-tasklist"><li>Login to Video Cloud Studio.</li>
+	<li>Go to the Media Module.</li>
+	<li>In the options on the left, click <strong>Add Remote Video</strong>:
+	<figure class="bcls-figure"><img class="bcls-image" alt="Add Remote Video Menu Item" src="https://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/live-api/getting-started/quick-start/add-remote-video-option.png" /><figcaption class="bcls-caption--image">Add Remote Video Menu Item</figcaption></figure></li>
+	<li>In the <strong>Add Remote Video</strong> dialog, add a video name and copy and paste the value for the <code class="notranslate">playback_url</code> from the Live API response into the URL field. Then click <strong>Add Rendition</strong>, and <strong>Save</strong>:
+	<figure class="bcls-figure"><img class="bcls-image" alt="Add Rendition Dialog" src="https://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/live-api/getting-started/quick-start/remote-video-dialog.png" /><figcaption class="bcls-caption--image">Add Rendition Dialog</figcaption></figure><aside class="bcls-aside bcls-aside--information">Note: if you want to stream over HTTPS for a secure stream, simply change <code class="notranslate">http</code> in the playback_url to <code class="notranslate">https</code>.</aside></li>
+</ol></section><section class="bcls-section"><h2 id="wirecast">Use Wirecast to stream an event</h2>
+
+<p>In this section, we will configure and use the Telestream Wirecast encoder to support a live streaming event. Telestream Wirecast software is a desktop application that captures input from your camera and produces a stream that can be delivered by a CDN. Note that there are hardware and other software based encoding solutions available that may be better suited for delivering your live streaming event. You can download a trial version of the Wirecast software from the <a href="http://www.telestream.net/controls/wirecast/download-wirecast.htm">Telestream website</a>.</p>
+
+<p class="BCL-aside">Note: You should have the Wirecast software installed and a camera connected to your computer before proceeding.</p>
+
+<p>To configure Wirecast for a live event, follow these steps.</p>
+
+<ol class="bcls-tasklist"><li>Open Wirecast.</li>
+	<li>Hover over the <strong>+,</strong> click <strong>Capture Devices</strong> and then select your camera.
+	<figure class="bcls-figure"><img class="bcls-image" alt="Select camera" src="https://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/live-api/getting-started/quick-start/wirecast-camera-select.png" /><figcaption class="bcls-caption--image">Selecting a camera</figcaption></figure></li>
+	<li>Click the arrow button ( <img alt="" src="https://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/live-api/getting-started/quick-start/arrow-icon.png" />) to make the camera shot the live shot.
+	<figure class="bcls-figure"><img class="bcls-image" alt="Camera setup" src="https://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/live-api/getting-started/quick-start/wirecast-camera-setup.png" /><figcaption class="bcls-caption--image">Wirecast camera configuration</figcaption></figure></li>
+	<li>Click the <strong>Stream</strong> button ( <img alt="" src="https://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/live-api/getting-started/quick-start/stream-icon.png" />). You will be prompted to configure the output settings.</li>
+	<li>Set the <strong>Destination</strong> to <strong>RTMP Server</strong>. Click <strong>OK</strong>.</li>
+	<li>For the <strong>Address</strong>, use the <strong>stream_url</strong> returned from the Live API (step 3).</li>
+	<li>For the <strong>Stream</strong>, use alive.
+	<figure class="bcls-figure"><img class="bcls-image" alt="Output settings" src="https://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/live-api/getting-started/quick-start/output-settings.png" /><figcaption class="bcls-caption--image">Wirecast output settings</figcaption></figure></li>
+	<li><strong>(Optional)</strong> To create additional output streams, click <strong>Add...</strong> When creating additional output streams, you may wish to create your own custom encoding profile to control the output bitrate. Make sure that the <strong>Stream</strong> name reflects the new bitrate.</li>
+	<li>Click <strong>OK</strong> to save the output settings.</li>
+	<li>Click the <strong>Stream</strong> button ( <img alt="" src="https://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/live-api/getting-started/quick-start/stream-icon.png" />). The live stream should begin.</li>
+</ol></section><section class="bcls-section"><h2 id="conclusion">Conclusion</h2>
+
+<p>You are now ready to create a live streaming session. You need to add the following to your encoder configuration:</p>
+
+<ul><li><code class="notranslate">stream_url</code>: add the <code class="notranslate">stream_url</code> from your job (the <code class="notranslate">rtmp</code> address)</li>
+	<li><code class="notranslate">stream_name</code>: the stream name must be <code class="notranslate">alive</code></li>
+</ul><p>Once you start the live stream, you should see it show up in the Brightcove player you created in the earlier steps.</p>
+</section></article></div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-block-1 clearfix" id="block-views-block-related-content-block-1">
+  
+    
+
+      <div class="form-group"><div class="view view-related-content view-id-related_content view-display-id-block_1 js-view-dom-id-67166994a4dab3c1dcbe2b1413bc620990b7b3b586a49a9d1a113fb4e261f404">
+  
+    
+      <div class="view-header">
+      <h2>Related content</h2>
+    </div>
+      
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="overview-brightcove-live-api.html" hreflang="en">Overview: Brightcove Live API</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="brightcove-live-program-ad-metadata-api.html" hreflang="en">Brightcove Live Program Ad Metadata API</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="reducing-latency-live-streams.html" hreflang="en">Reducing Latency for Live Streams</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="live-api-vod-live-event.html" hreflang="en">Live API: VOD from Live Event</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="quick-start-create-live-job-mpeg2-ts-input.html" hreflang="en">Quick Start: Create a Live Job for MPEG2-TS Input</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="quick-start-using-rtmp-outputs-live-events.html" hreflang="en">Quick Start: Using RTMP Outputs for Live Events</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="brightcove-live-best-practices.html" hreflang="en">Brightcove Live: Best Practices</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="live-api-cue-points-and-ad-beacons-ssai.html" hreflang="en">Live API: Cue Points and Ad Beacons with SSAI</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="live-api-notifications.html" hreflang="en">Live API: Notifications</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="live-api-creating-frame-accurate-clip.html" hreflang="en">Live API: Creating a Frame-Accurate Clip</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="row">
+            <div class="region region-footer-top-left col-md-9" style="margin-bottom: 1em;">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove Support</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://status.brightcove.com">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="contact-support.html" data-drupal-link-system-path="node/18632">Support - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.brightcove.com/en/contact/create">Support - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Documentation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Training</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="online-training-courses.html" data-drupal-link-system-path="node/18286">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a course</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://www.brightcove.com">Brightcove.com</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="region region-footer-top-right col-md-3">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Brightcove Inc. (NASDAQ: BCOV), is a leading global provider of powerful cloud solutions for delivering and monetizing video across connected devices.</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="row">
+            <div class="region region-footer-bottom-left col-md-8">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item">Brightcove Inc. All rights reserved.</div>
+      
+      <div class="field field--name-field-legal-links field--type-link field--label-hidden field--items">
+              <div class="field--item"><a href="https://www.brightcove.com/en/privacy">Privacy</a></div>
+              <div class="field--item"><a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="region region-footer-bottom-right col-md-4">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items">
+              <div class="field--item">
+
+<a href="https://www.linkedin.com/company/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://twitter.com/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://www.facebook.com/Brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://plus.google.com/100830370440271567091" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/17765","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGkkHXlVrBldRXQE=","queueTime":0,"applicationTime":26,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

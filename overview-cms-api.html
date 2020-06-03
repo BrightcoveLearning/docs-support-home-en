@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="sites/default/files/favicon-64.png" type="image/png" />
+<link rel="alternate" hreflang="en" href="overview-cms-api.html" />
+<link rel="canonical" href="overview-cms-api.html" />
+<link rel="shortlink" href="overview-cms-api.html" />
+<link rel="revision" href="overview-cms-api.html" />
+
+    <title>Overview: CMS API | Brightcove Learning</title>
+    <link rel="stylesheet" media="all" href="sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw_q23msc.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4_q23msc.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on" />
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  </head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="navigation-secondary clearfix">
+          <div class="region region-navigation-secondary">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary Navigation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="contact-support.html" title="Create a Support Request" data-drupal-link-system-path="node/18632">Support Request</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://status.brightcove.com/">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://university.brightcove.com/">Brightcove University</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gtranslate">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" style="font-weight:bold;background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">English</option><option value="en|fr" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">French</option><option value="en|de" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">German</option><option value="en|ja" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">Japanese</option><option value="en|ko" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">Korean</option><option value="en|es" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">Spanish</option></select>
+</div>
+<div class="gtranslate__credits">
+  Translations Provided by Google Translate
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="navbar-header col-md-3">
+                  <a class="logo navbar-btn pull-left" href="index.html" title="Home" rel="home">
+            <img src="themes/custom/bcdocs/images/brightcove.png" alt="Home" />
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" title="Home page" data-drupal-link-system-path="node/18643">Home</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Products
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="video-cloud.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://gallery.support.brightcove.com">Gallery</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a href="social.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ssai.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Quick Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="analytics-api.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience-api.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-api.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-connectors-video-cloud.html" data-drupal-link-system-path="node/18662">CMS Connectors for Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="data-collection-api.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="delivery-system-api.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="developer-tools-and-concepts.html" data-drupal-link-system-path="node/18430">Developer Tools and Concepts</a>
+                  </li>
+                              <li class="expanded">
+        <a href="native-player-sdks.html" data-drupal-link-system-path="node/18367">Device SDKs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="dynamic-ingest-api.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="getting-started-brightcove-apis-0.html" data-drupal-link-system-path="node/18711">Getting Started - Brightcove APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="page-experience-api.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ingest-profiles-api.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="oauth-api.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="platform-api-code-samples.html" data-drupal-link-system-path="node/18675">Platform API Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="playback-api.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-code-samples.html" data-drupal-link-system-path="node/18630">Player Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-developer.html" data-drupal-link-system-path="node/18362">Player Developer</a>
+                  </li>
+                              <li class="expanded">
+        <a href="player-management-api.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="policy-api.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="release-notes.html" data-drupal-link-system-path="node/18687">Release Notes</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Training
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="https://university.brightcove.com">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a Course</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a href="brightcove-support-documentation-announcements.html" title="See what&#039;s new in Brightcove Documentation" data-drupal-link-system-path="node/18896">What&#039;s New</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="full-width-headline">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" role="heading">
+            <div class="region region-header">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      Documentation
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="main-container container  js-quickedit-main-content">
+    <div class="row">
+
+                              <aside class="col-sm-3" role="complementary">
+              <div class="region region-sidebar-first">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="overview-cms-api.html" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group">
+      <label for="edit-search" class="control-label sr-only">Search</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="Search" />
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-tblobu45xrgbacpqajun4clxgjpxmz6lfu2qjsodfus" type="hidden" name="form_build_id" value="form-tBloBu45XrGBAcPQajUN4ClXgjPXMz6lfu2QJsODFus" /><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form" /><div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix">
+  
+      <h2 class="block-title">On This Page</h2>
+    
+
+      <div class="bc-ipnav-block"></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="highlighted">  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a id="main-content"></a>
+            <div class="region region-content">
+        <h1 class="page-header"><span>Overview: CMS API</span>
+</h1>
+
+  
+<div class="node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+      </div>
+
+  <div class="group-second-row">
+  
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">API Developer</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Manage Videos</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-topics field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Topic(s)</div>
+          <div class="field--items">
+              <div class="field--item">API Overviews</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-apis field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">API(s)</div>
+          <div class="field--items">
+              <div class="field--item">CMS API</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item"><p>In this topic, you will get an overview of the CMS API. The CMS API provides uncached read access to the data. This is important for time-sensitive publishing workflows because you make changes to videos and playlists using the CMS API and quickly read the data to verify that is correct.</p>
+                <article class="bcls-article"><section class="bcls-section"><h2 id="api-reference">API reference</h2>
+
+<p>Also see the <a href="https://docs.brightcove.com/cms-api/v1/doc/index.html">API Reference</a>.</p>
+</section><section class="bcls-section"><h2 id="General_Information">General Information</h2>
+
+<h3>Base URL</h3>
+
+<p>The base URL for the <span class="”notranslate”">CMS API</span> is:</p>
+
+<pre class="line-numbers">
+			<code class="language-http notranslate">https://cms.api.brightcove.com/v1</code></pre>
+
+<h4>Account path</h4>
+
+<p>In all cases, requests will be made for a specific <span class="”notranslate”">Video Cloud</span> Account. So, you will always add the term <code class="notranslate">accounts</code> followed by your account id to the base URL:</p>
+
+<pre class="line-numbers">
+			<code class="language-http notranslate">https://cms.api.brightcove.com/v1<strong>/accounts/{account_id}</strong></code></pre>
+
+<h3>Authentication</h3>
+
+<p>Authentication for requests requires an <span class="”notranslate”">Authorization header</span> :</p>
+
+<pre class="line-numbers">
+			<code class="language-http notranslate">Authorization: Bearer {access_token}</code></pre>
+
+<p>The <code class="notranslate">access_token</code> is a temporary OAuth2 access token that must be obtained from the <span class="”notranslate”">Brightcove OAuth</span> service. For details on how to obtain client credentials and use them to retrieve access tokens, see the <a href="overview-oauth-api-v4.html">Brightcove OAuth Overview</a>.</p>
+
+<h3>Operations</h3>
+
+<p>When you request client credentials, you will need to specify the type of account access or operations that you want. The following is a list of the currently supported operations for the <span class="”notranslate”">CMS API</span> :</p>
+
+<ul><li>Video data:
+	<p><code class="notranslate">video-cloud/video/read</code><br /><code class="notranslate">video-cloud/video/create</code><br /><code class="notranslate">video-cloud/video/update</code><br /><code class="notranslate">video-cloud/video/delete</code><br />
+	or<br /><code class="notranslate">video-cloud/video/all</code><br /><code class="notranslate">video-cloud/video/assets/delete</code> (only needed if you want to delete digital masters)</p>
+	</li>
+	<li>Playlist data:
+	<p><code class="notranslate">video-cloud/playlist/read</code><br /><code class="notranslate">video-cloud/playlist/create</code><br /><code class="notranslate">video-cloud/playlist/update</code><br /><code class="notranslate">video-cloud/playlist/delete</code><br />
+	or<br /><code class="notranslate">video-cloud/playlist/all</code></p>
+	</li>
+	<li>Notifications:
+	<ul><li><code class="notranslate">video-cloud/notifications/all</code> (for <a href="#notifications">Notifications</a>)</li>
+	</ul></li>
+</ul></section><section class="bcls-section"><h2 id="Rate_limiting">Rate limiting</h2>
+
+<p>This <span class="”notranslate”">CMS API</span> provides uncached read access to the data. This is important for time-sensitive publishing workflows because you make changes to videos and playlists using the <span class="”notranslate”">CMS API</span> and quickly read the data to verify that is correct.</p>
+
+<p>The <span class="”notranslate”">CMS API</span> is not appropriate for high scale runtime usage (such as accessing videos on a high traffic public web page). For high traffic applications, you must use a cached interface such as : the <span class="”notranslate”">Playback API</span> , Gallery, Players, or the Native SDK's.</p>
+
+<p>To ensure the performance of the <span class="”notranslate”">Video Cloud</span> system, no more than 20 concurrent calls to the <span class="”notranslate”">CMS API</span> are allowed per account. Access frequency should be less than 10 requests per second.</p>
+
+<aside class="bcls-aside bcls-aside--information">Concurrent calls occurs when multiple processes or apps running in parallel are making API requests. Since a request may take more than a second to complete, you may exceed the concurrency limit even though you are not making more than 10 requests per second.</aside><p>If multiple applications will be integrating to the <span class="”notranslate”">CMS API</span> for an account, then these applications should have back-off and retry logic to handle instances where concurrency limits or rate limits are reached.</p>
+
+<p>If either the rate or concurrency limit is exceeded, a <code class="notranslate">429 - TOO_MANY_REQUESTS</code> error will be returned.</p>
+
+<h3>Reference id conflicts</h3>
+
+<p>To insure the uniqueness of reference ids, the CMS API locks the id for up to 3 minutes after any operation on the video it is assigned to. This can result in 409 errors being returned when you attempt to retry a request that fail too quickly, or when you try to reuse a reference id too soon after deleting the video it was previously assigned to. See the <a href="cms-api-error-message-reference.html#409_conflict">Error Message Reference</a> for more details.</p>
+</section><section class="bcls-section"><h2 id="video_asset_limit">Video asset limit</h2>
+
+<p>There is a limit of 1,000 assets per video. Assets include renditions, audio tracks, text tracks, and images, as well as the digital master. Renditions and images rarely total more than 10-15 assets, so even if you had separate audio tracks and text tracks for 150 different languages, you would still have less than 350 assets.</p>
+</section><section class="bcls-section"><h2 id="Notes_on_usage">Notes on usage</h2>
+
+<aside class="bcls-aside bcls-aside--information"><p>The <span class="”notranslate”">CMS API</span> is intended for integrations and publishing workflows. You cannot make client-side calls to this API from a public web page, as doing so would involve exposing your client credentials for the API (for that reason, the API is not CORS-enabled). You can make calls from a client-side (web) app, provided that you route the API calls through a server-side proxy. <span class="”notranslate”">Brightcove Learning Services</span> provides several <a href="cms-api.html">sample apps</a> that use this approach, and a <a href="learning-guide-using-rest-apis.html">guide to building this kind of app</a>.</p>
+
+<p>If you are going to be retrieving all your videos or large sets of videos, be sure to see the <a href="#largeDataSets">note on large data sets</a>.</p>
+
+<h4>Avoid hard-coded URLS</h4>
+
+<p>URLs for thumbnails, posters, video files, and other media should never be hard-coded in your pages or applications. The <span class="”notranslate”">CMS API</span> will always return the current URLs for media files, but the URLs themselves are subject to change. You should use the <span class="”notranslate”">CMS API</span> ( or <span class="”notranslate”">Playback API</span> ) requests to retrieve these URLs each time the page loads, or cache them for no more than six hours.</p>
+
+<h5>Caching video and image URLs</h5>
+
+<p><strong>You can cache URLs for videos and images to improve page performance, but the cache must be refreshed regularly.</strong> If you cache the URLs you retrieve to improve the performance of your pages, be sure to refresh the cache by repeating the API calls at least once every six hours.</p>
+</aside></section><section class="bcls-section"><h2 id="Methods">Methods</h2>
+
+<p>Currently the API supports the following request types:</p>
+
+<ul><li><code class="notranslate">GET</code></li>
+	<li><code class="notranslate">POST</code></li>
+	<li><code class="notranslate">PATCH</code></li>
+	<li><code class="notranslate">PUT</code></li>
+	<li><code class="notranslate">DELETE</code></li>
+</ul></section><section class="bcls-section"><h2 id="Parameters">Parameters</h2>
+
+<p>Note that all parameters are <strong>optional</strong>. Except where noted, they apply to <code class="notranslate">GET</code> requests for videos and playlists.</p>
+
+<table class="bcls-table"><caption class="bcls-caption--table">GET Request Parameters</caption>
+	<thead class="bcls-table__head"><tr><th>Parameter</th>
+			<th>Description</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><code class="notranslate">q</code></td>
+			<td>Query string for searches - see <a href="#search">Search syntax</a> for more information</td>
+		</tr><tr><td><code class="notranslate"><a href="#paging">limit</a> </code></td>
+			<td>Number of videos to return - must be an integer between 1 and 100. <strong>Default: 20</strong></td>
+		</tr><tr><td><code class="notranslate"><a href="#offset">offset</a> </code></td>
+			<td>Number of videos to skip (for paging results). Must be a positive integer. <strong>Default: 0</strong></td>
+		</tr><tr><td><code class="notranslate"><a href="#sort">sort</a> </code></td>
+			<td>A string that specifies the field to sort by. Start with <code class="notranslate">-</code> to sort descending. If a value for <code class="notranslate">q</code> is provided, then the default sort is by "score" (relevance of the search results to the original query). If no value for <code class="notranslate">q</code> is provided, then the default sort is by <code class="notranslate">updated_at</code> descending. The following fields are valid for sort: <code class="notranslate">name</code>, <code class="notranslate">reference_id</code>, <code class="notranslate">created_at</code>, <code class="notranslate">published_at</code>, <code class="notranslate">updated_at</code>, <code class="notranslate">schedule_starts_at</code>, <code class="notranslate">schedule_ends_at</code>, <code class="notranslate">state</code>, <code class="notranslate">plays_total</code>, and <code class="notranslate">plays_trailing_week</code></td>
+		</tr></tbody></table><h3 id="search">Search videos</h3>
+
+<p>Brightcove's <span class="”notranslate”">CMS API</span> provides a programmatic way to search for videos in your <span class="”notranslate”"> <span class="”notranslate”">Video Cloud</span> </span> library.</p>
+
+<p>To perform basic and complex searches on your video data, you will use the <code class="notranslate">q</code> parameter:</p>
+
+<pre class="line-numbers">
+			<code class="language-http notranslate">https://cms.api.brightcove.com/v1/accounts/921483702001/videos?<strong>q={search terms}</strong></code></pre>
+
+<p>For details on how to search for videos, see the <a href="cmsplayback-api-videos-search.html">Search Videos</a> document.</p>
+
+<p>For playlists, the supported values for the search string are more limited. You can currently search by <code class="notranslate">type</code>, <code class="notranslate">name</code>, <code class="notranslate">description</code>, and <code class="notranslate">reference_id</code>. Here are some example valid searches:</p>
+
+<ul><li><code class="notranslate">q=type:EXPLICIT</code></li>
+	<li><code class="notranslate">q=type:ACTIVATED_OLDEST_TO_NEWEST</code></li>
+	<li><code class="notranslate">q=type:ALPHABETICAL</code></li>
+	<li><code class="notranslate">q=bears+otters</code> (name, description, or reference ID must contain either "bears" or "otters")</li>
+	<li><code class="notranslate">q=%2Bname:bears+type:EXPLICIT</code> (name must contain "bears")</li>
+</ul><p>See <a href="cms-api-playlists-search.html">Search Playlists</a> for more details.</p>
+
+<aside class="bcls-aside bcls-aside--information">Note the search term <code class="notranslate">playable:true/false</code> that you can use to return only videos that are playable (or not):
+
+<pre class="line-numbers">
+			<code class="language-http notranslate">https://cms.api.brightcove.com/v1/accounts/:account_id/videos?q=%2Bplayable:true</code></pre>
+
+<p>This query requires that returned videos be playable (not deactivated, not scheduled, and not lacking playable renditions).</p>
+
+<p>If you are searching for videos that are <strong>not</strong> playable, use <code class="notranslate">q=%2Bplayable:false</code>.</p>
+</aside><h3 id="paging">Paging results</h3>
+
+<p>Use the <code class="notranslate"> <a href="#Parameters">limit</a> </code> parameter to specify how many items you want to return on a request - up to 100. You can then use the <code class="notranslate"> <a href="#Parameters">offset</a> </code> parameter to page through result sets that are larger than the <code class="notranslate">limit</code>. The <code class="notranslate">offset</code> is the number of items to skip.</p>
+
+<p>For example, the following search returns videos 51-75 of the total result set, assuming the total result set has at least 75 videos:</p>
+
+<pre class="line-numbers">
+			<code class="language-http notranslate">/videos?q=updated_at:2014-01-01..2014-06-30&amp;limit=25&amp;offset=50</code></pre>
+
+<p>The <code class="notranslate">limit</code> and <code class="notranslate">offset</code> parameters can be used for both videos and playlists.</p>
+
+<aside class="bcls-aside bcls-aside--information">Note: <code class="notranslate">limit</code> and <code class="notranslate">offset</code> do <strong>not</strong> work when you are requesting the videos belonging to a playlist - this request will always return all videos in the playlist.</aside><h4>Paging best practice</h4>
+
+<p>Because there may be concurrent modification operations going on with the CMS API, it is recommended to follow these steps when paging through your result set:</p>
+
+<ol class="bcls-tasklist"><li>Make a <code class="notranslate"> <a href="https://docs.brightcove.com/cms-api/v1/doc/index.html#api-videoGroup-Get_Video_Count">count</a> </code> request to get the total number of videos in your result set.
+
+	<pre class="line-numbers">
+		<code class="language-http notranslate">/accounts/578380111111/counts/videos?q=tags:nature</code></pre>
+	</li>
+	<li>Use the <code class="notranslate"> <a href="https://docs.brightcove.com/cms-api/v1/doc/index.html#api-videoGroup-Get_Videos">limit</a> </code> and <code class="notranslate"> <a href="https://docs.brightcove.com/cms-api/v1/doc/index.html#api-videoGroup-Get_Videos">offset</a> </code> parameters to return groups of data from your result set.
+	<pre class="line-numbers">
+		<code class="language-http notranslate">/accounts/578380111111/videos?q=tags:nature&amp;limit=20&amp;offset=50</code></pre>
+	</li>
+	<li>Note that some pages may have fewer than 20 videos. You will know you have reached the end of the result set when you have asked for as many videos as in the first <code class="notranslate">count</code> request.</li>
+</ol><p>To summarize, keep retrieving pages until you get a video count equal the original <code class="notranslate">count</code> request, since this number should err on the side of overestimation. Ask for:</p>
+
+<pre class="line-numbers">
+		<code class="language-http notranslate">count / page-size + 1 page</code></pre>
+
+<h3>Sorting video results</h3>
+
+<p>Use the parameter <code class="notranslate">sort=field_name</code> to specify how the results should be sorted - you can sort both video and playlists. You can sort on the following video fields: <sup><strong> <a href="#note1-1">[1-1]</a> </strong> </sup></p>
+
+<aside class="bcls-aside bcls-aside--information">Prefix the field name with a minus sign ( <code class="notranslate">sort= <span class="bcls-highlight">-</span>field_name</code>) for descending order.</aside><ul><li><code class="notranslate">name</code></li>
+	<li><code class="notranslate">reference_id</code></li>
+	<li><code class="notranslate">created_at</code></li>
+	<li><code class="notranslate">published_at</code></li>
+	<li><code class="notranslate">updated_at</code></li>
+	<li><code class="notranslate">schedule_starts_at</code> (note: this is the <strong>sort</strong> field - the <strong>search field is <code class="notranslate">schedule.starts_at</code> </strong>)</li>
+	<li><code class="notranslate">schedule_ends_at</code> (note: this is the <strong>sort</strong> field - the <strong>search field is <code class="notranslate">schedule.ends_at</code> </strong>)</li>
+	<li><code class="notranslate">state</code></li>
+	<li><code class="notranslate">plays_total</code> <sup><strong> <a href="#note1-2">[1-2]</a> </strong> </sup></li>
+	<li><code class="notranslate">plays_trailing_week</code> <sup><strong> <a href="#note1-2">[1-2]</a> </strong> </sup></li>
+</ul><p><strong>Notes</strong></p>
+
+<ul><li id="note1-1"><sup><strong>[1-1]</strong> </sup> If you do not provide a sort value for a video search call, the results will be sorted by relevance. If you do not provide a sort value for a <code class="notranslate">GET</code> videos call, the results will be sorted by <code class="notranslate">updated_at</code> descending.</li>
+	<li id="note1-2"><sup><strong>[1-2]</strong> </sup> You can sort on <code class="notranslate">plays_total</code> or <code class="notranslate">plays_trailing_week</code>, but these fields are not included in the results</li>
+</ul><h3>Sorting playlist results</h3>
+
+<p>You can sort playlists on the following fields:</p>
+
+<ul><li><code class="notranslate">name</code></li>
+	<!-- <li>created_at (default)</li> -->
+	<li><code class="notranslate">updated_at</code> (default)</li>
+	<!-- <li>reference_id</li> -->
+</ul><aside class="bcls-aside bcls-aside--information">Prefix the field name with a minus sign ( <code class="notranslate">sort= <span class="bcls-highlight">-</span>field_name</code>) for descending order.</aside><h4 id="largeDataSets">All videos and large data sets</h4>
+
+<p>If you are retrieving all the videos in your account, or a large number of videos, there are some things you must be aware of:</p>
+
+<ol><li>You may be tempted to use the largest allowed <code class="notranslate">limit</code> (100), but it's better to retrieve videos in batches of 25 or less to minimize the possibility of API requests timing out</li>
+	<li>As you are paging through large data sets, it is possible that the video data may be updated during the operation, which could cause items to shift in responses:
+	<ul><li>You might see an item repeated on successive pages</li>
+		<li>An item might be missed, as it has shifted to a previous response set</li>
+	</ul><p>To account for the first possibility, your app should de-dupe the complete item list after you have finished retrieving videos. To handle the second possibility, you need to compare the total number of items retrieved (after de-duping) to the number you were expecting, and then rerun the requests, sorting the results by last_modified_date (descending) - you shouldn't need to retrieve more than one batch to pick up missed items.</p>
+	</li>
+	<li>You can decrease the likelihood of the scenarios in the previous item by sorting the returned results appropriately. The default sorting by <strong>relevance</strong> for searches is based on a complex algorithm that looks combinations of keywords, tags, and custom field values. If you are searching for videos based on multiple keywords, tags, and/or custom fields, sort by relevance is exactly what you want. However, if you are just trying to retrieve all or a large set of your videos, setting the <code class="notranslate">sort</code> parameter explicitly will give you more control over the order of the returned items.</li>
+</ol></section><section class="bcls-section"><h2 id="Video_operations">Video operations</h2>
+
+<p>Video operations include:</p>
+
+<ul><li>Get a count of videos or search results</li>
+	<li>Get all videos</li>
+	<li>Get one or more videos by id or reference id</li>
+	<li>Create, retrieve, update, and delete videos</li>
+	<li>Search for videos</li>
+	<li>Get video sources, images, and the digital master information</li>
+	<li>Get the playlists that a video belongs to</li>
+	<li>Remove the video from all playlists</li>
+</ul><p>Details of the video operations can be found in the <a href="https://docs.brightcove.com/cms-api/v1/doc/index.html#api-videoGroup">API Reference</a>.</p>
+</section><section class="bcls-section"><h2 id="Playlist_operations">Playlist operations</h2>
+
+<p>Playlist operations include:</p>
+
+<ul><li>Get a count of playlists</li>
+	<li>Get all playlists</li>
+	<li>Create, update, and delete playlists</li>
+	<li>Get a count of videos in a playlist</li>
+	<li>Get the videos in a playlist</li>
+</ul><p>Details of the playlist operations can be found in the <a href="https://docs.brightcove.com/cms-api/v1/doc/index.html#api-playlistGroup">API Reference</a>.</p>
+</section><section class="bcls-section"><h2 id="Assets">Assets</h2>
+
+<p>Asset operations allow you to manage assets including renditions, manifests, images, and text tracks. To ingest assets, you must use the <a class="notranslate" href="dynamic-ingest-api.html">Dynamic Ingest API</a>. The <code class="notranslate">POST</code> and <code class="notranslate">PATCH</code> operations for the <a href="https://docs.brightcove.com/cms-api/v1/doc/index.html#api-assetGroup"> <span class="”notranslate”">CMS API</span> </a> <code class="notranslate">/assets</code> can be used to add and update <strong>remote assets</strong>. <span class="”notranslate”">CMS API</span> GET operations will work for <strong>both</strong> ingested and remote assets.</p>
+
+<ul><li>Add, update, or delete renditions</li>
+	<li>Add, update, or delete a metadata for the digital master</li>
+	<li>Add, update, or delete manifests for segmented video types such as HLS</li>
+	<li>Add, update, or remove poster and thumbnail images</li>
+	<li>Add, update, or remove WebVTT text tracks or DFXP captions</li>
+</ul><p>Details of the asset operations can be found in the <a href="https://docs.brightcove.com/cms-api/v1/doc/index.html#api-assetGroup">API Reference</a>.</p>
+</section><section class="bcls-section"><h2 id="Custom_field_operations">Custom field operations</h2>
+
+<p>There is currently one custom field operation:</p>
+
+<ul><li>Get all custom fields for an account</li>
+</ul><p>Details of the custom field operations can be found in the <a href="https://docs.brightcove.com/cms-api/v1/doc/index.html#api-Custom_Fields">API Reference</a>.</p>
+</section><section class="bcls-section"><h2 id="Folder_operations">Folder operations</h2>
+
+<p>Folder operations allow you to:</p>
+
+<ul><li>Get a list of folders</li>
+	<li>Create, update, and delete folders</li>
+	<li>Get a list of videos in a folder</li>
+	<li>Add a video to a folder</li>
+	<li>Remove a video from a folder</li>
+</ul><aside class="bcls-aside bcls-aside--information"><p>Each folder name <strong>must</strong> be unique within the account, and can contain up to 100 characters. The folder name also cannot be blank or contain the character <code class="notranslate">/</code></p>
+</aside><p>Details of the folder operations can be found in the <a href="https://docs.brightcove.com/cms-api/v1/doc/index.html#api-folderGroup">API Reference</a>.</p>
+</section><section class="bcls-section"><h2 id="Notifications">Notifications</h2>
+
+<p>You can receive notifications when <code class="notranslate">video_change</code> events occur in your video library. Notifications will be sent to the URL you specify, which should point to an application capable of handling <code class="notranslate">HTTP POST</code> requests.</p>
+
+<aside class="bcls-aside bcls-aside--information">Notes:
+<ul><li>Any change in video metadata will trigger a <code class="notranslate">video_change</code> event. Changes to assets used by the video will <strong>not</strong> trigger change events.</li>
+	<li>In addition to notifications, there are <a href="https://docs.brightcove.com/cms-api/v1/doc/index.html#api-videoGroup-Get_Status_of_Ingest_Jobs">status APIs</a> that allow you to get the status of ingest (ingesting, replacing, or retranscoding) jobs associated with a video.</li>
+</ul></aside><h3>Notification failures</h3>
+
+<p>The notification system treats any 4xx or 5xx return from the customer server as a retriable failure. Failing callbacks will be retried up to 20 times, with an exponentially increasing delay between subsequent callbacks. The first few retries will happen within minutes of the initial callback attempt. If the callback continues failing, and we get all the way out to the 20th retry, the retry delay will be a few days.</p>
+
+<aside class="bcls-aside bcls-aside--information"><code class="notranslate">video_change</code> events are triggered by automated system processes as well as user actions, so these events will not always corresponds to changes you made to video properties in Studio or via the APIs.</aside><h3>Firewalls</h3>
+
+<p>In case your organization has a strict policy regarding sources of incoming traffic through your firewall, we allow all AWS East region IPs. This is subject to change, so all AWS IPs should be whitelisted. See <a href="https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html">https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html</a> for more information.</p>
+
+<h3>Notification operations</h3>
+
+<p>The operations currently available for notifications are:</p>
+
+<ul><li>Create subscriptions</li>
+	<li>Get one or all subscriptions</li>
+	<li>Delete a subscription</li>
+</ul><p>Details of the notification operations can be found in the <a href="https://docs.brightcove.com/cms-api/v1/doc/index.html#api-notificationGroup">API Reference</a>.</p>
+</section></article></div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-by-field-block-1 clearfix" id="block-views-block-related-content-by-field-block-1">
+  
+    
+
+      <div class="form-group"><div class="view view-related-content-by-field view-id-related_content_by_field view-display-id-block_1 js-view-dom-id-77a4bcddd74f077ddbc87d0d6d0cceb03fc81cb4f3c58e9c622b5183815005b5">
+  
+    
+      <div class="view-header">
+      <h2>Related content</h2>
+    </div>
+      
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="cmsplayback-api-videos-search.html" hreflang="en">CMS/Playback API: Videos Search</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="practice-area-cms-api.html" hreflang="en">Practice Area: CMS API</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="managing-playlists-using-cms-api.html" hreflang="en">Managing Playlists Using the CMS API</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="cms-api-playlists-search.html" hreflang="en">CMS API: Playlists Search</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="using-cms-api-add-geo-filtering.html" hreflang="en">Using the CMS API: Add Geo-Filtering</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="using-cms-api-page-search-results.html" hreflang="en">Using the CMS API: Page Search Results</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="using-cms-api-add-webvtt-captions-text-tracks.html" hreflang="en">Using the CMS API: Add WebVTT Captions (Text Tracks)</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="media-sharing-cms-api.html" hreflang="en">Media Sharing with the CMS API</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="row">
+            <div class="region region-footer-top-left col-md-9" style="margin-bottom: 1em;">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove Support</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://status.brightcove.com">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="contact-support.html" data-drupal-link-system-path="node/18632">Support - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.brightcove.com/en/contact/create">Support - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Documentation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Training</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="online-training-courses.html" data-drupal-link-system-path="node/18286">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a course</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://www.brightcove.com">Brightcove.com</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="region region-footer-top-right col-md-3">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Brightcove Inc. (NASDAQ: BCOV), is a leading global provider of powerful cloud solutions for delivering and monetizing video across connected devices.</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="row">
+            <div class="region region-footer-bottom-left col-md-8">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item">Brightcove Inc. All rights reserved.</div>
+      
+      <div class="field field--name-field-legal-links field--type-link field--label-hidden field--items">
+              <div class="field--item"><a href="https://www.brightcove.com/en/privacy">Privacy</a></div>
+              <div class="field--item"><a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="region region-footer-bottom-right col-md-4">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items">
+              <div class="field--item">
+
+<a href="https://www.linkedin.com/company/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://twitter.com/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://www.facebook.com/Brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://plus.google.com/100830370440271567091" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18034","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGn0UTEBVCWpxWhZdZHNWFFRscgpEX3cRUVRRXBQUDkYAWFZQFmhUVFoDUV9YAVNAcwtKVXRaElBfWg==","queueTime":0,"applicationTime":215,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

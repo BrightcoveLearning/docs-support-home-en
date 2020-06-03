@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="sites/default/files/favicon-64.png" type="image/png" />
+<link rel="alternate" hreflang="en" href="hls-plugin-changelog.html" />
+<link rel="canonical" href="hls-plugin-changelog.html" />
+<link rel="shortlink" href="hls-plugin-changelog.html" />
+<link rel="revision" href="hls-plugin-changelog.html" />
+
+    <title>HLS Plugin Changelog | Brightcove Learning</title>
+    <link rel="stylesheet" media="all" href="sites/default/files/css/css_82QNz3isZauK2z7uRssc53Bs_g5IxmONDHsLVxMTLtw_q23msc.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="sites/default/files/css/css_ta7TGCgoUiRN-eGLyLEf4xmuIaBKIL7GD5KPf2fNREM_q23msc.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on" />
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  </head>
+  <body class="path-node page-node-type-release-notes has-glyphicons">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="navigation-secondary clearfix">
+          <div class="region region-navigation-secondary">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary Navigation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="contact-support.html" title="Create a Support Request" data-drupal-link-system-path="node/18632">Support Request</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://status.brightcove.com/">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://university.brightcove.com/">Brightcove University</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gtranslate">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" style="font-weight:bold;background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">English</option><option value="en|fr" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">French</option><option value="en|de" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">German</option><option value="en|ja" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">Japanese</option><option value="en|ko" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">Korean</option><option value="en|es" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">Spanish</option></select>
+</div>
+<div class="gtranslate__credits">
+  Translations Provided by Google Translate
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="navbar-header col-md-3">
+                  <a class="logo navbar-btn pull-left" href="index.html" title="Home" rel="home">
+            <img src="themes/custom/bcdocs/images/brightcove.png" alt="Home" />
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" title="Home page" data-drupal-link-system-path="node/18643">Home</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Products
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="video-cloud.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://gallery.support.brightcove.com">Gallery</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a href="social.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ssai.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Quick Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="analytics-api.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience-api.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-api.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-connectors-video-cloud.html" data-drupal-link-system-path="node/18662">CMS Connectors for Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="data-collection-api.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="delivery-system-api.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="developer-tools-and-concepts.html" data-drupal-link-system-path="node/18430">Developer Tools and Concepts</a>
+                  </li>
+                              <li class="expanded">
+        <a href="native-player-sdks.html" data-drupal-link-system-path="node/18367">Device SDKs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="dynamic-ingest-api.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="getting-started-brightcove-apis-0.html" data-drupal-link-system-path="node/18711">Getting Started - Brightcove APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="page-experience-api.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ingest-profiles-api.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="oauth-api.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="platform-api-code-samples.html" data-drupal-link-system-path="node/18675">Platform API Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="playback-api.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-code-samples.html" data-drupal-link-system-path="node/18630">Player Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-developer.html" data-drupal-link-system-path="node/18362">Player Developer</a>
+                  </li>
+                              <li class="expanded">
+        <a href="player-management-api.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="policy-api.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="release-notes.html" data-drupal-link-system-path="node/18687">Release Notes</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Training
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="https://university.brightcove.com">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a Course</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a href="brightcove-support-documentation-announcements.html" title="See what&#039;s new in Brightcove Documentation" data-drupal-link-system-path="node/18896">What&#039;s New</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="full-width-headline">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" role="heading">
+            <div class="region region-header">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      Documentation
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="main-container container  js-quickedit-main-content">
+    <div class="row">
+
+                              <aside class="col-sm-3" role="complementary">
+              <div class="region region-sidebar-first">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="hls-plugin-changelog.html" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group">
+      <label for="edit-search" class="control-label sr-only">Search</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="Search" />
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-dyclw8lutkdivmy1mtoojawupuzjfonu6z1nzbfjba0" type="hidden" name="form_build_id" value="form-DYcLW8LUtKDIVmY1MToOjAwUPuzjfONu6Z1NzBfJba0" /><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form" /><div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="highlighted">  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a id="main-content"></a>
+            <div class="region region-content">
+        <h1 class="page-header"><span>HLS Plugin Changelog</span>
+</h1>
+
+  
+<div class="node node--type-release-notes node--view-mode-full bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+      </div>
+
+  <div class="group-second-row">
+  
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Brightcove Player</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Player Developer</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+    
+</div>
+
+  <div class="group-fourth-row">
+  
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p>The following tracks changes to the plugin:</p>
+<section class="bcls-section">
+<h2 id="Changelog">Changelog</h2>
+
+<h4>14 Nov 2018</h4>
+
+<p>v5.15.0</p>
+
+<ul>
+	<li>Added redirect support for manifest and media requests</li>
+</ul>
+
+<h4>21 Mar 2018</h4>
+
+<p>v5.14.1</p>
+
+<ul>
+	<li>Fixed the minified dist file
+	<ul>
+		<li>Updated <strong>webwackify</strong> to 0.1.6</li>
+		<li>Updated <strong>videojs-contrib-media-sources</strong> to 4.7.2</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>15 Mar 2018</h4>
+
+<p>v5.14.0</p>
+
+<ul>
+	<li>Updated <strong>videojs-contrib-media-sources</strong> to 4.7.1 and <strong>webwackify</strong> to 0.1.5</li>
+	<li>More useful info in segment-metadata cue (bandwidth/resolution/codecs/byte-length)</li>
+</ul>
+
+<h4>7 Mar 2018</h4>
+
+<p>v5.13.0</p>
+
+<ul>
+	<li>Use webwackify for webworkers to support webpack bundle</li>
+	<li>Fix <code>tech.play()</code> throwing unresolved promise errors on Chrome</li>
+	<li>update url-toolkit to version 2.1.3</li>
+	<li>Add jsDelivr link</li>
+	<li>Update karma reconnect configuration to match video.js
+	<ul>
+		<li>Increase karma's browserDisconnectTolerance to 3</li>
+	</ul>
+	</li>
+	<li>Add <code>nvmrc</code> and update travis' chrome reference
+	<ul>
+		<li>Update karma-chrome-launcher to version 2.2.0</li>
+		<li>Update karma to version 1.7.1 and remove firefox from travis configuration</li>
+		<li>enable node_modules caching on travis</li>
+		<li>Update videojs-contrib-quality-levels to version 2.0.4</li>
+		<li>Fix test for event handler cleanup on dispose by calling event handling methods</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>6 Nov 2017</h4>
+
+<p>v5.12.2</p>
+
+<ul>
+	<li>Remove unused expected manifest JavaScript files</li>
+	<li>Remove extraneous methods from <strong>PlaylistLoader</strong>
+	<ul>
+		<li>Move <code>isLowestEnabledRendition</code> to Playlist module</li>
+	</ul>
+	</li>
+	<li>Update <strong>contrib-media-sources</strong> to 4.6.2
+	<ul>
+		<li>Update <strong>mux.js</strong> to 4.3.2
+		<ul>
+			<li>Flush <strong>pes</strong> packets when there is enough data</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>24 Oct 2017</h4>
+
+<p>v5.12.1</p>
+
+<ul>
+	<li>Update <strong>contrib-media-sources</strong> to 4.6.1
+
+	<ul>
+		<li>Update <strong>mux.js</strong> to 4.3.1
+
+		<ul>
+			<li>Set active data channel per-field instead of globally for CEA-608</li>
+			<li>Fixed an issue with captions being placed in the wrong CC</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>19 Oct 2017</h4>
+
+<p>v5.12.0</p>
+
+<ul>
+	<li>Use <code>lastSegmentDuration + 2 * targetDuration</code> for safe live point instead of 3 segments
+
+	<ul>
+		<li>Do not let back buffer trimming remove within target duration of current time</li>
+		<li>Increase threshold for stuck playlist checking</li>
+	</ul>
+	</li>
+	<li>Fix video corruption on rendition switches in IE11 Win 8.1+ and Edge
+	<ul>
+		<li><code>segment-time-mapping</code> event</li>
+		<li>Update <strong>contrib-media-sources</strong> to 4.6.0</li>
+	</ul>
+	</li>
+	<li>Prioritize user enabled playlists over blacklist
+	<ul>
+		<li>Never allow playlist selector to select a playlist that has been permanently blacklisted due to incompatible configuration</li>
+		<li>When filtering playlists within the playlist selectors, if there are no enabled playlists (i.e. not blacklisted internally AND not disabled by the user) available, then fall back to using the list of playlists not disabled by the user regardless of blacklist state.</li>
+		<li>Make sure playlists blacklisted from an illegal media switch is permanently blacklisted, as there is no reason to try it again at a later time.</li>
+		<li>The representation api will return a list that filters out just incompatible playlists instead of both incompatible playlists and temporary blacklisted playlists.</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>11 Oct 2017</h4>
+
+<p>v5.11.1</p>
+
+<ul>
+	<li>update videojs-contrib-media-sources to 4.5.3
+	<ul>
+		<li>update mux.js to 4.2.2
+		<ul>
+			<li>Use the first audio and video tracks in the PMT</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>fix <code>InvalidStateError</code> for live playback in IE11</li>
+</ul>
+
+<h4>20 Sep 2017</h4>
+
+<p>v5.11.0</p>
+
+<ul>
+	<li>Update videojs-contrib-media-sources to 4.5.2
+	<ul>
+		<li>Let video.js remoteTextTrack auto cleanup take care of text track cleanup</li>
+	</ul>
+	</li>
+	<li>Blacklist incompatible playlists on probe if codec information not in master manifest</li>
+	<li>Seek to seekable start when seeking before the seekable window</li>
+	<li>MediaGroups: various bug fixes and refactor
+	<ul>
+		<li>Removes the Firefox 48 check for for supporting a change in audio info</li>
+		<li>Fix delayed switching between audio tracks and intermittent desync</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>28 Aug 2017</h4>
+
+<p>v5.10.1</p>
+
+<ul>
+	<li>Fixed: FLV metadata tags now appended when audio info changes</li>
+</ul>
+
+<h4>22 Aug 2017</h4>
+
+<p>v5.10.0</p>
+
+<ul>
+	<li>Implemented CEA608: support for cc2-cc4, special/extended characters, formatting
+	<ul>
+		<li>All four CC tracks are now available</li>
+		<li>If CLOSED-CAPTIONS are specified in the master manifest, the corresponding CC text tracks will be labled appropriately, otherwise will be labled CC1 - CC4</li>
+		<li>Underline and italics will now be rendered</li>
+		<li>Special thanks to @squarebracket</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>16 Aug 2017</h4>
+
+<p>v5.9.0</p>
+
+<ul>
+	<li>Added option to select lowest bitrate video rendition available on startup</li>
+	<li>Always activate loading in segment loaders after a seek</li>
+	<li>Wait for <code>canplay</code> event from tech before <code>PlaybackWatcher</code> begins monitoring
+	<ul>
+		<li>Fixed <code>InvalidStateError</code> in Win10 IE11</li>
+	</ul>
+	</li>
+	<li>Blacklisted playlist for 2 minutes on early abort to prevent cache loop
+	<ul>
+		<li>Prevented rendition switch loop due to inconsistent network/caching</li>
+		<li>Don't fire <strong>bandwidthupdate</strong> when aborting early</li>
+	</ul>
+	</li>
+	<li>Made sure text tracks added by HLS are properly disposed</li>
+	<li>Fixed Backward Seeking in IE11 Win8.1</li>
+</ul>
+
+<h4>7 Aug 2017</h4>
+
+<p>v5.8.3</p>
+
+<ul>
+	<li>Fixed double caption issue</li>
+	<li>Now attach attributes property to playlist objects in cases the m3u8-parser does not
+	<ul>
+		<li>Added warning log when missing attribute for stream-inf</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>12 Jul 2017</h4>
+
+<p>v5.8.2</p>
+
+<ul>
+	<li>Fixed processing of segments when mediaSource is closed</li>
+</ul>
+
+<h4>12 Jul 2017</h4>
+
+<p>v5.8.1</p>
+
+<ul>
+	<li>Fixed: Audio only playlists with videojs-contrib-media-sources v4.4.7</li>
+</ul>
+
+<h4>6 Jul 2017</h4>
+
+<p>v5.8.0</p>
+
+<ul>
+	<li>ABR Improvements
+	<ul>
+		<li>Use a starting bandwidth value of 0.0625 MB/s on Android devices</li>
+		<li>Do not allow an up-switch in quality until a certain amount of forward buffer has been filled, <code>BUFFER_LOW_WATER_LINE</code></li>
+		<li>Dynamically increase the <code>BUFFER_LOW_WATER_LINE</code> and <code>GOAL_BUFFER_LENGTH</code> from 0 - &gt; 30 and 30 -&gt; 60 respectively during the first 30 seconds of playback</li>
+		<li>Abort segment requests before completion if bandwidth reported by the XHR <code>progress</code> event shows that network conditions are not fast enough to complete the request without causing rebuffering</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>27 Jun 2017</h4>
+
+<p>v5.7.0</p>
+
+<ul>
+	<li>Update <strong>mux.js</strong> to 4.1.5 and <strong>videojs-contrib-media-sources</strong> to 4.4.6
+
+	<ul>
+		<li>Only flush PES packets from TS parsing front end when they are complete
+		<ul>
+			<li>Complete is defined as any time PES_packet_length matches the data’s length OR is a video packets</li>
+			<li>Works around an issue with incomplete packets getting sent down the pipeline when the source has audio PES packets split between segments</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>Add HLS usage tracking events
+	<ul>
+		<li>Usage tracking events are fired when we detect a certain HLS feature, encoding setting, or API is used. Note that although these usage events are listed in the README, they may change at any time without a major version change.</li>
+	</ul>
+	</li>
+	<li>Fix endOfStream for demuxed audio and video</li>
+</ul>
+
+<h4>20 Jun 2017</h4>
+
+<p>v5.6.0</p>
+
+<ul>
+	<li>Do not reset segmentloaders when switching media groups
+	<ul>
+		<li>Set loader state to ready on aborts even when loader is paused</li>
+	</ul>
+	</li>
+	<li>Prevents crash when segment metadata cues can't be created</li>
+	<li>Allow <code>overrideNative</code> to be set as a player-level option</li>
+	<li>Create a moving-average playlist selector
+	<ul>
+		<li>Define a variant of the standard playlist selector that calculates a moving average of bandwidth and uses that to select a playlist.</li>
+	</ul>
+	</li>
+	<li>Trigger bandwidthupdate events on the tech</li>
+</ul>
+
+<h4>16 May 2017</h4>
+
+<p>v5.5.3</p>
+
+<ul>
+	<li>Updated <strong>mux.js</strong> to 4.1.4 and <strong>videojs-contrib-media-sources</strong> to 4.4.5
+
+	<ul>
+		<li>ts probe searches packets for first it can successfully parse</li>
+		<li>Fixed an issue that could cause <code>updateend</code> events to fire more than once per append or remove under very specific conditions on Firefox</li>
+	</ul>
+	</li>
+	<li>Trigger error events when received empty response</li>
+</ul>
+
+<h4>10 May 2017</h4>
+
+<p>v5.5.2</p>
+
+<ul>
+	<li>Fixed playback stalls when everything appears okay
+	<ul>
+		<li>Add playback watcher check for unknown player waiting</li>
+		<li>Do not do <code>unknownwaiting</code> check when the tech fires a native waiting event</li>
+		<li>Don't track current time waiting when at the end of the buffer</li>
+		<li>Call <code>techWaiting_</code> when we detect a stall at the end of buffer</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>4 May 2017</h4>
+
+<p>v5.5.1</p>
+
+<ul>
+	<li>Use specified <code>mediasequence</code> for VOD expired sync instead of assuming 0
+
+	<ol>
+		<li>Used <code>synccontroller</code> for expired</li>
+	</ol>
+	</li>
+	<li>Fixed: CODEC to mime-type conversion now takes into account all possible scenarios</li>
+</ul>
+
+<h4>25 Apr 2017</h4>
+
+<p>v5.5.0</p>
+
+<ul>
+	<li>Update <strong>mux.js</strong> to 4.1.3 and <strong>media-sources</strong> to 4.4.4</li>
+	<li>Trigger an event when a playlist is blacklisted or retried</li>
+	<li>Triggers <code>blacklistplaylist</code> when a playlist is blacklisted</li>
+	<li>Triggers <code>retryplaylist</code> when retrying to load an errored playlist</li>
+	<li>Added option to modify blacklist duration</li>
+</ul>
+
+<h4>10 Apr 2017</h4>
+
+<p>v5.4.1</p>
+
+<ul>
+	<li>Updated <strong>contrib-media-sources</strong> to 4.4.3</li>
+	<li>Fixed: Exceptions from calling endOfStream when the media source isn't ready</li>
+	<li>Fixed: Segment time mapping for fmp4 playback</li>
+	<li>If <code>beforeRequest</code> is set, reuse it on source changes
+	<ul>
+		<li>Allow changing global xhr <code>beforeRequest</code> at runtime</li>
+		<li>Always use latest <code>beforeRequest</code> instead of setting it when creating hls object</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>3 Apr 2017</h4>
+
+<p>v5.4.0</p>
+
+<ul>
+	<li>Added support for in-manifest WebVTT</li>
+	<li>Fixed: Minor SegmentLoader Fixed: es</li>
+	<li>Fixed: Enable fast quality change for alternate audio</li>
+	<li>Added feature: Blacklist live playlists that have stopped being updated
+	<ul>
+		<li>Never blacklist final available final rendition</li>
+	</ul>
+	</li>
+	<li>Refactored all the XHR handling code and related state out of SegmentLoader and into a single mediaSegmentRequest function</li>
+	<li>Added a segment-metadata TextTrack that contains cues for the segments currently in the buffer</li>
+	<li>Added support for description audio tracks in HLS
+	<ul>
+		<li>Added support for description audio tracks (marked with characteristics of <strong>public.accessibility.describes-video</strong>)</li>
+		<li>Added test for correctly setting alternative audio kinds</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>3 Mar 2017</h4>
+
+<p>v5.3.3</p>
+
+<ul>
+	<li>Updated <strong>videojs-contrib-media-sources</strong> to v4.4.2 and <strong>mux.js</strong> to 4.1.1
+
+	<ul>
+		<li>Fixed silence insertion to not insert extra frames when audio is offset</li>
+		<li>Fixed metadata cue mapping so that it considers group cues with the same startTime and remaps them collectively to the same endTime</li>
+		<li>Added fudge factor to Flash tag trim target</li>
+		<li>Feature Video.js 6 compatibilbity</li>
+		<li>Fixed Flash tag trimming for misaligned audio and video</li>
+		<li>Reverted "Revert flash transmuxing in a web worker"</li>
+	</ul>
+	</li>
+	<li>Fixed do not timeout segment requests for non-master playlist source</li>
+</ul>
+
+<h4>22 Feb 2017</h4>
+
+<p>v5.3.2</p>
+
+<ul>
+	<li>Fixed a bug with the combination of seek-to-live and resync-on-a-poor-guess behaviors</li>
+</ul>
+
+<h4>22 Feb 2017</h4>
+
+<p>v5.3.1</p>
+
+<ul>
+	<li>Updated locking <strong>url-toolkit</strong> to 1.0.9 to support relative URLs</li>
+	<li>Resynced on poor initial segment choice</li>
+	<li>Fixed resuming live playback after long pauses</li>
+</ul>
+
+<h4>16 Feb 2017</h4>
+
+<p>v5.3.0</p>
+
+<ul>
+	<li>Reset segment loaders on all Flash seeks
+	<ul>
+		<li>Updated <strong>mux.js</strong> to 4.1.0</li>
+		<li>Updated <strong>videojs-contrib-media-sources</strong> to 4.4.0</li>
+	</ul>
+	</li>
+	<li>Reorganized the functions in <code>SegmentLoader</code> to better follow the flow of execution from top-down</li>
+	<li>Removed ad-hoc logging in favor of a config-enabled logging like playback-watcher</li>
+	<li>isLowestEnabledRendition worked with redundant streams</li>
+	<li>Renamed Worker to DecrypterWorker</li>
+</ul>
+
+<h4>9 Feb 2017</h4>
+
+<p>v5.2.1</p>
+
+<ul>
+	<li>Support for Akamai-style Redundant HLS
+	<ul>
+		<li>Stable sorting and always pick primary first</li>
+	</ul>
+	</li>
+	<li>Fixed routing of decrypter messages intended for audio segment loader</li>
+</ul>
+
+<h4>8 Feb 2017</h4>
+
+<p>v5.2.0</p>
+
+<ul>
+	<li>Updated dependencies for 4.3.0 <code>mediasources</code></li>
+	<li>Removed HLS object events from README</li>
+</ul>
+
+<h4>3 Feb 2017</h4>
+
+<p>v5.1.1</p>
+
+<ul>
+	<li>Introduced Video.js 6 forward compatibility while maintaining backward compatibilty
+	<ul>
+		<li>Swap to use getTech and null-check Flash tech</li>
+		<li>Only <code>registerComponent</code> HLS in older Video.js</li>
+		<li>Use <code>registerPlugin</code> if it exists</li>
+		<li><code>addTrack</code> cross compatibility</li>
+	</ul>
+	</li>
+	<li>Added events for underflow and live resync
+	<ul>
+		<li>For QoS measurement purposes, it may be useful to know how often the playback watcher is activating. Add new events for when the player falls off the back of the live window or stalls due to a video buffer gap.</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>31 Jan 2017</h4>
+
+<p>v5.1.0</p>
+
+<ul>
+	<li>Updated <strong>videojs-contrib-media-sources</strong> to v4.2.0
+
+	<ul>
+		<li>Added support for inserting silence when appending a new segment will introduce a gap in the audio SourceBuffer</li>
+	</ul>
+	</li>
+	<li>Remove <strong>hls-audio-track.js</strong> as this file was no longer being used</li>
+	<li>Stop blacklisting audio codecs as there is now wide support for switching between audio codecs on-the-fly among all modern browsers</li>
+	<li>Fix <code>qualityLevels</code> setup for videos with a source element</li>
+	<li>Error early for misconfigured <code>overrideNative</code></li>
+</ul>
+
+<h4>25 Jan 2017</h4>
+
+<p>v5.0.0</p>
+
+<ul>
+	<li>Updated issue template to use unpkg for latest versions</li>
+	<li>Used a snapshot of the issue template JSBin to protect from changes by owner</li>
+	<li>Fixed any possible <code>fillBuffer_</code> race conditions by debouncing all <code>fillBuffers_</code>
+	<ul>
+		<li>Converted all calls to <code>fillBuffer_</code> to calls to <code>monitorBuffer_</code></li>
+		<li>Renamed <code>monitorBuffer_</code> to <code>monitorBufferTick_</code> which becomes the 500ms buffer check timer loop</li>
+		<li>Made <code>monitorBuffer_</code> schedule an immediate timer for <code>monitorBufferTick_</code></li>
+	</ul>
+	</li>
+	<li>Made it possible for processing segment reachable even after playlist update removes it
+	<ul>
+		<li>Changed processing segment reference on playlist refresh</li>
+		<li>Tested for correct segment references on pending segments</li>
+		<li>Fixed unreachable segment tests after rebase on async monitor buffer change</li>
+		<li>Updated media index on playlist refreshes for all requests (including syncs)</li>
+	</ul>
+	</li>
+	<li>Made progress events bubble
+	<ul>
+		<li>If the segment request triggers progress events (that is, XHR2 is supported), bubble those up to the tech. This makes it clearer that buffering is happening even on very slow connections.</li>
+	</ul>
+	</li>
+	<li>Running decryption in a webworker no longer supported for IE10</li>
+	<li>Fixed <code>mediaIndex</code> tracking so that it is consistent when the playlist updates during a live stream
+	<ul>
+		<li>Fixed <code>mediaIndex</code> tracking so that it is consistent when the playlist updates during a live stream</li>
+		<li>Removed any code in <code>SegmentLoader#handleUpdateEnd_</code> that changed the <code>mediaIndex</code></li>
+		<li>Reordered <code>SegmentLoader#playlist</code> to make it easier to follow</li>
+		<li>All changes to both <code>mediaIndexes</code> (SegmentLoader's and segmentInfo's) now happen in <code>SegmentLoader#playlist</code></li>
+		<li>Added tests for proper <code>mediaIndex</code> tracking with live playlists</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>20 Jan 2017</h4>
+
+<p>v4.1.1</p>
+
+<ul>
+	<li>Fixed the m3u8-parser to support ES3</li>
+</ul>
+
+<h4>13 Jan 2017</h4>
+
+<p>v4.1.0</p>
+
+<ul>
+	<li>Updated <strong>m3u8-parser</strong> to 2.0.0 and <strong>videojs-contrib-media-sources</strong> to 4.1.4</li>
+	<li>Added <a href="https://github.com/videojs/videojs-contrib-hls/pull/929">Representations and Quality Levels</a></li>
+</ul>
+
+<h4>23 Dec 2016</h4>
+
+<p>v4.0.3</p>
+
+<ul>
+	<li>Fix a segment hop in live</li>
+	<li>Map legacy AVC codecs to their modern equivalents when excluding incompatible playlists</li>
+	<li>Update <strong>video.js</strong> to 5.15.1</li>
+</ul>
+
+<h4>29 Nov 2016</h4>
+
+<p>v4.0.2</p>
+
+<ul>
+	<li>Fixed excessive segment loads on seeks
+	<ul>
+		<li>Fixed a few cases where seeking caused the player to load too many segments</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>23 Nov 2016</h4>
+
+<p>v4.0.1</p>
+
+<ul>
+	<li>Reverted <strong>Upgrade aes-decrypter</strong> to use webcrypto for HLSe decryption where available
+
+	<ul>
+		<li>WebCrypto's subtle-crypto was failing to decrypt segments that worked previously with the JavaScript-only implementation</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>21 Nov 2016</h4>
+
+<p>v4.0.0</p>
+
+<ul>
+	<li>Simplified the algorithm at the heart of SegmentLoader as much as possible
+	<ul>
+		<li>Introduced the concept of sync-points to help associate currentTime with segments across variants</li>
+		<li>More information available at: <a href="https://www.brightcove.com/en/blog/2016/10/improving-hls-playback">https://www.brightcove.com/en/blog/2016/10/improving-hls-playback</a></li>
+	</ul>
+	</li>
+	<li>Updated <strong>videojs-contrib-media-sources</strong> to 4.1.2
+	<ul>
+		<li>Started using remote TextTracks because they can be properly removed</li>
+		<li>Handled remove cues from track properly if cues is null</li>
+	</ul>
+	</li>
+	<li>Updated <strong>mux.js</strong> to 3.0.3
+	<ul>
+		<li>Stopped applying the compositionTimestamp of the first frame to the baseMediaDecodeTime for the fragment</li>
+		<li>Fixed coalesce stream to account for missing audio data in pending tracks</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>17 Nov 2016</h4>
+
+<p>v3.6.13</p>
+
+<ul>
+	<li>Added the concept of systemBandwidth - a measure of the bandwidth (in mb/s) of the entire system from download through transmuxing and appending data to a flash or native media source
+	<ul>
+		<li>Adaptive bitrate selection is now based on the performance of the entire system</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>14 Nov 2016</h4>
+
+<p>v3.6.12</p>
+
+<ul>
+	<li>Changed <code>resolveUrl</code> to use JavaScript only</li>
+</ul>
+
+<h4>11 Nov 2016</h4>
+
+<p>v3.6.11</p>
+
+<ul>
+	<li>Updated the reloadSourceOnErrors plugin: Don't try to set the source if <code>getSource</code> returns <code>undefined</code> or <code>null</code></li>
+	<li><strong>resolve-url.js</strong> now uses an iframe to contain the base and anchor elements used to resolve relative urls</li>
+</ul>
+
+<h4>10 Nov 2016</h4>
+
+<p>v3.6.10</p>
+
+<ul>
+	<li>Updated the reloadSourceOnErrors plugin
+	<ul>
+		<li>Option to pass a getSource function that can be used to provide a new source to load on error</li>
+		<li>Added the ability to override the default minimum time between errors in seconds</li>
+		<li>Plugin now cleans up event bindings when initialized multiple times</li>
+	</ul>
+	</li>
+	<li>Fixed <code>trimBuffer</code> to compare correct segments and correctly trim in the live case</li>
+</ul>
+
+<h4>9 Nov 2016</h4>
+
+<p>v3.6.9</p>
+
+<ul>
+	<li>Added a plugin that can be used to automatically reload a source if an error occurs</li>
+	<li>Fixed an error when checking if the lowest quality level is currently in use</li>
+</ul>
+
+<h4>9 Nov 2016</h4>
+
+<p>v3.6.8</p>
+
+<ul>
+	<li>Enhanced gap skipper to seek back into the live window if playback slips out of it; renamed <strong>GapSkipper</strong> to <strong>PlaybackWatcher</strong></li>
+</ul>
+
+<h4>3 Nov 2016</h4>
+
+<p>v3.6.7</p>
+
+<ul>
+	<li>Updated <strong>videojs-contrib-media-sources</strong> to 4.0.5
+
+	<ul>
+		<li>Fixed an issue with ID3 and 608 cue translation</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>21 Oct 2016</h4>
+
+<p>v3.6.6</p>
+
+<ul>
+	<li>Use <code>setTimeout</code> in gap skipper instead of relying on <code>timeupdate</code> events</li>
+	<li>Updated <strong>videojs-contrib-media-sources</strong> to 4.0.4
+	<ul>
+		<li>Append init segment to video buffer for every segment</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>18 Oct 2016</h4>
+
+<p>v3.6.4</p>
+
+<ul>
+	<li>Fix 'ended' event not firing after replay</li>
+	<li>Updated videojs-contrib-media-sources to 4.0.2
+	<ul>
+		<li>Only trim FLV tags when seeking to prevent triming I frames</li>
+		<li>Updated Mux.js to 3.0.2
+		<ul>
+			<li>Set h264Frame to null after we finish the frame</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>18 Oct 2016</h4>
+
+<p>v3.6.3</p>
+
+<ul>
+	<li>Update videojs-contrib-media-sources to 4.0.1
+	<ul>
+		<li>Fix flash fallback</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>17 Oct 2016</h4>
+
+<p>v3.6.2</p>
+
+<ul>
+	<li>Update videojs-contrib-media-sources to 4.0.0
+	<ul>
+		<li>Append init segment data on audio track changes</li>
+		<li>Normalize ID3 behavior to follow Safari's implementation</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>14 Oct 2016</h4>
+
+<p>v3.6.1</p>
+
+<ul>
+	<li>Allow for initial bandwidth option of 0</li>
+	<li>Added support for MAAT in Firefox 49</li>
+	<li>Corrected deprecation warning for <strong>player.hls</strong></li>
+</ul>
+
+<h4>27 Sep 2016</h4>
+
+<p>v3.6.0</p>
+
+<ul>
+	<li>Updated Mux.js to 2.5.0
+	<ul>
+		<li>Added support for generating version 1 TFDT boxes</li>
+		<li>Added TS inspector</li>
+	</ul>
+	</li>
+	<li>Added bundle-collapser to create smaller dist files</li>
+	<li>Added fMP4 support</li>
+	<li>Fixed a bug that resulted in us loading the first segment on a live stream</li>
+</ul>
+
+<h4>24 Aug 2016</h4>
+
+<p>v3.5.3</p>
+
+<ul>
+	<li>Updated videojs-contrib-mediasources to 3.1.5
+	<ul>
+		<li>Updated Mux.js to 2.4.2
+		<ul>
+			<li>Fixed caption-packet sorting to be stable on Chromium</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>17 Aug 2016</h4>
+
+<p>v3.5.2</p>
+
+<ul>
+	<li>Changes to the underflow-detection in the gap-skipper to remove restrictions on the size of the gaps it is able to skip</li>
+</ul>
+
+<h4>16 Aug 2016</h4>
+
+<p>v3.5.1</p>
+
+<ul>
+	<li>Fixes an issue where playback can stall when going in/out of fullscreen</li>
+</ul>
+
+<h4>15 Aug 2016</h4>
+
+<p>v3.5.0</p>
+
+<ul>
+	<li>Updated support for <code>#ext-x-cue-out</code>, <code>#ext-x-cue-in</code>, and <code>#ext-x-cue-out-cont</code> to create a single cue spanning the range of time covered by the ad break</li>
+	<li>Updated to videojs-media-sources 3.1.4 to increase the values of the <code>FlashConstants</code> to push more data into flash per chunk-interval</li>
+</ul>
+
+<h4>29 Jul 2016</h4>
+
+<p>v3.4.0</p>
+
+<ul>
+	<li>Added support for <code>#ext-x-cue-out</code>, <code>#ext-x-cue-in</code>, and <code>#ext-x-cue-out-cont</code> via a special TextTrack</li>
+	<li>Added the ability to skip gaps caused by video underflow behavior in Chrome</li>
+</ul>
+
+<h4>25 Jul 2016</h4>
+
+<p>v3.3.0</p>
+
+<ul>
+	<li>No longer timeout segment requests if there is only one playlist left or if we are on the lowest rendition available</li>
+	<li>Fixed a bug where sometimes the first segment was not fetched when it should have been</li>
+</ul>
+
+<h4>15 Jul 2016</h4>
+
+<p>v3.2.0</p>
+
+<ul>
+	<li>Added an algorithm to seek over gaps in the video element's buffer when they are created because of missing video or audio frames</li>
+	<li>Moved the AES decryption logic to it's own project</li>
+</ul>
+
+<h4>9 Jun 2016</h4>
+
+<p>v3.1.0</p>
+
+<ul>
+	<li>Added manual rendition selection API via the <code>representations()</code> function on each instance of the <code>HlsHandler</code> class</li>
+	<li>Pulled out and moved m3u8 parsing functionality into it's own project at https://github.com/videojs/m3u8-parser</li>
+</ul>
+
+<h4>2 Jun 2016</h4>
+
+<p>v3.0.5</p>
+
+<ul>
+	<li>Fixed a bug where the adaptive bitrate selection algorithm would not switch to media playlists that had already been fetched from the server previously</li>
+</ul>
+
+<h4>31 May 2016</h4>
+
+<p>v3.0.4</p>
+
+<ul>
+	<li>Added support for multiple alternate audio tracks</li>
+	<li>New class SegmentLoader contains all buffer maintenence and segment fetching logic</li>
+	<li>New class SourceUpdater tracks the state of asynchronous operations on a SourceBuffer and queues operations for future execution if the SoureBuffer is busy</li>
+	<li>New class MasterPlaylistController now encapsulates operations on the master playlist and coordinates media playlists and segment loaders</li>
+	<li>Bug fixes related to fetching and buffer maintenance</li>
+</ul>
+
+<h4>11 Mar 2016</h4>
+
+<p>v2.0.1</p>
+
+<ul>
+	<li>First release of the ES6 version of the SourceHandler</li>
+	<li>All new lint/build/test setup via the <a href="https://github.com/videojs/generator-videojs-plugin">generator-videojs-plugin</a> project</li>
+</ul>
+
+<h4>4 Mar 2016</h4>
+
+<p id="toc_1">v1.13.1</p>
+
+<ul>
+	<li>Converted from a Tech to a SourceHandler for Video.js 5.x compatibility</li>
+	<li>Implemented a Media Source Extensions-based playback engine with a Flash-based fallback</li>
+	<li>Rewrote the Transmuxer and moved it into it's own project <a href="https://github.com/videojs/mux.js">mux.js</a></li>
+	<li>Added support for 608/708 captions</li>
+</ul>
+
+<h4>29 Jul 2015</h4>
+
+<p id="toc_2">v0.17.6</p>
+
+<ul>
+	<li>autoplay at the live point. fix live id3 cue insertion. (<a href="https://github.com/videojs/videojs-contrib-hls/pull/353">view</a>)</li>
+</ul>
+
+<h4>14 Jul 2015</h4>
+
+<p id="toc_3">v0.17.5</p>
+
+<ul>
+	<li>do not assume media sequence starts at zero (<a href="https://github.com/videojs/videojs-contrib-hls/pull/346">view</a>)</li>
+	<li>fix error with audio- or video-only streams (<a href="https://github.com/videojs/videojs-contrib-hls/pull/348">view</a>)</li>
+</ul>
+
+<h4>12 Jul 2015</h4>
+
+<p id="toc_4">v0.17.4</p>
+
+<ul>
+	<li>Fix seeks between segments. Improve duration calculation. (<a href="https://github.com/videojs/videojs-contrib-hls/pull/339">view</a>)</li>
+</ul>
+
+<h4>29 Jun 2015</h4>
+
+<p id="toc_5">v0.17.3</p>
+
+<ul>
+	<li>Improved video duration calculation. (<a href="https://github.com/videojs/videojs-contrib-hls/pull/321">view</a>)</li>
+	<li>Clamp seeks to the seekable range (<a href="https://github.com/videojs/videojs-contrib-hls/pull/327">view</a>)</li>
+	<li>Use getComputedStyle for player dimensions when filtering variants (<a href="https://github.com/videojs/videojs-contrib-hls/pull/326">view</a>)</li>
+	<li>Add a functional test that runs in SauceLabs (<a href="https://github.com/videojs/videojs-contrib-hls/pull/323">view</a>)</li>
+</ul>
+
+<h4>15 Jun 2015</h4>
+
+<p id="toc_6">v0.17.2</p>
+
+<ul>
+	<li>Fix seeking in live streams (<a href="https://github.com/videojs/videojs-contrib-hls/pull/308">view</a>)</li>
+</ul>
+
+<h4>8 Jun 2015</h4>
+
+<p id="toc_7">v0.17.1</p>
+
+<ul>
+	<li>Do not preload live videos (<a href="https://github.com/videojs/videojs-contrib-hls/pull/299">view</a>)</li>
+</ul>
+
+<h4>5 Jun 2015</h4>
+
+<p id="toc_8">v0.17.0</p>
+
+<ul>
+	<li>Implement seekable for live streams. Fix in-band metadata timing for live streams. (<a href="https://github.com/videojs/videojs-contrib-hls/pull/295">view</a>)</li>
+</ul>
+
+<h4>29 May 2015</h4>
+
+<p id="toc_9">v0.16.1</p>
+
+<ul>
+	<li>Do not unnecessarily reset to the live point when refreshing playlists. Clean up playlist loader timeouts. (<a href="https://github.com/videojs/videojs-contrib-hls/pull/274">view</a>)</li>
+	<li>Ensure segments without an initial IDR are not displayed in 4:3 initially (<a href="https://github.com/videojs/videojs-contrib-hls/pull/272">view</a>)</li>
+	<li>Wait for an SPS to inject metadata tags. (<a href="https://github.com/videojs/videojs-contrib-hls/pull/280">view</a>)</li>
+	<li>Trim whitespace in playlist. (<a href="https://github.com/videojs/videojs-contrib-hls/pull/282">view</a>)</li>
+	<li>Allow playback of TS files with NITs. Don't warn about PCR PIDs. (<a href="https://github.com/videojs/videojs-contrib-hls/pull/284">view</a>)</li>
+	<li>Quicker quality switches when bandwidth changes. (<a href="https://github.com/videojs/videojs-contrib-hls/pull/285">view</a>)</li>
+	<li>Fix temporary warped display after seeking. (<a href="https://github.com/videojs/videojs-contrib-hls/pull/290">view</a>)</li>
+</ul>
+
+<h4 id="toc_10">v0.16.0</h4>
+
+<ul>
+	<li>support preload=none</li>
+</ul>
+
+<h4 id="toc_11">v0.15.0</h4>
+
+<ul>
+	<li>expose all ID3 frames and handle tags larger than 188 bytes</li>
+</ul>
+
+<h4 id="toc_12">v0.14.0</h4>
+
+<ul>
+	<li>performance improvements for HLSe</li>
+</ul>
+
+<h4 id="toc_13">v0.13.0</h4>
+
+<ul>
+	<li>Improved audio/video synchronization</li>
+	<li>Fixes for live, HLSe, and discontinuities</li>
+	<li>Rename internal methods to clarify their intended visibility</li>
+</ul>
+
+<h4 id="toc_14">v0.12.0</h4>
+
+<ul>
+	<li>support for custom IVs with AES-128 encryption</li>
+</ul>
+
+<h4 id="toc_15">v0.11.0</h4>
+
+<ul>
+	<li>embedded ID3 tags are exposed as an in-band metadata track</li>
+</ul>
+
+<h4 id="toc_16">v0.10.0</h4>
+
+<ul>
+	<li>optimistic initial bitrate selection</li>
+</ul>
+
+<h4 id="toc_17">v0.9.0</h4>
+
+<ul>
+	<li>support segment level AES-128 encryption</li>
+</ul>
+
+<h4 id="toc_18">v0.8.0</h4>
+
+<ul>
+	<li>support for EXT-X-DISCONTINUITY</li>
+</ul>
+
+<h4 id="toc_19">v0.7.0</h4>
+
+<ul>
+	<li>convert the HLS plugin to a tech</li>
+</ul>
+
+<h4 id="toc_20">v0.6.0</h4>
+
+<ul>
+	<li>Refactor playlist loading</li>
+	<li>Add testing via karma</li>
+</ul>
+
+<h4 id="toc_21">v0.5.0</h4>
+
+<ul>
+	<li>cookie-based content protection support (see <code>withCredentials</code>)</li>
+</ul>
+
+<h4 id="toc_22">v0.4.0</h4>
+
+<ul>
+	<li>Live stream support</li>
+</ul>
+
+<h4 id="toc_23">v0.3.0</h4>
+
+<ul>
+	<li>Performance fixes for high-bitrate streams</li>
+</ul>
+
+<h4 id="toc_24">v0.2.0</h4>
+
+<ul>
+	<li>Basic playback and adaptive bitrate selection</li>
+</ul>
+
+<h4 id="toc_25">v0.1.0</h4>
+
+<ul>
+	<li>Initial release</li>
+</ul>
+</section>
+</div>
+      
+</div>
+
+</div>
+
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="row">
+            <div class="region region-footer-top-left col-md-9" style="margin-bottom: 1em;">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove Support</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://status.brightcove.com">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="contact-support.html" data-drupal-link-system-path="node/18632">Support - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.brightcove.com/en/contact/create">Support - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Documentation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Training</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="online-training-courses.html" data-drupal-link-system-path="node/18286">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a course</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://www.brightcove.com">Brightcove.com</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="region region-footer-top-right col-md-3">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Brightcove Inc. (NASDAQ: BCOV), is a leading global provider of powerful cloud solutions for delivering and monetizing video across connected devices.</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="row">
+            <div class="region region-footer-bottom-left col-md-8">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item">Brightcove Inc. All rights reserved.</div>
+      
+      <div class="field field--name-field-legal-links field--type-link field--label-hidden field--items">
+              <div class="field--item"><a href="https://www.brightcove.com/en/privacy">Privacy</a></div>
+              <div class="field--item"><a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="region region-footer-bottom-right col-md-4">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items">
+              <div class="field--item">
+
+<a href="https://www.linkedin.com/company/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://twitter.com/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://www.facebook.com/Brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://plus.google.com/100830370440271567091" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18796","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="sites/default/files/js/js_gyH3GlnTIe1SGK59o4rsE-heoS1g0ILCvQ3Of4jKRx8.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGn0UTEBVCWpcWgBdZHZWCE1CWwlaV0c4dldRXDBQVUMmWVxBFldUWVwUFA5CDFNF","queueTime":0,"applicationTime":973,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="sites/default/files/favicon-64.png" type="image/png" />
+<link rel="alternate" hreflang="en" href="display-error-messages-plugin.html" />
+<link rel="canonical" href="display-error-messages-plugin.html" />
+<link rel="shortlink" href="display-error-messages-plugin.html" />
+<link rel="revision" href="display-error-messages-plugin.html" />
+
+    <title>Display Error Messages Plugin | Brightcove Learning</title>
+    <link rel="stylesheet" media="all" href="sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw_q23msc.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4_q23msc.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on" />
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  </head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="navigation-secondary clearfix">
+          <div class="region region-navigation-secondary">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary Navigation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="contact-support.html" title="Create a Support Request" data-drupal-link-system-path="node/18632">Support Request</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://status.brightcove.com/">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://university.brightcove.com/">Brightcove University</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gtranslate">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" style="font-weight:bold;background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">English</option><option value="en|fr" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">French</option><option value="en|de" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">German</option><option value="en|ja" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">Japanese</option><option value="en|ko" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">Korean</option><option value="en|es" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">Spanish</option></select>
+</div>
+<div class="gtranslate__credits">
+  Translations Provided by Google Translate
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="navbar-header col-md-3">
+                  <a class="logo navbar-btn pull-left" href="index.html" title="Home" rel="home">
+            <img src="themes/custom/bcdocs/images/brightcove.png" alt="Home" />
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" title="Home page" data-drupal-link-system-path="node/18643">Home</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Products
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="video-cloud.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://gallery.support.brightcove.com">Gallery</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a href="social.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ssai.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Quick Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="analytics-api.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience-api.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-api.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-connectors-video-cloud.html" data-drupal-link-system-path="node/18662">CMS Connectors for Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="data-collection-api.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="delivery-system-api.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="developer-tools-and-concepts.html" data-drupal-link-system-path="node/18430">Developer Tools and Concepts</a>
+                  </li>
+                              <li class="expanded">
+        <a href="native-player-sdks.html" data-drupal-link-system-path="node/18367">Device SDKs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="dynamic-ingest-api.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="getting-started-brightcove-apis-0.html" data-drupal-link-system-path="node/18711">Getting Started - Brightcove APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="page-experience-api.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ingest-profiles-api.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="oauth-api.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="platform-api-code-samples.html" data-drupal-link-system-path="node/18675">Platform API Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="playback-api.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-code-samples.html" data-drupal-link-system-path="node/18630">Player Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-developer.html" data-drupal-link-system-path="node/18362">Player Developer</a>
+                  </li>
+                              <li class="expanded">
+        <a href="player-management-api.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="policy-api.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="release-notes.html" data-drupal-link-system-path="node/18687">Release Notes</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Training
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="https://university.brightcove.com">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a Course</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a href="brightcove-support-documentation-announcements.html" title="See what&#039;s new in Brightcove Documentation" data-drupal-link-system-path="node/18896">What&#039;s New</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="full-width-headline">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" role="heading">
+            <div class="region region-header">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      Documentation
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="main-container container  js-quickedit-main-content">
+    <div class="row">
+
+                              <aside class="col-sm-3" role="complementary">
+              <div class="region region-sidebar-first">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="display-error-messages-plugin.html" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group">
+      <label for="edit-search" class="control-label sr-only">Search</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="Search" />
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-tmwl7by7t7xjcel-73rfug2i6o0encymfts0ygkjmno" type="hidden" name="form_build_id" value="form-tMwL7bY7t7xJCEL-73rFug2I6O0enCYmFts0yGKJMNo" /><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form" /><div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix">
+  
+      <h2 class="block-title">On This Page</h2>
+    
+
+      <div class="bc-ipnav-block"></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="highlighted">  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a id="main-content"></a>
+            <div class="region region-content">
+        <h1 class="page-header"><span>Display Error Messages Plugin</span>
+</h1>
+
+  
+<div class="node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+      </div>
+
+  <div class="group-second-row">
+  
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+          <div class="field--item">Brightcove Player</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Player Developer</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-topics field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Topic(s)</div>
+          <div class="field--items">
+              <div class="field--item">Plugins</div>
+          <div class="field--item">Troubleshooting/Error Handling</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item"><!-- Place document intro sentence(s) here --><p>In this topic, you will learn how to modify the default error message behavior, create custom error messages and dispatch errors.</p>
+            <article class="bcls-article"><section id="Overview" class="bcls-section"><h2>Overview</h2>
+
+<p>The error messages plugin allows the player to display user-friendly messages when it encounters an error. The default style sheet displays messages as a semi-transparent overlay on top of the video element itself. You can change existing message text and add your own styles. You can even create custom messages that are triggered when you want.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="error message plugin" src="https://learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/errors-plugin/error-message-plugin.png" /></figure><p>The error message shown in the image above was created by updating the player with an invalid <code class="notranslate">src</code> value in the <code class="notranslate">sources</code> property.</p>
+
+<p>The error messages plugin is a default plugin and is automatically loaded with the Brightcove player. However, you can choose not to load it. Without this plugin, you will see a limited set of error messages and some errors will only appear in the browser console. For details on how to not load a default plugin when you create a player, see the <a href="overview-brightcove-player-plugins.html#defaultplugins">Player Plugin Overview</a> document.</p>
+</section><section id="getstarted" class="bcls-section"><h2>Get started</h2>
+
+<p>It is best practice to update your player using the Brightcove Players module from Studio. This approach is used in the following sections to update the error messages plugin for your player. This will update all instances of your player. If you choose to update this plugin from a page of code, it will only affect that instance of your player</p>
+
+<p>To update the plugin from your page code, first get a reference to the Brightcove player. In this example, in the JavaScript we are creating a variable named <code class="notranslate">myPlayer</code> and assigning it a reference to the player.</p>
+
+<aside class="bcls-aside bcls-aside--information">Note: you do not need to do this if you are updating your Brightcove player using the Players module.</aside><pre class="line-numbers">
+<code class="language-html notranslate">&lt;video-js <span class="bcls-highlight">id="myPlayerID"</span>
+  data-video-id="4443311217001"
+  data-account="1507807800001"
+  data-player="default"
+  data-embed="default"
+  class="video-js" controls&gt;&lt;/video-js&gt;
+&lt;script src="https://players.brightcove.net/1507807800001/default_default/index.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+  <span class="bcls-highlight">videojs.getPlayer('myPlayerID')</span>.ready(function(){
+    var myPlayer = this;</code></pre>
+</section><section class="bcls-section"><h2 id="standarderrors">Standard errors</h2>
+
+<p>This plugin has a set of default error messages for the standard HTML5 video errors based on the runtime error code value:</p>
+
+<ul><li>Error code: 1
+	<ul><li><strong>Type</strong>: MEDIA_ERR_ABORTED</li>
+		<li><strong>Headline</strong>: The video download was cancelled</li>
+		<li><strong>Message</strong>: You aborted the media playback</li>
+	</ul></li>
+	<li>Error code: 2
+	<ul><li><strong>Type</strong>: MEDIA_ERR_NETWORK</li>
+		<li><strong>Headline</strong>: The video connection was lost, please confirm you're connected to the internet</li>
+		<li><strong>Message</strong>: A network error caused the media download to fail part-way. Currently most helpful for MP4 and/or progressive download video formats. See the <a href="#Known_issues">Known issues</a> section in this document for details.</li>
+	</ul></li>
+	<li>Error code: 3
+	<ul><li><strong>Type</strong>: MEDIA_ERR_DECODE</li>
+		<li><strong>Headline</strong>: The video is bad or in a format that can't be played on your browser</li>
+		<li><strong>Message</strong>: The media playback was aborted due to a corruption problem or because the media used features your browser did not support.</li>
+	</ul></li>
+	<li>Error code: 4
+	<ul><li><strong>Type</strong>: MEDIA_ERR_SRC_NOT_SUPPORTED</li>
+		<li><strong>Headline</strong>: This video is either unavailable or not supported in this browser</li>
+		<li><strong>Message</strong>: The media could not be loaded, either because the server or network failed or because the format is not supported.</li>
+	</ul></li>
+	<li>Error code: 5
+	<ul><li><strong>Type</strong>: MEDIA_ERR_ENCRYPTED</li>
+		<li><strong>Headline</strong>: The video you're trying to watch is encrypted and we don't know how to decrypt it</li>
+		<li><strong>Message</strong>: The media is encrypted and we do not have the keys to decrypt it.</li>
+	</ul></li>
+</ul><p>If an error does not have an associated error code, a generic message is displayed:</p>
+
+<ul><li>Error code: unknown
+	<ul><li>Message: MEDIA_ERR_UNKNOWN</li>
+		<li>Description: An unanticipated problem was encountered, check back soon and try again</li>
+	</ul></li>
+</ul></section><section class="bcls-section"><h2 id="overridetext">Override text</h2>
+
+<p>There are three parts of the error message that you can change:</p>
+
+<ul><li><code class="notranslate">headline</code> : This is the message text at the top.</li>
+	<li><code class="notranslate">type</code> : This is the <strong>Error Code:</strong> text.</li>
+	<li><code class="notranslate">message</code> : This is the <strong>Technical details:</strong> text.</li>
+</ul><figure class="bcls-figure"><img class="bcls-image" alt="error message plugin" src="https://learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/errors-plugin/error-message-plugin2.png" /></figure><p>Once your player is created, in Studio edit the <strong>Plugins</strong> section of the <strong>Players</strong> module with a JSON object to set property values.</p>
+
+<p>The example below shows how to override the message text for the standard error with an error code value of <code class="notranslate">4</code>. The properties are defined as follows:</p>
+
+<ul><li><code class="notranslate">plugins</code>: This property contains an array of properties and values. For this plugin, you only need to supply the <code class="notranslate">name</code> property with the value of <code class="notranslate">errors</code>.</li>
+	<li><code class="notranslate">options</code>: This property is used to pass data to the plugin.</li>
+	<li><code class="notranslate">errors</code>: This property defines the error code that you want to update. Here we are overriding the message text for the <code class="notranslate">headline</code>, <code class="notranslate">type</code>, and <code class="notranslate">message</code>.
+	<aside class="bcls-aside bcls-aside--information">Note: the error code can be any string value, such as overriding the text for the <code class="notranslate">unknown</code> message.</aside></li>
+</ul>
+ 
+
+<pre class="line-numbers">
+<code class="language-json">{
+  "errors": {
+    "4": {
+      "headline": "This is a custom error message",
+      "type": "MEDIA_ERR_SRC_CUSTOM",
+      "message": "These are the details for the custom message"
+    }
+  }
+}</code></pre>
+
+<p>If you include the errors script in your code, you can override message text as follows:</p>
+
+<pre class="line-numbers">
+<code class="language-javascript notranslate">myPlayer.errors({
+  "errors": {
+    "4": {
+      "headline": "This is a custom error message",
+      "type": "custom type",
+      "message": "these are details"
+    }
+  }
+});</code></pre>
+</section><section class="bcls-section"><h2 id="bccustomerrors">Brightcove defined custom errors</h2>
+
+<p>Custom errors can also be defined. Brightcove has defined a number of custom errors, explained in this section, and you can also create custom errors, detailed in the next section.</p>
+
+<ul><li>Brightcove recommends custom error code values be a string. You will see two of the provided errors use negative numbers for historical reasons, but alpha-numeric/descriptive strings are less likely to cause collision issues.</li>
+	<li>Custom error messages can be named anything you want. Brightcove recommends that the type begin with <code class="notranslate">PLAYER_ERR</code> versus the standardized <code class="notranslate">MEDIA_ERR</code> to avoid confusion.</li>
+	<li>As detailed <a href="#dismissible">later in this section</a>, you can make custom errors dismissible or not.</li>
+</ul><p>Five custom error messages have been added as a reference:</p>
+
+<ul><li>Error code: -1
+	<ul><li>Message: PLAYER_ERR_NO_SRC</li>
+		<li>Description: No video has been loaded</li>
+	</ul></li>
+	<li>Error code: -2
+	<ul><li>Message: PLAYER_ERR_TIMEOUT</li>
+		<li>Description: Could not download the video
+		<aside class="bcls-aside bcls-aside--information">Note: In general, PLAYER_ERR_TIMEOUT happens when the player expects to be playing video but <strong>can't make any progress for 45 seconds</strong>. This can be the final result of many things that happen earlier, including the suspension of the browser when a tab is put in the background, for instance. But it can be a sort of catch-all condition for network or platform conditions that prevent playback from continuing.</aside></li>
+	</ul></li>
+	<li>Error code: <em>Not set</em>
+	<ul><li>Message: PLAYER_ERR_DOMAIN_RESTRICTED</li>
+		<li>Description: This video is restricted from playing on your current domain</li>
+	</ul></li>
+	<li>Error code: <em>Not set</em>
+	<ul><li>Message: PLAYER_ERR_IP_RESTRICTED</li>
+		<li>Description: This video is restricted at your current IP address</li>
+	</ul></li>
+	<li>Error code: <em>Not set</em>
+	<ul><li>Message: PLAYER_ERR_GEO_RESTRICTED</li>
+		<li>Description: This video is restricted from playing in your current geographic region</li>
+	</ul></li>
+</ul><aside class="bcls-aside bcls-aside--information">For those errors without a code, the message will be used for the code. For example, a domain restriction error is shown here:
+<figure class="bcls-figure"><img class="bcls-image" alt="domain restriction error message" src="https://learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/errors-plugin/domain-restriction-error.png" /></figure></aside></section><section class="bcls-section"><h2 id="usercustomerrors">User defined custom errors</h2>
+
+<p>When defining your own custom errors Brightcove recommends you do not use a <strong>code</strong>. (You see in the section above that this is what Brightcove is now doing with the newer custom errors they are defining.) You should also consider using the <code class="notranslate">PLAYER_ERR_</code> prefix for your custom errors for consistency's sake, but of course you can name them however you wish.</p>
+
+<p>This example creates a new user defined custom error message with an error code value of <code class="notranslate">PLAYER_ERR_AGE_GATE</code> and includes text based on an age gate test that you would enter in Studio's <strong>PLAYERS &gt; PLUGINS</strong> section.</p>
+
+<pre class="line-numbers">
+<code class="language-json">{
+  "errors": {
+    "PLAYER_ERR_AGE_GATE": {
+      "headline": "You must be at least 18 years of age.",
+      "message": "Content may be considered inappropriate for some users."
+    }
+  }
+}</code></pre>
+
+<p>If you include the errors script in your code, you can add custom messages as follows:</p>
+
+<pre class="line-numbers">
+<code class="language-javascript notranslate">videojs.getPlayer('myPlayerID').ready(function() {
+  var myPlayer = this;
+  //custom error
+  myPlayer.errors({
+    "errors": {
+      "PLAYER_ERR_AGE_GATE": {
+        "headline": "You must be at least 18 years of age.",
+        "message": "Content may be considered inappropriate for some users."
+    }
+  }
+});</code></pre>
+
+<h3>Displaying custom errors</h3>
+
+<p>When you define custom errors, you need to let Brightcove Player know when you want to display it. To do this, create your own code to determine when the message should be displayed. Then use the <code class="notranslate">error()</code> function to display the message as follows:</p>
+
+<pre class="line-numbers">
+<code class="language-javascript notranslate">//display custom message
+var age_appropriate = false;
+myPlayer.on("loadstart", function () {
+  if(!age_appropriate) {
+    myPlayer.error({code:'PLAYER_ERR_AGE_GATE'});
+  }
+});</code></pre>
+
+<p>Here the <code class="notranslate">age_appropriate</code> variable is set to <code class="notranslate">false</code>, but you would add your own code to determine when to display your custom error messages.</p>
+
+<p>The error would be displayed to the user as follows:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="user custom error message" src="https://learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/errors-plugin/user-custom-error-message.png" /></figure><aside class="bcls-aside bcls-aside--tip">Note: any code to throw custom errors must wait for the video to load. Use the <code class="notranslate">loadstart</code> event to determine this. If you try to display your message without waiting, then your message will disappear after the video loads.</aside></section><section class="bcls-section"><h2 id="dismissible">Make custom errors non-dismissible</h2>
+
+<p>By default a custom error message is dismissible by the video viewer. As the following screenshot shows, there is an <strong>OK</strong> button to click to dismiss the window, as well as an <strong>X</strong> in the top right corner.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="dismissible error message" src="https://learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/errors-plugin/dismissible.png" /></figure><p>If you wish to NOT permit the video viewer to dismiss the error message, you can do that. When you call the <code class="notranslate">error()</code> method, you can set the <code class="notranslate">dismiss</code> property to <code class="notranslate">false</code>.</p>
+
+<pre class="line-numbers">
+<code class="language-javascript notranslate">myPlayer.error({code:'age-gate-error', <span class="bcls-highlight">dismiss: false</span>});</code></pre>
+
+<p>When you do this the error message will appear as follows, with no way to dismiss the error.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="not dismissible error message" src="https://learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/errors-plugin/not-dismissible.png" /></figure></section><section class="bcls-section"><h2 id="getAll_method">getAll() method</h2>
+
+<p>You can use the <code class="notranslate">getAll()</code> method to see all the errors registered for a specific player. You can call the <code class="notranslate">getAll()</code> method anytime after the <strong>errors</strong> plugin has been initialized, for instance after <code class="notranslate">player.errors()</code> has been called. An example of calling the method is:</p>
+
+<pre class="line-numbers">
+<code class="language-javascript notranslate">console.log('myPlayer.errors.getAll()',myPlayer.errors.getAll());</code></pre>
+
+<p>An example of the console display, with some errors expanded for details is:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="getAll console display" src="https://learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/errors-plugin/getAll-method.png" /></figure></section><section id="dispatcherror" class="bcls-section"><h2>Dispatch errors</h2>
+
+<p>In development you may wish to dispatch errors to test if your configuration changes are successful. You can do this using code similar to that shown in the following code snippet. In this case, a button is added to the code so you can dispatch the error at a chosen time.</p>
+
+<pre class="line-numbers">
+<code class="language-html notranslate">&lt;video-js id="myPlayerID"
+  data-video-id="4443311217001"
+  data-account="1507807800001"
+  data-player="default"
+  data-embed="default"
+  class="video-js" controls&gt;&lt;/video-js&gt;
+&lt;script src="https://players.brightcove.net/1507807800001/default_default/index.min.js"&gt;&lt;/script&gt;
+&lt;p&gt;&lt;button onclick="changeVideo()"&gt;change video&lt;/button&gt;&lt;/p&gt;
+&lt;script type="text/javascript"&gt;
+  var changeVideo;
+  videojs.getPlayer('myPlayerID').ready(function() {
+    var myPlayer = this;
+    changeVideo = function(){
+      myPlayer.error({code:'2'});
+    }
+  });
+&lt;/script&gt;</code></pre>
+</section><section id="Localize_errors" class="bcls-section"><h2>Localize errors</h2>
+
+<p>The errors plugin supports multiple languages. To add language support, after the plugin has loaded load the particular language file you wish to use:</p>
+
+<pre class="line-numbers">
+<code class="language-html notranslate">&lt;script src="lang/es.js"&gt;&lt;/script&gt;</code></pre>
+
+<p>You can then use the techniques shown in the <a href="programmatically-localizing-brightcove-player.html">Localizing Brightcove Player</a> document to localize error messages.</p>
+</section><section id="section-name" class="bcls-section"><h2>bc-catalog-error</h2>
+
+<p>It is possible that handling errors in the normal <code class="notranslate">ready()</code> section in the script block can cause issues. For instance, it can happen that the bc-catalog-error event could be dispatched before the player is ready, and if you listen for the error in the <code class="notranslate">ready()</code> section, you will not be able to handle the error. This issue can occur when using geo-filtering, a video is inactive, a video is out of scheduling range, or in a different account. You may find that there is not a problem in your code, but the issue can browser dependent, so use caution.</p>
+
+<p>For example, here is plugin code that displays a message when a video is inactive:</p>
+
+<pre class="line-numbers">
+<code class="language-javascript notranslate">videojs.registerPlugin('inactiveErrorCheck', function() {
+  var myPlayer = this;
+  myPlayer.one('bc-catalog-error', function(){
+    var specificError;
+    myPlayer.errors({
+      'errors': {
+          'inactive-video-error': {
+          'headline': 'The video you are trying to watch is inactive.',
+          'dismiss': false
+        }
+      }
+    });
+    if (typeof(myPlayer.catalog.error) !== 'undefined') {
+      specificError = myPlayer.catalog.error.data[0];
+      if (specificError !== 'undefined' &amp; specificError.error_code == "VIDEO_NOT_PLAYABLE") {
+        myPlayer.error({code:'inactive-video-error'});
+      };
+    };
+  });
+});</code></pre>
+
+<aside class="bcls-aside bcls-aside--tip">For full details on handling catalog errors see the <a href="player-catalog.html#catalog-error">Handle bc-catalog-error</a> section of the <strong>Player Catalog</strong> document.</aside></section><section class="bcls-section"><h2 id="Exaggerated_error_rate">Exaggerated error rate</h2>
+
+<p>If you are getting what seems like an unreasonable number of reported errors, it is important to know that you can get duplicate error events for the same session, creating this exaggerated error rate. Brightcove Player sends errors to analytics at the exact time, and in the same quantity, as they are reported to the player. For instance, if there is no media in a player, and code somehow calls <code class="notranslate">play()</code> one thousand times in a row, one thousand <strong>PLAYER_ERR_NO_SRC</strong> errors will be reported to analytics.</p>
+
+<p>If there are a few sessions with tons of errors skewing the analytics, you should consider using the following logic to get a better sense of the actual issues:</p>
+
+<pre class="line-numbers">
+<code class="language-javascript notranslate">number_of_sessions_with_errors / total_number_of_sessions</code></pre>
+rather than
+
+<pre class="line-numbers">
+<code class="language-javascript notranslate">count of errors/number of views</code></pre>
+</section><section class="bcls-section"><h2 id="Known_issues">Known issues</h2>
+
+<ul><li>When playing back HLS sources, behavior after network connectivity is lost is probably not what you would expect. The details are:
+	<ul><li>In version 6.x of Brightcove Player HLS segments are endlessly requested and no <strong>MEDIA_ERR_NETWORK</strong> ever appears.</li>
+		<li>In version 5.x of Brightcove Player after a period of time (30+ seconds) a <strong>PLAYER_ERR_TIMEOUT</strong> error appears.</li>
+	</ul></li>
+	<li>When loading videos in Edge on Windows 10 (both within the Studio and in public URLs), a <strong>MEDIA_ERR_SRC_NOT_SUPPORTED</strong> error is displayed and the video cannot be played.</li>
+	<li>
+	<p>On Android devices and iPhones, the tap events for error messages do not bubble up to the parent video element. This means that you can not close an error message once it appears. This behavior may be a problem if the user is in fullscreen mode, because they will have no way to leave this state.</p>
+
+	<p>This issue is currently being worked on and should be fixed in a future player release. For now, you can try a work-around like this:</p>
+
+	<pre class="line-numbers">
+<code class="language-javascript notranslate">player.on("touchstart", function(e) {
+  if (player.error_) {
+    player.error(null);
+    e.preventDefault();
+  }
+})</code></pre>
+	</li>
+</ul></section><section class="bcls-section"><h2 id="changelog">Changelog</h2>
+
+<p>See the <a href="display-error-messages-plugin-changelog.html">changelog here</a>.</p>
+</section></article></div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-by-field-block-1 clearfix" id="block-views-block-related-content-by-field-block-1">
+  
+    
+
+      <div class="form-group"><div class="view view-related-content-by-field view-id-related_content_by_field view-display-id-block_1 js-view-dom-id-09091af69cd95d42fca1884f4222960a956ef3f41e9795ce6cbc8fa62ecfd7a4">
+  
+    
+      <div class="view-header">
+      <h2>Related content</h2>
+    </div>
+      
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="overview-brightcove-player-plugins.html" hreflang="en">Overview: Brightcove Player Plugins</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="brightcove-player-sample-live-custom-error-message.html" hreflang="en">Brightcove Player Sample: Live Custom Error Message</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="display-overlay-plugin.html" hreflang="en">Display Overlay Plugin</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="player-catalog.html" hreflang="en">Player Catalog</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="row">
+            <div class="region region-footer-top-left col-md-9" style="margin-bottom: 1em;">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove Support</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://status.brightcove.com">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="contact-support.html" data-drupal-link-system-path="node/18632">Support - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.brightcove.com/en/contact/create">Support - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Documentation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Training</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="online-training-courses.html" data-drupal-link-system-path="node/18286">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a course</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://www.brightcove.com">Brightcove.com</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="region region-footer-top-right col-md-3">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Brightcove Inc. (NASDAQ: BCOV), is a leading global provider of powerful cloud solutions for delivering and monetizing video across connected devices.</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="row">
+            <div class="region region-footer-bottom-left col-md-8">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item">Brightcove Inc. All rights reserved.</div>
+      
+      <div class="field field--name-field-legal-links field--type-link field--label-hidden field--items">
+              <div class="field--item"><a href="https://www.brightcove.com/en/privacy">Privacy</a></div>
+              <div class="field--item"><a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="region region-footer-bottom-right col-md-4">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items">
+              <div class="field--item">
+
+<a href="https://www.linkedin.com/company/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://twitter.com/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://www.facebook.com/Brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://plus.google.com/100830370440271567091" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18145","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGkkHXlVrBldRXQE=","queueTime":0,"applicationTime":14,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

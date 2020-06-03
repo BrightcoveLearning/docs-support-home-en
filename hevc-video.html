@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="sites/default/files/favicon-64.png" type="image/png" />
+<link rel="alternate" hreflang="en" href="hevc-video.html" />
+<link rel="canonical" href="hevc-video.html" />
+<link rel="shortlink" href="hevc-video.html" />
+<link rel="revision" href="hevc-video.html" />
+
+    <title>HEVC Video | Brightcove Learning</title>
+    <link rel="stylesheet" media="all" href="sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw_q23msc.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4_q23msc.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on" />
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  </head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="navigation-secondary clearfix">
+          <div class="region region-navigation-secondary">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary Navigation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="contact-support.html" title="Create a Support Request" data-drupal-link-system-path="node/18632">Support Request</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://status.brightcove.com/">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://university.brightcove.com/">Brightcove University</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gtranslate">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" style="font-weight:bold;background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">English</option><option value="en|fr" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">French</option><option value="en|de" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">German</option><option value="en|ja" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">Japanese</option><option value="en|ko" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">Korean</option><option value="en|es" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">Spanish</option></select>
+</div>
+<div class="gtranslate__credits">
+  Translations Provided by Google Translate
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="navbar-header col-md-3">
+                  <a class="logo navbar-btn pull-left" href="index.html" title="Home" rel="home">
+            <img src="themes/custom/bcdocs/images/brightcove.png" alt="Home" />
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" title="Home page" data-drupal-link-system-path="node/18643">Home</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Products
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="video-cloud.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://gallery.support.brightcove.com">Gallery</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a href="social.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ssai.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Quick Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="analytics-api.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience-api.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-api.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-connectors-video-cloud.html" data-drupal-link-system-path="node/18662">CMS Connectors for Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="data-collection-api.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="delivery-system-api.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="developer-tools-and-concepts.html" data-drupal-link-system-path="node/18430">Developer Tools and Concepts</a>
+                  </li>
+                              <li class="expanded">
+        <a href="native-player-sdks.html" data-drupal-link-system-path="node/18367">Device SDKs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="dynamic-ingest-api.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="getting-started-brightcove-apis-0.html" data-drupal-link-system-path="node/18711">Getting Started - Brightcove APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="page-experience-api.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ingest-profiles-api.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="oauth-api.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="platform-api-code-samples.html" data-drupal-link-system-path="node/18675">Platform API Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="playback-api.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-code-samples.html" data-drupal-link-system-path="node/18630">Player Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-developer.html" data-drupal-link-system-path="node/18362">Player Developer</a>
+                  </li>
+                              <li class="expanded">
+        <a href="player-management-api.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="policy-api.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="release-notes.html" data-drupal-link-system-path="node/18687">Release Notes</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Training
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="https://university.brightcove.com">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a Course</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a href="brightcove-support-documentation-announcements.html" title="See what&#039;s new in Brightcove Documentation" data-drupal-link-system-path="node/18896">What&#039;s New</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="full-width-headline">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" role="heading">
+            <div class="region region-header">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      Documentation
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="main-container container  js-quickedit-main-content">
+    <div class="row">
+
+                              <aside class="col-sm-3" role="complementary">
+              <div class="region region-sidebar-first">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="hevc-video.html" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group">
+      <label for="edit-search" class="control-label sr-only">Search</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="Search" />
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-qx4kojnyvbwqauo6hn7vo87ztv-wzdmxhwwien42cl0" type="hidden" name="form_build_id" value="form-Qx4kOjNyVBWqaUo6hn7Vo87ztV-wzDMXhWWIEN42cL0" /><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form" /><div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix">
+  
+      <h2 class="block-title">On This Page</h2>
+    
+
+      <div class="bc-ipnav-block"></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="highlighted">  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a id="main-content"></a>
+            <div class="region region-content">
+        <h1 class="page-header"><span>HEVC Video</span>
+</h1>
+
+  
+<div class="node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+      </div>
+
+  <div class="group-second-row">
+  
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Studio User</div>
+          <div class="field--item">Player Developer</div>
+          <div class="field--item">API Developer</div>
+          <div class="field--item">Device SDK Developer</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-topics field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Topic(s)</div>
+          <div class="field--items">
+              <div class="field--item">Ingest Profiles</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-apis field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">API(s)</div>
+          <div class="field--items">
+              <div class="field--item">Ingest Profiles API</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item"><summary>This topic covers Video Cloud support for HEVC video.</summary><section class="bcls-section">
+<h2 id="Introduction">Introduction</h2>
+
+<h3>Advantages of HEVC</h3>
+
+<p>High Efficiency Video Coding (HEVC), also known as H.265, is a video compression standard, designed as a successor to the widely used Advanced Video Coding (AVC/H.264). In comparison to AVC, HEVC offers from 25% to 50% better data compression at the same level of video quality, or substantially improved video quality at the same bit rate.</p>
+
+<p>The benefits of this improved compression include bandwidth usage, enabling higher video quality at a lower bitrate, and reduced time to first frame (TTFF), all leading to increased end viewer satisfaction.</p>
+
+<h3>Disadvantages</h3>
+
+<p>There is only one disadvantage: because it is a new technology, HEVC video is not yet widely supported by clients (meaning device + OS + browser/app). In addition, some clients are capable of switching between HEVC and AVC segments during playback, while others are not.</p>
+
+<h3>Availability</h3>
+
+<p>HEVC support is a <strong>paid add-on</strong> for Video Cloud. If you are interested in HEVC support, contact your Account Manager.</p>
+</section>
+
+<section class="bcls-section">
+<h2 id="Brightcove_HEVC_solution">Brightcove's HEVC solution</h2>
+
+<p>To provide you with benefits of HEVC while still allowing viewers using technology that does not support it, Brightcove has developed a hybrid solution that both supports older, non-HEVC clients, and also optimizes bandwidth use. There are multiple parts to this solution:</p>
+
+<ul>
+	<li>Creation of both HEVC and AVC encoded segments during transcoding (with optional creation of MP4 for progressive download in addition)</li>
+	<li>Generation of manifests that contain both HEVC and AVC links for all renditions:
+	<ul>
+		<li>HLS: mixed variant streams (ordered by bitrate)</li>
+		<li>DASH: separate adaptation sets for HEVC and H.264, along with supplemental properties declaring them as switchable</li>
+	</ul>
+	</li>
+	<li>Filtering logic based on the viewer client type:
+	<aside class="bcls-aside bcls-aside--information language-editable">Note that filtering requires Dynamic Delivery Rules (details will be announced in a later release).</aside>
+
+	<ul>
+		<li>removes HEVC streams from manifests if requesting device is a legacy, non-HEVC capable device</li>
+		<li>removes H.264 streams from manifests heading to HEVC capable non-switchable devices</li>
+		<li>leaves both HEVC and H.264 streams if devices are capable of decoding both codecs and switching between them</li>
+	</ul>
+	</li>
+</ul>
+</section>
+
+<section class="bcls-section">
+<h2 id="Supported_clients">Supported clients</h2>
+
+<p>Currently, HEVC is supported end-to-end on the following clients using Brightcove web or native device players:</p>
+
+<table class="bcls-table">
+	<caption class="bcls-caption--table">Supported Web Clients for HEVC</caption>
+	<thead class="bcls-table__head">
+		<tr>
+			<th colspan="2" style="text-align: center;">Brightcove Web Player</th>
+		</tr>
+		<tr>
+			<th>OS</th>
+			<th>Browser</th>
+		</tr>
+	</thead>
+	<tbody class="bcls-table__body">
+		<tr>
+			<td>MacOS 10.13+</td>
+			<td>Safari</td>
+		</tr>
+		<tr>
+			<td>iOS 11+</td>
+			<td>Safari</td>
+		</tr>
+		<tr>
+			<td>Apple TV</td>
+			<td>via Airplay</td>
+		</tr>
+		<tr>
+			<td>Windows 10</td>
+			<td>Edge (legacy version <strong>with plugin</strong>)</td>
+		</tr>
+	</tbody>
+</table>
+
+<table class="bcls-table">
+	<caption class="bcls-caption--table">Supported Devices for HEVC</caption>
+	<thead class="bcls-table__head">
+		<tr>
+			<th colspan="2" style="text-align: center;">Brightcove Native Device SDK Players</th>
+		</tr>
+		<tr>
+			<th>SDK</th>
+			<th>OS</th>
+		</tr>
+	</thead>
+	<tbody class="bcls-table__body">
+		<tr>
+			<td>iOS SDK</td>
+			<td>iOS 11+</td>
+		</tr>
+		<tr>
+			<td>tvOS SDK</td>
+			<td>tvOS</td>
+		</tr>
+        <tr>
+            <td>Android SDK</td>
+            <td>Android API level 21 (Lollipop version 5.0) and higher <sup><strong><a href="#1-1">[1-1]</a></strong></sup></td>
+        </tr>
+    </tbody>
+</table>
+<h3>Notes</h3>
+<ul>
+  <li id="1-1"><sup><strong>[1-1]</strong></sup> For details, see <a href="hevc-selection-native-sdk-android.html">HEVC Selection with the Native SDK for Android</a></li>
+</ul>
+</section>
+
+<section class="bcls-section">
+<h2 id="HEVC_ingest_profiles">HEVC ingest profiles</h2>
+
+<p>If HEVC is enabled for your account, to get HEVC renditions for playback, all you have to do is choose one of the HEVC ingest profiles (Context Aware Encoding or Dynamic Delivery) when you ingest your videos using the Upload module or the Dynamic Ingest API:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="HEVC Ingest Profiles" src="https://general.support.brightcove.com/assets/images/shared-content/general/hevc-profiles.png" />
+<figcaption class="bcls-caption--image">HEVC Ingest Profiles</figcaption>
+</figure>
+
+<p>&nbsp;</p>
+
+<p>The full JSON details of these profiles is included <a href="#appendix_profiles">below</a>. We recommend that you use CAE (Context Aware Encoding) profiles to create the best rendition set for your source and optimize storage. Since CAE requires somewhat longer processing time to inspect the source, if getting a publishable rendition as quickly as possible is your priority, you can create a custom ingest profile with the <a href="https://apis.support.brightcove.com/ingest-profiles/guides/cae-fast-publish.html">Fast Publish</a> option.</p>
+
+<p>Note that if, for the fast publish option or some other reason, you need to create a custom HEVC profile, you will have to use either the <a href="https://studio.support.brightcove.com/admin/creating-ingest-profiles-context-aware-encoding.html#using_the_advanced_editor">Advanced Editor</a> in the Studio Admin pages, or the <a href="https://apis.support.brightcove.com/ingest-profiles/">Ingest Profiles API</a>. HEVC renditions will not show up in the Simple Editor in Studio. You will find the available Dynamic Delivery renditions <a href="#appendix_renditions">below</a>.</p>
+</section>
+
+<section class="bcls-section">
+<h2 id="limitations">Limitations</h2>
+
+<p>Below are current limitations on HEVC support - note that these will change as we make enhancements.</p>
+
+<ul>
+	<li>CAE ingest profiles currently include HEVC renditions - these should only be used in cases where you know that you will be delivering videos only to HEVC-capable devices. Future releases will add profiles that include both HEVC and AVC renditions.</li>
+	<li>No support for apps built using the Android SDK in the initial release. This will be added in a future release.</li>
+	<li>Only AAC audio is supported, no support for EAC3 or AC3 audio codec with HEVC.</li>
+	<li>HDR and 10-bit video is not supported.</li>
+	<li>Media UI currently displays all the renditions and does not display the codec info next to each rendition.</li>
+	<li>The billing UI in Studio will not show HEVC transcoding usage. However, the backend system is tracking HEVC GB separately and will be sending the invoice as part of the normal process. The billing UI will be updated in a later release.</li>
+</ul>
+</section>
+
+<section class="bcls-section">
+<h2 id="appendix_profiles">Appendix 1: HEVC ingest profiles</h2>
+
+<p>Below are the full properties of the HEVC profiles in JSON.</p>
+
+<ul>
+	<li><a href="#multi-platform-extended-dynamic-hevc">Multiplatform Extended HEVC (CAE)</a></li>
+	<li><a href="#multi-platform-extended-dynamic-hevc-with-mp4">Multiplatform Extended HEVC (CAE) with MP4</a></li>
+	<li><a href="#multi-platform-extended-static-mixed-codec">Multiplatform Extended Static H.264 + HEVC</a></li>
+	<li><a href="#multi-platform-extended-static-mixed-codec-with-mp4">Multiplatform Extended Static H.264 + HEVC with MP4</a></li>
+	<li><a href="#multi-platform-extended-static-hevc-with-mp4">Multiplatform Extended HEVC with MP4</a></li>
+</ul>
+
+<h3>Context Aware Encoding (CAE) profiles</h3>
+
+<h4 id="multi-platform-extended-dynamic-hevc">Multiplatform Extended HEVC (CAE)</h4>
+
+<pre class="line-numbers">
+<code class="language-json">  {
+    "version": 1,
+    "name": "multi-platform-extended-dynamic-hevc",
+    "display_name": "Multiplatform Extended HEVC (CAE)",
+    "description": "Deliver high quality content for a wide range content types and screen sizes including mobile, desktop and large screens.",
+    "account_id": -1,
+    "brightcove_standard": true,
+    "date_created": 1581706195164,
+    "date_last_modified": 1581706195164,
+    "digital_master": {
+      "rendition": "passthrough",
+      "distribute": false
+    },
+    "renditions": [
+      
+    ],
+    "packages": [
+      
+    ],
+    "dynamic_origin": {
+      "renditions": [
+        "default/audio64",
+        "default/audio128",
+        "default/audio96",
+        "default/audio192"
+      ],
+      "images": [
+        {
+          "label": "thumbnail",
+          "height": 90,
+          "width": 160
+        },
+        {
+          "label": "poster",
+          "height": 720,
+          "width": 1280
+        }
+      ],
+      "dynamic_profile_options": {
+        "min_renditions": 2,
+        "max_renditions": 8,
+        "min_resolution": {
+          "width": 320,
+          "height": 180
+        },
+        "max_resolution": {
+          "width": 1920,
+          "height": 1080
+        },
+        "max_frame_rate": 30,
+        "max_bitrate": 4200,
+        "max_first_rendition_bitrate": 250,
+        "video_codec": "hevc",
+        "fixed_frame_rate": true,
+        "bitrate_cap_to_bitrate_ratio": 1.5,
+        "buffer_size_to_bitrate_ratio": 2,
+        "bitrate_cap_offset": 0,
+        "buffer_size_offset": 0,
+        "sample_aspect_ratio": "1:1"
+      },
+      "hevc": true
+    },
+    "id": "5e470e014b23617ad079c486"
+  }</code></pre>
+
+<h4 id="multi-platform-extended-dynamic-hevc-with-mp4">Multiplatform Extended HEVC (CAE) with MP4</h4>
+
+<pre class="line-numbers">
+<code class="language-json">{
+    "version": 1,
+    "name": "multi-platform-extended-dynamic-hevc-with-mp4",
+    "display_name": "Multiplatform Extended HEVC (CAE) with MP4",
+    "description": "Deliver high quality content for a wide range content types and screen sizes including mobile, desktop, large screens, and syndication.",
+    "account_id": -1,
+    "brightcove_standard": true,
+    "date_created": 1581706195164,
+    "date_last_modified": 1581706195164,
+    "digital_master": {
+      "rendition": "passthrough",
+      "distribute": false
+    },
+    "renditions": [
+      
+    ],
+    "packages": [
+      
+    ],
+    "dynamic_origin": {
+      "renditions": [
+        "default/audio64",
+        "default/audio128",
+        "default/progressive2000",
+        "default/audio96",
+        "default/audio192"
+      ],
+      "images": [
+        {
+          "label": "thumbnail",
+          "height": 90,
+          "width": 160
+        },
+        {
+          "label": "poster",
+          "height": 720,
+          "width": 1280
+        }
+      ],
+      "dynamic_profile_options": {
+        "min_renditions": 2,
+        "max_renditions": 8,
+        "min_resolution": {
+          "width": 320,
+          "height": 180
+        },
+        "max_resolution": {
+          "width": 1920,
+          "height": 1080
+        },
+        "max_frame_rate": 30,
+        "max_bitrate": 4200,
+        "max_first_rendition_bitrate": 250,
+        "video_codec": "hevc",
+        "fixed_frame_rate": true,
+        "bitrate_cap_to_bitrate_ratio": 1.5,
+        "buffer_size_to_bitrate_ratio": 2,
+        "bitrate_cap_offset": 0,
+        "buffer_size_offset": 0,
+        "sample_aspect_ratio": "1:1"
+      },
+      "hevc": true
+    },
+    "id": "5e470e0c4c881c16fffdb88d"
+  }</code></pre>
+
+<h3>Dynamic Delivery Profiles</h3>
+
+<h4 id="multi-platform-extended-static-mixed-codec">Multiplatform Extended Static H.264 + HEVC</h4>
+
+<pre class="line-numbers">
+<code class="language-json">{
+    "version": 1,
+    "name": "multi-platform-extended-static-mixed-codec",
+    "display_name": "Multiplatform Extended Static H.264 + HEVC",
+    "description": "Deliver high quality content for a wide range content types and screen sizes including mobile, desktop and large screens.",
+    "account_id": -1,
+    "brightcove_standard": true,
+    "date_created": 1581706195164,
+    "date_last_modified": 1581706195164,
+    "digital_master": {
+      "rendition": "passthrough",
+      "distribute": false
+    },
+    "renditions": [
+      
+    ],
+    "packages": [
+      
+    ],
+    "dynamic_origin": {
+      "renditions": [
+        "default/video1600hevc",
+        "default/audio128",
+        "default/video550hevc",
+        "default/video1000hevc",
+        "default/video300hevc",
+        "default/video700",
+        "default/video3500",
+        "default/video2000",
+        "default/video2500",
+        "default/video2850hevc",
+        "default/video450",
+        "default/video900",
+        "default/audio64",
+        "default/video3800",
+        "default/audio96",
+        "default/video1200",
+        "default/video1300hevc",
+        "default/audio192"
+      ],
+      "images": [
+        {
+          "label": "thumbnail",
+          "height": 90,
+          "width": 160
+        },
+        {
+          "label": "poster",
+          "height": 720,
+          "width": 1280
+        }
+      ],
+      "hevc": true
+    },
+    "id": "5e46e57f305eb2517f27a543"
+  }</code></pre>
+
+<h4 id="multi-platform-extended-static-mixed-codec-with-mp4">Multiplatform Extended Static H.264 + HEVC with MP4</h4>
+
+<pre class="line-numbers">
+<code class="language-json">{
+    "version": 1,
+    "name": "multi-platform-extended-static-mixed-codec-with-mp4",
+    "display_name": "Multiplatform Extended Static H.264 + HEVC with MP4",
+    "description": "Deliver high quality content for a wide range content types and screen sizes including mobile, desktop and large screens, and syndication.",
+    "account_id": -1,
+    "brightcove_standard": true,
+    "date_created": 1581706195164,
+    "date_last_modified": 1581706195164,
+    "digital_master": {
+      "rendition": "passthrough",
+      "distribute": false
+    },
+    "renditions": [
+      
+    ],
+    "packages": [
+      
+    ],
+    "dynamic_origin": {
+      "renditions": [
+        "default/video1600hevc",
+        "default/audio128",
+        "default/video550hevc",
+        "default/video1000hevc",
+        "default/video300hevc",
+        "default/video700",
+        "default/progressive2000",
+        "default/video3500",
+        "default/video2000",
+        "default/video2500",
+        "default/video2850hevc",
+        "default/video450",
+        "default/video900",
+        "default/audio64",
+        "default/video3800",
+        "default/audio96",
+        "default/video1200",
+        "default/video1300hevc",
+        "default/audio192"
+      ],
+      "images": [
+        {
+          "label": "thumbnail",
+          "height": 90,
+          "width": 160
+        },
+        {
+          "label": "poster",
+          "height": 720,
+          "width": 1280
+        }
+      ],
+      "hevc": true
+    },
+    "id": "5e46e59b135b6662f386559d"
+  }</code></pre>
+
+<h4 id="multi-platform-extended-static-hevc-with-mp4">Multiplatform Extended HEVC with MP4</h4>
+
+<pre class="line-numbers">
+<code class="language-json">{
+    "version": 1,
+    "name": "multi-platform-extended-static-hevc-with-mp4",
+    "display_name": "Multiplatform Extended HEVC with MP4",
+    "description": "Deliver high quality content for a wide range content types and screen sizes including mobile, desktop, large screens, and syndication.",
+    "account_id": -1,
+    "brightcove_standard": true,
+    "date_created": 1581706195164,
+    "date_last_modified": 1581706195164,
+    "digital_master": {
+      "rendition": "passthrough",
+      "distribute": false
+    },
+    "renditions": [
+      
+    ],
+    "packages": [
+      
+    ],
+    "dynamic_origin": {
+      "renditions": [
+        "default/audio64",
+        "default/video1600hevc",
+        "default/audio128",
+        "default/video550hevc",
+        "default/video1000hevc",
+        "default/video300hevc",
+        "default/progressive2000",
+        "default/video2850hevc",
+        "default/audio96",
+        "default/video1300hevc",
+        "default/audio192"
+      ],
+      "images": [
+        {
+          "label": "thumbnail",
+          "height": 90,
+          "width": 160
+        },
+        {
+          "label": "poster",
+          "height": 720,
+          "width": 1280
+        }
+      ],
+      "hevc": true
+    },
+    "id": "5e46e57e708a441e00a7ba1a"
+  }</code></pre>
+</section>
+
+<section class="bcls-section">
+<h2 id="appendix_renditions">Appendix 2: HEVC Dynamic Delivery Renditions</h2>
+
+<p>Below are the full properties of the HEVC renditions in JSON.</p>
+
+<ul>
+	<li><a href="#video300hevc">Default HEVC 300</a></li>
+	<li><a href="#video550hevc">Default HEVC 550</a></li>
+	<li><a href="#video1000hevc">Default HEVC 1000</a></li>
+	<li><a href="#video1300hevc">Default HEVC 1300</a></li>
+	<li><a href="#video1600hevc">Default HEVC 1600</a></li>
+	<li><a href="#video2850hevc">Default HEVC 2850</a></li>
+	<li>&nbsp;</li>
+</ul>
+
+<h3 id="video300hevc">Default HEVC 300</h3>
+
+<pre class="line-numbers">
+<code class="language-json">{
+    "id": "default/video300hevc",
+    "version": 0,
+    "name": "Default HEVC 300",
+    "kind": "video",
+    "account_id": "default",
+    "created_at": "2020-02-20T17:57:49.622898302Z",
+    "updated_at": "2020-02-20T17:57:49.622898302Z",
+    "encoding_settings": {
+      "aspect_mode": "preserve",
+      "decoder_bitrate_cap": 450,
+      "decoder_buffer_size": 600,
+      "fixed_keyframe_interval": true,
+      "fragment_duration": 2000,
+      "height": 270,
+      "keyframe_rate": 1,
+      "segment_seconds": 2,
+      "speed": 3,
+      "video_bframes": 3,
+      "video_bitrate": 300,
+      "video_codec": "hevc",
+      "video_codec_profile": "main",
+      "video_reference_frames": 6,
+      "width": 480
+    }
+  }</code></pre>
+
+<h3 id="video550hevc">Default HEVC 550</h3>
+
+<pre class="line-numbers">
+<code class="language-json">{
+    "id": "default/video550hevc",
+    "version": 0,
+    "name": "Default HEVC 550",
+    "kind": "video",
+    "account_id": "default",
+    "created_at": "2020-02-20T17:58:08.602132077Z",
+    "updated_at": "2020-02-20T17:58:08.602132077Z",
+    "encoding_settings": {
+      "aspect_mode": "preserve",
+      "decoder_bitrate_cap": 825,
+      "decoder_buffer_size": 1100,
+      "fixed_keyframe_interval": true,
+      "fragment_duration": 2000,
+      "height": 360,
+      "keyframe_rate": 1,
+      "segment_seconds": 2,
+      "speed": 3,
+      "video_bframes": 3,
+      "video_bitrate": 550,
+      "video_codec": "hevc",
+      "video_codec_profile": "main",
+      "video_reference_frames": 6,
+      "width": 640
+    }
+  }</code></pre>
+
+<h3 id="video1000hevc">Default HEVC 1000</h3>
+
+<pre class="line-numbers">
+<code class="language-json">{
+    "id": "default/video1000hevc",
+    "version": 0,
+    "name": "Default HEVC 1000",
+    "kind": "video",
+    "account_id": "default",
+    "created_at": "2020-02-20T17:58:24.768036423Z",
+    "updated_at": "2020-02-20T17:58:24.768036423Z",
+    "encoding_settings": {
+      "aspect_mode": "preserve",
+      "decoder_bitrate_cap": 1500,
+      "decoder_buffer_size": 2000,
+      "fixed_keyframe_interval": true,
+      "fragment_duration": 2000,
+      "height": 432,
+      "keyframe_rate": 1,
+      "segment_seconds": 2,
+      "speed": 3,
+      "video_bframes": 3,
+      "video_bitrate": 1000,
+      "video_codec": "hevc",
+      "video_codec_profile": "main",
+      "video_reference_frames": 6,
+      "width": 768
+    }
+  }</code></pre>
+
+<h3 id="video1300hevc">Default HEVC 1300</h3>
+
+<pre class="line-numbers">
+<code class="language-json">{
+    "id": "default/video1300hevc",
+    "version": 0,
+    "name": "Default HEVC 1300",
+    "kind": "video",
+    "account_id": "default",
+    "created_at": "2020-02-20T17:58:51.222403657Z",
+    "updated_at": "2020-02-20T17:58:51.222403657Z",
+    "encoding_settings": {
+      "aspect_mode": "preserve",
+      "decoder_bitrate_cap": 1950,
+      "decoder_buffer_size": 2600,
+      "fixed_keyframe_interval": true,
+      "fragment_duration": 2000,
+      "height": 576,
+      "keyframe_rate": 1,
+      "segment_seconds": 2,
+      "speed": 3,
+      "video_bframes": 3,
+      "video_bitrate": 1300,
+      "video_codec": "hevc",
+      "video_codec_profile": "main",
+      "video_reference_frames": 6,
+      "width": 1024
+    }
+  }</code></pre>
+
+<h3 id="video1600hevc">Default HEVC 1600</h3>
+
+<pre class="line-numbers">
+<code class="language-json">{
+    "id": "default/video1600hevc",
+    "version": 0,
+    "name": "Default HEVC 1600",
+    "kind": "video",
+    "account_id": "default",
+    "created_at": "2020-02-20T18:00:00.347383018Z",
+    "updated_at": "2020-02-20T18:00:00.347383018Z",
+    "encoding_settings": {
+      "aspect_mode": "preserve",
+      "decoder_bitrate_cap": 2400,
+      "decoder_buffer_size": 3200,
+      "fixed_keyframe_interval": true,
+      "fragment_duration": 2000,
+      "height": 720,
+      "keyframe_rate": 1,
+      "segment_seconds": 2,
+      "speed": 3,
+      "video_bframes": 3,
+      "video_bitrate": 1600,
+      "video_codec": "hevc",
+      "video_codec_profile": "main",
+      "video_reference_frames": 6,
+      "width": 1280
+    }
+  }</code></pre>
+
+<h3 id="video2850hevc">Default HEVC 2850</h3>
+
+<pre class="line-numbers">
+<code class="language-json">{
+    "id": "default/video2850hevc",
+    "version": 0,
+    "name": "Default HEVC 2850",
+    "kind": "video",
+    "account_id": "default",
+    "created_at": "2020-02-20T18:00:42.036123319Z",
+    "updated_at": "2020-02-20T18:00:42.036123319Z",
+    "encoding_settings": {
+      "aspect_mode": "preserve",
+      "decoder_bitrate_cap": 4275,
+      "decoder_buffer_size": 5700,
+      "fixed_keyframe_interval": true,
+      "fragment_duration": 2000,
+      "height": 1080,
+      "keyframe_rate": 1,
+      "segment_seconds": 2,
+      "speed": 3,
+      "video_bframes": 3,
+      "video_bitrate": 2850,
+      "video_codec": "hevc",
+      "video_codec_profile": "main",
+      "video_reference_frames": 6,
+      "width": 1920
+    }
+  }</code></pre>
+</section>
+</div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-block-1 clearfix" id="block-views-block-related-content-block-1">
+  
+    
+
+      <div class="form-group"><div class="view view-related-content view-id-related_content view-display-id-block_1 js-view-dom-id-fb534463960c4f4549fbe7c5390e1dbd55a6e77b065b9fd96b51f2256116cff5">
+  
+    
+      <div class="view-header">
+      <h2>Related content</h2>
+    </div>
+      
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="creating-audio-only-renditions-low-bandwidth-delivery.html" hreflang="en">Creating Audio-Only Renditions for Low-Bandwidth Delivery</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="archiving-masters.html" hreflang="en">Archiving Masters</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="ingest-profiles-api-sample-set-default-profile-dynamic-delivery.html" hreflang="en">Ingest Profiles API Sample: Set Default Profile (Dynamic Delivery)</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="drm-output-protection-settings.html" hreflang="en">DRM Output Protection Settings</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="ingest-profiles-api-sample-create-custom-context-aware-encoding-profile.html" hreflang="en">Ingest Profiles API Sample: Create Custom Context Aware Encoding Profile</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="backlot-and-video-cloud-video-and-playlist-fields.html" hreflang="en">Backlot and Video Cloud: Video and Playlist Fields</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="context-aware-encoding.html" hreflang="en">Context Aware Encoding</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="standard-ingest-profiles-dynamic-delivery-and-context-aware-encoding.html" hreflang="en">Standard Ingest Profiles for Dynamic Delivery and Context Aware Encoding</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="overview-dynamic-delivery.html" hreflang="en"> Overview of Dynamic Delivery</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="dynamic-delivery-change-sources-returned.html" hreflang="en">Dynamic Delivery: Change to Sources Returned</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="row">
+            <div class="region region-footer-top-left col-md-9" style="margin-bottom: 1em;">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove Support</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://status.brightcove.com">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="contact-support.html" data-drupal-link-system-path="node/18632">Support - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.brightcove.com/en/contact/create">Support - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Documentation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Training</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="online-training-courses.html" data-drupal-link-system-path="node/18286">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a course</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://www.brightcove.com">Brightcove.com</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="region region-footer-top-right col-md-3">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Brightcove Inc. (NASDAQ: BCOV), is a leading global provider of powerful cloud solutions for delivering and monetizing video across connected devices.</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="row">
+            <div class="region region-footer-bottom-left col-md-8">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item">Brightcove Inc. All rights reserved.</div>
+      
+      <div class="field field--name-field-legal-links field--type-link field--label-hidden field--items">
+              <div class="field--item"><a href="https://www.brightcove.com/en/privacy">Privacy</a></div>
+              <div class="field--item"><a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="region region-footer-bottom-right col-md-4">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items">
+              <div class="field--item">
+
+<a href="https://www.linkedin.com/company/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://twitter.com/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://www.facebook.com/Brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://plus.google.com/100830370440271567091" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18965","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGn0UTEBVCWpxWhZdZHNWFFRscgpEX3cRUVRRXBQUDkYAWFZQFmhUVFoDUV9YAVNAcwtKVXRaElBfWg==","queueTime":0,"applicationTime":338,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

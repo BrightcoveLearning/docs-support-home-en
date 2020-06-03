@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="sites/default/files/favicon-64.png" type="image/png" />
+<link rel="alternate" hreflang="en" href="overview-brightcove-live-api.html" />
+<link rel="canonical" href="overview-brightcove-live-api.html" />
+<link rel="shortlink" href="overview-brightcove-live-api.html" />
+<link rel="revision" href="overview-brightcove-live-api.html" />
+
+    <title>Overview: Brightcove Live API | Brightcove Learning</title>
+    <link rel="stylesheet" media="all" href="sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw_q23msc.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4_q23msc.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on" />
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  </head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="navigation-secondary clearfix">
+          <div class="region region-navigation-secondary">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary Navigation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="contact-support.html" title="Create a Support Request" data-drupal-link-system-path="node/18632">Support Request</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://status.brightcove.com/">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://university.brightcove.com/">Brightcove University</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gtranslate">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" style="font-weight:bold;background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">English</option><option value="en|fr" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">French</option><option value="en|de" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">German</option><option value="en|ja" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">Japanese</option><option value="en|ko" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">Korean</option><option value="en|es" style="background:url('modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">Spanish</option></select>
+</div>
+<div class="gtranslate__credits">
+  Translations Provided by Google Translate
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="navbar-header col-md-3">
+                  <a class="logo navbar-btn pull-left" href="index.html" title="Home" rel="home">
+            <img src="themes/custom/bcdocs/images/brightcove.png" alt="Home" />
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" title="Home page" data-drupal-link-system-path="node/18643">Home</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Products
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="video-cloud.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://gallery.support.brightcove.com">Gallery</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a href="social.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ssai.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Quick Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="analytics-api.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience-api.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-api.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-connectors-video-cloud.html" data-drupal-link-system-path="node/18662">CMS Connectors for Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="data-collection-api.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="delivery-system-api.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="developer-tools-and-concepts.html" data-drupal-link-system-path="node/18430">Developer Tools and Concepts</a>
+                  </li>
+                              <li class="expanded">
+        <a href="native-player-sdks.html" data-drupal-link-system-path="node/18367">Device SDKs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="dynamic-ingest-api.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="getting-started-brightcove-apis-0.html" data-drupal-link-system-path="node/18711">Getting Started - Brightcove APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="page-experience-api.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ingest-profiles-api.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="oauth-api.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="platform-api-code-samples.html" data-drupal-link-system-path="node/18675">Platform API Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="playback-api.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-code-samples.html" data-drupal-link-system-path="node/18630">Player Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-developer.html" data-drupal-link-system-path="node/18362">Player Developer</a>
+                  </li>
+                              <li class="expanded">
+        <a href="player-management-api.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="policy-api.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="release-notes.html" data-drupal-link-system-path="node/18687">Release Notes</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Training
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="https://university.brightcove.com">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a Course</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a href="brightcove-support-documentation-announcements.html" title="See what&#039;s new in Brightcove Documentation" data-drupal-link-system-path="node/18896">What&#039;s New</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="full-width-headline">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" role="heading">
+            <div class="region region-header">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      Documentation
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="main-container container  js-quickedit-main-content">
+    <div class="row">
+
+                              <aside class="col-sm-3" role="complementary">
+              <div class="region region-sidebar-first">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="overview-brightcove-live-api.html" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group">
+      <label for="edit-search" class="control-label sr-only">Search</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="Search" />
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-g8knknekbhy-i19ep1w8-wk8qh2chp3if2qxaocaibe" type="hidden" name="form_build_id" value="form-g8KnknekBHy_I19Ep1W8-wk8qH2CHP3IF2QXaocaIBE" /><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form" /><div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix">
+  
+      <h2 class="block-title">On This Page</h2>
+    
+
+      <div class="bc-ipnav-block"></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="highlighted">  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a id="main-content"></a>
+            <div class="region region-content">
+        <h1 class="page-header"><span>Overview: Brightcove Live API</span>
+</h1>
+
+  
+<div class="node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+      </div>
+
+  <div class="group-second-row">
+  
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+          <div class="field--item">Live</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">API Developer</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-topics field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Topic(s)</div>
+          <div class="field--items">
+              <div class="field--item">ID3</div>
+          <div class="field--item">Live Streaming</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-apis field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">API(s)</div>
+          <div class="field--items">
+              <div class="field--item">Live API</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item"><p>In this overview, you will learn what the Live API is for and how to use it. Topics included in this document include supported AWS regions and CDNs, live channels and events, and inserting ID3 timed metadata into a live stream.</p>
+                <article class="bcls-article"><section class="bcls-section"><h2 id="introduction">Introduction</h2>
+
+<p>The <span class="notranslate">Live API</span> is a REST-based API that allows you to create and manage live streaming events. Optional features include:</p>
+
+<ul><li class="language-editable">Server-side ad insertion ( <span class="notranslate">SSAI</span> )</li>
+	<li class="language-editable"><span class="notranslate">AES-128</span> encryption</li>
+	<li class="language-editable">Create video-on-demand assets from clips taken from the live stream</li>
+	<li class="language-editable"><span class="notranslate">DVR</span> capability</li>
+	<li class="language-editable">Multiple <span class="notranslate">CDNs</span></li>
+</ul><p>Also see the <a href="https://docs.brightcove.com/live-api/v1/doc/index.html">API Reference</a>.</p>
+</section><section class="bcls-section"><h2 id="baseURL">Base URL</h2>
+
+<p>The base URL for the <span class="notranslate">Live API</span> is:</p>
+
+<pre>
+      <code class="language-http notranslate">https://api.bcovlive.io
+      </code>
+      </pre>
+</section><section class="bcls-section"><h2 id="authentication">Headers</h2>
+
+<p>All requests are authenticated using an API key that will be provided to you when your account is set up. The key is passed in an <code class="notranslate">X-API-KEY </code> header. A <code class="notranslate">Content-Type </code> header is also required:</p>
+
+<pre>
+      <code class="language-bash notranslate">X-API-KEY : <span class="bcls-input notranslate">YOUR_APIKey</span>
+      Content-Type: application/json
+      </code>
+      </pre>
+</section><section class="bcls-section"><h2 id="Support_aws_regions">Supported AWS regions</h2>
+
+<p>The following AWS regions are supported:</p>
+
+<table class="bcls-table"><caption class="bcls-caption--table">Supported AWS Regions</caption>
+	<thead class="bcls-table__head"><tr><th>Location</th>
+			<th>AWS Name</th>
+			<th>SSAI Support</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td class="language-editable">Oregon</td>
+			<td class="language-editable"><span class="notranslate">us-west-2</span></td>
+			<td style="text-align: center;"><img alt="Yes" src="https://learning-services-media.brightcove.com/doc-assets/general/images/check16.png" /></td>
+		</tr><tr><td class="language-editable">Virginia</td>
+			<td class="language-editable"><span class="notranslate">us-east-1</span></td>
+			<td style="text-align: center;"><img alt="Yes" src="https://learning-services-media.brightcove.com/doc-assets/general/images/check16.png" /></td>
+		</tr><tr><td class="language-editable">Tokyo</td>
+			<td class="language-editable"><span class="notranslate">ap-northeast-1</span></td>
+			<td style="text-align: center;"><img alt="Yes" src="https://learning-services-media.brightcove.com/doc-assets/general/images/check16.png" /></td>
+		</tr><tr><td class="language-editable">Singapore</td>
+			<td class="language-editable"><span class="notranslate">ap-southeast-1</span></td>
+			<td style="text-align: center;"><img alt="Yes" src="https://learning-services-media.brightcove.com/doc-assets/general/images/check16.png" /></td>
+		</tr><tr><td class="language-editable">Sydney</td>
+			<td class="language-editable"><span class="notranslate">ap-southeast-2</span></td>
+			<td style="text-align: center;"><img alt="Yes" src="https://learning-services-media.brightcove.com/doc-assets/general/images/check16.png" /></td>
+		</tr><tr><td class="language-editable">Mumbai</td>
+			<td class="language-editable"><span class="notranslate">ap-south-1</span></td>
+			<td style="text-align: center;"><img alt="Yes" src="https://learning-services-media.brightcove.com/doc-assets/general/images/x16.png" /></td>
+		</tr><tr><td class="language-editable">Frankfurt</td>
+			<td class="language-editable"><span class="notranslate">eu-central-1</span></td>
+			<td style="text-align: center;"><img alt="Yes" src="https://learning-services-media.brightcove.com/doc-assets/general/images/check16.png" /></td>
+		</tr><tr><td class="language-editable">Ireland</td>
+			<td class="language-editable"><span class="notranslate">eu-west-1</span></td>
+			<td style="text-align: center;"><img alt="No" src="https://learning-services-media.brightcove.com/doc-assets/general/images/x16.png" /></td>
+		</tr></tbody></table><p>Note that SEP jobs are limited by account where the standard limit is 3 except for the <strong>us-west-2</strong> that its limitation is up to 10. All limitations are set by account and not by region.</p>
+</section><section class="bcls-section"><h2 id="Supported_cdns">Supported CDNs</h2>
+
+<p>The following CDNs are supported for live streaming:</p>
+
+<ul><li class="language-editable"><span class="notranslate">Akamai</span></li>
+	<li class="language-editable"><span class="notranslate">Cloudfront</span></li>
+</ul><p>Other file-based CDNs should work, but have not been tested and are not actively supported.</p>
+</section><section class="bcls-section"><h2 id="Channels_and_hours">Channels and event hours</h2>
+
+<p>There are two purchasing options for Live:</p>
+
+<ul><li class="language-editable">Purchase event hours of streaming time</li>
+	<li class="language-editable">Purchase streaming channels</li>
+</ul><p>You may also purchase both event streaming hours and channels. Contact your account manager for more information on the offerings.</p>
+
+<aside class="bcls-aside bcls-aside--information language-editable"><strong>If you have purchased both event streaming hours and channels</strong>, you need to be aware of the following:
+
+<ul><li class="language-editable">By default, live jobs are billed against event streaming hours.</li>
+	<li class="language-editable">If you want a job to be billed as a channel job instead, you <strong>must</strong> include the following field in the request body when you create the live job:
+	<p><code class="notranslate">"channel_type": "24x7"</code></p>
+	</li>
+	<li class="language-editable">Channel-only customers must always include the following field in the request body when you create the live job:
+	<p><code class="notranslate">"channel_type": "24x7"</code></p>
+	</li>
+	<li class="language-editable">Customers who have purchased only event hours of streaming time, must <strong>not</strong> include <code class="notranslate">"channel_type": "24x7"</code> in requests.</li>
+</ul></aside></section><section class="bcls-section"><h2 id="token_authentication">Token authentication</h2>
+
+<p>Brightcove offers the option of adding token authentication to live video stream playback URLs. If you would like to add token authentication, <a href="https://help.brightcove.com/en/contact">Contact Brightcove Support</a>. It may take up to three days for token authentication to be set up.</p>
+
+<p>The TTL (time-to-live) for the tokens can be set to any value from one hour to 365 days. How long you set the TTL will depend on what kinds of live streams you deploy. Be aware that the TTL is an account-wide setting, however, and will apply to all live streams.</p>
+</section><section class="bcls-section"><h2 id="dvr_capability"><span class="notranslate">DVR</span> capability</h2>
+
+<p>Brightcove Live streams have <span class="notranslate">DVR</span> capability. To use this capability, you must:</p>
+
+<ul><li class="language-editable">Use the <code class="notranslate">playback_url_dvr</code> URL for playback</li>
+	<li class="language-editable">Use a player that has <a href="live-dvrux-plugin.html"><span class="notranslate">DVR</span> capability</a></li>
+</ul><p>DVR capability is limited to 86,400 seconds.</p>
+
+<p>The <span class="notranslate">DVR</span> stream will remain available for 7 days after the live stream is completed.</p>
+</section><section class="bcls-section"><h2 id="endpoints">Endpoints and operations</h2>
+
+<p>The main operations for the <span class="notranslate">Live API</span> are creating and managing live streams, and generate VOD clips from live streams. These operations are carried out through requests to following endpoints, which are explained in more detail in the remainder of the document.</p>
+
+<aside class="bcls-aside bcls-aside--information language-editable">Note that Brightcove Live has its own account id, separate from any other account ids. In the API operations, <code class="notranslate">account_id</code> refers to your <strong>Live account id</strong>.</aside><h3><a href="#Creating_and_managing_jobs">Creating and managing jobs</a></h3>
+
+<ul><li class="language-editable"><a href="#Create_a_Live_Job">Create a Live Job</a></li>
+	<li class="language-editable"><a href="#List_Live_Jobs">List a Live Jobs</a></li>
+	<li class="language-editable"><a href="#Get_Live_Job_Details">Get Live Job Details</a></li>
+	<li class="language-editable"><a href="#Manual_Ad_Cue_Point_Insertion">Manual Ad Cue Point Insertion</a></li>
+	<li class="language-editable"><a href="#Stop_a_Live_Job">Stop a Live Job</a></li>
+</ul><h3><a href="#Creating_clips">Creating clips</a></h3>
+
+<ul><li class="language-editable"><a href="#Create_VOD_Clip">Create VOD Clip</a></li>
+</ul><h3><a href="#Managing_SSAI">Managing SSAI</a></h3>
+
+<ul><li class="language-editable"><a href="#Get_Account_Ad_Configurations">Get Account Ad Configurations</a></li>
+	<li class="language-editable"><a href="#Create_Ad_Configuration">Create Ad Configuration</a></li>
+	<li class="language-editable"><a href="#Get_Ad_Configuration">Get Ad Configuration</a></li>
+	<li class="language-editable"><a href="#Update_Ad_Configuration">Update Ad Configuration</a></li>
+	<li class="language-editable"><a href="#Get_Slate_Media_Source_Assets">Get Slate Media Source Assets</a></li>
+	<li class="language-editable"><a href="#Ingest_Slate_Media_Source_Asset">Ingest Slate Media Source Asset</a></li>
+	<li class="language-editable"><a href="#Delete_Slate_Media_Source_Asset">Delete Slate Media Source Asset</a></li>
+</ul></section><section class="bcls-section"><h2 id="Creating_and_managing_jobs">Creating and managing jobs</h2>
+
+<p>These operations allow you to create a live job, get the details of it, and stop it. There is also an endpoint to create an immediate cue point for an ad break.</p>
+
+<h3 id="Create_a_Live_Job">Create a Live Job</h3>
+
+<pre>
+      <code class="notranslate"><span class="bcls-highlight notranslate">POST</span> https://api.bcovlive.io/v1/jobs
+        </code></pre>
+
+<p>This endpoint is used to create live streams via a <code class="notranslate">POST </code> request. In addition to specifying properties of the live stream itself, the request can also specify VOD clips to be generated from the live stream (this can also be done later via the <a href="#vod">endpoint</a>). Details of the fields that can be included in the request body are given in the <a href="https://docs.brightcove.com/live-api/v1/doc/index.html#operation/CreateALiveJob">API Reference</a>.</p>
+
+<section class="bcls-subsection"><h4 id="input_protocol">Input protocol</h4>
+
+<p>Brightcove Live supports multiple input protocols. Use the <code>protocol</code> field in the request body when you create the job to specify the one you will use. Supported values are:</p>
+
+<ul><li class="language-editable"><code>rtmp</code> (the default)</li>
+	<li class="language-editable"><code>rtp</code></li>
+	<li class="language-editable"><code>rtp-fec</code></li>
+	<li class="language-editable"><code>srt</code></li>
+</ul><p>The RTMP protocol is for delivery a stream in FLV format. The other protocols are for delivering MPEG2-TS.</p>
+
+<p>If you use <code>rtp</code>, <code>rtp-fec</code> or <code>srt</code>, you must also specify a <code>cidr_whitelist</code> (see <a href="https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing">Classless Inter-Domain Routing</a>).</p>
+
+<p>If you use <code>rtmp</code>, you can specify an <code>ip_whitelist</code> for the input instead, but this is not required.</p>
+
+<p>Example request body for RTP+FEC job:</p>
+
+<pre class="line-numbers">
+      <code class="language-json">{
+         "live_stream":true,
+         "region":"us-west-2",
+         "reconnect_time":300,
+         "outputs":[
+            {
+              "label": "hls720p",
+              "live_stream": true,
+              "height": 720,
+              "video_bitrate": 800,
+              "segment_seconds": 6,
+              "keyframe_interval": 90
+            }
+         ],
+         "protocol": "rtp-fec",
+         "cidr_whitelist": ["127.0.0.1/32"]
+      }</code></pre>
+</section><p>The <a href="quick-start-create-live-stream-using-brightcove-live-api.html"> <span class="notranslate">Live API</span> Quick Start</a> walks you through creating a live stream job and setting up a Brightcove Player to play it.</p>
+
+<h3 id="List_Live_Jobs">List Live Jobs</h3>
+
+<pre>
+      <code class="notranslate"><span class="bcls-highlight notranslate">GET</span> https://api.bcovlive.io/v1/jobs
+        </code></pre>
+
+<p>This endpoint is used to list your live streams via a <code class="notranslate">GET </code> request. The endpoint supports pagination, sorting, and search filtering. Details of the fields that can be included in the request body are given in the <a href="http://docs.brightcove.com/live-api/v1/doc/index.html#/Live_Jobs/ListLiveJobs">API Reference</a> and some additional information can be found in <a href="getting-list-live-or-vod-jobs.html">Getting a List of Live or VOD Jobs</a>.</p>
+
+<h3 id="Get_Live_Job_Details">Get Live Job Details</h3>
+
+<pre>
+      <code class="notranslate"><span class="bcls-highlight notranslate">GET</span> https://api.bcovlive.io/v1/jobs/<span class="bcls-input notranslate">:jobId</span>
+        </code></pre>
+
+<p>This endpoint allows you to get the detailed information about a live stream, which is also returned when you originally create the job. See the <a href="http://docs.brightcove.com/live-api/v1/doc/index.html#/Live_Jobs/GetLiveJobDetails">API Reference</a> for details of the response fields.</p>
+
+<h3 id="Manual_Ad_Cue_Point_Insertion">Manual Ad Cue Point Insertion</h3>
+
+<pre>
+      <code class="notranslate"><span class="bcls-highlight notranslate">POST</span> https://api.bcovlive.io/v1/jobs/<span class="bcls-input notranslate">:jobId</span>/cuepoint
+        </code></pre>
+
+<p>Typically your encoder will be sending cue points for ad breaks, but you can also create an immediate ad break by sending a request to this endpoint. See the <a href="http://docs.brightcove.com/live-api/v1/doc/index.html#/Live_Jobs/ManualAdCuePointInsertion">API Reference</a> for details.</p>
+
+<p>Note that a <code class="notranslate">timecode</code> in the form <code class="notranslate">DD:HH:MM:SS</code> is required for the cue point.</p>
+
+<h3 id="Stop_a_Live_Job">Stop a Live Job</h3>
+
+<pre>
+      <code class="notranslate"><span class="bcls-highlight notranslate">PUT</span> https://api.bcovlive.io/v1/jobs/<span class="bcls-input notranslate">:jobId</span>/cancel
+        </code></pre>
+
+<p>Use this endpoint to stop a live stream immediately. Once cancelled, a live stream cannot be restarted. See the <a href="http://docs.brightcove.com/live-api/v1/doc/index.html#/Live_Jobs/CancelLiveJob">API Reference</a> for details.</p>
+</section><section class="bcls-section"><h2 id="Creating_clips">Creating clips</h2>
+
+<p>You can create video-on-demand clips from a live stream and store them in a Video Cloud account, or send them to S3 bucket or FTP address. You can define the clips when you create the live stream, or create them later using the endpoint described below. Also see the <a href="live-api-creating-vod-clips.html">Creating Clips</a> guide.</p>
+
+<h3 id="Create_VOD_Clip">Create VOD Clip</h3>
+
+<pre>
+      <code class="notranslate"><span class="bcls-highlight notranslate">POST</span> https://api.bcovlive.io/v1/vods
+        </code></pre>
+
+<p>The start and end points for the clips can be defined in terms of offsets from the start of the stream or UNIX timestamps. Details of the request body fields can be found in the <a href="http://docs.brightcove.com/live-api/v1/doc/index.html#/Clips/CreateVodClip">API Reference</a>.</p>
+
+<aside class="bcls-aside bcls-aside--information language-editable">Note that clips from live streams can be created for <strong>up to 7 days</strong> after the event has ended.</aside><h3>Get a list of VOD (clip) jobs</h3>
+
+<p>To get a list of your VOD jobs for clips, see <a href="getting-list-live-or-vod-jobs.html">Getting a List of Live or VOD Jobs</a> and the <a href="http://docs.brightcove.com/live-api/v1/doc/index.html#/Clips/ListVodClips">API Reference</a>.</p>
+</section><section class="bcls-section"><h2 id="Managing_SSAI">Managing <span class="notranslate">SSAI</span></h2>
+
+<p>Using server-side ad insertion ( <span class="notranslate">SSAI</span>), you can insert as many ad breaks as you like into your live stream. You can also ingest slate assets (VOD clips) to fill any unused ad time with a be-right-back message or whatever you like.</p>
+
+<p>More details of setting up <span class="notranslate">SSAI</span> can be found in <a href="live-api-server-side-ad-insertion-ssai.html">Server-Side Ad Insertion Using the Brightcove <span class="notranslate">Live API</span> </a> and the <a href="https://docs.brightcove.com/live-api/v1/doc/index.html#api-SSAI">API Reference</a>.</p>
+
+<h3 id="Get_Account_Ad_Configurations">Get Account Ad Configurations</h3>
+
+<pre>
+      <code class="notranslate"><span class="bcls-highlight notranslate">GET</span> https://api.bcovlive.io/v1/ssai/applications/<span class="bcls-input notranslate">:account_id</span>
+        </code></pre>
+
+<p>This endpoint allows you to get all ad configurations that have been set up for an account. Details of the response fields can be found in the <a href="https://docs.brightcove.com/live-api/v1/doc/index.html#api-SSAI-Get_Account_Ad_Configurations">API Reference</a>.</p>
+
+<h3 id="Create_Ad_Configuration">Create Ad Configuration</h3>
+
+<pre>
+      <code class="notranslate"><span class="bcls-highlight notranslate">POST</span> https://api.bcovlive.io/v1/ssai/application
+        </code></pre>
+
+<p>Create an ad configuration that defines how ads will be retrieved for <span class="notranslate">SSAI</span>. Details of the request body fields can be found in the <a href="http://docs.brightcove.com/live-api/v1/doc/index.html#/SSAI/CreateAdConfiguration">API Reference.</a></p>
+
+<h3 id="Get_Ad_Configuration">Get Ad Configuration</h3>
+
+<pre>
+      <code class="notranslate"><span class="bcls-highlight notranslate">GET</span> https://api.bcovlive.io/v1/ssai/application/<span class="bcls-input notranslate">:application_id</span></code>
+      </pre>
+
+<p>Use this endpoint to get the details of an ad configuration you have created. Details of the response fields can be found in the <a href="http://docs.brightcove.com/live-api/v1/doc/index.html#/SSAI/GetuserAdConfigurations">API Reference</a>.</p>
+
+<h3 id="Update_Ad_Configuration">Update Ad Configuration</h3>
+
+<pre>
+      <code class="notranslate"><span class="bcls-highlight notranslate">PUT</span> https://api.bcovlive.io/v1/ssai/application/account/<span class="bcls-input notranslate">:application_id</span></code>
+      </pre>
+
+<p>Update the details of an ad configuration. Details of the request body fields can be found in the <a href="http://docs.brightcove.com/live-api/v1/doc/index.html#/SSAI/UpdateAdConfiguration">API Reference</a>.</p>
+
+<h3 id="Get_Slate_Media_Source_Assets">Get Slate Media Source Assets</h3>
+
+<pre>
+      <code class="notranslate"><span class="bcls-highlight notranslate">GET</span> https://api.bcovlive.io/v1/ssai/slates/<span class="bcls-input notranslate">:ACCOUNT_ID</span></code>
+      </pre>
+
+<p>Get the slate media assets that have been defined for an account. Slate media assets are used to fill ad break time that is not filled by ads. Details of the response fields can be found in the <a href="http://docs.brightcove.com/live-api/v1/doc/index.html#/SSAI/GetUserSlateMediaSourceAssets">API Reference</a>.</p>
+
+<h3 id="Ingest_Slate_Media_Source_Asset">Ingest Slate Media Source Asset</h3>
+
+<pre>
+      <code class="notranslate"><span class="bcls-highlight notranslate">POST</span> https://api.bcovlive.io/v1/ssai/slates
+        </code></pre>
+
+<p>Add a media asset for slates to fill unfilled ad break time. Details of the request body fields can be found in the <a href="http://docs.brightcove.com/live-api/v1/doc/index.html#/SSAI/IngestSlateMediaSourceAsset">API Reference</a>.</p>
+
+<h3 id="Delete_Slate_Media_Source_Asset">Delete Slate Media Source Asset</h3>
+
+<pre>
+      <code class="notranslate"><span class="bcls-highlight notranslate">DELETE</span> https://api.bcovlive.io/v1/ssai/slates/<span class="bcls-input notranslate">:SLATE_MSA_ID</span>
+        </code></pre>
+
+<p>Deletes a slate media asset.</p>
+</section><section class="bcls-section"><h2 id="Static_entry_points">Static entry points</h2>
+
+<p>The Static Entry Points (SEP) feature allows for a long-running live job that can be activated and deactivated while keeping the entry point URLs and playback URLs static and re-usable. This feature allows for customers to configure their encoder in their facilities or the field and allows the customer to create their own scheduling logic for live channels or programs. See <a href="live-api-static-entry-points.html">Static Entry Points</a> for details.</p>
+</section><section class="bcls-section"><h2 id="captions">Captions</h2>
+
+<p>If captions are inside the h264 input signal (correctly signaled in the user_data packet) those are passed through to the h264 outputs.</p>
+
+<p>If you are using a broadcast Elemental live encoder you can get captions from SDI (EIA-608/CEA-608) or other sources (SCTE-20, SCC, Teletext, DVB-Sub, Ancillary, ARIB, TTML, SCTE-27, STL, SRT, SMI) and put them into the h264 stream that you send to us. Other broadcast grade encoders probably can do the same, but we have not formally tested them.</p>
+</section><section class="bcls-section"><h2 id="Insert_ID3_timed_metadata">Insert ID3 timed metadata</h2>
+
+<p>This information has been moved to <a href="live-api-insert-id3-timed-metadata.html">Insert ID3 timed metadata</a>.</p>
+</section><section class="bcls-section"><h2 id="Limitations">Limitations</h2>
+
+<ul><li class="language-editable">Live jobs created using the API will <strong>not</strong> appear and cannot be used in the <a href="creating-and-managing-live-events-using-live-module.html">Live Module</a>.</li>
+	<li class="language-editable">The initial connection from encoder provides the bandwidth information to be created with the Live playlist. If the initial connection is low, even if the job configuration had high output, the playlist will still maintain the same information on the playlist until the following is done:
+	<ul><li class="language-editable">Encoder is restarted</li>
+		<li class="language-editable">The CDN cache may also need to be cleared</li>
+	</ul></li>
+	<li class="language-editable">Currently the framerate for input streams is limited to 30 FPS. If you are interested in using a higher frame rate, please contact Support.</li>
+	<li class="language-editable">By default the resolution of the input stream is limited to 1080p.</li>
+	<li class="language-editable">When disconnecting and reconnecting, the stream settings must stay the same. Any changes to the number of audio channels, resolutions, or codec settings will result in unpredictable behavior.</li>
+	<li class="language-editable">Although you can add DASH and MP4 for remote sources for Video Cloud videos, Live currently supports <strong class="notranslate">HLS</strong> only.</li>
+	<li class="language-editable">Only AAC audio is supported for input streams.</li>
+	<li class="language-editable">A maximum of 5 active <strong>waiting, unstarted</strong> jobs is allowed at any time.
+	<p>Additional limitations on concurrent jobs:</p>
+
+	<ul><li class="language-editable">The number of <code>channel</code> (24x7) jobs is limited to 0 or a low number per region (depending on the account type).</li>
+		<li class="language-editable">The number of concurrently <strong>running</strong> <code>event</code> jobs is limited by region, generally to 100.</li>
+		<li class="language-editable">The number of concurrently <strong>waiting to connect</strong> <code>event</code> jobs is limited to 5.</li>
+		<li class="language-editable">The number of SEP jobs per region is limited to 3 or 10 (see <a href="#Support_aws_regions">Supported AWS regions</a>).</li>
+	</ul><p>Any of these limits can be adjusted on an account level by Support. Contact your account manager if you need additional capacity.</p>
+	</li>
+	<li class="language-editable">The "RTMP" address returned as the <code class="notranslate">stream_url</code> for Live jobs is an Akamai HD Live stream, not a legacy FMS RMTP stream - it is not supported by older versions of Internet Explorer.</li>
+	<li class="language-editable">Live streams are delivered over HTTPS, and if your Brightcove account is not enabled for HTTPS, the Brightcove player will fail to load the live stream. If your account does not have HTTPS support for origin serving enabled, please <a href="https://help.brightcove.com/en/contact">Contact Brightcove Support</a> to get HTTPS support for origin serving enabled to prevent playback issues.</li>
+	<li class="language-editable">When using a transmuxed rendition within a multi-bitrate HLS output, the segment_size and keyframe_interval should be avoided on any of the outputs to ensure segments and keyframes follow the input GOP structure. If not, the system will return an error in the job creation request.</li>
+	<li class="language-editable">When using your own FTP or S3 origin location, your CDN must be configured to fallback to your origin location. The Brightcove Live system will not validate that the origin locations for the CDNs provided in the job request.</li>
+</ul></section></article></div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-by-field-block-1 clearfix" id="block-views-block-related-content-by-field-block-1">
+  
+    
+
+      <div class="form-group"><div class="view view-related-content-by-field view-id-related_content_by_field view-display-id-block_1 js-view-dom-id-85f635b7b8cb6f2fba58877429b25ca533f986b56af8c3c91468bcc2707b8e69">
+  
+    
+      <div class="view-header">
+      <h2>Related content</h2>
+    </div>
+      
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="live-api-creating-vod-clips.html" hreflang="en">Live API: Creating VOD Clips</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="quick-start-create-live-stream-using-brightcove-live-api.html" hreflang="en">Quick Start: Create a Live Stream Using the Brightcove Live API</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="live-api-server-side-ad-insertion-ssai.html" hreflang="en">Live API: Server-Side Ad Insertion (SSAI)</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="live-api-static-entry-points.html" hreflang="en">Live API: Static Entry Points</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="live-api-vod-live-event.html" hreflang="en">Live API: VOD from Live Event</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="live-api-notifications.html" hreflang="en">Live API: Notifications</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="live-api-error-messages.html" hreflang="en">Live API: Error Messages</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="row">
+            <div class="region region-footer-top-left col-md-9" style="margin-bottom: 1em;">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove Support</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://status.brightcove.com">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="contact-support.html" data-drupal-link-system-path="node/18632">Support - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.brightcove.com/en/contact/create">Support - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Documentation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="index.html" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Training</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="online-training-courses.html" data-drupal-link-system-path="node/18286">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training.html" data-drupal-link-system-path="node/18270">Register for a course</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://www.brightcove.com">Brightcove.com</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="region region-footer-top-right col-md-3">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Brightcove Inc. (NASDAQ: BCOV), is a leading global provider of powerful cloud solutions for delivering and monetizing video across connected devices.</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="row">
+            <div class="region region-footer-bottom-left col-md-8">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item">Brightcove Inc. All rights reserved.</div>
+      
+      <div class="field field--name-field-legal-links field--type-link field--label-hidden field--items">
+              <div class="field--item"><a href="https://www.brightcove.com/en/privacy">Privacy</a></div>
+              <div class="field--item"><a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="region region-footer-bottom-right col-md-4">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items">
+              <div class="field--item">
+
+<a href="https://www.linkedin.com/company/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://twitter.com/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://www.facebook.com/Brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://plus.google.com/100830370440271567091" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/17764","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGkkHXlVrBldRXQE=","queueTime":0,"applicationTime":15,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
