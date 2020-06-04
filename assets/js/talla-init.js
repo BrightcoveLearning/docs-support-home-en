@@ -14,7 +14,6 @@ var token =
     Talla.OptionAnonymous(true),
     Talla.OptionThemeColor('{{ site.product_color }}'),
     Talla.OptionDisplayName('Search {{ site.product }} Docs'),
-    Talla.OptionKnowledgeGroups(['{{ site.talla_knowledgegroup }}']),
     Talla.OptionWideBeacon(true),
     Talla.OptionBeaconCTA("Have a question?"),
     Talla.OptionOpenIcon('https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/search.png'),
