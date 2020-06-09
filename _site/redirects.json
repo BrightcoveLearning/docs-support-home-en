@@ -544,7 +544,7 @@
     "oldURL": "support.brightcove.com/ingest-profiles-api-fields-reference-legacy-ingest"
   },
   {
-    "newURL": "https://apis.support.brightcove.com/ingest-profiles/code-samples/ingest-profiles-api-sample-add-profile-multiple-accounts.html",
+    "newURL": "",
     "oldURL": "support.brightcove.com/ingest-profiles-api-sample-add-profile-multiple-accounts"
   },
   {
@@ -568,7 +568,7 @@
     "oldURL": "support.brightcove.com/ingest-profiles-api-sample-set-default-profile-multiple-accounts-legacy-ingest"
   },
   {
-    "newURL": "https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-content-drm.html",
+    "newURL": "https:https://apis.support.brightcove.com/ingest-profiles/code-samples/ingest-profiles-api-sample-add-profile-multiple-accounts.html//apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-content-drm.html",
     "oldURL": "support.brightcove.com/ingesting-content-drm"
   },
   {
