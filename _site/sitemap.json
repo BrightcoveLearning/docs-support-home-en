@@ -5,6 +5,11 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/support/brightcove-answer.html",
+      "oldURL": "/brightcove-answer"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/icons.html",
       "oldURL": "/icons"
   },
