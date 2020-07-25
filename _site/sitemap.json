@@ -10,6 +10,11 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/training/brightcove-university.html",
+      "oldURL": "/brightcove-university"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/support/contact-sales.html",
       "oldURL": "/contact-sales"
   },
