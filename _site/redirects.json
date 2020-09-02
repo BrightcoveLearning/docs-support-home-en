@@ -3544,6 +3544,10 @@
     "oldURL": "https://support.brightcove.com/drm-output-protection-settings"
   },
   {
+    "newURL": "https://supportportal.brightcove.com/",
+    "oldURL": "https://support.brightcove.com/en/contact"
+  },
+  {
     "newURL": "https://studio.support.brightcove.com/publish/dynamically-assigning-videos-player.html",
     "oldURL": "https://support.brightcove.com/dynamically-assigning-videos-player"
   },
