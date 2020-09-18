@@ -2,22 +2,22 @@
 layout: null
 ---
 
-var appID = "{{ site.talla_appID }}"; 
+var appID = "{{ site.talla_appID }}";
 // token for anonymous profile
 var token =
 '{{ site.talla_token }}';
 // -----
   Talla.config = Talla.init(
     appID,
-    Talla.OptionJWTCredentials(token), 
+    Talla.OptionJWTCredentials(token),
     Talla.OptionBotName("{{ site.product }} Doc Search"),
     Talla.OptionAnonymous(true),
     Talla.OptionThemeColor('{{ site.product_color }}'),
     Talla.OptionDisplayName('Search {{ site.product }} Docs'),
     Talla.OptionWideBeacon(true),
     Talla.OptionBeaconCTA("Have a question?"),
-    Talla.OptionOpenIcon('https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/search.png'),
-    Talla.OptionBotIcon('https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/search.png'),
+    Talla.OptionOpenIcon('https://support.brightcove.com/site-assets/images/site/search.png'),
+    Talla.OptionBotIcon('https://support.brightcove.com/site-assets/images/site/search.png'),
     Talla.OptionAutodetectSession,
     //---- NEW-----Redirects to portal
     Talla.OptionRequestSubmittedCallback( function(widget, data) {
