@@ -1,3 +1,7 @@
+// Note that the toggle between the burger menu and full navigation menu is
+// not in the script but rather in toc.js, because that script already had
+// had a listener for changing window width
+
 var BCLS_site = (function(window, document) {
   var all_sidenav_links = document.querySelectorAll(".sidenav a"),
     href = window.location.pathname,
@@ -26,7 +30,7 @@ function addClass(el, name)
 function removeClass(el, name)
 {
   if (hasClass(el, name)) {
-     el.className=el.className.replace(new RegExp('(\\s|^)'+name+'(\\s|$)'),' ').replace(/^\s+|\s+$/g, '');
+    el.className=el.className.replace(new RegExp('(\\s|^)'+name+'(\\s|$)'),' ').replace(/^\s+|\s+$/g, '');
   }
 }
   // side navigation
