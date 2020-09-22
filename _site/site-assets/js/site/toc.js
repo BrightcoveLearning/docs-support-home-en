@@ -120,9 +120,9 @@ var BCLS_toc = (function (window, document) {
   }
 
   // if not on an index page, create the in-page nav
-  if (host !== 'support.brightcove.com'< 0 && path_name.indexOf('index.html') && path_name !== '/') {
+  if (path_name.indexOf('index.html') < 0 && path_name !== '/') {
     create_inpage_nav();
-    if (window.innerWidth < 1000) {
+    if (host !== 'support.brightcove.com' && window.innerWidth < 1000) {
       toggle_nav_menu();
     }
 
