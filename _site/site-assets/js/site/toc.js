@@ -7,7 +7,8 @@ var BCLS_toc = (function (window, document) {
     ),
     nav_menu_collapsed = false,
     path_name = window.location.pathname,
-    host = window.location.hostname;
+    host = window.location.hostname,
+    navWrapper = document.getElementById('navWrapper');
 
   /**
    * Create the in-page navigation
