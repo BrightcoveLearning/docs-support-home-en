@@ -3,6 +3,7 @@ var BCLS_toc = ( function (window, document) {
   in_page_nav_right = true,
   side_nav = document.getElementById('side_nav'),
   bc_veggie_burger_wrapper = document.getElementById('bc_veggie_burger_wrapper'),
+  bc_veggie_burger = document.getElementById('bc_veggie_burger'),
   nav_menu_collapsed = false,
   pathname = window.location.pathname;
 
@@ -151,6 +152,17 @@ var BCLS_toc = ( function (window, document) {
             toggle_nav_menu();
           } else if (window.innerWidth > 1000 && nav_menu_collapsed) {
             toggle_nav_menu();
+          }
+        });
+
+        // listener for burger click
+        bc_veggie_burger.addEventListener('click', function() {
+          if (nav_menu_collapsed) {
+            side_nav.setAttribute('style', 'display:block;');
+            nav_menu_collapsed = false;
+          } else {
+            side_nav.setAttribute('style', 'display:none;');
+            nav_menu_collapsed = true;
           }
         });
 
