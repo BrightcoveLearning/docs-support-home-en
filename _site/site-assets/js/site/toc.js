@@ -3,7 +3,8 @@ var BCLS_toc = ( function (window, document) {
   in_page_nav_right = true,
   side_nav = document.getElementById('side_nav'),
   bc_veggie_burger_wrapper = document.getElementById('bc_veggie_burger_wrapper'),
-  nav_menu_collapsed = false;
+  nav_menu_collapsed = false,
+  pathname = window.location.pathname;
 
   /**
    * Create the in-page navigation
@@ -63,7 +64,7 @@ var BCLS_toc = ( function (window, document) {
         side_nav_created = true;
       } else {
         parent = navEl.parentNode;
-        parent.setAttribute('style', 'display:none;')
+        parent.setAttribute('style', 'display:none;');
       }
 
 
@@ -105,11 +106,11 @@ var BCLS_toc = ( function (window, document) {
   function toggle_nav_menu() {
     if (nav_menu_collapsed) {
       bc_veggie_burger_wrapper.setAttribute('style', 'display:none;');
-      side_nav.setAttribute('style', 'display:block;')
+      side_nav.setAttribute('style', 'display:block;');
       nav_menu_collapsed = false;
     } else {
       bc_veggie_burger_wrapper.setAttribute('style', 'display:block;background:none;');
-      side_nav.setAttribute('style', 'display:none;')
+      side_nav.setAttribute('style', 'display:none;');
       nav_menu_collapsed = true;
     }
   }
@@ -120,21 +121,25 @@ var BCLS_toc = ( function (window, document) {
 
         // set listener for window resize
         window.addEventListener("resize", function () {
-          if (window.innerWidth > 1360) {
-            if (!in_page_nav_right) {
-              side_nav_created = false;
-              centered_inpage_nav.setAttribute('style', 'visibility: hidden;')
-              centered_in_page_toc.innerHTML = '';
-              create_inpage_nav();
-            }
-          } else {
-            if (in_page_nav_right) {
-              side_nav_created = false;
-              right_side_nav.setAttribute('style', 'display:none;');
-              in_page_nav.innerHTML = '';
-              create_inpage_nav();
+          // for in-page nav; don't do if an index page
+          if (pathname !== '/' || pathname.indexOf('/index.html') < 0) {
+            if (window.innerWidth > 1360) {
+              if (!in_page_nav_right) {
+                side_nav_created = false;
+                centered_inpage_nav.setAttribute('style', 'visibility: hidden;');
+                centered_in_page_toc.innerHTML = '';
+                create_inpage_nav();
+              }
+            } else {
+              if (in_page_nav_right) {
+                side_nav_created = false;
+                right_side_nav.setAttribute('style', 'display:none;');
+                in_page_nav.innerHTML = '';
+                create_inpage_nav();
+              }
             }
           }
+          // for main nav
           if (window.innerWidth < 1000 && !nav_menu_collapsed) {
             toggle_nav_menu();
           } else if (window.innerWidth > 1000 && nav_menu_collapsed) {
