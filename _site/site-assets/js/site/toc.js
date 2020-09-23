@@ -117,7 +117,14 @@ var BCLS_toc = ( function (window, document) {
 
 
   // run the function
-  create_inpage_nav();
+  if (pathname !== '/' || pathname.indexOf('/index.html') < 0) {
+    create_inpage_nav();
+  } else {
+    if (window.innerWidth < 1000) {
+      toggle_nav_menu();
+    }
+  }
+
 
         // set listener for window resize
         window.addEventListener("resize", function () {
