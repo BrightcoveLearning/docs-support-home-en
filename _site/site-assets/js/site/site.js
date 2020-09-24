@@ -33,6 +33,8 @@ function removeClass(el, name)
     el.className=el.className.replace(new RegExp('(\\s|^)'+name+'(\\s|$)'),' ').replace(/^\s+|\s+$/g, '');
   }
 }
+
+function hideElement(el) ()
   // side navigation
   iMax = all_sidenav_links.length;
   for (i = 0; i < iMax; i++) {
