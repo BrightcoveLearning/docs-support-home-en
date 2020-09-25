@@ -34,7 +34,9 @@ function removeClass(el, name)
   }
 }
 
-function hideElement(el) ()
+function hideElement(el) {
+  
+}
   // side navigation
   iMax = all_sidenav_links.length;
   for (i = 0; i < iMax; i++) {
