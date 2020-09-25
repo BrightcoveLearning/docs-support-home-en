@@ -35,7 +35,7 @@ function removeClass(el, name)
 }
 
 function hideElement(el) {
-  
+  el.setAttribute('style', 'display:none;')
 }
   // side navigation
   iMax = all_sidenav_links.length;
