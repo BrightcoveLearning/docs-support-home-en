@@ -23,6 +23,7 @@ var BCLS_site = (function(window, document) {
     side_nav = document.getElementById('side_nav'),
     footer = document.querySelector('footer'),
     talla_wrapper = document.getElementById('talla_wrapper'),
+    feedbackify = document.getElementById('overview-cms-api.html'),
     open_new_tab = document.getElementById('open_new_tab');
 
   // if inside iframe, hide appropriate elements
@@ -31,6 +32,7 @@ var BCLS_site = (function(window, document) {
     hideElement(footer);
     hideElement(side_nav);
     hideElement(talla_wrapper);
+    hideElement(feedbackify);
     open_new_tab.removeAttribute('style');
     open_new_tab.setAttribute('href', window.location.href);
   }
