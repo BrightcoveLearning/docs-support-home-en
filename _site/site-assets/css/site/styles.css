@@ -41,6 +41,11 @@ div.container {
   min-width: 100%;
 }
 
+/* send to new tab/page (for iframe) */
+#open_new_tab {
+  float: right;
+}
+
 /* page sections */
 .bcls-section {
   margin-top: 2.5em;

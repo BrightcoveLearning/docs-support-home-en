@@ -25,7 +25,12 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/support/",
+      "newURL": "https://support.brightcove.com/iframe.html",
+      "oldURL": "/iframe"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/training/",
       "oldURL": "/index"
   },
 
@@ -35,7 +40,7 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/training/",
+      "newURL": "https://support.brightcove.com/support/",
       "oldURL": "/index"
   },
 

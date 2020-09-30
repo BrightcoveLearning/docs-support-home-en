@@ -17,7 +17,23 @@ var BCLS_site = (function(window, document) {
     pChild,
     pNextSib,
     p1NextSib,
-    p1NextSibList;
+    p1NextSibList,
+    // for load in iframe
+    header = document.querySelector('header'),
+    side_nav = document.getElementById('side_nav'),
+    footer = document.querySelector('footer'),
+    talla_wrapper = document.getElementById('talla_wrapper'),
+    open_new_tab = document.getElementById('open_new_tab');
+
+  // if inside iframe, hide appropriate elements
+  if (window.location !== window.parent.location) {
+    hideElement(header);
+    hideElement(footer);
+    hideElement(side_nav);
+    hideElement(talla_wrapper);
+    open_new_tab.removeAttribute('style');
+    open_new_tab.setAttribute('href', window.location.href);
+  }
 
 // utilities for adding/removing classes
 function hasClass(el, name) {
@@ -35,7 +51,11 @@ function removeClass(el, name)
 }
 
 function hideElement(el) {
-  el.setAttribute('style', 'display:none;')
+  if (el) {
+    el.setAttribute('style', 'display:none;');
+  } else {
+    console.log('The element ' + el + 'does not exist');
+  }
 }
   // side navigation
   iMax = all_sidenav_links.length;
