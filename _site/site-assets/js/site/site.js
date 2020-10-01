@@ -35,6 +35,7 @@ var BCLS_site = (function(window, document) {
     hideElement(talla_wrapper);
     open_new_tab.removeAttribute('style');
     open_new_tab.setAttribute('href', window.location.href);
+    removeFeedbackfy();
   }
 
   function removeFeedbackfy() {
