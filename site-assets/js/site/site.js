@@ -24,7 +24,7 @@ var BCLS_site = (function(window, document) {
     footer = document.querySelector('footer'),
     talla_wrapper = document.getElementById('talla_wrapper'),
     feedbackify = document.getElementById('feedbackify'),
-    feedbackify_parent = feedbackify.parentNode,
+
     open_new_tab = document.getElementById('open_new_tab');
 
   // if inside iframe, hide appropriate elements
@@ -33,10 +33,20 @@ var BCLS_site = (function(window, document) {
     hideElement(footer);
     hideElement(side_nav);
     hideElement(talla_wrapper);
-    feedbackify_parent.removeChild(feedbackify);
     open_new_tab.removeAttribute('style');
     open_new_tab.setAttribute('href', window.location.href);
   }
+
+  function removeFeedbackfy() {
+    var t;
+    if (feedbackify) {
+      var feedbackify_parent = feedbackify.parentNode
+      feedbackify_parent.removeChild(feedbackify);
+    } else {
+      t = window.setTimeout(removeFeedbackfy, 2000);
+    }
+
+}
 
 // utilities for adding/removing classes
 function hasClass(el, name) {
