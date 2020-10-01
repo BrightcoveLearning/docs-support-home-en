@@ -23,7 +23,8 @@ var BCLS_site = (function(window, document) {
     side_nav = document.getElementById('side_nav'),
     footer = document.querySelector('footer'),
     talla_wrapper = document.getElementById('talla_wrapper'),
-    open_new_tab = document.getElementById('open_new_tab');
+    open_new_tab = document.getElementById('open_new_tab'),
+    bc_veggie_burger_wrapper = document.getElementById('bc_veggie_burger_wrapper');
 
   // if inside iframe, hide appropriate elements
   if (window.location !== window.parent.location) {
@@ -31,6 +32,7 @@ var BCLS_site = (function(window, document) {
     hideElement(footer);
     hideElement(side_nav);
     hideElement(talla_wrapper);
+    hideElement(bc_veggie_burger_wrapper);
     open_new_tab.removeAttribute('style');
     open_new_tab.setAttribute('href', window.location.href);
     removeFeedbackify();
