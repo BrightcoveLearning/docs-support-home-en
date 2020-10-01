@@ -23,8 +23,6 @@ var BCLS_site = (function(window, document) {
     side_nav = document.getElementById('side_nav'),
     footer = document.querySelector('footer'),
     talla_wrapper = document.getElementById('talla_wrapper'),
-    feedbackify = document.getElementsByClassName('fby-tab')[0],
-
     open_new_tab = document.getElementById('open_new_tab');
 
   // if inside iframe, hide appropriate elements
@@ -39,7 +37,8 @@ var BCLS_site = (function(window, document) {
   }
 
   function removeFeedbackify() {
-    var t;
+    var t,
+    feedbackify = document.getElementById('feedbackify');
     console.log('feedbackify', feedbackify);
     if (feedbackify) {
       var feedbackify_parent = feedbackify.parentNode;
