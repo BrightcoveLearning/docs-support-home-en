@@ -23,7 +23,7 @@ var BCLS_site = (function(window, document) {
     side_nav = document.getElementById('side_nav'),
     footer = document.querySelector('footer'),
     talla_wrapper = document.getElementById('talla_wrapper'),
-    feedbackify = document.getElementById('overview-cms-api.html'),
+    feedbackify = document.getElementById('feedbackify'),
     open_new_tab = document.getElementById('open_new_tab');
 
   // if inside iframe, hide appropriate elements
