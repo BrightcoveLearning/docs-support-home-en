@@ -39,10 +39,13 @@ var BCLS_site = (function(window, document) {
 
   function removeFeedbackfy() {
     var t;
+    console.log('feedbackify', feedbackify);
     if (feedbackify) {
-      var feedbackify_parent = feedbackify.parentNode
+      var feedbackify_parent = feedbackify.parentNode;
+      console.log('feedbackify_parent', feedbackify_parent);
       feedbackify_parent.removeChild(feedbackify);
     } else {
+      console.log('retry');
       t = window.setTimeout(removeFeedbackfy, 2000);
     }
 
