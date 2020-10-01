@@ -32,7 +32,7 @@ var BCLS_site = (function(window, document) {
     hideElement(footer);
     hideElement(side_nav);
     hideElement(talla_wrapper);
-    hideElement(feedbackify);
+    feedbackify.setAttribute('style', 'display:none!important;');
     open_new_tab.removeAttribute('style');
     open_new_tab.setAttribute('href', window.location.href);
   }
