@@ -40,7 +40,9 @@ var BCLS_toc = ( function (window, document) {
     }
 
     // display the nav block we're using
-    navWrapper.setAttribute('style', 'display:block');
+    if (navWrapper) {
+      navWrapper.setAttribute('style', 'display:block');
+    }
       // in case this gets run multiple times by mistake, clear existing items
       // in_page_nav.innerHTML = '';
       // add new items
