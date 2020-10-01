@@ -23,7 +23,7 @@ var BCLS_site = (function(window, document) {
     side_nav = document.getElementById('side_nav'),
     footer = document.querySelector('footer'),
     talla_wrapper = document.getElementById('talla_wrapper'),
-    feedbackify = document.getElementById('feedbackify'),
+    feedbackify = document.getElementsByClassName('fby-tab')[0],
 
     open_new_tab = document.getElementById('open_new_tab');
 
@@ -35,10 +35,10 @@ var BCLS_site = (function(window, document) {
     hideElement(talla_wrapper);
     open_new_tab.removeAttribute('style');
     open_new_tab.setAttribute('href', window.location.href);
-    removeFeedbackfy();
+    removeFeedbackify();
   }
 
-  function removeFeedbackfy() {
+  function removeFeedbackify() {
     var t;
     console.log('feedbackify', feedbackify);
     if (feedbackify) {
@@ -47,7 +47,7 @@ var BCLS_site = (function(window, document) {
       feedbackify_parent.removeChild(feedbackify);
     } else {
       console.log('retry');
-      t = window.setTimeout(removeFeedbackfy, 2000);
+      t = window.setTimeout(removeFeedbackify, 2000);
     }
 
 }
