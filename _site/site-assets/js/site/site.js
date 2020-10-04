@@ -26,7 +26,9 @@ var BCLS_site = (function(window, document) {
     open_new_tab = document.getElementById('open_new_tab'),
     bc_veggie_burger_wrapper = document.getElementById('bc_veggie_burger_wrapper'),
     burger_parent = bc_veggie_burger_wrapper.parentNode,
-    in_prod_nav = document.getElementById('in_prod_nav');
+    in_prod_nav = document.getElementById('in_prod_nav'),
+    forward_button = document.getElementById('forward_button'),
+    back_button = document.getElementById('back_button');
 
   // if inside iframe, hide appropriate elements
   if (window.location !== window.parent.location) {
@@ -39,8 +41,17 @@ var BCLS_site = (function(window, document) {
     open_new_tab.removeAttribute('style');
     open_new_tab.setAttribute('href', window.location.href);
     removeFeedbackify();
+    forward_button.addEventListener('click', function() {
+      window.history.forward();
+    });
+    back_button.addEventListener('click', function() {
+      window.history.back();
+      forward_button.removeAttribute('style');
+    });
+    if (window.history.length > 2) {
+      back_button.removeAttribute('style');
+    }
   }
-
   function removeFeedbackify() {
     var t,
     feedbackify = document.getElementById('feedbackify');
