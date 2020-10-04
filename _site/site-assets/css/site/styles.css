@@ -1406,3 +1406,32 @@ body > header > nav {
   width: 40%;
   height: 60%;
 }
+
+/* pager - nav for embedded docs */
+.pager{
+  padding-left:0;margin:20px 0;text-align:center;list-style:none
+}
+.pager li{
+  display:inline
+}
+.pager li>a,.pager li>span{
+  display:inline-block;padding:5px 14px;background-color:#fff;border:1px solid #ddd;border-radius:15px
+}
+.pager li>a:focus,.pager li>a:hover{
+  text-decoration:none;background-color:#eee
+}
+.pager .next>a,.pager .next>span{
+  float:right
+}
+.pager .previous>a,.pager .previous>span{
+  float:left
+}
+.pager .disabled>a,.pager .disabled>a:focus,.pager .disabled>a:hover,.pager .disabled>span{
+  color:#777;cursor:not-allowed;background-color:#fff
+}
+.btn-group-vertical>.btn-group:after,.btn-group-vertical>.btn-group:before,.btn-toolbar:after,.btn-toolbar:before,.clearfix:after,.clearfix:before,.container-fluid:after,.container-fluid:before,.container:after,.container:before,.dl-horizontal dd:after,.dl-horizontal dd:before,.form-horizontal .form-group:after,.form-horizontal .form-group:before,.modal-footer:after,.modal-footer:before,.modal-header:after,.modal-header:before,.nav:after,.nav:before,.navbar-collapse:after,.navbar-collapse:before,.navbar-header:after,.navbar-header:before,.navbar:after,.navbar:before,.pager:after,.pager:before,.panel-body:after,.panel-body:before,.row:after,.row:before{
+  display:table;content:" "
+}
+.btn-group-vertical>.btn-group:after,.btn-toolbar:after,.clearfix:after,.container-fluid:after,.container:after,.dl-horizontal dd:after,.form-horizontal .form-group:after,.modal-footer:after,.modal-header:after,.nav:after,.navbar-collapse:after,.navbar-header:after,.navbar:after,.pager:after,.panel-body:after,.row:after{
+  clear:both
+}
