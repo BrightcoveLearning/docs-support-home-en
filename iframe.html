@@ -5,6 +5,40 @@ layout: iframe
 ---
 
 <h1>{{ page.title }}</h1>
+<p>Click on any link to load it into the iframe.</p>
+<ul id="links">
+  <li style="color:blue;cursor:pointer;text-decoration:underline">https://beacon.support.brightcove.com/getting-started/learning-guide-bc-beacon.html</li>
+  <li style="color:blue;cursor:pointer;text-decoration:underline">https://beacon.support.brightcove.com/getting-started/implementation-phases.html</li>
+  <li style="color:blue;cursor:pointer;text-decoration:underline">https://beacon.support.brightcove.com/getting-started/creating-your-app-design-info-architecture.html</li>
+  <li style="color:blue;cursor:pointer;text-decoration:underline">https://beacon.support.brightcove.com/getting-started/creating-your-app-design-layout-options.html</li>
+</ul>
 <div style="position: relative;">
-  <iframe src="https://apis.support.brightcove.com/cms/getting-started/overview-cms-api.html" style="position: fixed;right: 30px; height: 80%; width: 30%;"></iframe>
+  <iframe id="doc_frame" src="https://beacon.support.brightcove.com/training/training-demand-custom-fields.html" style="position: fixed;right: 30px; height: 80%; width: 30%;"></iframe>
 </div>
+<script>
+  var linkEls = document.querySelectorAll('#links li'),
+  i,
+  doc_frame = document.getElementById('doc_frame');
+
+  for (i = 0; i < linkEls.length; i++) {
+    linkEls[i].addEventListener('click', function(e) {
+      doc_frame.setAttribute('src', this.textContent);
+    })
+  }
+
+  function removeFeedbackify() {
+    var t,
+    feedbackify = document.getElementById('feedbackify');
+    console.log('feedbackify', feedbackify);
+    if (feedbackify) {
+      var feedbackify_parent = feedbackify.parentNode;
+      console.log('feedbackify_parent', feedbackify_parent);
+      feedbackify_parent.removeChild(feedbackify);
+    } else {
+      console.log('retry');
+      t = window.setTimeout(removeFeedbackify, 2000);
+    }
+  }
+
+  removeFeedbackify();
+</script>

@@ -127,7 +127,12 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 <div class="container">
     <div class="row">
       <div class="col-sm-3 left-side-bar">
-        <p id="bc_veggie_burger_wrapper" style="visibility: hidden;"><i id="bc_veggie_burger" class="fas fa-bars"></i></p>
+        <p id="bc_veggie_burger_wrapper" style="display: none;"><i id="bc_veggie_burger" class="fas fa-bars"></i></p>
+          <ul id="in_prod_nav" class="pager" style="display: none;">
+            <li><a href="#">Previous</a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;Beacon Documentation&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li><a href="#">Next</a></li>
+          </ul>
         <nav class="sidenav" id="side_nav">
           
             
@@ -151,12 +156,44 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 <a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="open in new tab"></a>
 
 
-
-
 <h1>iFrame Test</h1>
+<p>Click on any link to load it into the iframe.</p>
+<ul id="links">
+  <li style="color:blue;cursor:pointer;text-decoration:underline">https://beacon.support.brightcove.com/getting-started/learning-guide-bc-beacon.html</li>
+  <li style="color:blue;cursor:pointer;text-decoration:underline">https://beacon.support.brightcove.com/getting-started/implementation-phases.html</li>
+  <li style="color:blue;cursor:pointer;text-decoration:underline">https://beacon.support.brightcove.com/getting-started/creating-your-app-design-info-architecture.html</li>
+  <li style="color:blue;cursor:pointer;text-decoration:underline">https://beacon.support.brightcove.com/getting-started/creating-your-app-design-layout-options.html</li>
+</ul>
 <div style="position: relative;">
-  <iframe src="https://apis.support.brightcove.com/cms/getting-started/overview-cms-api.html" style="position: fixed;right: 30px; height: 80%; width: 30%;"></iframe>
+  <iframe id="doc_frame" src="https://beacon.support.brightcove.com/training/training-demand-custom-fields.html" style="position: fixed;right: 30px; height: 80%; width: 30%;"></iframe>
 </div>
+<script>
+  var linkEls = document.querySelectorAll('#links li'),
+  i,
+  doc_frame = document.getElementById('doc_frame');
+
+  for (i = 0; i < linkEls.length; i++) {
+    linkEls[i].addEventListener('click', function(e) {
+      doc_frame.setAttribute('src', this.textContent);
+    })
+  }
+
+  function removeFeedbackify() {
+    var t,
+    feedbackify = document.getElementById('feedbackify');
+    console.log('feedbackify', feedbackify);
+    if (feedbackify) {
+      var feedbackify_parent = feedbackify.parentNode;
+      console.log('feedbackify_parent', feedbackify_parent);
+      feedbackify_parent.removeChild(feedbackify);
+    } else {
+      console.log('retry');
+      t = window.setTimeout(removeFeedbackify, 2000);
+    }
+  }
+
+  removeFeedbackify();
+</script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
