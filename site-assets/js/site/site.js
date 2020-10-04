@@ -46,11 +46,7 @@ var BCLS_site = (function(window, document) {
     });
     back_button.addEventListener('click', function() {
       window.history.back();
-      forward_button.removeAttribute('style');
     });
-    if (window.history.length > 2) {
-      back_button.removeAttribute('style');
-    }
   }
   function removeFeedbackify() {
     var t,
