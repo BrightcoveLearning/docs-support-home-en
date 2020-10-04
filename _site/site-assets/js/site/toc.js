@@ -66,8 +66,10 @@ var BCLS_toc = ( function (window, document) {
         // side nav is being generated; set the flag
         side_nav_created = true;
       } else {
-        parent = navEl.parentNode;
-        parent.setAttribute('style', 'display:none;');
+        if (navEl) {
+          parent = navEl.parentNode;
+          parent.setAttribute('style', 'display:none;');
+        }
       }
 
 

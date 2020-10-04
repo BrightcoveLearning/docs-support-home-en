@@ -25,6 +25,7 @@ var BCLS_site = (function(window, document) {
     talla_wrapper = document.getElementById('talla_wrapper'),
     open_new_tab = document.getElementById('open_new_tab'),
     bc_veggie_burger_wrapper = document.getElementById('bc_veggie_burger_wrapper'),
+    burger_parent = bc_veggie_burger_wrapper.parentNode,
     in_prod_nav = document.getElementById('in_prod_nav');
 
   // if inside iframe, hide appropriate elements
@@ -33,7 +34,7 @@ var BCLS_site = (function(window, document) {
     hideElement(footer);
     hideElement(side_nav);
     hideElement(talla_wrapper);
-    hideElement(bc_veggie_burger_wrapper);
+    burger_parent.removeChild(bc_veggie_burger_wrapper);
     in_prod_nav.removeAttribute('style');
     open_new_tab.removeAttribute('style');
     open_new_tab.setAttribute('href', window.location.href);
