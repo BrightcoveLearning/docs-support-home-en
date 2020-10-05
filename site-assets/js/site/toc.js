@@ -36,7 +36,9 @@ var BCLS_toc = ( function (window, document) {
     }
 
     if (window.innerWidth < 1000) {
-      toggle_nav_menu();
+      if (window.location === window.parent.location) {
+        toggle_nav_menu();
+      }
     }
 
     // display the nav block we're using

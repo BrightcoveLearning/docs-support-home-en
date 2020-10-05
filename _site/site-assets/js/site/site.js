@@ -36,17 +36,17 @@ var BCLS_site = (function(window, document) {
     hideElement(footer);
     hideElement(side_nav);
     hideElement(talla_wrapper);
-    burger_parent.removeChild(bc_veggie_burger_wrapper);
-    in_prod_nav.removeAttribute('style');
+    hideElement(bc_veggie_burger_wrapper);
+    // in_prod_nav.removeAttribute('style');
     open_new_tab.removeAttribute('style');
     open_new_tab.setAttribute('href', window.location.href);
     removeFeedbackify();
-    forward_button.addEventListener('click', function() {
-      window.history.forward();
-    });
-    back_button.addEventListener('click', function() {
-      window.history.back();
-    });
+    // forward_button.addEventListener('click', function() {
+    //   window.history.forward();
+    // });
+    // back_button.addEventListener('click', function() {
+    //   window.history.back();
+    // });
   }
   function removeFeedbackify() {
     var t,
