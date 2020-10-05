@@ -1409,7 +1409,12 @@ body > header > nav {
 
 /* pager - nav for embedded docs */
 .pager{
-  padding-left:0;margin:20px 0;text-align:center;list-style:none
+  background-color: rgb(0, 0, 139);
+  color: white;
+  padding-left:0;
+  margin:20px 0;
+  text-align:center;
+  list-style:none
 }
 .pager li{
   display:inline
@@ -1434,4 +1439,8 @@ body > header > nav {
 }
 .btn-group-vertical>.btn-group:after,.btn-toolbar:after,.clearfix:after,.container-fluid:after,.container:after,.dl-horizontal dd:after,.form-horizontal .form-group:after,.modal-footer:after,.modal-header:after,.nav:after,.navbar-collapse:after,.navbar-header:after,.navbar:after,.pager:after,.panel-body:after,.row:after{
   clear:both
+}
+
+.nav-icon {
+  width: 1.5em;;
 }
