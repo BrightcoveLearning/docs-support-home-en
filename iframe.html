@@ -6,7 +6,7 @@ layout: iframe
 
 <h1>{{ page.title }}</h1>
 <p>Paste any full URL in the field below to load that page into the frame.</p>
-<p><input type="text" id="src_address" size="150"></p>
+<p><input type="text" id="src_address" size="100"></p>
 <p><button id="add_src">Put this page in the frame</button></p>
 <div style="position: relative;">
   <iframe id="doc_frame" src="https://beacon.support.brightcove.com/training/training-demand-custom-fields.html" style="position: fixed;right: 30px; height: 80%; width: 30%;"></iframe>
@@ -16,8 +16,9 @@ layout: iframe
   add_src = document.getElementById('add_src'),
   doc_frame = document.getElementById('doc_frame');
 
-  add_src.addEventListener()
-      doc_frame.setAttribute('src', src_address.value);
+  add_src.addEventListener('click', function(){
+    doc_frame.setAttribute('src', src_address.value);
+  });
 
   function removeFeedbackify() {
     var t,

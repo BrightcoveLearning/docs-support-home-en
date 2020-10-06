@@ -145,7 +145,7 @@ var BCLS_toc = ( function (window, document) {
                 create_inpage_nav();
               }
             } else {
-              if (in_page_nav_right) {
+              if (in_page_nav_right && right_side_nav) {
                 side_nav_created = false;
                 right_side_nav.setAttribute('style', 'display:none;');
                 in_page_nav.innerHTML = '';
