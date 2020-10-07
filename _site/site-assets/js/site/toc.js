@@ -90,7 +90,6 @@ var BCLS_toc = ( function (window, document) {
         for (i = 0; i < iMax; i++) {
           linkEl = navItems[i];
           linkTarget = linkEl.firstElementChild.getAttribute('href');
-
           linkEl.addEventListener('click', function(e) {
             document.querySelector(linkTarget).scrollIntoView({
               behavior: 'smooth'
@@ -99,8 +98,6 @@ var BCLS_toc = ( function (window, document) {
             for (j = 0; j < jMax; j++) {
               navItems[j].removeAttribute('style');
             }
-            console.log('this', this);
-
             this.setAttribute('style', 'color:#dcf3fb;background-color:rgb(21, 160, 183);');
           });
         }
@@ -112,13 +109,17 @@ var BCLS_toc = ( function (window, document) {
    */
   function toggle_nav_menu() {
     if (nav_menu_collapsed) {
-      bc_veggie_burger_wrapper.setAttribute('style', 'display:none;');
-      side_nav.setAttribute('style', 'display:block;');
-      nav_menu_collapsed = false;
+      if (bc_veggie_burger_wrapper) {
+        bc_veggie_burger_wrapper.setAttribute('style', 'display:none;');
+        side_nav.setAttribute('style', 'display:block;');
+        nav_menu_collapsed = false;
+      }
     } else {
-      bc_veggie_burger_wrapper.setAttribute('style', 'display:block;background:none;');
-      side_nav.setAttribute('style', 'display:none;');
-      nav_menu_collapsed = true;
+      if (bc_veggie_burger_wrapper) {
+        bc_veggie_burger_wrapper.setAttribute('style', 'display:block;background:none;');
+        side_nav.setAttribute('style', 'display:none;');
+        nav_menu_collapsed = true;
+      }
     }
   }
 
@@ -145,11 +146,13 @@ var BCLS_toc = ( function (window, document) {
                 create_inpage_nav();
               }
             } else {
-              if (in_page_nav_right && right_side_nav) {
-                side_nav_created = false;
-                right_side_nav.setAttribute('style', 'display:none;');
-                in_page_nav.innerHTML = '';
-                create_inpage_nav();
+              if (right_side_nav) {
+                if (in_page_nav_right) {
+                  side_nav_created = false;
+                  right_side_nav.setAttribute('style', 'display:none;');
+                  in_page_nav.innerHTML = '';
+                  create_inpage_nav();
+                }
               }
             }
           }
@@ -162,15 +165,17 @@ var BCLS_toc = ( function (window, document) {
         });
 
         // listener for burger click
-        bc_veggie_burger.addEventListener('click', function() {
-          if (nav_menu_collapsed) {
-            side_nav.setAttribute('style', 'display:block;');
-            nav_menu_collapsed = false;
-          } else {
-            side_nav.setAttribute('style', 'display:none;');
-            nav_menu_collapsed = true;
-          }
-        });
+        if (bc_veggie_burger_wrapper) {
+          bc_veggie_burger.addEventListener('click', function() {
+            if (nav_menu_collapsed) {
+              side_nav.setAttribute('style', 'display:block;');
+              nav_menu_collapsed = false;
+            } else {
+              side_nav.setAttribute('style', 'display:none;');
+              nav_menu_collapsed = true;
+            }
+          });
+        }
 
   // this creates a public method, allow it to be run again (imported content for example)
   return {
