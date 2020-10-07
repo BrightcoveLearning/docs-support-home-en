@@ -8,6 +8,20 @@ var BCLS_toc = ( function (window, document) {
   pathname = window.location.pathname;
 
   /**
+   * Removes all child elements (eg the items in a list)
+   * @param {node} parent the element to remove children from
+   */
+  function removeAllChildNodes(parent) {
+    if (parent) {
+      while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+      }
+    } else {
+      console.log(parent, 'Either the parent node was not passed in or does not exist');
+    }
+  }
+
+  /**
    * Create the in-page navigation
    */
   function create_inpage_nav() {
@@ -46,7 +60,9 @@ var BCLS_toc = ( function (window, document) {
       navWrapper.setAttribute('style', 'display:block');
     }
       // in case this gets run multiple times by mistake, clear existing items
-      // in_page_nav.innerHTML = '';
+      if (navEl) {
+        removeAllChildNodes(navEl);
+      }
       // add new items
       iMax = h2s.length;
       for (i = 0; i < iMax; i++) {
