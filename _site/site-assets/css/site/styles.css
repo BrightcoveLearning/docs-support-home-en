@@ -1465,4 +1465,8 @@ body > header > nav {
   h5 {
     font-size: 1.1em !important;
   }
+
+ h1 i.fal, h1 i.fab, h1 i.fas, h1 i.far {
+   display: none;
+ }
 }
