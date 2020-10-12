@@ -1451,10 +1451,10 @@ body > header > nav {
 /* for phones and embedded pages */
 @media screen and (max-width: 1000px) {
   h1 {
-    font-size: 2.5em !important;
+    font-size: 2.2em !important;
   }
   h2 {
-    font-size: 2.1em !important;
+    font-size: 1.9em !important;
   }
   h3 {
     font-size: 1.5em !important;
