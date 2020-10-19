@@ -60,6 +60,11 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/release-notes.html",
+      "oldURL": "/release-notes"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/search.html",
       "oldURL": "/search"
   },
