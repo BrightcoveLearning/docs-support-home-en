@@ -6,7 +6,42 @@ layout: home-page
 <style>
   .bcls-card-small {
     cursor: auto;
+    display: inline-block;
   }
+  .product-logo {
+    background-image: contain no-repeat url(/site-assets/images/site/product-logos/brightcove-black-on-white.svg);
+  }
+  @media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 2.2em !important;
+  }
+  h2 {
+    font-size: 1.9em !important;
+  }
+  h3 {
+    font-size: 1.5em !important;
+  }
+  h4 {
+    font-size: 1.3em !important;
+  }
+  h5 {
+    font-size: 1.1em !important;
+  }
+
+ h1 i.fal, h1 i.fab, h1 i.fas, h1 i.far {
+   display: none;
+ }
+ .bcls-card-small {
+   display: block;
+ }
+ .card-wrapper {
+   justify-content: start;
+   display: flow-root;
+ }
+ body, .body {
+   font-size: smaller;
+ }
+}
 </style>
 <h1>{{ page.title }}</h1>
 <article class="bcls-article">
@@ -30,7 +65,7 @@ layout: home-page
         <p style="margin-left: 1rem;"><a data-type="new-site-link" href="https://general.support.brightcove.com">General Information</a></p>
       </div>
     </section>
-    <section class="bcls-card-small" style="">
+    <section class="bcls-card-small">
       <div class="card-content">
         <h3>Add-Ons</h3>
 
@@ -91,3 +126,23 @@ layout: home-page
     </section>
   </section>
 </article>
+<script>
+  var BCLS_homepage = ( function (window, document) {
+  var product_logo = document.querySelector('.product-logo');
+
+  if (window.innerWidth < 1000) {
+    product_logo.setAttribute('src', '/site-assets/images/site/product-logos/b-white-on-black.svg');
+    product_logo.setAttribute('style', 'max-height:30px;margin-bottom:1rem;')
+  }
+
+  window.addEventListener('resize', function() {
+    if (window.innerWidth < 1000) {
+    product_logo.setAttribute('src', '/site-assets/images/site/product-logos/b-white-on-black.svg');
+    product_logo.setAttribute('style', 'max-height:30px;margin-bottom:1rem;')
+  } else {
+    product_logo.setAttribute('src', '/site-assets/images/site/product-logos/brightcove-black-on-white.svg');
+  }
+
+  });
+})(window, document);
+</script>

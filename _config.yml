@@ -36,7 +36,7 @@ port: 1111
 product: Brightcove
 color: rgb(51, 51, 51)
 product_color: rgb(65, 196, 181)
-product_icon: "brightcove.png"
+product_icon: "brightcove-black-on-white.svg"
 search_id: "017969773216783359937:2cbhk6irtp6"
 feedbackify_id: "14941"
 bing_custom_config_id: "d05d8d92-4176-4adc-babf-1ca934f14021"
