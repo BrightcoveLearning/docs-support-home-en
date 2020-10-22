@@ -19,6 +19,19 @@ body {
   position: relative;
 }
 
+/* colors */
+.bc-navy {
+color: #08088C
+}
+.bc-turquoise {
+  color: #00EAE4
+}
+.bc-orange {
+color: #FF5000
+}
+.bc-yellow {
+ color: #FFCE00
+}
 
 a::visited, a::hover {
   color: rgb(19, 160, 183);
