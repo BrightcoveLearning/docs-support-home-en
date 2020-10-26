@@ -892,8 +892,9 @@ button.gsc-search-button {
   background-color: white;
   color: rgb(68, 68, 68);
   clear: both;
-  margin-left: 0;
+  margin-left: 1rem;
   margin-right: 0;
+  padding-left: 1rem;
   padding-top: .5rem;
   padding-bottom: .5rem;
   min-height: 4em;
@@ -901,15 +902,10 @@ button.gsc-search-button {
   /* padding: .4rem; */;
 }
 
-/* .div-header img {
-  margin-bottom: .5rem;
-} */
-
 
 .product-logo {
   float: left;
   border: none;
-  margin-left: 1rem;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -1424,8 +1420,8 @@ body > header > nav {
 
 /* pager - nav for embedded docs */
 .pager{
-  background-color: rgb(0, 0, 139);
-  color: white;
+  background-color: #FF5000;
+  color: #FFCE00;
   padding-left:0;
   margin:20px 0;
   text-align:center;
