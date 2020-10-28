@@ -76,7 +76,7 @@ var BCLS_toc = ( function (window, document) {
 
 
     // display the nav block we're using
-    if (navWrapper) {
+    if (navWrapper && pathname !== '/' && pathname.indexOf('/index.html') < 0) {
       if (pathname !== '/' || pathname.indexOf('/index.html') < 0) {
         navWrapper.setAttribute('style', 'display:block');
       }
@@ -85,30 +85,32 @@ var BCLS_toc = ( function (window, document) {
       if (navEl) {
         removeAllChildNodes(navEl);
       }
-      // add new items
-      iMax = h2s.length;
-      for (i = 0; i < iMax; i++) {
-        h2 = h2s[i];
-        if (h2.id) {
-          li = document.createElement('li');
-          li.setAttribute('class', 'toc-item');
-          link = document.createElement('a');
-          link.setAttribute('href', '#' + h2.id);
-          link.textContent = h2.textContent;
-          li.appendChild(link);
-          frag.appendChild(li);
+      if (pathname !== '/' || pathname.indexOf('/index.html') < 0) {
+        // add new items
+        iMax = h2s.length;
+        for (i = 0; i < iMax; i++) {
+          h2 = h2s[i];
+          if (h2.id) {
+            li = document.createElement('li');
+            li.setAttribute('class', 'toc-item');
+            link = document.createElement('a');
+            link.setAttribute('href', '#' + h2.id);
+            link.textContent = h2.textContent;
+            li.appendChild(link);
+            frag.appendChild(li);
+          }
         }
-      }
 
-      if (frag.firstChild) {
-        navEl.appendChild(frag);
-        implementHighlighting();
-        // side nav is being generated; set the flag
-        side_nav_created = true;
-      } else {
-        if (navEl) {
-          parent = navEl.parentNode;
-          parent.setAttribute('style', 'display:none;');
+        if (frag.firstChild) {
+          navEl.appendChild(frag);
+          implementHighlighting();
+          // side nav is being generated; set the flag
+          side_nav_created = true;
+        } else {
+          if (navEl) {
+            parent = navEl.parentNode;
+            parent.setAttribute('style', 'display:none;');
+          }
         }
       }
 
