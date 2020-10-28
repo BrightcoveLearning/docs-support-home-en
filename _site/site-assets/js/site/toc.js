@@ -187,7 +187,7 @@ var BCLS_toc = ( function (window, document) {
                   side_nav_created = false;
                   right_side_nav.setAttribute('style', 'display:none;');
                   in_page_nav.innerHTML = '';
-                  create_inpage_nav();
+                  // create_inpage_nav();
                 }
               }
             }
