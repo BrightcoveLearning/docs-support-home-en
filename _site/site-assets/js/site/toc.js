@@ -42,9 +42,16 @@ var BCLS_toc = ( function (window, document) {
 
     // check window width to set the elements to use
     if (window.innerWidth < 1360) {
-      navEl = centered_in_page_toc;
-      navWrapper = centered_inpage_nav;
-      in_page_nav_right = false;
+      if (pathname !== '/' || pathname.indexOf('/index.html') < 0) {
+        navEl = centered_in_page_toc;
+        navWrapper = centered_inpage_nav;
+        in_page_nav_right = false;
+      } else {
+        navWrapper = null;
+        navEl = null;
+        centered_inpage_nav.setAttribute('style', 'display: none;');
+        centered_in_page_toc.innerHTML = '';
+  }
     } else {
       in_page_nav_right = true;
     }
@@ -157,7 +164,7 @@ var BCLS_toc = ( function (window, document) {
             if (window.innerWidth > 1360) {
               if (!in_page_nav_right) {
                 side_nav_created = false;
-                centered_inpage_nav.setAttribute('style', 'visibility: hidden;');
+                centered_inpage_nav.setAttribute('style', 'display: none;');
                 centered_in_page_toc.innerHTML = '';
                 create_inpage_nav();
               }
@@ -171,7 +178,10 @@ var BCLS_toc = ( function (window, document) {
                 }
               }
             }
-          }
+          } else {
+            centered_inpage_nav.setAttribute('style', 'display: none;');
+            centered_in_page_toc.innerHTML = '';
+      }
           // for main nav
           if (window.innerWidth < 1000 && !nav_menu_collapsed) {
             toggle_nav_menu();
