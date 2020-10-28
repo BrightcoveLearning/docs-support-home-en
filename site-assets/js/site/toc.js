@@ -101,7 +101,7 @@ var BCLS_toc = ( function (window, document) {
           }
         }
 
-        if (frag.firstChild) {
+        if (frag.firstChild && navEl) {
           navEl.appendChild(frag);
           implementHighlighting();
           // side nav is being generated; set the flag
