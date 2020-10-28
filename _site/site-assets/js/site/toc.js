@@ -40,15 +40,6 @@ var BCLS_toc = ( function (window, document) {
     frag = document.createDocumentFragment(),
     parent;
 
-    // if on index page, no inpage nav
-
-    if (pathname === '/' || pathname.indexOf('/index.html') > 0) {
-      navEl = null;
-      navWrapper = null;
-      centered_inpage_nav.setAttribute('style', 'display: none;');
-      centered_in_page_toc.innerHTML = '';
-      in_page_nav_right = false;
-    }
 
     // check window width to set the elements to use
     if (window.innerWidth < 1360) {
@@ -72,6 +63,17 @@ var BCLS_toc = ( function (window, document) {
         toggle_nav_menu();
       }
     }
+
+    // if on index page, no inpage nav
+
+    if (pathname === '/' || pathname.indexOf('/index.html') > 0) {
+      navEl = null;
+      navWrapper = null;
+      centered_inpage_nav.setAttribute('style', 'display: none;');
+      centered_in_page_toc.innerHTML = '';
+      in_page_nav_right = false;
+    }
+
 
     // display the nav block we're using
     if (navWrapper) {
