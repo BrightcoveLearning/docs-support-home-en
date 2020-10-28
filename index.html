@@ -9,40 +9,53 @@ layout: home-page
     cursor: auto;
     display: inline-block;
   }
+
   .product-logo {
     background-image: contain no-repeat url(/site-assets/images/site/product-logos/brightcove-black-on-white.svg);
   }
-  @media screen and (max-width: 1000px) {
-  h1 {
-    font-size: 2.2em !important;
-  }
-  h2 {
-    font-size: 1.9em !important;
-  }
-  h3 {
-    font-size: 1.3em !important;
-  }
-  h4 {
-    font-size: 1.1em !important;
-  }
-  h5 {
-    font-size: 1em !important;
-  }
 
-  h1 i.fal, h1 i.fab, h1 i.fas, h1 i.far {
-    display: none;
+  @media screen and (max-width: 1000px) {
+    h1 {
+      font-size: 2.2em !important;
+    }
+
+    h2 {
+      font-size: 1.9em !important;
+    }
+
+    h3 {
+      font-size: 1.3em !important;
+    }
+
+    h4 {
+      font-size: 1.1em !important;
+    }
+
+    h5 {
+      font-size: 1em !important;
+    }
+
+    h1 i.fal,
+    h1 i.fab,
+    h1 i.fas,
+    h1 i.far {
+      display: none;
+    }
+
+    .bcls-card-small {
+      display: block;
+    }
+
+    .card-wrapper {
+      justify-content: start;
+      display: flow-root;
+    }
+
+    body,
+    .body {
+      font-size: smaller;
+    }
   }
-  .bcls-card-small {
-    display: block;
-  }
-  .card-wrapper {
-    justify-content: start;
-    display: flow-root;
-  }
-  body, .body {
-    font-size: smaller;
-  }
-}
 </style>
 <h1>{{ page.title }}</h1>
 <article class="bcls-article">
@@ -70,80 +83,81 @@ layout: home-page
       <div class="card-content">
         <h2 style="margin-top: 1.3em;font-weight: bold;">Add-Ons</h2>
 
-        <h3 style="margin-top: .4em;font-weight: 900;"><a data-type="new-site-link" href="https://gallery.support.brightcove.com">Brightcove Gallery</>
+        <h3 style="margin-top: .4em;font-weight: 900;"><a data-type="new-site-link" href="https://gallery.support.brightcove.com">Brightcove Gallery</a></h3>
 
-        <h3 style="margin-top: 1rem;font-weight: 900;"><a data-type="new-site-link" href="https://audience.support.brightcove.com">Brightcove Audience</h3>
+            <h3 style="margin-top: 1rem;font-weight: 900;"><a data-type="new-site-link" href="https://audience.support.brightcove.com">Brightcove Audience</a></h3>
 
-          <h3 style="margin-top: .4em;font-weight: 900;"<a data-type="new-site-link" href="https://social.support.brightcove.com">Brightcove Social</a></p>
+            <h3 style="margin-top: .4em;font-weight: 900;"><a data-type="new-site-link" href="https://social.support.brightcove.com">Brightcove Social
+          </a></h3>
 
           <h3 style="margin-top: .4em;font-weight: 900;"><a data-type="new-site-link" href="https://ssai.support.brightcove.com">Brightcove SSAI</a></p>
             <h3 style="margin-top: .4em;font-weight: 900;"><a data-type="new-site-link" href="https://campaign.support.brightcove.com">Brightcove Campaign</a></h3>
 
             <h3 style="margin-top: .4em;font-weight: 900;"><a data-type="new-site-link" href="https://engage.support.brightcove.com">Brightcove Engage</a></h3>
-        </div>
-      </section>
-        <section class="bcls-card-small" style="margin-left: -1rem;">
-          <div class="card-content">
-            <h2 style="margin-top: 1.3em;font-weight: bold;">Other Products</h3>
+      </div>
+    </section>
+    <section class="bcls-card-small" style="margin-left: -1rem;">
+      <div class="card-content">
+        <h2 style="margin-top: 1.3em;font-weight: bold;">Other Products</h3>
 
-            <p><a data-type="new-site-link" href="https://beacon.support.brightcove.com"><img alt="Brightcove Beacon" style="height:2.5rem;" src="/site-assets/images/site/product-logos/Beacon_Logo.svg" /></a></p>
+          <p><a data-type="new-site-link" href="https://beacon.support.brightcove.com"><img alt="Brightcove Beacon" style="height:2.5rem;" src="/site-assets/images/site/product-logos/Beacon_Logo.svg" /></a></p>
 
-            <p style="margin-bottom: 1.5rem;"><a data-type="new-site-link" href="https://live.support.brightcove.com"><img alt="Brightcove Live" style="height:2.5rem;" src="/site-assets/images/site/product-logos/Live_Logo.svg" /></a></p>
+          <p style="margin-bottom: 1.5rem;"><a data-type="new-site-link" href="https://live.support.brightcove.com"><img alt="Brightcove Live" style="height:2.5rem;" src="/site-assets/images/site/product-logos/Live_Logo.svg" /></a></p>
 
-            <p><a data-type="new-site-link" href="https://zencoder.support.brightcove.com"><img alt="Zencoder" style="height:2.4rem;" src="/site-assets/images/site/product-logos/Zencoder_Logo.svg" /></a></p>
+          <p><a data-type="new-site-link" href="https://zencoder.support.brightcove.com"><img alt="Zencoder" style="height:2.4rem;" src="/site-assets/images/site/product-logos/Zencoder_Logo.svg" /></a></p>
       </div>
     </section>
   </section>
   <hr style="border-top: 1px #999 solid;margin-left: 0;width: 80%;">
   <h4 style="margin-left: 35%;margin-top: 10px;margin-bottom: 0;">Solutions</h3>
-  <section class="card-wrapper" style="margin-top: -1.5em;">
-    <section onclick="window.location.pathname = '/develop/index.html';" class="bcls-card-small" style="margin-left: -4rem;">
-      <div class="card-content">
-        <h5><a data-type="new-site-link" href="https://general.support.brightcove.com/general/brightcove-product-overview.html">Video Marketing Suite</a></h5>
-      </div>
+    <section class="card-wrapper" style="margin-top: -1.5em;">
+      <section onclick="window.location.pathname = '/develop/index.html';" class="bcls-card-small" style="margin-left: -4rem;">
+        <div class="card-content">
+          <h5><a data-type="new-site-link" href="https://general.support.brightcove.com/general/brightcove-product-overview.html">Video Marketing Suite</a></h5>
+        </div>
+      </section>
+      <section onclick="window.location.pathname = '/develop/index.html';" class="bcls-card-small" style="margin-left: -2rem;">
+        <div class="card-content">
+          <h5><a data-type="new-site-link" href="https://general.support.brightcove.com/general/brightcove-product-overview.html">Enterprise Video Suite</a></h5>
+        </div>
+      </section>
+      <section onclick="window.location.pathname = '/develop/index.html';" class="bcls-card-small" style="margin-left: -2rem;">
+        <div class="card-content">
+          <h5><a data-type="new-site-link" href="https://general.support.brightcove.com/general/brightcove-continuum-overview.html">Brightcove Continuum</a></h5>
+        </div>
+      </section>
     </section>
-    <section onclick="window.location.pathname = '/develop/index.html';" class="bcls-card-small" style="margin-left: -2rem;">
-      <div class="card-content">
-        <h5><a data-type="new-site-link" href="https://general.support.brightcove.com/general/brightcove-product-overview.html">Enterprise Video Suite</a></h5>
-      </div>
+    <hr style="border-top: 1px #999 solid;margin-left: 0;width: 80%;">
+    <section class="card-wrapper" style="margin-left: -6rem;">
+      <section onclick="window.location.pathname = '/develop/index.html';" class="bcls-card-small">
+        <div class="card-content">
+          <h5><a href="https://support.ottflow.com/hc/en-us/restricted?return_to=https%3A%2F%2Fsupport.ottflow.com%2Fhc%2Fen-us"><img style="height: 2.5rem;margin-top: -.7rem;" src="https://learning-services-media.brightcove.com/doc-assets/general/images/svg2/logo-bc-ott-flow.svg" /></a></h5>
+        </div>
+      </section>
+      <section onclick="window.location.pathname = '/develop/index.html';" class="bcls-card-small">
+        <div class="card-content">
+          <h5><a href="https://help-ooyala.brightcove.com">Legacy Ooyala Documentation</a></h5>
+        </div>
+      </section>
     </section>
-    <section onclick="window.location.pathname = '/develop/index.html';" class="bcls-card-small" style="margin-left: -2rem;">
-      <div class="card-content">
-        <h5><a data-type="new-site-link" href="https://general.support.brightcove.com/general/brightcove-continuum-overview.html">Brightcove Continuum</a></h5>
-      </div>
-    </section>
-  </section>
-  <hr style="border-top: 1px #999 solid;margin-left: 0;width: 80%;">
-  <section class="card-wrapper" style="margin-left: -6rem;">
-    <section onclick="window.location.pathname = '/develop/index.html';" class="bcls-card-small">
-      <div class="card-content">
-        <h5><a href="https://support.ottflow.com/hc/en-us/restricted?return_to=https%3A%2F%2Fsupport.ottflow.com%2Fhc%2Fen-us"><img style="height: 2.5rem;margin-top: -.7rem;" src="https://learning-services-media.brightcove.com/doc-assets/general/images/svg2/logo-bc-ott-flow.svg" /></a></h5>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/develop/index.html';" class="bcls-card-small">
-      <div class="card-content">
-        <h5><a href="https://help-ooyala.brightcove.com">Legacy Ooyala Documentation</a></h5>
-      </div>
-    </section>
-  </section>
 </article>
 <script>
-  var BCLS_homepage = ( function (window, document) {
-  var product_logo = document.querySelector('.product-logo');
+  var BCLS_homepage = (function (window, document) {
+    var product_logo = document.querySelector('.product-logo');
 
-  if (window.innerWidth < 1000) {
-    product_logo.setAttribute('src', '/site-assets/images/site/product-logos/b-white-on-black.svg');
-    product_logo.setAttribute('style', 'max-height:30px;margin-bottom:1rem;')
-  }
-
-  window.addEventListener('resize', function() {
     if (window.innerWidth < 1000) {
-    product_logo.setAttribute('src', '/site-assets/images/site/product-logos/b-white-on-black.svg');
-    product_logo.setAttribute('style', 'max-height:30px;margin-bottom:1rem;')
-  } else {
-    product_logo.setAttribute('src', '/site-assets/images/site/product-logos/brightcove-black-on-white.svg');
-  }
+      product_logo.setAttribute('src', '/site-assets/images/site/product-logos/b-white-on-black.svg');
+      product_logo.setAttribute('style', 'max-height:30px;margin-bottom:1rem;')
+    }
 
-  });
-})(window, document);
+    window.addEventListener('resize', function () {
+      if (window.innerWidth < 1000) {
+        product_logo.setAttribute('src', '/site-assets/images/site/product-logos/b-white-on-black.svg');
+        product_logo.setAttribute('style', 'max-height:30px;margin-bottom:1rem;')
+      } else {
+        product_logo.setAttribute('src', '/site-assets/images/site/product-logos/brightcove-black-on-white.svg');
+      }
+
+    });
+  })(window, document);
 </script>
