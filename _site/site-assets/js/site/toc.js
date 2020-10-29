@@ -5,7 +5,8 @@ var BCLS_toc = ( function (window, document) {
   bc_veggie_burger_wrapper = document.getElementById('bc_veggie_burger_wrapper'),
   bc_veggie_burger = document.getElementById('bc_veggie_burger'),
   nav_menu_collapsed = false,
-  pathname = window.location.pathname;
+  pathname = window.location.pathname,
+  url = window.location.href;
 
   /**
    * Removes all child elements (eg the items in a list)
@@ -58,7 +59,7 @@ var BCLS_toc = ( function (window, document) {
       in_page_nav_right = true;
     }
 
-    if (window.innerWidth < 1000 && pathname !== '/' && pathname.indexOf('/index.html') < 0) {
+    if (window.innerWidth < 1000 && url !== 'https://support.brightcove.com/' && url !==  'https://support.brightcove.com/index.html') {
       if (window.location === window.parent.location) {
         toggle_nav_menu();
       }
