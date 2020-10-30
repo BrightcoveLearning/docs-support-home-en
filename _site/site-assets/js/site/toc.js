@@ -6,7 +6,11 @@ var BCLS_toc = ( function (window, document) {
   bc_veggie_burger = document.getElementById('bc_veggie_burger'),
   nav_menu_collapsed = false,
   pathname = window.location.pathname,
-  url = window.location.href;
+  url = window.location.href,
+  in_page_nav = document.getElementById('in_page_nav'),
+  centered_in_page_toc = document.getElementById('centered_in_page_toc'),
+  right_side_nav = document.getElementById('right_side_nav'),
+  centered_inpage_nav = document.getElementById('centered_inpage_nav');
 
   /**
    * Removes all child elements (eg the items in a list)
