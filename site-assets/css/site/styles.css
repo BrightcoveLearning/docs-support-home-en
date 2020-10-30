@@ -87,7 +87,7 @@
 
 /* site styles */
 body, .body {
-  font-family: 'Public Sans', Arial, sans-serif;
+  font-family: 'Public Sans', Helvetica, sans-serif;
   font-size: 16px;
   counter-reset: figure 0 table 0 step 0;
   background-color: white;
@@ -1187,6 +1187,12 @@ h5.landing-page-item-header {
 
 .landing-page-item li {
   font-size: .9rem;
+}
+
+span.product-logo {
+  font-family: 'Balto Web', 'Public Sans';
+  font-size: 3.5em;
+  font-weight: bold;
 }
 
 h1, h2, h3, h4, h5 {
