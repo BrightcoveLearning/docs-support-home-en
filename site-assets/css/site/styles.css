@@ -1203,7 +1203,7 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 3.052em;
-  /* margin-bottom: 2rem; */
+  font-family: 'Balto Web', 'Public Sans', sans-serif;
 }
 
 h2 {
