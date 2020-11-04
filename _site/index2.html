@@ -132,19 +132,19 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     </ol>
   </nav>
 </header>
-<!-- <div class="container">
+<div class="container">
     <div class="row">
-      <div class="col-sm-3 left-side-bar">
-        <p id="bc_veggie_burger_wrapper" style="visibility: hidden;"><i id="bc_veggie_burger" class="fas fa-bars"></i></p>
-        <nav class="sidenav" id="side_nav">
-          
+      <div class="col-sm-2 left-side-bar">
+        <nav style="float: left;" id="announcements">
+          <h6 class="toc" style="color: rgb(9, 7, 140);margin-top: 1em;">Announcements</h6>
+          <ul id="announcement_list" class="list-none">
             
-            <h5><a href="/">Home</a></h5>
+            <li style="color: rgb(9, 7, 140);font-size: smaller;">The legacy ingest system will be shut down on January 31, 2021. <a href="https://studio.support.brightcove.com/general/moving-to-dynamic-delivery.html">See more...</a></li>
             
-          
-      </nav>
-    </div> -->
-    <div class="col-lg-8" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;margin-left:20%;">
+          </ul>
+        </nav>
+      </div>
+    <div class="col-lg-8" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;margin-left:5%">
   <!-- bootstrap layout -->
 
 <p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="Navigation Menu"></p>
@@ -400,12 +400,14 @@ h2 {
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
-      
-      <nav class="right-side-nav" id="right_side_nav">
-        <h6 class="toc">Page Contents</h6>
-        <ul id="in_page_nav" class="list-none"></ul>
+      <nav class="right-side-nav" id="announcements">
+        <h6 class="toc">Announcements</h6>
+        <ul id="announcement_list" class="list-none">
+          
+          <li></li>
+          
+        </ul>
       </nav>
-      
     </div>
   </div>
 </div>
@@ -491,7 +493,7 @@ h2 {
   </div>
 </footer>
 <div id="talla_wrapper">
-  <p style="text-align: right;position: relative;"><button style="background:;color:rgb(7, 9, 140);Snow;padding:.3rem;position:fixed;right:0;bottom:1em;z-index:9999999" onclick="javascript:displayChat()">Have a question? </button> </p>
+  <p style="text-align: right;position: relative;"><button style="background:rgb(7, 9, 140);color:Snow;padding:.3rem;position:fixed;right:0;bottom:1em;z-index:9999999" onclick="javascript:displayChat()">Have a question? </button> </p>
   <div id="talla_chat">
 </div>
 </div>

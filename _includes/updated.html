@@ -1,12 +1,14 @@
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
-      {% if page.name != 'index.html' %}
-      <nav class="right-side-nav" id="right_side_nav">
-        <h6 class="toc">Page Contents</h6>
-        <ul id="in_page_nav" class="list-none"></ul>
+      <nav class="right-side-nav" id="announcements">
+        <h6 class="toc">Announcements</h6>
+        <ul id="announcement_list" class="list-none">
+          {{ for announcements in site.data.announcement }}
+          <li>{{ announcement }}</li>
+          {{ endfor }}
+        </ul>
       </nav>
-      {% endif %}
     </div>
   </div>
 </div>
