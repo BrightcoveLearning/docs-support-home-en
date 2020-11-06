@@ -210,6 +210,10 @@ div.container {
   background-color: #F4CCCC;
 }
 
+td>code {
+  white-space: nowrap;
+}
+
 
 /* table styles */
 .bcls-table {
