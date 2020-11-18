@@ -228,6 +228,7 @@ var BCLS_toc = ( function (window, document) {
          // if inside iframe, hide appropriate elements
         if (window.location !== window.parent.location) {
           bc_veggie_burger_wrapper.setAttribute('style', 'display:none');
+        }
 
   // this creates a public method, allow it to be run again (imported content for example)
   return {
