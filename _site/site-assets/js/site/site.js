@@ -40,7 +40,7 @@ var BCLS_site = (function(window, document) {
     // in_prod_nav.removeAttribute('style');
     open_new_tab.removeAttribute('style');
     open_new_tab.setAttribute('href', window.location.href);
-    removeFeedbackify();
+    // removeFeedbackify();
     // forward_button.addEventListener('click', function() {
     //   window.history.forward();
     // });
