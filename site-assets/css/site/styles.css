@@ -114,8 +114,8 @@ color: #FF5000;
  color: #FFCE00;
 }
 
-a::visited, a::hover {
-  color: rgb(19, 160, 183);
+a, a::visited, a::hover {
+  color:rgb(7, 33, 144)!important;
 }
 
 /* article should contain all content that we edit */
@@ -677,7 +677,7 @@ ul.menu {
     outline: none;
   }
 
-  details>summary>h2 {
+  details>summary>h2, details>summary>h3 {
     font-size: 1.9rem;
     color: darkblue;
     display: inline;
@@ -788,9 +788,6 @@ ul.menu {
     min-height: 200px;
   }
 
-  a {
-    color: rgb(19, 160, 183);
-  }
 
   a:hover {
     text-decoration: underline;
