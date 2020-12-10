@@ -6,7 +6,6 @@ function keepLanguage() {
     all_links = document.getElementsByTagName('a'),
     i,
     iMax,
-    talla_wrapper = document.getElementById('talla_wrapper'),
     site_select = document.getElementById('site_select'),
     site_options = site_select.querySelectorAll('option');
 
@@ -51,8 +50,6 @@ function keepLanguage() {
       currentLinkValue,
       newHref;
 
-    // hide talla
-    talla_wrapper.innerHTML = '';
     iMax = all_links.length;
     
     for (i = 0; i < iMax; i++) {
