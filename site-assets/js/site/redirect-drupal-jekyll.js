@@ -52,7 +52,7 @@
       }
 
       function redirect() {
-        var t = window.setTimeout(go_to_new_location, 2000);
+        var t = window.setTimeout(go_to_new_location, 1000);
       }
 
       function go_to_new_location() {
