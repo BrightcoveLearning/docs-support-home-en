@@ -1573,3 +1573,28 @@ body > header > nav {
    display: none;
  }
 }
+/* in-app help text buttons */
+.button-blue, .button-red, .button-gray{
+	/* font-family: 'Public Sans'; */
+	font-weight: bold;
+	font-size: .65rem;
+	padding: .4rem;
+	white-space: nowrap;
+}
+.button-blue{
+	color: white;
+	background-color: #0D2CBD;
+}
+.button-red{
+	color: #D33D00;
+	background-color: white;
+}
+.button-gray{
+	/* color: black; */
+	background-color: #F2F4F9;
+}
+.button-icon{
+	white-space: nowrap;
+	padding-right: .25rem;
+	padding-top: .85rem;
+}
