@@ -101,21 +101,39 @@ body {
 }
 
 /* colors */
-.bc-navy {
-color: #08088C;
+.bc-navy, .bc-bluesteel {
+color: rgb(8, 8, 139);
+}
+.bcbk-navy, .bcbk-bluesteel {
+background-color: rgb(8, 8, 139);
 }
 .bc-turquoise {
   color: #00EAE4;
 }
+.bcbk-turquoise {
+  background-color: #00EAE4;
+}
 .bc-orange {
 color: #FF5000;
+}
+.bcbk-orange {
+background-color: #FF5000;
 }
 .bc-yellow {
  color: #FFCE00;
 }
+.bcbk-yellow {
+ background-color: #FFCE00;
+}
+.bc-bluesteel {
+  color: rgb(8, 8, 139);
+}
+.bcbk-bluesteel {
+  background-color: rgb(8, 8, 139);
+}
 
 a, a::visited, a::hover {
-  color:rgb(7, 33, 144)!important;
+  color:#01050e!important;
 }
 
 /* article should contain all content that we edit */
