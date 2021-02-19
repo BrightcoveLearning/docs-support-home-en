@@ -1417,6 +1417,7 @@ i[class^='icon-']::before {
   margin-top: 1em;
   color: rgb(10, 7, 140);
   text-align: center;
+  margin-right: .4rem;
   height: 1.3rem;
 }
 
