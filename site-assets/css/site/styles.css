@@ -1414,9 +1414,12 @@ i[class^='icon-']::before {
 }
 
 .card-icon {
-  min-width: 55px;
+  margin-top: 2em;
+  color: rgb(10, 7, 140);
   text-align: center;
+  height: 1.3rem;
 }
+
 
 .card-icon i, .card-icon img {
   color: rgb(28, 185, 215);
@@ -1609,6 +1612,7 @@ body>header>nav {
   font-size: .75rem;
   padding: .2rem .3rem;
   white-space: nowrap;
+  margin-bottom: .4rem;
 }
 
 .button-blue {
