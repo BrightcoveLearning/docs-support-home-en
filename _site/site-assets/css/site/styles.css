@@ -1414,7 +1414,7 @@ i[class^='icon-']::before {
 }
 
 .card-icon {
-  margin-top: 2em;
+  margin-top: 1em;
   color: rgb(10, 7, 140);
   text-align: center;
   height: 1.3rem;
