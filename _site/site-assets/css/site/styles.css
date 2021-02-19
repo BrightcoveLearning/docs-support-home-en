@@ -1422,8 +1422,8 @@ i[class^='icon-']::before {
 }
 
 
-.card-icon i, .card-icon img {
-  color: rgb(28, 185, 215);
+.card-icon .feather, .card-icon img {
+  color: rgb(9, 7, 140);
   height: 2rem;
   font-size: 2rem;
   margin-top: 1.2rem;
