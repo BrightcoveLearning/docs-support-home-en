@@ -527,7 +527,7 @@ figcaption {
 }
 
 .bcls-aside--warning:before {
-  content: 'url(/assets/images/feather/alert-triangle-white.svg)';
+  content: url(/assets/images/feather/alert-triangle-white.svg);
   float: left;
   margin-left: -2.5em;
   margin-top: -.5em;
