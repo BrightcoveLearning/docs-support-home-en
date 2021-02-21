@@ -493,7 +493,7 @@ figcaption {
 }
 
 .bcls-aside--information:before {
-  content: url("https://support.brightcove.com/site-assets/css/aside-icons/info.png");
+  content: '<i data-feather="info" class="bcls-icon-blue"></i>';
   float: left;
   margin-left: -2.5em;
   margin-top: -.5em;
@@ -504,30 +504,30 @@ figcaption {
 }
 
 .bcls-aside--tip {
-  background-color: #f3f7d8;
+  background-color: rgb(8, 8, 139);
   border: 1px #a2b00c solid;
-  color: #4a5e23;
+  color: #00EAE4;
 }
 
 .bcls-aside--tip:before {
-  content: url("https://support.brightcove.com/site-assets/css/aside-icons/tip.png");
+  content: url(/assets/images/feather/sun-aqua.svg);
   float: left;
   margin-left: -2.5em;
   margin-top: -.5em;
 }
 
 .bcls-aside--tip a {
-  color: #a5c13f;
+  color: rgb(254, 232, 22);
 }
 
 .bcls-aside--warning {
-  background-color: #fdecf5;
-  border: 1px #a91157 solid;
-  color: #4c0827;
+  background-color: rgb(254, 82, 9);
+  border: 1px rgb(254, 232, 22) solid;
+  color: #fff;
 }
 
 .bcls-aside--warning:before {
-  content: url("https://support.brightcove.com/site-assets/css/aside-icons/exclamation.png");
+  content: 'url(/)'
   float: left;
   margin-left: -2.5em;
   margin-top: -.5em;
@@ -1427,6 +1427,27 @@ i[class^='icon-']::before {
   color: rgb(9, 7, 140);
   height: 2rem;
   font-size: 2rem;
+}
+
+.bcls-icon {
+  height: 1rem;
+  width: 1rem;
+}
+
+.bcls-icon-blue {
+  color: rgb(9, 45, 189);
+}
+
+.bcls-icon-orange {
+  color: rgb(254, 82, 9);
+}
+
+.bcls-icon-yellow {
+  color: rgb(254, 232, 22);
+}
+
+.bcls-icon-aqua {
+  color: rgb(0, 235, 228);
 }
 
 .bcls-card ul {
