@@ -504,7 +504,7 @@ figcaption {
 }
 
 .bcls-aside--information code {
-  background-color: inherit;
+  background-color: inherit !important;
 }
 
 .bcls-aside--tip {
