@@ -527,14 +527,19 @@ figcaption {
 }
 
 .bcls-aside--warning:before {
-  content: 'url(/assets/images/feather/alert-triangle-white.svg)'
+  content: 'url(/assets/images/feather/alert-triangle-white.svg)';
   float: left;
   margin-left: -2.5em;
   margin-top: -.5em;
 }
 
 .bcls-aside--warning a {
-  color: #d32781;
+  color: rgb(254, 232, 22);
+}
+
+.bcls-aside--warning code, .bcls-aside--tip code {
+  color: #dfdfdf;
+  background-color: inherit;
 }
 
 /*buttons - keeping this for old docs in case still used */
