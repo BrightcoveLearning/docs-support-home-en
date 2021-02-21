@@ -538,7 +538,7 @@ figcaption {
 }
 
 .bcls-aside--warning code, .bcls-aside--tip code {
-  color: #dfdfdf;
+  color: #f5f5f5;
   background-color: inherit;
 }
 
