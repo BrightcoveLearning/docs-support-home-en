@@ -503,6 +503,10 @@ figcaption {
   color: rgb(254, 82, 9);
 }
 
+.bcls-aside--information code {
+  background-color: inherit;
+}
+
 .bcls-aside--tip {
   background-color: rgb(8, 8, 139);
   border: 1px #a2b00c solid;
