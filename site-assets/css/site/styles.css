@@ -501,7 +501,7 @@ figcaption {
 
 .bcls-aside--tip {
   background-color: rgb(242, 244, 249);
-  border: 1px rgb(8, 8, 139) solid;
+  border: 2px rgb(8, 8, 139) solid;
 }
 
 .bcls-aside--tip:before {
@@ -514,7 +514,7 @@ figcaption {
 
 .bcls-aside--warning {
   background-color: rgb(242, 244, 249);
-  border: 1px rgb(254, 82, 9)) solid;
+  border: 2px rgb(254, 82, 9)) solid;
 }
 
 .bcls-aside--warning:before {
