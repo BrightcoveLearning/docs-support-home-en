@@ -514,7 +514,7 @@ figcaption {
 
 .bcls-aside--warning {
   background-color: rgb(242, 244, 249);
-  border: 2px rgb(254, 82, 9)) solid;
+  border: 2px rgb(254, 82, 9) solid;
 }
 
 .bcls-aside--warning:before {
