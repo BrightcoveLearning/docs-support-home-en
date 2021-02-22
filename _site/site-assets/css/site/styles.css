@@ -487,64 +487,43 @@ figcaption {
 }
 
 .bcls-aside--information {
-  background-color: rgb(0, 235, 228);
-  border: 1px rgb(9, 7, 140) solid;
-  color: rgb(9, 7, 140);
+  background-color: rgb(242, 244, 249);
+  border: 2px rgb(0, 235, 228) solid;
 }
 
 .bcls-aside--information:before {
-  content: url(/assets/images/feather/info-blue.svg);
+  content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/info-aqua.svg);
   float: left;
   margin-left: -2.5em;
   margin-top: -.5em;
 }
 
-.bcls-aside--information a {
-  color: rgb(254, 82, 9);
-}
-
-.bcls-aside--information code {
-  background-color: inherit !important;
-}
 
 .bcls-aside--tip {
-  background-color: rgb(8, 8, 139);
-  border: 1px #a2b00c solid;
-  color: #00EAE4;
+  background-color: rgb(242, 244, 249);
+  border: 1px rgb(8, 8, 139) solid;
 }
 
 .bcls-aside--tip:before {
-  content: url(/assets/images/feather/sun-aqua.svg);
+  content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/sun-blue.svg);
   float: left;
   margin-left: -2.5em;
   margin-top: -.5em;
 }
 
-.bcls-aside--tip a {
-  color: rgb(254, 232, 22);
-}
 
 .bcls-aside--warning {
-  background-color: rgb(254, 82, 9);
-  border: 1px rgb(254, 232, 22) solid;
-  color: #fff;
+  background-color: rgb(242, 244, 249);
+  border: 1px rgb(254, 82, 9)) solid;
 }
 
 .bcls-aside--warning:before {
-  content: url(/assets/images/feather/alert-triangle-white.svg);
+  content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/alert-triangle-orange.svg);
   float: left;
   margin-left: -2.5em;
   margin-top: -.5em;
 }
 
-.bcls-aside--warning a {
-  color: rgb(254, 232, 22);
-}
-
-.bcls-aside--warning code, .bcls-aside--tip code {
-  color: rgb(254, 232, 22) !important;
-  background-color: inherit;
-}
 
 /*buttons - keeping this for old docs in case still used */
 
