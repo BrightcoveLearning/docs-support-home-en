@@ -1419,6 +1419,12 @@ i[class^='icon-']::before {
   font-size: 2rem;
 }
 
+.header-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: text-top;
+}
+
 .bcls-icon {
   height: 1rem;
   width: 1rem;
