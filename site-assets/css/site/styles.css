@@ -505,7 +505,7 @@ figcaption {
 }
 
 .bcls-aside--tip:before {
-  content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/sun-blue.svg);
+  content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/lightbulb-blue.svg);
   float: left;
   /* color: rgb(8, 8, 139);
   height: 28px; */
