@@ -487,7 +487,7 @@ figcaption {
 }
 
 .bcls-aside--information {
-  background-color: rgb(249, 249, 249)
+  background-color: rgb(249, 249, 249);
   border: 2px rgb(0, 235, 228) solid;
 }
 
@@ -1456,14 +1456,6 @@ body>header>nav {
   clear: left;
 }
 
-#talla_chat {
-  display: none;
-  position: fixed;
-  top: 5rem;
-  right: 3rem;
-  width: 40%;
-  height: 60%;
-}
 
 /* pager - nav for embedded docs */
 
