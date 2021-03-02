@@ -705,6 +705,7 @@ ul.menu {
     border: .1rem rgb(249, 249, 249) solid;
     outline: none;
   }
+
   ol.integer {
     list-style-type: none;
     counter-reset: li;
@@ -1543,34 +1544,36 @@ body>header>nav {
   }
 }
 
-/* in-app help text buttons */
-
-.button-blue, .button-red, .button-gray {
-  /* font-family: 'Public Sans'; */
-  font-weight: bold;
-  font-size: .75rem;
-  padding: .2rem .3rem;
-  white-space: nowrap;
-  margin-bottom: .4rem;
-}
-
-.button-blue {
-  color: white;
-  background-color: #0D2CBD;
-}
-
-.button-red {
-  color: #D33D00;
-  background-color: white;
-}
-
-.button-gray {
-  /* color: black; */
-  background-color: #F2F4F9;
-}
-
-.button-icon {
-  white-space: nowrap;
-  padding-right: .25rem;
-  padding-top: .85rem;
-}
+  /* in-app help text buttons */
+  .button-blue, .button-blue-text, .button-red, .button-red-text, .button-gray {
+    /* font-family: 'Public Sans'; */
+    font-weight: bold;
+    font-size: .65rem;
+    padding: .4rem;
+    white-space: nowrap;
+  }
+  .button-blue {
+    color: rgb(255, 255, 255);
+    background-color: rgb(13, 44, 189);
+  }
+  .button-blue-text {
+    color: rgb(13, 44, 189);
+    background-color: rgb(255, 255, 255);
+  }
+  .button-red {
+    color: rgb(255, 255, 255);
+    background-color: rgb(211, 61, 0);
+  }
+  .button-red-text {
+    color: rgb(211, 61, 0);
+    background-color: rgb(255, 255, 255);
+  }
+  .button-gray {
+    background-color: rgb(242, 244, 249);
+  }
+  .button-icon {
+    white-space: nowrap;
+    padding-right: .15rem;
+    height: 1rem;
+  }
+  
