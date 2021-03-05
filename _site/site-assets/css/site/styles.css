@@ -156,6 +156,10 @@ article>i, .bcls-article>i {
   margin-right: .2em;
 }
 
+article>summary {
+  display: block;
+}
+
 /* bootstrap container */
 
 div.container {
