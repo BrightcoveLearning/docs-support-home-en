@@ -1490,6 +1490,7 @@ body>header>nav {
     background-color: rgb(255, 255, 255);
     border: 1px rgb(211, 61, 0) solid;
     border-radius: 2px;
+		padding: 4px;;
   }
   .button-gray {
     background-color: rgb(242, 244, 249);
