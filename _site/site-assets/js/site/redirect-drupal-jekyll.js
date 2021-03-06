@@ -7,6 +7,7 @@
       iMax = navArray.length,
       href = window.location.href,
       path = window.location.pathname;
+      path.replace('//', '/');
       console.log('path', path);
       console.log('pathname', window.location.pathname);
       if (path.indexOf('/ja/') > -1) {
