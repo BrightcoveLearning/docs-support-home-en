@@ -6,7 +6,7 @@
 /* site styles */
 
 body, .body {
-  font-family: 'Public Sans', Helvetica, sans-serif;
+  font-family: 'Public Sans', sans-serif;
   font-size: 16px;
   counter-reset: figure 0 table 0 step 0;
   background-color: white;
@@ -22,11 +22,18 @@ body {
 /* colors */
 
 .bc-navy, .bc-bluesteel {
-  color: rgb(8, 8, 139);
+  color: rgb(8, 8, 140);
 }
 
 .bcbk-navy, .bcbk-bluesteel {
-  background-color: rgb(8, 8, 139);
+  background-color: rgb(8, 8, 140);
+}
+.bc-navy-dark {
+  color: rgb(3, 13, 40);
+}
+
+.bcbk-navydark {
+  background-color: rgb(3, 13, 40);
 }
 
 .bc-turquoise {
@@ -46,23 +53,16 @@ body {
 }
 
 .bc-yellow {
-  color: #FFCE00;
+  color: rgb(255, 186, 0);
 }
 
 .bcbk-yellow {
-  background-color: #FFCE00;
+  background-color: rgb(255, 186, 0);
 }
 
-.bc-bluesteel {
-  color: rgb(8, 8, 139);
-}
 
-.bcbk-bluesteel {
-  background-color: rgb(8, 8, 139);
-}
-
-a, a::visited, a::hover {
-  color: #01050e!important;
+a, .a, a::visited, a::hover {
+  color: rgb(8, 8, 140) !important;
 }
 
 /* article should contain all content that we edit */
@@ -798,15 +798,12 @@ ul.menu {
 
 .bcls-active {
   color: rgb(51, 51, 51) !important;
-  background-color: rgb(204, 204, 204);
+	font-weight: 600;
   /* border-left: 3px rgb(231, 141, 49) solid; */
   /* padding-left: 1em !important; */
   ;
 }
 
-.bcls-active a, .bcls-active a ::visited {
-  color: inherit;
-}
 
 /* docs header */
 
@@ -816,11 +813,13 @@ ul.menu {
   clear: both;
   margin-left: 1rem;
   margin-right: 0;
+	margin-top: 0;
   padding-left: 1rem;
   padding-top: .5rem;
   padding-bottom: .5rem;
   min-height: 4em;
   text-align: right;
+	vertical-align: middle;
   /* padding: .4rem; */
   ;
 }
@@ -828,28 +827,38 @@ ul.menu {
 .product-logo {
   float: left;
   border: none;
-  margin-top: 0;
+  margin-top: .5rem;
   margin-bottom: 0;
+	vertical-align: middle;
 }
 
 .secondary-nav {
   margin-top: 1.3em;
-  margin-right: 2em;
+  margin-right: .3em;
   vertical-align: top;
   color: rgb(68, 68, 68);
-  font-size: .9rem;
+  font-size: .875rem;
   line-height: 1.5em;
+	vertical-align: middle;
 }
 
 .secondary-nav img {
   /* padding-top: .2em; */
-  margin-bottom: .3rem;
+  padding-top: .3rem;
   vertical-align: top;
+	margin-right: .3em;
 }
 
 .secondary-nav a {
-  vertical-align: top;
-  color: rgb(68, 68, 68);
+  vertical-align: middle;
+	color: #08088c i !important;
+}
+
+/* breadcrumb */
+ 
+.breadcrumb-wrapper {
+	background-color: #092DBD;
+	font-size: .8125rem;
 }
 
 /* navigation */
@@ -893,7 +902,6 @@ ul.menu {
 }
 
 .sidenav a ::visited {
-  color: inherit;
 }
 
 .sidenav ul {
@@ -933,11 +941,9 @@ ul.sidenav-subsubmenu li {
 }
 
 .sidenav-submenu a ::visited {
-  color: inherit;
 }
 
 .sidenav-submenu a {
-  color: inherit;
 }
 
 .sidenav li {
@@ -996,16 +1002,14 @@ ul.sidenav-subsubmenu li {
 
 #in_page_nav li, #centered_in_page_toc li {
   margin-bottom: .5em;
-  color: #08088C;
+  color: rgb(8, 8, 140);
   padding-left: 3px;
 }
 
 #in_page_nav li a, #centered_in_page_toc li a {
-  color: inherit;
 }
 
 .right-side-nav li>a, .right-side-nav li>a::visited, #centered_inpage_nav li>a, #centered_inpage_nav li>a::visited {
-  color: rgb(51, 51, 51) !important;
 }
 
 .right-side-nav li, #centered_inpage_nav li {
@@ -1034,37 +1038,43 @@ h5.landing-page-item-header {
 }
 
 span.product-logo {
-  font-family: 'Balto Web', 'Public Sans';
+  font-family: 'Public Sans';
   font-size: 3.5em;
-  font-weight: bold;
+  font-weight: 800;
 }
 
+/* headings */
+
 h1, h2, h3, h4, h5 {
+	color: rgb(1, 5, 14);
   margin: 2.75rem 0 1.05rem;
   font-weight: 400;
   line-height: 1.15;
 }
 
 h1 {
-  font-size: 3.052em;
+  font-size: 3.157rem;
   font-family: 'Public Sans', sans-serif;
-  color: rgb(9, 7, 140);
   font-weight: 800;
+	margin-left: 12px;
+	letter-spacing: -1px;
 }
 
 h2 {
-  font-size: 2.441em;
-  ;
+  font-size: 2em;
+  letter-spacing: -0.75px;
 }
 
 h3 {
-  font-size: 1.953em;
-  /* margin-top: 1em;
-  margin-bottom: 1em; */
+  font-size: 1.777rem; 
+	font-weight: 800; 
+	letter-spacing: -0.5px;
 }
 
 h4 {
-  font-size: 1.563em;
+  font-weight: 1.333rem; 
+	font-weight: 700; 
+	letter-spacing: -0.25px;
 }
 
 h5 {
@@ -1076,7 +1086,7 @@ header {
 }
 
 small, .text_small {
-  font-size: 0.8em;
+  font-size: .875rem;
 }
 
 /* footer */
@@ -1087,9 +1097,9 @@ small, .text_small {
 }
 
 .footer, .bcls-footer {
-  background-color: rgb(51, 51, 51);
+  background-color: rgb(1, 5, 14);
   bottom: 0;
-  color: rgb(204, 204, 204);
+  color: rgb(255, 255, 255);
   left: 0;
   margin-top: 2em;
   padding-left: 15%;
@@ -1104,8 +1114,8 @@ small, .text_small {
   margin-left: 2em;
 }
 
-footer i.fab, .footer a, .bcls-footer a {
-  color: rgb(204, 204, 204);
+footer i, .footer a, .bcls-footer a {
+  color: rgb(142, 144, 147);
 }
 
 footer i {
@@ -1116,7 +1126,7 @@ footer {
   margin-top: 2em;
   background-color: #515151;
   bottom: 0;
-  color: rgb(249, 249, 249);
+  color: rgb(255, 255, 255);
   font-size: smaller;
   padding: 1em;
   position: relative;
@@ -1127,12 +1137,12 @@ footer {
 footer h2 {
   font-size: 1rem;
   text-align: left;
-  color: rgb(249, 249, 249);
+  color: rgb(255, 255, 255);
 }
 
-footer a {
+/* footer a {
   color: rgb(206, 206, 206);
-}
+} */
 
 footer nav {
   vertical-align: top;
@@ -1214,18 +1224,11 @@ right-side-bar {
   margin-bottom: 20px;
 }
 
-/* icomoon */
-
-i[class^='icon-']::before {
-  font-family: icomoon;
-  font-size: 3rem;
-  color: rgb(27, 185, 214);
-}
 
 /* landing page sections */
 
 .tabs .tab-links li.active a {
-  background-color: rgb(254, 214, 142);
+  background-color: rgb(8, 8, 140);
 }
 
 .card-wrapper {
@@ -1248,14 +1251,6 @@ i[class^='icon-']::before {
 
 .bcls-card h2 {
   padding-top: 1rem;
-}
-
-.card-icon {
-  margin-top: 1em;
-  color: rgb(9, 7, 140);
-  text-align: center;
-  margin-right: .4rem;
-  height: 1.3rem;
 }
 
 
@@ -1344,9 +1339,9 @@ i[class^='icon-']::before {
 }
 
 div.card-content>h2 {
-  font-size: 1.333em;
-  padding-top: 1em;
-  margin-top: 0;
+  font-size: 1.333rem; 
+	font-weight: 700; 
+	letter-spacing: -0.25px
 }
 
 /* .bcls-card i, .bcls-card-wide span {
@@ -1364,17 +1359,27 @@ div.card-content>h2 {
 
 .breadcrumb {
   padding-left: 2rem;
-  font-size: .9rem;
+	background-color: #092DBD;
 }
+
 
 /* breadcrumb divider */
 
-.arr-right .breadcrumb-item+.breadcrumb-item::before {
+.arr-right .breadcrumb-item.breadcrumb-item::before {
   content: "›";
   vertical-align: top;
-  color: rgb(19, 160, 183);
+  color: #00EAE4;
   font-size: 1rem;
   line-height: 18px;
+}
+
+.breadcrumb-item a {
+color: #00EAE4 !important;
+font-weight: 600;
+}
+
+.breadcrumb-item.active {
+	color: #ffffff;
 }
 
 body>header>nav {
@@ -1382,47 +1387,6 @@ body>header>nav {
 }
 
 
-/* pager - nav for embedded docs */
-
-.pager {
-  background-color: #FF5000;
-  color: #FFCE00;
-  padding-left: 0;
-  margin: 20px 0;
-  text-align: center;
-  list-style: none
-}
-
-.pager li {
-  display: inline
-}
-
-.pager li>a, .pager li>span {
-  display: inline-block;
-  padding: 5px 14px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 15px
-}
-
-.pager li>a:focus, .pager li>a:hover {
-  text-decoration: none;
-  background-color: #eee
-}
-
-.pager .next>a, .pager .next>span {
-  float: right
-}
-
-.pager .previous>a, .pager .previous>span {
-  float: left
-}
-
-.pager .disabled>a, .pager .disabled>a:focus, .pager .disabled>a:hover, .pager .disabled>span {
-  color: #777;
-  cursor: not-allowed;
-  background-color: #fff
-}
 
 .btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
   display: table;

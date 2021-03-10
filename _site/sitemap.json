@@ -55,6 +55,11 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/overview-cms-api.html",
+      "oldURL": "/overview-cms-api"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/training/register-training.html",
       "oldURL": "/register-training"
   },

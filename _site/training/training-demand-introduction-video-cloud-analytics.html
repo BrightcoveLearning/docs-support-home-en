@@ -7,17 +7,18 @@
   <meta name="description" content="">
   
   <title>Training on Demand:  Introduction to Video Cloud Analytics</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">  
 <link rel="preconnect" href="https://fonts.gstatic.com"> 
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css">
+  <!-- <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css"> -->
   <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/landing-page.css">
   <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/tabs.css">
+  <link rel="stylesheet" href="/site-assets/css/site/styles.css">
   <link rel="stylesheet" href="/assets/css/local.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/381443caa8.js" crossorigin="anonymous"></script>
@@ -49,81 +50,12 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 /* ]]> */
 </script>
 
-    <select id="site_select" class="bcls-select" style="margin-right: 1rem;">
-      <option value="">Other Brightcove Docs</option>
-      
-        
-          <option value="https://support.brightcove.com">Documentation Home</option>
-        
-      
-        
-          <option value="https://audience.support.brightcove.com">Brightcove Audience</option>
-        
-      
-        
-          <option value="https://beacon.support.brightcove.com">Brightcove Beacon</option>
-        
-      
-        
-          <option value="https://campaign.support.brightcove.com">Brightcove Campaign</option>
-        
-      
-        
-          <option value="https://engage.support.brightcove.com">Brightcove Engage</option>
-        
-      
-        
-          <option value="https://live.support.brightcove.com">Brightcove Live</option>
-        
-      
-        
-          <option value="https://gallery.support.brightcove.com">Brightcove Gallery</option>
-        
-      
-        
-          <option value="https://ssai.support.brightcove.com">Brightcove SSAI</option>
-        
-      
-        
-          <option value="https://social.support.brightcove.com">Brightcove Social</option>
-        
-      
-        
-          <option value="https://studio.support.brightcove.com">Video Cloud Studio</option>
-        
-      
-        
-          <option value="https://player.support.brightcove.com">Brightcove Player Development</option>
-        
-      
-        
-          <option value="https://apis.support.brightcove.com">Video Cloud Platform APIs</option>
-        
-      
-        
-          <option value="https://sdks.support.brightcove.com">Video Cloud Device SDKs</option>
-        
-      
-        
-          <option value="https://integrations.support.brightcove.com">Integrations and CMS Connectors</option>
-        
-      
-        
-          <option value="https://general.support.brightcove.com">Video Cloud General Information</option>
-        
-      
-        
-          <option value="https://zencoder.support.brightcove.com">Zencoder</option>
-        
-      
-    </select>
 
-
-    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><img src="https://support.brightcove.com/site-assets/images/site/support.png" alt="support"> Contact Support</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><img src="https://support.brightcove.com/site-assets/images/site/status.png" alt="system status"> System Status</a></span>
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><img src="https://support.brightcove.com/site-assets/images/site/support.png" alt="support"> Contact Support</a> <span style="vertical-align: middle;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><img src="https://support.brightcove.com/site-assets/images/site/status.png" alt="system status"> System Status</a></span>
     <br>
 
   </div>
-  <nav aria-label="breadcrumb">
+  <nav aria-label="breadcrumb" class="breadcrumb-wrapper">
     <ol class="breadcrumb arr-right">
       
       <li class="breadcrumb-item"><a href="/">Home</a></li>
@@ -139,6 +71,75 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 <div class="container">
     <div class="row">
       <div class="col-sm-3 left-side-bar">
+				<select id="site_select" class="bcls-select" style="margin-left: 1rem;">
+					<option value="">Other Brightcove Docs</option>
+					
+						
+							<option value="https://support.brightcove.com">Documentation Home</option>
+						
+					
+						
+							<option value="https://audience.support.brightcove.com">Brightcove Audience</option>
+						
+					
+						
+							<option value="https://beacon.support.brightcove.com">Brightcove Beacon</option>
+						
+					
+						
+							<option value="https://campaign.support.brightcove.com">Brightcove Campaign</option>
+						
+					
+						
+							<option value="https://engage.support.brightcove.com">Brightcove Engage</option>
+						
+					
+						
+							<option value="https://live.support.brightcove.com">Brightcove Live</option>
+						
+					
+						
+							<option value="https://gallery.support.brightcove.com">Brightcove Gallery</option>
+						
+					
+						
+							<option value="https://ssai.support.brightcove.com">Brightcove SSAI</option>
+						
+					
+						
+							<option value="https://social.support.brightcove.com">Brightcove Social</option>
+						
+					
+						
+							<option value="https://studio.support.brightcove.com">Video Cloud Studio</option>
+						
+					
+						
+							<option value="https://player.support.brightcove.com">Brightcove Player Development</option>
+						
+					
+						
+							<option value="https://apis.support.brightcove.com">Video Cloud Platform APIs</option>
+						
+					
+						
+							<option value="https://sdks.support.brightcove.com">Video Cloud Device SDKs</option>
+						
+					
+						
+							<option value="https://integrations.support.brightcove.com">Integrations and CMS Connectors</option>
+						
+					
+						
+							<option value="https://general.support.brightcove.com">Video Cloud General Information</option>
+						
+					
+						
+							<option value="https://zencoder.support.brightcove.com">Zencoder</option>
+						
+					
+				</select>
+		
         <nav class="sidenav" id="side_nav">
           
             

@@ -5,14 +5,24 @@ layout: home-page
 ---
 <style>
 
+h1, h2, h3, h4, h5 {
+	color: rgb(1, 5, 14);
+  /* margin-left: 12em; */
+  font-weight: 400;
+  line-height: 1.15;
+}
+
 h1 {
-  color: rgb(7, 9, 140);
-  margin-left: 10%;
+  font-size: 3.157rem;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 800;
+	margin-left: 12px;
+	letter-spacing: -1px;
 }
 
 
 footer h2 {
-  font-family: Public Sans, Helvetica, sans-serif;
+  font-family: Public Sans, sans-serif;
   font-weight: normal;
 }
 
@@ -24,6 +34,9 @@ footer h2 {
     cursor: auto;
     display: inline-block;
   }
+
+	.card-wrapper {
+	}	
 
   /* .card-icon .feather {
 		margin-top: 2em;
@@ -57,8 +70,7 @@ footer h2 {
       font-size: 1em !important;
     }
 
-
-    .bcls-card-small {
+ .bcls-card-small {
       display: block;
     }
 
@@ -74,38 +86,38 @@ footer h2 {
   }
 </style>
 
-<h1 style="font-weight: bold;">{{ page.title }}</h1>
+<h1>{{ page.title }}</h1>
 <article class="bcls-article">
   <p style="border:1px #013894 solid; padding:.5rem;text-align: center;width: 80%;font-size: .9em;">New to Brightcove? The courses on <a href="https://university.brightcove.com/">Brightcove University</a> are designed to get you started fast!</p>
   <section class="card-wrapper">
     <section class="bcls-card-small" style="margin-left: -4rem;">
       <div class="card-content">
         <h2 style="margin-top: 1.3em;font-weight: bold;">VIDEO CLOUD</h2>
-        <h3 style="margin-top: .4em;font-weight: 900;"><a data-type="new-site-link" href="https://studio.support.brightcove.com">Studio</a></h3>
-        <h3 style="margin-top: .4em;font-weight: 900;"><a data-type="new-site-link" href="https://player.support.brightcove.com">Brightcove Player</a></h3>
-        <h3 style="margin-top: .4em;font-weight: 900;"><a data-type="new-site-link" href="https://apis.support.brightcove.com">Platform APIs</a></h3>
-        <h3 style="margin-top: .4em;font-weight: 900;"><a data-type="new-site-link" href="https://sdks.support.brightcove.com">Device SDKs</a></h3>
-        <h3 style="margin-top: .4em;font-weight: 900;"><a data-type="new-site-link" href="https://integrations.support.brightcove.com">Integration/Connectors</a></h3>
-        <h3 style="margin-top: .4em;font-weight: 900;"><a data-type="new-site-link" href="https://general.support.brightcove.com">General Information</a></h3>
+        <h3 style="margin-top: .4em;font-weight: 700;"><a data-type="new-site-link" href="https://studio.support.brightcove.com">Studio</a></h3>
+        <h3 style="margin-top: .4em;font-weight: 700;"><a data-type="new-site-link" href="https://player.support.brightcove.com">Brightcove Player</a></h3>
+        <h3 style="margin-top: .4em;font-weight: 700;"><a data-type="new-site-link" href="https://apis.support.brightcove.com">Platform APIs</a></h3>
+        <h3 style="margin-top: .4em;font-weight: 700;"><a data-type="new-site-link" href="https://sdks.support.brightcove.com">Device SDKs</a></h3>
+        <h3 style="margin-top: .4em;font-weight: 700;"><a data-type="new-site-link" href="https://integrations.support.brightcove.com">Integration/Connectors</a></h3>
+        <h3 style="margin-top: .4em;font-weight: 700;"><a data-type="new-site-link" href="https://general.support.brightcove.com">General Information</a></h3>
       </div>
     </section>
     <section class="bcls-card-small" style="margin-left: -1rem;">
       <div class="card-content">
         <h2 style="margin-top: 1.3em;font-weight: bold;">VIDEO ESSENTIALS</h2>
-        <h3 style="margin-top: .4em;font-weight: 900;"><a data-type="new-site-link" href="https://beacon.support.brightcove.com">Brightcove Beacon</a></h3>
-          <h3 style="margin-top: .4em;font-weight: 900;"><a data-type="new-site-link" href="https://live.support.brightcove.com">Brightcove Live</a></h3>
-        <h3 style="margin-top: .4em;font-weight: 900;"><a data-type="new-site-link" href="https://zencoder.support.brightcove.com">Brightcove Zencoder</a></h3>
+        <h3 style="margin-top: .4em;font-weight: 700;"><a data-type="new-site-link" href="https://beacon.support.brightcove.com">Brightcove Beacon</a></h3>
+          <h3 style="margin-top: .4em;font-weight: 700;"><a data-type="new-site-link" href="https://live.support.brightcove.com">Brightcove Live</a></h3>
+        <h3 style="margin-top: .4em;font-weight: 700;"><a data-type="new-site-link" href="https://zencoder.support.brightcove.com">Brightcove Zencoder</a></h3>
       </div>
     </section>
     <section class="bcls-card-small">
       <div class="card-content">
         <h2 style="margin-top: 1.3em;font-weight: bold;">VIDEO ADD-ONS</h2>
-        <h3 style="margin-top: .4em;font-weight: 900;"><a data-type="new-site-link" href="https://gallery.support.brightcove.com">Brightcove Gallery</a></h3>
-        <h3 style="margin-top: 1rem;font-weight: 900;"><a data-type="new-site-link" href="https://audience.support.brightcove.com">Brightcove Audience</a></h3>
-        <h3 style="margin-top: .4em;font-weight: 900;"><a data-type="new-site-link" href="https://social.support.brightcove.com">Brightcove Social </a></h3>
-        <h3 style="margin-top: .4em;font-weight: 900;"><a data-type="new-site-link" href="https://ssai.support.brightcove.com">Brightcove SSAI</a></h3>
-        <h3 style="margin-top: .4em;font-weight: 900;"><a data-type="new-site-link" href="https://campaign.support.brightcove.com">Brightcove Campaign</a></h3>
-        <h3 style="margin-top: .4em;font-weight: 900;"><a data-type="new-site-link" href="https://engage.support.brightcove.com">Brightcove Engage</a></h3>
+        <h3 style="margin-top: .4em;font-weight: 700;"><a data-type="new-site-link" href="https://gallery.support.brightcove.com">Brightcove Gallery</a></h3>
+        <h3 style="margin-top: 1rem;font-weight: 700;"><a data-type="new-site-link" href="https://audience.support.brightcove.com">Brightcove Audience</a></h3>
+        <h3 style="margin-top: .4em;font-weight: 700;"><a data-type="new-site-link" href="https://social.support.brightcove.com">Brightcove Social </a></h3>
+        <h3 style="margin-top: .4em;font-weight: 700;"><a data-type="new-site-link" href="https://ssai.support.brightcove.com">Brightcove SSAI</a></h3>
+        <h3 style="margin-top: .4em;font-weight: 700;"><a data-type="new-site-link" href="https://campaign.support.brightcove.com">Brightcove Campaign</a></h3>
+        <h3 style="margin-top: .4em;font-weight: 700;"><a data-type="new-site-link" href="https://engage.support.brightcove.com">Brightcove Engage</a></h3>
       </div>
     </section>
   </section>
