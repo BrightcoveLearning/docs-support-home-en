@@ -699,6 +699,7 @@ ul.menu {
     box-sizing: border-box;
     margin: 0;
     margin-top: -1rem;
+		margin-right: 1rem;
     border: 1px #ccc solid;
     /* box-shadow: 0 1px 0 1px rgba(0,0,0,.04); */
     -moz-appearance: none;
@@ -710,6 +711,13 @@ ul.menu {
     background-position: right .7em top 50%, 0 0;
     background-size: .65em auto, 100%;
   }
+
+	select option, .bcls-select option {
+		padding: .6em 2em .5em .8em;
+	}
+	select::after, .bcls-select::after {
+		color: #4d5056;
+	}
   select[multiple] {
     min-height: 200px;
   }
@@ -836,7 +844,7 @@ ul.menu {
   margin-top: 1.3em;
   margin-right: .3em;
   vertical-align: top;
-  color: rgb(68, 68, 68);
+  color: rgb(229, 230, 230);
   font-size: .875rem;
   line-height: 1.5em;
 	vertical-align: middle;
@@ -1056,29 +1064,32 @@ h1 {
   font-size: 3.157rem;
   font-family: 'Public Sans', sans-serif;
   font-weight: 800;
-	margin-left: 12px;
+	/* margin-left: 12px; */
 	letter-spacing: -1px;
 }
 
 h2 {
-  font-size: 2em;
-  letter-spacing: -0.75px;
+  font-size: 2.2rem;
+	font-weight: 800;
+  letter-spacing: -0.5px;
 }
 
 h3 {
   font-size: 1.777rem; 
-	font-weight: 800; 
+	font-weight: 500; 
 	letter-spacing: -0.5px;
 }
 
 h4 {
-  font-weight: 1.333rem; 
-	font-weight: 700; 
+  font-weight: 1.25rem; 
+	font-weight: 800; 
 	letter-spacing: -0.25px;
 }
 
 h5 {
-  font-size: 1.25em;
+  font-size: 1em;
+	font-weight: 700;
+	letter-spacing: -.2px;
 }
 
 header {
@@ -1400,6 +1411,10 @@ body>header>nav {
 .nav-icon {
   width: 1.5em;
   ;
+}
+
+#site_select {
+	width: 80%;
 }
 
 /* for phones and embedded pages */

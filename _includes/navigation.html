@@ -9,14 +9,6 @@
 						{% endif %}
 					{% endfor %}
 				</select>
-				<select id="site_select" class="bcls-select" style="margin-left: 1rem;">
-					<option value="">Other Brightcove Docs</option>
-					{% for site in site.data.sites %}
-						{% if site.name != site.product %}
-							<option value="{{ site.url }}">{{ site.name }}</option>
-						{% endif %}
-					{% endfor %}
-				</select>
 		
         <nav class="sidenav" id="side_nav">
           {% for item in site.data.navigation %}
