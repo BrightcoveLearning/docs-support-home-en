@@ -80,6 +80,14 @@ article>summary {
   display: block;
 }
 
+.bcls-article a {
+	color: #08088c;
+}
+
+header a {
+	color: #08088c;
+}
+
 /* bootstrap container */
 
 div.container {
@@ -1151,9 +1159,6 @@ footer h2 {
   color: rgb(255, 255, 255);
 }
 
-/* footer a {
-  color: rgb(206, 206, 206);
-} */
 
 footer nav {
   vertical-align: top;
@@ -1382,6 +1387,10 @@ div.card-content>h2 {
   color: #00EAE4;
   font-size: 1rem;
   line-height: 18px;
+}
+
+body > header > nav > ol > li:nth-child(1) > a::before {
+	content: '';
 }
 
 .breadcrumb-item a {
