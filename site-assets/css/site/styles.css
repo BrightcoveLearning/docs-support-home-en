@@ -395,7 +395,7 @@ figcaption {
 }
 
 .bcls-button {
-  background-color: rgb(19, 160, 183);
+  background-color: #08088C;
   border-radius: .5em;
   color: #eee;
   cursor: pointer;
@@ -405,7 +405,7 @@ figcaption {
 }
 
 .bcls-button:hover {
-  background-color: rgb(19, 160, 183);
+  background-color: #08088C;
   border: 1px rgb(255, 217, 110) solid;
   color: rgb(255, 217, 110);
 }
@@ -413,27 +413,25 @@ figcaption {
 /* info, tips, warnings */
 
 .bcls-aside {
-  border-radius: .3em;
   margin-bottom: 1em;
-  padding: 1em 1em 1em 2.7em;
+  padding: 1em 2em 1em 3.5em;
 }
 
 .bcls-aside--information {
-  background-color: rgb(242, 244, 249);
-  border: 2px rgb(0, 235, 228) solid;
+  background-color: #f2f4f9;
+  border-left: 4px solid #092dbd;
 }
 
 .bcls-aside--information:before {
   content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/info-aqua.svg);
   float: left;
   margin-left: -2.5em;
-  margin-top: -.5em;
 }
 
 
 .bcls-aside--tip {
-  background-color: rgb(215, 246, 230);
-  border: 2px rgb(0, 158, 79) solid;
+  background-color: #d7f6e6;
+  border-left: 4px solid #ffba00;
 }
 
 .bcls-aside--tip:before {
@@ -442,20 +440,18 @@ figcaption {
   /* color: rgb(8, 8, 139);
   height: 28px; */
   margin-left: -2.5em;
-  margin-top: -.5em;
 }
 
 
 .bcls-aside--warning {
-  background-color: rgb(253, 246, 243);
-  border: 2px rgb(254, 82, 9) solid;
+  background-color: #fffbf2;
+  border-left: 4px solid #ffba00;
 }
 
 .bcls-aside--warning:before {
-  content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/alert-triangle-orange.svg);
+  content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/alert-triangle-gray.svg);
   float: left;
   margin-left: -2.5em;
-  margin-top: -.5em;
 }
 
 
@@ -615,14 +611,14 @@ ul.menu {
   details {
     border: 1px rgb(249, 249, 249) solid;
     border-radius: 1rem;
-    padding: .5rem;
+    padding: .4rem;
     background-color: rgb(249, 249, 249);
   }
   details>summary {
     border: .1rem rgb(249, 249, 249) solid;
     font-size: 1.8rem;
     color: rgb(8, 8, 140);
-    padding: .5rem;
+    padding: .4rem;
     outline: none;
   }
   details>summary>h2, details>summary>h3 {
@@ -665,12 +661,6 @@ ul.menu {
     padding: .5rem;
     padding-left: 1rem;
     margin-top: 1rem;
-    border: 1px solid rgb(100, 176, 183);
-    border-left: 5px solid rgb(100, 176, 183);
-    border-radius: 4px;
-    -webkit-box-shadow: 5px 5px 10px rgba(192, 192, 192, 1.000);
-    -moz-box-shadow: 5px 5px 10px rgba(192, 192, 192, 1.000);
-    box-shadow: 5px 5px 10px rgba(192, 192, 192, 1.000);
     width: 100%;
   }
   .BCL-aside code {
@@ -1128,7 +1118,7 @@ small, .text_small {
 }
 
 footer i, .footer a, .bcls-footer a {
-  color: rgb(142, 144, 147);
+  color: #ffffff;
 }
 
 footer i {
@@ -1137,7 +1127,7 @@ footer i {
 
 footer {
   margin-top: 2em;
-  background-color: #515151;
+  /* background-color: #515151; */
   bottom: 0;
   color: rgb(255, 255, 255);
   font-size: smaller;
