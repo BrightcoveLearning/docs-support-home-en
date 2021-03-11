@@ -984,14 +984,18 @@ ul.sidenav-subsubmenu li {
 
 .right-side-nav {
   padding: .2em;
-  background-color: #00EAE4;
-  color: inherit;
+  background-color: rgb(242, 242, 243);
+  color: rgb(1, 5, 14);
   /* margin-top:13em; */
   position: -webkit-sticky;
   position: sticky;
   top: 20em;
   margin-right: 1.2em;
   display: none;
+}
+
+.right-side-nav a {
+	color: #08088c;
 }
 
 #centered_inpage_nav {
