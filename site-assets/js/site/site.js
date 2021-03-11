@@ -22,7 +22,6 @@ var BCLS_site = (function(window, document) {
     header = document.querySelector('header'),
     side_nav = document.getElementById('side_nav'),
     footer = document.querySelector('footer'),
-    talla_wrapper = document.getElementById('talla_wrapper'),
     open_new_tab = document.getElementById('open_new_tab'),
     bc_veggie_burger_wrapper = document.getElementById('bc_veggie_burger_wrapper'),
     in_prod_nav = document.getElementById('in_prod_nav'),
@@ -33,7 +32,7 @@ var BCLS_site = (function(window, document) {
   // if inside iframe, hide appropriate elements
   if (window.location !== window.parent.location) {
     var fby = fby || [];
-    fby.push(['showTab', {id: '{{ site.feedbackify_id }}', position: 'right', color: '{{ site.product_color }}'}]);
+    fby.push(['showTab', {id: '{{ site.feedbackify_id }}', position: 'right', color: '#D33D00'}]);
     (function () {
         var f = document.createElement('script'); f.type = 'text/javascript'; f.async = true;
         f.src = '//cdn.feedbackify.com/f.js';
@@ -42,7 +41,6 @@ var BCLS_site = (function(window, document) {
     hideElement(header);
     hideElement(footer);
     hideElement(side_nav);
-    hideElement(talla_wrapper);
     hideElement(bc_veggie_burger_wrapper);
     // in_prod_nav.removeAttribute('style');
     open_new_tab.removeAttribute('style');
