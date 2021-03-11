@@ -984,6 +984,7 @@ ul.sidenav-subsubmenu li {
 
 .right-side-nav {
   padding: .2em;
+	color: #01050E;
   background-color: rgb(242, 242, 243);
   color: rgb(1, 5, 14);
   /* margin-top:13em; */
@@ -1088,19 +1089,19 @@ h2 {
 
 h3 {
   font-size: 1.777rem; 
-	font-weight: 500; 
+	font-weight: 700; 
 	letter-spacing: -0.5px;
 }
 
 h4 {
   font-weight: 1.25rem; 
-	font-weight: 800; 
+	font-weight: 700; 
 	letter-spacing: -0.25px;
 }
 
 h5 {
   font-size: 1em;
-	font-weight: 700;
+	font-weight: 600;
 	letter-spacing: -.2px;
 }
 
