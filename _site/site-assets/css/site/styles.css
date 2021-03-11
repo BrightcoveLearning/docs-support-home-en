@@ -937,6 +937,7 @@ ul.menu {
   padding: .3rem;
   padding-left: 2rem;
   white-space: pre;
+	color: #08088c;
 }
 
 ul.sidenav-submenu li {
@@ -957,9 +958,11 @@ ul.sidenav-subsubmenu li {
 }
 
 .sidenav-submenu a ::visited {
+	color: #08088c;
 }
 
 .sidenav-submenu a {
+	color: #08088c;
 }
 
 .sidenav li {
@@ -1001,7 +1004,7 @@ ul.sidenav-subsubmenu li {
 
 #centered_inpage_nav {
   padding: 0;
-  background-color: #00EAE4;
+  background-color: rgb(242, 242, 243);
   color: inherit;
   display: none;
   margin-left: 10%;
