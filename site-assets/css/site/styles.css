@@ -1109,9 +1109,11 @@ small, .text_small {
 
 .footer-menu {
   display: inline-block;
+	font-size: .8em;
   margin-right: 6rem;
-  margin-left: 2em;
+  margin-left: -1.25rem;
 }
+
 
 footer i, .footer a, .bcls-footer a {
   color: #ffffff;
@@ -1134,7 +1136,8 @@ footer {
 }
 
 footer h2 {
-  font-size: 1rem;
+  font-size: .875rem;
+	font-weight: bold;
   text-align: left;
   color: rgb(255, 255, 255);
 }
@@ -1238,10 +1241,8 @@ right-side-bar {
   padding: .5rem;
   cursor: pointer;
   display: inline-flex;
-  /* min-height: 275px; */
-  /* margin: 1em; */
-  /* max-height: 350px; */
-  vertical-align: top;
+		justify-content: start;
+		vertical-align: top;
   width: 45%;
   max-width: 45%;
 }
@@ -1249,6 +1250,11 @@ right-side-bar {
 .bcls-card h2 {
   padding-top: 1rem;
 }
+
+.bcls-card ul {
+	margin-left: -2.4rem;
+}
+
 
 
 .card-icon .feather, .card-icon img {
