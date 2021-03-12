@@ -1231,9 +1231,14 @@ right-side-bar {
   background-color: rgb(8, 8, 140);
 }
 
+.bcls-topic-list ul {
+	list-style: none;
+	margin-left: -2.3rem;
+}
+
 .card-wrapper {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: start;
   flex-wrap: wrap;
 }
 
@@ -1248,7 +1253,10 @@ right-side-bar {
 }
 
 .bcls-card h2 {
-  padding-top: 1rem;
+  color: #01050E; 
+	font-size: 1.333rem; 
+	font-weight: 700; 
+	letter-spacing: -0.25px;
 }
 
 .bcls-card ul {
@@ -1306,13 +1314,17 @@ right-side-bar {
 }
 
 .bcls-card-small h3 {
-  font-size: 1.1rem;
-  ;
+  color: #01050E; 
+	font-size: 1.333rem; 
+	font-weight: 700; 
+	letter-spacing: -0.25px;
 }
 
 .bcls-card-small h2 {
-  font-size: 1.3rem;
-  padding-top: 1rem;
+  color: #01050E; 
+	font-size: 1.333rem; 
+	font-weight: 700; 
+	letter-spacing: -0.25px;
 }
 
 .bcls-card-small ul {
