@@ -431,7 +431,7 @@ figcaption {
 
 .bcls-aside--tip {
   background-color: #d7f6e6;
-  border-left: 4px solid #ffba00;
+  border-left: 4px solid #009e4f;
 }
 
 .bcls-aside--tip:before {
@@ -766,10 +766,6 @@ ul.menu {
 /* Jekyll layout styles */
 
 /* search */
-
-.gsc-control-wrapper-cse {
-  margin-top: 0;
-}
 
 .search-bar {
   margin-top: .5em;
