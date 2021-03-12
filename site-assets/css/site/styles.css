@@ -1241,8 +1241,8 @@ right-side-bar {
   padding: .5rem;
   cursor: pointer;
   display: inline-flex;
-		justify-content: start;
-		vertical-align: top;
+	justify-content: start;
+	vertical-align: top;
   width: 45%;
   max-width: 45%;
 }
@@ -1253,6 +1253,7 @@ right-side-bar {
 
 .bcls-card ul {
 	margin-left: -2.4rem;
+	list-style: none;
 }
 
 
@@ -1291,10 +1292,6 @@ right-side-bar {
   color: rgb(0, 235, 228);
 }
 
-.bcls-card ul {
-  list-style: none;
-  margin-left: -.6rem;
-}
 
 .bcls-card-small {
   padding: .5rem;
