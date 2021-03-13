@@ -29,16 +29,3 @@ h4 i.far {
   color: rgb(7, 9, 140);
 }
 
-.bcls-card-small ul {
-  list-style: none;
-  margin-left: -2.9em;
-}
-
-.bcls-card-small h5 {
-  font-size: 1rem;
-}
-
-.bcls-card-small h4 {
-  font-size: 1.1rem;
-  margin-left: -1.5em;
-}
