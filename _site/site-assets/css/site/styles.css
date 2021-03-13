@@ -1080,6 +1080,10 @@ h5 {
 	letter-spacing: -.2px;
 }
 
+h6 {
+	font-weight: 500;
+}
+
 header {
   min-width: 100%;
 }
