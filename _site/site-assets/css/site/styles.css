@@ -1231,9 +1231,9 @@ right-side-bar {
   background-color: rgb(8, 8, 140);
 }
 
-.bcls-topic-list ul {
+.bcls-topic-list, .bcls-topic-list ul {
 	list-style: none;
-	margin-left: -2.3rem;
+	margin-left: -2.2rem;
 }
 
 .card-wrapper {
