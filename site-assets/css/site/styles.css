@@ -1254,6 +1254,11 @@ right-side-bar {
 	color: #08088c;
 }
 
+.card-wrapper ul {
+	list-style: none;
+	margin-left: -2.2rem;
+}
+
 .bcls-card {
   padding: .5rem;
   cursor: pointer;
