@@ -1236,10 +1236,18 @@ right-side-bar {
 	margin-left: -2.2rem;
 }
 
+.bcls-topic-list a {
+	color: #08088c;
+}
+
 .card-wrapper {
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
+}
+
+.card-wrapper a {
+	color: #08088c;
 }
 
 .bcls-card {
