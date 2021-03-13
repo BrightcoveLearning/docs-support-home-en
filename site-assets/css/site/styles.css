@@ -1256,7 +1256,7 @@ right-side-bar {
 
 .card-wrapper ul {
 	list-style: none;
-	margin-left: -2.2rem;
+	margin-left: -2.4rem;
 }
 
 .bcls-card {
@@ -1277,7 +1277,7 @@ right-side-bar {
 }
 
 .bcls-card ul {
-	margin-left: -2.2rem;
+	margin-left: -2.4rem;
 	list-style: none;
 }
 
@@ -1345,7 +1345,7 @@ right-side-bar {
 }
 
 .bcls-card-small ul {
-  margin-left: -2.2rem;
+  margin-left: -2.4rem;
   list-style: none;
 }
 
