@@ -88,6 +88,10 @@ header a {
 	color: #08088c;
 }
 
+ul>li a {
+	color: #08088c;
+}
+
 /* bootstrap container */
 
 div.container {
