@@ -1202,6 +1202,8 @@ footer td {
   color: #4D5056;
 	font-size: .875rem;
   max-width: 425px;
+	margin-top: -1rem;
+	padding-top: 1rem;
 }
 
 right-side-bar {
