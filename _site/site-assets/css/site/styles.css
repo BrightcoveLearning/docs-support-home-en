@@ -1412,6 +1412,9 @@ div.card-content>h2 {
   font-size: 1rem;
   line-height: 18px;
 }
+.arr-right .breadcrumb-item.first-item::before {
+  content: "";
+}
 
 body > header > nav > ol > li:nth-child(1) > a::before {
 	content: '';
