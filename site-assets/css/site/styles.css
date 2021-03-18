@@ -1417,12 +1417,12 @@ body > header > nav > ol > li:nth-child(1) > a::before {
 	content: '';
 }
 
-.breadcrumb-item a, .breadcrumb-item-first a {
+.breadcrumb-item a, .breadcrumb-item.first-item a {
 color: #00EAE4 !important;
 font-weight: 600;
 }
 
-.breadcrumb-item.active, .breadcrumb-item-first.active {
+.breadcrumb-item.active, .breadcrumb-item.first-item.active {
 	color: #ffffff;
 }
 
