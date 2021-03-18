@@ -1416,6 +1416,10 @@ div.card-content>h2 {
   content: "";
 }
 
+.arr-right .breadcrumb-item:first-of-type::before {
+  content: "";
+}
+
 body > header > nav > ol > li:nth-child(1) > a::before {
 	content: '';
 }
