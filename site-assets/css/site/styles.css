@@ -625,18 +625,39 @@ ul.menu {
     padding: .4rem;
     outline: none;
   }
-  details>summary>h2, details>summary>h3 {
+  details>summary>* {
     font-size: 1.9rem;
     color: rgb(8, 8, 140);
-    display: inline;
-  }
-  details summary>* {
     display: inline;
   }
   details>summary:focus {
     border: .1rem rgb(249, 249, 249) solid;
     outline: none;
   }
+
+	details>summary::before {
+		float: left;
+		height: .5rem;
+		width: .5rem;
+		margin-right: 1rem;
+		content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/chevron-down-blue.svg);
+	}
+	details>summary::-webkit-details-marker {
+		display: none;
+	}
+	
+	details[open]>summary::after {
+		float: left;
+		height: .5rem;
+		width: .5rem;
+		content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/chevron-up-blue.svg);
+	}
+	
+	details[open]>summary {
+		border: none;
+		outline: none;
+	}
+	
 
   ol.integer {
     list-style-type: none;
