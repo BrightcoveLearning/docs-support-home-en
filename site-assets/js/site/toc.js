@@ -52,7 +52,8 @@ var BCLS_toc = (function (window, document) {
       i,
       iMax,
       frag = document.createDocumentFragment(),
-      parent
+      parent,
+			toc_items;
 
     // check window width to set the elements to use
     if (window.innerWidth < 1360) {
@@ -128,6 +129,15 @@ var BCLS_toc = (function (window, document) {
           parent.setAttribute('style', 'display:none;')
         }
       }
+
+			// make whole LI clickable
+			toc_items = document.querySelectorAll('li.toc-item');
+			iMax = toc_items.length;
+			for (i = 0; i < iMax; i++) {
+				toc_items[i].addEventListener('click', function(evt) {
+					location.hash = this.firstElementChild.getAttribute('href');
+				});
+			}
     }
 
     /**
