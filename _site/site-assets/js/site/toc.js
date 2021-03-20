@@ -10,7 +10,10 @@ var BCLS_toc = ( function (window, document) {
   in_page_nav = document.getElementById('in_page_nav'),
   centered_in_page_toc = document.getElementById('centered_in_page_toc'),
   right_side_nav = document.getElementById('right_side_nav'),
-  centered_inpage_nav = document.getElementById('centered_inpage_nav');
+  centered_inpage_nav = document.getElementById('centered_inpage_nav'),
+	product_logo = document.querySelector('img.product-logo'),
+	product_logo_full_path = product_logo.getAttribute('src'),
+	product_logo_small_path = 'https://support.brightcove.com/site-assets/images/site/product-logos/b-white-on-black.svg';
 
   /**
    * Removes all child elements (eg the items in a list)
@@ -158,12 +161,16 @@ var BCLS_toc = ( function (window, document) {
         bc_veggie_burger_wrapper.setAttribute('style', 'display:none;');
         side_nav.setAttribute('style', 'display:block;');
         nav_menu_collapsed = false;
+				// product logo
+				product_logo.setAttribute('src', product_logo_small_path);
+				product_logo.setAttribute('style', 'height:2em;max-height:2em;');
       }
     } else {
       if (bc_veggie_burger_wrapper) {
         bc_veggie_burger_wrapper.setAttribute('style', 'display:block;background:none;');
         side_nav.setAttribute('style', 'display:none;');
         nav_menu_collapsed = true;
+				product_logo.setAttribute('src', product_logo_full_path);
       }
     }
   }
