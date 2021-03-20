@@ -134,7 +134,7 @@ var BCLS_toc = (function (window, document) {
 			toc_items = document.querySelectorAll('li.toc-item');
 			iMax = toc_items.length;
 			for (i = 0; i < iMax; i++) {
-				this.setAttribute('style', 'cursor:pointer;')
+				toc_items[i].setAttribute('style', 'cursor:pointer;')
 				toc_items[i].addEventListener('click', function(evt) {
 					location.hash = this.firstElementChild.getAttribute('href');
 				});
