@@ -161,16 +161,12 @@ var BCLS_toc = ( function (window, document) {
         bc_veggie_burger_wrapper.setAttribute('style', 'display:none;');
         side_nav.setAttribute('style', 'display:block;');
         nav_menu_collapsed = false;
-				// product logo
-				product_logo.setAttribute('src', product_logo_small_path);
-				product_logo.setAttribute('style', 'height:2em;max-height:2em;');
       }
     } else {
       if (bc_veggie_burger_wrapper) {
         bc_veggie_burger_wrapper.setAttribute('style', 'display:block;background:none;');
         side_nav.setAttribute('style', 'display:none;');
         nav_menu_collapsed = true;
-				product_logo.setAttribute('src', product_logo_full_path);
       }
     }
   }
@@ -196,14 +192,20 @@ var BCLS_toc = ( function (window, document) {
                 centered_inpage_nav.setAttribute('style', 'display: none;');
                 centered_in_page_toc.innerHTML = '';
                 create_inpage_nav();
+								// product logo
+								product_logo.setAttribute('src', product_logo_small_path);
+								product_logo.setAttribute('style', 'height:2em;max-height:2em;');
               }
             } else {
-              if (right_side_nav && pathname !== '/' && pathname.indexOf('/index.html') < 0) {
-                if (in_page_nav_right) {
-                  side_nav_created = false;
+							if (right_side_nav && pathname !== '/' && pathname.indexOf('/index.html') < 0) {
+								if (in_page_nav_right) {
+									side_nav_created = false;
                   right_side_nav.setAttribute('style', 'display:none;');
                   in_page_nav.innerHTML = '';
-                  // create_inpage_nav();
+                  create_inpage_nav();
+									// product logo
+									product_logo.setAttribute('src', product_logo_full_path);
+
                 }
               }
             }

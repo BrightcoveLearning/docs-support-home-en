@@ -192,18 +192,19 @@ var BCLS_toc = ( function (window, document) {
                 centered_inpage_nav.setAttribute('style', 'display: none;');
                 centered_in_page_toc.innerHTML = '';
                 create_inpage_nav();
-								product_logo.setAttribute('src', product_logo_full_path);
+								// product logo
+								product_logo.setAttribute('src', product_logo_small_path);
+								product_logo.setAttribute('style', 'height:2em;max-height:2em;');
               }
             } else {
-              if (right_side_nav && pathname !== '/' && pathname.indexOf('/index.html') < 0) {
-                if (in_page_nav_right) {
-                  side_nav_created = false;
+							if (right_side_nav && pathname !== '/' && pathname.indexOf('/index.html') < 0) {
+								if (in_page_nav_right) {
+									side_nav_created = false;
                   right_side_nav.setAttribute('style', 'display:none;');
                   in_page_nav.innerHTML = '';
                   create_inpage_nav();
 									// product logo
-									product_logo.setAttribute('src', product_logo_small_path);
-									product_logo.setAttribute('style', 'height:2em;max-height:2em;');
+									product_logo.setAttribute('src', product_logo_full_path);
 
                 }
               }
