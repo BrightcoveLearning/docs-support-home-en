@@ -1273,6 +1273,7 @@ right-side-bar {
 	vertical-align: top;
   width: 45%;
   max-width: 45%;
+	min-width: 200px;
 }
 
 .bcls-card h2 {
@@ -1334,6 +1335,7 @@ right-side-bar {
   vertical-align: top;
   width: 30%;
   max-width: 30%;
+	min-width: 200px;
 }
 
 .bcls-card-small h3 {
