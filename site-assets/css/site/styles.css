@@ -88,6 +88,10 @@ header a {
 	color: #08088c;
 }
 
+ul>li a {
+	color: #08088c;
+}
+
 /* bootstrap container */
 
 div.container {
@@ -621,18 +625,39 @@ ul.menu {
     padding: .4rem;
     outline: none;
   }
-  details>summary>h2, details>summary>h3 {
+  details>summary>* {
     font-size: 1.9rem;
     color: rgb(8, 8, 140);
-    display: inline;
-  }
-  details summary>* {
     display: inline;
   }
   details>summary:focus {
     border: .1rem rgb(249, 249, 249) solid;
     outline: none;
   }
+
+	details>summary::before {
+		float: left;
+		height: .5rem;
+		width: .5rem;
+		margin-right: 1rem;
+		content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/chevron-down-blue.svg);
+	}
+	details>summary::-webkit-details-marker {
+		display: none;
+	}
+	
+	details[open]>summary::after {
+		float: left;
+		height: .5rem;
+		width: .5rem;
+		content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/chevron-up-blue.svg);
+	}
+	
+	details[open]>summary {
+		border: none;
+		outline: none;
+	}
+	
 
   ol.integer {
     list-style-type: none;
@@ -1105,7 +1130,7 @@ small, .text_small {
   color: rgb(255, 255, 255);
   left: 0;
   margin-top: 2em;
-  padding-left: 15%;
+  padding-left: 30%;
   position: relative;
   text-align: left;
   width: 100%;
@@ -1202,6 +1227,8 @@ footer td {
   color: #4D5056;
 	font-size: .875rem;
   max-width: 425px;
+	margin-top: -1rem;
+	padding-top: 1rem;
 }
 
 right-side-bar {
@@ -1267,6 +1294,7 @@ right-side-bar {
 	vertical-align: top;
   width: 45%;
   max-width: 45%;
+	min-width: 200px;
 }
 
 .bcls-card h2 {
@@ -1328,6 +1356,7 @@ right-side-bar {
   vertical-align: top;
   width: 30%;
   max-width: 30%;
+	min-width: 200px;
 }
 
 .bcls-card-small h3 {
@@ -1406,17 +1435,24 @@ div.card-content>h2 {
   font-size: 1rem;
   line-height: 18px;
 }
+.arr-right .breadcrumb-item.first-item::before {
+  content: "";
+}
+
+.arr-right .breadcrumb-item:first-of-type::before {
+  content: "";
+}
 
 body > header > nav > ol > li:nth-child(1) > a::before {
 	content: '';
 }
 
-.breadcrumb-item a {
+.breadcrumb-item a, .breadcrumb-item.first-item a {
 color: #00EAE4 !important;
 font-weight: 600;
 }
 
-.breadcrumb-item.active {
+.breadcrumb-item.active, .breadcrumb-item.first-item.active {
 	color: #ffffff;
 }
 
