@@ -1260,6 +1260,7 @@ right-side-bar {
 
 .tabs .tab-links li.active a {
   background-color: rgb(8, 8, 140);
+	color: #ffffff;
 }
 
 .bcls-topic-list, .bcls-topic-list ul {
