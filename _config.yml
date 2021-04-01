@@ -39,10 +39,6 @@ product_color: rgb(65, 196, 181)
 product_icon: "brightcove-black-on-white.svg"
 search_id: "017969773216783359937:2cbhk6irtp6"
 feedbackify_id: "14941"
-bing_custom_config_id: "d05d8d92-4176-4adc-babf-1ca934f14021"
-talla_appID: "00c26be3-4421-41e6-bb00-1dee68740f67"
-talla_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1ODI4MDQzNDF9.RYf2x65FXvdDURzM h00i76KfUrYlsDLsw6mVuEv6zmE'
-talla_knowledgegroup: ''
 defaults:
   -
     scope:
