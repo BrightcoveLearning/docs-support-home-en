@@ -623,7 +623,6 @@ ul.menu {
     font-size: 1.8rem;
     color: rgb(8, 8, 140);
     padding: .4rem;
-    padding-left: 1.4rem;
     outline: none;
   }
   details>summary>* {
@@ -646,6 +645,7 @@ ul.menu {
 		height: .5rem;
 		width: .5rem;
 		margin-right: 1rem;
+    padding-right: 2rem;
 		content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/chevron-down-blue.svg);
 	}
 	
@@ -653,6 +653,8 @@ ul.menu {
 		float: left;
 		height: .5rem;
 		width: .5rem;
+		margin-right: 1rem;
+    padding-right: 2rem;
 		content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/chevron-up-blue.svg);
 	}
 	
