@@ -1431,13 +1431,17 @@ div.card-content>h2 {
 	background-color: #092DBD;
 }
 
+.breadcrumb-item {
+  font-size: .875em;
+}
+
 
 /* breadcrumb divider */
 
 .arr-right .breadcrumb-item.breadcrumb-item::before {
   content: "›";
   vertical-align: top;
-  color: #00EAE4;
+  color: #FFFFFF;
   font-size: 1rem;
   line-height: 18px;
 }
@@ -1455,7 +1459,7 @@ body > header > nav > ol > li:nth-child(1) > a::before {
 
 .breadcrumb-item a, .breadcrumb-item.first-item a {
 color: #00EAE4 !important;
-font-weight: 600;
+font-weight: normal;
 }
 
 .breadcrumb-item.active, .breadcrumb-item.first-item.active {
