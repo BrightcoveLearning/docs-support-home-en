@@ -648,7 +648,7 @@ ul.menu {
 		content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/chevron-down-blue.svg);
 	}
 	
-	details[open]>summary::after {
+	details[open]>summary::before {
 		float: left;
 		height: .5rem;
 		width: .5rem;
