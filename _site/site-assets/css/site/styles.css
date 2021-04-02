@@ -635,15 +635,17 @@ ul.menu {
     outline: none;
   }
 
+  details>summary::-webkit-details-marker {
+    display: none;
+  }
+  
+
 	details>summary::before {
 		float: left;
 		height: .5rem;
 		width: .5rem;
 		margin-right: 1rem;
 		content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/chevron-down-blue.svg);
-	}
-	details>summary::-webkit-details-marker {
-		display: none;
 	}
 	
 	details[open]>summary::after {
