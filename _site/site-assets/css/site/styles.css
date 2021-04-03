@@ -851,6 +851,8 @@ ul.menu {
   margin-bottom: 0;
 	vertical-align: middle;
   max-height: 32px;
+  width: auto;
+  max-width: 250px;
 }
 
 .secondary-nav {
