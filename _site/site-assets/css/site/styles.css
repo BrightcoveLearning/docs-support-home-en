@@ -746,6 +746,10 @@ ul.menu {
 	select::after, .bcls-select::after {
 		color: #4d5056;
 	}
+
+  select {
+    background-color: #FFFFFFF;
+  }
   select[multiple] {
     min-height: 200px;
   }
