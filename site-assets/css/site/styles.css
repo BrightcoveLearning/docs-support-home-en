@@ -867,6 +867,7 @@ ul.menu {
 
 body > header > div > select {
 min-width: 150px;
+font-size: small;
 }
 
 .secondary-nav svg {
