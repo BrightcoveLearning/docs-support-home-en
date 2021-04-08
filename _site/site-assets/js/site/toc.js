@@ -166,7 +166,7 @@ var BCLS_toc = (function (window, document) {
           }
           this.setAttribute(
             'style',
-            'color:#dcf3fb;background-color:rgb(21, 160, 183);'
+            'font-weight:bold;'
           )
         })
       }
