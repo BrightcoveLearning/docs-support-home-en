@@ -1541,6 +1541,12 @@ body>header>nav {
     padding: .4rem;
     white-space: nowrap;
   }
+  /* legacy ui */
+  .button-teal {
+    color: rgb(255, 255, 255);
+    background-color: rgb(64, 156, 169);
+  }
+  /* end legacy ui */
   .button-blue {
     color: rgb(255, 255, 255);
     background-color: rgb(13, 44, 189);
