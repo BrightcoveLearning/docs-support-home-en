@@ -1534,7 +1534,7 @@ body>header>nav {
 }
 
   /* in-app help text buttons */
-  .button-blue, .button-blue-text, .button-red, .button-red-text, .button-gray {
+  .button-blue, .button-blue-text, .button-red, .button-red-text, .button-gray, .button-teal {
     /* font-family: 'Public Sans'; */
     font-weight: bold;
     font-size: .65rem;
