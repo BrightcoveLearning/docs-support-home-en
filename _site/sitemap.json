@@ -5,11 +5,6 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/support/brightcove-answer.html",
-      "oldURL": "/brightcove-answer"
-  },
-
-  {
       "newURL": "https://support.brightcove.com/training/brightcove-university.html",
       "oldURL": "/brightcove-university"
   },
@@ -30,12 +25,12 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/training/",
+      "newURL": "https://support.brightcove.com/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://support.brightcove.com/",
+      "newURL": "https://support.brightcove.com/training/",
       "oldURL": "/index"
   },
 
