@@ -3,22 +3,23 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Below are links to recent product and documentation updates.">
   
   <title>Product and Documentation Updates</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">  
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css">
+  <!-- <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css"> -->
   <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/landing-page.css">
   <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/tabs.css">
+  <link rel="stylesheet" href="/site-assets/css/site/styles.css">
   <link rel="stylesheet" href="/assets/css/local.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
   
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -33,7 +34,6 @@
   <script src="/assets/js/sajari-head.js"></script>
 	<script src="https://unpkg.com/feather-icons"></script>
 </head>
-
 
 <body class="body">
 
@@ -204,11 +204,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
           </tr>
       </thead>
       <tbody class="bcls-table__body">
-          <tr>
-              <td>Video Cloud Studio</td>
-              <td></td>
-              <td><a href="https://studio.support.brightcove.com/release-notes/video-cloud-studio-release-notes.html">Release Notes</a></td>
-          </tr>
+        <tr>
+            <td rowspan="3">Beacon</td>
+            <td></td>
+            <td><a href="https://beacon.support.brightcove.com/references/product-updates.html">Release Notes</a></td>
+        </tr>
           <tr>
               <td rowspan="3">Brightcove Player</td>
               <td>Current Release</td>
@@ -225,24 +225,74 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
               <td>See the individual plugin docs <a href="https://player.support.brightcove.com/plugins/index.html">Player Plugins</a></td>
           </tr>
           <tr>
-              <td>Video Cloud Platform APIs</td>
-              <td></td>
-              <td><a href="">Release Notes</a></td>
+            <td>Live</td>
+            <td></td>
+            <td><a href="https://live.support.brightcove.com/release-notes/live-api-release-notes.html">Release Notes</a></td>
           </tr>
           <tr>
-              <td>Video Cloud Device SDKs</td>
-              <td></td>
-              <td><a href="">Release Notes</a></td>
+            <td>Live</td>
+            <td>Live API</td>
+            <td><a href="https://live.support.brightcove.com/live-api/references/live-api-release-notes.html">Release Notes</a></td>
           </tr>
           <tr>
-              <td></td>
-              <td></td>
-              <td><a href="">Release Notes</a></td>
+            <td>Video Cloud</td>
+            <td>Studio</td>
+            <td><a href="https://studio.support.brightcove.com/release-notes/video-cloud-studio-release-notes.html">Release Notes</a></td>
           </tr>
           <tr>
+              <td>Video Cloud</td>
+              <td>Analytics API</td>
+              <td><a href="https://apis.support.brightcove.com/analytics/references/analytics-api-release-notes.html">Release Notes</a></td>
+          </tr>
+          <tr>
+              <td>Video Cloud</td>
+              <td>Catalog APIs</td>
+              <td><a href="https://apis.support.brightcove.com/policy/references/policy-api-release-notes.html">Release Notes</a></td>
+          </tr>
+          <tr>
+              <td>Video Cloud</td>
+              <td>Dynamic Ingest API</td>
+              <td><a href="https://apis.support.brightcove.com/dynamic-ingest/references/dynamic-ingest-api-release-notes.html">Release Notes</a></td>
+          </tr>
+          <tr>
+              <td>Video Cloud</td>
+              <td>Player Management API</td>
+              <td><a href="https://apis.support.brightcove.com/player-management/references/player-management-api-release-notes.html">Release Notes</a></td>
+          </tr>
+          <tr>
+              <td>Video Cloud</td>
+              <td>Policy API</td>
+              <td><a href="https://apis.support.brightcove.com/analytics/references/analytics-api-release-notes.html">Release Notes</a></td>
+          </tr>
+          <tr>
+              <td>Video Cloud</td>
+              <td>Device SDKs</td>
+              <td><a href="https://sdks.support.brightcove.com/developer-support/questions/release-notes-brightcove-native-sdks.html">Release Notes</a></td>
+          </tr>
+          <tr>
+              <td>Video Cloud Add-ons</td>
+              <td>Gallery</td>
+              <td><a href="https://gallery.support.brightcove.com/release-notes/index.html">Release Notes</a></td>
+          </tr>
+          <tr>
+              <td>Video Cloud Add-ons</td>
+              <td>Gallery Templates</td>
+              <td><a href="https://gallery.support.brightcove.com/release-notes/gallery-template-release-notes.html">Release Notes</a></td>
+          </tr>
+          <tr>
+              <td>Video Cloud Add-ons</td>
+              <td>Campaign</td>
+              <td><a href="https://campaign.support.brightcove.com/release-notes/index.html">Release Notes</a></td>
+          </tr>
+          <tr>
+              <td>Video Cloud Add-ons</td>
+              <td>Engage</td>
+              <td><a href="https://engage.support.brightcove.com/release-notes/index.html">Release Notes</a></td>
+          </tr>
+          <tr>
+              <td>Zencoder</td>
               <td></td>
-              <td></td>
-              <td><a href="">Release Notes</a></td>
+              <td><a href="https://zencoder.support.brightcove.com/references/release-notes.html">Release Notes</a></td>
           </tr>
       </tbody>
   </table>
@@ -298,7 +348,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 27 Oct 2020
+  Page last updated on 18 Apr 2021
 </div>
 
 
