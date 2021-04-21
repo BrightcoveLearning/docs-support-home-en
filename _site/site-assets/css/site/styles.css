@@ -571,46 +571,6 @@ ul.menu {
   display: inline-block;
 }
 
-@media only screen and (min-width: 64.063em) {
-  /**** show/hide & inline ****/
-  .height-zero {
-    height: 0;
-    max-height: 0;
-    margin-left: -9999px;
-  }
-  .height-auto {
-    height: auto;
-    max-height: auto;
-    margin-left: auto;
-  }
-  .bcls-show {
-    left: 0;
-  }
-  .bcls-hide {
-    left: -9999px;
-  }
-  .inline {
-    display: inline;
-  }
-  .inline-block {
-    display: inline-block;
-  }
-  .display-none {
-    display: none;
-  }
-  .display-block {
-    display: block;
-  }
-  .display-unset {
-    display: auto;
-  }
-  /* for list without bullets */
-  .list-none {
-    list-style-type: none;
-  }
-  .list-none li {
-    margin-left: -2em;
-  }
   /**** general element styles and classes *********= */
   details {
     border: 1px rgb(249, 249, 249) solid;
@@ -1261,25 +1221,6 @@ right-side-bar {
   color: rgb(11, 155, 179);
 }
 
-/* fontawesome */
-
-.fa-stack {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.stacked-icons {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.fa-stack+.fa-stack {
-  margin-left: .3em;
-}
-
-.fa-stack {
-  margin-bottom: 20px;
-}
-
 
 /* landing page sections */
 
@@ -1509,6 +1450,48 @@ body>header>nav {
 #site_select {
 	width: 80%;
 }
+
+@media only screen and (min-width: 64.063em) {
+  /**** show/hide & inline ****/
+  .height-zero {
+    height: 0;
+    max-height: 0;
+    margin-left: -9999px;
+  }
+  .height-auto {
+    height: auto;
+    max-height: auto;
+    margin-left: auto;
+  }
+  .bcls-show {
+    left: 0;
+  }
+  .bcls-hide {
+    left: -9999px;
+  }
+  .inline {
+    display: inline;
+  }
+  .inline-block {
+    display: inline-block;
+  }
+  .display-none {
+    display: none;
+  }
+  .display-block {
+    display: block;
+  }
+  .display-unset {
+    display: auto;
+  }
+  /* for list without bullets */
+  .list-none {
+    list-style-type: none;
+  }
+  .list-none li {
+    margin-left: -2em;
+  }
+
 
 /* for phones and embedded pages */
 
