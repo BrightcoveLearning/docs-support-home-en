@@ -597,6 +597,7 @@ ul.menu {
 
   details>summary::-webkit-details-marker,  details>summary::marker {
     display: none;
+    color: rgb(249, 249, 249);
   }
   
 
