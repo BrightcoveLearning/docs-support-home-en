@@ -1,0 +1,114 @@
+<div class="BCL_objectives"><p>Using the App Cloud image transcoding service, which can greatly improve your app's performance by optimizing images for mobile delivery.</p>
+  <!--break--></div>
+  <p>App Cloud provides a service you can use to transcode images for your apps. Using the image transcoding service, you can take your source image and convert it into the size and format you need for your apps. For example, if you have an original image that is 300x300 pixels, but your app needs to display it at 100x100. You can use the image transcoding service to make sure the image is always at the right size for its context, without having to create a new image file for each context you use the image in. You can also crop the image and specify the quality (compression ratio) for JPG images. Using the image transcoding service, youcan:</p>
+  <ul>
+      <li>Markedly improve your app's performance by greatly reducing the file size and network bandwidth required to display your app</li>
+      <li>Reduce memory demands by reducing the size of  images.</li>
+      <li>Make sure your images are the right size for being displayed on mobile devices.</li>
+      <li>Take advantage of the App Cloud server cache, improving app performance and reducing the load on your own servers.</li>
+  </ul>
+  <p>The App Cloud image transcoding service acts as a proxy  between  your images and your applications. The service is  accessed with a simple URL in which  you prefix your image URL  with our transcoding service URL. This enables you to  drop our  transcoding service into your apps with very little effort.  For example, if you have an image that lives at  <code>http://my.example.com/image.png</code> you would normally request it like:</p>
+  <pre>
+  &lt;img 
+  &nbsp;src=&quot;http://my.example.com/image.png&quot; 
+  &nbsp;alt=&quot;Bandwidth Hungry Image&quot; 
+   width=&quot;500&quot;
+   height=&quot;500&quot;
+  /&gt; </pre>
+  <p>To transcode it to a smaller image that is 100x100px, you  simply  issue the following request:</p>
+  <pre>
+  &lt;img 
+  &nbsp;src=&quot;http://transcode.appcloud.brightcove.com?image=http://my.example.com/image.png&amp;width=100&amp;height=100&quot; 
+  &nbsp;alt=&quot;My Svelte Image&quot;
+   width=&quot;100&quot;
+   height=&quot;100&quot; 
+  /&gt;</pre>
+  <p>To reduce an image to 100px in width, preserving the original aspect ratio:</p>
+  <pre>
+  &lt;img 
+  &nbsp;src=&quot;http://transcode.appcloud.brightcove.com?image=http://my.example.com/image.png&amp;width=100&quot; 
+   width=&quot;100&quot; /&gt;</pre>
+  <p>To reduce an image to 100px in width or 100px in height, whichever is greater, preserving the original aspect ratio:</p>
+  <pre>
+  &lt;img 
+  &nbsp;src=&quot;http://transcode.appcloud.brightcove.com?image=http://my.example.com/image.png&amp;max_dimension=100&quot; /&gt;</pre>
+  <p>To crop the image, preserving a 100x100px piece in the center, you  simply  issue the following request:</p>
+  <pre>
+  &lt;img 
+  &nbsp;src=&quot;http://transcode.appcloud.brightcove.com?image=http://my.example.com/image.png&amp;crop=200,200,100,100&quot; 
+  &nbsp;alt=&quot;My Svelte Image&quot;
+   width=&quot;100&quot;
+   height=&quot;100&quot; 
+  /&gt;</pre>
+  
+  <p>To use the image transcoding service, your image must be accessible at a publicly-available URL. The image must be in PNG, JPEG, or GIF format.</p>
+  <h2><a name="params"></a>Query parameters</h2>
+  <p>The image transcoding service call uses the following query parameters:</p>
+  <h3>image (required)</h3>
+  <p>The publicly accessible URL at which your original image can be found. For example, <code>image=http://my.example.com/image.png</code>.</p>
+  <h3>format (optional)</h3>
+  <p>The format of the new image, which can be one of <code>png</code>, <code>jpg</code>, or <code>gif</code>. If you don't specify the format, then the output format is unchaned from the original image.</p>
+  <h3>Size parameters (optional)</h3>
+  <p>You can use one of the size parameters, <code>width</code>, <code>height</code>, or <code>max_dimension</code>, if you want the new image to be a different size from the original image. These parameters specify a dimension of the final image in pixels.</p>
+  <ul>
+      <li>If you don't specify any size parameters, the new image will have the same width and height as the original image.</li>
+      <li>If you specify <code>width</code>, but not <code>height</code>, the new image will have the width you specify and will have the height dictated by the aspect ratio of the original image.</li>
+      <li>If you specify <code>height</code>, but not <code>width</code>, the new image will have the height you specify and will have the width dictated by the aspect ratio of the original image.</li>
+      <li>If you specify <code>max_dimension</code>, then the  larger dimension of the new image will be the size you specify, and the  smaller dimension will have the size dictated by the aspect ratio of the original image.</li>
+  </ul>
+  <p>In every case, the new image will have the same aspect ratio as the original image, unless you specify both a <code>width</code> and <code>height</code> and that aspect ratio is different from the original aspect ratio.</p>
+  <h3>Crop parameter (optional)</h3>
+  <h2>Using a transcoding utility function</h2>
+  <p>To crop your image, add the parameter:</p>
+  <pre>crop=x,y,w,h</pre>
+  <p>Here, x and y are the coordinates of the start point, measured in pixels from the upper left corner (0,0). w and h are horizontal and vertical pixels to preserve, beginning at the start point and proceeding to the right and down.</p>
+  <p>If cropping and sizing are both specified, cropping is applied first, and the cropped image is then sized.</p>
+  <h3>Quality parameter (optional)</h3>
+  <p>For JPG images only, specify the compression ratio for resulting image by adding the parameter:</p>
+  <pre>quality=x</pre>
+  <p>x is the compression ration to be applied; the default is 70.</p>
+  <p>Here's a handy JavaScript function for generating an image transcode URL:</p>
+  <pre>
+  function getTranscodeURL(url, options) {
+      var src = &quot;http://transcode.appcloud.brightcove.com?image=&quot; + url;
+      if (options) {
+          if (options.max_dimension) {
+              src += &quot;&amp;max_dimension=&quot; + options.max;
+          }
+          else {
+              if (options.width) {
+                  src += &quot;&amp;width=&quot; + options.width;
+              }
+              if (options.height) {
+                  src += &quot;&amp;height=&quot; + options.height;
+              }
+          }
+          if (options.format) {
+              src += &quot;&amp;format=&quot; + options.format;
+          }
+          if (options.crop) {
+              src += &quot;&amp;crop=&quot; + options.crop;
+          }
+          if (options.quality) {
+              src += &quot;&amp;quality&quot; + options.quality;
+          }
+      }
+      
+      return src;
+  };</pre>
+  <p>For example, to transcode an image to 200 pixels wide:</p>
+  <pre>
+  var tx_url = getTranscodeURL(&quot;http://www.example.com/example.jpg&quot;, { width: 200 });</pre>
+  <p>To crop an image to 160x90, starting 100px from the left and 70px from the top, and specifying a compression ratio of 65:</p>
+  <pre>var tx_url = getTranscodeURL(&quot;http://www.example.com/example.jpg&quot;, { crop: "100,70,160,90" , quality: 65 });</pre>
+  <h2>Transcoded image examples</h2>
+  <p>To see how dramatically the transcoding service can reduce the bandwidth and memory required by images files, take a look at these examples.</p>
+  <p>First we have a high-quality JPEG stock image:<br />
+  <img alt="" src="http://img.brightcove.com/ac-transcode-before.jpg" /></p>
+  <p>This image is 425x282, with a file size of 130,879 bytes.</p>
+  <p>Passing it through the transcoding service with width=250:<br />
+  <img alt="" src="http://img.brightcove.com/ac-transcode-after.jpg" /></p>
+  <p>The image is now 250x165, with a file size of 34,017 bytes, a 74% reduction.</p>
+  <p>Finally, we can transcode it to thumbnail size (width=75):<br />
+  <img alt="" src="http://img.brightcove.com/ac-transcode-thumb.jpg" /></p>
+  <p>The image is now 75x49, with a file size of 7,686 bytes, a 94% reduction!</p>
