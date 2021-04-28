@@ -25,17 +25,22 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/site-assets/css/site/appcloud/images.html",
+      "oldURL": "/images"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/training/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://support.brightcove.com/support/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/training/",
       "oldURL": "/index"
   },
 
