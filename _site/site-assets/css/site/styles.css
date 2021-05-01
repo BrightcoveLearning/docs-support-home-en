@@ -970,9 +970,10 @@ ul.sidenav-subsubmenu li {
   /* margin-top:13em; */
   position: -webkit-sticky;
   position: sticky;
-  top: 20em;
+  top: 10em;
   margin-right: 1.2em;
   display: none;
+  overflow-y: scroll;
 }
 
 .right-side-nav a {
