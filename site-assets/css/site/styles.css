@@ -973,7 +973,6 @@ ul.sidenav-subsubmenu li {
   top: 6em;
   margin-right: 1.2em;
   display: none;
-  overflow-y: scroll;
 }
 
 .right-side-nav a {

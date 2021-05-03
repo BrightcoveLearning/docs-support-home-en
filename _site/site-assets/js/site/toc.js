@@ -13,10 +13,10 @@ var BCLS_toc = (function (window, document) {
     centered_in_page_toc = document.getElementById('centered_in_page_toc'),
     right_side_nav = document.getElementById('right_side_nav'),
     centered_inpage_nav = document.getElementById('centered_inpage_nav'),
-    product_logo = document.querySelector('img.product-logo'),
+    product_logo = document.querySelector('.product-logo'),
     product_logo_full_path = product_logo.getAttribute('src'),
     product_logo_small_path =
-      'https://support.brightcove.com/site-assets/images/site/product-logos/b-white-on-black.svg'
+      'https://support.brightcove.com/site-assets/images/site/product-logos/b-white-on-black.svg';
 
   /**
    * Removes all child elements (eg the items in a list)
