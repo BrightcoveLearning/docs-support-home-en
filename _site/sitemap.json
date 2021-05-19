@@ -70,6 +70,11 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/support/reset-support-portal-password.html",
+      "oldURL": "/reset-support-portal-password"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/search.html",
       "oldURL": "/search"
   },
