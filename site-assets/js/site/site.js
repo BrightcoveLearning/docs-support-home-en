@@ -113,12 +113,20 @@ function hideElement(el) {
         console.log('p4', p4);
         console.log('p1NextSib', p1NextSib);
         console.log('p1NextSibList', p1NextSibList);
-        console.log('currentLinkNextSib', currentLinkNextSib);
+        console.log('currentLinkNextSib', currentLink.nextElementSibling);
+        // console.log('p1.firstChild.firstChild.nextElementSibling.nextElementSibling', p1.firstChild.firstChild.nextElementSibling.nextElementSibling);
         parentNodeName = p1.nodeName;
         pSib = p1.firstChild;
         if (p1.nodeName === 'H5') {
           pNextSib = p1.nextElementSibling;
           pNextSib.removeAttribute('style');
+        } else if (currentLink.nextElementSibling && p1.nodeName === 'LI' && currentLink.nextElementSibling.nodeName === 'UL') {
+          console.log('currentLink.nextElementSibling', currentLink.nextElementSibling);
+          p1.removeAttribute('style');
+          p2.removeAttribute('style');
+          p3.removeAttribute('style');
+          p4.removeAttribute('style');
+          currentLink.nextElementSibling.removeAttribute('style');
         } else if (currentLinkNextSib && p2.nodeName === 'UL' && p3.nodeName === 'NAV' && currentLinkNextSib.nodeName == "UL") {
           p2.removeAttribute('style');
           currentLinkNextSib.removeAttribute('style');
@@ -135,6 +143,10 @@ function hideElement(el) {
         } else if (p2.nodeName === 'UL' && p3.nodeName === 'UL') {
           p2.removeAttribute('style');
           p3.removeAttribute('style');
+        } else if (p1.nodeName === 'LI' && currentLink.nextElementSibling.nodeName === 'UL') {
+          console.log('currentLink.nextElementSibling', currentLink.nextElementSibling);
+          p1.removeAttribute('style');
+          currentLink.nextElementSibling.removeAttribute('style');
         } else if (p1.nodeName === 'LI') {
           p2.removeAttribute('style');
         }
