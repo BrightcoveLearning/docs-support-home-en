@@ -130,7 +130,7 @@ function hideElement(el) {
           p3.removeAttribute('style');
           p4.removeAttribute('style');
           currentLink.nextElementSibling.removeAttribute('style');
-        } else if (p1.nodeName === 'LI' && p2.nodeName === 'UL' && p3.nodeName === 'LI' && p4.nodeName === 'UL' && p5.nodeName === "LI" && p6.nodeName === 'UL') {
+        } else if (p5 && p6 && p1.nodeName === 'LI' && p2.nodeName === 'UL' && p3.nodeName === 'LI' && p4.nodeName === 'UL' && p5.nodeName === "LI" && p6.nodeName === 'UL') {
           console.log(3)
           if (p6) {
             console.log('p6', p6);
