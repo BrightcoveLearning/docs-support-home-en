@@ -133,7 +133,6 @@ function hideElement(el) {
           p2.removeAttribute('style');
           p3.removeAttribute('style');
           p4.removeAttribute('style');
-          currentLink.nextElementSibling.removeAttribute('style');
         } else if (currentLinkNextSib && p2.nodeName === 'UL' && p3.nodeName === 'NAV' && currentLinkNextSib.nodeName == "UL") {
           p2.removeAttribute('style');
           currentLinkNextSib.removeAttribute('style');
