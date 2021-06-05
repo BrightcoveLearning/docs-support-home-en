@@ -121,36 +121,40 @@ function hideElement(el) {
           pNextSib = p1.nextElementSibling;
           pNextSib.removeAttribute('style');
         } else if (currentLink.nextElementSibling && p1.nodeName === 'LI' && currentLink.nextElementSibling.nodeName === 'UL') {
-          console.log('currentLink.nextElementSibling', currentLink.nextElementSibling);
+          console.log(2);
           p1.removeAttribute('style');
           p2.removeAttribute('style');
           p3.removeAttribute('style');
           p4.removeAttribute('style');
           currentLink.nextElementSibling.removeAttribute('style');
         } else if (p1.nodeName === 'LI' && p2.nodeName === 'UL' && p3.nodeName === 'LI' && p4.nodeName === 'UL') {
-          console.log('currentLink.nextElementSibling', currentLink.nextElementSibling);
+          console.log(3)
           p1.removeAttribute('style');
           p2.removeAttribute('style');
           p3.removeAttribute('style');
           p4.removeAttribute('style');
         } else if (currentLinkNextSib && p2.nodeName === 'UL' && p3.nodeName === 'NAV' && currentLinkNextSib.nodeName == "UL") {
+          console.log(4)
           p2.removeAttribute('style');
           currentLinkNextSib.removeAttribute('style');
         } else if (p1.nodeName === 'LI' && p4.nodeName === 'UL') {
+          console.log(5)
           p2.removeAttribute('style');
           p4.removeAttribute('style');
         } else if (p1.nodeName === 'LI' && p2.nodeName === 'UL' && p4.nodeName === 'UL') {
+          console.log(6)
           p2.removeAttribute('style');
           p4.removeAttribute('style');
         } else if (p1NextSibList && p1.nodeName === 'LI' && p1NextSibList.nodeName === 'UL') {
-            console.log('p1NextSib nodename', p1NextSib.nodeName);
+            console.log(7);
             p2.removeAttribute('style');
             p1NextSibList.removeAttribute('style');
         } else if (p2.nodeName === 'UL' && p3.nodeName === 'UL') {
+          console.log(8)
           p2.removeAttribute('style');
           p3.removeAttribute('style');
         } else if (p1.nodeName === 'LI' && currentLink.nextElementSibling.nodeName === 'UL') {
-          console.log('currentLink.nextElementSibling', currentLink.nextElementSibling);
+          console.log(9);
           p1.removeAttribute('style');
           currentLink.nextElementSibling.removeAttribute('style');
         } else if (p1.nodeName === 'LI') {
