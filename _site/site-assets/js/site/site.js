@@ -107,16 +107,16 @@ function hideElement(el) {
         p3 = p2.parentElement;
         p4 = p3.parentElement;
         p5 = p4.parentElement;
-        p6 = p6.parentElement;
+        p6 = p5.parentElement;
 
-        console.log('currentLink', currentLink);
-        console.log('p1', p1);
-        console.log('p2', p2);
-        console.log('p3', p3);
-        console.log('p4', p4);
-        console.log('p1NextSib', p1NextSib);
-        console.log('p1NextSibList', p1NextSibList);
-        console.log('currentLinkNextSib', currentLink.nextElementSibling);
+        // console.log('currentLink', currentLink);
+        // console.log('p1', p1);
+        // console.log('p2', p2);
+        // console.log('p3', p3);
+        // console.log('p4', p4);
+        // console.log('p1NextSib', p1NextSib);
+        // console.log('p1NextSibList', p1NextSibList);
+        // console.log('currentLinkNextSib', currentLink.nextElementSibling);
         // console.log('p1.firstChild.firstChild.nextElementSibling.nextElementSibling', p1.firstChild.firstChild.nextElementSibling.nextElementSibling);
         parentNodeName = p1.nodeName;
         pSib = p1.firstChild;
