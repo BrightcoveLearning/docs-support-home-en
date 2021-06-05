@@ -127,6 +127,13 @@ function hideElement(el) {
           p3.removeAttribute('style');
           p4.removeAttribute('style');
           currentLink.nextElementSibling.removeAttribute('style');
+        } else if (p1.nodeName === 'LI' && p2.nodeName === 'UL' && p3.nodeName === 'LI' && p4.nodeName === 'UL') {
+          console.log('currentLink.nextElementSibling', currentLink.nextElementSibling);
+          p1.removeAttribute('style');
+          p2.removeAttribute('style');
+          p3.removeAttribute('style');
+          p4.removeAttribute('style');
+          currentLink.nextElementSibling.removeAttribute('style');
         } else if (currentLinkNextSib && p2.nodeName === 'UL' && p3.nodeName === 'NAV' && currentLinkNextSib.nodeName == "UL") {
           p2.removeAttribute('style');
           currentLinkNextSib.removeAttribute('style');
