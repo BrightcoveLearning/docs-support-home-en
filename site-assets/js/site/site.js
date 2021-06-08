@@ -161,7 +161,7 @@ function hideElement(el) {
           console.log(8)
           p2.removeAttribute('style');
           p3.removeAttribute('style');
-        } else if (p1.nodeName === 'LI' && currentLink.nextElementSibling.nodeName === 'UL') {
+        } else if (currentLink.nextElementSibling && p1.nodeName === 'LI' && currentLink.nextElementSibling.nodeName === 'UL') {
           console.log(9);
           p1.removeAttribute('style');
           currentLink.nextElementSibling.removeAttribute('style');
