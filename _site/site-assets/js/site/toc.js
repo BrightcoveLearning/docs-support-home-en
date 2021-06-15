@@ -243,6 +243,8 @@ var BCLS_toc = (function (window, document) {
 
     // for main nav
     if (window.innerWidth < 1000 && !nav_menu_collapsed) {
+console.log('window.innerWidth', window.innerWidth);
+console.log('nav_menu_collapsed', nav_menu_collapsed);
       toggle_nav_menu()
     } else if (window.innerWidth > 1000 && nav_menu_collapsed) {
       toggle_nav_menu()
