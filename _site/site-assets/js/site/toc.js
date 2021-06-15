@@ -209,7 +209,7 @@ var BCLS_toc = (function (window, document) {
     // for in-page nav; don't do if an index page
     if (pathname !== '/' || pathname.indexOf('/index.html') < 0) {
       if (window.innerWidth > 1360) {
-        if (!in_page_nav_right) {
+        if (!in_page_nav_right && centered_inpage_nav) {
           side_nav_created = false
           centered_inpage_nav.setAttribute('style', 'display: none;')
           centered_in_page_toc.innerHTML = ''
