@@ -1041,8 +1041,8 @@ h5.landing-page-item-header {
 
 span.product-logo {
   font-family: 'Public Sans';
-  font-size: 3.5em;
-  font-weight: 800;
+  /* font-size: 3.5em;
+  font-weight: 800; */
 }
 
 /* headings */
