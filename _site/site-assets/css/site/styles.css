@@ -586,7 +586,7 @@ ul.menu {
     outline: none;
   }
   details>summary>* {
-    font-size: 1.9rem;
+    /* font-size: 1.9rem; */
     color: rgb(8, 8, 140);
     display: inline;
   }
