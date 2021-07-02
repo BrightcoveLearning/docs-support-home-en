@@ -1,0 +1,69 @@
+New docs:
+
+Title: Static Image Overlays
+Description: You can use the static image overlay feature to superimpose a static image onto a video in a Cloud Playout channel. A static image is a still image that doesn't have motion. You prepare the image and store it outside of Cloud Playout and provide to us as a publicly accessible , unauthenticated http/https URL.
+Link: https://studio.support.brightcove.com/cloud-playout/static-image-overlays.html
+Category: Cloud Playout
+Status: Released
+Type: New Doc
+
+Title: Overview: Channels API
+Description: With the Channel Manager endpoints, you can create a Cloud Playout channel, add assets & live events to the playlist, then activate, start, stop and delete the channel.
+Link: https://apis.support.brightcove.com/cloud-playout-apis/getting-started/overview-channel-api.html
+Category: Cloud Playout APIs
+Status: Released
+Type: New Doc
+
+Title: Brightcove Cloud Playout CMS API Interactions
+Description: This is a modified and abbreviated version of the full CMS API Reference. This version focuses on what you need to know for managing content in your Cloud Playout channels.
+Link: https://apis.support.brightcove.com/cloud-playout-apis/references/reference-cms-interactions.html
+Category: Cloud Playout APIs, CMS API
+Status: Released
+Type: New Doc
+
+Major updates:
+
+Title: Brightcove Cloud Playout Channel Manager API Reference
+Description: Added many new methods for creating and managing Cloud Playout channels
+Link: https://apis.support.brightcove.com/cloud-playout-apis/references/reference-channels.html
+Category: Cloud Playout APIs
+Status: Released
+Type: Major Update
+
+Title: Brightcove Live: Best Practices
+Description: Major rewrite and consolidation of 2 best practices guides for Live (API and Live Module)
+Link: https://live.support.brightcove.com/get-started/live-module-guidelines-and-best-practices.html
+Category: Brightcove Live
+Status: Released
+Type: Major Update
+
+Minor updates:
+
+Title: Live API Reference
+Description: added limits on Video Cloud name and description fields
+Link: https://apis.support.brightcove.com/live-api/references/reference.html#operation/CreateALiveJob
+Category: Live API
+Status: Released
+Type: Minor Update
+
+Title: Playback API Reference
+Description: clarified that search-enabled keys are only needed if search is used
+Link: https://apis.support.brightcove.com/live-api/references/reference.html#operation/CreateALiveJob
+Category: Playback API
+Status: Released
+Type: Minor Update
+
+Title: Supported HDR Video Formats
+Description: Added note that HDR outputs require HEVC (H.265) inputs
+Link: https://zencoder.support.brightcove.com/encoding-guides/hdr10-video-output.html
+Category: Zencoder
+Status: Released
+Type: Minor Update
+
+Title: HDR Settings
+Description: Added note that HDR outputs require HEVC (H.265) inputs
+Link: https://zencoder.support.brightcove.com/encoding-settings/formats-codecs/encoding-settings-hdr10.html
+Category: Zencoder
+Status: Released
+Type: Minor Update
+
