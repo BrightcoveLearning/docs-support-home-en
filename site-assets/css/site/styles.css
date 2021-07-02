@@ -423,6 +423,7 @@ figcaption {
 
 .bcls-aside--information {
   background-color: #f2f4f9;
+  border: 1px #092dbd solid;
   border-left: 4px solid #092dbd;
 }
 
