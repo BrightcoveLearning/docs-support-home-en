@@ -1124,6 +1124,12 @@ small, .text_small {
   width: 100%;
 }
 
+.bc-footer-logo {
+  float: left;
+  height: 32px;
+  margin-left: -15em;
+}
+
 .footer-menu {
   display: inline-block;
 	font-size: .8em;
