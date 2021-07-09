@@ -1,3 +1,33 @@
 - section:
   name: Home
   url: /
+- section:
+  name: Training
+  url: /training/index.html
+  docs:
+    - name: All Online Training Courses
+      url: /training/online-training-courses.html
+    - name: Register for Instructor-led Training
+      url: /training/register-training.html
+    - name: 'Training: Introduction to Video Cloud'
+      url: /training/training-demand-introduction-video-cloud.html
+    - name: 'Training:  Introduction to Video Cloud Analytics'
+      url: /training/training-demand-introduction-video-cloud-analytics.html
+    - name: 'Training: Video Cloud Basics'
+      url: /training/training-demand-video-cloud-basics.html
+    - name: Video Cloud Studio Training Videos
+      url: /training/video-cloud-studio-training-videos.html
+    - name: Brightcove University Training Courses
+      url: /training/brightcove-university.html
+- section:
+  name: 'Support'
+  url: '/support/index.html'
+  docs:
+    - name: 'Viewing the Brightcove System Status Page'
+      url: '/support/viewing-brightcove-system-status-page.html'
+    - name: 'Contact Sales'
+      url: '/support/contact-sales.html'
+    - name: 'Opening a Support Case'
+      url: '/support/opening-case-with-brightcove-support.html'
+    - name: 'Reset Your Support Portal Password'
+      url: '/support/reset-support-portal-password.html'
