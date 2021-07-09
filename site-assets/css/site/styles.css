@@ -1239,8 +1239,7 @@ right-side-bar {
 }
 
 .bcls-topic-list, .bcls-topic-list ul {
-	list-style: none;
-	margin-left: -2.2rem;
+	margin-left: -1rem;
 }
 
 .bcls-topic-list a {
@@ -1258,8 +1257,7 @@ right-side-bar {
 }
 
 .card-wrapper ul {
-	list-style: none;
-	margin-left: -2.4rem;
+	margin-left: -1rem;
 }
 
 .bcls-card {
@@ -1281,8 +1279,7 @@ right-side-bar {
 }
 
 .bcls-card ul {
-	margin-left: -2.4rem;
-	list-style: none;
+	margin-left: -1rem;
 }
 
 
@@ -1350,8 +1347,7 @@ right-side-bar {
 }
 
 .bcls-card-small ul {
-  margin-left: -2.4rem;
-  list-style: none;
+  margin-left: -1rem;
 }
 
 .bcls-card::hover {
@@ -1389,7 +1385,7 @@ div.card-content>h2 {
 } */
 
 .bcls-card-wide ul {
-  list-style: none;
+  /* list-style: none; */
 }
 
 .bcls-card p, .bcls-card-wide p {
