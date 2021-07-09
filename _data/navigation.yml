@@ -1,6 +1,18 @@
 - section:
   name: Home
-  url: /
+  url: /index.html
+- section:
+  name: Video Cloud Studio
+  url: 'https://studio.support.brightcove.com/index.html'
+- section:
+  name: Brightcove Player
+  url: 'https://player.support.brightcove.com/index.html'
+- section:
+  name: Video Cloud Platform APIs
+  url: 'https://apis.support.brightcove.com/index.html'
+- section:
+  name: Video Cloud Device SDKs
+  url: 'https://apis.support.brightcove.com/index.html'
 - section:
   name: Training
   url: /training/index.html
