@@ -7,63 +7,63 @@ Category: Cloud Playout
 Status: Released
 Type: New Doc
 
-Title: Overview: Channels API
-Description: With the Channel Manager endpoints, you can create a Cloud Playout channel, add assets & live events to the playlist, then activate, start, stop and delete the channel.
-Link: https://apis.support.brightcove.com/cloud-playout-apis/getting-started/overview-channel-api.html
-Category: Cloud Playout APIs
-Status: Released
-Type: New Doc
-
-Title: Brightcove Cloud Playout CMS API Interactions
-Description: This is a modified and abbreviated version of the full CMS API Reference. This version focuses on what you need to know for managing content in your Cloud Playout channels.
-Link: https://apis.support.brightcove.com/cloud-playout-apis/references/reference-cms-interactions.html
-Category: Cloud Playout APIs, CMS API
-Status: Released
-Type: New Doc
-
 Major updates:
 
-Title: Brightcove Cloud Playout Channel Manager API Reference
-Description: Added many new methods for creating and managing Cloud Playout channels
-Link: https://apis.support.brightcove.com/cloud-playout-apis/references/reference-channels.html
-Category: Cloud Playout APIs
-Status: Released
-Type: Major Update
-
-Title: Brightcove Live: Best Practices
-Description: Major rewrite and consolidation of 2 best practices guides for Live (API and Live Module)
-Link: https://live.support.brightcove.com/get-started/live-module-guidelines-and-best-practices.html
-Category: Brightcove Live
+Title: Supported Video and Audio Formats, Codecs, and Containers
+Description: Added notes on audio formats, especially around 5.1 channels
+Link: https://studio.support.brightcove.com/general/supported-video-and-audio-formats-codecs-and-containers.html
+Category: Video Cloud general information, audio format
 Status: Released
 Type: Major Update
 
 Minor updates:
 
-Title: Live API Reference
-Description: added limits on Video Cloud name and description fields
-Link: https://apis.support.brightcove.com/live-api/references/reference.html#operation/CreateALiveJob
-Category: Live API
+Title: Brightcove Cloud Playout Channel Manager API Reference
+Description: updated some descriptions
+Link: https://apis.support.brightcove.com/cloud-playout-apis/references/reference-channels.html
+Category: Cloud Playout APIs
 Status: Released
 Type: Minor Update
 
-Title: Playback API Reference
-Description: clarified that search-enabled keys are only needed if search is used
-Link: https://apis.support.brightcove.com/live-api/references/reference.html#operation/CreateALiveJob
-Category: Playback API
+Title: Autoplay Considerations
+Description: added note that muted autoplay fails in some edge cases on Chrome - and that this is up to the browser, not something we can control
+Link: https://player.support.brightcove.com/playback/autoplay-considerations.html
+Category: Brightcove Player
 Status: Released
 Type: Minor Update
 
-Title: Supported HDR Video Formats
-Description: Added note that HDR outputs require HEVC (H.265) inputs
-Link: https://zencoder.support.brightcove.com/encoding-guides/hdr10-video-output.html
-Category: Zencoder
+Title: Brightcove Live API: Server-Side Ad Insertion (SSAI)
+Description: added note that SSAI will increase consumption of origin bandwidth and explained why
+Link: https://apis.support.brightcove.com/live-api/ssai/live-api-server-side-ad-insertion-ssai.html
+Category: Live, SSAI
 Status: Released
 Type: Minor Update
 
-Title: HDR Settings
-Description: Added note that HDR outputs require HEVC (H.265) inputs
-Link: https://zencoder.support.brightcove.com/encoding-settings/formats-codecs/encoding-settings-hdr10.html
-Category: Zencoder
+Title: Overview: Digital Rights Management (DRM) in Video Cloud
+Description: added note that DRM playback requires TLS 1.2 with a link to instructions on how to enable it if is not (in some older browwers)
+Link: https://studio.support.brightcove.com/general/overview-digital-rights-management-drm-video-cloud.html#Summary_of_DRM_support
+Category: DRM, Content Protection
+Status: Released
+Type: Minor Update
+
+Title: Integrating Your CMS with Video Cloud
+Description: added notes on handling ingest profiles
+Link: https://apis.support.brightcove.com/general/integrating-your-cms-video-cloud.html
+Category: Video Cloud integrations
+Status: Released
+Type: Minor Update
+
+Title: Notifications for Dynamic Ingest
+Description: added section on firewalls
+Link: https://apis.support.brightcove.com/dynamic-ingest/general/notifications-dynamic-delivery-video-cloud.html#Firewalls
+Category: Dynamic Ingest API
+Status: Released
+Type: Minor Update
+
+Title: Protecting Videos with HLS Encryption
+Description: added note that if HLSe is disabled for an account, encryption will be removed from videos automatically, no re-transcoding required
+Link: https://studio.support.brightcove.com/general/protecting-videos-hls-encryption.html#limitations
+Category: HLSe, Content Protection
 Status: Released
 Type: Minor Update
 
