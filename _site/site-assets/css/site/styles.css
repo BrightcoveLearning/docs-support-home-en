@@ -182,6 +182,10 @@ td>code {
   white-space: nowrap;
 }
 
+td>ul {
+  margin-left: -1rem;
+}
+
 /* table styles */
 
 .bcls-table {
