@@ -1424,7 +1424,7 @@ div.card-content>h2 {
 }
 
 body > header > nav > ol > li:nth-child(1) > a::before {
-	content: '';
+	content: "";
 }
 
 .breadcrumb-item a, .breadcrumb-item.first-item a {
