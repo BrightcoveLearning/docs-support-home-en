@@ -1,18 +1,81 @@
 New docs:
 
-Title: Static Image Overlays
-Description: You can use the static image overlay feature to superimpose a static image onto a video in a Cloud Playout channel. A static image is a still image that doesn't have motion. You prepare the image and store it outside of Cloud Playout and provide to us as a publicly accessible , unauthenticated http/https URL.
-Link: https://studio.support.brightcove.com/cloud-playout/static-image-overlays.html
-Category: Cloud Playout
+Title: Overview: Forensic Watermarking
+Description: Brightcove has partnered with NAGRA to provide forensic watermarking as a feature in the Video Cloud platform. This will help protect your premium content from piracy and unauthorized content sharing. This feature also helps to quickly identify the source of a content leak, so that action can be taken.
+Link: https://apis.support.brightcove.com/general/overview-forensic-watermarking.html
+Category: Forensic Watermarking, Video Cloud, Zencoder
 Status: Released
+Type: New Doc
+
+Title: FAQ: Forensic Watermarking
+Description: In this topic, you can view the answers to a number of frequently asked questions related to Brightcove Forensic Watermarking.
+Link: https://apis.support.brightcove.com/general/faq-forensic-watermarking.html
+Category: Forensic Watermarking, Video Cloud, Zencoder
+Status: Released
+Type: New Doc
+
+Title: Forensic Watermarking with Brightcove Player
+Description: In this topic, you will learn how to use Brightcove Player to deliver videos protected with Forensic Watermarking.
+Link: https://player.support.brightcove.com/playback/forensic-watermarking-with-bcp.html
+Category: Forensic Watermarking, Video Cloud, Brightcove Player
+Status: Released
+Type: New Doc
+
+Title: Forensic Watermarking with the Native SDKs
+Description: In this topic, you will learn how to use the Brightcove Native SDKs to deliver videos protected with Forensic Watermarking.
+Link: https://sdks.support.brightcove.com/features/forensic-watermarking-with-sdks.html
+Category: Forensic Watermarking, Video Cloud, Brightcove SDKs
+Status: Released
+Type: New Doc
+
+Title: Forensic Watermarking
+Description: In this topic, you will get a high-level overview of Brightcove's Forensic Watermarking feature for Zencoder.
+Link: https://zencoder.support.brightcove.com/encoding-guides/forensic-watermarking.html
+Category: Forensic Watermarking, Zencoder
+Status: Released
+Type: New Doc
+
+Title: Forensic Watermarking Settings
+Description: This topic provides information on settings for forensic watermarking.
+Link: https://zencoder.support.brightcove.com/encoding-settings/content-protection/encoding-settings-forensic-watermarking.html
+Category: Forensic Watermarking, Zencoder
+Status: Released
+Type: New Doc
+
+Title: Publishing a Cloud Playout Channel
+Description: In this topic you will learn how to make a Cloud Playout channel part of your Beacon app. (This version for Beacon LA - NOT RELEASED)
+Link: https://beacon-help.support.brightcove.com/cloud-playout/publish-channel-beacon.html
+Category: Beacon, Cloud Playout
+Status: Internal
 Type: New Doc
 
 Major updates:
 
-Title: Supported Video and Audio Formats, Codecs, and Containers
-Description: Added notes on audio formats, especially around 5.1 channels
-Link: https://studio.support.brightcove.com/general/supported-video-and-audio-formats-codecs-and-containers.html
-Category: Video Cloud general information, audio format
+Title: Zencoder API Reference
+Description: Updated for forensic watermarking
+Link: https://zencoder.support.brightcove.com/references/reference.html
+Category: Forensic Watermarking, Zencoder
+Status: Released
+Type: Major Update
+
+Title: CMS API Reference
+Description: Updated for forensic watermarking
+Link: https://apis.support.brightcove.com/cms/references/reference.html#operation/GetVideos
+Category: Forensic Watermarking, Video Cloud, CMS API
+Status: Released
+Type: Major Update
+
+Title: Dynamic Ingest API Reference
+Description: Updated for forensic watermarking
+Link: https://apis.support.brightcove.com/dynamic-ingest/references/reference.html
+Category: Forensic Watermarking, Video Cloud, Dynamic Ingest API
+Status: Released
+Type: Major Update
+
+Title: Using MTR (my traceroute)
+Description: Updated for Live Streams
+Link: https://general.support.brightcove.com/developer/using-mtr-to-look-at-network-traffic.html
+Category: Video Cloud, Live, Troubleshooting
 Status: Released
 Type: Major Update
 
