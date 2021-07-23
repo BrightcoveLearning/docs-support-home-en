@@ -72,6 +72,7 @@ article, .bcls-article {
 }
 
 article a, .bcls-article a {
+  color: #08088c;
   border-bottom: 1px #CCCCFF solid;
 }
 
@@ -82,10 +83,6 @@ article>i, .bcls-article>i {
 
 article>summary {
   display: block;
-}
-
-.bcls-article a {
-	color: #08088c;
 }
 
 header a {
