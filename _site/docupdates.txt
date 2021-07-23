@@ -81,52 +81,38 @@ Type: Major Update
 
 Minor updates:
 
-Title: Brightcove Cloud Playout Channel Manager API Reference
-Description: updated some descriptions
-Link: https://apis.support.brightcove.com/cloud-playout-apis/references/reference-channels.html
-Category: Cloud Playout APIs
-Status: Released
-Type: Minor Update
-
-Title: Autoplay Considerations
-Description: added note that muted autoplay fails in some edge cases on Chrome - and that this is up to the browser, not something we can control
-Link: https://player.support.brightcove.com/playback/autoplay-considerations.html
+Title: Brightcove Player Sample: Download Plugin
+Description: Added explanation for the delay in downloading
+Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-download-video-plugin.html
 Category: Brightcove Player
 Status: Released
 Type: Minor Update
 
-Title: Brightcove Live API: Server-Side Ad Insertion (SSAI)
-Description: added note that SSAI will increase consumption of origin bandwidth and explained why
-Link: https://apis.support.brightcove.com/live-api/ssai/live-api-server-side-ad-insertion-ssai.html
-Category: Live, SSAI
+Title: Brightcove Player System Requirements
+Description: Added note that HEVC video will not play on Windows 10 without a browser extension
+Link: https://player.support.brightcove.com/references/brightcove-player-system-requirements.html
+Category: Brightcove Player
 Status: Released
 Type: Minor Update
 
-Title: Overview: Digital Rights Management (DRM) in Video Cloud
-Description: added note that DRM playback requires TLS 1.2 with a link to instructions on how to enable it if is not (in some older browwers)
-Link: https://studio.support.brightcove.com/general/overview-digital-rights-management-drm-video-cloud.html#Summary_of_DRM_support
-Category: DRM, Content Protection
+Title: Video Source File Specifications and Recommendations
+Description: Added note that HEVC video will not play on Windows 10 without a browser extension
+Link: https://studio.support.brightcove.com/general/video-source-file-specifications-and-recommendations.html
+Category: Video Cloud General Information
 Status: Released
 Type: Minor Update
 
-Title: Integrating Your CMS with Video Cloud
-Description: added notes on handling ingest profiles
-Link: https://apis.support.brightcove.com/general/integrating-your-cms-video-cloud.html
-Category: Video Cloud integrations
+Title: CMS API Reference
+Description: Added new field for Forensic Watermarking
+Link: https://apis.support.brightcove.com/cms/references/reference.html
+Category: CMS API
 Status: Released
 Type: Minor Update
 
-Title: Notifications for Dynamic Ingest
-Description: added section on firewalls
-Link: https://apis.support.brightcove.com/dynamic-ingest/general/notifications-dynamic-delivery-video-cloud.html#Firewalls
+Title: Dynamic Ingest API Reference
+Description: Added new fields for Forensic Watermarking
+Link: https://apis.support.brightcove.com/cms/references/reference.html
 Category: Dynamic Ingest API
-Status: Released
-Type: Minor Update
-
-Title: Protecting Videos with HLS Encryption
-Description: added note that if HLSe is disabled for an account, encryption will be removed from videos automatically, no re-transcoding required
-Link: https://studio.support.brightcove.com/general/protecting-videos-hls-encryption.html#limitations
-Category: HLSe, Content Protection
 Status: Released
 Type: Minor Update
 

@@ -71,6 +71,10 @@ article, .bcls-article {
   padding: 1em;
 }
 
+article a, .bcls-article a {
+  border-bottom: 1px #CCCCFF; solid;
+}
+
 article>i, .bcls-article>i {
   float: left;
   margin-right: .2em;
