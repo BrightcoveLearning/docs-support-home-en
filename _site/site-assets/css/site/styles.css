@@ -72,7 +72,7 @@ article, .bcls-article {
 }
 
 article a, .bcls-article a {
-  border-bottom: 1px #CCCCFF; solid;
+  border-bottom: 1px #CCCCFF solid;
 }
 
 article>i, .bcls-article>i {
