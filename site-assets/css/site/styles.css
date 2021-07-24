@@ -76,6 +76,10 @@ article a, .bcls-article a {
   border-bottom: 1px #9999FF solid;
 }
 
+article li>a, .bcls-article li>a {
+  border-bottom: none;
+}
+
 article>i, .bcls-article>i {
   float: left;
   margin-right: .2em;
@@ -720,9 +724,7 @@ ul.menu {
   select[multiple] {
     min-height: 200px;
   }
-  a:hover {
-    /* text-decoration: underline; */
-  }
+  
   /* FAQ Styles */
   .bcls-question {
     color: #2346b7;
