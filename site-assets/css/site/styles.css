@@ -77,7 +77,7 @@ article a, .bcls-article a {
 }
 
 article li>a, .bcls-article li>a {
-  border-bottom: none;
+  /* border-bottom: none; */
 }
 
 article>i, .bcls-article>i {
