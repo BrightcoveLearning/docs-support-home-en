@@ -458,8 +458,12 @@ figcaption {
 
 
 .bcls-aside--warning {
-  background-color: #e7cdc1;
+  background-color: #ebd8d0;
   border-left: 4px solid #FF5000;
+}
+
+.bcls-aside--warning code {
+  color: #08088c;
 }
 
 .bcls-aside--warning:before {
