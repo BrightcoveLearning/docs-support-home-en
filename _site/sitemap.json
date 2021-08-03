@@ -10,6 +10,11 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/colors.html",
+      "oldURL": "/colors"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/support/contact-sales.html",
       "oldURL": "/contact-sales"
   },

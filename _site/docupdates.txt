@@ -51,68 +51,83 @@ Type: New Doc
 
 Major updates:
 
-Title: Zencoder API Reference
-Description: Updated for forensic watermarking
-Link: https://zencoder.support.brightcove.com/references/reference.html
-Category: Forensic Watermarking, Zencoder
+Title: Managing Playlists Using the CMS API
+Description: Smart Playlists can now be created using the v2 search syntax, which allows more complex search strings
+Link: https://apis.support.brightcove.com/cms/managing-videos/managing-playlists-using-cms-api.html#Search_field
+Category: CMS API, Smart Playlists
 Status: Released
 Type: Major Update
 
-Title: CMS API Reference
-Description: Updated for forensic watermarking
-Link: https://apis.support.brightcove.com/cms/references/reference.html#operation/GetVideos
-Category: Forensic Watermarking, Video Cloud, CMS API
+Title: Kollective eCDN Deployment Guide
+Description: Several updates and corrections
+Link: https://integrations.support.brightcove.com/ecdn/kollective/kollective-deployment-guide.html
+Category: eCDN Integrations
 Status: Released
 Type: Major Update
 
-Title: Dynamic Ingest API Reference
-Description: Updated for forensic watermarking
-Link: https://apis.support.brightcove.com/dynamic-ingest/references/reference.html
-Category: Forensic Watermarking, Video Cloud, Dynamic Ingest API
+Title: Playback API Overview and Reference
+Description: Added config_id parameter needed for Delivery Rules
+Link: https://apis.support.brightcove.com/playback/getting-started/overview-playback-api.html and https://apis.support.brightcove.com/playback/references/reference_v2.html
+Category: Playback API, Delivery Rules
 Status: Released
 Type: Major Update
 
-Title: Using MTR (my traceroute)
-Description: Updated for Live Streams
-Link: https://general.support.brightcove.com/developer/using-mtr-to-look-at-network-traffic.html
-Category: Video Cloud, Live, Troubleshooting
+Title: Managing API Authentication Credentials
+Description: Added section on updating credentials
+Link: https://apis.support.brightcove.com/general/managing-api-authentication-credentials.html
+Category: OAuth API, API Authentication
 Status: Released
 Type: Major Update
+
+Title: Adding Content to a Cloud Playout Channel
+Description: Added information on searching to find videos
+Link: https://studio.support.brightcove.com/cloud-playout/cloud-playout-add-content.html#add_videos
+Category: Cloud Playout
+Status: Released
+Type: Major Update
+
+Title: Overview: EPG API
+Description: Added note on breaking change in permissions for API authentication and how to fix it
+Link: https://apis.support.brightcove.com/cloud-playout-apis/getting-started/overview-epg-api.html
+Category: Cloud Playout
+Status: Released
+Type: Major Update
+
+Title: Brightcove Live: Best Practices
+Description: Added notes on recommendations for dedicated bandwidth to avoid Live event disruptions
+Link: https://live.support.brightcove.com/get-started/live-module-guidelines-and-best-practices.html
+Category: Live
+Status: Released
+Type: Major Update
+
+Title: Brightcove University Training Courses
+Description: Added four new training courses
+Link: https://studio.support.brightcove.com/training/brightcove-university.html
+Category: Brightcove University
+Status: Released
+Type: Major Update
+
 
 Minor updates:
 
-Title: Brightcove Player Sample: Download Plugin
-Description: Added explanation for the delay in downloading
-Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-download-video-plugin.html
-Category: Brightcove Player
+Title: Live Redundancy
+Description: Fixed a section ID that created a bad link
+Link: https://live.support.brightcove.com/live-module/live-redundancy.html#monitoring
+Category: Brightcove Live
 Status: Released
 Type: Minor Update
 
-Title: Brightcove Player System Requirements
-Description: Added note that HEVC video will not play on Windows 10 without a browser extension
-Link: https://player.support.brightcove.com/references/brightcove-player-system-requirements.html
-Category: Brightcove Player
+Title: Getting Started with Brightcove Video Connect for the Drupal CMS
+Description: Added note: Brightcove will no longer support the 7.x-6.5 Drupal connector after 30 November 2021.
+Link: https://integrations.support.brightcove.com/drupal/getting-started-brightcove-video-connect-drupal-cms.html
+Category: CMS Connectors
 Status: Released
 Type: Minor Update
 
-Title: Video Source File Specifications and Recommendations
-Description: Added note that HEVC video will not play on Windows 10 without a browser extension
-Link: https://studio.support.brightcove.com/general/video-source-file-specifications-and-recommendations.html
-Category: Video Cloud General Information
-Status: Released
-Type: Minor Update
-
-Title: CMS API Reference
-Description: Added new field for Forensic Watermarking
-Link: https://apis.support.brightcove.com/cms/references/reference.html
-Category: CMS API
-Status: Released
-Type: Minor Update
-
-Title: Dynamic Ingest API Reference
-Description: Added new fields for Forensic Watermarking
-Link: https://apis.support.brightcove.com/cms/references/reference.html
-Category: Dynamic Ingest API
+Title: Brightcove Player Sample: Download Video Plugin and Brightcove Player Sample: Download Audio Plugin
+Description: Added notes on causes for delays in downloading the media files
+Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-download-video-plugin.html and https://player.support.brightcove.com/code-samples/brightcove-player-sample-download-audio-plugin.html
+Category: Brightcove Player Samples
 Status: Released
 Type: Minor Update
 
