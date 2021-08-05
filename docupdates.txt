@@ -1,133 +1,64 @@
 New docs:
 
-Title: Overview: Forensic Watermarking
-Description: Brightcove has partnered with NAGRA to provide forensic watermarking as a feature in the Video Cloud platform. This will help protect your premium content from piracy and unauthorized content sharing. This feature also helps to quickly identify the source of a content leak, so that action can be taken.
-Link: https://apis.support.brightcove.com/general/overview-forensic-watermarking.html
-Category: Forensic Watermarking, Video Cloud, Zencoder
+Title: Rename 608/708 Captions in the Player
+Description: This topic explains how to rename captions tracks for HLS in the player to conform with 608 and 708 naming requirements.
+Link: https://player.support.brightcove.com/general/rename-608-708-captions.html
+Category: Player Configuration, Accessibility, Player Management API
 Status: Released
 Type: New Doc
 
-Title: FAQ: Forensic Watermarking
-Description: In this topic, you can view the answers to a number of frequently asked questions related to Brightcove Forensic Watermarking.
-Link: https://apis.support.brightcove.com/general/faq-forensic-watermarking.html
-Category: Forensic Watermarking, Video Cloud, Zencoder
+
+Title: Installing the Connector for Teams
+Description: This topic covers the installation and configuration of the Brightcove Video Connector for Microsoft Teams.
+Link: https://integrations.support.brightcove.com/teams/installation.html
+Category: Video Cloud Integrations
 Status: Released
 Type: New Doc
 
-Title: Forensic Watermarking with Brightcove Player
-Description: In this topic, you will learn how to use Brightcove Player to deliver videos protected with Forensic Watermarking.
-Link: https://player.support.brightcove.com/playback/forensic-watermarking-with-bcp.html
-Category: Forensic Watermarking, Video Cloud, Brightcove Player
+Title: Using the Connector for Microsoft Teams
+Description: This topic covers using the Brightcove Connector for Microsoft Teams.
+Link: https://integrations.support.brightcove.com/teams/using.html
+Category: Video Cloud Integrations
 Status: Released
-Type: New Doc
-
-Title: Forensic Watermarking with the Native SDKs
-Description: In this topic, you will learn how to use the Brightcove Native SDKs to deliver videos protected with Forensic Watermarking.
-Link: https://sdks.support.brightcove.com/features/forensic-watermarking-with-sdks.html
-Category: Forensic Watermarking, Video Cloud, Brightcove SDKs
-Status: Released
-Type: New Doc
-
-Title: Forensic Watermarking
-Description: In this topic, you will get a high-level overview of Brightcove's Forensic Watermarking feature for Zencoder.
-Link: https://zencoder.support.brightcove.com/encoding-guides/forensic-watermarking.html
-Category: Forensic Watermarking, Zencoder
-Status: Released
-Type: New Doc
-
-Title: Forensic Watermarking Settings
-Description: This topic provides information on settings for forensic watermarking.
-Link: https://zencoder.support.brightcove.com/encoding-settings/content-protection/encoding-settings-forensic-watermarking.html
-Category: Forensic Watermarking, Zencoder
-Status: Released
-Type: New Doc
-
-Title: Publishing a Cloud Playout Channel
-Description: In this topic you will learn how to make a Cloud Playout channel part of your Beacon app. (This version for Beacon LA - NOT RELEASED)
-Link: https://beacon-help.support.brightcove.com/cloud-playout/publish-channel-beacon.html
-Category: Beacon, Cloud Playout
-Status: Internal
 Type: New Doc
 
 Major updates:
 
 Title: Managing Playlists Using the CMS API
-Description: Smart Playlists can now be created using the v2 search syntax, which allows more complex search strings
-Link: https://apis.support.brightcove.com/cms/managing-videos/managing-playlists-using-cms-api.html#Search_field
-Category: CMS API, Smart Playlists
+Description: Updated for renaming 608/708 captions
+Link: https://apis.support.brightcove.com/player-management/references/reference.html#operation/GetPlayerConfiguration
+Category: Player Configuration, Accessibility, Player Management API
 Status: Released
 Type: Major Update
 
-Title: Kollective eCDN Deployment Guide
-Description: Several updates and corrections
-Link: https://integrations.support.brightcove.com/ecdn/kollective/kollective-deployment-guide.html
-Category: eCDN Integrations
+Title: Managing Playlists Using the CMS API
+Description: Updated base URL to https://edge.api.brightcove.com/playback/v1 (now redirects all requests to the v2 version, except for customers still using v1)
+Link: https://apis.support.brightcove.com/playback/references/reference_v2.html
+Category: Playback API
 Status: Released
 Type: Major Update
 
-Title: Playback API Overview and Reference
-Description: Added config_id parameter needed for Delivery Rules
-Link: https://apis.support.brightcove.com/playback/getting-started/overview-playback-api.html and https://apis.support.brightcove.com/playback/references/reference_v2.html
-Category: Playback API, Delivery Rules
-Status: Released
-Type: Major Update
-
-Title: Managing API Authentication Credentials
-Description: Added section on updating credentials
-Link: https://apis.support.brightcove.com/general/managing-api-authentication-credentials.html
-Category: OAuth API, API Authentication
-Status: Released
-Type: Major Update
-
-Title: Adding Content to a Cloud Playout Channel
-Description: Added information on searching to find videos
-Link: https://studio.support.brightcove.com/cloud-playout/cloud-playout-add-content.html#add_videos
-Category: Cloud Playout
-Status: Released
-Type: Major Update
-
-Title: Overview: EPG API
-Description: Added note on breaking change in permissions for API authentication and how to fix it
-Link: https://apis.support.brightcove.com/cloud-playout-apis/getting-started/overview-epg-api.html
-Category: Cloud Playout
-Status: Released
-Type: Major Update
-
-Title: Brightcove Live: Best Practices
-Description: Added notes on recommendations for dedicated bandwidth to avoid Live event disruptions
-Link: https://live.support.brightcove.com/get-started/live-module-guidelines-and-best-practices.html
-Category: Live
-Status: Released
-Type: Major Update
-
-Title: Brightcove University Training Courses
-Description: Added four new training courses
-Link: https://studio.support.brightcove.com/training/brightcove-university.html
-Category: Brightcove University
+Title: Getting Notifications When Videos Are Finished
+Description: Added PHP code for simple app to handle notifications
+Link: https://zencoder.support.brightcove.com/general-information/getting-notifications-when-videos-are-finished.html
+Category: Zencoder
 Status: Released
 Type: Major Update
 
 
 Minor updates:
 
-Title: Live Redundancy
-Description: Fixed a section ID that created a bad link
-Link: https://live.support.brightcove.com/live-module/live-redundancy.html#monitoring
+Title: Known Issues: Studio and Brightcove Player
+Description: Known Live issue: Recurring events still published when inactive show 3 segments of playback
+Link: https://general.support.brightcove.com/support/known-issues-studio-brightcove-player-and-apis.html
 Category: Brightcove Live
 Status: Released
 Type: Minor Update
 
-Title: Getting Started with Brightcove Video Connect for the Drupal CMS
-Description: Added note: Brightcove will no longer support the 7.x-6.5 Drupal connector after 30 November 2021.
-Link: https://integrations.support.brightcove.com/drupal/getting-started-brightcove-video-connect-drupal-cms.html
-Category: CMS Connectors
-Status: Released
-Type: Minor Update
-
-Title: Brightcove Player Sample: Download Video Plugin and Brightcove Player Sample: Download Audio Plugin
-Description: Added notes on causes for delays in downloading the media files
-Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-download-video-plugin.html and https://player.support.brightcove.com/code-samples/brightcove-player-sample-download-audio-plugin.html
-Category: Brightcove Player Samples
+Title: Codecs and Formats
+Description: Updated to mention newer video codecs that are supported
+Link: https://zencoder.support.brightcove.com/general-information/faq-codecs-and-formats.html
+Category: Zencoder
 Status: Released
 Type: Minor Update
 
