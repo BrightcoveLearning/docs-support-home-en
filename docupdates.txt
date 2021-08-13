@@ -48,17 +48,17 @@ Type: Major Update
 
 Minor updates:
 
-Title: Known Issues: Studio and Brightcove Player
-Description: Known Live issue: Recurring events still published when inactive show 3 segments of playback
-Link: https://general.support.brightcove.com/support/known-issues-studio-brightcove-player-and-apis.html
-Category: Brightcove Live
+Title: Sample Templates for Universal Syndication
+Description: Fixed an error in one of the sample templates
+Link: https://apis.support.brightcove.com/social-syndication/getting-started/sample-templates-universal-syndication.html
+Category: Social Syndication APE
 Status: Released
 Type: Minor Update
 
-Title: Codecs and Formats
-Description: Updated to mention newer video codecs that are supported
-Link: https://zencoder.support.brightcove.com/general-information/faq-codecs-and-formats.html
-Category: Zencoder
+Title: Live API Reference
+Description: Added new ad_tracking_sample_percentage field that will be needed for coming SSAI Ad Logs
+Link: ad_tracking_sample_percentage
+Category: SSAI, Live API
 Status: Released
 Type: Minor Update
 
