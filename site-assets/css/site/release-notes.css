@@ -1,0 +1,23 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+channel {
+  margin: 2em 10em;
+}
+
+title {
+  font-size: 2em;
+  display: block;
+  margin: 1em 0;
+}
+
+item {
+  display: block;
+
+}
+
+description, link, pubDate {
+  font-size: 1rem;
+  display: block;
+}
