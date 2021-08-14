@@ -26,6 +26,7 @@ description, link, pubDate {
 link {
   color: blue;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 code {
