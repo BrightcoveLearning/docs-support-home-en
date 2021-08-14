@@ -3,7 +3,7 @@
 }
 
 channel {
-  margin: 2em 10em;
+  margin: 2em 10em 2em 10em;
 }
 
 title {
@@ -20,4 +20,5 @@ item {
 description, link, pubDate {
   font-size: 1rem;
   display: block;
+  margin-bottom: 1em;
 }
