@@ -22,3 +22,9 @@ description, link, pubDate {
   display: block;
   margin-bottom: 1em;
 }
+
+code {
+  display: inline;
+  font-family: monospace;
+  color: rgb(139, 69, 19);
+}
