@@ -7,14 +7,21 @@ channel {
 }
 
 channel title {
-  font-size: 2em;
-  display: block;
-  margin: 1em 0;
-}
+  {
+    font-size: 3.157rem;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 800;
+    letter-spacing: -1px;
+}}
 
 channel item {
   display: block;
+}
 
+channel item title {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 1em;
 }
 
 channel description, channel link, channel pubDate {
