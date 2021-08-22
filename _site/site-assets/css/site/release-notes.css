@@ -7,12 +7,11 @@ channel {
 }
 
 channel title {
-  {
     font-size: 3.157rem;
     font-family: 'Public Sans', sans-serif;
     font-weight: 800;
     letter-spacing: -1px;
-}}
+}
 
 channel item {
   display: block;
