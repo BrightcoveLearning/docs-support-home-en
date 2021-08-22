@@ -45,3 +45,7 @@ channel code {
 ul.release-notes {
   list-style: none;
 }
+
+h1.title {
+  margin-top: 1em;
+}
