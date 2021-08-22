@@ -1,5 +1,5 @@
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Public Sans', sans-serif;
 }
 
 channel {
@@ -38,6 +38,10 @@ channel link {
 
 channel code {
   display: inline;
-  font-family: monospace;
+  font-family: "Source Code Pro", monospace;
   color: rgb(139, 69, 19);
+}
+
+ul.release-notes {
+  list-style: none;
 }

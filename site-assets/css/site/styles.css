@@ -753,6 +753,13 @@ ul.menu {
     margin: 0;
     padding: 10px;
   }
+  /* release notes iframe */
+  .bcls-release-notes__frame {
+    border: none;
+    height: 100%;
+    width: 100%;
+  }
+
   /*for codepens embedded as iframes*/
   #result-iframe {
     border: 1px solid #CCCCCC;
