@@ -1,0 +1,21 @@
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      <nav class="right-side-nav" id="announcements">
+        <h6 class="toc">Announcements</h6>
+        <ul id="announcement_list" class="list-none">
+          {{ for announcements in site.data.announcement }}
+          <li>{{ announcement }}</li>
+          {{ endfor }}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<hr>
+<div class="last-updated">
+  Page last updated on {{ page.last_modified_at | date_to_string }}
+</div>
+
+

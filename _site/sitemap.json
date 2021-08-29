@@ -20,6 +20,11 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/doc-updates.html",
+      "oldURL": "/doc-updates"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/icons.html",
       "oldURL": "/icons"
   },
