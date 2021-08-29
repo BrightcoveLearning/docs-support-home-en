@@ -205,6 +205,11 @@
         - Title: Beacon Known Issues
           Description: Expanded with information about offline playback 
           Link: Beacon Classic - https://beacon.support.brightcove.com/references/known-issues.html
+          Category: Brightcove Beacon
+          Status: Released
+
+        - Title: Beacon Known Issues
+          Description: Expanded with information about offline playback 
           Link: Beacon LA - https://beacon-help.support.brightcove.com/general/known-issues.html
           Category: Brightcove Beacon
           Status: Released
@@ -300,7 +305,7 @@
           Status: Released 
 
         - Title: 'Known Issues: Studio and Brightcove Player'
-          Description: Known Live issue: Recurring events still published when inactive show 3 segments of playback
+          Description: 'Known Live issue: Recurring events still published when inactive show 3 segments of playback'
           Link: https://general.support.brightcove.com/support/known-issues-studio-brightcove-player-and-apis.html
           Category: Brightcove Live
           Status: Released

@@ -6,18 +6,18 @@
           Description: ''
           Link: 
           Category: 
-          Status: Released | Limited Availability | Internal
+          Status: Released | Limited Availability | Staging | Internal
     - type: Major updates
       docs:
         - Title: ''
           Description: ''
           Link: 
           Category: 
-          Status: Released | Limited Availability | Internal
+          Status: Released | Limited Availability | Staging | Internal
     - type: Minor updates
       docs:
         - Title: ''
           Description: ''
           Link: 
           Category: 
-          Status: Released | Limited Availability | Internal
+          Status: Released | Limited Availability | Staging | Internal
