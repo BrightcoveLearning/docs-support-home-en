@@ -1,6 +1,7 @@
 New Docs:
 
-Title: Description:https://www.gotomeet.me/RobertCrooks/learning-services
+Title: Data Sent to Analytics by the Brightcove Player
+Description: This topic provides a list of all data sent by the Brightcove Player to the Analytics system.
 Description: Added screenshot to show where forensic watermarking shows up in video properties
 Link: https://apis.support.brightcove.com/analytics/general/data-sent-from-brightcove-player.html
 Category: Analytics, Data Collection
