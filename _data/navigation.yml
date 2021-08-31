@@ -14,6 +14,36 @@
   name: Video Cloud Device SDKs
   url: 'https://apis.support.brightcove.com/index.html'
 - section:
+  name: Video Cloud Integrations
+  url: 'https://integrations.support.brightcove.com/index.html'
+- section:
+  name: Video Cloud General Information
+  url: 'https://general.support.brightcove.com/index.html'
+- section:
+  name: Brightcove Beacon
+  url: 'https://beacon.support.brightcove.com/index.html'
+- section:
+  name: Brightcove Live
+  url: 'https://live.support.brightcove.com/index.html'
+- section:
+  name: Zencoder
+  url: 'https://zencoder.support.brightcove.com/index.html'
+- section:
+  name: Campaign
+  url: 'https://campaign.support.brightcove.com/index.html'
+- section:
+  name: Engage
+  url: 'https://engage.support.brightcove.com/index.html'
+- section:
+  name: Gallery
+  url: 'https://gallery.support.brightcove.com/index.html'
+- section:
+  name: Social
+  url: 'https://studio.support.brightcove.com/social/index.html'
+- section:
+  name: SSAI
+  url: 'https://ssai.support.brightcove.com/social/index.html'
+- section:
   name: Training
   url: /training/index.html
   docs:

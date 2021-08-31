@@ -20,6 +20,11 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/doc-updates-internal.html",
+      "oldURL": "/doc-updates-internal"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/doc-updates.html",
       "oldURL": "/doc-updates"
   },
@@ -45,12 +50,12 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/",
+      "newURL": "https://support.brightcove.com/support/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://support.brightcove.com/support/",
+      "newURL": "https://support.brightcove.com/",
       "oldURL": "/index"
   },
 
