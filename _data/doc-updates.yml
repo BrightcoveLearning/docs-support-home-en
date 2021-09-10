@@ -1,3 +1,61 @@
+- date: 10-September-2021
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'Managing Custom Fields'
+          Description: 'This topic explains how to use the CMS API to manage the custom fields for an account. NOT YET RELEASED'
+          Link: https://apis.support.brightcove.com/cms/managing-videos/managing-custom-fields.html
+          Category: CMS API, Custom Fields
+          Status: Staging
+        - Title: 'Requesting Auto Captions'
+          Description: 'This topic explains how to request the generation of captions and transcriptions from an audio track in your video using the Dynamic Ingest API. NOT YET RELEASED'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/requesting-auto-captions.html
+          Category: Dynamic Ingest API
+          Status: Staging
+        - Title: 'Auto Captions'
+          Description: 'This topic contains details for encoding settings related to automatically generating captions for your videos when they are processed. NOT YET RELEASED'
+          Link: https://apis.support.brightcove.com/cms/managing-videos/managing-custom-fields.html
+          Category: Zencoder
+          Status: Staging
+        - Title: 'Related Content'
+          Description: 'In this topic, you will learn what related content is and where it is displayed.'
+          Link: https://beacon.support.brightcove.com/references/related-content.html
+          Category: Brightcove Beacon
+          Status: Released
+    - type: Major updates
+      docs:
+        - Title: 'Video SEO Schema Generator Plugin'
+          Description: 'Added new options for transcript'
+          Link: https://player.support.brightcove.com/plugins/video-seo-schema-generator-plugin.html#Plugin_options
+          Category: Brightcove Player
+          Status: Released
+        - Title: 'Video Cloud SSAI API'
+          Description: 'Added ad_tracking_sample_percentage field to enable logging'
+          Link: https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html#Create_an_ad_configuration
+          Category: SSAI
+          Status: Released
+        - Title: 'Dynamic API Reference'
+          Description: 'Added auto captions fields. NOT YET RELEASED'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/references/reference-stage.html
+          Category: Dynamic Ingest API
+          Status: Staging
+        - Title: 'Rate Control Settings'
+          Description: 'Added note to indicate that using quality rather than bitrate settings significantly reduces processing time.'
+          Link: https://zencoder.support.brightcove.com/encoding-settings/general-audio-video/encoding-settings-rate-control.html#quality
+          Category: Zencoder
+          Status: Released
+        - Title: 'Brightcove Player Sample: Download Video Plugin'
+          Description: 'Added percentage downloaded and activity indicator to the download'
+          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-download-video-plugin.html
+          Category: Brightcove Player
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Introducing Pages'
+          Description: 'Added info on using blocks in combination on a single page'
+          Link: https://beacon.support.brightcove.com/using-brightcove-beacon/introducing-pages.html
+          Category: Brightcove Beacon
+          Status: Released
 - date: 3-September-2021
   types:
     - type: New Docs
