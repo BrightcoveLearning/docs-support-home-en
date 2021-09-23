@@ -21,8 +21,8 @@ var BCLS_keep_language = ( function (window, document) {
     
     for (i = 0; i < iMax; i++) {
       currentLink = all_links[i];
-      hrefValue = currentLink.split('//');
       currentLinkValue = currentLink.getAttribute('href');
+      hrefValue = currentLinkValue.split('//');
             
       if (hrefValue.indexOf('support.brightcove.com') > 0) {
           newHref = hrefValue[0] + '//' + lang + '.' + hrefValue[1];
