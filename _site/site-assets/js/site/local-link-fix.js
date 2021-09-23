@@ -24,10 +24,10 @@ var BCLS_keep_language = ( function (window, document) {
       currentLinkValue = currentLink.getAttribute('href');
       hrefValue = currentLinkValue.split('//');
             
-      if (hrefValue.indexOf('support.brightcove.com') > 0) {
+      if (currentLinkValue.indexOf('support.brightcove.com') > 0) {
           newHref = hrefValue[0] + '//' + lang + '.' + hrefValue[1];
           // console.log('newHref remote', newHref);
-          all_links[i].setAttribute('href', newHref);
+          currentLink.setAttribute('href', newHref);
       }
     }
       // fix site navigator
