@@ -1,3 +1,57 @@
+- date: 1-October-2021
+  types:
+    - type: New Docs
+      docs:
+
+    - type: Major updates
+      docs:
+        - Title: 'Automatically Generating Captions for Videos'
+          Description: 'Added the currently supported languages'
+          Link: https://studio.support.brightcove.com/media/generating-captions-videos.html
+          Category: Video Cloud, Captions
+          Status: Released
+        - Title: 'Creating a JSON Web Token (JWT)'
+          Description: 'Added information on how to create a non-expiring JWT (with a warning that this is not recommended)'
+          Link: https://general.support.brightcove.com/developer/create-json-web-token.html
+          Category: Playback Restrictions, JWT
+          Status: Released
+        - Title: 'Platform APIs Documentation (Japanese)'
+          Description: 'Deployed updated translations'
+          Link: https://ja.apis.support.brightcove.com/
+          Category: Localized documentation
+          Status: Released
+        - Title: 'Video Cloud Studio Documentation (Japanese)'
+          Description: 'Deployed updated translations'
+          Link: https://ja.studio.support.brightcove.com/
+          Category: Localized documentation
+          Status: Released
+        - Title: 'Brightcove Player Documentation (Japanese)'
+          Description: 'Deployed updated translations'
+          Link: https://ja.player.support.brightcove.com/
+          Category: Localized documentation
+          Status: Released
+        - Title: 'Brightcove Live Documentation (Japanese)'
+          Description: 'Deployed updated translations'
+          Link: https://live.player.support.brightcove.com/
+          Category: Localized documentation
+          Status: Released
+        - Title: 'Configuring Server-Side Ad Settings'
+          Description: 'Added UI option for Player Enhancements with Live SSAI'
+          Link: https://studio.support.brightcove.com/admin/configuring-server-side-ad-settings.html#live
+          Category: Video Cloud, Live, SSAI
+          Status: Released
+        - Title: 'Configuring Server-Side Ad Settings'
+          Description: 'Added UI option for Player Enhancements with Live SSAI'
+          Link: https://beacon.support.brightcove.com/monetization/ssai/configuring-server-side-ad-settings.html#live
+          Category: Beacon, Live, SSAI
+          Status: Released
+        - Title: 'Brightcove AirPlay Plugin'
+          Description: 'Added How it works and Implement using Studio sections'
+          Link: https://player.support.brightcove.com/plugins/airplay-plugin.html
+          Category: Brightcove Player
+          Status: Released
+
+
 - date: 24-September-2021
   types:
     - type: New Docs
