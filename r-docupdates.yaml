@@ -34,3 +34,18 @@
           Link: https://apis.support.brightcove.com/player-management/guides/player-configuration-guide.html#iprestrictions
           Category: Player Management API, Playback API, IP Restrictions
           Status: Released
+        - Title: 'Overview: Cloud Playout Channels API'
+          Description: 'Added new section on getting As-Run Logs'
+          Link: https://apis.support.brightcove.com/cloud-playout-apis/getting-started/overview-channel-api.html#as_run_log
+          Category: Cloud Playout, Channels API
+          Status: Released
+        - Title: 'Channels API Reference'
+          Description: 'Added new endpoint for getting As-Run Logs'
+          Link: https://apis.support.brightcove.com/cloud-playout-apis/references/reference-channels.html#operation/GetAsRunLogs
+          Category: Cloud Playout, Channels API
+          Status: Released
+        - Title: 'Brightcove Gallery Documentation (Japanese)'
+          Description: 'Updated the localized site'
+          Link: https://ja.gallery.support.brightcove.com/index.html
+          Category: Gallery, Localized documentation
+          Status: Released
