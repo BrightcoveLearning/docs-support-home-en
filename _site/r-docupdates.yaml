@@ -44,8 +44,50 @@
           Link: https://apis.support.brightcove.com/cloud-playout-apis/references/reference-channels.html#operation/GetAsRunLogs
           Category: Cloud Playout, Channels API
           Status: Released
+        - Title: 'Video Report Generator'
+          Description: 'Removed the reporting of total renditions size from the sample, as rendition size information is not available for Dynamic Delivery videos.'
+          Link: https://apis.support.brightcove.com/cms/code-samples/cms-api-sample-video-report-generator.html
+          Category: CMS API, Sample Apps
+          Status: Released
+        - Title: 'Brightcove Documentation home page (Japanese)'
+          Description: 'Updated the localized site'
+          Link: https://ja.support.brightcove.com/index.html
+          Category: Gallery, Localized documentation
+          Status: Released
         - Title: 'Brightcove Gallery Documentation (Japanese)'
           Description: 'Updated the localized site'
           Link: https://ja.gallery.support.brightcove.com/index.html
           Category: Gallery, Localized documentation
+          Status: Released
+        - Title: 'Brightcove SDKs Documentation (Japanese)'
+          Description: 'Updated the localized site'
+          Link: https://ja.sdks.support.brightcove.com/index.html
+          Category: Gallery, Localized documentation
+          Status: Released
+        - Title: 'Brightcove SSAI Documentation (Japanese)'
+          Description: 'Updated the localized site'
+          Link: https://ja.ssai.support.brightcove.com/index.html
+          Category: Gallery, Localized documentation
+          Status: Released
+        - Title: 'Video Cloud General Documentation (Japanese)'
+          Description: 'Updated the localized site'
+          Link: https://ja.general.support.brightcove.com/index.html
+          Category: Gallery, Localized documentation
+          Status: Released
+        - Title: 'Video Cloud Integrations and Connectors Documentation (Japanese)'
+          Description: 'Updated the localized site'
+          Link: https://ja.integrations.support.brightcove.com/index.html
+          Category: Gallery, Localized documentation
+          Status: Released
+    - type: 'Minor Updates'
+      docs:
+        - Title: 'Installing the Connector for Teams'
+          Description: 'Updated screen shots to improve the quality'
+          Link: https://integrations.support.brightcove.com/teams/installation.html
+          Category: Video Cloud Integrations
+          Status: Released
+        - Title: 'Using the Connector for Microsoft Teams'
+          Description: 'Updated screen shots to improve the quality'
+          Link: https://integrations.support.brightcove.com/teams/using.html
+          Category: Video Cloud Integrations
           Status: Released
