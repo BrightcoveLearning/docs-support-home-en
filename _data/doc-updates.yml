@@ -1,3 +1,108 @@
+- date: 15-August-2021
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'SSAI Ad Tacking Log'
+          Description: 'SSAI Ad tracking log is a new feature that looks to provide details of how SSAI ads are working. This feature is for VOD and Live.'
+          Link: https://ssai.support.brightcove.com/getting-started/video-cloud-ssai-ad-logs.html
+          Category: SSAI
+          Status: Released
+    - type: Major updates
+      docs:
+        - Title: 'Overview: Dimensions, Fields, and Parameters'
+          Description: 'Updated the tool for checking dimension combinations with many new supported combinations'
+          Link: https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html#metrics
+          Category: Analytics API
+          Status: Released
+        - Title: 'Beacon Documentation (Japanese)'
+          Description: 'Deployed updated translations'
+          Link: https://ja.beacon.support.brightcove.com/
+          Category: Localized documentation
+          Status: Released
+        - Title: 'Campaign Documentation (Japanese)'
+          Description: 'Deployed updated translations'
+          Link: https://ja.campaign.support.brightcove.com/
+          Category: Localized documentation
+          Status: Released
+        - Title: 'Engage Documentation (Japanese)'
+          Description: 'Deployed updated translations'
+          Link: https://ja.engage.support.brightcove.com/
+          Category: Localized documentation
+          Status: Released
+        - Title: 'Social Documentation (Japanese)'
+          Description: 'Deployed updated translations'
+          Link: https://ja.social.support.brightcove.com/
+          Category: Localized documentation
+          Status: Released
+        - Title: 'Zencoder Documentation (Japanese)'
+          Description: 'Deployed updated translations'
+          Link: https://ja.zencoder.support.brightcove.com/
+          Category: Localized documentation
+          Status: Released
+        - Title: 'Implementing Device Limits'
+          Description: 'Added endpoint for getting all devices within an account'
+          Link: https://apis.support.brightcove.com/playback-restrictions/guides/device-limits.html 
+          Category: Playback Restrictions
+          Status: Released
+        - Title: 'Devices API Reference'
+          Description: 'Added endpoint for getting all devices within an account'
+          Link: https://apis.support.brightcove.com/playback-restrictions/references/devices-api/reference.html 
+          Category: Playback Restrictions
+          Status: Released
+        - Title: 'Submitting New Apps to the Android Store'
+          Description: 'Added section for selecting countries and regions for your app'
+          Link: https://beacon-help.support.brightcove.com/publishing-apps/android/submitting-to-android.html 
+          Category: Brightcove Beacon
+          Status: Released
+        - Title: 'Submitting New Apps to the Android Store'
+          Description: 'Added section for selecting countries and regions for your app'
+          Link: https://beacon.support.brightcove.com/creating-your-apps/android/submitting-to-android.html 
+          Category: Brightcove Beacon
+          Status: Released
+
+    - type: Minor updates
+      docs:
+        - Title: 'The Brightcove Native SDKs'
+          Description: 'Added support for Android 11'
+          Link: https://sdks.support.brightcove.com/getting-started/brightcove-native-player-sdks.html   
+          Category: Native SDK for Android
+          Status: Released
+        - Title: 'Brightcove Native SDKs Feature Support'
+          Description: 'Added support for ExoPlayer 2.14.2'
+          Link: https://sdks.support.brightcove.com/getting-started/brightcove-native-sdks-feature-support.html    
+          Category: Native SDK for Android
+          Status: Released
+        - Title: 'Implementing Delivery Rules'
+          Description: 'Fixed text for response body for Actions'
+          Link: https://apis.support.brightcove.com/delivery-rules/getting-started/implementing-delivery-rules.html     
+          Category: Delivery Rules
+          Status: Released
+        - Title: 'Brightcove Native SDK for Android Release Notes'
+          Description: 'Native SDK for Android release 6.17.1'
+          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html      
+          Category: Native SDK for Android
+          Status: Released
+        - Title: 'Brightcove Player SDK for Android: Previous SDK information'
+          Description: 'Native SDK for Android release 6.17.1'
+          Link: https://sdks.support.brightcove.com/android/resources/brightcove-player-sdk-android-previous-sdk-information.html      
+          Category: Native SDK for Android
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for Android'
+          Description: 'Native SDK for Android release 6.17.1'
+          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html       
+          Category: Native SDK for Android
+          Status: Released
+        - Title: 'Creating a Video Clip Using the Live Module'
+          Description: 'Added info about using Create clip using fast VOD pipeline option'
+          Link: https://live.support.brightcove.com/live-module/creating-video-clip-using-live-module.html
+          Category: Live
+          Status: Released
+        - Title: 'Authentication Using OAuth'
+          Description: 'In this topic, you will learn how to configure the integration of Brightcove Beacon with an OIDC provider. Auth0 is used as an example OIDC provider.'
+          Link: https://beacon.support.brightcove.com/using-brightcove-beacon/authentication-using-oauth.html
+          Category: Brightcove Beacon
+          Status: Released 
+
 - date: 8-October-2021
   types:
     - type: New Docs
