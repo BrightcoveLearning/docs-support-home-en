@@ -2,11 +2,11 @@
   types:
     - type: New Docs
       docs:
-        - Title: ''
-          Description: ''
-          Link: 
-          Category: 
-          Status: Released | Limited Availability | Staging | Internal
+        - Title: 'SSAI Ad tracking log'
+          Description: 'SSAI Ad tracking log is a new feature that looks to provide details of how SSAI ads are working. This feature is for VOD and Live.'
+          Link: https://ssai.support.brightcove.com/getting-started/video-cloud-ssai-ad-logs.html
+          Category: SSAI
+          Status: Released
     - type: Major updates
       docs:
         - Title: 'Overview: Dimensions, Fields, and Parameters'
@@ -17,6 +17,26 @@
         - Title: 'Beacon Documentation (Japanese)'
           Description: 'Deployed updated translations'
           Link: https://ja.beacon.support.brightcove.com/
+          Category: Localized documentation
+          Status: Released
+        - Title: 'Campaign Documentation (Japanese)'
+          Description: 'Deployed updated translations'
+          Link: https://ja.campaign.support.brightcove.com/
+          Category: Localized documentation
+          Status: Released
+        - Title: 'Engage Documentation (Japanese)'
+          Description: 'Deployed updated translations'
+          Link: https://ja.engage.support.brightcove.com/
+          Category: Localized documentation
+          Status: Released
+        - Title: 'Social Documentation (Japanese)'
+          Description: 'Deployed updated translations'
+          Link: https://ja.social.support.brightcove.com/
+          Category: Localized documentation
+          Status: Released
+        - Title: 'Zencoder Documentation (Japanese)'
+          Description: 'Deployed updated translations'
+          Link: https://ja.zencoder.support.brightcove.com/
           Category: Localized documentation
           Status: Released
     - type: Minor updates
