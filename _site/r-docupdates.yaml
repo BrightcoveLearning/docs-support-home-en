@@ -2,22 +2,27 @@
   types:
     - type: New Docs
       docs:
-        - Title: ''
-          Description: ''
-          Link: 
-          Category: 
-          Status: Released | Limited Availability | Staging | Internal
+        - Title: 'DNS Setup for the Beacon Web App'
+          Description: 'This topic explains steps that are required for setting up the Beacon Web App'
+          Link: https://beacon.support.brightcove.com/using-brightcove-beacon/setup-beacon-web-app.html
+          Category: Beacon, Beacon Web App
+          Status: Released
     - type: Major updates
       docs:
-        - Title: ''
-          Description: ''
-          Link: 
-          Category: 
-          Status: Released | Limited Availability | Staging | Internal
+        - Title: 'Live API Reference'
+          Description: 'Added 2 new endpoints use to activate or deactivate SEP jobs in a redundant group'
+          Link: https://apis.support.brightcove.com/live-api/references/reference.html#tag/Redundant-Groups
+          Category: Live API, SEP, Redundant Groups
+          Status: Released
     - type: Minor updates
       docs:
-        - Title: ''
-          Description: ''
-          Link: 
-          Category: 
-          Status: Released | Limited Availability | Staging | Internal
+        - Title: '360°/VR Video Plugin'
+          Description: 'Added note that native HLS captions will not be visible in Safari when this plugin is used'
+          Link: https://player.support.brightcove.com/plugins/360degvr-video-plugin.html
+          Category: Player plugins
+          Status: Released
+        - Title: 'Creating a Video Clip Using the Live Module'
+          Description: 'Rewrote sentence on using fast VOD pipeline to clarify that this option creates one segment-accurate rendition, which is replaced by a full set of frame-accurate renditions when they are ready'
+          Link: https://player.support.brightcove.com/plugins/360degvr-video-plugin.html
+          Category: Player plugins
+          Status: Released
