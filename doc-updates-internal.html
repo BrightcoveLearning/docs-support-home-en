@@ -14,19 +14,17 @@ layout: staging
     {% for type in item.types %}
       <h3>{{ type.type }}</h3>
       {% if type.docs %}
-      <ul style="list-style: none;">
         {% for doc in type.docs %}
-          <li><strong>Title:</strong> {{ doc.Title }}</li>
-          <li><strong>Description:</strong> {{ doc.Description }}</li>
-          <li><strong>Link:</strong> <a href="{{ doc.Link }}">{{ doc.Link }}</a></li>
-          <li><strong>Category:</strong> {{ doc.Category }}</li>
-          <li style="margin-bottom: 1em;"><strong>Status:</strong> {{ doc.Status }}</li>
+          <strong>Title:</strong> {{ doc.Title }}<br>
+          <strong>Description:</strong> {{ doc.Description }}<br>
+          <strong>Link:</strong> <a href="{{ doc.Link }}">{{ doc.Link }}</a><br>
+          <strong>Category:</strong> {{ doc.Category }}<br>
+          <strong>Status:</strong> {{ doc.Status }}<br>
+          <hr>
         {% endfor %}
-      </ul>
       {% else %}
-      <ul style="list-style: none;">
-          <li style="margin-bottom: 1em;">No {{ type.type }}</li>
-      </ul>
+          No {{ type.type }}
+          hr<br>
       {% endif %}
     {% endfor %}
   </section>
