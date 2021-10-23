@@ -21,3 +21,8 @@
           Link: https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-installation.html
           Category: Integrations, AEM Connector
           Status: Released
+        - Title: 'Adobe-AEM-Brightcove Connector: Overview'
+          Description: 'Added a note indicating that an onboarding package to assist with the initial installation and configuration of the connector is strongly encouraged'
+          Link: https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-overview.html
+          Category: Integrations, AEM Connector
+          Status: Released
