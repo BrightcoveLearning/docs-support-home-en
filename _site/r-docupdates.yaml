@@ -14,6 +14,11 @@
           Link: https://integrations.support.brightcove.com/teams/installation.html
           Category: Integrations, Microsoft Teams Connector
           Status: Released
+        - Title: 'Using Live Redundancy'
+          Description: 'Added several notes on the necessity of republishing the player with the new video ID after adding a backup stream and on the best regions to use for the primary and backup streams'
+          Link: https://live.support.brightcove.com/live-module/live-redundancy.html
+          Category: Live, Redundancy
+          Status: Released
     - type: Minor updates
       docs:
         - Title: 'Adobe-AEM-Brightcove Connector: Installation'
