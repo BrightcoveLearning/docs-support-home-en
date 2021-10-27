@@ -2,11 +2,11 @@
   types:
     - type: New Docs
       docs:
-        - Title: ''
-          Description: ''
+        - Title: 'Dimension: Viewer'
+          Description: 'In this topic, you will learn about the Analytics API viewer dimension. The viewer dimension provides analytics by viewer. Only available if the account has been enabled for viewer analytics.'
           Link: 
           Category: 
-          Status: Released | Limited Availability | Staging | Internal
+          Status: Released
     - type: Major updates
       docs:
         - Title: 'Installing the Connector for Microsoft Teams'
