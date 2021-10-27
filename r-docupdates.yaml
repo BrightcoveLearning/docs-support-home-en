@@ -46,3 +46,8 @@
           Link: https://sdks.support.brightcove.com/android/analytics/sending-brightcove-analytics-native-sdk-android.html#Customize_properties
           Category: Android SDK
           Status: Released
+        - Title: 'Viewing Billing Information'
+          Description: 'Added a note on how and when data gets updated'
+          Link: https://studio.support.brightcove.com/admin/viewing-billing-information.html
+          Category: Studio, Admin, Billing
+          Status: Released
