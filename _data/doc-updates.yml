@@ -4,8 +4,8 @@
       docs:
         - Title: 'Dimension: Viewer'
           Description: 'In this topic, you will learn about the Analytics API viewer dimension. The viewer dimension provides analytics by viewer. Only available if the account has been enabled for viewer analytics.'
-          Link:
-          Category:
+          Link: https://apis.support.brightcove.com/analytics/dimension-guides/dimension-viewer.html
+          Category: Analytics API
           Status: Released
         - Title: 'Open Measurement for Server-Side Ads (SSAI) and Brightcove Player'
           Description: 'In this topic, you will learn how to use the iab Open Measurement SDK with Brightcove Player’s Server-Side Ad Insertion (SSAI) plugin.'
