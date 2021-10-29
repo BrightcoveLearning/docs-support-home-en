@@ -9,11 +9,11 @@
           Status: Released | Limited Availability | Staging | Internal
     - type: Major updates
       docs:
-        - Title: ''
-          Description: ''
-          Link: 
-          Category: 
-          Status: Released | Limited Availability | Staging | Internal
+        - Title: 'Transmuxing Guide'
+          Description: 'Added section on common video resolutions.'
+          Link: https://zencoder.support.brightcove.com/encoding-guides/creating-mp4-and-hls-outputs-together.html#video_resolutions
+          Category: Zencoder
+          Status: Released
     - type: Minor updates
       docs:
         - Title: ''
