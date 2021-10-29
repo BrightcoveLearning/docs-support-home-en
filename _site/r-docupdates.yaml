@@ -2,11 +2,11 @@
   types:
     - type: New Docs
       docs:
-        - Title: ''
-          Description: ''
+        - Title: 'Dimension: Viewer'
+          Description: 'In this topic, you will learn about the Analytics API viewer dimension. The viewer dimension provides analytics by viewer. Only available if the account has been enabled for viewer analytics.'
           Link: 
           Category: 
-          Status: Released | Limited Availability | Staging | Internal
+          Status: Released
     - type: Major updates
       docs:
         - Title: 'Installing the Connector for Microsoft Teams'
@@ -19,6 +19,11 @@
           Link: https://live.support.brightcove.com/live-module/live-redundancy.html
           Category: Live, Redundancy
           Status: Released
+        - Title: 'Live API Reference'
+          Description: 'Added the srt_config.latency field to adjust latency for the live steam.'
+          Link: https://apis.support.brightcove.com/live-api/references/reference.html#operation/CreateALiveJob
+          Category: Live
+          Status: Released
     - type: Minor updates
       docs:
         - Title: 'Adobe-AEM-Brightcove Connector: Installation'
@@ -30,4 +35,19 @@
           Description: 'Added a note indicating that an onboarding package to assist with the initial installation and configuration of the connector is strongly encouraged'
           Link: https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-overview.html
           Category: Integrations, AEM Connector
+          Status: Released
+        - Title: 'Sending Brightcove Analytics from the Native SDK for iOS'
+          Description: 'Added to sample code to show how to send a user id'
+          Link: https://sdks.support.brightcove.com/ios/analytics/sending-brightcove-analytics-native-sdk-ios.html#Customize_properties
+          Category: iOS SDK
+          Status: Released
+        - Title: 'Sending Brightcove Analytics from the Native SDK for Android'
+          Description: 'Added to sample code to show how to send a user id'
+          Link: https://sdks.support.brightcove.com/android/analytics/sending-brightcove-analytics-native-sdk-android.html#Customize_properties
+          Category: Android SDK
+          Status: Released
+        - Title: 'Viewing Billing Information'
+          Description: 'Added a note on how and when data gets updated'
+          Link: https://studio.support.brightcove.com/admin/viewing-billing-information.html
+          Category: Studio, Admin, Billing
           Status: Released
