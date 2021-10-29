@@ -11,6 +11,7 @@ layout: staging
   {% for item in site.data.doc-updates %}
   <section class="bcls-section">
     <h2 id="{{ item.date | replace: "-", "_" }}">{{ item.date }}</h2>
+    <hr>
     {% for type in item.types %}
       <h3>{{ type.type }}</h3>
       {% if type.docs %}
