@@ -13,6 +13,10 @@
           Description: 'Added support for In-Page Experiences'
           Link: https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-using-connector.html
           Category: Integrations, CMS Connectors
+        - Title: 'Transmuxing Guide'
+          Description: 'Added section on common video resolutions.'
+          Link: https://zencoder.support.brightcove.com/encoding-guides/creating-mp4-and-hls-outputs-together.html#video_resolutions
+          Category: Zencoder
           Status: Released
     - type: Minor updates
       docs:
