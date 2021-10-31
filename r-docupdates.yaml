@@ -9,11 +9,11 @@
           Status: Released | Limited Availability | Staging | Internal
     - type: Major updates
       docs:
-        - Title: ''
-          Description: ''
-          Link: 
-          Category: 
-          Status: Released | Limited Availability | Staging | Internal
+        - Title: 'Adobe-AEM-Brightcove Connector: Using the Connector'
+          Description: 'Added support for In-Page Experiences'
+          Link: https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-using-connector.html
+          Category: Integrations, CMS Connectors
+          Status: Released
     - type: Minor updates
       docs:
         - Title: ''
