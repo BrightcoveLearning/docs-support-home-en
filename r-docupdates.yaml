@@ -18,10 +18,15 @@
           Link: https://zencoder.support.brightcove.com/encoding-guides/creating-mp4-and-hls-outputs-together.html#video_resolutions
           Category: Zencoder
           Status: Released
+        - Title: 'Managing Credentials for the Live API'
+          Description: 'Added section on setting up credentials for Video Cloud.'
+          Link: https://apis.support.brightcove.com/live-api/guides/managing-credentials-live-api.html
+          Category: Live
+          Status: Released
     - type: Minor updates
       docs:
-        - Title: ''
-          Description: ''
-          Link: 
-          Category: 
-          Status: Released | Limited Availability | Staging | Internal
+        - Title: 'CMS API Reference'
+          Description: 'Corrected a sample response'
+          Link: https://apis.support.brightcove.com/cms/references/reference.html#operation/GetClearVideo
+          Category: CMS API Clear Video
+          Status: Released
