@@ -13,6 +13,10 @@
           Description: 'Added support for In-Page Experiences'
           Link: https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-using-connector.html
           Category: Integrations, CMS Connectors
+        - Title: 'Getting Started with Brightcove Video Connect for Adobe Experience Manager'
+          Description: 'Added notes to clarify that versions 5.6 and 5.7 are identical in terms of features, differing only in that 5.6 is for on-premise/managed installations of AEM while 5.7 is for the cloud version'
+          Link: https://integrations.support.brightcove.com/adobe/getting-started-brightcove-video-connect-adobe-experience-manager.html
+          Category: Integrations, CMS Connectors
         - Title: 'Transmuxing Guide'
           Description: 'Added section on common video resolutions.'
           Link: https://zencoder.support.brightcove.com/encoding-guides/creating-mp4-and-hls-outputs-together.html#video_resolutions
