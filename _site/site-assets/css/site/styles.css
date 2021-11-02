@@ -107,6 +107,23 @@ div.container {
   min-width: 100%;
 }
 
+/* landing page for site section with sub-sections */
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-container div {
+  padding: 1em;
+}
+
+.flex-container div li {
+  margin-left: -1.5em;
+}
+
 /* send to new tab/page (for iframe) */
 
 #open_new_tab {
@@ -455,7 +472,6 @@ figcaption {
   height: 28px; */
   margin-left: -2.5em;
 }
-
 
 .bcls-aside--warning {
   background-color: #ebd8d0;
