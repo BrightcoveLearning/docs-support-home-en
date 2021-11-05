@@ -1,3 +1,63 @@
+- date: 5-November-2021
+  types:
+    - type: Major updates
+      docs:
+        - Title: 'Adobe-AEM-Brightcove Connector: Using the Connector'
+          Description: 'Added support for In-Page Experiences'
+          Link: https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-using-connector.html
+          Category: Integrations, CMS Connectors
+        - Title: 'Getting Started with Brightcove Video Connect for Adobe Experience Manager'
+          Description: 'Added notes to clarify that versions 5.6 and 5.7 are identical in terms of features, differing only in that 5.6 is for on-premise/managed installations of AEM while 5.7 is for the cloud version'
+          Link: https://integrations.support.brightcove.com/adobe/getting-started-brightcove-video-connect-adobe-experience-manager.html
+          Category: Integrations, CMS Connectors
+        - Title: 'Transmuxing Guide'
+          Description: 'Added section on common video resolutions.'
+          Link: https://zencoder.support.brightcove.com/encoding-guides/creating-mp4-and-hls-outputs-together.html#video_resolutions
+          Category: Zencoder
+          Status: Released
+        - Title: 'Managing Credentials for the Live API'
+          Description: 'Added section on setting up credentials for Video Cloud.'
+          Link: https://apis.support.brightcove.com/live-api/guides/managing-credentials-live-api.html
+          Category: Live
+          Status: Released
+        - Title: 'Receiving In-App Purchase Notifications'
+          Description: 'Updated based on feedback, including the diagram'
+          Link: https://beacon.support.brightcove.com/monetization/general/receive-iap-notifications.html
+          Category: Brightcove Beacon
+          Status: Released
+        - Title: 'Brightcove Player Sample: Dynamic Call to Action'
+          Description: 'Added an overview section with an image showing each CTA'
+          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-dynamic-call-action.html
+          Category: Brightcove Player
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'CMS API Reference'
+          Description: 'Corrected a sample response'
+          Link: https://apis.support.brightcove.com/cms/references/reference.html#operation/GetClearVideo
+          Category: CMS API Clear Video
+          Status: Released
+        - Title: 'Static URL Delivery'
+          Description: 'Added note that MP4 renditions are needed when using the MP4 endpoints'
+          Link: https://apis.support.brightcove.com/playback/guides/static-url-delivery.html#Implementing_Static_URLs
+          Category: Playback API
+          Status: Released
+        - Title: 'Open Measurement for Server-Side Ads (SSAI) and Brightcove Player'
+          Description: 'Updated text to say SSAI plugin instead of OM plugin'
+          Link: https://player.support.brightcove.com/plugins/open-measurement-with-ssai.html
+          Category: Brightcove Player
+          Status: Released
+        - Title: 'Creating and Managing Live Events using the Live Module'
+          Description: ‘Clarified explanation on using AES encryption '
+          Link: https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#advanced
+          Category: Live
+          Status: Released
+        - Title: 'Advertising with the IMA3 Plugin'
+          Description: 'Added info on omidAccessModeRules'
+          Link: https://player.support.brightcove.com/plugins/advertising-ima3-plugin.html#omidAccessModeRules
+          Category: Brightcove Player
+          Status: Released
+
 - date: 29-October-2021
   types:
     - type: New Docs
