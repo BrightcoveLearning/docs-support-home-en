@@ -1,36 +1,29 @@
-- date: 5-November-2021
+- date: 12-November-2021
   types:
     - type: New Docs
+      docs:
+        - Title: 'Fallback HDCP'
+          Description: 'Use HDCP-protected content to block streaming on unauthorized devices, with a standard definition fallback for devices that do not support HDCP.'
+          Link: https://apis.support.brightcove.com/playback-restrictions/guides/fallback-hdcp.html
+          Category: Video Cloud Playback Restrictions
+          Product_Update: true
+          Feature: 'Fallback HDCP'
+          Status: Released
+    - type: Major updates
       docs:
         - Title: ''
           Description: ''
           Link: 
           Category: 
+          Product_Update: true | false
+          Feature: '(leave blank if Product_Update is false)'
           Status: Released | Limited Availability | Staging | Internal
-    - type: Major updates
-      docs:
-        - Title: 'Adobe-AEM-Brightcove Connector: Using the Connector'
-          Description: 'Added support for In-Page Experiences'
-          Link: https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-using-connector.html
-          Category: Integrations, CMS Connectors
-        - Title: 'Getting Started with Brightcove Video Connect for Adobe Experience Manager'
-          Description: 'Added notes to clarify that versions 5.6 and 5.7 are identical in terms of features, differing only in that 5.6 is for on-premise/managed installations of AEM while 5.7 is for the cloud version'
-          Link: https://integrations.support.brightcove.com/adobe/getting-started-brightcove-video-connect-adobe-experience-manager.html
-          Category: Integrations, CMS Connectors
-        - Title: 'Transmuxing Guide'
-          Description: 'Added section on common video resolutions.'
-          Link: https://zencoder.support.brightcove.com/encoding-guides/creating-mp4-and-hls-outputs-together.html#video_resolutions
-          Category: Zencoder
-          Status: Released
-        - Title: 'Managing Credentials for the Live API'
-          Description: 'Added section on setting up credentials for Video Cloud.'
-          Link: https://apis.support.brightcove.com/live-api/guides/managing-credentials-live-api.html
-          Category: Live
-          Status: Released
     - type: Minor updates
       docs:
-        - Title: 'CMS API Reference'
-          Description: 'Corrected a sample response'
-          Link: https://apis.support.brightcove.com/cms/references/reference.html#operation/GetClearVideo
-          Category: CMS API Clear Video
-          Status: Released
+        - Title: ''
+          Description: ''
+          Link: 
+          Category: 
+          Product_Update: true | false
+          Feature: '(leave blank if Product_Update is false)'
+          Status: Released | Limited Availability | Staging | Internal
