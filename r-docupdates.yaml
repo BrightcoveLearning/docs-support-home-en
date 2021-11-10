@@ -11,13 +11,20 @@
           Status: Released
     - type: Major updates
       docs:
-        - Title: ''
-          Description: ''
-          Link: 
-          Category: 
-          Product_Update: true | false
-          Feature: '(leave blank if Product_Update is false)'
-          Status: Released | Limited Availability | Staging | Internal
+        - Title: 'Auto Captions'
+          Description: 'Added new include_transcription_json and transcription_filename fields'
+          Link: https://zencoder.support.brightcove.com/encoding-settings/assets/encoding-settings-auto-captions.html
+          Category: Zencoder
+          Product_Update: true 
+          Feature: 'Auto Captions'
+          Status: Released
+        - Title: 'Zencoder API Reference'
+          Description: 'Added new include_transcription_json and transcription_filename fields'
+          Link: https://zencoder.support.brightcove.com/references/reference.html
+          Category: Zencoder
+          Product_Update: true 
+          Feature: 'Auto Captions'
+          Status: Released
     - type: Minor updates
       docs:
         - Title: ''
