@@ -5,19 +5,28 @@
         - Title: ''
           Description: ''
           Link: 
-          Category: 
+          Product: 
+          Product_area: 
+          Product_Update: true | false
+          Feature: '(leave blank if Product_Update is false)'
           Status: Released | Limited Availability | Staging | Internal
     - type: Major updates
       docs:
         - Title: ''
           Description: ''
           Link: 
-          Category: 
+          Product: 
+          Product_area: 
+          Product_Update: true | false
+          Feature: '(leave blank if Product_Update is false)'
           Status: Released | Limited Availability | Staging | Internal
     - type: Minor updates
       docs:
         - Title: ''
           Description: ''
           Link: 
-          Category: 
+          Product: 
+          Product_area: 
+          Product_Update: true | false
+          Feature: '(leave blank if Product_Update is false)'
           Status: Released | Limited Availability | Staging | Internal

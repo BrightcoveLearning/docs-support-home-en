@@ -20,7 +20,8 @@ parent: home
       <li><strong>Title:</strong> {{ doc.Title }}</li>
       <li><strong>Description:</strong> {{ doc.Description }}</li>
       <li><strong>Link:</strong> <a href="{{ doc.Link }}">{{ doc.Link }}</a></li>
-      <li style="margin-bottom: 1em;"><strong>Category:</strong> {{ doc.Category }}</li>
+      <li><strong>Product:</strong> <a href="{{ doc.Product }}">{{ doc.Product }}</a></li>
+      <li style="margin-bottom: 1em;"><strong>Product Area:</strong> {{ doc.Product_area }}</li>
       {% endif %}
       {% endfor %}
     </ul>

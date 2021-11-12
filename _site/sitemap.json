@@ -90,6 +90,11 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/product-updates.html",
+      "oldURL": "/product-updates"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/training/register-training.html",
       "oldURL": "/register-training"
   },
