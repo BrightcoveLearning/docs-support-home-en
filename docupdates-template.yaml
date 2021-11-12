@@ -5,7 +5,8 @@
         - Title: ''
           Description: ''
           Link: 
-          Category: 
+          Product: 
+          Product_area: 
           Product_Update: true | false
           Feature: '(leave blank if Product_Update is false)'
           Status: Released | Limited Availability | Staging | Internal
@@ -14,7 +15,8 @@
         - Title: ''
           Description: ''
           Link: 
-          Category: 
+          Product: 
+          Product_area: 
           Product_Update: true | false
           Feature: '(leave blank if Product_Update is false)'
           Status: Released | Limited Availability | Staging | Internal
@@ -23,7 +25,8 @@
         - Title: ''
           Description: ''
           Link: 
-          Category: 
+          Product: 
+          Product_area: 
           Product_Update: true | false
           Feature: '(leave blank if Product_Update is false)'
           Status: Released | Limited Availability | Staging | Internal

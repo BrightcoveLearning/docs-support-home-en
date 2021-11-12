@@ -5,7 +5,8 @@
         - Title: 'Fallback HDCP'
           Description: 'Use HDCP-protected content to block streaming on unauthorized devices, with a standard definition fallback for devices that do not support HDCP.'
           Link: https://apis.support.brightcove.com/playback-restrictions/guides/fallback-hdcp.html
-          Category: Video Cloud Playback Restrictions
+          Product: Video Cloud
+          Product_area: Playback Restrictions
           Product_Update: true
           Feature: 'Fallback HDCP'
           Status: Released
@@ -14,14 +15,16 @@
         - Title: 'Auto Captions'
           Description: 'Added new include_transcription_json and transcription_filename fields'
           Link: https://zencoder.support.brightcove.com/encoding-settings/assets/encoding-settings-auto-captions.html
-          Category: Zencoder
+          Product: Zencoder
+          Product_area: Auto Captions
           Product_Update: true 
           Feature: 'Auto Captions'
           Status: Released
         - Title: 'Zencoder API Reference'
           Description: 'Added new include_transcription_json and transcription_filename fields'
           Link: https://zencoder.support.brightcove.com/references/reference.html
-          Category: Zencoder
+          Product: Zencoder
+          Product_area: Auto Captions
           Product_Update: true 
           Feature: 'Auto Captions'
           Status: Released
