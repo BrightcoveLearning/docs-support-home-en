@@ -10,23 +10,63 @@
           Product_Update: false
           Feature: 
           Status: Released
+        - Title: 'Generic Stream Concurrency'
+          Description: 'This document describes how to limit stream concurrency to end-viewers with a heartbeat mechanism and without DRM.'
+          Link: https://apis.support.brightcove.com/playback-restrictions/guides/generic-stream-concurrency.html
+          Product: Video Cloud
+          Product_area: Playback Restrictions
+          Product_Update: true
+          Feature: Generic Stream Concurrency
+          Status: Released
+        - Title: 'Concurrency Service API'
+          Description: 'API used to implement Generic Stream Concurrency in non-Brightcove players.'
+          Link: https://apis.support.brightcove.com/playback-restrictions/references/concurrency-service-api/reference.html
+          Product: Video Cloud
+          Product_area: Playback Restrictions
+          Product_Update: true
+          Feature: Concurrency Service API
+          Status: Released
+        - Title: 'Installation Guide: Brightcove Video Connect for Sitecore'
+          Description: 'This topic covers the installation process for the Brightcove Video Connect module on the Sitecore CMS.'
+          Link: https://integrations.support.brightcove.com/sitecore/installation-guide.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: true
+          Feature: Connector for Sitecore Experience Platform 10.1
+          Status: Released
+        - Title: 'Configuration Guide: Brightcove Video Connect for Sitecore'
+          Description: 'This topic covers the configuration for the Brightcove Video Connect module on the Sitecore CMS.'
+          Link: https://integrations.support.brightcove.com/sitecore/configuration.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: true
+          Feature: Connector for Sitecore Experience Platform 10.1
+          Status: Released
+        - Title: 'User Guide: Brightcove Video Connect for Sitecore'
+          Description: 'This topic covers the using for the Brightcove Video Connect module on the Sitecore CMS.'
+          Link: https://integrations.support.brightcove.com/sitecore/user-guide.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: true
+          Feature: Connector for Sitecore Experience Platform 10.1
+          Status: Released
     - type: Major updates
       docs:
-        - Title: ''
-          Description: ''
-          Link: 
-          Product: 
-          Product_area: 
-          Product_Update: true | false
-          Feature: '(leave blank if Product_Update is false)'
-          Status: Released | Limited Availability | Staging | Internal
+        - Title: 'https://integrations.support.brightcove.com/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html'
+          Description: 'Updated for new release supporting Sitecore 10.1'
+          Link: https://integrations.support.brightcove.com/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: false
+          Feature: 
+          Status: Released
     - type: Minor updates
       docs:
-        - Title: ''
-          Description: ''
-          Link: 
-          Product: 
-          Product_area: 
-          Product_Update: true | false
-          Feature: '(leave blank if Product_Update is false)'
-          Status: Released | Limited Availability | Staging | Internal
+        - Title: 'CMS API Reference'
+          Description: 'Clarified how to fetch videos by reference id.'
+          Link: https://apis.support.brightcove.com/cms/references/reference.html#operation/GetVideoByIdOrReferenceId
+          Product: Video Cloud
+          Product_area: CMS API
+          Product_Update: false
+          Feature: ''
+          Status: Released

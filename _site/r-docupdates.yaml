@@ -1,104 +1,72 @@
-- date: 12-November-2021
+- date: 19-November-2021
   types:
     - type: New Docs
       docs:
-        - Title: 'Fallback HDCP'
-          Description: 'Use HDCP-protected content to block streaming on unauthorized devices, with a standard definition fallback for devices that do not support HDCP.'
-          Link: https://apis.support.brightcove.com/playback-restrictions/guides/fallback-hdcp.html
+        - Title: 'Add a New User'
+          Description: 'How to add a new user to your Beacon account.'
+          Link: https://beacon.support.brightcove.com/admin/add-user.html
+          Product: Beacon
+          Product_area: Admin
+          Product_Update: false
+          Feature: 
+          Status: Released
+        - Title: 'Generic Stream Concurrency'
+          Description: 'This document describes how to limit stream concurrency to end-viewers with a heartbeat mechanism and without DRM.'
+          Link: https://apis.support.brightcove.com/playback-restrictions/guides/generic-stream-concurrency.html
           Product: Video Cloud
           Product_area: Playback Restrictions
           Product_Update: true
-          Feature: 'Fallback HDCP'
+          Feature: Generic Stream Concurrency
           Status: Released
-        - Title: 'Creating Live Events with Playback Restrictions'
-          Description: 'In this topic, you will learn how to use Video Cloud Studio to create a Live Event with Playback Restrictions.'
-          Link: https://live.support.brightcove.com/live-module/playback-restrictions-live-module.html  
-          Product: Live
+        - Title: 'Concurrency Service API'
+          Description: 'API used to implement Generic Stream Concurrency in non-Brightcove players.'
+          Link: https://apis.support.brightcove.com/playback-restrictions/references/concurrency-service-api/reference.html
+          Product: Video Cloud
           Product_area: Playback Restrictions
           Product_Update: true
-          Feature: 'Playback Restrictions'
-          Status: Staging
+          Feature: Concurrency Service API
+          Status: Released
+        - Title: 'Installation Guide: Brightcove Video Connect for Sitecore'
+          Description: 'This topic covers the installation process for the Brightcove Video Connect module on the Sitecore CMS.'
+          Link: https://integrations.support.brightcove.com/sitecore/installation-guide.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: true
+          Feature: Connector for Sitecore Experience Platform 10.1
+          Status: Released
+        - Title: 'Configuration Guide: Brightcove Video Connect for Sitecore'
+          Description: 'This topic covers the configuration for the Brightcove Video Connect module on the Sitecore CMS.'
+          Link: https://integrations.support.brightcove.com/sitecore/configuration.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: true
+          Feature: Connector for Sitecore Experience Platform 10.1
+          Status: Released
+        - Title: 'User Guide: Brightcove Video Connect for Sitecore'
+          Description: 'This topic covers the using for the Brightcove Video Connect module on the Sitecore CMS.'
+          Link: https://integrations.support.brightcove.com/sitecore/user-guide.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: true
+          Feature: Connector for Sitecore Experience Platform 10.1
+          Status: Released
     - type: Major updates
       docs:
-        - Title: 'Auto Captions'
-          Description: 'Added new include_transcription_json and transcription_filename fields'
-          Link: https://zencoder.support.brightcove.com/encoding-settings/assets/encoding-settings-auto-captions.html
-          Product: Zencoder
-          Product_area: Auto Captions
-          Product_Update: true 
-          Feature: 'Auto Captions'
-          Status: Released
-        - Title: 'Zencoder API Reference'
-          Description: 'Added new include_transcription_json and transcription_filename fields'
-          Link: https://zencoder.support.brightcove.com/references/reference.html
-          Product: Zencoder
-          Product_area: Auto Captions
-          Product_Update: true 
-          Feature: 'Auto Captions'
-          Status: Released
-        - Title: 'Managing Text Tracks Using the CMS API'
-          Description: 'Added new transcripts kind and new status field'
-          Link: https://apis.support.brightcove.com/cms/managing-videos/managing-text-tracks.html
+        - Title: 'https://integrations.support.brightcove.com/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html'
+          Description: 'Updated for new release supporting Sitecore 10.1'
+          Link: https://integrations.support.brightcove.com/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html
           Product: Video Cloud
-          Product_area: CMS API, Dynamic Ingest APi, text tracks
-          Product_Update: true 
-          Feature: 'Text tracks'
-          Status: Released
-        - Title: 'CMS API Reference'
-          Description: 'Added new transcripts kind and new status field'
-          Link: https://apis.support.brightcove.com/cms/references/reference.html
-          Product: Video Cloud
-          Product_area: CMS API, Dynamic Ingest APi, text tracks
-          Product_Update: true 
-          Feature: 'Text tracks'
-          Status: Released
-        - Title: 'CMS API Video Fields Reference'
-          Description: 'Added new transcripts kind and new status field'
-          Link: https://apis.support.brightcove.com/cms/references/cms-api-video-fields-reference.html
-          Product: Video Cloud
-          Product_area: CMS API, Dynamic Ingest APi, text tracks
-          Product_Update: true 
-          Feature: 'Text tracks'
-          Status: Released
-        - Title: 'Ingesting WebVTT Files'
-          Description: 'Added new transcripts kind and new status field'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-webvtt-files-text-trackscaptions.html
-          Product: Video Cloud
-          Product_area: CMS API, Dynamic Ingest APi, text tracks
-          Product_Update: true 
-          Feature: 'Text tracks'
-          Status: Released
-        - Title: 'Dynamic Ingest API Reference'
-          Description: 'Added new transcripts kind and new status field'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/references/reference.html
-          Product: Video Cloud
-          Product_area: CMS API, Dynamic Ingest APi, text tracks
-          Product_Update: true 
-          Feature: 'Text tracks'
-          Status: Released
-        - Title: 'Ingest Fields Reference'
-          Description: 'Added new transcripts kind and new status field'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/references/dynamic-ingest-ingest-fields.html
-          Product: Video Cloud
-          Product_area: CMS API, Dynamic Ingest APi, text tracks
-          Product_Update: true 
-          Feature: 'Text tracks'
+          Product_area: Integrations
+          Product_Update: false
+          Feature: 
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Overview: Brightcove Playback Restrictions'
-          Description: 'Features table updated'
-          Link: https://apis.support.brightcove.com/playback-restrictions/getting-started/overview-playback-restrictions.html 
+        - Title: 'CMS API Reference'
+          Description: 'Clarified how to fetch videos by reference id.'
+          Link: https://apis.support.brightcove.com/cms/references/reference.html#operation/GetVideoByIdOrReferenceId
           Product: Video Cloud
-          Product_area: Playback Restrictions
-          Product_Update:  false
-          Feature: ''
-          Status: Released 
-        - Title: 'Google Tag Manager Plugin for Brightcove Player'
-          Description: 'Updated note for custom dimensions'
-          Link: https://player.support.brightcove.com/plugins/google-tag-manager-plugin-brightcove-player.html#Creating_custom_dimensions
-          Product: Video Cloud
-          Product_area: Brightcove Player
+          Product_area: CMS API
           Product_Update: false
           Feature: ''
           Status: Released
