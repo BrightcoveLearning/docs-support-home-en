@@ -11,7 +11,7 @@
           Feature: 
           Status: Released
         - Title: 'Generic Stream Concurrency'
-          Description: 'This document describes how to limit stream concurrency to end-viewers with a heartbeat mechanism and without DRM.'
+          Description: 'Limit stream concurrency to end-viewers with a heartbeat mechanism and without DRM.'
           Link: https://apis.support.brightcove.com/playback-restrictions/guides/generic-stream-concurrency.html
           Product: Video Cloud
           Product_area: Playback Restrictions
@@ -26,7 +26,7 @@
           Product_Update: 'true'
           Feature: Concurrency Service API
           Status: Released
-        - Title: 'Installation Guide: Brightcove Video Connect for Sitecore'
+        - Title: 'New version:Brightcove Video Connect for Sitecore'
           Description: 'This topic covers the installation process for the Brightcove Video Connect module on the Sitecore CMS.'
           Link: https://integrations.support.brightcove.com/sitecore/installation-guide.html
           Product: Video Cloud
@@ -140,7 +140,7 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Getting Started with Brightcove Video Connect for the Sitecore Experience Platform'
+        - Title: 'New version of Brightcove Video Connect for the Sitecore Experience Platform'
           Description: 'Updated for new release supporting Sitecore 10.1'
           Link: https://integrations.support.brightcove.com/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html
           Product: Video Cloud
@@ -243,7 +243,7 @@
           Feature: 'Fallback HDCP'
           Status: Released
         - Title: 'Creating Live Events with Playback Restrictions'
-          Description: 'In this topic, you will learn how to use Video Cloud Studio to create a Live Event with Playback Restrictions.'
+          Description: 'Create a Live Event with Playback Restrictions.'
           Link: https://live.support.brightcove.com/live-module/playback-restrictions-live-module.html  
           Product: Live
           Product_area: Playback Restrictions
@@ -253,7 +253,7 @@
     - type: Major updates
       docs:
         - Title: 'Auto Captions'
-          Description: 'Added new include_transcription_json and transcription_filename fields'
+          Description: 'New include_transcription_json and transcription_filename fields'
           Link: https://zencoder.support.brightcove.com/encoding-settings/assets/encoding-settings-auto-captions.html
           Product: Zencoder
           Product_area: Auto Captions
@@ -261,7 +261,7 @@
           Feature: 'Auto Captions'
           Status: Released
         - Title: 'Zencoder API Reference'
-          Description: 'Added new include_transcription_json and transcription_filename fields'
+          Description: 'New include_transcription_json and transcription_filename fields'
           Link: https://zencoder.support.brightcove.com/references/reference.html
           Product: Zencoder
           Product_area: Auto Captions
@@ -269,7 +269,7 @@
           Feature: 'Auto Captions'
           Status: Released
         - Title: 'Managing Text Tracks Using the CMS API'
-          Description: 'Added new transcripts kind and new status field'
+          Description: 'New transcripts kind and new status field'
           Link: https://apis.support.brightcove.com/cms/managing-videos/managing-text-tracks.html
           Product: Video Cloud
           Product_area: CMS API, Dynamic Ingest APi, text tracks
@@ -433,7 +433,7 @@
     - type: New Docs
       docs:
         - Title: 'Dimension: Viewer'
-          Description: 'In this topic, you will learn about the Analytics API viewer dimension. The viewer dimension provides analytics by viewer. Only available if the account has been enabled for viewer analytics.'
+          Description: 'New Analytics API viewer dimension. The viewer dimension provides analytics by viewer. Only available if the account has been enabled for viewer analytics.'
           Link: https://apis.support.brightcove.com/analytics/dimension-guides/dimension-viewer.html
           Product: Video Cloud
           Product_area: Analytics API
@@ -441,7 +441,7 @@
           Feature: 'Viewer dimension'
           Status: Released
         - Title: 'Open Measurement for Server-Side Ads (SSAI) and Brightcove Player'
-          Description: 'In this topic, you will learn how to use the iab Open Measurement SDK with Brightcove Player’s Server-Side Ad Insertion (SSAI) plugin.'
+          Description: 'Use the iab Open Measurement SDK with Brightcove Player’s Server-Side Ad Insertion (SSAI) plugin.'
           Link: https://player.support.brightcove.com/plugins/open-measurement-with-ssai.html
           Product: Brightcove Player
           Product_area: Monetization
@@ -568,7 +568,7 @@
     - type: New Docs
       docs:
         - Title: 'Setup for the Beacon Web App'
-          Description: 'This topic explains steps that are required for setting up the Beacon Web App'
+          Description: 'Steps that are required for setting up the Beacon Web App'
           Link: https://beacon.support.brightcove.com/using-brightcove-beacon/setup-beacon-web-app.html
           Product: Beacon
           Product_area: Beacon Web App
@@ -587,7 +587,7 @@
           Feature: ''
           Status: Released
         - Title: 'Live API Reference'
-          Description: 'Added 2 new endpoints use to activate or deactivate SEP jobs in a redundant group'
+          Description: '2 new endpoints use to activate or deactivate SEP jobs in a redundant group'
           Link: https://apis.support.brightcove.com/live-api/references/reference.html#tag/Redundant-Groups
           Product: Live
           Product_area: Live API, SEP, Redundant Groups
@@ -613,7 +613,7 @@
     - type: Minor updates
       docs:
         - Title: 'Engagement Report Reference'
-          Description: 'Documented new Average Viewed Minutes field'
+          Description: 'New Average Viewed Minutes field'
           Link: https://studio.support.brightcove.com/analytics/engagement-report-reference.html
           Product: Video Cloud
           Product_area: Analytics
@@ -724,7 +724,7 @@
           Feature: ''
           Status: Released
         - Title: 'Implementing Device Limits'
-          Description: 'Added endpoint for getting all devices within an account'
+          Description: 'New endpoint for getting all devices within an account'
           Link: https://apis.support.brightcove.com/playback-restrictions/guides/device-limits.html 
           Product: Video Cloud
           Product_area: Playback Restrictions
@@ -886,7 +886,7 @@
           Feature: ''
           Status: Released
         - Title: 'Overview: Cloud Playout Channels API'
-          Description: 'Added new section on getting As-Run Logs'
+          Description: 'Get As-Run Logs for Cloud Playout Channels'
           Link: https://apis.support.brightcove.com/cloud-playout-apis/getting-started/overview-channel-api.html#as_run_log
           Product: Video Cloud
           Product_area: Cloud Playout, Channels API

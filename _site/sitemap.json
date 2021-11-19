@@ -60,17 +60,17 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/training/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://support.brightcove.com/support/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://support.brightcove.com/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/training/",
       "oldURL": "/index"
   },
 
@@ -87,6 +87,11 @@
   {
       "newURL": "https://support.brightcove.com/overview-cms-api.html",
       "oldURL": "/overview-cms-api"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/product-updates-internal.html",
+      "oldURL": "/product-updates-internal"
   },
 
   {

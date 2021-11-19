@@ -5,9 +5,9 @@
         - Title: ''
           Description: ''
           Link: 
-          Product: Video Cloud | Brightcove Player | Live | Beacon | SSAI | Zencoder
+          Product: Video Cloud | Live | Beacon | SSAI | Zencoder
           Product_area: 
-          Product_Update: true | false
+          Product_Update: 'true | false'
           Feature: '(leave blank if Product_Update is false)'
           Status: Released | Limited Availability | Staging | Internal
     - type: Major updates
@@ -15,9 +15,9 @@
         - Title: ''
           Description: ''
           Link: 
-          Product: Video Cloud | Brightcove Player | Live | Beacon | SSAI | Zencoder
+          Product: Video Cloud | Live | Beacon | SSAI | Zencoder
           Product_area: 
-          Product_Update: true | false
+          Product_Update: 'true | false'
           Feature: '(leave blank if Product_Update is false)'
           Status: Released | Limited Availability | Staging | Internal
     - type: Minor updates
@@ -25,8 +25,8 @@
         - Title: ''
           Description: ''
           Link: 
-          Product: Video Cloud | Brightcove Player | Live | Beacon | SSAI | Zencoder
+          Product: Video Cloud | Live | Beacon | SSAI | Zencoder
           Product_area: 
-          Product_Update: true | false
+          Product_Update: 'true | false'
           Feature: '(leave blank if Product_Update is false)'
           Status: Released | Limited Availability | Staging | Internal
