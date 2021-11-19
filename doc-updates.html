@@ -12,24 +12,24 @@ parent: home
   <section class="bcls-section">
     <h2 id="{{ item.date | replace: " -", "_" }}">{{ item.date }}</h2>
     {% for type in item.types %}
-    <h3>{{ type.type }}</h3>
-    {% if type.docs %}
-    <ul style="list-style: none;">
-      {% for doc in type.docs %}
-      {% if doc.Status == "Released" %}
-      <li><strong>Title:</strong> {{ doc.Title }}</li>
-      <li><strong>Description:</strong> {{ doc.Description }}</li>
-      <li><strong>Link:</strong> <a href="{{ doc.Link }}">{{ doc.Link }}</a></li>
-      <li><strong>Product:</strong> <a href="{{ doc.Product }}">{{ doc.Product }}</a></li>
-      <li style="margin-bottom: 1em;"><strong>Product Area:</strong> {{ doc.Product_area }}</li>
+      <h3>{{ type.type }}</h3>
+      {% if type.docs %}
+        <ul style="list-style: none;">
+          {% for doc in type.docs %}
+            {% if doc.Status == "Released" %}
+            <li><strong>Title:</strong> {{ doc.Title }}</li>
+            <li><strong>Description:</strong> {{ doc.Description }}</li>
+            <li><strong>Link:</strong> <a href="{{ doc.Link }}">{{ doc.Link }}</a></li>
+            <li><strong>Product:</strong> <a href="{{ doc.Product }}">{{ doc.Product }}</a></li>
+            <li style="margin-bottom: 1em;"><strong>Product Area:</strong> {{ doc.Product_area }}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% else %}
+        <ul style="list-style: none;">
+          <li style="margin-bottom: 1em;">No {{ type.type }}</li>
+        </ul>
       {% endif %}
-      {% endfor %}
-    </ul>
-    {% else %}
-    <ul style="list-style: none;">
-      <li style="margin-bottom: 1em;">No {{ type.type }}</li>
-    </ul>
-    {% endif %}
     {% endfor %}
   </section>
   {% endfor %}
