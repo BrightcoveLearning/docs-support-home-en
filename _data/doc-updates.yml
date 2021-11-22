@@ -2,6 +2,14 @@
   types:
     - type: New Docs
       docs:
+        - Title: 'Product Release Notes'
+          Description: 'Our new consolidated product release notes page.'
+          Link: https://support.brightcove.com/product-updates.html
+          Product: Video Cloud, Live, Beacon, SSAI, Zencoder
+          Product_area: All
+          Product_Update: 'false'
+          Feature: 
+          Status: Released
         - Title: 'Add a New User'
           Description: 'How to add a new user to your Beacon account.'
           Link: https://beacon.support.brightcove.com/admin/add-user.html
