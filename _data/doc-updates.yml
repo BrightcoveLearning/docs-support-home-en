@@ -27,7 +27,7 @@
           Feature: Concurrency Service API
           Status: Released
         - Title: 'New version:Brightcove Video Connect for Sitecore'
-          Description: 'This topic covers the installation process for the Brightcove Video Connect module on the Sitecore CMS.'
+          Description: 'Installation process for the Brightcove Video Connect module on the Sitecore CMS.'
           Link: https://integrations.support.brightcove.com/sitecore/installation-guide.html
           Product: Video Cloud
           Product_area: Integrations
@@ -35,7 +35,7 @@
           Feature: Connector for Sitecore Experience Platform 10.1
           Status: Released
         - Title: 'Configuration Guide: Brightcove Video Connect for Sitecore'
-          Description: 'This topic covers the configuration for the Brightcove Video Connect module on the Sitecore CMS.'
+          Description: 'Configuration for the Brightcove Video Connect module on the Sitecore CMS.'
           Link: https://integrations.support.brightcove.com/sitecore/configuration.html
           Product: Video Cloud
           Product_area: Integrations
@@ -43,7 +43,7 @@
           Feature: 
           Status: Released
         - Title: 'User Guide: Brightcove Video Connect for Sitecore'
-          Description: 'This topic covers the using for the Brightcove Video Connect module on the Sitecore CMS.'
+          Description: 'Using the Brightcove Video Connect module on the Sitecore CMS.'
           Link: https://integrations.support.brightcove.com/sitecore/user-guide.html
           Product: Video Cloud
           Product_area: Integrations
