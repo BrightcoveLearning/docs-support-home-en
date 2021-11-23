@@ -12,21 +12,69 @@
           Status: Released | Limited Availability | Staging | Internal
     - type: Major updates
       docs:
-        - Title: ''
-          Description: ''
-          Link: 
-          Product: Video Cloud | Live | Beacon | SSAI | Zencoder
-          Product_area: 
-          Product_Update: 'true | false'
-          Feature: '(leave blank if Product_Update is false)'
-          Status: Released | Limited Availability | Staging | Internal
+        - Title: 'Getting Started with Brightcove Video Connect for the Drupal CMS'
+          Description: '3.0 release of the connector for Drupal 9'
+          Link: https://integrations.support.brightcove.com/drupal/getting-started-brightcove-video-connect-drupal-cms.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: 'true'
+          Feature: 'New release of the Video Cloud - Drupal connector'
+          Status: Released
+        - Title: 'Using Zencoder with Google Cloud Storage'
+          Description: 'Updated setup steps to reflect changes in Google settings'
+          Link: https://zencoder.support.brightcove.com/general-information/using-zencoder-google-cloud-platform.html
+          Product: Zencoder
+          Product_area: Integration
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Minor updates
       docs:
-        - Title: ''
-          Description: ''
-          Link: 
-          Product: Video Cloud | Live | Beacon | SSAI | Zencoder
-          Product_area: 
-          Product_Update: 'true | false'
-          Feature: '(leave blank if Product_Update is false)'
-          Status: Released | Limited Availability | Staging | Internal
+        - Title: 'Using Live RTMP Outputs to Stream to Facebook and YouTube'
+          Description: 'Several minor fixes'
+          Link: https://live.support.brightcove.com/live-module/using-live-rtmp-outputs-stream-facebook-and-youtube.html
+          Product: Live
+          Product_area: RTMP outputs
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Player Accessibility'
+          Description: 'Added a note that the Player is WCAG 2.1 compliant.'
+          Link: https://player.support.brightcove.com/general/brightcove-player-accessibility.html
+          Product: Video Cloud
+          Product_area: Brightcove Player
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Live: Best Practices'
+          Description: 'Added a note explaining that the default Live ingest profiles assumes a framerate of 30fps in assigning the keyframe rate, and that a custom profile should be used if the input stream framerate is different.'
+          Link: https://live.support.brightcove.com/get-started/live-module-guidelines-and-best-practices.html#Content_context
+          Product: Live
+          Product_area: Ingest profiles
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'AMP and Advertising'
+          Description: 'Corrected an error in sample code'
+          Link: https://player.support.brightcove.com/amp/amp-and-advertising.html#AMP_consent_and_Advertising
+          Product: Video Cloud
+          Product_area: Brightcove PLayer with AMP
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'TLS for Media, Player, and API URLs'
+          Description: 'Added Dynamic Ingest API to list of services no longer supporting TLS 1.0 and 1.1'
+          Link: https://studio.support.brightcove.com/general/tls-media-player-and-api-urls.html
+          Product: Video Cloud
+          Product_area: Ingestion
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'HEVC Video'
+          Description: 'Added note that accounts enabled for AES-128 encryption currently do not support HEVC'
+          Link: https://apis.support.brightcove.com/ingest-profiles/guides/hevc-video.html
+          Product: Video Cloud
+          Product_area: Ingestion, HEVC
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
