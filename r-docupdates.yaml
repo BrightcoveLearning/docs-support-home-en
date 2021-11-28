@@ -2,16 +2,6 @@
   types:
     - type: New Docs
       docs:
-        - Title: 'Getting Started with Brightcove Video Connect for SharePoint'
-          Description: 'Updated installation instructions to reflect the current version of the Connector.'
-          Link: https://integrations.support.brightcove.com/sharepoint/getting-started-brightcove-video-connect-sharepoint.html
-          Product: Video Cloud
-          Product_area: Integrations
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-    - type: Major updates
-      docs:
         - Title: ''
           Description: ''
           Link: 
@@ -20,6 +10,48 @@
           Product_Update: 'true | false'
           Feature: '(leave blank if Product_Update is false)'
           Status: Released | Limited Availability | Staging | Internal
+    - type: Major updates
+      docs:
+        - Title: 'Getting Started with Brightcove Video Connect for SharePoint'
+          Description: 'Updated installation instructions to reflect the current version of the Connector.'
+          Link: https://integrations.support.brightcove.com/sharepoint/getting-started-brightcove-video-connect-sharepoint.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Requesting Auto Captions'
+          Description: 'Added 6 new supported languages.'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/requesting-auto-captions.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest API
+          Product_Update: 'true'
+          Feature: 'Auto Captions'
+          Status: Released
+        - Title: 'Dynamic Ingest API Reference'
+          Description: 'Added 6 new supported languages for auto captions.'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/references/reference.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Auto Captions'
+          Description: 'Added 6 new supported languages, and a table of supported languages.'
+          Link: https://zencoder.support.brightcove.com/encoding-settings/assets/encoding-settings-auto-captions.html
+          Product: Zencoder
+          Product_area: Encoding Settings
+          Product_Update: 'true'
+          Feature: 'Auto Captions'
+          Status: Released
+        - Title: 'Zencoder API Reference'
+          Description: 'Added 6 new supported languages for auto captions.'
+          Link: https://zencoder.support.brightcove.com/references/reference.html
+          Product: Zencoder
+          Product_area: Encoding Settings
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Minor updates
       docs:
         - Title: ''
