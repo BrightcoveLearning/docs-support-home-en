@@ -54,11 +54,11 @@
           Status: Released
     - type: Minor updates
       docs:
-        - Title: ''
-          Description: ''
-          Link: 
-          Product: Video Cloud | Live | Beacon | SSAI | Zencoder
-          Product_area: 
-          Product_Update: 'true | false'
-          Feature: '(leave blank if Product_Update is false)'
-          Status: Released | Limited Availability | Staging | Internal
+        - Title: 'Overview: Brightcove Playback Restrictions'
+          Description: 'Updated some obsolete links.'
+          Link: https://apis.support.brightcove.com/playback-restrictions/getting-started/overview-playback-restrictions.html#License_Keys_Protection
+          Product: Video Cloud
+          Product_area: Playback Restrictions
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
