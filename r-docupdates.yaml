@@ -2,14 +2,14 @@
   types:
     - type: New Docs
       docs:
-        - Title: ''
-          Description: ''
-          Link: 
-          Product: Video Cloud | Live | Beacon | SSAI | Zencoder
-          Product_area: 
-          Product_Update: 'true | false'
-          Feature: '(leave blank if Product_Update is false)'
-          Status: Released | Limited Availability | Staging | Internal
+        - Title: 'Managing the Channel Program (was Adding Content to Cloud Playout Channels)'
+          Description: 'Increase the limit of program items to 1000 and updated UI with new capabilities for managing Cloud Playout channel programs.'
+          Link: https://studio.support.brightcove.com/cloud-playout/cloud-playout-add-content.html
+          Product: Video Cloud
+          Product_area: Cloud Playout
+          Product_Update: 'true'
+          Feature: 'Managing Program Content'
+          Status: Released
     - type: Major updates
       docs:
         - Title: 'Getting Started with Brightcove Video Connect for SharePoint'
