@@ -1,0 +1,75 @@
+---
+title: Documentation Template
+description: This is a template to demonstrate various CSS classes used in our documentation and provide sample code for them.
+parent: Parent section
+layout: staging
+---
+
+<h1>{{ page.title }}</h1>
+<article class="bcls-article">
+  <summary>{{ page.description }}</summary>
+  <section class="bcls-section">
+    <h2 id="Basic_page_structure">Basic page structure</h2>
+    <p>Here is the code for the basic document structure:</p>
+<pre class="line-numbers"><code class="language-html" translate="No">---
+  title: 
+  description: 
+  parent: 
+  ---
+  
+  &lt;h1&gt;{{ page.title }}&lt;/h1&gt;
+  &lt;article class=&quot;bcls-article&quot;&gt;
+    &lt;summary&gt;{{ page.description }}&lt;/summary&gt;
+    &lt;section class=&quot;bcls-section&quot;&gt;
+      &lt;h2 id=&quot;&quot;&gt;&lt;/h2&gt;
+      &lt;p&gt;&lt;/p&gt;
+    &lt;/section&gt;
+  &lt;/article&gt;&lt;/code&gt;</pre>
+
+  <p>And here is how it works:</p>
+<figure class="bcls-figure">
+  <img class="bcls-image" src="/assets/images/doc-template/basic-doc-structure.png" alt="Basic Doc Structure">
+  <figcaption class="bcls-caption--image">Basic Doc Structure</figcaption>
+</figure>
+
+  <p>And that above is a bordered image - the code for it is below:</p>
+
+<pre class="line-numbers"><code class="language-html" translate="No">&lt;figure class=&quot;bcls-figure&quot;&gt;
+  &lt;img class=&quot;bcls-image&quot; src=&quot;/assets/images/doc-template/basic-doc-structure.png&quot; alt=&quot;Basic Doc Structure&quot;&gt;
+  &lt;figcaption class=&quot;bcls-caption--image&quot;&gt;Basic Doc Structure&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+
+<p>If you wanted an image with no border, use this instead:</p>
+<pre><code class="language-html" translate="No">&lt;figure class=&quot;bcls-figure&quot;&gt;
+  &lt;img class=&quot;bcls-image--no-border&quot; src=&quot;&quot; alt=&quot;description&quot;&gt;
+  &lt;figcaption class=&quot;bcls-caption--image&quot;&gt;description&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Special_lists">Special lists</h2>
+    <p>We use some special lists for different purposes.</p>
+    <h3>Task list with numbers starting at 1</h3>
+    <ol class="bcls-tasklist-restart">
+      <li>Here is step 1 of the task.</li>
+      <li>Step 2 of the task.</li>
+      <li>
+        Code to create this list:
+<pre class="line-numbers"><code class="language-html" translate="No">&lt;ol class=&quot;bcls-tasklist-restart&quot;&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+      </li>
+    </ol>
+    <h3>Task list that continues numbering where the last list ended</h3>
+    <ol class="bcls-tasklist">
+      <li>Here is step 4, continuing from the previous list.</li>
+      <li>Step 5.</li>
+      <li>
+        Code for a tasklist that does not restart numbering:
+<pre class="line-numbers"><code class="language-html" translate="No">&amp;lt;ol class=&amp;quot;bcls-tasklist-restart&amp;quot;&amp;gt;
+  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;</code></pre>
+      </li>
+    </ol>
+  </section>
+</article>
+
