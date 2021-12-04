@@ -26,6 +26,8 @@ parent:
   &lt;/section&gt;
 &lt;/article&gt;</code></pre>
 
+<p>Dash snippet: <code translate="No">docstart</code></p>
+
         <p>And here is how it works:</p>
         <figure class="bcls-figure">
             <img class="bcls-image" src="/assets/images/doc-template/basic-doc-structure.png" alt="Basic Doc Structure">
@@ -39,11 +41,15 @@ parent:
   &lt;figcaption class=&quot;bcls-caption--image&quot;&gt;Basic Doc Structure&lt;/figcaption&gt;
 &lt;/figure&gt;</code></pre>
 
+<p>Dash snippet: <code translate="No">bcimg</code></p>
+
         <p>If you wanted an image with no border, use this instead:</p>
 <pre><code class="language-html" translate="No">&lt;figure class=&quot;bcls-figure&quot;&gt;
   &lt;img class=&quot;bcls-image--no-border&quot; src=&quot;&quot; alt=&quot;description&quot;&gt;
   &lt;figcaption class=&quot;bcls-caption--image&quot;&gt;description&lt;/figcaption&gt;
 &lt;/figure&gt;</code></pre>
+
+<p>Dash snippet: <code translate="No">imgnoborder</code></p>
         <p>For inline images, just use an <code translate="No">&lt;img&gt;</code> tag without the figure and caption tags. No special classes for inline images.</p>
     </section>
     <section class="bcls-section">
@@ -60,6 +66,7 @@ parent:
 &lt;/ol&gt;</code></pre>
             </li>
         </ol>
+        <p>Dash snippet: <code translate="No">bcnewlist</code></p>
     </section>
     <section class="bcls-section">
         <h2 id="Tables">Tables</h2>
@@ -81,6 +88,8 @@ parent:
       &lt;/tbody&gt;
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
+
+<p>Dash snippet: <code translate="No">bctable</code></p>
         <p>And below is a sample table:</p>
         <div style="overflow-x: scroll;">
             <table class="bcls-table">
@@ -107,14 +116,17 @@ parent:
             This is an <strong>information</strong> note. You can use any HTML you want in here.
             <pre class="line-numbers"><code class="language-html" translate="no">&lt;aside class=&quot;bcls-aside bcls-aside--information language-editable&quot;&gt;&lt;/aside&gt;</code></pre>
         </aside>
+        <p>Dash snippet: <code translate="No">bclsinfo</code></p>
         <aside class="bcls-aside bcls-aside--tip language-editable">
             This is a <strong>tip</strong> note. You can use any HTML you want in here.
             <pre class="line-numbers"><code class="language-html" translate="No">&lt;aside class=&quot;bcls-aside bcls-aside--tip language-editable&quot;&gt;&lt;/aside&gt;</code></pre>
         </aside>
+        <p>Dash snippet: <code translate="No">bctip</code></p>
         <aside class="bcls-aside bcls-aside--warning language-editable">
             This is a <strong>warning</strong> note. You can use any HTML you want in here.
             <pre class="line-numbers"><code class="language-html" translate="No">&lt;aside class=&quot;bcls-aside bcls-aside--warning language-editable&quot;&gt;&lt;/aside&gt;</code></pre>
         </aside>
+        <p>Dash snippet: <code translate="No">bcwarning</code></p>
     </section>
 
     <section class="bcls-section">
@@ -139,21 +151,20 @@ parent:
     </section>
     <section class="bcls-section">
         <h2 id="Code_and_localization">Code and localization</h2>
-        <p>The AWS machine translator we use to localize our sites translates code as if it were ordinary text, which is always wrong! To stop this, I got Amazon to add handling for a special <code translate="No">translate="no"</code> attribute that stops
-            the content of the tag from being translated. you can use that attribute on any tag, but it's especially important to use it when you are including sample code.</p>
+        <p>The AWS machine translator we use to localize our sites translates code as if it were ordinary text, which is always wrong! To stop this, I got Amazon to add handling for a special <code translate="No">translate="no"</code> attribute that stops the content of the tag from being translated. you can use that attribute on any tag, but it's especially important to use it when you are including sample code.</p>
         <h3>Inline code</h3>
-        <p>For inline code, just use <strong>&lt;code translate=&quot;No&quot;&gt;some same code&lt;/code&gt;</strong></p>
+        <p>For inline code, just use <strong>&lt;code translate=&quot;No&quot;&gt;some same code&lt;/code&gt;</strong> (Dash snippet: <code translate="No">codent</code>)</p>
         <h3>Code blocks</h3>
         <p>For code blocks, we use a library that adds line numbering and syntax highlighting for the code, based on special classes.</p>
         <h4>HTML</h4>
-        <p>For an HTML block: <code translate="no">&lt;pre class=&quot;line-numbers&quot;&gt;&lt;code class=&quot;language-html&quot; translate=&quot;No&quot;&gt;&lt;/code&gt;&lt;/pre&gt;</code></p>
+        <p>For an HTML block: <code translate="no">&lt;pre class=&quot;line-numbers&quot;&gt;&lt;code class=&quot;language-html&quot; translate=&quot;No&quot;&gt;&lt;/code&gt;&lt;/pre&gt;</code> (Dash snippet: <code translate="No">pchtml</code>)</p>
         <h5>Example</h5>
     <pre class="line-numbers"><code class="language-html" translate="No">&lt;section class=&quot;bcls-section&quot;&gt;
   &lt;h2 id=&quot;&quot;&gt;&lt;/h2&gt;
   &lt;p&gt;&lt;/p&gt;
 &lt;/section&gt;</code></pre>
         <h4>CSS</h4>
-        <p>For a CSS block: <code translate="no">&lt;pre class=&quot;line-numbers&quot;&gt;&lt;code class=&quot;language-css&quot; translate=&quot;No&quot;&gt;&lt;/code&gt;&lt;/pre&gt;</code></p>
+        <p>For a CSS block: <code translate="no">&lt;pre class=&quot;line-numbers&quot;&gt;&lt;code class=&quot;language-css&quot; translate=&quot;No&quot;&gt;&lt;/code&gt;&lt;/pre&gt;</code> (Dash snippet: <code translate="No">pccss</code>)</p>
         <h5>Example</h5>
 <pre class="line-numbers"><code class="language-css" translate="No">.bcls-tasklist-restart {
   list-style-type: none;
@@ -161,7 +172,7 @@ parent:
   counter-reset: rstep calc(var(--s) - 1);
 }</code></pre>
         <h4>JavaScript</h4>
-        <p>For a CSS block: <code translate="no">&lt;pre class=&quot;line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot; translate=&quot;No&quot;&gt;&lt;/code&gt;&lt;/pre&gt;</code></p>
+        <p>For a CSS block: <code translate="no">&lt;pre class=&quot;line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot; translate=&quot;No&quot;&gt;&lt;/code&gt;&lt;/pre&gt;</code> (Dash snippet: <code translate="No">pcjs</code>)</p>
         <h5>Example</h5>
 <pre class="line-numbers"><code class="language-javascript" translate="No">var cookiesArray = document.cookie.split(";"), cookiesObj = {}, i, tmpArray = [];
 for (i = 0; i < cookiesArray.length; i++) {
@@ -171,10 +182,10 @@ for (i = 0; i < cookiesArray.length; i++) {
     }
 }
 window.prompt("BC_TOKEN:", cookiesObj.BC_TOKEN);</code></pre>
-        <p>Several other languages are supported, including json, swift, objective-c, and java.</p>
+        <p>Several other languages are supported, including json (Dash snippet: <code translate="No">pcljson</code>), swift, objective-c, and java (Dash snippet: <code translate="No">pcjava</code>).</p>
         <h3>Highlighting and marking user input</h3>
         <p>Sometimes it's useful to highlight an important part of code, or an item that the user needs to replace with their own information.</p>
-        <p>To highlight some code, use <span class="bcls-highlight"><code translate="No">&lt;span class=&quot;bcls-highlight&quot;&gt;(some code here)&lt;/span&gt;</code></span></p>
-        <p>To mark some code that the user needs to modify, use <span class="bcls-input"><code translate="No">&lt;span class=&quot;bcls-input&quot;&gt;{your_access_token}&lt;/span&gt;</code></span></p>
+        <p>To highlight some code, use <span class="bcls-highlight"><code translate="No">&lt;span class=&quot;bcls-highlight&quot;&gt;(some code here)&lt;/span&gt;</code></span> (Dash snippet: select the code that you want to highlight, and then type <code translate="No">bchighlight</code>)</p>
+        <p>To mark some code that the user needs to modify, use <span class="bcls-input"><code translate="No">&lt;span class=&quot;bcls-input&quot;&gt;{your_access_token}&lt;/span&gt;</code></span> (Dash snippet: select the code that you want to apply this to, and then type <code translate="No">bcinput</code>)</p>
     </section>
 </article>
