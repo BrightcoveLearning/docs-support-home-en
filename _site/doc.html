@@ -285,73 +285,177 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <h1>Documentation Template</h1>
 <article class="bcls-article">
-  <summary>This is a template to demonstrate various CSS classes used in our documentation and provide sample code for them.</summary>
-  <section class="bcls-section">
-    <h2 id="Basic_page_structure">Basic page structure</h2>
-    <p>Here is the code for the basic document structure:</p>
+    <summary>This is a template to demonstrate various CSS classes used in our documentation and provide sample code for them.</summary>
+    <section class="bcls-section">
+        <h2 id="Basic_page_structure">Basic page structure</h2>
+        <p>Here is the code for the basic document structure:</p>
 <pre class="line-numbers"><code class="language-html" translate="No">---
-  title: 
-  description: 
-  parent: 
-  ---
-  
-  &lt;h1&gt;Documentation Template&lt;/h1&gt;
-  &lt;article class=&quot;bcls-article&quot;&gt;
-    &lt;summary&gt;This is a template to demonstrate various CSS classes used in our documentation and provide sample code for them.&lt;/summary&gt;
-    &lt;section class=&quot;bcls-section&quot;&gt;
-      &lt;h2 id=&quot;&quot;&gt;&lt;/h2&gt;
-      &lt;p&gt;&lt;/p&gt;
-    &lt;/section&gt;
-  &lt;/article&gt;&lt;/code&gt;</pre>
+title: 
+description: 
+parent: 
+---
 
-  <p>And here is how it works:</p>
-<figure class="bcls-figure">
-  <img class="bcls-image" src="/assets/images/doc-template/basic-doc-structure.png" alt="Basic Doc Structure">
-  <figcaption class="bcls-caption--image">Basic Doc Structure</figcaption>
-</figure>
+&lt;h1&gt;Documentation Template&lt;/h1&gt;
+&lt;article class=&quot;bcls-article&quot;&gt;
+  &lt;summary&gt;This is a template to demonstrate various CSS classes used in our documentation and provide sample code for them.&lt;/summary&gt;
+  &lt;section class=&quot;bcls-section&quot;&gt;
+    &lt;h2 id=&quot;&quot;&gt;&lt;/h2&gt;
+    &lt;p&gt;&lt;/p&gt;
+  &lt;/section&gt;
+&lt;/article&gt;</code></pre>
 
-  <p>And that above is a bordered image - the code for it is below:</p>
+        <p>And here is how it works:</p>
+        <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/doc-template/basic-doc-structure.png" alt="Basic Doc Structure">
+            <figcaption class="bcls-caption--image">Basic Doc Structure</figcaption>
+        </figure>
+
+        <p>And that above is a bordered image - the code for it is below:</p>
 
 <pre class="line-numbers"><code class="language-html" translate="No">&lt;figure class=&quot;bcls-figure&quot;&gt;
   &lt;img class=&quot;bcls-image&quot; src=&quot;/assets/images/doc-template/basic-doc-structure.png&quot; alt=&quot;Basic Doc Structure&quot;&gt;
   &lt;figcaption class=&quot;bcls-caption--image&quot;&gt;Basic Doc Structure&lt;/figcaption&gt;
 &lt;/figure&gt;</code></pre>
 
-<p>If you wanted an image with no border, use this instead:</p>
+        <p>If you wanted an image with no border, use this instead:</p>
 <pre><code class="language-html" translate="No">&lt;figure class=&quot;bcls-figure&quot;&gt;
   &lt;img class=&quot;bcls-image--no-border&quot; src=&quot;&quot; alt=&quot;description&quot;&gt;
   &lt;figcaption class=&quot;bcls-caption--image&quot;&gt;description&lt;/figcaption&gt;
 &lt;/figure&gt;</code></pre>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Special_lists">Special lists</h2>
-    <p>We use some special lists for different purposes.</p>
-    <h3>Task list with numbers starting at 1</h3>
-    <ol class="bcls-tasklist-restart">
-      <li>Here is step 1 of the task.</li>
-      <li>Step 2 of the task.</li>
-      <li>
-        Code to create this list:
+        <p>For inline images, just use an <code translate="No">&lt;img&gt;</code> tag without the figure and caption tags. No special classes for inline images.</p>
+    </section>
+    <section class="bcls-section">
+        <h2 id="Task_lists">Task lists</h2>
+        <p>We use some special lists for different purposes.</p>
+        <h3>Task list with numbers starting at 1</h3>
+        <ol class="bcls-tasklist-restart">
+            <li>Here is step 1 of the task.</li>
+            <li>Step 2 of the task.</li>
+            <li>
+                Code to create this list:
 <pre class="line-numbers"><code class="language-html" translate="No">&lt;ol class=&quot;bcls-tasklist-restart&quot;&gt;
   &lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
-      </li>
-    </ol>
-    <h3>Task list that continues numbering where the last list ended</h3>
-    <ol class="bcls-tasklist">
-      <li>Here is step 4, continuing from the previous list.</li>
-      <li>Step 5.</li>
-      <li>
-        Code for a tasklist that does not restart numbering:
-<pre class="line-numbers"><code class="language-html" translate="No">&amp;lt;ol class=&amp;quot;bcls-tasklist-restart&amp;quot;&amp;gt;
-  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;
-&amp;lt;/ol&amp;gt;</code></pre>
-      </li>
-    </ol>
-  </section>
+            </li>
+        </ol>
+    </section>
+    <section class="bcls-section">
+        <h2 id="Tables">Tables</h2>
+        <p>We have special styles for tables. Here is the basic code to create one:</p>
+<pre class="line-numbers"><code class="language-html" translate="No">&lt;div style=&quot;overflow-x: scroll;&quot;&gt;
+  &lt;table class=&quot;bcls-table&quot;&gt;
+      &lt;caption class=&quot;bcls-caption--table&quot;&gt;description&lt;/caption&gt;
+      &lt;thead class=&quot;bcls-table__head&quot;&gt;
+          &lt;tr&gt;
+              &lt;th&gt;Table Header&lt;/th&gt;
+              &lt;th&gt;Table Header&lt;/th&gt;
+          &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody class=&quot;bcls-table__body&quot;&gt;
+          &lt;tr&gt;
+              &lt;td&gt;Table cell&lt;/td&gt;
+              &lt;td&gt;Table cell&lt;/td&gt;
+          &lt;/tr&gt;
+      &lt;/tbody&gt;
+  &lt;/table&gt;
+  &lt;/div&gt;</code></pre>
+        <p>And below is a sample table:</p>
+        <div style="overflow-x: scroll;">
+            <table class="bcls-table">
+                <caption class="bcls-caption--table">Sample Table</caption>
+                <thead class="bcls-table__head">
+                    <tr>
+                        <th>Column header</th>
+                        <th>Column header</th>
+                    </tr>
+                </thead>
+                <tbody class="bcls-table__body">
+                    <tr>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="bcls-section">
+        <h2 id="Notes_for_information_tips_and_warnings">Notes for information, tips, and warnings</h2>
+        <p>We have special notes styles to highlight important information, tips that might help customers, or warnings about things might go wrong.</p>
+        <aside class="bcls-aside bcls-aside--information language-editable">
+            This is an <strong>information</strong> note. You can use any HTML you want in here.
+            <pre class="line-numbers"><code class="language-html" translate="no">&lt;aside class=&quot;bcls-aside bcls-aside--information language-editable&quot;&gt;&lt;/aside&gt;</code></pre>
+        </aside>
+        <aside class="bcls-aside bcls-aside--tip language-editable">
+            This is a <strong>tip</strong> note. You can use any HTML you want in here.
+            <pre class="line-numbers"><code class="language-html" translate="No">&lt;aside class=&quot;bcls-aside bcls-aside--tip language-editable&quot;&gt;&lt;/aside&gt;</code></pre>
+        </aside>
+        <aside class="bcls-aside bcls-aside--warning language-editable">
+            This is a <strong>warning</strong> note. You can use any HTML you want in here.
+            <pre class="line-numbers"><code class="language-html" translate="No">&lt;aside class=&quot;bcls-aside bcls-aside--warning language-editable&quot;&gt;&lt;/aside&gt;</code></pre>
+        </aside>
+    </section>
+
+    <section class="bcls-section">
+        <h2 id="Simulate_UI_buttons">Simulate UI buttons></h2>
+        <p>To help users identify buttons in Studio that you are referring to, we've create classes to simulate the buttons in documentation. Examples with the code are below.</p>
+        <dl>
+            <dt><span class="button-blue">Add New</span></dt>
+            <dd><code translate="No">&lt;span class=&quot;button-blue&quot;&gt;Add New&lt;/span&gt;</code></dd>
+            <dt><span class="button-blue-text">Add New</span></dt>
+            <dd><code translate="No">&lt;span class=&quot;button-blue-text&quot;&gt;Add New&lt;/span&gt;</code></dd>
+            <dt><span class="button-blue-text-bordered">Add New</span></dt>
+            <dd><code translate="No">&lt;span class=&quot;button-blue-text-bordered&quot;&gt;Add New&lt;/span&gt;</code></dd>
+            <dt><span class="button-red">Add New</span></dt>
+            <dd><code translate="No">&lt;span class=&quot;button-red&quot;&gt;Add New&lt;/span&gt;</code></dd>
+            <dt><span class="button-red-text">Add New</span></dt>
+            <dd><code translate="No">&lt;span class=&quot;button-red-text&quot;&gt;Add New&lt;/span&gt;</code></dd>
+            <dt><span class="button-red-text-border">Add New</span></dt>
+            <dd><code translate="No">&lt;span class=&quot;button-red-text-border&quot;&gt;Add New&lt;/span&gt;</code></dd>
+            <dt><span class="button-gray">Add New</span></dt>
+            <dd><code translate="No">&lt;span class=&quot;button-gray&quot;&gt;Add New&lt;/span&gt;</code></dd>
+        </dl>
+    </section>
+    <section class="bcls-section">
+        <h2 id="Code_and_localization">Code and localization</h2>
+        <p>The AWS machine translator we use to localize our sites translates code as if it were ordinary text, which is always wrong! To stop this, I got Amazon to add handling for a special <code translate="No">translate="no"</code> attribute that stops
+            the content of the tag from being translated. you can use that attribute on any tag, but it's especially important to use it when you are including sample code.</p>
+        <h3>Inline code</h3>
+        <p>For inline code, just use <strong>&lt;code translate=&quot;No&quot;&gt;some same code&lt;/code&gt;</strong></p>
+        <h3>Code blocks</h3>
+        <p>For code blocks, we use a library that adds line numbering and syntax highlighting for the code, based on special classes.</p>
+        <h4>HTML</h4>
+        <p>For an HTML block: <code translate="no">&lt;pre class=&quot;line-numbers&quot;&gt;&lt;code class=&quot;language-html&quot; translate=&quot;No&quot;&gt;&lt;/code&gt;&lt;/pre&gt;</code></p>
+        <h5>Example</h5>
+    <pre class="line-numbers"><code class="language-html" translate="No">&lt;section class=&quot;bcls-section&quot;&gt;
+  &lt;h2 id=&quot;&quot;&gt;&lt;/h2&gt;
+  &lt;p&gt;&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+        <h4>CSS</h4>
+        <p>For a CSS block: <code translate="no">&lt;pre class=&quot;line-numbers&quot;&gt;&lt;code class=&quot;language-css&quot; translate=&quot;No&quot;&gt;&lt;/code&gt;&lt;/pre&gt;</code></p>
+        <h5>Example</h5>
+<pre class="line-numbers"><code class="language-css" translate="No">.bcls-tasklist-restart {
+  list-style-type: none;
+  margin-left: 0;
+  counter-reset: rstep calc(var(--s) - 1);
+}</code></pre>
+        <h4>JavaScript</h4>
+        <p>For a CSS block: <code translate="no">&lt;pre class=&quot;line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot; translate=&quot;No&quot;&gt;&lt;/code&gt;&lt;/pre&gt;</code></p>
+        <h5>Example</h5>
+<pre class="line-numbers"><code class="language-javascript" translate="No">var cookiesArray = document.cookie.split(";"), cookiesObj = {}, i, tmpArray = [];
+for (i = 0; i < cookiesArray.length; i++) {
+    tmpArray = cookiesArray[i].split("=");
+    if (tmpArray[0].indexOf('BC_TOKEN') > -1) {
+        cookiesObj.BC_TOKEN = tmpArray[1];
+    }
+}
+window.prompt("BC_TOKEN:", cookiesObj.BC_TOKEN);</code></pre>
+        <p>Several other languages are supported, including json, swift, objective-c, and java.</p>
+        <h3>Highlighting and marking user input</h3>
+        <p>Sometimes it's useful to highlight an important part of code, or an item that the user needs to replace with their own information.</p>
+        <p>To highlight some code, use <span class="bcls-highlight"><code translate="No">&lt;span class=&quot;bcls-highlight&quot;&gt;(some code here)&lt;/span&gt;</code></span></p>
+        <p>To mark some code that the user needs to modify, use <span class="bcls-input"><code translate="No">&lt;span class=&quot;bcls-input&quot;&gt;{your_access_token}&lt;/span&gt;</code></span></p>
+    </section>
 </article>
-
-
 </div>
 <div class="col-sm-2 right-side-bar">
   

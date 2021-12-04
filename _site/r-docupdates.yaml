@@ -1,162 +1,32 @@
-- date: 3-December-2021
+- date: 10-December-2021
   types:
     - type: New Docs
       docs:
-    - type: New Docs
-      docs:
-        - Title: 'Fallback HDCP with the Native SDKs'
-          Description: 'In this topic, you will learn about using HDCP-protected content with the Brightcove Native SDKs to block streaming on unauthorized devices, and provide a standard definition fallback for devices that do not support HDCP.'
-          Link:  https://sdks.support.brightcove.com/features/fallback-hdcp-sdks.html 
-          Product: Video Cloud
-          Product_area: Native SDKs
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Generic Stream Concurrency (GSC) with the Native SDK for Android'
-          Description: 'In this topic, you will learn how to set up and test Generic Stream Concurrency (GSC) with the Brightcove Native SDK for Android.'
-          Link:  https://sdks.support.brightcove.com/android/content-protection/generic-stream-concurrency-android.html 
-          Product: Video Cloud
-          Product_area: Native SDKs
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Managing the Channel Program (was Adding Content to Cloud Playout Channels)'
-          Description: 'Increase the limit of program items to 1000 and updated UI with new capabilities for managing Cloud Playout channel programs.'
-          Link: https://studio.support.brightcove.com/cloud-playout/cloud-playout-add-content.html
-          Product: Video Cloud
-          Product_area: Cloud Playout
-          Product_Update: 'true'
-          Feature: 'Managing Program Content'
-          Status: Released
-        - Title: 'Managing the Channel Program (was Adding Content to Cloud Playout Channels)'
-          Description: 'Increase the limit of program items to 1000 and updated UI with new capabilities for managing Cloud Playout channel programs.'
-          Link: https://beacon.support.brightcove.com/using-brightcove-beacon/cloud-playout/cloud-playout-add-content.html
-          Product: Beacon Classic
-          Product_area: Cloud Playout
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Managing the Channel Program (was Adding Content to Cloud Playout Channels)'
-          Description: 'Increase the limit of program items to 1000 and updated UI with new capabilities for managing Cloud Playout channel programs.'
-          Link: https://beacon-help.support.brightcove.com/channels/cloud-playout/cloud-playout-add-content.html
-          Product: Beacon Studio
-          Product_area: Cloud Playout
-          Product_Update: 'true'
-          Feature: 'Managing Program Content'
-          Status: Limited Availability
+        - Title: ''
+          Description: ''
+          Link: 
+          Product: Video Cloud | Live | Beacon | SSAI | Zencoder
+          Product_area: 
+          Product_Update: 'true | false'
+          Feature: '(leave blank if Product_Update is false)'
+          Status: Released | Limited Availability | Staging | Internal
     - type: Major updates
       docs:
-        - Title: 'Brightcove Player Loader'
-          Description: 'Added section for using Playback Restrictions'
-          Link: https://player.support.brightcove.com/publish/brightcove-player-loader.html#Using_Playback_Restrictions  
-          Product: Video Cloud
-          Product_area: Brightcove Player
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Page Details Overview'
-          Description: 'Updated to new UI changes'
-          Link: https://beacon-help.support.brightcove.com/layout/page-details-overview.html
-          Product: Beacon
-          Product_area: Layout
-          Product_Update: 'false'
+        - Title: ''
+          Description: ''
+          Link: 
+          Product: Video Cloud | Live | Beacon | SSAI | Zencoder
+          Product_area: 
+          Product_Update: 'true | false'
           Feature: '(leave blank if Product_Update is false)'
-          Status: Limited Availability
-        - Title: 'Getting Started with Brightcove Video Connect for SharePoint'
-          Description: 'Updated installation instructions to reflect the current version of the Connector.'
-          Link: https://integrations.support.brightcove.com/sharepoint/getting-started-brightcove-video-connect-sharepoint.html
-          Product: Video Cloud
-          Product_area: Integrations
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Requesting Auto Captions'
-          Description: 'Added 6 new supported languages.'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/requesting-auto-captions.html
-          Product: Video Cloud
-          Product_area: Dynamic Ingest API
-          Product_Update: 'true'
-          Feature: 'Auto Captions'
-          Status: Released
-        - Title: 'Dynamic Ingest API Reference'
-          Description: 'Added 6 new supported languages for auto captions.'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/references/reference.html
-          Product: Video Cloud
-          Product_area: Dynamic Ingest API
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Auto Captions'
-          Description: 'Added 6 new supported languages, and a table of supported languages.'
-          Link: https://zencoder.support.brightcove.com/encoding-settings/assets/encoding-settings-auto-captions.html
-          Product: Zencoder
-          Product_area: Encoding Settings
-          Product_Update: 'true'
-          Feature: 'Auto Captions'
-          Status: Released
-        - Title: 'Zencoder API Reference'
-          Description: 'Added 6 new supported languages for auto captions.'
-          Link: https://zencoder.support.brightcove.com/references/reference.html
-          Product: Zencoder
-          Product_area: Encoding Settings
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: Image API'
-          Description: 'Added 4 new parameters for transforming images.'
-          Link: https://apis.support.brightcove.com/images/getting-started/overview.html
-          Product: Video Cloud
-          Product_area: Image API
-          Product_Update: 'true'
-          Feature: 'Image transforms'
-          Status: Limited Availability
-        - Title: 'Image API Reference'
-          Description: 'Added 4 new parameters for transforming images.'
-          Link: https://apis.support.brightcove.com/images/references/reference.html
-          Product: Video Cloud
-          Product_area: Image API
-          Product_Update: 'true'
-          Feature: 'Image transforms'
-          Status: Limited Availability
+          Status: Released | Limited Availability | Staging | Internal
     - type: Minor updates
       docs:
-        - Title: 'Offline Playback with the Native Player SDKs'
-          Description: 'Added note that currently only Video Cloud videos can be downloaded'
-          Link: https://sdks.support.brightcove.com/features/offline-playback-native-player-sdks.html#Download_management 
-          Product: Video Cloud
-          Product_area: Native SDKs
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Sending App Notifications'
-          Description: 'One small, but critical, issue corrected. Both document and associated video fixed.'
-          Link: https://beacon.support.brightcove.com/using-brightcove-beacon/sending-app-notifications.html
-          Product: Beacon
-          Product_area: App Notifications
-          Product_Update: 'false'
+        - Title: ''
+          Description: ''
+          Link: 
+          Product: Video Cloud | Live | Beacon | SSAI | Zencoder
+          Product_area: 
+          Product_Update: 'true | false'
           Feature: '(leave blank if Product_Update is false)'
-          Status: Released
-        - Title: 'Beacon Apps Ad Targeting'
-          Description: 'Added new ad macros and content around those macros.'
-          Link: https://beacon.support.brightcove.com/monetization/ssai/beacon-apps-ad-targeting.html
-          Product: Beacon
-          Product_area: Monetization
-          Product_Update: 'false'
-          Feature: '(leave blank if Product_Update is false)'
-          Status: Released
-        - Title: 'Using Core Pages'
-          Description: 'Updated how videos are defined to be recently watched.'
-          Link: https://beacon-help.support.brightcove.com/layout/using-core-pages.html
-          Product: Beacon
-          Product_area: Layout
-          Product_Update: 'false'
-          Feature: '(leave blank if Product_Update is false)'
-          Status: Limited Availability
-        - Title: 'Overview: Brightcove Playback Restrictions'
-          Description: 'Updated some obsolete links.'
-          Link: https://apis.support.brightcove.com/playback-restrictions/getting-started/overview-playback-restrictions.html#License_Keys_Protection
-          Product: Video Cloud
-          Product_area: Playback Restrictions
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
+          Status: Released | Limited Availability | Staging | Internal
