@@ -22,11 +22,11 @@
           Status: Released | Limited Availability | Staging | Internal
     - type: Minor updates
       docs:
-        - Title: ''
-          Description: ''
+        - Title: 'CMS API Reference'
+          Description: 'Added limit on number of characters for tags, and update limit on number of videos for playlists'
           Link: 
-          Product: Video Cloud | Live | Beacon | SSAI | Zencoder
+          Product: Video Cloud
           Product_area: 
-          Product_Update: 'true | false'
-          Feature: '(leave blank if Product_Update is false)'
-          Status: Released | Limited Availability | Staging | Internal
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
