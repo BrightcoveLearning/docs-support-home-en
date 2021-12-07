@@ -215,6 +215,7 @@
         .bcls-table {
             border-collapse: collapse;
             border: 1px #ccc solid;
+            margin-bottom: 2em;
         }
         
         .bcls-table-release-notes td {

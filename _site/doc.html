@@ -312,27 +312,72 @@ parent:
             <figcaption class="bcls-caption--image">Basic Doc Structure</figcaption>
         </figure>
 
-        <p>And that above is a bordered image - the code for it is below:</p>
+        <p>The <code translate="No">id</code> on the <code translate="No">h2</code> tag is <strong>important</strong> because it is used to build the Page Contents menu:</p>
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/doc-template/page-contents.png" alt="Page Contents Menu">
+          <figcaption class="bcls-caption--image">Page Contents Menu</figcaption>
+        </figure>
+    </section>
 
-<pre class="line-numbers"><code class="language-html" translate="No">&lt;figure class=&quot;bcls-figure&quot;&gt;
-  &lt;img class=&quot;bcls-image&quot; src=&quot;/assets/images/doc-template/basic-doc-structure.png&quot; alt=&quot;Basic Doc Structure&quot;&gt;
-  &lt;figcaption class=&quot;bcls-caption--image&quot;&gt;Basic Doc Structure&lt;/figcaption&gt;
-&lt;/figure&gt;</code></pre>
+    <section class="bcls-section">
+      <h2 id="images">Images</h2>
+      <h3>Images set off on their own</h3>
+      <p>You can set off images on their own with a border added or no border.</p>
+      <figure class="bcls-figure">
+        <img class="bcls-image" src="/assets/images/doc-template/page-contents.png" alt="Page Contents Menu">
+        <figcaption class="bcls-caption--image">Page Contents Menu</figcaption>
+      </figure>
+      <pre class="line-numbers"><code class="language-html" translate="No">&lt;figure class=&quot;bcls-figure&quot;&gt;
+        &lt;img class=&quot;bcls-image&quot; src=&quot;/assets/images/doc-template/page-contents.png&quot; alt=&quot;Basic Doc Structure&quot;&gt;
+        &lt;figcaption class=&quot;bcls-caption--image&quot;&gt;Basic Doc Structure&lt;/figcaption&gt;
+      &lt;/figure&gt;</code></pre>
+      
+      <p>Dash snippet: <code translate="No">bcimg</code></p>
+              <h3>Image without border</h3>
 
-<p>Dash snippet: <code translate="No">bcimg</code></p>
-
-        <p>If you wanted an image with no border, use this instead:</p>
+              <figure class="bcls-figure">
+                <img class="bcls-image--no-border" src="/assets/images/doc-template/page-contents.png" alt="Page Contents Menu">
+                <figcaption class="bcls-caption--image">Page Contents Menu</figcaption>
+              </figure>
+              <p>If you wanted an image with no border, use this instead:</p>
 <pre><code class="language-html" translate="No">&lt;figure class=&quot;bcls-figure&quot;&gt;
   &lt;img class=&quot;bcls-image--no-border&quot; src=&quot;&quot; alt=&quot;description&quot;&gt;
   &lt;figcaption class=&quot;bcls-caption--image&quot;&gt;description&lt;/figcaption&gt;
 &lt;/figure&gt;</code></pre>
+      
+      <p>Dash snippet: <code translate="No">imgnoborder</code></p>
+              <p>For inline images, just use an <code translate="No">&lt;img&gt;</code> tag without the figure and caption tags. No special classes for inline images.</p>
 
-<p>Dash snippet: <code translate="No">imgnoborder</code></p>
-        <p>For inline images, just use an <code translate="No">&lt;img&gt;</code> tag without the figure and caption tags. No special classes for inline images.</p>
+              <p>Image formats</p>
+              <ul>
+                <li>For screenshots, use .png or .jpg (png preferred)</li>
+                <li>For diagrams use .svg if at all possible (svg resizes better than other formats). Many image editors like Lucidchart allow you to export the image as svg</li>
+              </ul>
+      
     </section>
+
     <section class="bcls-section">
         <h2 id="Task_lists">Task lists</h2>
         <p>We use some special lists for different purposes.</p>
+        <h3>Task list that resumes numbering when you restart it</h3>
+        <ol class="bcls-tasklist">
+          <li>Step 1</li>
+          <li>Step 2</li>
+          <li>
+            Step 3: code for the list:
+<pre class="line-numbers"><code class="language-html" translate="No">&lt;ol class=&quot;bcls-tasklist&quot;&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+          </li>
+          <li>Step 4: Dash snippet: <code translate="No">bctasklist</code></li>
+        </ol>
+        <h4>Subheading</h4>
+        <p>Some content you want to add before restarting the steps.</p>
+        <ol class="bcls-tasklist">
+          <li>Step 5</li>
+          <li>Step 6</li>
+        </ol>
+
         <h3>Task list with numbers starting at 1</h3>
         <ol class="bcls-tasklist-restart">
             <li>Here is step 1 of the task.</li>
@@ -408,7 +453,32 @@ parent:
     </section>
 
     <section class="bcls-section">
-        <h2 id="Simulate_UI_buttons">Simulate UI buttons></h2>
+      <h2 id="embedding_videos">Embedding videos</h2>
+      <h3>Training videos</h3>
+      <p>For training videos, we use an <a href="https://gallery.support.brightcove.com/experiences/inpage/index.html">in-page experience</a>. The code looks like this:</p>
+<pre class="line-numbers"><code class="language-html">&lt;div class=&quot;training-video-player-ipx&quot; data-experience=&quot;5a73630f7afd7a00101bc1b5&quot; data-video-ids=&quot;<span class="bcls-highlight">4878165648001</span>&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/span&gt;
+  &lt;script src=&quot;https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+      <p>Note that the video id (highlighted above) is the only thing that changes.</p>
+      <h3>Sample videos/players</h3>
+      <p>For samples, it will depend on what the sample is demonstrating. Where possible, use the <strong>basic</strong> (iframe) embed code, but if you need to add custom CSS or JavaScript, you will need to use the <strong>advanced</strong> (in-page) embed code. In either case, be sure to use the <strong>responsive</strong> version of the code.</p>
+      <h3>Short animated-gif style videos</h3>
+      <p>Matt created a special player for these in the In-App Help account.</p>
+      <p>These also need to be responsive, and making them so is a little more complicated, because the responsive code the Brightcove Player uses assumes a 16:9 aspect ratio, and these videos are usually odd sizes (as we try to make them as small as possible). Here's sample code to show you what needs to be done:</p>
+<pre class="line-numbers"><code class="language-html">&lt;div style=&quot;position: relative; display: block; max-width: 960px;&quot;&gt;
+  &lt;div style=&quot;<span class="bcls-highlight">padding-top: 43.64%;</span>&quot;&gt;
+    &lt;iframe src=&quot;https://players.brightcove.net/6225316964001/Qznf2bKtV_default/index.html?videoId=6267506952001&quot; allowfullscreen=&quot;&quot; allow=&quot;encrypted-media&quot; style=&quot;position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      <p>The key to responsive video is the <code translate="no">padding-top</code> value in the second <code translate="no">div</code> tag (highlighted above). The value needs to be the actual height of the video divided by the actual width, expressed as a percentage:</p>
+      <figure class="bcls-figure">
+        <img class="bcls-image" src="/assets/images/doc-template/responsive-sizing.png" alt="Calculating Padding-Top">
+        <figcaption class="bcls-caption--image">Calculating Padding-Top</figcaption>
+      </figure>
+    </section>
+
+    <section class="bcls-section">
+        <h2 id="Simulate_UI_buttons">Simulate UI buttons</h2>
         <p>To help users identify buttons in Studio that you are referring to, we've create classes to simulate the buttons in documentation. Examples with the code are below.</p>
         <dl>
             <dt><span class="button-blue">Add New</span></dt>
@@ -460,11 +530,26 @@ for (i = 0; i < cookiesArray.length; i++) {
     }
 }
 window.prompt("BC_TOKEN:", cookiesObj.BC_TOKEN);</code></pre>
-        <p>Several other languages are supported, including json (Dash snippet: <code translate="No">pcljson</code>), swift, objective-c, and java (Dash snippet: <code translate="No">pcjava</code>).</p>
+        <p>Several other languages are supported, including json (Dash snippet: <code translate="No">pcljson</code>), swift, objective-c, and java (Dash snippet: <code translate="No">pcjava</code>). See <a href="https://prismjs.com/#supported-languages">this page</a> for all languages Prism supports. Our implementation doesn't support all the languages, but if you need to add one that isn't supported, ask Robert.</p>
+        <p>If you don't want line numbers for a short snippet, just remove the <code translate="no">class="line-numbers"</code> from the <code translate="no">pre</code> tag.</p>
         <h3>Highlighting and marking user input</h3>
         <p>Sometimes it's useful to highlight an important part of code, or an item that the user needs to replace with their own information.</p>
         <p>To highlight some code, use <span class="bcls-highlight"><code translate="No">&lt;span class=&quot;bcls-highlight&quot;&gt;(some code here)&lt;/span&gt;</code></span> (Dash snippet: select the code that you want to highlight, and then type <code translate="No">bchighlight</code>)</p>
         <p>To mark some code that the user needs to modify, use <span class="bcls-input"><code translate="No">&lt;span class=&quot;bcls-input&quot;&gt;{your_access_token}&lt;/span&gt;</code></span> (Dash snippet: select the code that you want to apply this to, and then type <code translate="No">bcinput</code>)</p>
+    </section>
+    <section class="bcls-section">
+      <h2 id="collapsable_sections">Collapsable sections</h2>
+      We sometimes use collapsable sections for bits of information that are included on a lot of different pages (for example, how to create client credentials for an API), and also for some long code blocks that many users may not be interested in seeing (like a sample response to an API request).
+      <p>Here's an example:</p>
+      <details>
+        <summary>This part appears in the page</summary>
+        <p>What's in this part can contain any HTML and is hidden until the user clicks on the visible part.</p>
+      </details>
+      <h3>The code</h3>
+<pre class="line-numbers"><code class="language-html" translate="no">&lt;details&gt;
+  &lt;summary&gt;This part appears in the page&lt;/summary&gt;
+  &lt;p&gt;What&apos;s in this part can contain any HTML and is hidden until the user clicks on the visible part.&lt;/p&gt;
+&lt;/details&gt;</code></pre>
     </section>
 </article>
 </div>
