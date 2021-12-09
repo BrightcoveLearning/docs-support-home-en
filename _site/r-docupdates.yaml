@@ -24,9 +24,41 @@
       docs:
         - Title: 'CMS API Reference'
           Description: 'Added limit on number of characters for tags, and update limit on number of videos for playlists'
-          Link: 
+          Link: https://apis.support.brightcove.com/cms/references/reference.html
           Product: Video Cloud
           Product_area: 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Standard Ingest Profiles for Dynamic Delivery and Context Aware Encoding'
+          Description: 'Made tables horizontally scrollable for viewing on smaller screens'
+          Link: https://studio.support.brightcove.com/admin/standard-ingest-profiles-dynamic-delivery-and-context-aware-encoding.html#Renditions
+          Product: Video Cloud
+          Product_area: Studio Admin
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Limiting Concurrent Streams per Viewer'
+          Description: 'Added note that this solution only works for DRM, with link to Generic Stream Concurrency doc for non-DRM videos'
+          Link: https://apis.support.brightcove.com/playback-restrictions/guides/stream-concurrency.html
+          Product: Video Cloud
+          Product_area: Playback Restrictions
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Live API: Server-Side Ad Insertion (SSAI)'
+          Description: 'Added supported regions for Live SSAI'
+          Link: https://apis.support.brightcove.com/live-api/ssai/live-api-server-side-ad-insertion-ssai.html#Supported_regions
+          Product: Live
+          Product_area: SSAI
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Playback API Reference (2.0.0)'
+          Description: 'Corrected incorrect data type for Get Video by ID response'
+          Link: https://apis.support.brightcove.com/playback/references/reference_v2.html#operation/Get_Video_by_ID_or_Reference_ID
+          Product: Video Cloud
+          Product_area: Playback API
           Product_Update: 'false'
           Feature: ''
           Status: Released
