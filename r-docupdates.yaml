@@ -1,4 +1,4 @@
-- date: 10-December-2021
+- date: 24-November-2021
   types:
     - type: New Docs
       docs:
@@ -12,53 +12,53 @@
           Status: Released | Limited Availability | Staging | Internal
     - type: Major updates
       docs:
-        - Title: ''
-          Description: ''
-          Link: 
-          Product: Video Cloud | Live | Beacon | SSAI | Zencoder
+        - Title: 'Video Cloud Studio documentation (French)'
+          Description: 'Major update of translations'
+          Link: https:\\fr.studio.support.brightcove.com
+          Product: Video Cloud
           Product_area: 
-          Product_Update: 'true | false'
-          Feature: '(leave blank if Product_Update is false)'
-          Status: Released | Limited Availability | Staging | Internal
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Video Cloud Studio documentation (Korean)'
+          Description: 'Major update of translations'
+          Link: https:\\ko.studio.support.brightcove.com
+          Product: Video Cloud
+          Product_area: 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Video Cloud Studio documentation (Chinese)'
+          Description: 'Major update of translations'
+          Link: https:\\zh-tw.studio.support.brightcove.com
+          Product: Video Cloud
+          Product_area: 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Minor updates
       docs:
-        - Title: 'CMS API Reference'
-          Description: 'Added limit on number of characters for tags, and update limit on number of videos for playlists'
-          Link: https://apis.support.brightcove.com/cms/references/reference.html
+        - Title: 'Overview: Image API'
+          Description: 'Removed height and width parameters (the resize parameter does the same thing) as these are only for internal use'
+          Link: https://apis.support.brightcove.com/images/getting-started/overview.html
           Product: Video Cloud
           Product_area: 
           Product_Update: 'false'
           Feature: ''
-          Status: Released
-        - Title: 'Standard Ingest Profiles for Dynamic Delivery and Context Aware Encoding'
-          Description: 'Made tables horizontally scrollable for viewing on smaller screens'
-          Link: https://studio.support.brightcove.com/admin/standard-ingest-profiles-dynamic-delivery-and-context-aware-encoding.html#Renditions
+          Status: Limited Availability
+        - Title: 'Image API Reference'
+          Description: 'Removed height and width parameters (the resize parameter does the same thing) as these are only for internal use'
+          Link: https://apis.support.brightcove.com/images/references/reference.html
           Product: Video Cloud
-          Product_area: Studio Admin
+          Product_area: 
           Product_Update: 'false'
           Feature: ''
-          Status: Released
-        - Title: 'Limiting Concurrent Streams per Viewer'
-          Description: 'Added note that this solution only works for DRM, with link to Generic Stream Concurrency doc for non-DRM videos'
-          Link: https://apis.support.brightcove.com/playback-restrictions/guides/stream-concurrency.html
+          Status: Limited Availability
+        - Title: 'Adding Dynamic Overlays (to Cloud Playout channel)'
+          Description: 'Removed Known Issues section that is no longer relevant'
+          Link: https://studio.support.brightcove.com/cloud-playout/dynamic-overlays.html
           Product: Video Cloud
-          Product_area: Playback Restrictions
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Live API: Server-Side Ad Insertion (SSAI)'
-          Description: 'Added supported regions for Live SSAI'
-          Link: https://apis.support.brightcove.com/live-api/ssai/live-api-server-side-ad-insertion-ssai.html#Supported_regions
-          Product: Live
-          Product_area: SSAI
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Playback API Reference (2.0.0)'
-          Description: 'Corrected incorrect data type for Get Video by ID response'
-          Link: https://apis.support.brightcove.com/playback/references/reference_v2.html#operation/Get_Video_by_ID_or_Reference_ID
-          Product: Video Cloud
-          Product_area: Playback API
+          Product_area: Cloud Playout
           Product_Update: 'false'
           Feature: ''
           Status: Released
