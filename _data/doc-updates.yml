@@ -1,3 +1,150 @@
+- date: 17-December-2021
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'Images and Their Specifications'
+          Description: 'In this topic, you will learn of the images required for your Brightcove Beacon Experience. Also detailed are the required image sizes, aspect ratios, etc.'
+          Link: https://beacon-help.support.brightcove.com/styling/image-requirements.html
+          Product: Beacon
+          Product_area: Styling
+          Product_Update: 'false'
+          Feature: ''
+          Status: Limited Availability
+
+    - type: Major updates
+      docs:
+        - Title: 'Video Cloud Studio documentation (French)'
+          Description: 'Major update of translations'
+          Link: https:\\fr.studio.support.brightcove.com
+          Product: Video Cloud
+          Product_area:
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Video Cloud Studio documentation (Korean)'
+          Description: 'Major update of translations'
+          Link: https:\\ko.studio.support.brightcove.com
+          Product: Video Cloud
+          Product_area:
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Video Cloud Studio documentation (Chinese)'
+          Description: 'Major update of translations'
+          Link: https:\\zh-tw.studio.support.brightcove.com
+          Product: Video Cloud
+          Product_area:
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Implementing Playback Rights'
+          Description: 'Added section to explain how Playback Rights are validated when making a request to the Playback API'
+          Link: https://apis.support.brightcove.com/playback-restrictions/getting-started/implementing-playback-rights.html#How_does_it_work
+          Product: Video Cloud
+          Product_area: Playback Restrictions
+          Product_Update: ''
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Player Sample: Playback Rate Adjuster'
+          Description: 'The rate adjuster is now a standard option for the player. Note and link added'
+          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-playback-rate-adjuster.html
+          Product: Video Cloud
+          Product_area: Brightcove Player
+          Product_Update: ''
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Digital Rights Management (DRM) in Video Cloud'
+          Description: 'Updated DRM support table for the Native SDK for Android'
+          Link: https://studio.support.brightcove.com/general/overview-digital-rights-management-drm-video-cloud.html#Summary_of_DRM_support
+          Product: Video Cloud
+          Product_area: Native SDKs
+          Product_Update: ''
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Social™ Documentation'
+          Description: 'All associated documents updated to latest UI changes'
+          Link: https://beacon-help.support.brightcove.com/social/index.html
+          Product: Beacon
+          Product_area:
+          Product_Update: 'false'
+          Feature: ''
+          Status: Limited Availability
+
+    - type: Minor updates
+      docs:
+        - Title: 'Overview: Image API'
+          Description: 'Removed height and width parameters (the resize parameter does the same thing) as these are only for internal use'
+          Link: https://apis.support.brightcove.com/images/getting-started/overview.html
+          Product: Video Cloud
+          Product_area:
+          Product_Update: 'false'
+          Feature: ''
+          Status: Limited Availability
+        - Title: 'Image API Reference'
+          Description: 'Removed height and width parameters (the resize parameter does the same thing) as these are only for internal use'
+          Link: https://apis.support.brightcove.com/images/references/reference.html
+          Product: Video Cloud
+          Product_area:
+          Product_Update: 'false'
+          Feature: ''
+          Status: Limited Availability
+        - Title: 'Adding Dynamic Overlays (to Cloud Playout channel)'
+          Description: 'Removed Known Issues section that is no longer relevant'
+          Link: https://studio.support.brightcove.com/cloud-playout/dynamic-overlays.html
+          Product: Video Cloud
+          Product_area: Cloud Playout
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Generic Stream Concurrency (GSC) with the Native SDK for Android'
+          Description: 'Removed 1 known issue with the latest Android SDK release 6.17.3'
+          Link: https://sdks.support.brightcove.com/android/content-protection/generic-stream-concurrency-android.html
+          Product: Video Cloud
+          Product_area: Native SDKs
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating a JSON Web Token (JWT)'
+          Description: 'Added links for Playback Restrictions sub-topics'
+          Link: https://general.support.brightcove.com/developer/create-json-web-token.html#Claims_for_Playback_Restrictions
+          Product: Video Cloud
+          Product_area: Playback Restrictions
+          Product_Update: ''
+          Feature: ''
+          Status: Released
+        - Title: 'Chromecast Plugin for Brightcove Player'
+          Description: 'Added known issue for platforms where the plugin is not supported'
+          Link: https://player.support.brightcove.com/plugins/chromecast-plugin-brightcove-player.html#Limitations_and_known_issues
+          Product: Video Cloud
+          Product_area: Brightcove Player
+          Product_Update: ''
+          Feature: ''
+          Status: Released
+        - Title: 'Cross-Device Resume with Brightcove Player'
+          Description: 'Added warning that the viewer id must be a unique string'
+          Link: https://player.support.brightcove.com/playback/xdr-with-bcplayer.html#Set_the_user_identifier
+          Product: Video Cloud
+          Product_area: Brightcove Player
+          Product_Update: ''
+          Feature: ''
+          Status: Released
+        - Title: 'Using 360° Videos with the Native SDKs'
+          Description: 'Added note about field of view with 360 videos'
+          Link: https://sdks.support.brightcove.com/features/using-360deg-videos-native-sdks.html
+          Product: Video Cloud
+          Product_area: Native SDKs
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Branding Brightcove Beacon Apps'
+          Description: 'Added images from the Beacon design team'
+          Link: https://beacon.support.brightcove.com/references/branding-beacon-apps.html
+          Product: Beacon
+          Product_area: Styling
+          Product_Update: 'false'
+          Feature: '(leave blank if Product_Update is false)'
+          Status: Released
+
 - date: 10-December-2021
   types:
     - type: New Docs
