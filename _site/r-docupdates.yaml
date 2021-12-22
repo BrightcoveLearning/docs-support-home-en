@@ -2,63 +2,71 @@
   types:
     - type: New Docs
       docs:
-        - Title: ''
-          Description: ''
-          Link: 
-          Product: Video Cloud | Live | Beacon | SSAI | Zencoder
-          Product_area: 
-          Product_Update: 'true | false'
-          Feature: '(leave blank if Product_Update is false)'
-          Status: Released | Limited Availability | Staging | Internal
+        - Title: 'Managing Audio Tracks Using the CMS API'
+          Description: 'Use the CMS API to get, update, and delete audio tracks of your videos'
+          Link: https://apis.support.brightcove.com/cms/managing-videos/managing-audio-tracks.html
+          Product: Video Cloud
+          Product_area: CMS API
+          Product_Update: 'false'
+          Feature: 'Audio Tracks'
+          Status: Released
     - type: Major updates
       docs:
-        - Title: 'Video Cloud Studio documentation (French)'
-          Description: 'Major update of translations'
-          Link: https:\\fr.studio.support.brightcove.com
+        - Title: 'Dynamic API Reference'
+          Description: 'New embed_closed_caption request body field for text tracks allows them to be embedded as 608/708 captions in MP4 renditions'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/references/reference.html#tag/Ingest
           Product: Video Cloud
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Video Cloud Studio documentation (Korean)'
-          Description: 'Major update of translations'
-          Link: https:\\ko.studio.support.brightcove.com
-          Product: Video Cloud
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Video Cloud Studio documentation (Chinese)'
-          Description: 'Major update of translations'
-          Link: https:\\zh-tw.studio.support.brightcove.com
-          Product: Video Cloud
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
+          Product_area: Dynamic Ingest API
+          Product_Update: 'true'
+          Feature: 'Text Tracks'
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Overview: Image API'
-          Description: 'Removed height and width parameters (the resize parameter does the same thing) as these are only for internal use'
-          Link: https://apis.support.brightcove.com/images/getting-started/overview.html
+        - Title: 'Viewing Billing Information'
+          Description: 'Clarication of billing for Live DVR'
+          Link: https://studio.support.brightcove.com/admin/viewing-billing-information.html
+          Product: Live
+          Product_area: 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'CMS API Reference'
+          Description: 'Corrected the maximum value for the limit parameter for the Get Videos in Playlist request - it is 100, not 1000, and also that the encoding_rates array for audio tracks is read only'
+          Link: https://apis.support.brightcove.com/cms/references/reference.html
           Product: Video Cloud
           Product_area: 
           Product_Update: 'false'
           Feature: ''
-          Status: Limited Availability
-        - Title: 'Image API Reference'
-          Description: 'Removed height and width parameters (the resize parameter does the same thing) as these are only for internal use'
-          Link: https://apis.support.brightcove.com/images/references/reference.html
+          Status: Released
+        - Title: 'TLS for Media, Player, and API URLs'
+          Description: 'Added some notes and corrected some typos'
+          Link: https://studio.support.brightcove.com/general/tls-media-player-and-api-urls.html
           Product: Video Cloud
           Product_area: 
           Product_Update: 'false'
           Feature: ''
-          Status: Limited Availability
-        - Title: 'Adding Dynamic Overlays (to Cloud Playout channel)'
-          Description: 'Removed Known Issues section that is no longer relevant'
-          Link: https://studio.support.brightcove.com/cloud-playout/dynamic-overlays.html
+          Status: Released
+        - Title: 'Requesting Auto Captions'
+          Description: 'Added note that for auto captions to be generated, the video must be at least 5 seconds long if the language is specified, 15 seconds long if auto-detect is used'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/requesting-auto-captions.html
           Product: Video Cloud
-          Product_area: Cloud Playout
+          Product_area: 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Automatically Generating Captions for Videos'
+          Description: 'Added note that for auto captions to be generated, the video must be at least 5 seconds long if the language is specified, 15 seconds long if auto-detect is used'
+          Link: https://studio.support.brightcove.com/media/generating-captions-videos.html
+          Product: Video Cloud
+          Product_area: 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Auto Captions'
+          Description: 'Added note that for auto captions to be generated, the video must be at least 5 seconds long if the language is specified, 15 seconds long if auto-detect is used'
+          Link: https://zencoder.support.brightcove.com/encoding-settings/assets/encoding-settings-auto-captions.html
+          Product: Zencoder
+          Product_area: 
           Product_Update: 'false'
           Feature: ''
           Status: Released
