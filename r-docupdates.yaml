@@ -1,184 +1,56 @@
-- date: 24-December-2021
+- date: 31-December-2021
   types:
     - type: New Docs
       docs:
-        - Title: 'Managing Audio Tracks Using the CMS API'
-          Description: 'Use the CMS API to get, update, and delete audio tracks of your videos'
-          Link: https://apis.support.brightcove.com/cms/managing-videos/managing-audio-tracks.html
-          Product: Video Cloud
-          Product_area: CMS API
-          Product_Update: 'false'
-          Feature: 'Audio Tracks'
-          Status: Released
-        - Title: 'Managing Custom Fields Using the CMS API'
-          Description: 'Use the CMS API to create, get, update, and delate custom fields for an account'
-          Link: https://apis.support.brightcove.com/cms/managing-videos/managing-custom-fields.html
-          Product: Video Cloud
-          Product_area: CMS API
-          Product_Update: 'true'
-          Feature: 'Custom Fields'
-          Status: Released
-        - Title: 'Ad Intelligence Plugin'
-          Description: 'In this topic, you will learn how to use the Ad Intelligence plugin with Brightcove Player to generate reports that provide insights into ad performance.'
-          Link: https://player.support.brightcove.com/plugins/ad-intelligence-plugin.html 
-          Product: Video Cloud
-          Product_area: Brightcove Player
-          Product_Update: 'true'
-          Feature: 'Ad Intelligence Plugin'
-          Status: Released
-        - Title: 'Android: Playhead Position and Video Duration'
-          Description: 'In this topic, you will learn about changes when using the playhead position and video duration with the Brightcove Native SDK for Android.'
-          Link: https://sdks.support.brightcove.com/android/playback/playhead-position-and-video-duration.html 
-          Product: Video Cloud
-          Product_area: Native SDKs
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'SSAI Plugin Changes with Android SDK v6.18.0'
-          Description: 'In this topic, you will learn about important changes to the Server-Side Ad Insertion (SSAI) plugin in the Brightcove Native SDK for Android.'
-          Link: https://sdks.support.brightcove.com/android/advertising/ssai-seeking-behavior.html 
-          Product: Video Cloud
-          Product_area: Native SDKs
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
+        - Title: ''
+          Description: ''
+          Link: 
+          Product: Video Cloud | Live | Beacon | SSAI | Zencoder
+          Product_area: 
+          Product_Update: 'true | false'
+          Feature: '(leave blank if Product_Update is false)'
+          Status: Released | Limited Availability | Staging | Internal
     - type: Major updates
       docs:
-        - Title: 'CMS API Reference'
-          Description: 'Added operations for managing custom fields. Also corrected the maximum value for the limit parameter for the Get Videos in Playlist request - it is 100, not 1000, and also that the encoding_rates array for audio tracks is read only'
-          Link: https://apis.support.brightcove.com/cms/references/reference.html
-          Product: Video Cloud
+        - Title: ''
+          Description: ''
+          Link: 
+          Product: Video Cloud | Live | Beacon | SSAI | Zencoder
           Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Dynamic API Reference'
-          Description: 'New embed_closed_caption request body field for text tracks allows them to be embedded as 608/708 captions in MP4 renditions'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/references/reference.html#tag/Ingest
-          Product: Video Cloud
-          Product_area: Dynamic Ingest API
-          Product_Update: 'true'
-          Feature: 'Text Tracks'
-          Status: Released
-        - Title: 'Playback API'
-          Description: 'Introduction to Playback API video updated'
-          Link: https://apis.support.brightcove.com/playback/
-          Product: Video Cloud
-          Product_area: Playback API
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Plugin Version Reference'
-          Description: 'Added third-party plugin section'
-          Link: https://player.support.brightcove.com/plugins/plugin-version-reference.html 
-          Product: Video Cloud
-          Product_area: Brightcove Player
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: Brightcove Player Plugins'
-          Description: 'Added third-party plugin section'
-          Link: https://player.support.brightcove.com/plugins/overview-brightcove-player-plugins.html  
-          Product: Video Cloud
-          Product_area: Brightcove Player
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: Brightcove Native SDK for Android'
-          Description: 'Native SDK for Android release v6.18.0'
-          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html 
-          Product: Video Cloud
-          Product_area: Native SDKs
-          Product_Update: 'true'
-          Feature: 'Native SDK for Android release v6.18.0'
-          Status: Released
+          Product_Update: 'true | false'
+          Feature: '(leave blank if Product_Update is false)'
+          Status: Released | Limited Availability | Staging | Internal
     - type: Minor updates
       docs:
-        - Title: 'Viewing Billing Information'
-          Description: 'Clarification of billing for Live DVR'
-          Link: https://studio.support.brightcove.com/admin/viewing-billing-information.html
-          Product: Live
+        - Title: 'Creating Video Cloud Custom Fields'
+          Description: 'Updated to indicate that users can now delete custom fields and do not have to ask Support'
+          Link: https://beacon.support.brightcove.com/syncing-with-video-cloud/vc-custom-fields.html
+          Product: Beacon
           Product_area: 
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'TLS for Media, Player, and API URLs'
-          Description: 'Added some notes and corrected some typos'
-          Link: https://studio.support.brightcove.com/general/tls-media-player-and-api-urls.html
+        - Title: 'Adding Dynamic Overlays'
+          Description: 'Removed links to samples that are no longer available'
+          Link: https://studio.support.brightcove.com/cloud-playout/dynamic-overlays.html
           Product: Video Cloud
-          Product_area: 
+          Product_area: Cloud Playout
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Requesting Auto Captions'
-          Description: 'Added note that for auto captions to be generated, the video must be at least 5 seconds long if the language is specified, 15 seconds long if auto-detect is used'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/requesting-auto-captions.html
+        - Title: 'Add WebVTT Captions (Text Tracks)'
+          Description: 'Added note that the captions kind may only be used with dynamic delivery videos'
+          Link: https://apis.support.brightcove.com/cms/managing-videos/using-cms-api-add-webvtt-captions-text-tracks.html
           Product: Video Cloud
-          Product_area: 
+          Product_area: CMS API
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Automatically Generating Captions for Videos'
-          Description: 'Added note that for auto captions to be generated, the video must be at least 5 seconds long if the language is specified, 15 seconds long if auto-detect is used'
-          Link: https://studio.support.brightcove.com/media/generating-captions-videos.html
+        - Title: 'CMS API Reference'
+          Description: 'Added note that the get clear sources endpoints require a special permission. Credentials for these endpoints must be generated using the OAuth API or requested from Support.'
+          Link: https://apis.support.brightcove.com/cms/references/reference.html#tag/Clear-Sources
           Product: Video Cloud
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Auto Captions'
-          Description: 'Added note that for auto captions to be generated, the video must be at least 5 seconds long if the language is specified, 15 seconds long if auto-detect is used'
-          Link: https://zencoder.support.brightcove.com/encoding-settings/assets/encoding-settings-auto-captions.html
-          Product: Zencoder
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Scheduling Live Events'
-          Description: 'Update on default limit for Scheduling Live Events'
-          Link: https://live.support.brightcove.com/live-module/scheduling-live-event.html
-          Product: Live 
-          Product_area: Scheduling Live Events
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Managing Live Settings'
-          Description: 'Updated a Link to the Appropriate Website'
-          Link:  https://live.support.brightcove.com/admin/managing-live-settings.html
-          Product: Live
-          Product_area: Managing Live Settings
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Creating Custom Metadata Fields'
-          Description: 'Document the no Way to Set a Default Value for a Custom Field'
-          Link: https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html
-          Product: Video Cloud
-          Product_area: Creating custom fields
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Known Issues: Studio, Brightcove Player and APIs'
-          Description: 'Auto display of captions for Safari, information updated'
-          Link: https://general.support.brightcove.com/support/known-issues-studio-brightcove-player-and-apis.html#player
-          Product: Video Cloud
-          Product_area: Brightcove Player
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Autoplay Considerations'
-          Description: 'Autoplay String Values section removed'
-          Link: https://player.support.brightcove.com/playback/autoplay-considerations.html#Known_issues
-          Product: Video Cloud
-          Product_area: Brightcove Player
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Advertising with the IMA3 Plugin'
-          Description: 'Note related to IMA3 plugin version 4.0 added'
-          Link: https://player.support.brightcove.com/plugins/advertising-ima3-plugin.html#section-name
-          Product: Video Cloud
-          Product_area: Brightcove Player
+          Product_area: CMS API
           Product_Update: 'false'
           Feature: ''
           Status: Released
