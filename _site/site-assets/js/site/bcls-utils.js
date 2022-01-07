@@ -98,25 +98,30 @@ var BCLS_player_fix = ( function (window, document) {
         // removeStyle(vc);
     }
 
-    if (vcContent.length !== 0 || bpContent.length !== 0) {
-        if (location.search.indexOf('bp') >- 0) {
-            showElements(bpContent);
-            hideElements(vcContent);
-        } else {
+    if (bpContent.length !== 0) {
             showElements(vcContent);
             hideElements(bpContent);
-        }
-        sideNav.insertAdjacentHTML('afterBegin', toggleStr);
-        vc = document.getElementById('vc');
-        bp = document.getElementById('bp');
-        if (location.search.indexOf('bp') >- 0) {
+  }
+
+    // if (vcContent.length !== 0 || bpContent.length !== 0) {
+    //     if (location.search.indexOf('bp') >- 0) {
+    //         showElements(bpContent);
+    //         hideElements(vcContent);
+    //     } else {
+    //         showElements(vcContent);
+    //         hideElements(bpContent);
+    //     }
+    //     sideNav.insertAdjacentHTML('afterBegin', toggleStr);
+    //     vc = document.getElementById('vc');
+    //     bp = document.getElementById('bp');
+    //     if (location.search.indexOf('bp') >- 0) {
             // addStyle(bp);
             // removeStyle(vc);
-        }
+        // }
 
-        vc.addEventListener('click', vcClickHandler);
+        // vc.addEventListener('click', vcClickHandler);
 
-        bp.addEventListener('click', bpClickHandler);
+        // bp.addEventListener('click', bpClickHandler);
 
 
     }
