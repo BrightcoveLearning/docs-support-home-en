@@ -1,184 +1,216 @@
-- date: 24-December-2021
+- date: 7-January-2022
   types:
     - type: New Docs
       docs:
-        - Title: 'Managing Audio Tracks Using the CMS API'
-          Description: 'Use the CMS API to get, update, and delete audio tracks of your videos'
-          Link: https://apis.support.brightcove.com/cms/managing-videos/managing-audio-tracks.html
+        - Title: 'Import Captions'
+          Description: 'Importing 608/708 closed captions into Cloud Playout Channels'
+          Link: https://studio.support.brightcove.com/cloud-playout/import-captions.html
           Product: Video Cloud
-          Product_area: CMS API
-          Product_Update: 'false'
-          Feature: 'Audio Tracks'
-          Status: Released
-        - Title: 'Managing Custom Fields Using the CMS API'
-          Description: 'Use the CMS API to create, get, update, and delate custom fields for an account'
-          Link: https://apis.support.brightcove.com/cms/managing-videos/managing-custom-fields.html
-          Product: Video Cloud
-          Product_area: CMS API
+          Product_area: Cloud Playout
           Product_Update: 'true'
-          Feature: 'Custom Fields'
+          Feature: 'Import Closed Captions'
           Status: Released
-        - Title: 'Ad Intelligence Plugin'
-          Description: 'In this topic, you will learn how to use the Ad Intelligence plugin with Brightcove Player to generate reports that provide insights into ad performance.'
-          Link: https://player.support.brightcove.com/plugins/ad-intelligence-plugin.html 
+        - Title: 'Searching for Channels'
+          Description: 'Search for Cloud Playout channels with advanced filtering'
+          Link: https://studio.support.brightcove.com/cloud-playout/searching-for-channels.html
           Product: Video Cloud
-          Product_area: Brightcove Player
+          Product_area: Cloud Playout
           Product_Update: 'true'
-          Feature: 'Ad Intelligence Plugin'
+          Feature: 'Searching for Channels using the Channels API'
           Status: Released
-        - Title: 'Android: Playhead Position and Video Duration'
-          Description: 'In this topic, you will learn about changes when using the playhead position and video duration with the Brightcove Native SDK for Android.'
-          Link: https://sdks.support.brightcove.com/android/playback/playhead-position-and-video-duration.html 
+        - Title: 'Searching for Channels'
+          Description: 'Search for Cloud Playout channels with advanced filtering'
+          Link: https://studio.support.brightcove.com/cloud-playout/searching-for-channels.html
           Product: Video Cloud
-          Product_area: Native SDKs
+          Product_area: Cloud Playout Channels API
+          Product_Update: 'true'
+          Feature: 'Search for Channels'
+          Status: Released
+        - Title: 'Import Captions'
+          Description: 'Importing 608/708 closed captions into Cloud Playout Channels'
+          Link: https://beacon-help.support.brightcove.com/channels/cloud-playout/import-captions.html
+          Product: Beacon
+          Product_area: Cloud Playout
+          Product_Update: 'true'
+          Feature: 'Import Closed Captions'
+          Status: Released
+        - Title: 'Searching for Channels'
+          Description: 'Search for Cloud Playout channels with advanced filtering'
+          Link: https://beacon-help.support.brightcove.com/channels/cloud-playout/import-captions.html
+          Product: Beacon
+          Product_area: Cloud Playout
+          Product_Update: 'true'
+          Feature: 'Search for Channels'
+          Status: Released
+        - Title: 'Forensic Watermarking with Beacon Apps'
+          Description: 'In this topic, you will learn how to implement Forensic Watermarking with Beacon apps.'
+          Link: https://beacon-la.support.brightcove.com/developer-topics/forensic-watermarking-with-beacon.html 
+          Product: Beacon
+          Product_area: Forensic Watermarking
+          Product_Update: 'true'
+          Feature: 'Forensic Watermarking'
+          Status: Internal
+        - Title: 'Page Updates Live Immediately'
+          Description: 'In this topic, you will learn about options when you see in the Layout module the message that page changes will go live immediately.'
+          Link: https://beacon-help.support.brightcove.com/layout/live-immediately.html
+          Product: Beacon
+          Product_area: Layout
           Product_Update: 'false'
           Feature: ''
-          Status: Released 
-        - Title: 'SSAI Plugin Changes with Android SDK v6.18.0'
-          Description: 'In this topic, you will learn about important changes to the Server-Side Ad Insertion (SSAI) plugin in the Brightcove Native SDK for Android.'
-          Link: https://sdks.support.brightcove.com/android/advertising/ssai-seeking-behavior.html 
-          Product: Video Cloud
-          Product_area: Native SDKs
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
+          Status: Released
     - type: Major updates
       docs:
-        - Title: 'CMS API Reference'
-          Description: 'Added operations for managing custom fields. Also corrected the maximum value for the limit parameter for the Get Videos in Playlist request - it is 100, not 1000, and also that the encoding_rates array for audio tracks is read only'
-          Link: https://apis.support.brightcove.com/cms/references/reference.html
+        - Title: 'Brightcove Cloud Playout Channel Manager API Reference'
+          Description: 'Added q parameter used for robust searching for Channels'
+          Link: https://apis.support.brightcove.com/cloud-playout-apis/references/reference-channels.html#operation/GetAllChannels
           Product: Video Cloud
+          Product_area: Cloud Playout Channels API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Media Sharing using the Media Module'
+          Description: 'update Sharing terminology and Scenario 1'
+          Link: https://studio.support.brightcove.com/media/media-sharing-using-media-module.html
+          Product: Video Cloud 
+          Product_area: Media Sharing using the Media Module
+          Product_Update: false
+          Feature: 
+          Status: Released 
+        - Title: 'Sharing Videos to Other Accounts'
+          Description: 'update Sharing terminology and Scenario 1'
+          Link: https://beacon-help.support.brightcove.com/media/sharing-videos-other-accounts.html
+          Product: Beacon 
+          Product_area: Media Sharing across accounts
+          Product_Update: false
+          Feature: 
+          Status: Released
+        - Title: 'Creating and Managing Playlists'
+          Description: 'Updated for new UI and support for VC and Beacon playlist creation'
+          Link: https://beacon-help.support.brightcove.com/media/creating-and-managing-playlists.html
+          Product: Beacon
           Product_area: 
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Dynamic API Reference'
-          Description: 'New embed_closed_caption request body field for text tracks allows them to be embedded as 608/708 captions in MP4 renditions'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/references/reference.html#tag/Ingest
-          Product: Video Cloud
-          Product_area: Dynamic Ingest API
-          Product_Update: 'true'
-          Feature: 'Text Tracks'
-          Status: Released
-        - Title: 'Playback API'
-          Description: 'Introduction to Playback API video updated'
-          Link: https://apis.support.brightcove.com/playback/
-          Product: Video Cloud
-          Product_area: Playback API
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Plugin Version Reference'
-          Description: 'Added third-party plugin section'
-          Link: https://player.support.brightcove.com/plugins/plugin-version-reference.html 
-          Product: Video Cloud
-          Product_area: Brightcove Player
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: Brightcove Player Plugins'
-          Description: 'Added third-party plugin section'
-          Link: https://player.support.brightcove.com/plugins/overview-brightcove-player-plugins.html  
-          Product: Video Cloud
-          Product_area: Brightcove Player
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: Brightcove Native SDK for Android'
-          Description: 'Native SDK for Android release v6.18.0'
-          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html 
+        - Title: 'Playback Restrictions with the Native SDKs'
+          Description: 'Added code example for License Keys Protection with Delivery Rules'
+          Link: https://sdks.support.brightcove.com/features/playback-restrictions-with-sdks.html 
           Product: Video Cloud
           Product_area: Native SDKs
-          Product_Update: 'true'
-          Feature: 'Native SDK for Android release v6.18.0'
+          Product_Update: 'false'
+          Feature: ''
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Viewing Billing Information'
-          Description: 'Clarification of billing for Live DVR'
-          Link: https://studio.support.brightcove.com/admin/viewing-billing-information.html
+        - Title: 'Creating Video Cloud Custom Fields'
+          Description: 'Updated to indicate that users can now delete custom fields and do not have to ask Support'
+          Link: https://beacon.support.brightcove.com/syncing-with-video-cloud/vc-custom-fields.html
+          Product: Beacon
+          Product_area: 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Adding Dynamic Overlays'
+          Description: 'Removed links to samples that are no longer available'
+          Link: https://studio.support.brightcove.com/cloud-playout/dynamic-overlays.html
+          Product: Video Cloud
+          Product_area: Cloud Playout
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Add WebVTT Captions (Text Tracks)'
+          Description: 'Added note that the captions kind may only be used with dynamic delivery videos'
+          Link: https://apis.support.brightcove.com/cms/managing-videos/using-cms-api-add-webvtt-captions-text-tracks.html
+          Product: Video Cloud
+          Product_area: CMS API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'CMS API Reference'
+          Description: 'Added note that the get clear sources endpoints require a special permission. Credentials for these endpoints must be generated using the OAuth API or requested from Support.'
+          Link: https://apis.support.brightcove.com/cms/references/reference.html#tag/Clear-Sources
+          Product: Video Cloud
+          Product_area: CMS API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Implementing Delivery Rules'
+          Description: 'Corrected an error in a code sample'
+          Link: https://apis.support.brightcove.com/delivery-rules/getting-started/implementing-delivery-rules.html
+          Product: Video Cloud
+          Product_area: Delivery Rules
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Reviewing Live Analytics'
+          Description: 'Added a note that those using non-Brightcove players can get live analytics by instrumenting the player to deliver the necessary data to the Data Collection API'
+          Link: https://live.support.brightcove.com/live-module/reviewing-live-analytics.html
           Product: Live
-          Product_area: 
+          Product_area: Analytics
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'TLS for Media, Player, and API URLs'
-          Description: 'Added some notes and corrected some typos'
-          Link: https://studio.support.brightcove.com/general/tls-media-player-and-api-urls.html
+        - Title: 'Video Cloud Glossary'
+          Description: 'Slight modification of Analytic API'
+          Link:  https://studio.support.brightcove.com/get-started/video-cloud-glossary.html
           Product: Video Cloud
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Requesting Auto Captions'
-          Description: 'Added note that for auto captions to be generated, the video must be at least 5 seconds long if the language is specified, 15 seconds long if auto-detect is used'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/requesting-auto-captions.html
-          Product: Video Cloud
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Automatically Generating Captions for Videos'
-          Description: 'Added note that for auto captions to be generated, the video must be at least 5 seconds long if the language is specified, 15 seconds long if auto-detect is used'
-          Link: https://studio.support.brightcove.com/media/generating-captions-videos.html
-          Product: Video Cloud
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Auto Captions'
-          Description: 'Added note that for auto captions to be generated, the video must be at least 5 seconds long if the language is specified, 15 seconds long if auto-detect is used'
-          Link: https://zencoder.support.brightcove.com/encoding-settings/assets/encoding-settings-auto-captions.html
-          Product: Zencoder
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Scheduling Live Events'
-          Description: 'Update on default limit for Scheduling Live Events'
-          Link: https://live.support.brightcove.com/live-module/scheduling-live-event.html
-          Product: Live 
-          Product_area: Scheduling Live Events
-          Product_Update: 'false'
+          Product_area: Video Cloud Glossary
+          Product_Update: false
           Feature: ''
           Status: Released 
-        - Title: 'Managing Live Settings'
-          Description: 'Updated a Link to the Appropriate Website'
-          Link:  https://live.support.brightcove.com/admin/managing-live-settings.html
-          Product: Live
-          Product_area: Managing Live Settings
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Creating Custom Metadata Fields'
-          Description: 'Document the no Way to Set a Default Value for a Custom Field'
-          Link: https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html
+        - Title: 'Adding Captions to Videos Using the Media Module'
+          Description: 'Update creating caption files'
+          Link: https://studio.support.brightcove.com/media/adding-captions-videos-using-media-module.html#captionsfile
           Product: Video Cloud
-          Product_area: Creating custom fields
-          Product_Update: 'false'
+          Product_area: Creating caption files
+          Product_Update: false
           Feature: ''
           Status: Released 
-        - Title: 'Known Issues: Studio, Brightcove Player and APIs'
-          Description: 'Auto display of captions for Safari, information updated'
-          Link: https://general.support.brightcove.com/support/known-issues-studio-brightcove-player-and-apis.html#player
+        - Title: 'Reducing Latency for Live Streams'
+          Description: 'new wording added to introduction part'
+          Link: https://live.support.brightcove.com/general/reducing-latency-live-streams.html#Introduction
+          Product:  Live
+          Product_area: Reducing latency for live streams
+          Product_Update: false
+          Feature: ''
+          Status: Released
+        - Title: 'Creating a Video Clip Using the Live Module'
+          Description: 'Updated note to state that VOD clipping with DRM-protected jobs is supported in the Live Module'
+          Link: https://live.support.brightcove.com/live-module/creating-video-clip-using-live-module.html 
+          Product: Video Cloud
+          Product_area: Live
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Live API: Creating VOD Clips'
+          Description: 'Updated note to state that VOD clipping with DRM-protected jobs is supported in the Live Module'
+          Link: https://apis.support.brightcove.com/live-api/guides/live-api-creating-vod-clips.html 
+          Product: Video Cloud
+          Product_area: Live
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Custom Endscreen Plugins'
+          Description: 'Fixed HTML for \custom end screen when using the Players module'
+          Link: https://player.support.brightcove.com/plugins/custom-endscreen-plugin.html 
           Product: Video Cloud
           Product_area: Brightcove Player
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Autoplay Considerations'
-          Description: 'Autoplay String Values section removed'
-          Link: https://player.support.brightcove.com/playback/autoplay-considerations.html#Known_issues
-          Product: Video Cloud
-          Product_area: Brightcove Player
+        - Title: 'Known Issues'
+          Description: 'New info on Multi-language support'
+          Link: https://beacon-help.support.brightcove.com/general/known-issues.html
+          Product: Beacon
+          Product_area: General
           Product_Update: 'false'
           Feature: ''
-          Status: Released
-        - Title: 'Advertising with the IMA3 Plugin'
-          Description: 'Note related to IMA3 plugin version 4.0 added'
-          Link: https://player.support.brightcove.com/plugins/advertising-ima3-plugin.html#section-name
-          Product: Video Cloud
-          Product_area: Brightcove Player
+          Status: Limited Availability
+        - Title: 'Known Issues'
+          Description: 'New info on Multi-language support'
+          Link: https://beacon.support.brightcove.com/references/known-issues.html
+          Product: Beacon
+          Product_area: General
           Product_Update: 'false'
           Feature: ''
-          Status: Released
+          Status: Released  

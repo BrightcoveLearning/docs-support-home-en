@@ -1,0 +1,3789 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Below are recent product updates for October-December 2021">
+  
+  <title>Product Release Notes</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">  
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css">
+  <!-- <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css"> -->
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/tabs.css">
+  <link rel="stylesheet" href="/site-assets/css/site/styles.css">
+  <link rel="stylesheet" href="/assets/css/local.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2728311-17"></script>
+<script translate="no">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-2728311-17');
+</script>
+  <script src="/assets/js/sajari-head.js"></script>
+	<script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body class="body">
+
+<header>
+  <div class="div-header">
+
+      <img class="product-logo" src="https://support.brightcove.com/site-assets/images/site/product-logos/brightcove-black-on-white.svg" alt="Brightcove">
+<select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
+
+<script translate="no">
+/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
+/* ]]> */
+</script>
+
+
+&nbsp;<span class="secondary-nav"><a href="https://support.brightcove.com/product-updates.html">Product Updates</a> <span style="vertical-align: middle;margin-left:1em;margin-right:1em;">|</span> <a href="https://supportportal.brightcove.com">Contact Support</a> <span style="vertical-align: middle;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/">System Status</a></span>
+    <br>
+
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+    
+    <li class="breadcrumb-item first-item"><a href="/">Home</a></li>
+    
+      
+        <li class="breadcrumb-item active" aria-current="page">Product Release Notes</li>
+      
+    
+  </nav>
+</header>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-3 left-side-bar">
+				<select id="site_select" class="bcls-select" style="margin-left: 1rem;">
+					<option value="">Other Brightcove Docs</option>
+					
+						
+							<option value="https://support.brightcove.com">Documentation Home</option>
+						
+					
+						
+							<option value="">-- VIDEO CLOUD --</option>
+						
+					
+						
+							<option value="https://studio.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Studio</option>
+						
+					
+						
+							<option value="https://player.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Player Development</option>
+						
+					
+						
+							<option value="https://apis.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Platform APIs</option>
+						
+					
+						
+							<option value="https://sdks.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Device SDKs</option>
+						
+					
+						
+							<option value="https://integrations.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Integrations and CMS Connectors</option>
+						
+					
+						
+							<option value="https://general.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud General Information</option>
+						
+					
+						
+							<option value="">-- VIDEO ESSENTIALS --</option>
+						
+					
+						
+							<option value="https://beacon.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Beacon</option>
+						
+					
+						
+							<option value="https://live.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Live</option>
+						
+					
+						
+							<option value="https://zencoder.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Zencoder</option>
+						
+					
+						
+							<option value="">-- VIDEO CLOUD ADD-ONS --</option>
+						
+					
+						
+							<option value="https://campaign.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Campaign</option>
+						
+					
+						
+							<option value="https://engage.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Engage</option>
+						
+					
+						
+							<option value="https://gallery.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Gallery</option>
+						
+					
+						
+							<option value="https://studio.support.brightcove.com/social/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Social</option>
+						
+					
+						
+							<option value="https://ssai.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove SSAI</option>
+						
+					
+				</select>
+        <nav class="sidenav" id="side_nav">
+          
+            
+            <h5><a href="/index.html">Home</a></h5>
+            
+          
+            
+            <h5><a href="https://studio.support.brightcove.com/index.html">Video Cloud Studio</a></h5>
+            
+          
+            
+            <h5><a href="https://player.support.brightcove.com/index.html">Brightcove Player</a></h5>
+            
+          
+            
+            <h5><a href="https://apis.support.brightcove.com/index.html">Video Cloud Platform APIs</a></h5>
+            
+          
+            
+            <h5><a href="https://sdks.support.brightcove.com/index.html">Video Cloud Device SDKs</a></h5>
+            
+          
+            
+            <h5><a href="https://integrations.support.brightcove.com/index.html">Video Cloud Integrations</a></h5>
+            
+          
+            
+            <h5><a href="https://general.support.brightcove.com/index.html">Video Cloud General Information</a></h5>
+            
+          
+            
+            <h5><a href="https://beacon.support.brightcove.com/index.html">Brightcove Beacon</a></h5>
+            
+          
+            
+            <h5><a href="https://live.support.brightcove.com/index.html">Brightcove Live</a></h5>
+            
+          
+            
+            <h5><a href="https://zencoder.support.brightcove.com/index.html">Zencoder</a></h5>
+            
+          
+            
+            <h5><a href="https://campaign.support.brightcove.com/index.html">Campaign</a></h5>
+            
+          
+            
+            <h5><a href="https://engage.support.brightcove.com/index.html">Engage</a></h5>
+            
+          
+            
+            <h5><a href="https://gallery.support.brightcove.com/index.html">Gallery</a></h5>
+            
+          
+            
+            <h5><a href="https://studio.support.brightcove.com/social/index.html">Social</a></h5>
+            
+          
+            
+            <h5><a href="https://ssai.support.brightcove.com/index.html">SSAI</a></h5>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/training/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Training</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/training/online-training-courses.html">All Online Training Courses</a></li>
+                  
+                
+                  
+                    <li><a href="/training/register-training.html">Register for Instructor-led Training</a></li>
+                  
+                
+                  
+                    <li><a href="/training/training-demand-introduction-video-cloud.html">Training: Introduction to Video Cloud</a></li>
+                  
+                
+                  
+                    <li><a href="/training/training-demand-introduction-video-cloud-analytics.html">Training:  Introduction to Video Cloud Analytics</a></li>
+                  
+                
+                  
+                    <li><a href="/training/training-demand-video-cloud-basics.html">Training: Video Cloud Basics</a></li>
+                  
+                
+                  
+                    <li><a href="/training/video-cloud-studio-training-videos.html">Video Cloud Studio Training Videos</a></li>
+                  
+                
+                  
+                    <li><a href="/training/brightcove-university.html">Brightcove University Training Courses</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/support/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Support</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/support/viewing-brightcove-system-status-page.html">Viewing the Brightcove System Status Page</a></li>
+                  
+                
+                  
+                    <li><a href="/support/contact-sales.html">Contact Sales</a></li>
+                  
+                
+                  
+                    <li><a href="/support/opening-case-with-brightcove-support.html">Opening a Support Case</a></li>
+                  
+                
+                  
+                    <li><a href="/support/reset-support-portal-password.html">Reset Your Support Portal Password</a></li>
+                  
+                
+              </ul>
+            
+          
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+  <!-- bootstrap layout -->
+
+<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="Navigation Menu"></p>
+
+<!-- search bar -->
+<div id="nav-search-box" style="margin-top: 2rem;"></div>
+<!-- in-page navigation for narrow screens -->
+<details class="centered-inpage-nav" id="centered_inpage_nav">
+  <summary><h6 class="toc">Page Contents</h6></summary>
+  <nav id="centered_toc"></nav>
+  <ul id="centered_in_page_toc" class="list-none"></ul>
+</details>
+<!-- open in new tab/window -->
+<a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="open in new tab" style="margin-top:4em;width: 1.5em;"></a>
+
+
+<style>
+h1,h2 {
+  color: rgb(8, 8, 140);
+}
+</style>
+<h1>Product Release Notes</h1>
+<article class="bcls-article">
+  <summary>Below are recent product updates for October-December 2021</summary>
+  <!-- <p><a href="/doc-updates-index.html">Index of all product updates</a></p> -->
+  <aside class="bcls-aside bcls-aside--tip language-editable">If you would like be sent an email whenever this page changes, please see the <a href="/distill-setup.html">Setup Automatic Email on Product Updates</a> document.</aside>
+  <section class="bcls-section">
+    <h2 id="video_cloud">Video Cloud</h2>
+    
+      
+        
+          
+            
+          
+        
+          
+            
+              
+                <h4 id="Custom Fields"><strong>Feature:</strong> Custom Fields</h4>
+                <p id="CMS API"><strong>Product Area:</strong> CMS API</p>
+                <p id="24-December-2021"><strong>Date:</strong> 24-December-2021</p>
+                <p><strong>Description:</strong> Use the CMS API to create, get, update, and delate custom fields for an account</p>
+                <p><strong></strong><a href="https://apis.support.brightcove.com/cms/managing-videos/managing-custom-fields.html">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+          
+            
+              
+                <h4 id="Ad Intelligence Plugin"><strong>Feature:</strong> Ad Intelligence Plugin</h4>
+                <p id="Brightcove Player"><strong>Product Area:</strong> Brightcove Player</p>
+                <p id="24-December-2021"><strong>Date:</strong> 24-December-2021</p>
+                <p><strong>Description:</strong> In this topic, you will learn how to use the Ad Intelligence plugin with Brightcove Player to generate reports that provide insights into ad performance.</p>
+                <p><strong></strong><a href="https://player.support.brightcove.com/plugins/ad-intelligence-plugin.html">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+          
+            
+              
+                <h4 id="Text Tracks"><strong>Feature:</strong> Text Tracks</h4>
+                <p id="Dynamic Ingest API"><strong>Product Area:</strong> Dynamic Ingest API</p>
+                <p id="24-December-2021"><strong>Date:</strong> 24-December-2021</p>
+                <p><strong>Description:</strong> New embed_closed_caption request body field for text tracks allows them to be embedded as 608/708 captions in MP4 renditions</p>
+                <p><strong></strong><a href="https://apis.support.brightcove.com/dynamic-ingest/references/reference.html#tag/Ingest">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+              
+                <h4 id="Native SDK for Android release v6.18.0"><strong>Feature:</strong> Native SDK for Android release v6.18.0</h4>
+                <p id="Native SDKs"><strong>Product Area:</strong> Native SDKs</p>
+                <p id="24-December-2021"><strong>Date:</strong> 24-December-2021</p>
+                <p><strong>Description:</strong> Native SDK for Android release v6.18.0</p>
+                <p><strong></strong><a href="https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+      
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+      
+    
+      
+        
+          
+        
+      
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+      
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+              
+                <h4 id="Managing Program Content"><strong>Feature:</strong> Managing Program Content</h4>
+                <p id="Cloud Playout"><strong>Product Area:</strong> Cloud Playout</p>
+                <p id="3-December-2021"><strong>Date:</strong> 3-December-2021</p>
+                <p><strong>Description:</strong> Increase the limit of program items to 1000 and updated UI with new capabilities for managing Cloud Playout channel programs.</p>
+                <p><strong></strong><a href="https://studio.support.brightcove.com/cloud-playout/cloud-playout-add-content.html">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            
+          
+        
+          
+        
+          
+            
+          
+        
+          
+            
+              
+                <h4 id="Auto Captions"><strong>Feature:</strong> Auto Captions</h4>
+                <p id="Dynamic Ingest API"><strong>Product Area:</strong> Dynamic Ingest API</p>
+                <p id="3-December-2021"><strong>Date:</strong> 3-December-2021</p>
+                <p><strong>Description:</strong> Added 6 new supported languages.</p>
+                <p><strong></strong><a href="https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/requesting-auto-captions.html">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+            
+              
+            
+          
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+      
+    
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+            
+          
+        
+          
+            
+              
+                <h4 id="New release of the Video Cloud - Drupal connector"><strong>Feature:</strong> New release of the Video Cloud - Drupal connector</h4>
+                <p id="Integrations"><strong>Product Area:</strong> Integrations</p>
+                <p id="26-November-2021"><strong>Date:</strong> 26-November-2021</p>
+                <p><strong>Description:</strong> 3.0 release of the connector for Drupal 9</p>
+                <p><strong></strong><a href="https://integrations.support.brightcove.com/drupal/getting-started-brightcove-video-connect-drupal-cms.html">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+          
+        
+      
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+            
+              
+                <h4 id="Generic Stream Concurrency"><strong>Feature:</strong> Generic Stream Concurrency</h4>
+                <p id="Playback Restrictions"><strong>Product Area:</strong> Playback Restrictions</p>
+                <p id="19-November-2021"><strong>Date:</strong> 19-November-2021</p>
+                <p><strong>Description:</strong> Limit stream concurrency to end-viewers with a heartbeat mechanism and without DRM.</p>
+                <p><strong></strong><a href="https://apis.support.brightcove.com/playback-restrictions/guides/generic-stream-concurrency.html">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+          
+            
+              
+                <h4 id="Concurrency Service API"><strong>Feature:</strong> Concurrency Service API</h4>
+                <p id="Playback Restrictions"><strong>Product Area:</strong> Playback Restrictions</p>
+                <p id="19-November-2021"><strong>Date:</strong> 19-November-2021</p>
+                <p><strong>Description:</strong> API used to implement Generic Stream Concurrency in non-Brightcove players.</p>
+                <p><strong></strong><a href="https://apis.support.brightcove.com/playback-restrictions/references/concurrency-service-api/reference.html">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+          
+            
+              
+                <h4 id="Connector for Sitecore Experience Platform 10.1"><strong>Feature:</strong> Connector for Sitecore Experience Platform 10.1</h4>
+                <p id="Integrations"><strong>Product Area:</strong> Integrations</p>
+                <p id="19-November-2021"><strong>Date:</strong> 19-November-2021</p>
+                <p><strong>Description:</strong> Installation process for the Brightcove Video Connect module on the Sitecore CMS.</p>
+                <p><strong></strong><a href="https://integrations.support.brightcove.com/sitecore/installation-guide.html">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+      
+    
+      
+        
+          
+            
+              
+                <h4 id="Fallback HDCP"><strong>Feature:</strong> Fallback HDCP</h4>
+                <p id="Playback Restrictions"><strong>Product Area:</strong> Playback Restrictions</p>
+                <p id="12-November-2021"><strong>Date:</strong> 12-November-2021</p>
+                <p><strong>Description:</strong> Use HDCP-protected content to block streaming on unauthorized devices, with a standard definition fallback for devices that do not support HDCP.</p>
+                <p><strong></strong><a href="https://apis.support.brightcove.com/playback-restrictions/guides/fallback-hdcp.html">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            
+              
+                <h4 id="Text tracks"><strong>Feature:</strong> Text tracks</h4>
+                <p id="CMS API, Dynamic Ingest APi, text tracks"><strong>Product Area:</strong> CMS API, Dynamic Ingest APi, text tracks</p>
+                <p id="12-November-2021"><strong>Date:</strong> 12-November-2021</p>
+                <p><strong>Description:</strong> New transcripts kind and new status field</p>
+                <p><strong></strong><a href="https://apis.support.brightcove.com/cms/managing-videos/managing-text-tracks.html">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+          
+            
+          
+        
+      
+    
+      
+        
+          
+            
+              
+                <h4 id="Adobe-AEM-Brightcove Connector"><strong>Feature:</strong> Adobe-AEM-Brightcove Connector</h4>
+                <p id="Integrations, CMS Connectors"><strong>Product Area:</strong> Integrations, CMS Connectors</p>
+                <p id="5-November-2021"><strong>Date:</strong> 5-November-2021</p>
+                <p><strong>Description:</strong> Added support for In-Page Experiences</p>
+                <p><strong></strong><a href="https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-using-connector.html">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+            
+              
+                <h4 id="Viewer dimension"><strong>Feature:</strong> Viewer dimension</h4>
+                <p id="Analytics API"><strong>Product Area:</strong> Analytics API</p>
+                <p id="29-October-2021"><strong>Date:</strong> 29-October-2021</p>
+                <p><strong>Description:</strong> New Analytics API viewer dimension. The viewer dimension provides analytics by viewer. Only available if the account has been enabled for viewer analytics.</p>
+                <p><strong></strong><a href="https://apis.support.brightcove.com/analytics/dimension-guides/dimension-viewer.html">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+            
+          
+        
+      
+    
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            
+              
+                <h4 id="Average Viewed Minutes"><strong>Feature:</strong> Average Viewed Minutes</h4>
+                <p id="Analytics"><strong>Product Area:</strong> Analytics</p>
+                <p id="22-October-2021"><strong>Date:</strong> 22-October-2021</p>
+                <p><strong>Description:</strong> New Average Viewed Minutes field</p>
+                <p><strong></strong><a href="https://studio.support.brightcove.com/analytics/engagement-report-reference.html">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+      
+    
+      
+        
+          
+        
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+            
+              
+                <h4 id="New API endpoint for getting all devices"><strong>Feature:</strong> New API endpoint for getting all devices</h4>
+                <p id="Playback Restrictions"><strong>Product Area:</strong> Playback Restrictions</p>
+                <p id="15-October-2021"><strong>Date:</strong> 15-October-2021</p>
+                <p><strong>Description:</strong> New endpoint for getting all devices within an account</p>
+                <p><strong></strong><a href="https://apis.support.brightcove.com/playback-restrictions/guides/device-limits.html">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            
+              
+                <h4 id="Support for Android 11"><strong>Feature:</strong> Support for Android 11</h4>
+                <p id="Native SDK for Android"><strong>Product Area:</strong> Native SDK for Android</p>
+                <p id="15-October-2021"><strong>Date:</strong> 15-October-2021</p>
+                <p><strong>Description:</strong> Added support for Android 11</p>
+                <p><strong></strong><a href="https://sdks.support.brightcove.com/getting-started/brightcove-native-player-sdks.html">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+          
+            
+              
+                <h4 id="Support for ExoPlayer 2.14.2"><strong>Feature:</strong> Support for ExoPlayer 2.14.2</h4>
+                <p id="Native SDK for Android"><strong>Product Area:</strong> Native SDK for Android</p>
+                <p id="15-October-2021"><strong>Date:</strong> 15-October-2021</p>
+                <p><strong>Description:</strong> Added support for ExoPlayer 2.14.2</p>
+                <p><strong></strong><a href="https://sdks.support.brightcove.com/getting-started/brightcove-native-sdks-feature-support.html">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+          
+            
+          
+        
+          
+            
+              
+                <h4 id="SDK version 6.17.1"><strong>Feature:</strong> SDK version 6.17.1</h4>
+                <p id="Native SDK for Android"><strong>Product Area:</strong> Native SDK for Android</p>
+                <p id="15-October-2021"><strong>Date:</strong> 15-October-2021</p>
+                <p><strong>Description:</strong> Native SDK for Android release 6.17.1</p>
+                <p><strong></strong><a href="https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+            
+              
+                <h4 id="Ingest videos with multiple audio tracks"><strong>Feature:</strong> Ingest videos with multiple audio tracks</h4>
+                <p id="Dynamic Ingest API, Multiple Audio Tracks"><strong>Product Area:</strong> Dynamic Ingest API, Multiple Audio Tracks</p>
+                <p id="8-October-2021"><strong>Date:</strong> 8-October-2021</p>
+                <p><strong>Description:</strong> Language audio tracks in your source videos can be preserved in your Video Cloud video renditions. Ingestion of multi-language audio tracks is supported through the Dynamic Ingest API only,</p>
+                <p><strong></strong><a href="https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-videos-multiple-audio-tracks.html">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+          
+        
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+              
+                <h4 id="Get As-Run Logs"><strong>Feature:</strong> Get As-Run Logs</h4>
+                <p id="Cloud Playout, Channels API"><strong>Product Area:</strong> Cloud Playout, Channels API</p>
+                <p id="8-October-2021"><strong>Date:</strong> 8-October-2021</p>
+                <p><strong>Description:</strong> Get As-Run Logs for Cloud Playout Channels</p>
+                <p><strong></strong><a href="https://apis.support.brightcove.com/cloud-playout-apis/getting-started/overview-channel-api.html#as_run_log">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+      
+    
+      
+        
+      
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+    
+  </section>
+  <section class="bcls-section">
+    <h2 id="live">Live</h2>
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+        
+          
+            
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+            
+              
+            
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            
+              
+                <h4 id="Static Entry Point jobs"><strong>Feature:</strong> Static Entry Point jobs</h4>
+                <p id="Live API, SEP, Redundant Groups"><strong>Product Area:</strong> Live API, SEP, Redundant Groups</p>
+                <p id="22-October-2021"><strong>Date:</strong> 22-October-2021</p>
+                <p><strong>Description:</strong> 2 new endpoints use to activate or deactivate SEP jobs in a redundant group</p>
+                <p><strong></strong><a href="https://apis.support.brightcove.com/live-api/references/reference.html#tag/Redundant-Groups">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+  </section>
+  <section class="bcls-section">
+    <h2 id="beacon">Beacon</h2>
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+            
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+      
+    
+      
+        
+          
+            
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+      
+    
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+            
+              
+                <h4 id="Beacon Web App"><strong>Feature:</strong> Beacon Web App</h4>
+                <p id="Beacon Web App"><strong>Product Area:</strong> Beacon Web App</p>
+                <p id="22-October-2021"><strong>Date:</strong> 22-October-2021</p>
+                <p><strong>Description:</strong> Steps that are required for setting up the Beacon Web App</p>
+                <p><strong></strong><a href="https://beacon.support.brightcove.com/using-brightcove-beacon/setup-beacon-web-app.html">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+      
+    
+      
+        
+          
+        
+          
+            
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+  </section>
+  <section class="bcls-section">
+    <h2 id="ssai">SSAI</h2>
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+            
+              
+                <h4 id="SSAI Ad tracking log"><strong>Feature:</strong> SSAI Ad tracking log</h4>
+                <p id="Logging"><strong>Product Area:</strong> Logging</p>
+                <p id="15-October-2021"><strong>Date:</strong> 15-October-2021</p>
+                <p><strong>Description:</strong> SSAI Ad tracking log is a new feature that looks to provide details of how SSAI ads are working. This feature is for VOD and Live.</p>
+                <p><strong></strong><a href="https://ssai.support.brightcove.com/getting-started/video-cloud-ssai-ad-logs.html">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+  </section>
+  <section class="bcls-section">
+    <h2 id="zencoder">Zencoder</h2>
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+                <h4 id="Auto Captions"><strong>Feature:</strong> Auto Captions</h4>
+                <p id="Encoding Settings"><strong>Product Area:</strong> Encoding Settings</p>
+                <p id="3-December-2021"><strong>Date:</strong> 3-December-2021</p>
+                <p><strong>Description:</strong> Added 6 new supported languages, and a table of supported languages.</p>
+                <p><strong></strong><a href="https://zencoder.support.brightcove.com/encoding-settings/assets/encoding-settings-auto-captions.html">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+                <h4 id="deinterlace_mode"><strong>Feature:</strong> deinterlace_mode</h4>
+                <p id="Video Processing Settings"><strong>Product Area:</strong> Video Processing Settings</p>
+                <p id="19-November-2021"><strong>Date:</strong> 19-November-2021</p>
+                <p><strong>Description:</strong> New deinterlace_mode setting allows you to create outputs with 2x the source framerate</p>
+                <p><strong></strong><a href="https://zencoder.support.brightcove.com/encoding-settings/general-audio-video/encoding-settings-video-processing.html#deinterlace_mode">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            
+              
+                <h4 id="Auto Captions"><strong>Feature:</strong> Auto Captions</h4>
+                <p id="Auto Captions"><strong>Product Area:</strong> Auto Captions</p>
+                <p id="12-November-2021"><strong>Date:</strong> 12-November-2021</p>
+                <p><strong>Description:</strong> New include_transcription_json and transcription_filename fields</p>
+                <p><strong></strong><a href="https://zencoder.support.brightcove.com/encoding-settings/assets/encoding-settings-auto-captions.html">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+          
+            
+              
+                <h4 id="Auto Captions"><strong>Feature:</strong> Auto Captions</h4>
+                <p id="Auto Captions"><strong>Product Area:</strong> Auto Captions</p>
+                <p id="12-November-2021"><strong>Date:</strong> 12-November-2021</p>
+                <p><strong>Description:</strong> New include_transcription_json and transcription_filename fields</p>
+                <p><strong></strong><a href="https://zencoder.support.brightcove.com/references/reference.html">Go to Documentation</a></strong></p>
+                <hr>
+              
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+  </section>
+</article>
+</div>
+<div class="col-sm-2 right-side-bar">
+  
+  <nav class="right-side-nav" id="right_side_nav">
+    <h6 class="toc">Page Contents</h6>
+    <ul id="in_page_nav" class="list-none"></ul>
+  </nav>
+  
+</div>
+</div>
+</div>
+
+<hr>
+<div class="last-updated">
+Page last updated on 05 Jan 2022
+</div>
+
+<footer class="bcls-footer" role="contentinfo">
+  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+        <img src="https://support.brightcove.com/site-assets/images/site/SVG/COVE004_Brightcove_Logo_093020_RGB_KO.svg" class="bc-footer-logo" alt="Brightcove">
+
+        <h2>Brightcove Support</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">System Status</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com">Contact Support</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">Documentation</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/search.html">Search all Documentation</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>Training</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://studio.support.brightcove.com/training/online-training-courses.html">Online Courses</a>
+          </li>
+          <li>
+            <a href="https://studio.support.brightcove.com/training/register-training.html">Register for a course</a>
+          </li>
+          <li>
+            <a href="https://university.brightcove.com/">Brightcove University</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">Brightcove.com</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> Brightcove Inc. All rights reserved.</div>
+            </td>
+            <td><a href="https://www.brightcove.com/en/legal/privacy">Privacy</a> | <a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin" style="margin-right: 1rem;"><i data-feather="linkedin" style="color:#8E9093;height: 1.25rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter" style="margin-right: 1rem;"><i data-feather="twitter" style="color:#8E9093;height: 1.25rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i data-feather="facebook" style="color:#8E9093;height: 1.25rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script translate="no">
+      
+  var searchBox = sajari.init({
+    mode: "search-box",
+    project: "1588255093746585379", // Set this to your project.
+    collection: "brightcove-documenation", // Set this to your collection.
+    instantPipeline: "autocomplete", // Pipeline used as you type
+    inputPlaceholder: "Search", // Input element placeholder
+    maxSuggestions: 5, // Maximum number of suggestions to show
+    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
+  });
+  
+    searchBox("sub", "pipeline.search-sent", function (_, query) {
+      window.location = "/search.html?q=" + encodeURIComponent(query.q);
+    });
+  
+
+</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/learning-paths/learning-paths.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/toc.js"></script>
+  <script src="/assets/js/sites_nav.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/bcls-utils.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/sajari-reindex.js"></script>
+  <script src="/assets/js/feedback.js"></script>
+  
+  <script src="/assets/js/sajari-search-foot.js"></script>
+  
+	<script translate="no">
+		feather.replace()
+	</script>
+  <!-- <script src="/assets/js/sajari-index.js"></script> -->
+  <style translate="no">
+    a.sj-paginator__page-number.sj-paginator__page-number--current.css-so0ov7 {
+      background-color: lightblue;
+    }
+    div.sj-tabs__tab {
+      margin-top: 3rem;
+      margin-left: .3rem;
+      border-top-left-radius: .4rem;
+      border-top-right-radius: .4rem;
+      background-color:#e8e8e8;
+    }
+
+    div.sj-tabs__tab.sj-tabs__tab--selected {
+      border-bottom-color: crimson;
+      background-color: #f8f8f8;
+    }
+
+    p.sj-results__result__description.css-p9jvyt {
+      font-size: 1rem;
+    }
+
+    .sj-result__text.css-31l7gp h3 {
+      color: navy;
+      font-size: 1.4rem;
+    }
+    </style>
+
+</body>
+
+</html>

@@ -40,6 +40,11 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/doc-updates-q4-2021.html",
+      "oldURL": "/doc-updates-q4-2021"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/doc-updates.html",
       "oldURL": "/doc-updates"
   },
@@ -70,12 +75,12 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/",
+      "newURL": "https://support.brightcove.com/training/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://support.brightcove.com/training/",
+      "newURL": "https://support.brightcove.com/",
       "oldURL": "/index"
   },
 
@@ -95,8 +100,18 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/product-updates-index.html",
+      "oldURL": "/product-updates-index"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/product-updates-internal.html",
       "oldURL": "/product-updates-internal"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/product-updates-q4-2021.html",
+      "oldURL": "/product-updates-q4-2021"
   },
 
   {
