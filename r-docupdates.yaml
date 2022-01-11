@@ -36,6 +36,22 @@
           Product_Update: 'false'
           Feature: 'Search v2'
           Status: Released
+        - Title: 'Trending Now Report Reference'
+          Description: 'Updated screenshots and text for new and modified features.'
+          Link: https://general.support.brightcove.com/ooyala/trending-now-report-reference.html
+          Product: Video Cloud
+          Product_area: Analytics
+          Product_Update: 'true'
+          Feature: 'Trending Now Analytics'
+          Status: Limited Availability
+        - Title: 'Ingesting WebVTT Files'
+          Description: 'Added section on Adding closed captions to MP4 renditions.'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-webvtt-files-text-trackscaptions.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest API
+          Product_Update: 'false'
+          Feature: 'Text Tracks'
+          Status: Released
     - type: Minor updates
       docs:
         - Title: ''
