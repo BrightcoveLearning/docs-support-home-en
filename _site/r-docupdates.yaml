@@ -10,6 +10,14 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Drupal 9 - Brightcove Connector: Overview'
+          Description: 'Overview of the Video Cloud connector for Drupal 9.'
+          Link: https://integrations.support.brightcove.com/drupal/drupal-9-brightcove-connector-overview.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: 'false'
+          Feature: 'Drupal CMS Connector'
+          Status: Released
     - type: Major updates
       docs:
         - Title: 'CAE Settings'

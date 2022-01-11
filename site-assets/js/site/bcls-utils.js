@@ -124,7 +124,6 @@ var BCLS_player_fix = ( function (window, document) {
         // bp.addEventListener('click', bpClickHandler);
 
 
-    }
 })(window, document);
 
 
