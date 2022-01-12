@@ -52,6 +52,30 @@
           Product_Update: 'false'
           Feature: 'Text Tracks'
           Status: Released
+        - Title: 'Generic Stream Concurrency'
+          Description: 'Added player configuration properties to control how often and how many times the player retries contacting the server to check concurrency limits.'
+          Link: https://apis.support.brightcove.com/playback-restrictions/guides/generic-stream-concurrency.html
+          Product: Video Cloud
+          Product_area: Playback Restrictions
+          Product_Update: 'true'
+          Feature: 'Generic Stream Concurrency'
+          Status: Released
+        - Title: 'Player Management API Reference'
+          Description: 'Added player configuration properties to control how often and how many times the player retries contacting the server to check concurrency limits.'
+          Link: https://apis.support.brightcove.com/player-management/references/reference.html
+          Product: Video Cloud
+          Product_area: Player Management API
+          Product_Update: 'false'
+          Feature: 'Generic Stream Concurrency'
+          Status: Released
+        - Title: 'Player Configuration Guide'
+          Description: 'Added player configuration properties to control how often and how many times the player retries contacting the server to check concurrency limits.'
+          Link: https://player.support.brightcove.com/general/player-configuration-guide.html
+          Product: Video Cloud
+          Product_area: Brightcove Player
+          Product_Update: 'false'
+          Feature: 'Generic Stream Concurrency'
+          Status: Released
     - type: Minor updates
       docs:
         - Title: ''
