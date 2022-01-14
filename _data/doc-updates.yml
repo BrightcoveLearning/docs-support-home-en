@@ -1,3 +1,131 @@
+- date: 14-January-2022
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'Managing Cookie Consent Using OneTrust'
+          Description: 'In this topic, you will learn how to implement OneTrust Cookie Compliance with Brightcove Beacon.'
+          Link: https://beacon-help.support.brightcove.com/general/managing-cookie-consent.html
+          Product: Beacon
+          Product_area: General Information
+          Product_Update: 'false'
+          Feature: ''
+          Status: Staging
+        - Title: 'Deleting an App User'
+          Description: 'In this topic, you will learn how to delete an app user.'
+          Link: https://beacon.support.brightcove.com/references/delete-app-user.html
+          Product: Beacon
+          Product_area: 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Product Release Notes Index'
+          Description: 'Links to product release notes for different 3-month periods.'
+          Link: https://support.brightcove.com/product-updates-index.html
+          Product: All
+          Product_area: Product updates
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Drupal 9 - Brightcove Connector: Overview'
+          Description: 'Overview of the Video Cloud connector for Drupal 9.'
+          Link: https://integrations.support.brightcove.com/drupal/drupal-9-brightcove-connector-overview.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: 'false'
+          Feature: 'Drupal CMS Connector'
+          Status: Released
+    - type: Major updates
+      docs:
+        - Title: 'Policy API'
+          Description: 'Introducing to Policy API video updated'
+          Link: https://apis.support.brightcove.com/policy/index.html
+          Product: Video Cloud 
+          Product_area: Policy API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'CAE Settings'
+          Description: 'Added 4 fields that can be used now for Context Aware Encoding jobs'
+          Link: https://zencoder.support.brightcove.com/encoding-settings/general/cae-settings.html#additional_settings
+          Product: Zencoder
+          Product_area: CAE
+          Product_Update: 'true'
+          Feature: 'CAE Settings'
+          Status: Released
+        - Title: 'CMS API: Video Search v2'
+          Description: 'Added section on stemming.'
+          Link: https://apis.support.brightcove.com/cms/searching/cms-and-playback-apis-video-search-v2.html#stemming
+          Product: Video Cloud
+          Product_area: CMS API
+          Product_Update: 'false'
+          Feature: 'Search v2'
+          Status: Released
+        - Title: 'Trending Now Report Reference'
+          Description: 'Updated screenshots and text for new and modified features.'
+          Link: https://general.support.brightcove.com/ooyala/trending-now-report-reference.html
+          Product: Video Cloud
+          Product_area: Analytics
+          Product_Update: 'true'
+          Feature: 'Trending Now Analytics'
+          Status: Limited Availability
+        - Title: 'Ingesting WebVTT Files'
+          Description: 'Added section on Adding closed captions to MP4 renditions.'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-webvtt-files-text-trackscaptions.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest API
+          Product_Update: 'false'
+          Feature: 'Text Tracks'
+          Status: Released
+        - Title: 'Generic Stream Concurrency'
+          Description: 'Added player configuration properties to control how often and how many times the player retries contacting the server to check concurrency limits.'
+          Link: https://apis.support.brightcove.com/playback-restrictions/guides/generic-stream-concurrency.html
+          Product: Video Cloud
+          Product_area: Playback Restrictions
+          Product_Update: 'true'
+          Feature: 'Generic Stream Concurrency'
+          Status: Released
+        - Title: 'Player Management API Reference'
+          Description: 'Added player configuration properties to control how often and how many times the player retries contacting the server to check concurrency limits.'
+          Link: https://apis.support.brightcove.com/player-management/references/reference.html
+          Product: Video Cloud
+          Product_area: Player Management API
+          Product_Update: 'false'
+          Feature: 'Generic Stream Concurrency'
+          Status: Released
+        - Title: 'Player Configuration Guide'
+          Description: 'Added player configuration properties to control how often and how many times the player retries contacting the server to check concurrency limits.'
+          Link: https://player.support.brightcove.com/general/player-configuration-guide.html
+          Product: Video Cloud
+          Product_area: Brightcove Player
+          Product_Update: 'false'
+          Feature: 'Generic Stream Concurrency'
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Managing Users'
+          Description: 'Can not change an email for existing users'
+          Link:  https://brightcove.atlassian.net/browse/KNOW-22669
+          Product: Video Cloud
+          Product_area: 'Managing Users'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Overview: China Delivery'
+          Description: 'Updated limitations section'
+          Link: https://studio.support.brightcove.com/general/china-delivery-overview.html#Limitations 
+          Product: Video Cloud
+          Product_area: China Delivery
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Forensic Watermarking with Beacon Apps'
+          Description: 'Removed the Analytics section since it is not applicable to Beacon apps'
+          Link: https://beacon-la.support.brightcove.com/developer-topics/forensic-watermarking-with-beacon.html 
+          Product: Beacon
+          Product_area: Forensic Watermarking
+          Product_Update: 'false'
+          Feature: ''
+          Status: Internal
 - date: 7-January-2022
   types:
     - type: New Docs

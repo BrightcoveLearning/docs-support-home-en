@@ -2,6 +2,22 @@
   types:
     - type: New Docs
       docs:
+        - Title: 'Managing Cookie Consent Using OneTrust'
+          Description: 'In this topic, you will learn how to implement OneTrust Cookie Compliance with Brightcove Beacon.'
+          Link: https://beacon-help.support.brightcove.com/general/managing-cookie-consent.html
+          Product: Beacon
+          Product_area: General Information
+          Product_Update: 'false'
+          Feature: ''
+          Status: Staging
+        - Title: 'Deleting an App User'
+          Description: 'In this topic, you will learn how to delete an app user.'
+          Link: https://beacon.support.brightcove.com/references/delete-app-user.html
+          Product: Beacon
+          Product_area: 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
         - Title: 'Product Release Notes Index'
           Description: 'Links to product release notes for different 3-month periods.'
           Link: https://support.brightcove.com/product-updates-index.html
@@ -20,6 +36,14 @@
           Status: Released
     - type: Major updates
       docs:
+        - Title: 'Policy API'
+          Description: 'Introducing to Policy API video updated'
+          Link: https://apis.support.brightcove.com/policy/index.html
+          Product: Video Cloud 
+          Product_area: Policy API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
         - Title: 'CAE Settings'
           Description: 'Added 4 fields that can be used now for Context Aware Encoding jobs'
           Link: https://zencoder.support.brightcove.com/encoding-settings/general/cae-settings.html#additional_settings
@@ -78,11 +102,28 @@
           Status: Released
     - type: Minor updates
       docs:
-        - Title: ''
-          Description: ''
-          Link: 
-          Product: Video Cloud | Live | Beacon | SSAI | Zencoder
-          Product_area: 
-          Product_Update: 'true | false'
-          Feature: '(leave blank if Product_Update is false)'
-          Status: Released | Limited Availability | Staging | Internal
+        - Title: 'Managing Users'
+          Description: 'Can not change an email for existing users'
+          Link:  https://brightcove.atlassian.net/browse/KNOW-22669
+          Product: Video Cloud
+          Product_area: 'Managing Users'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Overview: China Delivery'
+          Description: 'Updated limitations section'
+          Link: https://studio.support.brightcove.com/general/china-delivery-overview.html#Limitations 
+          Product: Video Cloud
+          Product_area: China Delivery
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Forensic Watermarking with Beacon Apps'
+          Description: 'Removed the Analytics section since it is not applicable to Beacon apps'
+          Link: https://beacon-la.support.brightcove.com/developer-topics/forensic-watermarking-with-beacon.html 
+          Product: Beacon
+          Product_area: Forensic Watermarking
+          Product_Update: 'false'
+          Feature: ''
+          Status: Internal
+
