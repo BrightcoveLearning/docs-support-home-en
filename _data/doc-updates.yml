@@ -342,3 +342,11 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released  
+        - Title: 'Using Live RTMP Outputs to Stream to Facebook and YouTube'
+          Description: ‘Documented new option to show finished RTMP outputs'
+          Link: https://live.support.brightcove.com/live-module/using-live-rtmp-outputs-stream-facebook-and-youtube.html
+          Product: Live
+          Product_area: 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
