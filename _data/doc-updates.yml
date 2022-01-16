@@ -104,7 +104,7 @@
       docs:
         - Title: 'Managing Users'
           Description: 'Can not change an email for existing users'
-          Link:  https://brightcove.atlassian.net/browse/KNOW-22669
+          Link:  https://studio.support.brightcove.com/admin/managing-users.html
           Product: Video Cloud
           Product_area: 'Managing Users'
           Product_Update: 'false'
@@ -148,7 +148,7 @@
           Status: Released
         - Title: 'Searching for Channels'
           Description: 'Search for Cloud Playout channels with advanced filtering'
-          Link: https://studio.support.brightcove.com/cloud-playout/searching-for-channels.html
+          Link: https://apis.support.brightcove.com/cloud-playout-apis/guides/search-channels-api.html
           Product: Video Cloud
           Product_area: Cloud Playout Channels API
           Product_Update: 'true'
@@ -164,7 +164,7 @@
           Status: Released
         - Title: 'Searching for Channels'
           Description: 'Search for Cloud Playout channels with advanced filtering'
-          Link: https://beacon-help.support.brightcove.com/channels/cloud-playout/import-captions.html
+          Link: https://beacon-help.support.brightcove.com/channels/cloud-playout/searching-for-channels.html
           Product: Beacon
           Product_area: Cloud Playout
           Product_Update: 'true'
