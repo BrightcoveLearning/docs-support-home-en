@@ -1,3 +1,138 @@
+- date: 21-January-2022
+  types:
+    - type: New Docs
+      docs:
+        - Title: ''
+          Description: ''
+          Link: 
+          Product: Video Cloud | Live | Beacon | SSAI | Zencoder
+          Product_area: 
+          Product_Update: 'true | false'
+          Feature: '(leave blank if Product_Update is false)'
+          Status: Released | Limited Availability | Staging | Internal
+    - type: Major updates
+      docs:
+        - Title: 'Ingesting WebVTT Files'
+          Description: 'Updated with some clarifications and notes on adding closed captions (608/708) to MP4 renditions.'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-webvtt-files-text-trackscaptions.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Studio'
+          Description: 'Translations fixed for studio-es pages'
+          Link: https://es.studio.support.brightcove.com/
+          Product: Video Cloud 
+          Product_area: Studio
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Gallery'
+          Description: 'Translations fixed for gallery-es pages'
+          Link: https://es.gallery.support.brightcove.com/             
+          Product: Video Cloud 
+          Product_area: Gallery
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Ad Intelligence Plugin'
+          Description: 'Added new notes section' 
+          Link: https://player.support.brightcove.com/plugins/ad-intelligence-plugin.html 
+          Product: Video Cloud 
+          Product_area: 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Reviewing Social Analytics'
+          Description: 'VC Updates screenshots of Reviewing Social Analytics'
+          Link: https://studio.support.brightcove.com/social/reviewing-social-analytics.html 
+          Product: Video Cloud 
+          Product_area: 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Reviewing Social Analytics'
+          Description: 'Beacon updates screenshots of Reviewing Social Analytics'
+          Link: https://beacon-help.support.brightcove.com/social/reviewing-social-analytics.html 
+          Product: Beacon
+          Product_area: 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Reviewing Social Analytics'
+          Description: 'Adding steps in Social Analytics'
+          Link: https://studio.support.brightcove.com/social/reviewing-social-analytics.html#topdest 
+          Product: Video Cloud
+          Product_area: 
+          Product_Update: 'false'
+          Feature: ''
+        - Title: 'Social Engagement Analytics docs'
+          Description: 'Adding steps in Social Engagement Analytics'
+          Link: https://studio.support.brightcove.com/social/reviewing-social-engagement-analytics.html#socialviews 
+          Product: Video Cloud
+          Product_area: 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Reviewing Social Views Analytics'
+          Description: 'Adding steps in Reviewing Social Views Analytics'
+          Link: https://studio.support.brightcove.com/social/reviewing-social-views-analytics.html  
+          Product: Video Cloud
+          Product_area: 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Reviewing Social Analytics'
+          Description: 'Adding steps in Social Analytics on Beacon'
+          Link: https://beacon-help.support.brightcove.com/social/reviewing-social-analytics.html 
+          Product: Beacon
+          Product_area: 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Social Engagement Analytics docs'
+          Description: 'Adding steps in Social Engagement Analytics on beacon'
+          Link: https://beacon-help.support.brightcove.com/social/reviewing-social-engagement-analytics.html 
+          Product: Beacon
+          Product_area: 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Reviewing Social Views Analytics'
+          Description: 'Adding steps in Reviewing Social Views Analytics on Beacon'
+          Link: https://beacon-help.support.brightcove.com/social/reviewing-social-views-analytics.html 
+          Product: Beacon
+          Product_area: 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Video Cloud Documentation'
+          Description: 'Minor Media UI Changes in VC Docs'
+          Link:  https://studio.support.brightcove.com 
+          Product: Video Cloud
+          Product_area: ''
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Adding Captions to Videos using the Media Module'
+          Description: 'Status Field Added to Text Tracks section in Media module'
+          Link: https://studio.support.brightcove.com/media/adding-captions-videos-using-media-module.html
+          Product: Video Cloud
+          Product_area: Media Module
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Beacon Docs'
+          Description: 'Minor Media UI Changes in Beacon Docs'
+          Link:  https://beacon-help.support.brightcove.com/social/ 
+          Product: Beacon
+          Product_area: ''
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
 - date: 14-January-2022
   types:
     - type: New Docs
