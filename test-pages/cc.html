@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />		
+        <title>Closed Caption Tester</title>
+        <style>
+          body {
+            font-family: sans-serif;
+          }
+        </style>
+    </head>
+    <body>
+      <h1>Test for Closed Captions</h1>
+      <p>Enter your data (or a sample video/player will be used).</p>
+      <p>Account ID: <input id="account_id" type="text"></p>
+        <p>Video ID: <input id="video_id" type="text"></p>
+        <p>Player ID: <input id="player_id" type="text"></p>
+      </p>
+      <p><button id="submit_data">Submit and Launch Player</button></p>
+      
+      <div style="max-width: 960px;">
+        <video-js id="myPlayerID" data-account="1752604059001" data-player="default" data-embed="default" controls="" data-video-id="5325486425001" data-playlist-id="" data-application-id="" class="vjs-fluid"></video-js>
+      </div>
+      
+      <script src="https://players.brightcove.net/1752604059001/default_default/index.min.js"></script>
+        <script>
+          var player_id_field = document.getElementById("player_id"),
+            video_id_field = document.getElementById("video_id"),
+            submit_button = document.getElementById("submit_data"),
+            player_id,
+            video_id;
+
+          submit_button.addEventListener("click", function (e) {
+            if (player_id_field.value && video_id_field.value) {
+            }
+          });
+
+          videojs.getPlayer("myPlayerID").ready(function () {
+            // Create variables and new div, anchor and image for download icon
+            var myPlayer = this,
+              highestQuality,
+              mp4Sources;
+            myPlayer.on("loadstart", function () {
+              // +++ Get video name and the MP4 renditions +++
+              mp4Sources = myPlayer.currentSources();
+              // +++ Sort the renditions from highest to lowest on size+++
+              mp4Sources.sort(function (a, b) {
+                return b.size - a.size;
+              });
+              // +++ Extract the highest rendition +++
+              highestQuality = mp4Sources[0];
+              myPlayer.off("loadstart");
+            });
+            myPlayer.src(highestQuality);
+          });
+
+        </script>
+    </body>
+</html>
