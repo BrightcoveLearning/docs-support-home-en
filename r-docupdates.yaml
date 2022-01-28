@@ -18,6 +18,14 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Adding Geolocations'
+          Description: 'Adding restrictions to use either permitted or denied locations on Beacon Classic.'
+          Link: https://beacon.support.brightcove.com/references/adding-geolocations.html
+          Product: Beacon Classic
+          Product_area: 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Major updates
       docs:
         - Title: 'Overview: Image API'
@@ -142,3 +150,19 @@
           Product_Update: 'true'
           Feature: 'Android SDK Release 6.18.1'
           Status: Released
+        - Title: 'Creating Custom Metadata Fields'
+          Description: 'Increase limit for the value in the list in the custom field'
+          Link: https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html 
+          Product: Video Cloud 
+          Product_area: Custom fields
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating Custom Metadata Fields'
+          Description: 'Increase limit for the value in the list in the custom field'
+          Link: https://beacon-help.support.brightcove.com/admin/creating-custom-metadata-fields.html 
+          Product: Beacon
+          Product_area: Custom fields
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
