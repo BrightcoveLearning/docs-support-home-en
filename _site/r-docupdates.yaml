@@ -1,300 +1,144 @@
-- date: 21-January-2022
+- date: 28-January-2022
   types:
     - type: New Docs
       docs:
-        - Title: ''
-          Description: ''
-          Link: 
-          Product: Video Cloud | Live | Beacon | SSAI | Zencoder
-          Product_area: 
-          Product_Update: 'true | false'
-          Feature: '(leave blank if Product_Update is false)'
-          Status: Released | Limited Availability | Staging | Internal
+        - Title: 'Implementing the Side Panel'
+          Description: 'In this topic, you will learn how to implement the side panel using a plugin in your Brightcove Beacon web apps.'
+          Link: https://beacon.support.brightcove.com/ott-plugins/side-panel.html
+          Product: Beacon
+          Product_area: Beacon Plugins
+          Product_Update: 'false'
+          Feature: ''
+          Status: Staging
+        - Title: 'Login Durations'
+          Description: 'In this topic, you will learn about viewer login durations.'
+          Link: https://beacon.support.brightcove.com/references/login-durations.html
+          Product: Beacon
+          Product_area: App Behavior
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Major updates
       docs:
-- date: 21-January-2022
-  types:
-    - type: New Docs
-      docs:
-    - type: Major updates
-      docs:
-        - Title: 'Brightcove Player Sample: Outstream (Ad-Only) Player'
-          Description: 'Removed the inline VAST option since the ad tag URL option still works'
-          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-outstream-ad-only-player.html 
+        - Title: 'Overview: Image API'
+          Description: 'Added information on tokens for request authentication'
+          Link: https://apis.support.brightcove.com/images/getting-started/overview.html
           Product: Video Cloud
-          Product_area: Brightcove Player
+          Product_area: Image API
+          Product_Update: 'true'
+          Feature: 'Token authentication'
+          Status: Limited Availability
+        - Title: 'Image API Reference'
+          Description: 'Added information on tokens for request authentication'
+          Link: https://apis.support.brightcove.com/images/references/reference.html
+          Product: Video Cloud
+          Product_area: Image API
+          Product_Update: 'false'
+          Feature: 'Token authentication'
+          Status: Limited Availability
+        - Title: 'Generic Stream Concurrency'
+          Description: 'Playback will now terminate if the player is unable to contact the server to verify concurrency limits'
+          Link: https://apis.support.brightcove.com/playback-restrictions/guides/generic-stream-concurrency.html
+          Product: Video Cloud
+          Product_area: Playback Restrictions
+          Product_Update: 'true'
+          Feature: 'Generic stream concurrency'
+          Status: Released
+        - Title: 'Ingesting WebVTT Files'
+          Description: 'You can now set the status of ingested text tracks or auto captions to "published" or "draft"'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-webvtt-files-text-trackscaptions.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest API
+          Product_Update: 'true'
+          Feature: 'Text tracks and auto captions'
+          Status: Released
+        - Title: 'Dynamic Ingest API Reference'
+          Description: 'You can now set the status of ingested text tracks or auto captions to "published" or "draft"'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/references/reference.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest API
+          Product_Update: 'false'
+          Feature: 'Text tracks and auto captions'
+          Status: Released
+        - Title: 'Ingest Fields Reference'
+          Description: 'You can now set the status of ingested text tracks or auto captions to "published" or "draft"'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/references/dynamic-ingest-ingest-fields.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest API
+          Product_Update: 'false'
+          Feature: 'Text tracks and auto captions'
+          Status: Released
+        - Title: 'Requesting Auto Captions'
+          Description: 'You can now set the status of ingested text tracks or auto captions to "published" or "draft"'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/requesting-auto-captions.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest API
+          Product_Update: 'false'
+          Feature: 'Text tracks and auto captions'
+          Status: Released
+        - Title: 'MP4s in Dynamic Delivery'
+          Description: 'Added closed captions as another reason to create MP4 renditions when ingesting or transcoding videos'
+          Link: https://apis.support.brightcove.com/ingest-profiles/guides/mp4s-dynamic-delivery.html#Do_I_need_MP4_renditions
+          Product: Video Cloud
+          Product_area: Dynamic Ingest API
+          Product_Update: 'false'
+          Feature: 'Video renditions'
+          Status: Released
+        - Title: 'Overview: Platform APIs'
+          Description: 'Added Cloud Playout and Playback Restrictions APIs '
+          Link: https://apis.support.brightcove.com/getting-started/getting-started-brightcove-apis.html 
+          Product: Video Cloud
+          Product_area: APIs
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Static URL Delivery'
-          Description: 'Added endpoints section for Live streams'
-          Link: https://apis.support.brightcove.com/playback/guides/static-url-delivery.html 
-          Product: Live
-          Product_area: Static URL Delivery
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating an Electronic Program Guide (EPG)'
-          Description: 'Updated channel id value and added FAQ section'
-          Link: https://beacon.support.brightcove.com/using-brightcove-beacon/electronic-program-guides.html  
+        - Title: 'Creating a Playlist'
+          Description: 'Added note and section about Video Cloud syncing'
+          Link: https://beacon.support.brightcove.com/using-brightcove-beacon/creating-a-playlist.html     
           Product: Beacon
           Product_area: Beacon
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Overview: Forensic Watermarking'
-          Description: 'Added diagram and intro text'
-          Link: https://apis.support.brightcove.com/general/overview-forensic-watermarking.html   
-          Product: Video Cloud
-          Product_area: Forensic Watermarking
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Forensic Watermarking with Beacon Apps'
-          Description: 'Added diagram and intro text'
-          Link: https://beacon-la.support.brightcove.com/developer-topics/forensic-watermarking-with-beacon.html    
-          Product: Beacon
-          Product_area: Forensic Watermarking
-          Product_Update: 'false'
-          Feature: ''
-          Status: Internal
-        - Title: 'Ingesting WebVTT Files'
-          Description: 'Updated with some clarifications and notes on adding closed captions (608/708) to MP4 renditions.'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-webvtt-files-text-trackscaptions.html
-          Product: Video Cloud
-          Product_area: Dynamic Ingest API
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Studio'
-          Description: 'Translations fixed for studio-es pages'
-          Link: https://es.studio.support.brightcove.com/
-          Product: Video Cloud 
-          Product_area: Studio
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Gallery'
-          Description: 'Translations fixed for gallery-es pages'
-          Link: https://es.gallery.support.brightcove.com/             
-          Product: Video Cloud 
-          Product_area: Gallery
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Ad Intelligence Plugin'
-          Description: 'Added new notes section' 
-          Link: https://player.support.brightcove.com/plugins/ad-intelligence-plugin.html 
-          Product: Video Cloud 
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Reviewing Social Analytics'
-          Description: 'VC Updates screenshots of Reviewing Social Analytics'
-          Link: https://studio.support.brightcove.com/social/reviewing-social-analytics.html 
-          Product: Video Cloud 
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Reviewing Social Analytics'
-          Description: 'Beacon updates screenshots of Reviewing Social Analytics'
-          Link: https://beacon-help.support.brightcove.com/social/reviewing-social-analytics.html 
-          Product: Beacon
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Reviewing Social Analytics'
-          Description: 'Adding steps in Social Analytics'
-          Link: https://studio.support.brightcove.com/social/reviewing-social-analytics.html#topdest 
-          Product: Video Cloud
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-        - Title: 'Social Engagement Analytics docs'
-          Description: 'Adding steps in Social Engagement Analytics'
-          Link: https://studio.support.brightcove.com/social/reviewing-social-engagement-analytics.html#socialviews 
-          Product: Video Cloud
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Reviewing Social Views Analytics'
-          Description: 'Adding steps in Reviewing Social Views Analytics'
-          Link: https://studio.support.brightcove.com/social/reviewing-social-views-analytics.html  
-          Product: Video Cloud
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Reviewing Social Analytics'
-          Description: 'Adding steps in Social Analytics on Beacon'
-          Link: https://beacon-help.support.brightcove.com/social/reviewing-social-analytics.html 
-          Product: Beacon
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Social Engagement Analytics docs'
-          Description: 'Adding steps in Social Engagement Analytics on beacon'
-          Link: https://beacon-help.support.brightcove.com/social/reviewing-social-engagement-analytics.html 
-          Product: Beacon
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Reviewing Social Views Analytics'
-          Description: 'Adding steps in Reviewing Social Views Analytics on Beacon'
-          Link: https://beacon-help.support.brightcove.com/social/reviewing-social-views-analytics.html 
-          Product: Beacon
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Ingesting WebVTT Files'
-          Description: 'Updated with some clarifications and notes on adding closed captions (608/708) to MP4 renditions.'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-webvtt-files-text-trackscaptions.html
-          Product: Video Cloud
-          Product_area: Dynamic Ingest API
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Studio'
-          Description: 'Translations fixed for studio-es pages'
-          Link: https://es.studio.support.brightcove.com/
-          Product: Video Cloud 
-          Product_area: Studio
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Gallery'
-          Description: 'Translations fixed for gallery-es pages'
-          Link: https://es.gallery.support.brightcove.com/             
-          Product: Video Cloud 
-          Product_area: Gallery
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Ad Intelligence Plugin'
-          Description: 'Added new notes section' 
-          Link: https://player.support.brightcove.com/plugins/ad-intelligence-plugin.html 
-          Product: Video Cloud 
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Reviewing Social Analytics'
-          Description: 'VC Updates screenshots of Reviewing Social Analytics'
-          Link: https://studio.support.brightcove.com/social/reviewing-social-analytics.html 
-          Product: Video Cloud 
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Reviewing Social Analytics'
-          Description: 'Beacon updates screenshots of Reviewing Social Analytics'
-          Link: https://beacon-help.support.brightcove.com/social/reviewing-social-analytics.html 
-          Product: Beacon
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Reviewing Social Analytics'
-          Description: 'Adding steps in Social Analytics'
-          Link: https://studio.support.brightcove.com/social/reviewing-social-analytics.html#topdest 
-          Product: Video Cloud
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-        - Title: 'Social Engagement Analytics docs'
-          Description: 'Adding steps in Social Engagement Analytics'
-          Link: https://studio.support.brightcove.com/social/reviewing-social-engagement-analytics.html#socialviews 
-          Product: Video Cloud
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Reviewing Social Views Analytics'
-          Description: 'Adding steps in Reviewing Social Views Analytics'
-          Link: https://studio.support.brightcove.com/social/reviewing-social-views-analytics.html  
-          Product: Video Cloud
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Reviewing Social Analytics'
-          Description: 'Adding steps in Social Analytics on Beacon'
-          Link: https://beacon-help.support.brightcove.com/social/reviewing-social-analytics.html 
-          Product: Beacon
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Social Engagement Analytics docs'
-          Description: 'Adding steps in Social Engagement Analytics on beacon'
-          Link: https://beacon-help.support.brightcove.com/social/reviewing-social-engagement-analytics.html 
-          Product: Beacon
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Reviewing Social Views Analytics'
-          Description: 'Adding steps in Reviewing Social Views Analytics on Beacon'
-          Link: https://beacon-help.support.brightcove.com/social/reviewing-social-views-analytics.html 
-          Product: Beacon
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Video Cloud Documentation'
-          Description: 'Minor Media UI Changes in VC Docs'
-          Link:  https://studio.support.brightcove.com 
+        - Title: 'Best Practices: The Video Creating, Transcoding, and Uploading Workflow'
+          Description: 'Added note that HDR video is currently not supported'
+          Link: https://studio.support.brightcove.com/general/best-practices-video-creating-transcoding-and-uploading-workflow.html
           Product: Video Cloud
-          Product_area: ''
+          Product_area: Playback
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Adding Captions to Videos using the Media Module'
-          Description: 'Status Field Added to Text Tracks section in Media module'
-          Link: https://studio.support.brightcove.com/media/adding-captions-videos-using-media-module.html
+        - Title: 'Ingesting content with DRM'
+          Description: 'Updated screenshots for current UI'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-content-drm.html
           Product: Video Cloud
-          Product_area: Media Module
+          Product_area: Dynamic Ingest and DRM
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Beacon Docs'
-          Description: 'Minor Media UI Changes in Beacon Docs'
-          Link:  https://beacon-help.support.brightcove.com/social/ 
-          Product: Beacon
-          Product_area: ''
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released      
-        - Title: 'Video Cloud Documentation'
-          Description: 'Minor Media UI Changes in VC Docs'
-          Link:  https://studio.support.brightcove.com 
+        - Title: 'Uploading Videos Using the Upload Module'
+          Description: 'Adding section explaining the need for MP4 renditions'
+          Link: https://studio.support.brightcove.com/media/uploading-videos-using-upload-module.html
           Product: Video Cloud
-          Product_area: ''
+          Product_area: Ingest Profiles
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Adding Captions to Videos using the Media Module'
-          Description: 'Status Field Added to Text Tracks section in Media module'
-          Link: https://studio.support.brightcove.com/media/adding-captions-videos-using-media-module.html
+        - Title: 'Overview: Brightcove Native SDK for Android'
+          Description: 'Android SDK Release 6.18.1'
+          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html 
           Product: Video Cloud
-          Product_area: Media Module
-          Product_Update: 'false'
-          Feature: ''
+          Product_area: Native SDK for Android
+          Product_Update: 'true'
+          Feature: 'Android SDK Release 6.18.1'
           Status: Released
-        - Title: 'Beacon Docs'
-          Description: 'Minor Media UI Changes in Beacon Docs'
-          Link:  https://beacon-help.support.brightcove.com/social/ 
-          Product: Beacon
-          Product_area: ''
-          Product_Update: 'false'
-          Feature: ''
+        - Title: 'Brightcove Native SDK for Android Release Notes'
+          Description: 'Android SDK Release 6.18.1'
+          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html  
+          Product: Video Cloud
+          Product_area: Native SDK for Android
+          Product_Update: 'true'
+          Feature: 'Android SDK Release 6.18.1'
           Status: Released
