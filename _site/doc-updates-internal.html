@@ -284,9 +284,206 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 
 <h1>Documentation Updates</h1>
-<!-- <article class="bcls-article">
+<article class="bcls-article">
   <summary>Below are recent documentation updates. <strong>This is the <span style="color:#c00;">INTERNAL version - do NOT share outside Brightcove</span></strong>. <p><strong><a href="/doc-updates.html">Public version of this doc</a></strong>.</p></summary>
   
+  
+  <section class="bcls-section">
+    <h2 id="28_January_2022">28-January-2022</h2>
+    <hr>
+    
+      <h3>New Docs</h3>
+      
+        
+          <strong>Title:</strong> Implementing the Side Panel<br>
+          <strong>Description:</strong> In this topic, you will learn how to implement the side panel using a plugin in your Brightcove Beacon web apps.<br>
+          <strong>Link:</strong> <a href="https://beacon.support.brightcove.com/ott-plugins/side-panel.html">https://beacon.support.brightcove.com/ott-plugins/side-panel.html</a><br>
+          <strong>Product:</strong> Beacon<br>
+          <strong>Product Area:</strong> Beacon Plugins<br>
+          <strong>Status:</strong> Staging<br>
+          <hr>
+        
+          <strong>Title:</strong> Login Durations<br>
+          <strong>Description:</strong> In this topic, you will learn about viewer login durations.<br>
+          <strong>Link:</strong> <a href="https://beacon.support.brightcove.com/references/login-durations.html">https://beacon.support.brightcove.com/references/login-durations.html</a><br>
+          <strong>Product:</strong> Beacon<br>
+          <strong>Product Area:</strong> App Behavior<br>
+          <strong>Status:</strong> Released<br>
+          <hr>
+        
+          <strong>Title:</strong> Adding Geolocations<br>
+          <strong>Description:</strong> Adding restrictions to use either permitted or denied locations on Beacon Classic.<br>
+          <strong>Link:</strong> <a href="https://beacon.support.brightcove.com/references/adding-geolocations.html">https://beacon.support.brightcove.com/references/adding-geolocations.html</a><br>
+          <strong>Product:</strong> Beacon Classic<br>
+          <strong>Product Area:</strong> <br>
+          <strong>Status:</strong> Released<br>
+          <hr>
+        
+      
+    
+      <h3>Major updates</h3>
+      
+        
+          <strong>Title:</strong> Overview: Image API<br>
+          <strong>Description:</strong> Added information on tokens for request authentication<br>
+          <strong>Link:</strong> <a href="https://apis.support.brightcove.com/images/getting-started/overview.html">https://apis.support.brightcove.com/images/getting-started/overview.html</a><br>
+          <strong>Product:</strong> Video Cloud<br>
+          <strong>Product Area:</strong> Image API<br>
+          <strong>Status:</strong> Limited Availability<br>
+          <hr>
+        
+          <strong>Title:</strong> Image API Reference<br>
+          <strong>Description:</strong> Added information on tokens for request authentication<br>
+          <strong>Link:</strong> <a href="https://apis.support.brightcove.com/images/references/reference.html">https://apis.support.brightcove.com/images/references/reference.html</a><br>
+          <strong>Product:</strong> Video Cloud<br>
+          <strong>Product Area:</strong> Image API<br>
+          <strong>Status:</strong> Limited Availability<br>
+          <hr>
+        
+          <strong>Title:</strong> Generic Stream Concurrency<br>
+          <strong>Description:</strong> Playback will now terminate if the player is unable to contact the server to verify concurrency limits<br>
+          <strong>Link:</strong> <a href="https://apis.support.brightcove.com/playback-restrictions/guides/generic-stream-concurrency.html">https://apis.support.brightcove.com/playback-restrictions/guides/generic-stream-concurrency.html</a><br>
+          <strong>Product:</strong> Video Cloud<br>
+          <strong>Product Area:</strong> Playback Restrictions<br>
+          <strong>Status:</strong> Released<br>
+          <hr>
+        
+          <strong>Title:</strong> Ingesting WebVTT Files<br>
+          <strong>Description:</strong> You can now set the status of ingested text tracks or auto captions to "published" or "draft"<br>
+          <strong>Link:</strong> <a href="https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-webvtt-files-text-trackscaptions.html">https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-webvtt-files-text-trackscaptions.html</a><br>
+          <strong>Product:</strong> Video Cloud<br>
+          <strong>Product Area:</strong> Dynamic Ingest API<br>
+          <strong>Status:</strong> Released<br>
+          <hr>
+        
+          <strong>Title:</strong> Dynamic Ingest API Reference<br>
+          <strong>Description:</strong> You can now set the status of ingested text tracks or auto captions to "published" or "draft"<br>
+          <strong>Link:</strong> <a href="https://apis.support.brightcove.com/dynamic-ingest/references/reference.html">https://apis.support.brightcove.com/dynamic-ingest/references/reference.html</a><br>
+          <strong>Product:</strong> Video Cloud<br>
+          <strong>Product Area:</strong> Dynamic Ingest API<br>
+          <strong>Status:</strong> Released<br>
+          <hr>
+        
+          <strong>Title:</strong> Ingest Fields Reference<br>
+          <strong>Description:</strong> You can now set the status of ingested text tracks or auto captions to "published" or "draft"<br>
+          <strong>Link:</strong> <a href="https://apis.support.brightcove.com/dynamic-ingest/references/dynamic-ingest-ingest-fields.html">https://apis.support.brightcove.com/dynamic-ingest/references/dynamic-ingest-ingest-fields.html</a><br>
+          <strong>Product:</strong> Video Cloud<br>
+          <strong>Product Area:</strong> Dynamic Ingest API<br>
+          <strong>Status:</strong> Released<br>
+          <hr>
+        
+          <strong>Title:</strong> Requesting Auto Captions<br>
+          <strong>Description:</strong> You can now set the status of ingested text tracks or auto captions to "published" or "draft"<br>
+          <strong>Link:</strong> <a href="https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/requesting-auto-captions.html">https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/requesting-auto-captions.html</a><br>
+          <strong>Product:</strong> Video Cloud<br>
+          <strong>Product Area:</strong> Dynamic Ingest API<br>
+          <strong>Status:</strong> Released<br>
+          <hr>
+        
+          <strong>Title:</strong> MP4s in Dynamic Delivery<br>
+          <strong>Description:</strong> Added closed captions as another reason to create MP4 renditions when ingesting or transcoding videos<br>
+          <strong>Link:</strong> <a href="https://apis.support.brightcove.com/ingest-profiles/guides/mp4s-dynamic-delivery.html#Do_I_need_MP4_renditions">https://apis.support.brightcove.com/ingest-profiles/guides/mp4s-dynamic-delivery.html#Do_I_need_MP4_renditions</a><br>
+          <strong>Product:</strong> Video Cloud<br>
+          <strong>Product Area:</strong> Dynamic Ingest API<br>
+          <strong>Status:</strong> Released<br>
+          <hr>
+        
+          <strong>Title:</strong> Overview: Platform APIs<br>
+          <strong>Description:</strong> Added Cloud Playout and Playback Restrictions APIs <br>
+          <strong>Link:</strong> <a href="https://apis.support.brightcove.com/getting-started/getting-started-brightcove-apis.html">https://apis.support.brightcove.com/getting-started/getting-started-brightcove-apis.html</a><br>
+          <strong>Product:</strong> Video Cloud<br>
+          <strong>Product Area:</strong> APIs<br>
+          <strong>Status:</strong> Released<br>
+          <hr>
+        
+          <strong>Title:</strong> Creating a Playlist<br>
+          <strong>Description:</strong> Added note and section about Video Cloud syncing<br>
+          <strong>Link:</strong> <a href="https://beacon.support.brightcove.com/using-brightcove-beacon/creating-a-playlist.html">https://beacon.support.brightcove.com/using-brightcove-beacon/creating-a-playlist.html</a><br>
+          <strong>Product:</strong> Beacon<br>
+          <strong>Product Area:</strong> Beacon<br>
+          <strong>Status:</strong> Released<br>
+          <hr>
+        
+          <strong>Title:</strong> Responsive Sizing for Brightcove Player<br>
+          <strong>Description:</strong> Aspect-ratio new section added<br>
+          <strong>Link:</strong> <a href="https://player.support.brightcove.com/styling/responsive-sizing-brightcove-player.html#Using_aspect-ratio">https://player.support.brightcove.com/styling/responsive-sizing-brightcove-player.html#Using_aspect-ratio</a><br>
+          <strong>Product:</strong> Video Cloud<br>
+          <strong>Product Area:</strong> Brightcove Player<br>
+          <strong>Status:</strong> Released<br>
+          <hr>
+        
+          <strong>Title:</strong> APIs<br>
+          <strong>Description:</strong> Spanish translations fixed for all API pages<br>
+          <strong>Link:</strong> <a href="https://apis.support.brightcove.com/">https://apis.support.brightcove.com/</a><br>
+          <strong>Product:</strong> Video Cloud<br>
+          <strong>Product Area:</strong> APIs<br>
+          <strong>Status:</strong> Released<br>
+          <hr>
+        
+      
+    
+      <h3>Minor updates</h3>
+      
+        
+          <strong>Title:</strong> Best Practices: The Video Creating, Transcoding, and Uploading Workflow<br>
+          <strong>Description:</strong> Added note that HDR video is currently not supported<br>
+          <strong>Link:</strong> <a href="https://studio.support.brightcove.com/general/best-practices-video-creating-transcoding-and-uploading-workflow.html">https://studio.support.brightcove.com/general/best-practices-video-creating-transcoding-and-uploading-workflow.html</a><br>
+          <strong>Product:</strong> Video Cloud<br>
+          <strong>Product Area:</strong> Playback<br>
+          <strong>Status:</strong> Released<br>
+          <hr>
+        
+          <strong>Title:</strong> Ingesting content with DRM<br>
+          <strong>Description:</strong> Updated screenshots for current UI<br>
+          <strong>Link:</strong> <a href="https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-content-drm.html">https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-content-drm.html</a><br>
+          <strong>Product:</strong> Video Cloud<br>
+          <strong>Product Area:</strong> Dynamic Ingest and DRM<br>
+          <strong>Status:</strong> Released<br>
+          <hr>
+        
+          <strong>Title:</strong> Uploading Videos Using the Upload Module<br>
+          <strong>Description:</strong> Adding section explaining the need for MP4 renditions<br>
+          <strong>Link:</strong> <a href="https://studio.support.brightcove.com/media/uploading-videos-using-upload-module.html">https://studio.support.brightcove.com/media/uploading-videos-using-upload-module.html</a><br>
+          <strong>Product:</strong> Video Cloud<br>
+          <strong>Product Area:</strong> Ingest Profiles<br>
+          <strong>Status:</strong> Released<br>
+          <hr>
+        
+          <strong>Title:</strong> Overview: Brightcove Native SDK for Android<br>
+          <strong>Description:</strong> Android SDK Release 6.18.1<br>
+          <strong>Link:</strong> <a href="https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html">https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html</a><br>
+          <strong>Product:</strong> Video Cloud<br>
+          <strong>Product Area:</strong> Native SDK for Android<br>
+          <strong>Status:</strong> Released<br>
+          <hr>
+        
+          <strong>Title:</strong> Brightcove Native SDK for Android Release Notes<br>
+          <strong>Description:</strong> Android SDK Release 6.18.1<br>
+          <strong>Link:</strong> <a href="https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html">https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html</a><br>
+          <strong>Product:</strong> Video Cloud<br>
+          <strong>Product Area:</strong> Native SDK for Android<br>
+          <strong>Status:</strong> Released<br>
+          <hr>
+        
+          <strong>Title:</strong> Creating Custom Metadata Fields<br>
+          <strong>Description:</strong> Increase limit for the value in the list in the custom field<br>
+          <strong>Link:</strong> <a href="https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html">https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html</a><br>
+          <strong>Product:</strong> Video Cloud<br>
+          <strong>Product Area:</strong> Custom fields<br>
+          <strong>Status:</strong> Released<br>
+          <hr>
+        
+          <strong>Title:</strong> Creating Custom Metadata Fields<br>
+          <strong>Description:</strong> Increase limit for the value in the list in the custom field<br>
+          <strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/admin/creating-custom-metadata-fields.html">https://beacon-help.support.brightcove.com/admin/creating-custom-metadata-fields.html</a><br>
+          <strong>Product:</strong> Beacon<br>
+          <strong>Product Area:</strong> Custom fields<br>
+          <strong>Status:</strong> Released<br>
+          <hr>
+        
+      
+    
+  </section>
   
   <section class="bcls-section">
     <h2 id="21_January_2022">21-January-2022</h2>
@@ -968,7 +1165,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
   </section>
   
-</article> -->
+</article>
 </div>
 <div class="col-sm-2 right-side-bar">
   

@@ -108,6 +108,22 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Responsive Sizing for Brightcove Player'
+          Description: 'Aspect-ratio new section added'                
+          Link: https://player.support.brightcove.com/styling/responsive-sizing-brightcove-player.html#Using_aspect-ratio
+          Product: Video Cloud 
+          Product_area: Brightcove Player
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'APIs'
+          Description: 'Spanish translations fixed for all API pages'            
+          Link: https://apis.support.brightcove.com/ 
+          Product: Video Cloud 
+          Product_area: APIs
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Minor updates
       docs:
         - Title: 'Best Practices: The Video Creating, Transcoding, and Uploading Workflow'
