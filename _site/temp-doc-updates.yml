@@ -10,13 +10,45 @@
           Product_Update: 'true'
           Feature: 'Protecting Beacon app content with Forensic Watermarking'
           Status: Released
+        - Title: 'Learning Guide: Beacon Plugins'
+          Description: 'In this topic, you will learn about Beacon plugins; what they are, why you would use them, and an introduction to how to implement them.'
+          Link: https://beacon.support.brightcove.com/ott-plugins/learning-guide-beacon-plugins.html
+          Product: Beacon
+          Product_area: OTT Plugins
+          Product_Update: 'true'
+          Feature: 'Beacon Web Customization with Plugins:Learning Guide'
+          Status: Staging
+        - Title: 'Using JavaScript Modules for Beacon Plugins'
+          Description: 'In this topic, you will learn how JavaScript modules can be used in the code implementation of Beacon Plugins.'
+          Link: https://beacon.support.brightcove.com/ott-plugins/javascript-modules-beacon-plugins.html
+          Product: Beacon
+          Product_area: OTT Plugins
+          Product_Update: 'true'
+          Feature: 'Beacon Web Customization with Plugins:JS Modules'
+          Status: Staging
+        - Title: 'Dispatching and Handling Events in Beacon Plugins'
+          Description: 'In this topic, you will learn how events are dispatched and handled in Beacon Plugins.'
+          Link: https://beacon.support.brightcove.com/ott-plugins/dispatching-handling-events.html
+          Product: Beacon
+          Product_area: OTT Plugins
+          Product_Update: 'true'
+          Feature: 'Beacon Web Customization with Plugins:Handling Events'
+          Status: Staging
+        - Title: 'Implementing the Side Panel'
+          Description: 'In this topic, you will learn how to implement the side panel using a plugin in your Brightcove Beacon web apps.'
+          Link: https://beacon.support.brightcove.com/ott-plugins/side-panel.html
+          Product: Beacon
+          Product_area: OTT Plugins
+          Product_Update: 'true'
+          Feature: 'Beacon Web Customization with Plugins:Side Panel'
+          Status: Staging
         - Title: 'Implementing Custom Sections'
           Description: 'In this topic, you will learn how to implement the custom sections which are defined by the HTML tag <div> using a plugin in your Brightcove Beacon web apps.'
           Link: https://beacon.support.brightcove.com/ott-plugins/custom-divs.html
           Product: Beacon
           Product_area: OTT Plugins
           Product_Update: 'true'
-          Feature: 'Beacon Web Customization with Plugins: Custom Sections'
+          Feature: 'Beacon Web Customization with Plugins:Custom Sections'
           Status: Staging
         - Title: 'Implementing Buttons and Event Handlers'
           Description: 'In this topic, you will learn how to implement custom buttons using a plugin in your Brightcove Beacon web apps.'
@@ -24,7 +56,7 @@
           Product: Beacon
           Product_area: OTT Plugins
           Product_Update: 'true'
-          Feature: 'Beacon Web Customization with Plugins: Custom Buttons'
+          Feature: 'Beacon Web Customization with Plugins:Custom Buttons'
           Status: Staging
     - type: Major updates
       docs:
@@ -102,6 +134,14 @@
           Status: Released
     - type: Minor updates
       docs:
+        - Title: 'Branding CorpTV Apps'
+          Description: 'Updated logos and color pallette images supplied by Funchal designers'
+          Link: https://corptv.support.brightcove.com/styling/branding-ott-apps.html
+          Product: Video Cloud
+          Product_area: CorpTV
+          Product_Update: 'false'
+          Feature: ''
+          Status: Limited Availability
         - Title: 'Analytics API Reference'
           Description: 'Corrections to a couple of query parameters'
           Link: https://apis.support.brightcove.com/analytics/references/reference.html#tag/Video-Data
