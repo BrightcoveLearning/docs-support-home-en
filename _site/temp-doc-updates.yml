@@ -10,6 +10,14 @@
           Product_Update: 'true'
           Feature: 'Protecting Beacon app content with Forensic Watermarking'
           Status: Released
+        - Title: 'Implementing Custom Sections'
+          Description: 'In this topic, you will learn how to implement the custom sections which are defined by the HTML tag <div> using a plugin in your Brightcove Beacon web apps.'
+          Link: https://beacon.support.brightcove.com/ott-plugins/custom-divs.html
+          Product: Beacon
+          Product_area: OTT Plugins
+          Product_Update: 'true'
+          Feature: 'Beacon Web Customization with Plugins: Custom Sections'
+          Status: Staging
         - Title: 'Implementing Buttons and Event Handlers'
           Description: 'In this topic, you will learn how to implement custom buttons using a plugin in your Brightcove Beacon web apps.'
           Link: https://beacon.support.brightcove.com/ott-plugins/buttons-and-events.html  
@@ -20,6 +28,14 @@
           Status: Staging
     - type: Major updates
       docs:
+        - Title: 'Using Core Pages'
+          Description: 'Mouseover function added to table'
+          Link: https://beacon-help.support.brightcove.com/layout/using-core-pages.html
+          Product: Beacon
+          Product_area: Core Pages
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
         - Title: 'Overview: Dimensions, Fields, and Parameters'
           Description: 'Added about a dozen dimension combinations that are now supported to the interactive tool for testing combinations'
           Link: https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html
