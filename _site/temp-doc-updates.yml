@@ -76,6 +76,30 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Viewing Billing Information'
+          Description: 'Adding a note about grace period'
+          Link: https://studio.support.brightcove.com/admin/viewing-billing-information.html#deleted_videos
+          Product: Video Cloud 
+          Product_area: Studio
+          Product_Update: false
+          Feature: ''
+          Status: Released
+        - Title: 'Adding Captions to Videos using the Media Module'
+          Description: 'Adding a note to Captions/subtitles'
+          Link: https://studio.support.brightcove.com/media/adding-captions-videos-using-media-module.html 
+          Product: Video Cloud
+          Product_area: Studio
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Adding Captions to Videos'
+          Description: 'Adding a note to Captions/subtitles'
+          Link: https://beacon-help.support.brightcove.com/media/adding-captions-videos.html  
+          Product: Beacon
+          Product_area: Studio
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Minor updates
       docs:
         - Title: 'Analytics API Reference'
@@ -114,15 +138,47 @@
           Description: 'Added CSS selector for the quality selector button'
           Link: https://player.support.brightcove.com/styling/customizing-player-appearance.html#Component_selectors
           Product: Video Cloud
-          Product_area: Player Styling
+          Product_area: Brightcove Player
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: ''
-          Description: ''
-          Link: 
-          Product: Video Cloud | Live | Beacon | SSAI | Zencoder
-          Product_area: 
-          Product_Update: 'true | false'
-          Feature: '(leave blank if Product_Update is false)'
-          Status: Released | Limited Availability | Staging | Internal
+        - Title: 'Learning Guide: Using the REST APIs'
+          Description: 'Move Images to Local Repo'
+          Link: https://player.support.brightcove.com/getting-started/learning-guide-using-rest-apis.html 
+          Product: Video Cloud
+          Product_area: Brightcove Player
+          Product_Update: false
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Player Plugins'
+          Description: 'Move Images to Local Repo'
+          Link: https://player.support.brightcove.com/plugins/brightcove-player-plugins.html 
+          Product: Video Cloud
+          Product_area: Brightcove Player
+          Product_Update: false
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Player Plugins'
+          Description: 'Updated images'
+          Link: https://player.support.brightcove.com/plugins/brightcove-player-plugins.html 
+          Product: Video Cloud
+          Product_area: Brightcove Player
+          Product_Update: false
+          Feature: ''
+          Status: Released
+        - Title: 'Learn the Basics'
+          Description: 'Line on the layout Howto removed'
+          Link: https://beacon-help.support.brightcove.com/basics/index.html 
+          Product: Beacon
+          Product_area: Studio
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Administering Accounts'
+          Description: 'Beacon all Admin docs for updated naming'
+          Link: https://beacon-help.support.brightcove.com/admin/index.html 
+          Product: Beacon
+          Product_area: Studio
+          Product_Update: false
+          Feature: ''
+          Status: Released
