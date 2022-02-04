@@ -10,8 +10,24 @@
           Product_Update: 'true'
           Feature: 'Protecting Beacon app content with Forensic Watermarking'
           Status: Released
+        - Title: 'Implementing Buttons and Event Handlers'
+          Description: 'In this topic, you will learn how to implement custom buttons using a plugin in your Brightcove Beacon web apps.'
+          Link: https://beacon.support.brightcove.com/ott-plugins/buttons-and-events.html  
+          Product: Beacon
+          Product_area: OTT Plugins
+          Product_Update: 'true'
+          Feature: 'Beacon Web Customization with Plugins: Custom Buttons'
+          Status: Staging
     - type: Major updates
       docs:
+        - Title: 'Overview: Dimensions, Fields, and Parameters'
+          Description: 'Added about a dozen dimension combinations that are now supported to the interactive tool for testing combinations'
+          Link: https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html
+          Product: Video Cloud
+          Product_area: Analytics API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
         - Title: 'Implementing Live SSAI'
           Description: 'Fixed the SSAI Ad Configuration value in Beacon CMS'
           Link: https://beacon.support.brightcove.com/monetization/ssai/live-ssai.html 
@@ -46,6 +62,46 @@
           Status: Released
     - type: Minor updates
       docs:
+        - Title: 'Analytics API Reference'
+          Description: 'Corrections to a couple of query parameters'
+          Link: https://apis.support.brightcove.com/analytics/references/reference.html#tag/Video-Data
+          Product: Video Cloud
+          Product_area: Analytics API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'MP4s in Dynamic Delivery'
+          Description: 'Added an additional use case that requires MP4 renditions'
+          Link: https://apis.support.brightcove.com/ingest-profiles/guides/mp4s-dynamic-delivery.html
+          Product: Video Cloud
+          Product_area: Ingest Profiles
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Audio Mapping Guide'
+          Description: 'Added an additional sample to illustrate mapping from 8 audio tracks'
+          Link: https://zencoder.support.brightcove.com/encoding-guides/advanced-audio-mapping-guide.html
+          Product: Zencoder
+          Product_area: Audio Tracks
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Kollective eCDN User Guide'
+          Description: 'Added a note that Kollective credentials must come from Kollective (Brightcove has no access to them)'
+          Link: https://zencoder.support.brightcove.com/encoding-guides/advanced-audio-mapping-guide.html
+          Product: Video Cloud
+          Product_area: eCDN integrations
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Customizing Player Appearance'
+          Description: 'Added CSS selector for the quality selector button'
+          Link: https://player.support.brightcove.com/styling/customizing-player-appearance.html#Component_selectors
+          Product: Video Cloud
+          Product_area: Player Styling
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
         - Title: ''
           Description: ''
           Link: 
