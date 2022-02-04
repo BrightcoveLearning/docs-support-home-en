@@ -182,3 +182,11 @@
           Product_Update: false
           Feature: ''
           Status: Released
+        - Title: 'Creating and Managing Live Events using the Live Module'
+          Description: 'Added descriptions for the extended monitoring graphs'
+          Link: https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#ext-monitoring
+          Product: Live
+          Product_area: Live module
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
