@@ -1,5 +1,10 @@
 [
   {
+      "newURL": "https://support.brightcove.com/node/18386.html",
+      "oldURL": "/18386"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/404.html",
       "oldURL": "/404"
   },
@@ -70,17 +75,17 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/training/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://support.brightcove.com/support/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/",
       "oldURL": "/index"
   },
 
