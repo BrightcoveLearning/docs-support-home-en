@@ -26,8 +26,6 @@
         Product_Update: 'false'
         Feature: ''
         Status: Released
-
-
     - type: Major updates
       docs:
       - Title: 'Step-by-Step: Simple Video App using the Native SDK for Android'
@@ -78,8 +76,6 @@
         Product_Update: 'false'
         Feature: ''
         Status: Released
-
-
     - type: Minor updates
       docs:
       - Title: 'Creating a JSON Web Token (JWT)'
@@ -146,4 +142,3 @@
         Product_Update: 'false'
         Feature: ''
         Status: Released
-        
