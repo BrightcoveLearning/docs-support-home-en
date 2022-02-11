@@ -1,232 +1,108 @@
-- date: 4-February-2022
+- date: 11-February-2022
   types:
     - type: New Docs
       docs:
-        - Title: 'Forensic Watermarking with Beacon Apps'
-          Description: 'In this topic, you will learn how to implement Forensic Watermarking with Beacon apps.'
-          Link: https://beacon-help.support.brightcove.com/protecting-content/forensic-watermarking-with-beacon.html 
-          Product: Beacon
-          Product_area: Forensic Watermarking
-          Product_Update: 'true'
-          Feature: 'Protecting Beacon app content with Forensic Watermarking'
-          Status: Released
-        - Title: 'Learning Guide: Beacon Plugins'
-          Description: 'In this topic, you will learn about Beacon plugins; what they are, why you would use them, and an introduction to how to implement them.'
-          Link: https://beacon.support.brightcove.com/ott-plugins/learning-guide-beacon-plugins.html
-          Product: Beacon
-          Product_area: OTT Plugins
-          Product_Update: 'true'
-          Feature: 'Beacon Web Customization with Plugins:Learning Guide'
-          Status: Staging
-        - Title: 'Using JavaScript Modules for Beacon Plugins'
-          Description: 'In this topic, you will learn how JavaScript modules can be used in the code implementation of Beacon Plugins.'
-          Link: https://beacon.support.brightcove.com/ott-plugins/javascript-modules-beacon-plugins.html
-          Product: Beacon
-          Product_area: OTT Plugins
-          Product_Update: 'true'
-          Feature: 'Beacon Web Customization with Plugins:JS Modules'
-          Status: Staging
-        - Title: 'Dispatching and Handling Events in Beacon Plugins'
-          Description: 'In this topic, you will learn how events are dispatched and handled in Beacon Plugins.'
-          Link: https://beacon.support.brightcove.com/ott-plugins/dispatching-handling-events.html
-          Product: Beacon
-          Product_area: OTT Plugins
-          Product_Update: 'true'
-          Feature: 'Beacon Web Customization with Plugins:Handling Events'
-          Status: Staging
-        - Title: 'Implementing the Side Panel'
-          Description: 'In this topic, you will learn how to implement the side panel using a plugin in your Brightcove Beacon web apps.'
-          Link: https://beacon.support.brightcove.com/ott-plugins/side-panel.html
-          Product: Beacon
-          Product_area: OTT Plugins
-          Product_Update: 'true'
-          Feature: 'Beacon Web Customization with Plugins:Side Panel'
-          Status: Staging
-        - Title: 'Implementing Custom Sections'
-          Description: 'In this topic, you will learn how to implement the custom sections which are defined by the HTML tag <div> using a plugin in your Brightcove Beacon web apps.'
-          Link: https://beacon.support.brightcove.com/ott-plugins/custom-divs.html
-          Product: Beacon
-          Product_area: OTT Plugins
-          Product_Update: 'true'
-          Feature: 'Beacon Web Customization with Plugins:Custom Sections'
-          Status: Staging
-        - Title: 'Implementing Buttons and Event Handlers'
-          Description: 'In this topic, you will learn how to implement custom buttons using a plugin in your Brightcove Beacon web apps.'
-          Link: https://beacon.support.brightcove.com/ott-plugins/buttons-and-events.html  
-          Product: Beacon
-          Product_area: OTT Plugins
-          Product_Update: 'true'
-          Feature: 'Beacon Web Customization with Plugins:Custom Buttons'
-          Status: Staging
+      - Title: 'Videos with Text Tracks'
+        Description: 'This sample qpp produces a report showing which videos have text tracks and which do not.'
+        Link: https://apis.support.brightcove.com/cms/code-samples/cms-api-sample-videos-with-text-tracks.html
+        Product: Video Cloud
+        Product_area: CMS API
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
+      - Title: 'Adding a Brightcove Email to the Amazon Account'
+        Description: 'In this topic, you will learn how to add the Brightcove email to your Amazon account.'
+        Link: https://beacon.support.brightcove.com/creating-your-apps/fire-tv/add-bc-email.html
+        Product: Beacon
+        Product_area: Publishing Apps
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
+      - Title: 'Adding a Brightcove User to the Roku Account'
+        Description: 'In this topic, you will learn how to add the Brightcove user to your Roku account.'
+        Link: https://beacon.support.brightcove.com/creating-your-apps/roku/add-bc-user.html
+        Product: Beacon
+        Product_area: Publishing Apps
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
+
+
     - type: Major updates
       docs:
-        - Title: 'Using Core Pages'
-          Description: 'Mouseover function added to table'
-          Link: https://beacon-help.support.brightcove.com/layout/using-core-pages.html
-          Product: Beacon
-          Product_area: Core Pages
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: Dimensions, Fields, and Parameters'
-          Description: 'Added about a dozen dimension combinations that are now supported to the interactive tool for testing combinations'
-          Link: https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html
-          Product: Video Cloud
-          Product_area: Analytics API
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Implementing Live SSAI'
-          Description: 'Fixed the SSAI Ad Configuration value in Beacon CMS'
-          Link: https://beacon.support.brightcove.com/monetization/ssai/live-ssai.html 
-          Product: Beacon
-          Product_area: SSAI
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Implementing Live SSAI'
-          Description: 'Fixed the SSAI Ad Configuration value in Beacon CMS'
-          Link: https://beacon-help.support.brightcove.com/monetization/ssai/live-ssai.html  
-          Product: Beacon
-          Product_area: SSAI
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating and Managing Live Events using the Live Module'
-          Description: 'Added notes about the adConfigId parameter with Live events'
-          Link: https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#publish   
-          Product: Live
-          Product_area: SSAI
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Client-Side Pre-roll Ads with Live SSAI'
-          Description: 'Added section to show how to listen to player events during SSAI playback'
-          Link: https://live.support.brightcove.com/live-module/client-side-preroll-with-live-ssai.html    
-          Product: Live
-          Product_area: SSAI
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Viewing Billing Information'
-          Description: 'Adding a note about grace period'
-          Link: https://studio.support.brightcove.com/admin/viewing-billing-information.html#deleted_videos
-          Product: Video Cloud 
-          Product_area: Studio
-          Product_Update: false
-          Feature: ''
-          Status: Released
-        - Title: 'Adding Captions to Videos using the Media Module'
-          Description: 'Adding a note to Captions/subtitles'
-          Link: https://studio.support.brightcove.com/media/adding-captions-videos-using-media-module.html 
-          Product: Video Cloud
-          Product_area: Studio
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Adding Captions to Videos'
-          Description: 'Adding a note to Captions/subtitles'
-          Link: https://beacon-help.support.brightcove.com/media/adding-captions-videos.html  
-          Product: Beacon
-          Product_area: Studio
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
+      - Title: 'Step-by-Step: Simple Video App using the Native SDK for Android'
+        Description: 'Updated steps for latest version of Android Studio'
+        Link: https://sdks.support.brightcove.com/android/basics/step-step-simple-video-app-using-native-sdk-android.html 
+        Product: Video Cloud
+        Product_area: Native SDK for Android
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
+      - Title: 'Autoplay Considerations'
+        Description: 'Updated recommendations for latest version of the IMA3 plugin'
+        Link: https://player.support.brightcove.com/playback/autoplay-considerations.html  
+        Product: Video Cloud
+        Product_area: Brightcove Player
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
+      - Title: 'Ingesting Videos with Multi-Language Audio Tracks'
+        Description: 'Added a simpler sample and links to instructions for setting the default audio track using Studio or the CMS API'
+        Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-videos-multiple-audio-tracks.html
+        Product: Video Cloud
+        Product_area: Dynamic Ingest API
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
+      - Title: 'Brightcove Syndication Configuration API '
+        Description: 'Added operations for OTT syndications (for streaming VODs)'
+        Link: https://apis.support.brightcove.com/social-syndication/references/configuration-reference.html
+        Product: Beacon
+        Product_area: Syndication
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
+
+
     - type: Minor updates
       docs:
-        - Title: 'Branding CorpTV Apps'
-          Description: 'Updated logos and color pallette images supplied by Funchal designers'
-          Link: https://corptv.support.brightcove.com/styling/branding-ott-apps.html
-          Product: Video Cloud
-          Product_area: CorpTV
-          Product_Update: 'false'
-          Feature: ''
-          Status: Limited Availability
-        - Title: 'Analytics API Reference'
-          Description: 'Corrections to a couple of query parameters'
-          Link: https://apis.support.brightcove.com/analytics/references/reference.html#tag/Video-Data
-          Product: Video Cloud
-          Product_area: Analytics API
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'MP4s in Dynamic Delivery'
-          Description: 'Added an additional use case that requires MP4 renditions'
-          Link: https://apis.support.brightcove.com/ingest-profiles/guides/mp4s-dynamic-delivery.html
-          Product: Video Cloud
-          Product_area: Ingest Profiles
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Audio Mapping Guide'
-          Description: 'Added an additional sample to illustrate mapping from 8 audio tracks'
-          Link: https://zencoder.support.brightcove.com/encoding-guides/advanced-audio-mapping-guide.html
-          Product: Zencoder
-          Product_area: Audio Tracks
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Kollective eCDN User Guide'
-          Description: 'Added a note that Kollective credentials must come from Kollective (Brightcove has no access to them)'
-          Link: https://zencoder.support.brightcove.com/encoding-guides/advanced-audio-mapping-guide.html
-          Product: Video Cloud
-          Product_area: eCDN integrations
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Customizing Player Appearance'
-          Description: 'Added CSS selector for the quality selector button'
-          Link: https://player.support.brightcove.com/styling/customizing-player-appearance.html#Component_selectors
-          Product: Video Cloud
-          Product_area: Brightcove Player
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Learning Guide: Using the REST APIs'
-          Description: 'Move Images to Local Repo'
-          Link: https://player.support.brightcove.com/getting-started/learning-guide-using-rest-apis.html 
-          Product: Video Cloud
-          Product_area: Brightcove Player
-          Product_Update: false
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Player Plugins'
-          Description: 'Move Images to Local Repo'
-          Link: https://player.support.brightcove.com/plugins/brightcove-player-plugins.html 
-          Product: Video Cloud
-          Product_area: Brightcove Player
-          Product_Update: false
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Player Plugins'
-          Description: 'Updated images'
-          Link: https://player.support.brightcove.com/plugins/brightcove-player-plugins.html 
-          Product: Video Cloud
-          Product_area: Brightcove Player
-          Product_Update: false
-          Feature: ''
-          Status: Released
-        - Title: 'Learn the Basics'
-          Description: 'Line on the layout Howto removed'
-          Link: https://beacon-help.support.brightcove.com/basics/index.html 
-          Product: Beacon
-          Product_area: Studio
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Administering Accounts'
-          Description: 'Beacon all Admin docs for updated naming'
-          Link: https://beacon-help.support.brightcove.com/admin/index.html 
-          Product: Beacon
-          Product_area: Studio
-          Product_Update: false
-          Feature: ''
-          Status: Released
-        - Title: 'Creating and Managing Live Events using the Live Module'
-          Description: 'Added descriptions for the extended monitoring graphs'
-          Link: https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#ext-monitoring
-          Product: Live
-          Product_area: Live module
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
+      - Title: 'Creating a JSON Web Token (JWT)'
+        Description: 'Added details about the uid claim, and added Test Playback for Static URL Delivery'
+        Link: https://general.support.brightcove.com/developer/create-json-web-token.html#Claims_for_Playback_Restrictions 
+        Product: Video Cloud
+        Product_area: Playback Restrictions
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
+      - Title: 'Brightcove Native SDK for Android Release Notes'
+        Description: 'Removed test class from Android release notes for version 6.17.0'
+        Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html 
+        Product: Video Cloud
+        Product_area: Native SDK for Android
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
+      - Title: 'CMS API Error Message Reference'
+        Description: 'Correct the message for 404 errors'
+        Link: https://apis.support.brightcove.com/cms/references/cms-api-error-message-reference.html
+        Product: Video Cloud
+        Product_area: CMS API
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
+      - Title: 'Common Configuration Settings'
+        Description: 'Added warning about using full screen images for Smart TVs'
+        Link: https://beacon.support.brightcove.com/references/common-configuration-settings.html#Non_Textual_Data
+        Product: Beacon
+        Product_area: Layout
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
+      - Title: 'Creating an SVOD Plan'
+        Description: 'Added warning that app cache must be cleared when prices are changed.'
+        Link: https://beacon.support.brightcove.com/monetization/general/creating-svod-plan.html
+        Product: Beacon
+        Product_area: Monetization
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
