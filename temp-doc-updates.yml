@@ -62,6 +62,22 @@
         Product_Update: 'false'
         Feature: ''
         Status: Released
+      - Title: 'Implementing Custom Sections'
+        Description: 'New sub-sections added'
+        Link: https://beacon.support.brightcove.com/ott-plugins/custom-divs.html
+        Product: Beacon
+        Product_area: Beacon Plugins
+        Product_Update: 'false'
+        Feature: ''
+        Status: Staging
+      - Title: 'Brightcove Live: Best Practices'
+        Description: 'Start a live stream recommendations section added'            
+        Link: https://live.support.brightcove.com/get-started/live-module-guidelines-and-best-practicestml#Start_a_live_stream_recommendations
+        Product: Live
+        Product_area: Live Stream
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
 
 
     - type: Minor updates
@@ -106,3 +122,28 @@
         Product_Update: 'false'
         Feature: ''
         Status: Released
+      - Title: 'How To: Manage Media'
+        Description: 'Check Beacon Media Docs for Updated Naming'
+        Link: https://beacon-help.support.brightcove.com/basics/media/index.html 
+        Product: Beacon 
+        Product_area: 
+        Product_Update:  'false'
+        Feature: ''
+        Status: Released 
+      - Title: 'How To: Manage Players'
+        Description: 'Check Beacon Player Docs for Updated Naming'
+        Link: https://beacon-help.support.brightcove.com/basics/players/index.html 
+        Product: Beacon
+        Product_area: 
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
+      - Title: 'Brightcove Social™ Documentation'
+        Description: 'Check Beacon Social Docs for Updated Naming'
+        Link: https://beacon-help.support.brightcove.com/social/index.html 
+        Product: Beacon
+        Product_area: 
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
+        
