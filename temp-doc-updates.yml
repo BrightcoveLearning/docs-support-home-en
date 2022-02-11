@@ -10,6 +10,22 @@
         Product_Update: 'false'
         Feature: ''
         Status: Released
+      - Title: 'Adding a Brightcove Email to the Amazon Account'
+        Description: 'In this topic, you will learn how to add the Brightcove email to your Amazon account.'
+        Link: https://beacon.support.brightcove.com/creating-your-apps/fire-tv/add-bc-email.html
+        Product: Beacon
+        Product_area: Publishing Apps
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
+      - Title: 'Adding a Brightcove User to the Roku Account'
+        Description: 'In this topic, you will learn how to add the Brightcove user to your Roku account.'
+        Link: https://beacon.support.brightcove.com/creating-your-apps/roku/add-bc-user.html
+        Product: Beacon
+        Product_area: Publishing Apps
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
 
 
     - type: Major updates
