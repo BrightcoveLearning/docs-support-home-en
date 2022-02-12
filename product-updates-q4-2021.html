@@ -7,6 +7,11 @@ parent: home
 h1,h2 {
   color: rgb(8, 8, 140);
 }
+section>h2:first-of-type {
+  color: #D33D00;
+  font-weight: 900;
+  font-size: 2.8rem;
+}
 </style>
 <h1>{{ page.title }}</h1>
 <article class="bcls-article">
@@ -21,7 +26,7 @@ h1,h2 {
           {% if doc.Product == 'Video Cloud'  %}
             {% if doc.Product_Update == 'true' %}
               {% if doc.Status == 'Released' %}
-                <h4 id="{{ doc.Feature }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
+                <h2 id="{{ doc.Feature }}"><strong>Feature:</strong> {{ doc.Feature }}</h2>
                 <p id="{{ doc.Product_area }}"><strong>Product Area:</strong> {{ doc.Product_area}}</p>
                 <p id="{{ item.date | replace: " -", "_" }}"><strong>Date:</strong> {{ item.date }}</p>
                 <p><strong>Description:</strong> {{ doc.Description }}</p>
@@ -42,7 +47,7 @@ h1,h2 {
           {% if doc.Product == 'Live'  %}
             {% if doc.Product_Update == 'true' %}
               {% if doc.Status == 'Released' %}
-                <h4 id="{{ doc.Feature }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
+                <h2 id="{{ doc.Feature }}"><strong>Feature:</strong> {{ doc.Feature }}</h2>
                 <p id="{{ doc.Product_area }}"><strong>Product Area:</strong> {{ doc.Product_area}}</p>
                 <p id="{{ item.date | replace: " -", "_" }}"><strong>Date:</strong> {{ item.date }}</p>
                 <p><strong>Description:</strong> {{ doc.Description }}</p>
@@ -63,7 +68,7 @@ h1,h2 {
           {% if doc.Product == 'Beacon'  %}
             {% if doc.Product_Update == 'true' %}
               {% if doc.Status == 'Released' %}
-                <h4 id="{{ doc.Feature }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
+                <h2 id="{{ doc.Feature }}"><strong>Feature:</strong> {{ doc.Feature }}</h2>
                 <p id="{{ doc.Product_area }}"><strong>Product Area:</strong> {{ doc.Product_area}}</p>
                 <p id="{{ item.date | replace: " -", "_" }}"><strong>Date:</strong> {{ item.date }}</p>
                 <p><strong>Description:</strong> {{ doc.Description }}</p>
@@ -84,7 +89,7 @@ h1,h2 {
           {% if doc.Product == 'SSAI'  %}
             {% if doc.Product_Update == 'true' %}
               {% if doc.Status == 'Released' %}
-                <h4 id="{{ doc.Feature }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
+                <h2 id="{{ doc.Feature }}"><strong>Feature:</strong> {{ doc.Feature }}</h2>
                 <p id="{{ doc.Product_area }}"><strong>Product Area:</strong> {{ doc.Product_area}}</p>
                 <p id="{{ item.date | replace: " -", "_" }}"><strong>Date:</strong> {{ item.date }}</p>
                 <p><strong>Description:</strong> {{ doc.Description }}</p>
@@ -105,7 +110,7 @@ h1,h2 {
           {% if doc.Product == 'Zencoder'  %}
             {% if doc.Product_Update == 'true' %}
               {% if doc.Status == 'Released' %}
-                <h4 id="{{ doc.Feature }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
+                <h2 id="{{ doc.Feature }}"><strong>Feature:</strong> {{ doc.Feature }}</h2>
                 <p id="{{ doc.Product_area }}"><strong>Product Area:</strong> {{ doc.Product_area}}</p>
                 <p id="{{ item.date | replace: " -", "_" }}"><strong>Date:</strong> {{ item.date }}</p>
                 <p><strong>Description:</strong> {{ doc.Description }}</p>
