@@ -6,7 +6,8 @@ var BCLS_in_app = ( function (window, document) {
     side_nav = document.getElementById('side_nav'),
     footer = document.querySelector('footer'),
     open_new_tab = document.getElementById('open_new_tab'),
-    bc_veggie_burger_wrapper = document.getElementById('bc_veggie_burger_wrapper');
+    bc_veggie_burger_wrapper = document.getElementById('bc_veggie_burger_wrapper'),
+    site_select = document.getElementById('site_select');
 
 
   function hideElement(el) {
@@ -56,8 +57,10 @@ var BCLS_in_app = ( function (window, document) {
     hideElement(header);
     hideElement(footer);
     hideElement(side_nav);
+    hideElement(site_select);
     hideElement(bc_veggie_burger_wrapper);
-    removeSearch(searchEl);
+    removeSearch();
+    removeFeedbackify();
     // in_prod_nav.removeAttribute('style');
     open_new_tab.removeAttribute('style');
     open_new_tab.setAttribute('href', window.location.href);
