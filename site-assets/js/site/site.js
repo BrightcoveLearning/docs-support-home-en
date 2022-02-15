@@ -30,29 +30,29 @@ var BCLS_site = (function(window, document) {
 
 
   // if inside iframe, hide appropriate elements
-  if (window.location !== window.parent.location) {
-    var fby = fby || [];
-    fby.push(['showTab', {id: '{{ site.feedbackify_id }}', position: 'right', color: '#D33D00'}]);
-    (function () {
-        var f = document.createElement('script'); f.type = 'text/javascript'; f.async = true;
-        f.src = '//cdn.feedbackify.com/f.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(f, s);
-    })();
-    hideElement(header);
-    hideElement(footer);
-    hideElement(side_nav);
-    hideElement(bc_veggie_burger_wrapper);
-    // in_prod_nav.removeAttribute('style');
-    open_new_tab.removeAttribute('style');
-    open_new_tab.setAttribute('href', window.location.href);
-    // removeFeedbackify();
-    // forward_button.addEventListener('click', function() {
-    //   window.history.forward();
-    // });
-    // back_button.addEventListener('click', function() {
-    //   window.history.back();
-    // });
-  }
+  // if (window.location !== window.parent.location) {
+  //   var fby = fby || [];
+  //   fby.push(['showTab', {id: '{{ site.feedbackify_id }}', position: 'right', color: '#D33D00'}]);
+  //   (function () {
+  //       var f = document.createElement('script'); f.type = 'text/javascript'; f.async = true;
+  //       f.src = '//cdn.feedbackify.com/f.js';
+  //       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(f, s);
+  //   })();
+  //   hideElement(header);
+  //   hideElement(footer);
+  //   hideElement(side_nav);
+  //   hideElement(bc_veggie_burger_wrapper);
+  //   // in_prod_nav.removeAttribute('style');
+  //   open_new_tab.removeAttribute('style');
+  //   open_new_tab.setAttribute('href', window.location.href);
+  //   // removeFeedbackify();
+  //   // forward_button.addEventListener('click', function() {
+  //   //   window.history.forward();
+  //   // });
+  //   // back_button.addEventListener('click', function() {
+  //   //   window.history.back();
+  //   // });
+  // }
   function removeFeedbackify() {
     var t,
     feedbackify = document.getElementById('feedbackify');
