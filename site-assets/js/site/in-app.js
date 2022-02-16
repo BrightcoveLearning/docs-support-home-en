@@ -7,7 +7,8 @@ var BCLS_in_app = ( function (window, document) {
     footer = document.querySelector('footer'),
     open_new_tab = document.getElementById('open_new_tab'),
     bc_veggie_burger_wrapper = document.getElementById('bc_veggie_burger_wrapper'),
-    site_select = document.getElementById('site_select');
+    site_select = document.getElementById('site_select'),
+    player_div = document.querySelector('div.training-video-player-ipx');
 
 
   function hideElement(el) {
