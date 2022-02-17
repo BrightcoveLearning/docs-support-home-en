@@ -99,20 +99,20 @@ function addPlayer() {
   // Add the script tag to the document
   document.body.appendChild(s);
   // Call a function to play the video once player's JavaScript loaded
-  s.onload = callback;
+  // s.onload = callback;
 }
 
 // +++ Initialize the player and start the video +++
-function callback() {
-  myPlayer = bc("my_player_id");
-  // Can also use the following to assign a player instance to the variable if you choose not to use IDs for elements directly
-  // myPlayer = bc(document.getElementById('my_player_id'));
-  myPlayer.on("loadedmetadata", function() {
-    // Mute the audio track, if there is one, so video will autoplay on button click
-    myPlayer.muted(true);
-    myPlayer.play();
-  });
-}
+// function callback() {
+//   myPlayer = bc("my_player_id");
+//   // Can also use the following to assign a player instance to the variable if you choose not to use IDs for elements directly
+//   // myPlayer = bc(document.getElementById('my_player_id'));
+//   myPlayer.on("loadedmetadata", function() {
+//     // Mute the audio track, if there is one, so video will autoplay on button click
+//     myPlayer.muted(true);
+//     myPlayer.play();
+//   });
+// }
 
     // if inside iframe, hide appropriate elements
   if (window.location !== window.parent.location) {
