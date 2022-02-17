@@ -82,7 +82,7 @@ function addPlayer() {
   // style outer wrapper
   player_outer_wrapper.setAttribute('style', 'position: relative; display: block; max-width: 100%;')
   // make inner wrapper responsive
-  player_inner_wrapper.setAttribute('style', 'aspect-ratio: 9 / 16; !important');
+  player_inner_wrapper.setAttribute('style', 'aspect-ratio: 9 / 16 !important;width:100%;');
   // add inner wrapper to outer wrapper
   player_outer_wrapper.appendChild(player_inner_wrapper);
   player_div.appendChild(player_outer_wrapper);
