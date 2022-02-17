@@ -8,8 +8,11 @@ var BCLS_in_app = ( function (window, document) {
     open_new_tab = document.getElementById('open_new_tab'),
     bc_veggie_burger_wrapper = document.getElementById('bc_veggie_burger_wrapper'),
     site_select = document.getElementById('site_select'),
-    player_div = document.querySelector('div.training-video-player-ipx');
-
+    player_div = document.querySelector('div.training-video-player-ipx'),
+    player_data = {
+      account_id: '20318290001',
+      player_id: 'rkk6AgWUM'
+    };
 
   function hideElement(el) {
     if (el) {
@@ -45,7 +48,69 @@ var BCLS_in_app = ( function (window, document) {
     }
 }
 
-  
+function removeIPX() {
+  if (player_div) {
+    player_data.video_id = player_div.getAttribute('data-video-ids');
+    var t,
+      iframe = document.querySelector('div.training-video-player-ipx > iframe');
+    if (iframe) {
+      iframe.setAttribute('style', 'display: none;')
+    } else {
+      console.log('retry remove IPX');
+      t = window.setTimeout(removeIPX, 2000);
+    }
+    addPlayer();
+  }
+}
+
+  // +++ Build the player and place in HTML DOM +++
+function addPlayer() {
+  // Dynamically build the player video element
+  var player_outer_wrapper = document.createElement('div'),
+  player_inner_wrapper = document.createElement('div'),
+  player_HTML =
+    '<video-js id="my_player_id" data-video-id="' +
+    player_data.video_id +
+    '"  data-account="' +
+    player_data.account_id +
+    '" data-player="' +
+    player_data.player_id +
+    '" data-embed="default" class="video-js" controls style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%;></video-js>';
+  // style outer wrapper
+  player_outer_wrapper.setAttribute('style', 'position: relative; display: block; max-width: 100%;')
+  // make inner wrapper responsive
+  player_inner_wrapper.setAttribute('style', 'aspect-ratio: 9 / 16;');
+  // add inner wrapper to outer wrapper
+  player_outer_wrapper.appendChild(player_inner_wrapper);
+  player_div.appendChild(player_outer_wrapper);
+  // Inject the player code into the DOM
+  player_inner_wrapper.insertAdjacentHTML('afterbegin', player_HTML);
+  // Add and execute the player script tag
+  var s = document.createElement("script");
+  s.src =
+    "https://players.brightcove.net/" +
+    player_data.account_id +
+    "/" +
+    player_data.player_id +
+    "_default/index.min.js";
+  // Add the script tag to the document
+  document.body.appendChild(s);
+  // Call a function to play the video once player's JavaScript loaded
+  s.onload = callback;
+}
+
+// +++ Initialize the player and start the video +++
+function callback() {
+  myPlayer = bc("my_player_id");
+  // Can also use the following to assign a player instance to the variable if you choose not to use IDs for elements directly
+  // myPlayer = bc(document.getElementById('my_player_id'));
+  myPlayer.on("loadedmetadata", function() {
+    // Mute the audio track, if there is one, so video will autoplay on button click
+    myPlayer.muted(true);
+    myPlayer.play();
+  });
+}
+
     // if inside iframe, hide appropriate elements
   if (window.location !== window.parent.location) {
     var fby = fby || [];
@@ -62,6 +127,7 @@ var BCLS_in_app = ( function (window, document) {
     hideElement(bc_veggie_burger_wrapper);
     removeSearch();
     removeFeedbackify();
+
     // in_prod_nav.removeAttribute('style');
     open_new_tab.removeAttribute('style');
     open_new_tab.setAttribute('href', window.location.href);
