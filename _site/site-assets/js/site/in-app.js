@@ -129,7 +129,7 @@ function callback() {
     hideElement(bc_veggie_burger_wrapper);
     removeSearch();
     removeFeedbackify();
-
+    removeIPX();
     // in_prod_nav.removeAttribute('style');
     open_new_tab.removeAttribute('style');
     open_new_tab.setAttribute('href', window.location.href);
