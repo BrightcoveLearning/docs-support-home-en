@@ -49,6 +49,7 @@ var BCLS_in_app = ( function (window, document) {
 }
 
 function removeIPX() {
+  console.log('player_div', player_div);
   if (player_div) {
     player_data.video_id = player_div.getAttribute('data-video-ids');
     var t,
@@ -66,6 +67,7 @@ function removeIPX() {
   // +++ Build the player and place in HTML DOM +++
 function addPlayer() {
   // Dynamically build the player video element
+  console.log('player_data', player_data);
   var player_outer_wrapper = document.createElement('div'),
   player_inner_wrapper = document.createElement('div'),
   player_HTML =
