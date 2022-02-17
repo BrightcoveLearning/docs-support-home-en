@@ -77,11 +77,12 @@ function addPlayer() {
     player_data.account_id +
     '" data-player="' +
     player_data.player_id +
-    '" data-embed="default" class="video-js" controls style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%;></video-js>';
+    '" data-embed="default" class="video-js" controls class="vjs-fluid"></video-js>';
+    
   // style outer wrapper
   player_outer_wrapper.setAttribute('style', 'position: relative; display: block; max-width: 100%;')
   // make inner wrapper responsive
-  player_inner_wrapper.setAttribute('style', 'aspect-ratio: 9 / 16;');
+  player_inner_wrapper.setAttribute('style', 'aspect-ratio: 9 / 16; !important');
   // add inner wrapper to outer wrapper
   player_outer_wrapper.appendChild(player_inner_wrapper);
   player_div.appendChild(player_outer_wrapper);
