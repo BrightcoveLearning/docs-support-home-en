@@ -80,7 +80,7 @@ function addPlayer() {
     '" data-embed="default" class="video-js" controls class="vjs-fluid"></video-js>';
     
   // style outer wrapper
-  player_outer_wrapper.setAttribute('style', 'position: relative; display: block; max-width: 100%;')
+  player_outer_wrapper.setAttribute('style', 'position: relative; display: block; max-width: 100%; max-height: 10em;')
   // make inner wrapper responsive
   player_inner_wrapper.setAttribute('style', 'aspect-ratio: 9 / 16 !important;width:100%;');
   // add inner wrapper to outer wrapper
