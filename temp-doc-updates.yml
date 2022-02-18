@@ -50,6 +50,22 @@
         Product_Update: 'false'
         Feature: ''
         Status: Staging
+      - Title: 'Creating a Custom Page'
+        Description: 'In this topic, you will learn how to use a JavaScript plugin to create a custom page in your Beacon web app.'
+        Link: https://beacon.support.brightcove.com/ott-plugins/custom-page.html
+        Product: Beacon
+        Product_area: OTT Plugins
+        Product_Update: 'false'
+        Feature: ''
+        Status: Staging
+      - Title: 'Storing Data in a Separate Module'
+        Description: 'In this topic, you will learn how to store the data for your plugins in a separate module.'
+        Link: https://beacon.support.brightcove.com/ott-plugins/data-module.html
+        Product: Beacon
+        Product_area: OTT Plugins
+        Product_Update: 'false'
+        Feature: ''
+        Status: Staging 
     - type: Major updates
       docs:
       - Title: 'Brightcove Image API'
