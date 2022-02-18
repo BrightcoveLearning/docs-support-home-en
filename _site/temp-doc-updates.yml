@@ -1,144 +1,169 @@
-- date: 11-February-2022
+- date: 18-February-2022
   types:
     - type: New Docs
       docs:
-      - Title: 'Videos with Text Tracks'
-        Description: 'This sample qpp produces a report showing which videos have text tracks and which do not.'
-        Link: https://apis.support.brightcove.com/cms/code-samples/cms-api-sample-videos-with-text-tracks.html
-        Product: Video Cloud
-        Product_area: CMS API
-        Product_Update: 'false'
-        Feature: ''
-        Status: Released
-      - Title: 'Adding a Brightcove Email to the Amazon Account'
-        Description: 'In this topic, you will learn how to add the Brightcove email to your Amazon account.'
-        Link: https://beacon.support.brightcove.com/creating-your-apps/fire-tv/add-bc-email.html
-        Product: Beacon
-        Product_area: Publishing Apps
-        Product_Update: 'false'
-        Feature: ''
-        Status: Released
-      - Title: 'Adding a Brightcove User to the Roku Account'
-        Description: 'In this topic, you will learn how to add the Brightcove user to your Roku account.'
-        Link: https://beacon.support.brightcove.com/creating-your-apps/roku/add-bc-user.html
-        Product: Beacon
-        Product_area: Publishing Apps
-        Product_Update: 'false'
-        Feature: ''
-        Status: Released
-    - type: Major updates
-      docs:
-      - Title: 'Step-by-Step: Simple Video App using the Native SDK for Android'
-        Description: 'Updated steps for latest version of Android Studio'
-        Link: https://sdks.support.brightcove.com/android/basics/step-step-simple-video-app-using-native-sdk-android.html 
-        Product: Video Cloud
-        Product_area: Native SDK for Android
-        Product_Update: 'false'
-        Feature: ''
-        Status: Released
-      - Title: 'Autoplay Considerations'
-        Description: 'Updated recommendations for latest version of the IMA3 plugin'
-        Link: https://player.support.brightcove.com/playback/autoplay-considerations.html  
-        Product: Video Cloud
-        Product_area: Brightcove Player
-        Product_Update: 'false'
-        Feature: ''
-        Status: Released
-      - Title: 'Ingesting Videos with Multi-Language Audio Tracks'
-        Description: 'Added a simpler sample and links to instructions for setting the default audio track using Studio or the CMS API'
-        Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-videos-multiple-audio-tracks.html
-        Product: Video Cloud
-        Product_area: Dynamic Ingest API
-        Product_Update: 'false'
-        Feature: ''
-        Status: Released
-      - Title: 'Brightcove Syndication Configuration API '
-        Description: 'Added operations for OTT syndications (for streaming VODs)'
-        Link: https://apis.support.brightcove.com/social-syndication/references/configuration-reference.html
-        Product: Beacon
-        Product_area: Syndication
-        Product_Update: 'false'
-        Feature: ''
-        Status: Released
-      - Title: 'Implementing Custom Sections'
-        Description: 'New sub-sections added'
-        Link: https://beacon.support.brightcove.com/ott-plugins/custom-divs.html
+      - Title: 'Implementing User Events'
+        Description: 'In this topic, you will learn how to implement the user events using a plugin in your Brightcove Beacon web apps.'
+        Link: https://beacon.support.brightcove.com/ott-plugins/user-events.html 
         Product: Beacon
         Product_area: Beacon Plugins
+        Product_Update: false'
+        Feature: ''
+        Status: Staging 
+      - Title: 'Getting Started with Interactivity'
+        Description: 'In this topic you will learn how to connect your Brightcove account with HapYak.'
+        Link: https://studio.support.brightcove.com/interactivity/getting-started-interactivity.html
+        Product: Video Cloud
+        Product_area: HapYak
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released  
+      - Title: 'Adding Interactive Overlays to Videos'
+        Description: 'In this topic you will learn how to add interactive overlays to videos using HapYak.'
+        Link: https://studio.support.brightcove.com/interactivity/adding-interactivity-video.html
+        Product: Video Cloud
+        Product_area: HapYak
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
+      - Title: 'Adding Interactive Chapters to a Video'
+        Description: ' Add chapters to the Brightcove account from HapYak.'
+        Link: https://studio.support.brightcove.com/interactivity/adding-chapters-video.html
+        Product: Video Cloud 
+        Product_area: Interactivity
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released 
+      - Title: 'Playback Restrictions with Live events using Studio'
+        Description: 'In this topic, you will learn how to use Video Cloud Studio to create a Live Event with Playback Restrictions.'
+        Link: https://live.support.brightcove.com/live-module/playback-restrictions-live-module.html 
+        Product: Live
+        Product_area: Playback Restrictions
+        Product_Update: 'true'
+        Feature: 'Playback Restrictions with Live events using Studio'
+        Status: Released
+      - Title: 'Working with Page Events'
+        Description: 'In this topic, you will learn how to listen and work with page events when using a custom plugin for your Brightcove Beacon web apps.'
+        Link: https://beacon.support.brightcove.com/ott-plugins/working-with-page-events.html  
+        Product: Beacon
+        Product_area: OTT Plugins
         Product_Update: 'false'
         Feature: ''
         Status: Staging
-      - Title: 'Brightcove Live: Best Practices'
-        Description: 'Start a live stream recommendations section added'            
-        Link: https://live.support.brightcove.com/get-started/live-module-guidelines-and-best-practicestml#Start_a_live_stream_recommendations
+      - Title: 'Creating a Custom Page'
+        Description: 'In this topic, you will learn how to use a JavaScript plugin to create a custom page in your Beacon web app.'
+        Link: https://beacon.support.brightcove.com/ott-plugins/custom-page.html
+        Product: Beacon
+        Product_area: OTT Plugins
+        Product_Update: 'false'
+        Feature: ''
+        Status: Staging
+      - Title: 'Storing Data in a Separate Module'
+        Description: 'In this topic, you will learn how to store the data for your plugins in a separate module.'
+        Link: https://beacon.support.brightcove.com/ott-plugins/data-module.html
+        Product: Beacon
+        Product_area: OTT Plugins
+        Product_Update: 'false'
+        Feature: ''
+        Status: Staging 
+    - type: Major updates
+      docs:
+      - Title: 'Brightcove Image API'
+        Description: 'Updated path for the GET method.'
+        Link: https://apis.support.brightcove.com/images/references/reference.html
+        Product: Video Cloud
+        Product_area: Image API
+        Product_Update: 'true'
+        Feature: 'Request path'
+        Status: Limited Availability
+      - Title: 'CMS API Notifications'
+        Description: 'Two new fields - action and updated_by - added to notifications to indicate the kind of action that was taken and who performed it (if that information is available).'
+        Link: https://apis.support.brightcove.com/cms/getting-started/cms-api-notifications.html
+        Product: Video Cloud
+        Product_area: CMS API
+        Product_Update: 'true'
+        Feature: 'Notifications'
+        Status: Released
+      - Title: 'Brightcove Live API: Server-Side Ad Insertion (SSAI)'
+        Description: 'New setting will over ride ad timing compensation, a setting that reduces timing drift when ads that get returned are longer than expected. This is normally achieved by shortening the next ad break. When set to true, all ad break durations will  be called as-is, and compensation will not happen.'
+        Link: https://apis.support.brightcove.com/live-api/ssai/live-api-server-side-ad-insertion-ssai.html#General_information
         Product: Live
-        Product_area: Live Stream
+        Product_area: Live API - SSAI
+        Product_Update: 'true'
+        Feature: 'ad_configuration_compensation_disable'
+        Status: Released
+      - Title: 'Product Release Notes'
+        Description: 'Individual feature updates now appear in the Page Contents menu, and make it easier to share links to specific updates.'
+        Link: https://support.brightcove.com/product-updates.html
+        Product: All
+        Product_area: All
         Product_Update: 'false'
         Feature: ''
         Status: Released
     - type: Minor updates
       docs:
-      - Title: 'Creating a JSON Web Token (JWT)'
-        Description: 'Added details about the uid claim, and added Test Playback for Static URL Delivery'
-        Link: https://general.support.brightcove.com/developer/create-json-web-token.html#Claims_for_Playback_Restrictions 
-        Product: Video Cloud
-        Product_area: Playback Restrictions
+      - Title: 'Video Cloud SSAI API'
+        Description: 'Added note that ad_keys are not automatically URL-encoded like other variables and explained why'
+        Link: https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html#Ad_variables
+        Product: SSAI
+        Product_area: API
         Product_Update: 'false'
         Feature: ''
         Status: Released
-      - Title: 'Brightcove Native SDK for Android Release Notes'
-        Description: 'Removed test class from Android release notes for version 6.17.0'
-        Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html 
+      - Title: 'Brightcove Live：ベストプラクティス'
+        Description: 'Added section on Starting Live Streams to Japanese version of the doc'
+        Link: https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html#Ad_variables
+        Product: Live
+        Product_area: API
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
+      - Title: 'Playback Rights API Reference'
+        Description: 'Added note that up to 5000 zip codes are supported for inclusion/exclusion'
+        Link: https://apis.support.brightcove.com/playback-restrictions/references/playback-rights/reference.html
+        Product: Video Cloud
+        Product_area: PLayback Restrictions
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
+      - Title: 'Managing Playback Rights'
+        Description: 'Added note that up to 5000 zip codes are supported for inclusion/exclusion'
+        Link: https://studio.support.brightcove.com/admin/managing-playback-rights.html
+        Product: Video Cloud
+        Product_area: PLayback Restrictions
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
+      - Title: 'Media Sharing using the Media Module'
+        Description: 'Added notes that audio and text tracks are shared with the video, but do not appear in Studio for the affiliate account.'
+        Link: https://studio.support.brightcove.com/media/media-sharing-using-media-module.html
+        Product: Video Cloud
+        Product_area: Media Sharing
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
+      - Title: 'Live API Reference'
+        Description: 'Expanded the description for ad_audio_loudness_level to emphasize that it only applies to SSAI ads, and not the general live stream audio.'
+        Link: https://apis.support.brightcove.com/live-api/references/reference.html
+        Product: Live
+        Product_area: SSAI
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
+      - Title: 'Known Issues: Brightcove Native Player SDKs'
+        Description: 'Added Android known issue for playlists with DRM and clear content'
+        Link: https://sdks.support.brightcove.com/developer-support/questions/known-issues-brightcove-native-player-sdks.html#Native_SDK_for_Android 
         Product: Video Cloud
         Product_area: Native SDK for Android
         Product_Update: 'false'
         Feature: ''
         Status: Released
-      - Title: 'CMS API Error Message Reference'
-        Description: 'Correct the message for 404 errors'
-        Link: https://apis.support.brightcove.com/cms/references/cms-api-error-message-reference.html
+      - Title: 'Known Issues: Brightcove Native Player SDKs'
+        Description: 'Added issue for 608/708 Captions with the Native SDK for Android'
+        Link: https://sdks.support.brightcove.com/developer-support/questions/known-issues-brightcove-native-player-sdks.html 
         Product: Video Cloud
-        Product_area: CMS API
+        Product_area: Native SDK for Android
         Product_Update: 'false'
         Feature: ''
         Status: Released
-      - Title: 'Common Configuration Settings'
-        Description: 'Added warning about using full screen images for Smart TVs'
-        Link: https://beacon.support.brightcove.com/references/common-configuration-settings.html#Non_Textual_Data
-        Product: Beacon
-        Product_area: Layout
-        Product_Update: 'false'
-        Feature: ''
-        Status: Released
-      - Title: 'Creating an SVOD Plan'
-        Description: 'Added warning that app cache must be cleared when prices are changed.'
-        Link: https://beacon.support.brightcove.com/monetization/general/creating-svod-plan.html
-        Product: Beacon
-        Product_area: Monetization
-        Product_Update: 'false'
-        Feature: ''
-        Status: Released
-      - Title: 'How To: Manage Media'
-        Description: 'Check Beacon Media Docs for Updated Naming'
-        Link: https://beacon-help.support.brightcove.com/basics/media/index.html 
-        Product: Beacon 
-        Product_area: 
-        Product_Update:  'false'
-        Feature: ''
-        Status: Released 
-      - Title: 'How To: Manage Players'
-        Description: 'Check Beacon Player Docs for Updated Naming'
-        Link: https://beacon-help.support.brightcove.com/basics/players/index.html 
-        Product: Beacon
-        Product_area: 
-        Product_Update: 'false'
-        Feature: ''
-        Status: Released
-      - Title: 'Brightcove Social™ Documentation'
-        Description: 'Check Beacon Social Docs for Updated Naming'
-        Link: https://beacon-help.support.brightcove.com/social/index.html 
-        Product: Beacon
-        Product_area: 
-        Product_Update: 'false'
-        Feature: ''
-        Status: Released
+      
