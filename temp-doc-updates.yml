@@ -2,14 +2,6 @@
   types:
     - type: New Docs
       docs:
-      - Title: ''
-        Description: ''
-        Link: 
-        Product: Video Cloud
-        Product_area: CMS API
-        Product_Update: 'false'
-        Feature: ''
-        Status: Released
       - Title: 'Implementing User Events'
         Description: 'In this topic, you will learn how to implement the user events using a plugin in your Brightcove Beacon web apps.'
         Link: https://beacon.support.brightcove.com/ott-plugins/user-events.html 
@@ -40,18 +32,26 @@
         Product: Video Cloud 
         Product_area: Interactivity
         Product_Update: 'false'
-        Feature: 
+        Feature: ''
         Status: Released 
-    - type: Major updates
-      docs:
-      - Title: ''
-        Description: ''
-        Link:  
-        Product: Video Cloud
-        Product_area: Native SDK for Android
+      - Title: 'Playback Restrictions with Live events using Studio'
+        Description: 'In this topic, you will learn how to use Video Cloud Studio to create a Live Event with Playback Restrictions.'
+        Link: https://live.support.brightcove.com/live-module/playback-restrictions-live-module.html 
+        Product: Live
+        Product_area: Playback Restrictions
+        Product_Update: 'true'
+        Feature: 'Playback Restrictions with Live events using Studio'
+        Status: Released
+      - Title: 'Working with Page Events'
+        Description: 'In this topic, you will learn how to listen and work with page events when using a custom plugin for your Brightcove Beacon web apps.'
+        Link: https://beacon.support.brightcove.com/ott-plugins/working-with-page-events.html  
+        Product: Beacon
+        Product_area: OTT Plugins
         Product_Update: 'false'
         Feature: ''
-        Status: Released
+        Status: Staging
+    - type: Major updates
+      docs:
       - Title: 'Brightcove Image API'
         Description: 'Updated path for the GET method.'
         Link: https://apis.support.brightcove.com/images/references/reference.html
@@ -131,6 +131,22 @@
         Link: https://apis.support.brightcove.com/live-api/references/reference.html
         Product: Live
         Product_area: SSAI
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
+      - Title: 'Known Issues: Brightcove Native Player SDKs'
+        Description: 'Added Android known issue for playlists with DRM and clear content'
+        Link: https://sdks.support.brightcove.com/developer-support/questions/known-issues-brightcove-native-player-sdks.html#Native_SDK_for_Android 
+        Product: Video Cloud
+        Product_area: Native SDK for Android
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
+      - Title: 'Known Issues: Brightcove Native Player SDKs'
+        Description: 'Added issue for 608/708 Captions with the Native SDK for Android'
+        Link: https://sdks.support.brightcove.com/developer-support/questions/known-issues-brightcove-native-player-sdks.html 
+        Product: Video Cloud
+        Product_area: Native SDK for Android
         Product_Update: 'false'
         Feature: ''
         Status: Released
