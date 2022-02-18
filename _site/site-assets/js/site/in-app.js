@@ -77,7 +77,7 @@ function addPlayer() {
     player_data.account_id +
     '" data-player="' +
     player_data.player_id +
-    '" data-embed="default" class="video-js" controls class="vjs-fluid" width="100%"></video-js>';
+    '" data-embed="default" class="video-js" controls class="vjs-fluid" width="100%" height="auto"></video-js>';
     
   // style outer wrapper
   player_outer_wrapper.setAttribute('style', 'position: relative; display: block; max-width: 100%; max-height: 10em;')
