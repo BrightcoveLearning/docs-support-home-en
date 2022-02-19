@@ -77,10 +77,10 @@ function addPlayer() {
     player_data.account_id +
     '" data-player="' +
     player_data.player_id +
-    '" data-embed="default" class="video-js" controls class="vjs-fluid" width="800" height="450"></video-js>';
+    '" data-embed="default" class="video-js" controls class="vjs-fluid" width="640" height="360"></video-js>';
     
   // style outer wrapper
-  player_outer_wrapper.setAttribute('style', 'position: relative; display: block; max-width: 100%; max-height: 10em;')
+  player_outer_wrapper.setAttribute('style', 'position: relative; display: block; max-width: 100%; max-height: 12em;')
   // make inner wrapper responsive
   player_inner_wrapper.setAttribute('style', 'aspect-ratio: 9 / 16 !important;width:100%;');
   // add inner wrapper to outer wrapper
