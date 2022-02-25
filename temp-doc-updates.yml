@@ -52,6 +52,22 @@
         Product_Update: 'false'
         Feature: ''
         Status: Released
+      - Title: 'Implementing Custom Buttons'
+        Description: 'Added event flow diagram and data object example'
+        Link: https://beacon.support.brightcove.com/ott-plugins/buttons-and-events.html 
+        Product: Beacon
+        Product_area: Beacon plugins
+        Product_Update: 'false'
+        Feature: ''
+        Status: Staging
+      - Title: 'Brightcove Videos on Roku Trick Play'
+        Description: 'Added support for mid-roll ads with both HLS and DASH'
+        Link: https://general.support.brightcove.com/general/roku-trick-play.html  
+        Product: Video Cloud
+        Product_area: Roku
+        Product_Update: 'true'
+        Feature: 'Roku Trick Play support for HLS and DASH'
+        Status: Released
     - type: Minor updates
       docs:
       - Title: 'Advertising with the IMA3 Plugin'
@@ -75,6 +91,14 @@
         Link: https://player.support.brightcove.com/references/player-feature-support-browser.html
         Product: Video Cloud
         Product_area: Player
+        Product_Update: 'false'
+        Feature: ''
+        Status: Released
+      - Title: 'Thumbnail Seeking with the Native SDKs'
+        Description: 'Added limitation when using remote assets with the Native SDK for Android'
+        Link: https://sdks.support.brightcove.com/features/thumbnails-native-sdks.html 
+        Product: Video Cloud
+        Product_area: Native SDKs
         Product_Update: 'false'
         Feature: ''
         Status: Released
