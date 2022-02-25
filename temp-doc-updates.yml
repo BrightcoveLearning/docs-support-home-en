@@ -26,6 +26,14 @@
         Product_Update: 'true'
         Feature: 'Beacon Plugins Introduction'
         Status: Released
+      - Title: 'SSAI Performance Analytics'
+        Description: 'In this topic, you will learn how to use the Analytics module to monitor the performance of your videos enabled for Server-Side Ad Insertion (SSAI).'
+        Link: https://studio.support.brightcove.com/analytics/ssai-performance-data.html 
+        Product: SSAI
+        Product_area: Analytics
+        Product_Update: 'true'
+        Feature: 'Performance analytics for Server-Side Ad Insertion (SSAI)'
+        Status: Released
     - type: Major updates
       docs:
       - Title: 'Brightcove Player Release Notes'
