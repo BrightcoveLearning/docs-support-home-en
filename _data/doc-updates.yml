@@ -1,3 +1,291 @@
+- date: 4-March-2022
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'Configuring S3 Buckets'
+          Description: 'Configure one or more AWS S3 buckets to use as a destination for Cloud Playout channels'
+          Link: https://studio.support.brightcove.com/cloud-playout/configuring-s3-buckets.html
+          Product: Video Cloud
+          Product_area: Cloud Playout
+          Product_Update: 'true'
+          Feature: 'S3 bucket configuration'
+          Status: Released
+        - Title: 'Configuring S3 Buckets'
+          Description: 'Configure one or more AWS S3 buckets to use as a destination for Cloud Playout channels'
+          Link: https://beacon-help.support.brightcove.com/channels/cloud-playout/configuring-s3-buckets.html
+          Product: Beacon
+          Product_area: Cloud Playout
+          Product_Update: 'true'
+          Feature: 'S3 bucket configuration'
+          Status: Released
+        - Title: 'Using Live Redundancy with Channels'
+          Description: 'Use Live Redundancy using Studio'
+          Link: https://studio.support.brightcove.com/cloud-playout/channel-live-redundancy.html
+          Product: Video Cloud
+          Product_area: Cloud Playout
+          Product_Update: 'true'
+          Feature: 'Live redundancy'
+          Status: Released
+        - Title: 'Using Live Redundancy with Channels'
+          Description: 'Use Live Redundancy using Studio'
+          Link: https://beacon-help.support.brightcove.com/channels/cloud-playout/channel-live-redundancy.html
+          Product: Beacon
+          Product_area: Cloud Playout
+          Product_Update: 'true'
+          Feature: 'Live redundancy'
+          Status: Released
+        - Title: 'Adding User Sentiment to Videos'
+          Description: 'In this topic you will learn how to add user sentiment to videos using HapYak.'
+          Link: https://studio.support.brightcove.com/interactivity/adding-sentiment-video.html
+          Product: Video Cloud
+          Product_area: Interactivity
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'OIDC Authentication Configuration and Testing for Brightcove Beacon'
+          Description: 'In this topic, you will learn how to configure your OIDC based identity provider to authenticate Beacon users.'
+          Link: https://beacon.support.brightcove.com/references/oidc-authentication-for-beacon.html
+          Product: Beacon
+          Product_area: Authentication
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'How to Increase Click Through Rate'
+          Description: 'In this topic you will learn ways to ensure more and more viewers click on text, image or hotspot annotations.'
+          Link: https://studio.support.brightcove.com/interactivity/how-to-increase-click-through-rate.html
+          Product: Video Cloud
+          Product_area: Interactivity
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Managing Group Members'
+          Description: 'In this topic you will learn how to invite and add users to a HapYak group.'
+          Link: https://studio.support.brightcove.com/interactivity/managing-group-members.html
+          Product: Video Cloud
+          Product_area:
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Using the Caption Editor'
+          Description: 'In this topic you will learn how to edit captions using the caption editor.'
+          Link: https://studio.support.brightcove.com/media/using-the-caption-editor.html
+          Product: Video Cloud
+          Product_area: Media
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'HapYak Terminology'
+          Description: 'Introduces some of the terminologies used when working with HapYak interactive video.'
+          Link: https://studio.support.brightcove.com/interactivity/terminology.html
+          Product: Video Cloud
+          Product_area: Interactivity
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Major updates
+      docs:
+        - Title: 'Overview: Channels API'
+          Description: 'Adding support for Live redundancy and SSAI with Live content'
+          Link: https://apis.support.brightcove.com/cloud-playout-apis/getting-started/overview-channel-api.html
+          Product: Video Cloud
+          Product_area: Cloud Playout APIs
+          Product_Update: 'true'
+          Feature: 'Channels with Live redundancy'
+          Status: Released
+        - Title: 'Brightcove Cloud Playout Channel Manager API Reference'
+          Description: 'Adding support for Live redundancy'
+          Link: https://apis.support.brightcove.com/cloud-playout-apis/getting-started/overview-channel-api.html
+          Product: Video Cloud
+          Product_area: Cloud Playout APIs
+          Product_Update: 'false'
+          Feature: 'Channels with Live redundancy'
+          Status: Released
+        - Title: 'Dimension: viewer'
+          Description: 'Added dimensions viewer can be combined with'
+          Link: https://apis.support.brightcove.com/analytics/dimension-guides/dimension-viewer.html#Setting_the_viewer_id
+          Product: Video Cloud
+          Product_area: Analytics API
+          Product_Update: 'false'
+          Feature: 'Viewer analytics'
+          Status: Released
+        - Title: 'Overview: Dimensions, Fields, and Parameters'
+          Description: 'Updated the dimension combination tester include viewer dimension combinations'
+          Link: https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html
+          Product: Video Cloud
+          Product_area: Analytics API
+          Product_Update: 'false'
+          Feature: 'Viewer analytics'
+          Status: Released
+        - Title: 'Playback Restrictions with Live Streams'
+          Description: 'Added support for AES-128 encryption'
+          Link: https://apis.support.brightcove.com/live-api/guides/live-playback-restrictions.html
+          Product: Live
+          Product_area: Playback Restrictions
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'SSAI Performance Analytics'
+          Description: 'Updated text and added note about adconfig id tracking'
+          Link: https://studio.support.brightcove.com/analytics/ssai-performance-data.html#Work_flow
+          Product: Video Cloud
+          Product_area: SSAI Analytics
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Configuring Video Availability'
+          Description: 'Added a note that these properties can also be edited in Quick Edit mode'
+          Link: https://studio.support.brightcove.com/media/configuring-video-availability.html
+          Product: Video Cloud
+          Product_area: Media Module
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Video Cloud SSAI API'
+          Description: 'Added ad_tracking_sample_percentage to configuration field details'
+          Link: https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html#Configuration_field_details
+          Product: Video Cloud
+          Product_area: SSAI API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Key API Reference'
+          Description: 'Added v1 to the request URLs'
+          Link: https://apis.support.brightcove.com/playback-restrictions/references/key-api/reference.html
+          Product: Video Cloud
+          Product_area: Key API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Blacklist API Reference'
+          Description: 'Added v1 to the request URLs'
+          Link: https://apis.support.brightcove.com/playback-restrictions/references/blacklist-api/reference.html
+          Product: Video Cloud
+          Product_area: Blacklist API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Audit API Reference'
+          Description: 'Added v1 to the request URLs'
+          Link: https://apis.support.brightcove.com/playback-restrictions/references/audit-api/reference.html
+          Product: Video Cloud
+          Product_area: Audio API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Playback Rights API Reference'
+          Description: 'Moved v1 to the request URLs'
+          Link: https://apis.support.brightcove.com/playback-restrictions/references/playback-rights/reference.html
+          Product: Video Cloud
+          Product_area: Playback Rights API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Devices API Reference'
+          Description: 'Moved v1 to the request URLs'
+          Link: https://apis.support.brightcove.com/playback-restrictions/references/devices-api/reference.html
+          Product: Video Cloud
+          Product_area: Devices API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Custom Endscreen Plugin'
+          Description: 'Code to add custom HTML endscreen updated'
+          Link: https://player.support.brightcove.com/plugins/custom-endscreen-plugin.html
+          Product: Video Cloud
+          Product_area: Brightcove Player
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Implementing Live SSAI Events'
+          Description: 'First section images updated'
+          Link: https://beacon.support.brightcove.com/monetization/ssai/live-ssai.html
+          Product: Beacon
+          Product_area: Live
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Generic Stream Concurrency'
+          Description: 'URL removed'
+          Link: https://apis.support.brightcove.com/playback-restrictions/guides/generic-stream-concurrency.html#correlator_identifier
+          Product: Video Cloud
+          Product_area: Playback Restrictions
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Implementing VOD SSAI'
+          Description: 'Images updates'
+          Link: https://beacon-help.support.brightcove.com/monetization/ssai/vod-ssai.html
+          Product: Beacon
+          Product_area: Monetizing Content
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'How To: Create a Video Cloud Manual Playlist'
+          Description: 'Images Updates'
+          Link: https://beacon-help.support.brightcove.com/basics/media/creating-manual-playlist.html
+          Product: Beacon
+          Product_area: Managing Media
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'How To: Create a Video Cloud Smart Playlist'
+          Description: 'Images Updates'
+          Link: https://beacon-help.support.brightcove.com/basics/media/creating-smart-playlist.html
+          Product: Beacon
+          Product_area: Managing Media
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating and Managing Playlists'
+          Description: 'Images Updates'
+          Link: https://beacon-help.support.brightcove.com/media/creating-and-managing-playlists.html
+          Product: Beacon
+          Product_area: Managing Media
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating Series, Seasons & Episodes'
+          Description: 'Images Updates'
+          Link: https://beacon-help.support.brightcove.com/media/creating-series-seasons-episodes.html
+          Product: Beacon
+          Product_area: Managing Media
+          Product_Update: false'
+          Feature: ''
+          Status: Released
+        - Title: 'Getting Started with the Media Module'
+          Description: 'Images Updates'
+          Link: https://beacon-help.support.brightcove.com/media/getting-started-media-module.html
+          Product: Beacon
+          Product_area: Managing Media
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Introduction to Playlists'
+          Description: 'Images Updates'
+          Link: https://beacon-help.support.brightcove.com/media/introduction-playlists.html
+          Product: Beacon
+          Product_area: Managing Media
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Managing Series'
+          Description: 'Images Updates'
+          Link: https://beacon-help.support.brightcove.com/media/managing-series.html
+          Product: Beacon
+          Product_area: Managing Media
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Organizing Videos Using Folders'
+          Description: 'Images Updates'
+          Link: https://beacon-help.support.brightcove.com/media/organizing-videos-using-folders.html
+          Product: Beacon
+          Product_area: Managing Media
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
 - date: 25-February-2022
   types:
     - type: New Docs
