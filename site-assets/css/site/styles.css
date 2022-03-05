@@ -1176,7 +1176,7 @@
         }
 
         .footer-wrapper {
-          padding-bottom: 200px;
+          padding-bottom: 150px;
         }
         
         .footer,
@@ -1191,7 +1191,7 @@
             position: relative;
             text-align: left;
             width: 100%;
-            height: 200px;
+            height: 150px;
         }
         
         .bc-footer-logo {
