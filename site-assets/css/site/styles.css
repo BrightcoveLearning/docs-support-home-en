@@ -12,6 +12,7 @@
             counter-reset: figure 0 table 0 step 0;
             background-color: white;
             color: rgb(68, 68, 68);
+            position: relative;
         }
         
         body {
@@ -1173,6 +1174,10 @@
             align-content: space-evenly;
             width: 100%;
         }
+
+        .footer-wrapper {
+          padding-bottom: 200px;
+        }
         
         .footer,
         .bcls-footer {
@@ -1185,6 +1190,7 @@
             position: relative;
             text-align: left;
             width: 100%;
+            height: 200px;
         }
         
         .bc-footer-logo {
