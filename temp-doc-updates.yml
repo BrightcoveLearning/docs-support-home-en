@@ -17,7 +17,15 @@
           Product_area: Beacon Studio
           Product_Update: 'true'
           Feature: 'Beacon app push notifications'
-          Status: Staging          
+          Status: Staging
+        - Title: 'Brightcove OTT Syndication API (1.0.0)'
+          Description: 'Reference for the OTT Syndication API for compiling data for universal search on different OTT platforms. (Not yet released!)'
+          Link: https://apis.support.brightcove.com/ott-syndication/references/reference.html
+          Product: Beacon
+          Product_area: OTT Syndication
+          Product_Update: 'true'
+          Feature: 'Universal Search'
+          Status: Limited Availability
     - type: Major updates
       docs:
         - Title: 'Administering Accounts'
@@ -131,6 +139,38 @@
           Link: https://apis.support.brightcove.com/playback-restrictions/guides/stream-concurrency.html#Safari  
           Product: Video Cloud
           Product_area: Playback Restrictions
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Forensic Watermarking'
+          Description: 'Added note that forensic watermarking does not work and will not be added to videos that are enabled for SSAI'
+          Link: https://apis.support.brightcove.com/general/overview-forensic-watermarking.html#Limitations
+          Product: Video Cloud
+          Product_area: Forensic watermarking
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'CMS API Notifications'
+          Description: 'Added note that notifications to affiliate accounts for changes made to shared videos by the master account will be added in April'
+          Link: https://apis.support.brightcove.com/cms/getting-started/cms-api-notifications.html
+          Product: Video Cloud
+          Product_area: CMS API Notifications
+          Product_Update: 'false'
+          Feature: 'Notifications for shared video changes'
+          Status: Released
+        - Title: 'Media Sharing'
+          Description: 'Added note that notifications to affiliate accounts for changes made to shared videos by the master account will be added in April'
+          Link: https://apis.support.brightcove.com/cms/managing-videos/media-sharing-cms-api.html
+          Product: Video Cloud
+          Product_area: Media Sharing
+          Product_Update: 'false'
+          Feature: 'Notifications for shared video changes'
+          Status: Released
+        - Title: 'Configuring Video Availability'
+          Description: 'Removed note that geo-filtering is a paid add-on, as that is no longer true'
+          Link: https://studio.support.brightcove.com/media/configuring-video-availability.html
+          Product: Video Cloud
+          Product_area: Geo-Filtering
           Product_Update: 'false'
           Feature: ''
           Status: Released

@@ -1,3 +1,180 @@
+- date: 11-March-2022
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'Video Sitemap Generator'
+          Description: 'Video Sitemap generator sample'
+          Link: https://apis.support.brightcove.com/social-syndication/code-samples/sitemap-generator-sample.html
+          Product: Video Cloud
+          Product_area: Social Syndication API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Sending Notifications to Beacon App Users'
+          Description: 'In this topic, you will learn how to create and send push notifications to the users of your Brightcove Beacon apps.'
+          Link: https://beacon-help.support.brightcove.com/registered-users/sending-beacon-app-notifications.html
+          Product: Beacon
+          Product_area: Beacon Studio
+          Product_Update: 'true'
+          Feature: 'Beacon app push notifications'
+          Status: Staging
+        - Title: 'Brightcove OTT Syndication API (1.0.0)'
+          Description: 'Reference for the OTT Syndication API for compiling data for universal search on different OTT platforms. (Not yet released!)'
+          Link: https://apis.support.brightcove.com/ott-syndication/references/reference.html
+          Product: Beacon
+          Product_area: OTT Syndication
+          Product_Update: 'true'
+          Feature: 'Universal Search'
+          Status: Limited Availability
+    - type: Major updates
+      docs:
+        - Title: 'Administering Accounts'
+          Description: 'Update buttons formats in every folder - VC Admin'
+          Link: https://studio.support.brightcove.com/admin/index.html
+          Product: Video Cloud
+          Product_area: Administering Accounts
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Managing Videos'
+          Description: 'Update buttons formats in every folder - VC Media'
+          Link: https://studio.support.brightcove.com/media/index.html
+          Product: Video Cloud
+          Product_area: Managing Videos
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Managing Players'
+          Description: 'Update buttons formats in every folder - VC Players'
+          Link: https://studio.support.brightcove.com/players/index.html
+          Product: Video Cloud
+          Product_area: Managing Players
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Publishing Videos & Players'
+          Description: 'Update buttons formats in every folder - VC Publish'
+          Link: https://studio.support.brightcove.com/publish/index.html
+          Product: Video Cloud
+          Product_area: Publishing Videos & Players
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Reviewing Analytics'
+          Description: 'Update buttons formats in every folder - VC Analytics'
+          Link: https://studio.support.brightcove.com/analytics/index.html
+          Product: Video Cloud
+          Product_area: Reviewing Analytics
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Using Multiple Languages'
+          Description: 'Updated the Audio track section'
+          Link: https://beacon-help.support.brightcove.com/general/using-multiple-languages.html#Videos
+          Product: Beacon
+          Product_area: Multiple Audio Tracks
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Live API: Cue Points and Ad Beacons with SSAI'
+          Description: 'Added contextual information about SCTE-35 ad variables'
+          Link: https://apis.support.brightcove.com/live-api/ssai/live-api-cue-points-and-ad-beacons-ssai.html#Beacons
+          Product: Live
+          Product_area: SSAI
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Playlist Endscreen Plugin'
+          Description: 'Playlist endscreen related videos information added'
+          Link: https://player.support.brightcove.com/plugins/playlist-endscreen-plugin.html#Options
+          Product: Video Cloud
+          Product_area: Brightcove Player
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Create Client Credentials: Postman'
+          Description: 'Images fixed'
+          Link: https://apis.support.brightcove.com/oauth/guides/oauth-create-client-credentials-using-postman.html
+          Product: Video Cloud
+          Product_area: OAuth API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Create Client Credentials cURL'
+          Description: 'Images fixed'
+          Link: https://apis.support.brightcove.com/oauth/guides/oauth-create-client-credentials-using-curl.html
+          Product: Video Cloud
+          Product_area: OAuth API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Images and Their Specifications'
+          Description: 'Added note about Video Cloud video metadata entered in Beacon Classic could be overwritten'
+          Link: https://beacon.support.brightcove.com/references/image-requirements.html
+          Product: Beacon
+          Product_area: Images
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Picture-in-Picture Plugin (aka "floating" or "pinned")'
+          Description: 'Wrong plugin name Updated'
+          Link: https://player.support.brightcove.com/plugins/picture-picture-plugin-aka-floating-or-pinned.html#Brightcove_plugin_versus_native_functionality
+          Product: Video Cloud
+          Product_area: Player
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Tealium Plugin for Brightcove Player'
+          Description: 'Updated text in the Tag management terminology section'
+          Link: https://player.support.brightcove.com/plugins/tealium-plugin-brightcove-player.html
+          Product: Video Cloud
+          Product_area: Brightcove Player
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Limiting Concurrent Streams'
+          Description: 'Added note that casting to AirPlay can only be done using the Native SDK for iOS'
+          Link: https://apis.support.brightcove.com/playback-restrictions/guides/stream-concurrency.html#Safari
+          Product: Video Cloud
+          Product_area: Playback Restrictions
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Forensic Watermarking'
+          Description: 'Added note that forensic watermarking does not work and will not be added to videos that are enabled for SSAI'
+          Link: https://apis.support.brightcove.com/general/overview-forensic-watermarking.html#Limitations
+          Product: Video Cloud
+          Product_area: Forensic watermarking
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'CMS API Notifications'
+          Description: 'Added note that notifications to affiliate accounts for changes made to shared videos by the master account will be added in April'
+          Link: https://apis.support.brightcove.com/cms/getting-started/cms-api-notifications.html
+          Product: Video Cloud
+          Product_area: CMS API Notifications
+          Product_Update: 'false'
+          Feature: 'Notifications for shared video changes'
+          Status: Released
+        - Title: 'Media Sharing'
+          Description: 'Added note that notifications to affiliate accounts for changes made to shared videos by the master account will be added in April'
+          Link: https://apis.support.brightcove.com/cms/managing-videos/media-sharing-cms-api.html
+          Product: Video Cloud
+          Product_area: Media Sharing
+          Product_Update: 'false'
+          Feature: 'Notifications for shared video changes'
+          Status: Released
+        - Title: 'Configuring Video Availability'
+          Description: 'Removed note that geo-filtering is a paid add-on, as that is no longer true'
+          Link: https://studio.support.brightcove.com/media/configuring-video-availability.html
+          Product: Video Cloud
+          Product_area: Geo-Filtering
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+
 - date: 4-March-2022
   types:
     - type: New Docs
