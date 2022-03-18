@@ -1,3 +1,147 @@
+- date: 18-March-2022
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'Migration of Static Videos to Dynamic Delivery'
+          Description: 'FAQ for the migration of all remaining static videos to Dynamic Delivery'
+          Link: https://studio.support.brightcove.com/general/migration-dynamic-delivery.html
+          Product: Video Cloud
+          Product_area: Media
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Lost Customers'
+          Description: 'In this topic, you will learn about lost customers audience insight data.  These metrics will improve customer visibility and help guide company decisions.'
+          Link: https://audience-insights.support.brightcove.com/guides/lost-customers/lost-customers.html
+          Product: Video Cloud
+          Product_area: Audience Insight
+          Product_Update: 'false'
+          Feature: ''
+          Status: Staging
+        - Title: 'Overview: Audience Insights'
+          Description: 'In this topic, you will learn about Audience Insight data to help you understand you customers and make informed business decisions.'
+          Link: https://audience-insights.support.brightcove.com/getting-started/overview-audience-insights.html
+          Product: Video Cloud
+          Product_area: Analytics
+          Product_Update: 'true'
+          Feature: 'Audience Insights'
+          Status: Staging
+        - Title: 'Customer Summary'
+          Description: 'In this topic, you will learn about customer summary Audience Insight data.'
+          Link: https://audience-insights.support.brightcove.com/guides/summary/customer-summary.html
+          Product: Video Cloud
+          Product_area: Analytics
+          Product_Update: 'false'
+          Feature: ''
+          Status: Staging
+    - type: Major updates
+      docs:
+        - Title: 'Social Sharing Plugin'
+          Description: 'Updated sample and code so that full page url for sharing would be displayed'
+          Link: https://player.support.brightcove.com/plugins/social-sharing-plugin.html#Configure_player_with_options
+          Product: Video Cloud
+          Product_area: Player plugins
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Managing Cookie Compliance Using OneTrust Cookie Consent'
+          Description: 'Update on creation of generic, global template and associated geo rule'
+          Link: https://beacon.support.brightcove.com/references/managing-cookie-consent.html
+          Product: Beacon
+          Product_area: Cookie Consent
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Live API Reference'
+          Description: 'New operation to create playback token for redundant groups'
+          Link: https://apis.support.brightcove.com/live-api/references/reference.html#operation/CreatePlaybackTokenRedundantGroup
+          Product: Live
+          Product_area: Redundant Groups
+          Product_Update: 'true'
+          Feature: 'Playback token / ad_config_id'
+          Status: Released
+        - Title: 'Generic Stream Concurrency (GSC) with the Native SDK for Android'
+          Description: 'Commented out content and added note: GSC was released with the Native SDK for Android v6.17.2'
+          Link: https://sdks.support.brightcove.com/android/content-protection/generic-stream-concurrency-android.html
+          Product: Video Cloud
+          Product_area: Native SDK for Android
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Implementing Multiple Audio Tracks'
+          Description: 'Updated broken image link'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/implementing-multiple-audio-tracks-using-apis.html
+          Product: Video Cloud
+          Product_area: Ingestion
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Submitting Apps to the Roku Store'
+          Description: 'Note on fonts allowable in Roku closed captions'
+          Link: https://beacon.support.brightcove.com/creating-your-apps/roku/submitting-to-roku.html
+          Product: Beacon
+          Product_area: Roku
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Code Samples'
+          Description: 'Update Name for Code Samples Folder on CMS API docs'
+          Link: https://apis.support.brightcove.com/cms/code-samples/index.html
+          Product: Video Cloud
+          Product_area: CMS
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Managing Videos/Assets'
+          Description: 'Update Name for Managing Videos/Assets Folder on CMS API docs'
+          Link: https://apis.support.brightcove.com/cms/managing-videos/index.html
+          Product: Video Cloud
+          Product_area: CMS API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating Custom Metadata Fields'
+          Description: 'Update Custom Field Docs'
+          Link: https://beacon-help.support.brightcove.com/admin/creating-custom-metadata-fields.html
+          Product: Beacon
+          Product_area: Administering Accounts
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating Custom Metadata Fields'
+          Description: 'Update Custom Field Docs'
+          Link: https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html#reserved
+          Product: Video Cloud
+          Product_area: Administering Accounts
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'CMS API'
+          Description: 'Move the Sample to the beginning of the document'
+          Link: https://apis.support.brightcove.com/cms/code-samples/index.html
+          Product: Video Cloud
+          Product_area: Code Samples
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Automatically Generating Captions for Videos'
+          Description: 'Minor Update to Captions Doc'
+          Link: https://studio.support.brightcove.com/media/generating-captions-videos.html
+          Product: Video Cloud
+          Product_area: Generating Captions for Videos
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Automatically Generating Captions for Videos'
+          Description: 'Minor Update to Captions Doc'
+          Link: https://beacon-help.support.brightcove.com/media/generating-captions-videos.html
+          Product: Beacon
+          Product_area: Generating Captions for Videos
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
 - date: 11-March-2022
   types:
     - type: New Docs

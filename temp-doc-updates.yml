@@ -86,3 +86,59 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Code Samples'
+          Description: 'Update Name for Code Samples Folder on CMS API docs'
+          Link: https://apis.support.brightcove.com/cms/code-samples/index.html
+          Product: Video Cloud 
+          Product_area: CMS
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Managing Videos/Assets'
+          Description: 'Update Name for Managing Videos/Assets Folder on CMS API docs'
+          Link: https://apis.support.brightcove.com/cms/managing-videos/index.html 
+          Product: Video Cloud
+          Product_area: CMS API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating Custom Metadata Fields'
+          Description: 'Update Custom Field Docs'
+          Link: https://beacon-help.support.brightcove.com/admin/creating-custom-metadata-fields.html 
+          Product: Beacon
+          Product_area: Administering Accounts
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating Custom Metadata Fields'
+          Description: 'Update Custom Field Docs'
+          Link: https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html#reserved 
+          Product: Video Cloud
+          Product_area: Administering Accounts
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'CMS API'
+          Description: 'Move the Sample to the beginning of the document'
+          Link: https://apis.support.brightcove.com/cms/code-samples/index.html
+          Product: Video Cloud
+          Product_area: Code Samples
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Automatically Generating Captions for Videos'
+          Description: 'Minor Update to Captions Doc'
+          Link:  https://studio.support.brightcove.com/media/generating-captions-videos.html 
+          Product: Video Cloud
+          Product_area: Generating Captions for Videos
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Automatically Generating Captions for Videos'
+          Description: 'Minor Update to Captions Doc'
+          Link:  https://beacon-help.support.brightcove.com/media/generating-captions-videos.html 
+          Product: Beacon
+          Product_area: Generating Captions for Videos
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released  
