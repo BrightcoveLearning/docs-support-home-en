@@ -26,7 +26,6 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
-
     - type: Major updates
       docs:
         - Title: 'CMS API Notifications'
@@ -93,7 +92,6 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
-
     - type: Minor updates
       docs:
         - Title: 'Plugin Changelogs'
