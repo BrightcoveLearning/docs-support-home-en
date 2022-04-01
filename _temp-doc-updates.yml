@@ -1,168 +1,52 @@
-- date: 25-March-2022
+- date: 1-April-2022
   types:
     - type: New Docs
       docs:
-        - Title: 'Brightcove CorpTV Home'
-          Description: 'New doc site for Brightcove CorpTV'
-          Link: https://corptv.support.brightcove.com/
-          Product: CorpTV
-          Product_area: Documentation
-          Product_Update: 'true'
-          Feature: 'New documentation site'
-          Status: Limited Availability
-        - Title: 'Dolby Atmos Audio'
-          Description: 'Dolby Atmos audio can now be passed through to specific Video Cloud renditions'
-          Link: https://apis.support.brightcove.com/ingest-profiles/guides/dolby-atmos-audio.html
-          Product: Video Cloud
-          Product_area: Ingestion
-          Product_Update: 'true'
-          Feature: 'Dolby Atmos Audio'
-          Status: Released
-        - Title: 'OIDC Configuration and Testing for Brightcove Beacon'
-          Description: 'In this topic, you will learn how to configure your OIDC based identity provider to authenticate Beacon users.'
-          Link: https://beacon.support.brightcove.com/references/oidc-authentication-for-beacon.html
-          Product: Beacon
-          Product_area: Authentication
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
+        - Title: ''
+          Description: ''
+          Link:
+          Product: Video Cloud | Live | Beacon | SSAI | Zencoder
+          Product_area:
+          Product_Update: 'true | false'
+          Feature: '(leave blank if Product_Update is false)'
+          Status: Released | Limited Availability | Staging | Internal
+
+
     - type: Major updates
       docs:
-        - Title: 'CMS API Notifications'
-          Description: 'New master-video-change event allows affiliate accounts to receive notifications when assets of videos shared to them have been modified'
-          Link: https://apis.support.brightcove.com/cms/getting-started/cms-api-notifications.html
+        - Title: 'Overview: CMS API'
+          Description: 'Updated Notifications section for notification of master video asset changes for affiliate accounts'
+          Link: https://apis.support.brightcove.com/cms/getting-started/overview-cms-api.html#Notifications
           Product: Video Cloud
           Product_area: CMS API
-          Product_Update: 'true'
-          Feature: 'Notifications for changes to shared video assets for affiliate accounts'
-          Status: Released
-        - Title: 'HEVC Video'
-          Description: 'EAC3 or AC3 audio is now supported for HEVC in Video Cloud'
-          Link: https://apis.support.brightcove.com/ingest-profiles/guides/hevc-video-stage.html#limitations
-          Product: Video Cloud
-          Product_area: Video
-          Product_Update: 'true'
-          Feature: 'HEVC video with EAC3 or AC3 audio'
-          Status: Released
-        - Title: 'Step-by-Step: Brightcove Player'
-          Description: 'Updated to new UI and code updates'
-          Link: https://player.support.brightcove.com/getting-started/step-step-brightcove-player.html
-          Product: Brightcove Player
-          Product_area: Getting Started
           Product_Update: 'false'
           Feature: ''
-          Status: Released
-        - Title: 'Using Core Pages'
-          Description: 'Updated section on Settings page configuration'
-          Link: https://beacon-help.support.brightcove.com/layout/using-core-pages.html
-          Product: Beacon
-          Product_area: Core Pages
-          Product_Update: 'false'
-          Feature: ''
-          Status: Limited Availability
-        - Title: 'Overview: Brightcove Native SDK for iOS'
-          Description: 'Native SDK for iOS release 6.10.3'
-          Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html 
-          Product: Video Cloud
-          Product_area: Native SDK for iOS
-          Product_Update: 'true'
-          Feature: 'Native SDK for iOS/tvOS release 6.10.3'
-          Status: Released
-        - Title: 'Overview: Brightcove Native SDK for tvOS'
-          Description: 'Native SDK for iOS release 6.10.3'
-          Link: https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html  
-          Product: Video Cloud
-          Product_area: Native SDK for iOS
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: Brightcove Native SDK for Android'
-          Description: 'Native SDK for iOS release 6.18.2'
-          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html  
-          Product: Video Cloud
-          Product_area: Native SDK for Android
-          Product_Update: 'true'
-          Feature: 'Native SDK for Android release 6.18.2'
-          Status: Released
-        - Title: 'Brightcove Native SDK for Android Release Notes'
-          Description: 'Native SDK for iOS release 6.18.2'
-          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html   
-          Product: Video Cloud
-          Product_area: Native SDK for Android
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
+          Status: Released        
+
+
     - type: Minor updates
       docs:
-        - Title: 'Plugin Changelogs'
-          Description: 'Changed status of HLS and Errors plugins as now part of Brightcove Player and changes reflected in player release notes'
-          Link: https://player.support.brightcove.com/plugins/changelog/index.html
-          Product: Brightcove Player
-          Product_area: Plugins
+        - Title: 'Creating and Managing Live Events using the Live Module'
+          Description: 'Updated a note to indicate that 2 sets of 608 captions can be included in Live jobs'
+          Link: https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#captions
+          Product: Live
+          Product_area: Live captions
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Thumbnail Seeking with Brightcove Player'
-          Description: 'Added note about the thumbnails manifest when using SSAI'
-          Link: https://player.support.brightcove.com/plugins/thumbnails-plugin.html 
-          Product: Video Cloud
-          Product_area: Brightcove Player
+        - Title: 'Images and Their Specifications'
+          Description: 'Added more info on Hero image'
+          Link: https://beacon.support.brightcove.com/references/image-requirements.html
+          Product: Beacon
+          Product_area: Page Layouts
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Adding Thumbnail Seeking to a Brightcove Player'
-          Description: 'Added note about the thumbnails manifest when using SSAI'
-          Link: https://studio.support.brightcove.com/players/adding-thumbnail-seeking-player.html  
-          Product: Video Cloud
-          Product_area: Studio
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Implementing SSAI with Non-Brightcove Players and SDKs'
-          Description: 'Added note about the thumbnails manifest when using SSAI'
-          Link: https://ssai.support.brightcove.com/vod/guides/ssai-non-bc-players.html  
-          Product: Video Cloud
-          Product_area: SSAI
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Implementing Server-Side Ads with Brightcove Player'
-          Description: 'Added note about the thumbnails manifest when using SSAI'
-          Link: https://player.support.brightcove.com/plugins/implementing-server-side-ads-brightcove-player.html   
-          Product: Video Cloud
-          Product_area: Brightcove Player
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Video Cloud SSAI Overview'
-          Description: 'Added note about the thumbnails manifest when using SSAI'
-          Link: https://ssai.support.brightcove.com/getting-started/video-cloud-ssai-overview.html   
-          Product: Video Cloud
-          Product_area: SSAI
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Thumbnail Seeking with the Native SDKs'
-          Description: 'Added note about the thumbnails manifest when using SSAI'
-          Link: https://sdks.support.brightcove.com/features/thumbnails-native-sdks.html   
-          Product: Video Cloud
-          Product_area: Native SDKs
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Video Cloud SSAI API'
-          Description: 'Added note about the thumbnails manifest when using SSAI'
-          Link: https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html   
-          Product: Video Cloud
-          Product_area: SSAI API
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Step-by-Step: Player Customization'
-          Description: 'Minor updates and added video on how to search HTML elements'
-          Link: https://player.support.brightcove.com/getting-started/step-step-player-customization.html
-          Product: Brightcove Player
-          Product_area: Customizing
+        - Title: 'Learning Guide: Using the REST APIs'
+          Description: 'Expanded intro section'
+          Link: https://player.support.brightcove.com/getting-started/learning-guide-using-rest-apis.html
+          Product: REST APIs
+          Product_area: Video Cloud
           Product_Update: 'false'
           Feature: ''
           Status: Released
