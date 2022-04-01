@@ -1,0 +1,2504 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Below are documentation updates for January-March 2022.">
+  
+  <title>Documentation Updates</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">  
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css">
+  <!-- <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css"> -->
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/tabs.css">
+  <link rel="stylesheet" href="/site-assets/css/site/styles.css">
+  <link rel="stylesheet" href="/assets/css/local.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2728311-17"></script>
+<script translate="no">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-2728311-17');
+</script>
+  <script src="/assets/js/sajari-head.js"></script>
+	<script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body class="body">
+
+<header>
+  <div class="div-header">
+
+      <img class="product-logo" src="https://support.brightcove.com/site-assets/images/site/product-logos/brightcove-black-on-white.svg" alt="Brightcove">
+<select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
+
+<script translate="no">
+/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
+/* ]]> */
+</script>
+
+
+&nbsp;<span class="secondary-nav"><a href="https://support.brightcove.com/product-updates.html">Product Updates</a> <span style="vertical-align: middle;margin-left:1em;margin-right:1em;">|</span> <a href="https://supportportal.brightcove.com">Contact Support</a> <span style="vertical-align: middle;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/">System Status</a></span>
+    <br>
+
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+    
+    <li class="breadcrumb-item first-item"><a href="/">Home</a></li>
+    
+      
+        <li class="breadcrumb-item active" aria-current="page">Documentation Updates</li>
+      
+    
+  </nav>
+</header>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-3 left-side-bar">
+				<select id="site_select" class="bcls-select" style="margin-left: 1rem;">
+					<option value="">Other Brightcove Docs</option>
+					
+						
+							<option value="https://support.brightcove.com">Documentation Home</option>
+						
+					
+						
+							<option value="">-- VIDEO CLOUD --</option>
+						
+					
+						
+							<option value="https://studio.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Studio</option>
+						
+					
+						
+							<option value="https://player.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Player Development</option>
+						
+					
+						
+							<option value="https://apis.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Platform APIs</option>
+						
+					
+						
+							<option value="https://sdks.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Device SDKs</option>
+						
+					
+						
+							<option value="https://integrations.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Integrations and CMS Connectors</option>
+						
+					
+						
+							<option value="https://general.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud General Information</option>
+						
+					
+						
+							<option value="">-- VIDEO ESSENTIALS --</option>
+						
+					
+						
+							<option value="https://beacon.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Beacon</option>
+						
+					
+						
+							<option value="https://live.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Live</option>
+						
+					
+						
+							<option value="https://zencoder.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Zencoder</option>
+						
+					
+						
+							<option value="">-- VIDEO CLOUD ADD-ONS --</option>
+						
+					
+						
+							<option value="https://campaign.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Campaign</option>
+						
+					
+						
+							<option value="https://engage.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Engage</option>
+						
+					
+						
+							<option value="https://gallery.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Gallery</option>
+						
+					
+						
+							<option value="https://studio.support.brightcove.com/social/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Social</option>
+						
+					
+						
+							<option value="https://ssai.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove SSAI</option>
+						
+					
+				</select>
+        <nav class="sidenav" id="side_nav">
+          
+            
+            <h5><a href="/index.html">Home</a></h5>
+            
+          
+            
+            <h5><a href="https://studio.support.brightcove.com/index.html">Video Cloud Studio</a></h5>
+            
+          
+            
+            <h5><a href="https://player.support.brightcove.com/index.html">Brightcove Player</a></h5>
+            
+          
+            
+            <h5><a href="https://apis.support.brightcove.com/index.html">Video Cloud Platform APIs</a></h5>
+            
+          
+            
+            <h5><a href="https://sdks.support.brightcove.com/index.html">Video Cloud Device SDKs</a></h5>
+            
+          
+            
+            <h5><a href="https://integrations.support.brightcove.com/index.html">Video Cloud Integrations</a></h5>
+            
+          
+            
+            <h5><a href="https://general.support.brightcove.com/index.html">Video Cloud General Information</a></h5>
+            
+          
+            
+            <h5><a href="https://beacon.support.brightcove.com/index.html">Brightcove Beacon</a></h5>
+            
+          
+            
+            <h5><a href="https://live.support.brightcove.com/index.html">Brightcove Live</a></h5>
+            
+          
+            
+            <h5><a href="https://zencoder.support.brightcove.com/index.html">Zencoder</a></h5>
+            
+          
+            
+            <h5><a href="https://campaign.support.brightcove.com/index.html">Campaign</a></h5>
+            
+          
+            
+            <h5><a href="https://engage.support.brightcove.com/index.html">Engage</a></h5>
+            
+          
+            
+            <h5><a href="https://gallery.support.brightcove.com/index.html">Gallery</a></h5>
+            
+          
+            
+            <h5><a href="https://studio.support.brightcove.com/social/index.html">Social</a></h5>
+            
+          
+            
+            <h5><a href="https://ssai.support.brightcove.com/index.html">SSAI</a></h5>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/training/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Training</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/training/online-training-courses.html">All Online Training Courses</a></li>
+                  
+                
+                  
+                    <li><a href="/training/register-training.html">Register for Instructor-led Training</a></li>
+                  
+                
+                  
+                    <li><a href="/training/training-demand-introduction-video-cloud.html">Training: Introduction to Video Cloud</a></li>
+                  
+                
+                  
+                    <li><a href="/training/training-demand-introduction-video-cloud-analytics.html">Training:  Introduction to Video Cloud Analytics</a></li>
+                  
+                
+                  
+                    <li><a href="/training/training-demand-video-cloud-basics.html">Training: Video Cloud Basics</a></li>
+                  
+                
+                  
+                    <li><a href="/training/video-cloud-studio-training-videos.html">Video Cloud Studio Training Videos</a></li>
+                  
+                
+                  
+                    <li><a href="/training/brightcove-university.html">Brightcove University Training Courses</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/support/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Support</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/support/viewing-brightcove-system-status-page.html">Viewing the Brightcove System Status Page</a></li>
+                  
+                
+                  
+                    <li><a href="/support/contact-sales.html">Contact Sales</a></li>
+                  
+                
+                  
+                    <li><a href="/support/opening-case-with-brightcove-support.html">Opening a Support Case</a></li>
+                  
+                
+                  
+                    <li><a href="/support/reset-support-portal-password.html">Reset Your Support Portal Password</a></li>
+                  
+                
+              </ul>
+            
+          
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+  <!-- bootstrap layout -->
+
+<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="Navigation Menu"></p>
+
+<!-- search bar -->
+<div id="nav-search-box" style="margin-top: 2rem;"></div>
+<!-- in-page navigation for narrow screens -->
+<details class="centered-inpage-nav" id="centered_inpage_nav">
+  <summary><h6 class="toc">Page Contents</h6></summary>
+  <nav id="centered_toc"></nav>
+  <ul id="centered_in_page_toc" class="list-none"></ul>
+</details>
+<!-- open in new tab/window -->
+<a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="open in new tab" style="margin-top:4em;width: 1.5em;"></a>
+
+
+<h1>Documentation Updates</h1>
+<article class="bcls-article">
+  <summary>Below are documentation updates for January-March 2022.</summary>
+  <p><a href="/doc-updates-index.html">Index of all documentation updates</a></p>
+  
+  <section class="bcls-section">
+    <h2 id="25-March-2022">25-March-2022</h2>
+    
+    <h3>New Docs</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      
+      
+      <li><strong>Title:</strong> Dolby Atmos Audio</li>
+      <li><strong>Description:</strong> Dolby Atmos audio can now be passed through to specific Video Cloud renditions</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/ingest-profiles/guides/dolby-atmos-audio.html">https://apis.support.brightcove.com/ingest-profiles/guides/dolby-atmos-audio.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> OIDC Configuration and Testing for Brightcove Beacon</li>
+      <li><strong>Description:</strong> In this topic, you will learn how to configure your OIDC based identity provider to authenticate Beacon users.</li>
+      <li><strong>Link:</strong> <a href="https://beacon.support.brightcove.com/references/oidc-authentication-for-beacon.html">https://beacon.support.brightcove.com/references/oidc-authentication-for-beacon.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+    <h3>Major updates</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> CMS API Notifications</li>
+      <li><strong>Description:</strong> New master-video-change event allows affiliate accounts to receive notifications when assets of videos shared to them have been modified</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/cms/getting-started/cms-api-notifications.html">https://apis.support.brightcove.com/cms/getting-started/cms-api-notifications.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> HEVC Video</li>
+      <li><strong>Description:</strong> EAC3 or AC3 audio is now supported for HEVC in Video Cloud</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/ingest-profiles/guides/hevc-video-stage.html#limitations">https://apis.support.brightcove.com/ingest-profiles/guides/hevc-video-stage.html#limitations</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Step-by-Step: Brightcove Player</li>
+      <li><strong>Description:</strong> Updated to new UI and code updates</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/getting-started/step-step-brightcove-player.html">https://player.support.brightcove.com/getting-started/step-step-brightcove-player.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      
+      
+      <li><strong>Title:</strong> Overview: Brightcove Native SDK for iOS</li>
+      <li><strong>Description:</strong> Native SDK for iOS release 6.10.3</li>
+      <li><strong>Link:</strong> <a href="https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html">https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Overview: Brightcove Native SDK for tvOS</li>
+      <li><strong>Description:</strong> Native SDK for iOS release 6.10.3</li>
+      <li><strong>Link:</strong> <a href="https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html">https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Overview: Brightcove Native SDK for Android</li>
+      <li><strong>Description:</strong> Native SDK for iOS release 6.18.2</li>
+      <li><strong>Link:</strong> <a href="https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html">https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Brightcove Native SDK for Android Release Notes</li>
+      <li><strong>Description:</strong> Native SDK for iOS release 6.18.2</li>
+      <li><strong>Link:</strong> <a href="https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html">https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+    <h3>Minor updates</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Plugin Changelogs</li>
+      <li><strong>Description:</strong> Changed status of HLS and Errors plugins as now part of Brightcove Player and changes reflected in player release notes</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/plugins/changelog/index.html">https://player.support.brightcove.com/plugins/changelog/index.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Thumbnail Seeking with Brightcove Player</li>
+      <li><strong>Description:</strong> Added note about the thumbnails manifest when using SSAI</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/plugins/thumbnails-plugin.html">https://player.support.brightcove.com/plugins/thumbnails-plugin.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Adding Thumbnail Seeking to a Brightcove Player</li>
+      <li><strong>Description:</strong> Added note about the thumbnails manifest when using SSAI</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/players/adding-thumbnail-seeking-player.html">https://studio.support.brightcove.com/players/adding-thumbnail-seeking-player.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Implementing SSAI with Non-Brightcove Players and SDKs</li>
+      <li><strong>Description:</strong> Added note about the thumbnails manifest when using SSAI</li>
+      <li><strong>Link:</strong> <a href="https://ssai.support.brightcove.com/vod/guides/ssai-non-bc-players.html">https://ssai.support.brightcove.com/vod/guides/ssai-non-bc-players.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Implementing Server-Side Ads with Brightcove Player</li>
+      <li><strong>Description:</strong> Added note about the thumbnails manifest when using SSAI</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/plugins/implementing-server-side-ads-brightcove-player.html">https://player.support.brightcove.com/plugins/implementing-server-side-ads-brightcove-player.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Video Cloud SSAI Overview</li>
+      <li><strong>Description:</strong> Added note about the thumbnails manifest when using SSAI</li>
+      <li><strong>Link:</strong> <a href="https://ssai.support.brightcove.com/getting-started/video-cloud-ssai-overview.html">https://ssai.support.brightcove.com/getting-started/video-cloud-ssai-overview.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Thumbnail Seeking with the Native SDKs</li>
+      <li><strong>Description:</strong> Added note about the thumbnails manifest when using SSAI</li>
+      <li><strong>Link:</strong> <a href="https://sdks.support.brightcove.com/features/thumbnails-native-sdks.html">https://sdks.support.brightcove.com/features/thumbnails-native-sdks.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Video Cloud SSAI API</li>
+      <li><strong>Description:</strong> Added note about the thumbnails manifest when using SSAI</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html">https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Step-by-Step: Player Customization</li>
+      <li><strong>Description:</strong> Minor updates and added video on how to search HTML elements</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/getting-started/step-step-player-customization.html">https://player.support.brightcove.com/getting-started/step-step-player-customization.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+  </section>
+  
+  <section class="bcls-section">
+    <h2 id="18-March-2022">18-March-2022</h2>
+    
+    <h3>New Docs</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Migration of Static Videos to Dynamic Delivery</li>
+      <li><strong>Description:</strong> FAQ for the migration of all remaining static videos to Dynamic Delivery</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/general/migration-dynamic-delivery.html">https://studio.support.brightcove.com/general/migration-dynamic-delivery.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+    
+    
+    <h3>Major updates</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Social Sharing Plugin</li>
+      <li><strong>Description:</strong> Updated sample and code so that full page url for sharing would be displayed</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/plugins/social-sharing-plugin.html#Configure_player_with_options">https://player.support.brightcove.com/plugins/social-sharing-plugin.html#Configure_player_with_options</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Managing Cookie Compliance Using OneTrust Cookie Consent</li>
+      <li><strong>Description:</strong> Update on creation of generic, global template and associated geo rule</li>
+      <li><strong>Link:</strong> <a href="https://beacon.support.brightcove.com/references/managing-cookie-consent.html">https://beacon.support.brightcove.com/references/managing-cookie-consent.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Live API Reference</li>
+      <li><strong>Description:</strong> New operation to create playback token for redundant groups</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/live-api/references/reference.html#operation/CreatePlaybackTokenRedundantGroup">https://apis.support.brightcove.com/live-api/references/reference.html#operation/CreatePlaybackTokenRedundantGroup</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Generic Stream Concurrency (GSC) with the Native SDK for Android</li>
+      <li><strong>Description:</strong> Commented out content and added note: GSC was released with the Native SDK for Android v6.17.2</li>
+      <li><strong>Link:</strong> <a href="https://sdks.support.brightcove.com/android/content-protection/generic-stream-concurrency-android.html">https://sdks.support.brightcove.com/android/content-protection/generic-stream-concurrency-android.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+    <h3>Minor updates</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Implementing Multiple Audio Tracks</li>
+      <li><strong>Description:</strong> Updated broken image link</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/implementing-multiple-audio-tracks-using-apis.html">https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/implementing-multiple-audio-tracks-using-apis.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Submitting Apps to the Roku Store</li>
+      <li><strong>Description:</strong> Note on fonts allowable in Roku closed captions</li>
+      <li><strong>Link:</strong> <a href="https://beacon.support.brightcove.com/creating-your-apps/roku/submitting-to-roku.html">https://beacon.support.brightcove.com/creating-your-apps/roku/submitting-to-roku.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Code Samples</li>
+      <li><strong>Description:</strong> Update Name for Code Samples Folder on CMS API docs</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/cms/code-samples/index.html">https://apis.support.brightcove.com/cms/code-samples/index.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Managing Videos/Assets</li>
+      <li><strong>Description:</strong> Update Name for Managing Videos/Assets Folder on CMS API docs</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/cms/managing-videos/index.html">https://apis.support.brightcove.com/cms/managing-videos/index.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Creating Custom Metadata Fields</li>
+      <li><strong>Description:</strong> Update Custom Field Docs</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/admin/creating-custom-metadata-fields.html">https://beacon-help.support.brightcove.com/admin/creating-custom-metadata-fields.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Creating Custom Metadata Fields</li>
+      <li><strong>Description:</strong> Update Custom Field Docs</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html#reserved">https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html#reserved</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> CMS API</li>
+      <li><strong>Description:</strong> Move the Sample to the beginning of the document</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/cms/code-samples/index.html">https://apis.support.brightcove.com/cms/code-samples/index.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Automatically Generating Captions for Videos</li>
+      <li><strong>Description:</strong> Minor Update to Captions Doc</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/media/generating-captions-videos.html">https://studio.support.brightcove.com/media/generating-captions-videos.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Automatically Generating Captions for Videos</li>
+      <li><strong>Description:</strong> Minor Update to Captions Doc</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/media/generating-captions-videos.html">https://beacon-help.support.brightcove.com/media/generating-captions-videos.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+  </section>
+  
+  <section class="bcls-section">
+    <h2 id="11-March-2022">11-March-2022</h2>
+    
+    <h3>New Docs</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Video Sitemap Generator</li>
+      <li><strong>Description:</strong> Video Sitemap generator sample</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/social-syndication/code-samples/sitemap-generator-sample.html">https://apis.support.brightcove.com/social-syndication/code-samples/sitemap-generator-sample.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      
+      
+      
+    </ul>
+    
+    
+    <h3>Major updates</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Administering Accounts</li>
+      <li><strong>Description:</strong> Update buttons formats in every folder - VC Admin</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/admin/index.html">https://studio.support.brightcove.com/admin/index.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Managing Videos</li>
+      <li><strong>Description:</strong> Update buttons formats in every folder - VC Media</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/media/index.html">https://studio.support.brightcove.com/media/index.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Managing Players</li>
+      <li><strong>Description:</strong> Update buttons formats in every folder - VC Players</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/players/index.html">https://studio.support.brightcove.com/players/index.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Publishing Videos & Players</li>
+      <li><strong>Description:</strong> Update buttons formats in every folder - VC Publish</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/publish/index.html">https://studio.support.brightcove.com/publish/index.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Reviewing Analytics</li>
+      <li><strong>Description:</strong> Update buttons formats in every folder - VC Analytics</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/analytics/index.html">https://studio.support.brightcove.com/analytics/index.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Using Multiple Languages</li>
+      <li><strong>Description:</strong> Updated the Audio track section</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/general/using-multiple-languages.html#Videos">https://beacon-help.support.brightcove.com/general/using-multiple-languages.html#Videos</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Live API: Cue Points and Ad Beacons with SSAI</li>
+      <li><strong>Description:</strong> Added contextual information about SCTE-35 ad variables</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/live-api/ssai/live-api-cue-points-and-ad-beacons-ssai.html#Beacons">https://apis.support.brightcove.com/live-api/ssai/live-api-cue-points-and-ad-beacons-ssai.html#Beacons</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+    <h3>Minor updates</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Playlist Endscreen Plugin</li>
+      <li><strong>Description:</strong> Playlist endscreen related videos information added</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/plugins/playlist-endscreen-plugin.html#Options">https://player.support.brightcove.com/plugins/playlist-endscreen-plugin.html#Options</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Create Client Credentials: Postman</li>
+      <li><strong>Description:</strong> Images fixed</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/oauth/guides/oauth-create-client-credentials-using-postman.html">https://apis.support.brightcove.com/oauth/guides/oauth-create-client-credentials-using-postman.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Create Client Credentials cURL</li>
+      <li><strong>Description:</strong> Images fixed</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/oauth/guides/oauth-create-client-credentials-using-curl.html">https://apis.support.brightcove.com/oauth/guides/oauth-create-client-credentials-using-curl.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Images and Their Specifications</li>
+      <li><strong>Description:</strong> Added note about Video Cloud video metadata entered in Beacon Classic could be overwritten</li>
+      <li><strong>Link:</strong> <a href="https://beacon.support.brightcove.com/references/image-requirements.html">https://beacon.support.brightcove.com/references/image-requirements.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Picture-in-Picture Plugin (aka "floating" or "pinned")</li>
+      <li><strong>Description:</strong> Wrong plugin name Updated</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/plugins/picture-picture-plugin-aka-floating-or-pinned.html#Brightcove_plugin_versus_native_functionality">https://player.support.brightcove.com/plugins/picture-picture-plugin-aka-floating-or-pinned.html#Brightcove_plugin_versus_native_functionality</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Tealium Plugin for Brightcove Player</li>
+      <li><strong>Description:</strong> Updated text in the Tag management terminology section</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/plugins/tealium-plugin-brightcove-player.html">https://player.support.brightcove.com/plugins/tealium-plugin-brightcove-player.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Limiting Concurrent Streams</li>
+      <li><strong>Description:</strong> Added note that casting to AirPlay can only be done using the Native SDK for iOS</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/playback-restrictions/guides/stream-concurrency.html#Safari">https://apis.support.brightcove.com/playback-restrictions/guides/stream-concurrency.html#Safari</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Overview: Forensic Watermarking</li>
+      <li><strong>Description:</strong> Added note that forensic watermarking does not work and will not be added to videos that are enabled for SSAI</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/general/overview-forensic-watermarking.html#Limitations">https://apis.support.brightcove.com/general/overview-forensic-watermarking.html#Limitations</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> CMS API Notifications</li>
+      <li><strong>Description:</strong> Added note that notifications to affiliate accounts for changes made to shared videos by the master account will be added in April</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/cms/getting-started/cms-api-notifications.html">https://apis.support.brightcove.com/cms/getting-started/cms-api-notifications.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Media Sharing</li>
+      <li><strong>Description:</strong> Added note that notifications to affiliate accounts for changes made to shared videos by the master account will be added in April</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/cms/managing-videos/media-sharing-cms-api.html">https://apis.support.brightcove.com/cms/managing-videos/media-sharing-cms-api.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Configuring Video Availability</li>
+      <li><strong>Description:</strong> Removed note that geo-filtering is a paid add-on, as that is no longer true</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/media/configuring-video-availability.html">https://studio.support.brightcove.com/media/configuring-video-availability.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+  </section>
+  
+  <section class="bcls-section">
+    <h2 id="4-March-2022">4-March-2022</h2>
+    
+    <h3>New Docs</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Configuring S3 Buckets</li>
+      <li><strong>Description:</strong> Configure one or more AWS S3 buckets to use as a destination for Cloud Playout channels</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/cloud-playout/configuring-s3-buckets.html">https://studio.support.brightcove.com/cloud-playout/configuring-s3-buckets.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Configuring S3 Buckets</li>
+      <li><strong>Description:</strong> Configure one or more AWS S3 buckets to use as a destination for Cloud Playout channels</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/channels/cloud-playout/configuring-s3-buckets.html">https://beacon-help.support.brightcove.com/channels/cloud-playout/configuring-s3-buckets.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Using Live Redundancy with Channels</li>
+      <li><strong>Description:</strong> Use Live Redundancy using Studio</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/cloud-playout/channel-live-redundancy.html">https://studio.support.brightcove.com/cloud-playout/channel-live-redundancy.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Using Live Redundancy with Channels</li>
+      <li><strong>Description:</strong> Use Live Redundancy using Studio</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/channels/cloud-playout/channel-live-redundancy.html">https://beacon-help.support.brightcove.com/channels/cloud-playout/channel-live-redundancy.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Adding User Sentiment to Videos</li>
+      <li><strong>Description:</strong> In this topic you will learn how to add user sentiment to videos using HapYak.</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/interactivity/adding-sentiment-video.html">https://studio.support.brightcove.com/interactivity/adding-sentiment-video.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> OIDC Authentication Configuration and Testing for Brightcove Beacon</li>
+      <li><strong>Description:</strong> In this topic, you will learn how to configure your OIDC based identity provider to authenticate Beacon users.</li>
+      <li><strong>Link:</strong> <a href="https://beacon.support.brightcove.com/references/oidc-authentication-for-beacon.html">https://beacon.support.brightcove.com/references/oidc-authentication-for-beacon.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> How to Increase Click Through Rate</li>
+      <li><strong>Description:</strong> In this topic you will learn ways to ensure more and more viewers click on text, image or hotspot annotations.</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/interactivity/how-to-increase-click-through-rate.html">https://studio.support.brightcove.com/interactivity/how-to-increase-click-through-rate.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Managing Group Members</li>
+      <li><strong>Description:</strong> In this topic you will learn how to invite and add users to a HapYak group.</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/interactivity/managing-group-members.html">https://studio.support.brightcove.com/interactivity/managing-group-members.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Using the Caption Editor</li>
+      <li><strong>Description:</strong> In this topic you will learn how to edit captions using the caption editor.</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/media/using-the-caption-editor.html">https://studio.support.brightcove.com/media/using-the-caption-editor.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> HapYak Terminology</li>
+      <li><strong>Description:</strong> Introduces some of the terminologies used when working with HapYak interactive video.</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/interactivity/terminology.html">https://studio.support.brightcove.com/interactivity/terminology.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+    <h3>Major updates</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Overview: Channels API</li>
+      <li><strong>Description:</strong> Adding support for Live redundancy and SSAI with Live content</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/cloud-playout-apis/getting-started/overview-channel-api.html">https://apis.support.brightcove.com/cloud-playout-apis/getting-started/overview-channel-api.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Brightcove Cloud Playout Channel Manager API Reference</li>
+      <li><strong>Description:</strong> Adding support for Live redundancy</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/cloud-playout-apis/getting-started/overview-channel-api.html">https://apis.support.brightcove.com/cloud-playout-apis/getting-started/overview-channel-api.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Dimension: viewer</li>
+      <li><strong>Description:</strong> Added dimensions viewer can be combined with</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/analytics/dimension-guides/dimension-viewer.html#Setting_the_viewer_id">https://apis.support.brightcove.com/analytics/dimension-guides/dimension-viewer.html#Setting_the_viewer_id</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Overview: Dimensions, Fields, and Parameters</li>
+      <li><strong>Description:</strong> Updated the dimension combination tester include viewer dimension combinations</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html">https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Playback Restrictions with Live Streams</li>
+      <li><strong>Description:</strong> Added support for AES-128 encryption</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/live-api/guides/live-playback-restrictions.html">https://apis.support.brightcove.com/live-api/guides/live-playback-restrictions.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> SSAI Performance Analytics</li>
+      <li><strong>Description:</strong> Updated text and added note about adconfig id tracking</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/analytics/ssai-performance-data.html#Work_flow">https://studio.support.brightcove.com/analytics/ssai-performance-data.html#Work_flow</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+    <h3>Minor updates</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Configuring Video Availability</li>
+      <li><strong>Description:</strong> Added a note that these properties can also be edited in Quick Edit mode</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/media/configuring-video-availability.html">https://studio.support.brightcove.com/media/configuring-video-availability.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Video Cloud SSAI API</li>
+      <li><strong>Description:</strong> Added ad_tracking_sample_percentage to configuration field details</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html#Configuration_field_details">https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html#Configuration_field_details</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Key API Reference</li>
+      <li><strong>Description:</strong> Added v1 to the request URLs</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/playback-restrictions/references/key-api/reference.html">https://apis.support.brightcove.com/playback-restrictions/references/key-api/reference.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Blacklist API Reference</li>
+      <li><strong>Description:</strong> Added v1 to the request URLs</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/playback-restrictions/references/blacklist-api/reference.html">https://apis.support.brightcove.com/playback-restrictions/references/blacklist-api/reference.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Audit API Reference</li>
+      <li><strong>Description:</strong> Added v1 to the request URLs</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/playback-restrictions/references/audit-api/reference.html">https://apis.support.brightcove.com/playback-restrictions/references/audit-api/reference.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Playback Rights API Reference</li>
+      <li><strong>Description:</strong> Moved v1 to the request URLs</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/playback-restrictions/references/playback-rights/reference.html">https://apis.support.brightcove.com/playback-restrictions/references/playback-rights/reference.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Devices API Reference</li>
+      <li><strong>Description:</strong> Moved v1 to the request URLs</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/playback-restrictions/references/devices-api/reference.html">https://apis.support.brightcove.com/playback-restrictions/references/devices-api/reference.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Custom Endscreen Plugin</li>
+      <li><strong>Description:</strong> Code to add custom HTML endscreen updated</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/plugins/custom-endscreen-plugin.html">https://player.support.brightcove.com/plugins/custom-endscreen-plugin.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Implementing Live SSAI Events</li>
+      <li><strong>Description:</strong> First section images updated</li>
+      <li><strong>Link:</strong> <a href="https://beacon.support.brightcove.com/monetization/ssai/live-ssai.html">https://beacon.support.brightcove.com/monetization/ssai/live-ssai.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Generic Stream Concurrency</li>
+      <li><strong>Description:</strong> URL removed</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/playback-restrictions/guides/generic-stream-concurrency.html#correlator_identifier">https://apis.support.brightcove.com/playback-restrictions/guides/generic-stream-concurrency.html#correlator_identifier</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Implementing VOD SSAI</li>
+      <li><strong>Description:</strong> Images updates</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/monetization/ssai/vod-ssai.html">https://beacon-help.support.brightcove.com/monetization/ssai/vod-ssai.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> How To: Create a Video Cloud Manual Playlist</li>
+      <li><strong>Description:</strong> Images Updates</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/basics/media/creating-manual-playlist.html">https://beacon-help.support.brightcove.com/basics/media/creating-manual-playlist.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> How To: Create a Video Cloud Smart Playlist</li>
+      <li><strong>Description:</strong> Images Updates</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/basics/media/creating-smart-playlist.html">https://beacon-help.support.brightcove.com/basics/media/creating-smart-playlist.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Creating and Managing Playlists</li>
+      <li><strong>Description:</strong> Images Updates</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/media/creating-and-managing-playlists.html">https://beacon-help.support.brightcove.com/media/creating-and-managing-playlists.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Creating Series, Seasons & Episodes</li>
+      <li><strong>Description:</strong> Images Updates</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/media/creating-series-seasons-episodes.html">https://beacon-help.support.brightcove.com/media/creating-series-seasons-episodes.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Getting Started with the Media Module</li>
+      <li><strong>Description:</strong> Images Updates</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/media/getting-started-media-module.html">https://beacon-help.support.brightcove.com/media/getting-started-media-module.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Introduction to Playlists</li>
+      <li><strong>Description:</strong> Images Updates</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/media/introduction-playlists.html">https://beacon-help.support.brightcove.com/media/introduction-playlists.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Managing Series</li>
+      <li><strong>Description:</strong> Images Updates</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/media/managing-series.html">https://beacon-help.support.brightcove.com/media/managing-series.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Organizing Videos Using Folders</li>
+      <li><strong>Description:</strong> Images Updates</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/media/organizing-videos-using-folders.html">https://beacon-help.support.brightcove.com/media/organizing-videos-using-folders.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+  </section>
+  
+  <section class="bcls-section">
+    <h2 id="25-February-2022">25-February-2022</h2>
+    
+    <h3>New Docs</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> How to Increase Click Through Rate</li>
+      <li><strong>Description:</strong> In this topic you will learn ways to ensure more and more viewers click on text, image or hotspot annotations.</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/interactivity/how-to-increase-click-through-rate.html">https://studio.support.brightcove.com/interactivity/how-to-increase-click-through-rate.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Using Templates</li>
+      <li><strong>Description:</strong> In this topic you will learn how to use templates to add annotations to multiple videos.</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/interactivity/using-templates.html">https://studio.support.brightcove.com/interactivity/using-templates.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Learning Guide: Beacon Plugins</li>
+      <li><strong>Description:</strong> In this topic, you will learn about Beacon plugins; what they are, why you would use them, and an introduction to how to implement them. This is the first of ten documents on Beacon Plugins.</li>
+      <li><strong>Link:</strong> <a href="https://beacon.support.brightcove.com/ott-plugins/learning-guide-beacon-plugins.html">https://beacon.support.brightcove.com/ott-plugins/learning-guide-beacon-plugins.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> SSAI Performance Analytics</li>
+      <li><strong>Description:</strong> In this topic, you will learn how to use the Analytics module to monitor the performance of your videos enabled for Server-Side Ad Insertion (SSAI).</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/analytics/ssai-performance-data.html">https://studio.support.brightcove.com/analytics/ssai-performance-data.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+    <h3>Major updates</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Brightcove Player Release Notes</li>
+      <li><strong>Description:</strong> This page tracks Brightcove Player release information; new format from engineering that shows all releases on a single page</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/release-notes/brightcove-player-release-notes.html">https://player.support.brightcove.com/release-notes/brightcove-player-release-notes.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Dimension: viewer</li>
+      <li><strong>Description:</strong> Added information on dimensions that can be combined with viewer in requests</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/analytics/dimension-guides/dimension-viewer.html#Setting_the_viewer_id">https://apis.support.brightcove.com/analytics/dimension-guides/dimension-viewer.html#Setting_the_viewer_id</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Overview: Dimensions, Fields, and Parameters</li>
+      <li><strong>Description:</strong> Updated the dimension combination tester to reflect viewer dimension combinations</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html">https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Implementing Custom Buttons</li>
+      <li><strong>Description:</strong> Added event flow diagram and data object example</li>
+      <li><strong>Link:</strong> <a href="https://beacon.support.brightcove.com/ott-plugins/buttons-and-events.html">https://beacon.support.brightcove.com/ott-plugins/buttons-and-events.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Brightcove Videos on Roku Trick Play</li>
+      <li><strong>Description:</strong> Added support for mid-roll ads with both HLS and DASH</li>
+      <li><strong>Link:</strong> <a href="https://general.support.brightcove.com/general/roku-trick-play.html">https://general.support.brightcove.com/general/roku-trick-play.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+    <h3>Minor updates</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Advertising with the IMA3 Plugin</li>
+      <li><strong>Description:</strong> Added information on new ads-before-request event</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/plugins/advertising-ima3-plugin.html#Events">https://player.support.brightcove.com/plugins/advertising-ima3-plugin.html#Events</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Adding Captions to Videos Programmatically</li>
+      <li><strong>Description:</strong> Added note explaining that the "Auto (default)" captions option cannot be removed on iOS devices</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/general/adding-captions-videos-programmatically.html">https://player.support.brightcove.com/general/adding-captions-videos-programmatically.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Player Feature Support by Browser</li>
+      <li><strong>Description:</strong> Added note that the Brightcove Web Player is not supported on smart TVs</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/references/player-feature-support-browser.html">https://player.support.brightcove.com/references/player-feature-support-browser.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Thumbnail Seeking with the Native SDKs</li>
+      <li><strong>Description:</strong> Added limitation when using remote assets with the Native SDK for Android</li>
+      <li><strong>Link:</strong> <a href="https://sdks.support.brightcove.com/features/thumbnails-native-sdks.html">https://sdks.support.brightcove.com/features/thumbnails-native-sdks.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+  </section>
+  
+  <section class="bcls-section">
+    <h2 id="18-February-2022">18-February-2022</h2>
+    
+    <h3>New Docs</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Getting Started with Interactivity</li>
+      <li><strong>Description:</strong> In this topic you will learn how to connect your Brightcove account with HapYak.</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/interactivity/getting-started-interactivity.html">https://studio.support.brightcove.com/interactivity/getting-started-interactivity.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Adding Interactive Overlays to Videos</li>
+      <li><strong>Description:</strong> In this topic you will learn how to add interactive overlays to videos using HapYak.</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/interactivity/adding-interactivity-video.html">https://studio.support.brightcove.com/interactivity/adding-interactivity-video.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Adding Interactive Chapters to a Video</li>
+      <li><strong>Description:</strong>  Add chapters to the Brightcove account from HapYak.</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/interactivity/adding-chapters-video.html">https://studio.support.brightcove.com/interactivity/adding-chapters-video.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Playback Restrictions with Live events using Studio</li>
+      <li><strong>Description:</strong> In this topic, you will learn how to use Video Cloud Studio to create a Live Event with Playback Restrictions.</li>
+      <li><strong>Link:</strong> <a href="https://live.support.brightcove.com/live-module/playback-restrictions-live-module.html">https://live.support.brightcove.com/live-module/playback-restrictions-live-module.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+    
+    
+    <h3>Major updates</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      
+      
+      <li><strong>Title:</strong> CMS API Notifications</li>
+      <li><strong>Description:</strong> Two new fields - action and updated_by - added to notifications to indicate the kind of action that was taken and who performed it (if that information is available).</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/cms/getting-started/cms-api-notifications.html">https://apis.support.brightcove.com/cms/getting-started/cms-api-notifications.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Brightcove Live API: Server-Side Ad Insertion (SSAI)</li>
+      <li><strong>Description:</strong> New setting will over ride ad timing compensation, a setting that reduces timing drift when ads that get returned are longer than expected. This is normally achieved by shortening the next ad break. When set to true, all ad break durations will  be called as-is, and compensation will not happen.</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/live-api/ssai/live-api-server-side-ad-insertion-ssai.html#General_information">https://apis.support.brightcove.com/live-api/ssai/live-api-server-side-ad-insertion-ssai.html#General_information</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Product Release Notes</li>
+      <li><strong>Description:</strong> Individual feature updates now appear in the Page Contents menu, and make it easier to share links to specific updates.</li>
+      <li><strong>Link:</strong> <a href="https://support.brightcove.com/product-updates.html">https://support.brightcove.com/product-updates.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+    <h3>Minor updates</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Video Cloud SSAI API</li>
+      <li><strong>Description:</strong> Added note that ad_keys are not automatically URL-encoded like other variables and explained why</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html#Ad_variables">https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html#Ad_variables</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Brightcove Live：ベストプラクティス</li>
+      <li><strong>Description:</strong> Added section on Starting Live Streams to Japanese version of the doc</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html#Ad_variables">https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html#Ad_variables</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Playback Rights API Reference</li>
+      <li><strong>Description:</strong> Added note that up to 5000 zip codes are supported for inclusion/exclusion</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/playback-restrictions/references/playback-rights/reference.html">https://apis.support.brightcove.com/playback-restrictions/references/playback-rights/reference.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Managing Playback Rights</li>
+      <li><strong>Description:</strong> Added note that up to 5000 zip codes are supported for inclusion/exclusion</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/admin/managing-playback-rights.html">https://studio.support.brightcove.com/admin/managing-playback-rights.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Media Sharing using the Media Module</li>
+      <li><strong>Description:</strong> Added notes that audio and text tracks are shared with the video, but do not appear in Studio for the affiliate account.</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/media/media-sharing-using-media-module.html">https://studio.support.brightcove.com/media/media-sharing-using-media-module.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Live API Reference</li>
+      <li><strong>Description:</strong> Expanded the description for ad_audio_loudness_level to emphasize that it only applies to SSAI ads, and not the general live stream audio.</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/live-api/references/reference.html">https://apis.support.brightcove.com/live-api/references/reference.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Known Issues: Brightcove Native Player SDKs</li>
+      <li><strong>Description:</strong> Added Android known issue for playlists with DRM and clear content</li>
+      <li><strong>Link:</strong> <a href="https://sdks.support.brightcove.com/developer-support/questions/known-issues-brightcove-native-player-sdks.html#Native_SDK_for_Android">https://sdks.support.brightcove.com/developer-support/questions/known-issues-brightcove-native-player-sdks.html#Native_SDK_for_Android</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Known Issues: Brightcove Native Player SDKs</li>
+      <li><strong>Description:</strong> Added issue for 608/708 Captions with the Native SDK for Android</li>
+      <li><strong>Link:</strong> <a href="https://sdks.support.brightcove.com/developer-support/questions/known-issues-brightcove-native-player-sdks.html">https://sdks.support.brightcove.com/developer-support/questions/known-issues-brightcove-native-player-sdks.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+  </section>
+  
+  <section class="bcls-section">
+    <h2 id="11-February-2022">11-February-2022</h2>
+    
+    <h3>New Docs</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Videos with Text Tracks</li>
+      <li><strong>Description:</strong> This sample qpp produces a report showing which videos have text tracks and which do not.</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/cms/code-samples/cms-api-sample-videos-with-text-tracks.html">https://apis.support.brightcove.com/cms/code-samples/cms-api-sample-videos-with-text-tracks.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Adding a Brightcove Email to the Amazon Account</li>
+      <li><strong>Description:</strong> In this topic, you will learn how to add the Brightcove email to your Amazon account.</li>
+      <li><strong>Link:</strong> <a href="https://beacon.support.brightcove.com/creating-your-apps/fire-tv/add-bc-email.html">https://beacon.support.brightcove.com/creating-your-apps/fire-tv/add-bc-email.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Adding a Brightcove User to the Roku Account</li>
+      <li><strong>Description:</strong> In this topic, you will learn how to add the Brightcove user to your Roku account.</li>
+      <li><strong>Link:</strong> <a href="https://beacon.support.brightcove.com/creating-your-apps/roku/add-bc-user.html">https://beacon.support.brightcove.com/creating-your-apps/roku/add-bc-user.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+    <h3>Major updates</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Step-by-Step: Simple Video App using the Native SDK for Android</li>
+      <li><strong>Description:</strong> Updated steps for latest version of Android Studio</li>
+      <li><strong>Link:</strong> <a href="https://sdks.support.brightcove.com/android/basics/step-step-simple-video-app-using-native-sdk-android.html">https://sdks.support.brightcove.com/android/basics/step-step-simple-video-app-using-native-sdk-android.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Autoplay Considerations</li>
+      <li><strong>Description:</strong> Updated recommendations for latest version of the IMA3 plugin</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/playback/autoplay-considerations.html">https://player.support.brightcove.com/playback/autoplay-considerations.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Ingesting Videos with Multi-Language Audio Tracks</li>
+      <li><strong>Description:</strong> Added a simpler sample and links to instructions for setting the default audio track using Studio or the CMS API</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-videos-multiple-audio-tracks.html">https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-videos-multiple-audio-tracks.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Brightcove Syndication Configuration API </li>
+      <li><strong>Description:</strong> Added operations for OTT syndications (for streaming VODs)</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/social-syndication/references/configuration-reference.html">https://apis.support.brightcove.com/social-syndication/references/configuration-reference.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      
+      
+      <li><strong>Title:</strong> Brightcove Live: Best Practices</li>
+      <li><strong>Description:</strong> Start a live stream recommendations section added</li>
+      <li><strong>Link:</strong> <a href="https://live.support.brightcove.com/get-started/live-module-guidelines-and-best-practicestml#Start_a_live_stream_recommendations">https://live.support.brightcove.com/get-started/live-module-guidelines-and-best-practicestml#Start_a_live_stream_recommendations</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+    <h3>Minor updates</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Creating a JSON Web Token (JWT)</li>
+      <li><strong>Description:</strong> Added details about the uid claim, and added Test Playback for Static URL Delivery</li>
+      <li><strong>Link:</strong> <a href="https://general.support.brightcove.com/developer/create-json-web-token.html#Claims_for_Playback_Restrictions">https://general.support.brightcove.com/developer/create-json-web-token.html#Claims_for_Playback_Restrictions</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Brightcove Native SDK for Android Release Notes</li>
+      <li><strong>Description:</strong> Removed test class from Android release notes for version 6.17.0</li>
+      <li><strong>Link:</strong> <a href="https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html">https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> CMS API Error Message Reference</li>
+      <li><strong>Description:</strong> Correct the message for 404 errors</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/cms/references/cms-api-error-message-reference.html">https://apis.support.brightcove.com/cms/references/cms-api-error-message-reference.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Common Configuration Settings</li>
+      <li><strong>Description:</strong> Added warning about using full screen images for Smart TVs</li>
+      <li><strong>Link:</strong> <a href="https://beacon.support.brightcove.com/references/common-configuration-settings.html#Non_Textual_Data">https://beacon.support.brightcove.com/references/common-configuration-settings.html#Non_Textual_Data</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Creating an SVOD Plan</li>
+      <li><strong>Description:</strong> Added warning that app cache must be cleared when prices are changed.</li>
+      <li><strong>Link:</strong> <a href="https://beacon.support.brightcove.com/monetization/general/creating-svod-plan.html">https://beacon.support.brightcove.com/monetization/general/creating-svod-plan.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> How To: Manage Media</li>
+      <li><strong>Description:</strong> Check Beacon Media Docs for Updated Naming</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/basics/media/index.html">https://beacon-help.support.brightcove.com/basics/media/index.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> How To: Manage Players</li>
+      <li><strong>Description:</strong> Check Beacon Player Docs for Updated Naming</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/basics/players/index.html">https://beacon-help.support.brightcove.com/basics/players/index.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Brightcove Social™ Documentation</li>
+      <li><strong>Description:</strong> Check Beacon Social Docs for Updated Naming</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/social/index.html">https://beacon-help.support.brightcove.com/social/index.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+  </section>
+  
+  <section class="bcls-section">
+    <h2 id="4-February-2022">4-February-2022</h2>
+    
+    <h3>New Docs</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Forensic Watermarking with Beacon Apps</li>
+      <li><strong>Description:</strong> In this topic, you will learn how to implement Forensic Watermarking with Beacon apps.</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/protecting-content/forensic-watermarking-with-beacon.html">https://beacon-help.support.brightcove.com/protecting-content/forensic-watermarking-with-beacon.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+    
+    
+    <h3>Major updates</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Using Core Pages</li>
+      <li><strong>Description:</strong> Mouseover function added to table</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/layout/using-core-pages.html">https://beacon-help.support.brightcove.com/layout/using-core-pages.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Overview: Dimensions, Fields, and Parameters</li>
+      <li><strong>Description:</strong> Added about a dozen dimension combinations that are now supported to the interactive tool for testing combinations</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html">https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Implementing Live SSAI</li>
+      <li><strong>Description:</strong> Fixed the SSAI Ad Configuration value in Beacon CMS</li>
+      <li><strong>Link:</strong> <a href="https://beacon.support.brightcove.com/monetization/ssai/live-ssai.html">https://beacon.support.brightcove.com/monetization/ssai/live-ssai.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Implementing Live SSAI</li>
+      <li><strong>Description:</strong> Fixed the SSAI Ad Configuration value in Beacon CMS</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/monetization/ssai/live-ssai.html">https://beacon-help.support.brightcove.com/monetization/ssai/live-ssai.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Creating and Managing Live Events using the Live Module</li>
+      <li><strong>Description:</strong> Added notes about the adConfigId parameter with Live events</li>
+      <li><strong>Link:</strong> <a href="https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#publish">https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#publish</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Client-Side Pre-roll Ads with Live SSAI</li>
+      <li><strong>Description:</strong> Added section to show how to listen to player events during SSAI playback</li>
+      <li><strong>Link:</strong> <a href="https://live.support.brightcove.com/live-module/client-side-preroll-with-live-ssai.html">https://live.support.brightcove.com/live-module/client-side-preroll-with-live-ssai.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Viewing Billing Information</li>
+      <li><strong>Description:</strong> Adding a note about grace period</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/admin/viewing-billing-information.html#deleted_videos">https://studio.support.brightcove.com/admin/viewing-billing-information.html#deleted_videos</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Adding Captions to Videos using the Media Module</li>
+      <li><strong>Description:</strong> Adding a note to Captions/subtitles</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/media/adding-captions-videos-using-media-module.html">https://studio.support.brightcove.com/media/adding-captions-videos-using-media-module.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Adding Captions to Videos</li>
+      <li><strong>Description:</strong> Adding a note to Captions/subtitles</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/media/adding-captions-videos.html">https://beacon-help.support.brightcove.com/media/adding-captions-videos.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+    <h3>Minor updates</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      
+      
+      <li><strong>Title:</strong> Analytics API Reference</li>
+      <li><strong>Description:</strong> Corrections to a couple of query parameters</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/analytics/references/reference.html#tag/Video-Data">https://apis.support.brightcove.com/analytics/references/reference.html#tag/Video-Data</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> MP4s in Dynamic Delivery</li>
+      <li><strong>Description:</strong> Added an additional use case that requires MP4 renditions</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/ingest-profiles/guides/mp4s-dynamic-delivery.html">https://apis.support.brightcove.com/ingest-profiles/guides/mp4s-dynamic-delivery.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Audio Mapping Guide</li>
+      <li><strong>Description:</strong> Added an additional sample to illustrate mapping from 8 audio tracks</li>
+      <li><strong>Link:</strong> <a href="https://zencoder.support.brightcove.com/encoding-guides/advanced-audio-mapping-guide.html">https://zencoder.support.brightcove.com/encoding-guides/advanced-audio-mapping-guide.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Kollective eCDN User Guide</li>
+      <li><strong>Description:</strong> Added a note that Kollective credentials must come from Kollective (Brightcove has no access to them)</li>
+      <li><strong>Link:</strong> <a href="https://zencoder.support.brightcove.com/encoding-guides/advanced-audio-mapping-guide.html">https://zencoder.support.brightcove.com/encoding-guides/advanced-audio-mapping-guide.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Customizing Player Appearance</li>
+      <li><strong>Description:</strong> Added CSS selector for the quality selector button</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/styling/customizing-player-appearance.html#Component_selectors">https://player.support.brightcove.com/styling/customizing-player-appearance.html#Component_selectors</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Learning Guide: Using the REST APIs</li>
+      <li><strong>Description:</strong> Move Images to Local Repo</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/getting-started/learning-guide-using-rest-apis.html">https://player.support.brightcove.com/getting-started/learning-guide-using-rest-apis.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Brightcove Player Plugins</li>
+      <li><strong>Description:</strong> Move Images to Local Repo</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/plugins/brightcove-player-plugins.html">https://player.support.brightcove.com/plugins/brightcove-player-plugins.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Brightcove Player Plugins</li>
+      <li><strong>Description:</strong> Updated images</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/plugins/brightcove-player-plugins.html">https://player.support.brightcove.com/plugins/brightcove-player-plugins.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Learn the Basics</li>
+      <li><strong>Description:</strong> Line on the layout Howto removed</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/basics/index.html">https://beacon-help.support.brightcove.com/basics/index.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Administering Accounts</li>
+      <li><strong>Description:</strong> Beacon all Admin docs for updated naming</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/admin/index.html">https://beacon-help.support.brightcove.com/admin/index.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Creating and Managing Live Events using the Live Module</li>
+      <li><strong>Description:</strong> Added descriptions for the extended monitoring graphs</li>
+      <li><strong>Link:</strong> <a href="https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#ext-monitoring">https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#ext-monitoring</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+  </section>
+  
+  <section class="bcls-section">
+    <h2 id="28-January-2022">28-January-2022</h2>
+    
+    <h3>New Docs</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      
+      
+      <li><strong>Title:</strong> Login Durations</li>
+      <li><strong>Description:</strong> In this topic, you will learn about viewer login durations.</li>
+      <li><strong>Link:</strong> <a href="https://beacon.support.brightcove.com/references/login-durations.html">https://beacon.support.brightcove.com/references/login-durations.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Adding Geolocations</li>
+      <li><strong>Description:</strong> Adding restrictions to use either permitted or denied locations on Beacon Classic.</li>
+      <li><strong>Link:</strong> <a href="https://beacon.support.brightcove.com/references/adding-geolocations.html">https://beacon.support.brightcove.com/references/adding-geolocations.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+    <h3>Major updates</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      
+      
+      
+      
+      <li><strong>Title:</strong> Generic Stream Concurrency</li>
+      <li><strong>Description:</strong> Playback will now terminate if the player is unable to contact the server to verify concurrency limits</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/playback-restrictions/guides/generic-stream-concurrency.html">https://apis.support.brightcove.com/playback-restrictions/guides/generic-stream-concurrency.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Ingesting WebVTT Files</li>
+      <li><strong>Description:</strong> You can now set the status of ingested text tracks or auto captions to "published" or "draft"</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-webvtt-files-text-trackscaptions.html">https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-webvtt-files-text-trackscaptions.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Dynamic Ingest API Reference</li>
+      <li><strong>Description:</strong> You can now set the status of ingested text tracks or auto captions to "published" or "draft"</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/dynamic-ingest/references/reference.html">https://apis.support.brightcove.com/dynamic-ingest/references/reference.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Ingest Fields Reference</li>
+      <li><strong>Description:</strong> You can now set the status of ingested text tracks or auto captions to "published" or "draft"</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/dynamic-ingest/references/dynamic-ingest-ingest-fields.html">https://apis.support.brightcove.com/dynamic-ingest/references/dynamic-ingest-ingest-fields.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Requesting Auto Captions</li>
+      <li><strong>Description:</strong> You can now set the status of ingested text tracks or auto captions to "published" or "draft"</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/requesting-auto-captions.html">https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/requesting-auto-captions.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> MP4s in Dynamic Delivery</li>
+      <li><strong>Description:</strong> Added closed captions as another reason to create MP4 renditions when ingesting or transcoding videos</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/ingest-profiles/guides/mp4s-dynamic-delivery.html#Do_I_need_MP4_renditions">https://apis.support.brightcove.com/ingest-profiles/guides/mp4s-dynamic-delivery.html#Do_I_need_MP4_renditions</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Overview: Platform APIs</li>
+      <li><strong>Description:</strong> Added Cloud Playout and Playback Restrictions APIs </li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/getting-started/getting-started-brightcove-apis.html">https://apis.support.brightcove.com/getting-started/getting-started-brightcove-apis.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Creating a Playlist</li>
+      <li><strong>Description:</strong> Added note and section about Video Cloud syncing</li>
+      <li><strong>Link:</strong> <a href="https://beacon.support.brightcove.com/using-brightcove-beacon/creating-a-playlist.html">https://beacon.support.brightcove.com/using-brightcove-beacon/creating-a-playlist.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Responsive Sizing for Brightcove Player</li>
+      <li><strong>Description:</strong> Aspect-ratio new section added</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/styling/responsive-sizing-brightcove-player.html#Using_aspect-ratio">https://player.support.brightcove.com/styling/responsive-sizing-brightcove-player.html#Using_aspect-ratio</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> APIs</li>
+      <li><strong>Description:</strong> Spanish translations fixed for all API pages</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/">https://apis.support.brightcove.com/</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+    <h3>Minor updates</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Best Practices: The Video Creating, Transcoding, and Uploading Workflow</li>
+      <li><strong>Description:</strong> Added note that HDR video is currently not supported</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/general/best-practices-video-creating-transcoding-and-uploading-workflow.html">https://studio.support.brightcove.com/general/best-practices-video-creating-transcoding-and-uploading-workflow.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Ingesting content with DRM</li>
+      <li><strong>Description:</strong> Updated screenshots for current UI</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-content-drm.html">https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-content-drm.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Uploading Videos Using the Upload Module</li>
+      <li><strong>Description:</strong> Adding section explaining the need for MP4 renditions</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/media/uploading-videos-using-upload-module.html">https://studio.support.brightcove.com/media/uploading-videos-using-upload-module.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Overview: Brightcove Native SDK for Android</li>
+      <li><strong>Description:</strong> Android SDK Release 6.18.1</li>
+      <li><strong>Link:</strong> <a href="https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html">https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Brightcove Native SDK for Android Release Notes</li>
+      <li><strong>Description:</strong> Android SDK Release 6.18.1</li>
+      <li><strong>Link:</strong> <a href="https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html">https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Creating Custom Metadata Fields</li>
+      <li><strong>Description:</strong> Increase limit for the value in the list in the custom field</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html">https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Creating Custom Metadata Fields</li>
+      <li><strong>Description:</strong> Increase limit for the value in the list in the custom field</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/admin/creating-custom-metadata-fields.html">https://beacon-help.support.brightcove.com/admin/creating-custom-metadata-fields.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+  </section>
+  
+  <section class="bcls-section">
+    <h2 id="21-January-2022">21-January-2022</h2>
+    
+    <h3>New Docs</h3>
+    
+    <ul style="list-style: none;">
+      <li style="margin-bottom: 1em;">No New Docs</li>
+    </ul>
+    
+    
+    <h3>Major updates</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Brightcove Player Sample: Outstream (Ad-Only) Player</li>
+      <li><strong>Description:</strong> Removed the inline VAST option since the ad tag URL option still works</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/code-samples/brightcove-player-sample-outstream-ad-only-player.html">https://player.support.brightcove.com/code-samples/brightcove-player-sample-outstream-ad-only-player.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Static URL Delivery</li>
+      <li><strong>Description:</strong> Added endpoints section for Live streams</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/playback/guides/static-url-delivery.html">https://apis.support.brightcove.com/playback/guides/static-url-delivery.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Creating an Electronic Program Guide (EPG)</li>
+      <li><strong>Description:</strong> Updated channel id value and added FAQ section</li>
+      <li><strong>Link:</strong> <a href="https://beacon.support.brightcove.com/using-brightcove-beacon/electronic-program-guides.html">https://beacon.support.brightcove.com/using-brightcove-beacon/electronic-program-guides.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Overview: Forensic Watermarking</li>
+      <li><strong>Description:</strong> Added diagram and intro text</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/general/overview-forensic-watermarking.html">https://apis.support.brightcove.com/general/overview-forensic-watermarking.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      
+      
+      <li><strong>Title:</strong> Ingesting WebVTT Files</li>
+      <li><strong>Description:</strong> Updated with some clarifications and notes on adding closed captions (608/708) to MP4 renditions.</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-webvtt-files-text-trackscaptions.html">https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-webvtt-files-text-trackscaptions.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Studio</li>
+      <li><strong>Description:</strong> Translations fixed for studio-es pages</li>
+      <li><strong>Link:</strong> <a href="https://es.studio.support.brightcove.com/">https://es.studio.support.brightcove.com/</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Gallery</li>
+      <li><strong>Description:</strong> Translations fixed for gallery-es pages</li>
+      <li><strong>Link:</strong> <a href="https://es.gallery.support.brightcove.com/">https://es.gallery.support.brightcove.com/</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Ad Intelligence Plugin</li>
+      <li><strong>Description:</strong> Added new notes section</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/plugins/ad-intelligence-plugin.html">https://player.support.brightcove.com/plugins/ad-intelligence-plugin.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Reviewing Social Analytics</li>
+      <li><strong>Description:</strong> VC Updates screenshots of Reviewing Social Analytics</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/social/reviewing-social-analytics.html">https://studio.support.brightcove.com/social/reviewing-social-analytics.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Reviewing Social Analytics</li>
+      <li><strong>Description:</strong> Beacon updates screenshots of Reviewing Social Analytics</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/social/reviewing-social-analytics.html">https://beacon-help.support.brightcove.com/social/reviewing-social-analytics.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      
+      
+      <li><strong>Title:</strong> Social Engagement Analytics docs</li>
+      <li><strong>Description:</strong> Adding steps in Social Engagement Analytics</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/social/reviewing-social-engagement-analytics.html#socialviews">https://studio.support.brightcove.com/social/reviewing-social-engagement-analytics.html#socialviews</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Reviewing Social Views Analytics</li>
+      <li><strong>Description:</strong> Adding steps in Reviewing Social Views Analytics</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/social/reviewing-social-views-analytics.html">https://studio.support.brightcove.com/social/reviewing-social-views-analytics.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Reviewing Social Analytics</li>
+      <li><strong>Description:</strong> Adding steps in Social Analytics on Beacon</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/social/reviewing-social-analytics.html">https://beacon-help.support.brightcove.com/social/reviewing-social-analytics.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Social Engagement Analytics docs</li>
+      <li><strong>Description:</strong> Adding steps in Social Engagement Analytics on beacon</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/social/reviewing-social-engagement-analytics.html">https://beacon-help.support.brightcove.com/social/reviewing-social-engagement-analytics.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Reviewing Social Views Analytics</li>
+      <li><strong>Description:</strong> Adding steps in Reviewing Social Views Analytics on Beacon</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/social/reviewing-social-views-analytics.html">https://beacon-help.support.brightcove.com/social/reviewing-social-views-analytics.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Ingesting WebVTT Files</li>
+      <li><strong>Description:</strong> Updated with some clarifications and notes on adding closed captions (608/708) to MP4 renditions.</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-webvtt-files-text-trackscaptions.html">https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-webvtt-files-text-trackscaptions.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Studio</li>
+      <li><strong>Description:</strong> Translations fixed for studio-es pages</li>
+      <li><strong>Link:</strong> <a href="https://es.studio.support.brightcove.com/">https://es.studio.support.brightcove.com/</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Gallery</li>
+      <li><strong>Description:</strong> Translations fixed for gallery-es pages</li>
+      <li><strong>Link:</strong> <a href="https://es.gallery.support.brightcove.com/">https://es.gallery.support.brightcove.com/</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Ad Intelligence Plugin</li>
+      <li><strong>Description:</strong> Added new notes section</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/plugins/ad-intelligence-plugin.html">https://player.support.brightcove.com/plugins/ad-intelligence-plugin.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Reviewing Social Analytics</li>
+      <li><strong>Description:</strong> VC Updates screenshots of Reviewing Social Analytics</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/social/reviewing-social-analytics.html">https://studio.support.brightcove.com/social/reviewing-social-analytics.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Reviewing Social Analytics</li>
+      <li><strong>Description:</strong> Beacon updates screenshots of Reviewing Social Analytics</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/social/reviewing-social-analytics.html">https://beacon-help.support.brightcove.com/social/reviewing-social-analytics.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      
+      
+      <li><strong>Title:</strong> Social Engagement Analytics docs</li>
+      <li><strong>Description:</strong> Adding steps in Social Engagement Analytics</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/social/reviewing-social-engagement-analytics.html#socialviews">https://studio.support.brightcove.com/social/reviewing-social-engagement-analytics.html#socialviews</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Reviewing Social Views Analytics</li>
+      <li><strong>Description:</strong> Adding steps in Reviewing Social Views Analytics</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/social/reviewing-social-views-analytics.html">https://studio.support.brightcove.com/social/reviewing-social-views-analytics.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Reviewing Social Analytics</li>
+      <li><strong>Description:</strong> Adding steps in Social Analytics on Beacon</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/social/reviewing-social-analytics.html">https://beacon-help.support.brightcove.com/social/reviewing-social-analytics.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Social Engagement Analytics docs</li>
+      <li><strong>Description:</strong> Adding steps in Social Engagement Analytics on beacon</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/social/reviewing-social-engagement-analytics.html">https://beacon-help.support.brightcove.com/social/reviewing-social-engagement-analytics.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Reviewing Social Views Analytics</li>
+      <li><strong>Description:</strong> Adding steps in Reviewing Social Views Analytics on Beacon</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/social/reviewing-social-views-analytics.html">https://beacon-help.support.brightcove.com/social/reviewing-social-views-analytics.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+    <h3>Minor updates</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Video Cloud Documentation</li>
+      <li><strong>Description:</strong> Minor Media UI Changes in VC Docs</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com">https://studio.support.brightcove.com</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Adding Captions to Videos using the Media Module</li>
+      <li><strong>Description:</strong> Status Field Added to Text Tracks section in Media module</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/media/adding-captions-videos-using-media-module.html">https://studio.support.brightcove.com/media/adding-captions-videos-using-media-module.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Beacon Docs</li>
+      <li><strong>Description:</strong> Minor Media UI Changes in Beacon Docs</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/social/">https://beacon-help.support.brightcove.com/social/</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Video Cloud Documentation</li>
+      <li><strong>Description:</strong> Minor Media UI Changes in VC Docs</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com">https://studio.support.brightcove.com</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Adding Captions to Videos using the Media Module</li>
+      <li><strong>Description:</strong> Status Field Added to Text Tracks section in Media module</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/media/adding-captions-videos-using-media-module.html">https://studio.support.brightcove.com/media/adding-captions-videos-using-media-module.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Beacon Docs</li>
+      <li><strong>Description:</strong> Minor Media UI Changes in Beacon Docs</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/social/">https://beacon-help.support.brightcove.com/social/</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+  </section>
+  
+  <section class="bcls-section">
+    <h2 id="14-January-2022">14-January-2022</h2>
+    
+    <h3>New Docs</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      
+      
+      <li><strong>Title:</strong> Deleting an App User</li>
+      <li><strong>Description:</strong> In this topic, you will learn how to delete an app user.</li>
+      <li><strong>Link:</strong> <a href="https://beacon.support.brightcove.com/references/delete-app-user.html">https://beacon.support.brightcove.com/references/delete-app-user.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Product Release Notes Index</li>
+      <li><strong>Description:</strong> Links to product release notes for different 3-month periods.</li>
+      <li><strong>Link:</strong> <a href="https://support.brightcove.com/product-updates-index.html">https://support.brightcove.com/product-updates-index.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Drupal 9 - Brightcove Connector: Overview</li>
+      <li><strong>Description:</strong> Overview of the Video Cloud connector for Drupal 9.</li>
+      <li><strong>Link:</strong> <a href="https://integrations.support.brightcove.com/drupal/drupal-9-brightcove-connector-overview.html">https://integrations.support.brightcove.com/drupal/drupal-9-brightcove-connector-overview.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+    <h3>Major updates</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Policy API</li>
+      <li><strong>Description:</strong> Introducing to Policy API video updated</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/policy/index.html">https://apis.support.brightcove.com/policy/index.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> CAE Settings</li>
+      <li><strong>Description:</strong> Added 4 fields that can be used now for Context Aware Encoding jobs</li>
+      <li><strong>Link:</strong> <a href="https://zencoder.support.brightcove.com/encoding-settings/general/cae-settings.html#additional_settings">https://zencoder.support.brightcove.com/encoding-settings/general/cae-settings.html#additional_settings</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> CMS API: Video Search v2</li>
+      <li><strong>Description:</strong> Added section on stemming.</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/cms/searching/cms-and-playback-apis-video-search-v2.html#stemming">https://apis.support.brightcove.com/cms/searching/cms-and-playback-apis-video-search-v2.html#stemming</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      
+      
+      <li><strong>Title:</strong> Ingesting WebVTT Files</li>
+      <li><strong>Description:</strong> Added section on Adding closed captions to MP4 renditions.</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-webvtt-files-text-trackscaptions.html">https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-webvtt-files-text-trackscaptions.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Generic Stream Concurrency</li>
+      <li><strong>Description:</strong> Added player configuration properties to control how often and how many times the player retries contacting the server to check concurrency limits.</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/playback-restrictions/guides/generic-stream-concurrency.html">https://apis.support.brightcove.com/playback-restrictions/guides/generic-stream-concurrency.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Player Management API Reference</li>
+      <li><strong>Description:</strong> Added player configuration properties to control how often and how many times the player retries contacting the server to check concurrency limits.</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/player-management/references/reference.html">https://apis.support.brightcove.com/player-management/references/reference.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Player Configuration Guide</li>
+      <li><strong>Description:</strong> Added player configuration properties to control how often and how many times the player retries contacting the server to check concurrency limits.</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/general/player-configuration-guide.html">https://player.support.brightcove.com/general/player-configuration-guide.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+    <h3>Minor updates</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Managing Users</li>
+      <li><strong>Description:</strong> Can not change an email for existing users</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/admin/managing-users.html">https://studio.support.brightcove.com/admin/managing-users.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Overview: China Delivery</li>
+      <li><strong>Description:</strong> Updated limitations section</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/general/china-delivery-overview.html#Limitations">https://studio.support.brightcove.com/general/china-delivery-overview.html#Limitations</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      
+    </ul>
+    
+    
+  </section>
+  
+  <section class="bcls-section">
+    <h2 id="7-January-2022">7-January-2022</h2>
+    
+    <h3>New Docs</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Import Captions</li>
+      <li><strong>Description:</strong> Importing 608/708 closed captions into Cloud Playout Channels</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/cloud-playout/import-captions.html">https://studio.support.brightcove.com/cloud-playout/import-captions.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Searching for Channels</li>
+      <li><strong>Description:</strong> Search for Cloud Playout channels with advanced filtering</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/cloud-playout/searching-for-channels.html">https://studio.support.brightcove.com/cloud-playout/searching-for-channels.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Searching for Channels</li>
+      <li><strong>Description:</strong> Search for Cloud Playout channels with advanced filtering</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/cloud-playout-apis/guides/search-channels-api.html">https://apis.support.brightcove.com/cloud-playout-apis/guides/search-channels-api.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Import Captions</li>
+      <li><strong>Description:</strong> Importing 608/708 closed captions into Cloud Playout Channels</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/channels/cloud-playout/import-captions.html">https://beacon-help.support.brightcove.com/channels/cloud-playout/import-captions.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Searching for Channels</li>
+      <li><strong>Description:</strong> Search for Cloud Playout channels with advanced filtering</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/channels/cloud-playout/searching-for-channels.html">https://beacon-help.support.brightcove.com/channels/cloud-playout/searching-for-channels.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      
+      
+      <li><strong>Title:</strong> Page Updates Live Immediately</li>
+      <li><strong>Description:</strong> In this topic, you will learn about options when you see in the Layout module the message that page changes will go live immediately.</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/layout/live-immediately.html">https://beacon-help.support.brightcove.com/layout/live-immediately.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+    <h3>Major updates</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Brightcove Cloud Playout Channel Manager API Reference</li>
+      <li><strong>Description:</strong> Added q parameter used for robust searching for Channels</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/cloud-playout-apis/references/reference-channels.html#operation/GetAllChannels">https://apis.support.brightcove.com/cloud-playout-apis/references/reference-channels.html#operation/GetAllChannels</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Media Sharing using the Media Module</li>
+      <li><strong>Description:</strong> update Sharing terminology and Scenario 1</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/media/media-sharing-using-media-module.html">https://studio.support.brightcove.com/media/media-sharing-using-media-module.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Sharing Videos to Other Accounts</li>
+      <li><strong>Description:</strong> update Sharing terminology and Scenario 1</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/media/sharing-videos-other-accounts.html">https://beacon-help.support.brightcove.com/media/sharing-videos-other-accounts.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Creating and Managing Playlists</li>
+      <li><strong>Description:</strong> Updated for new UI and support for VC and Beacon playlist creation</li>
+      <li><strong>Link:</strong> <a href="https://beacon-help.support.brightcove.com/media/creating-and-managing-playlists.html">https://beacon-help.support.brightcove.com/media/creating-and-managing-playlists.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Playback Restrictions with the Native SDKs</li>
+      <li><strong>Description:</strong> Added code example for License Keys Protection with Delivery Rules</li>
+      <li><strong>Link:</strong> <a href="https://sdks.support.brightcove.com/features/playback-restrictions-with-sdks.html">https://sdks.support.brightcove.com/features/playback-restrictions-with-sdks.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+    <h3>Minor updates</h3>
+    
+    <ul style="list-style: none;">
+      
+      
+      <li><strong>Title:</strong> Creating Video Cloud Custom Fields</li>
+      <li><strong>Description:</strong> Updated to indicate that users can now delete custom fields and do not have to ask Support</li>
+      <li><strong>Link:</strong> <a href="https://beacon.support.brightcove.com/syncing-with-video-cloud/vc-custom-fields.html">https://beacon.support.brightcove.com/syncing-with-video-cloud/vc-custom-fields.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Adding Dynamic Overlays</li>
+      <li><strong>Description:</strong> Removed links to samples that are no longer available</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/cloud-playout/dynamic-overlays.html">https://studio.support.brightcove.com/cloud-playout/dynamic-overlays.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Add WebVTT Captions (Text Tracks)</li>
+      <li><strong>Description:</strong> Added note that the captions kind may only be used with dynamic delivery videos</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/cms/managing-videos/using-cms-api-add-webvtt-captions-text-tracks.html">https://apis.support.brightcove.com/cms/managing-videos/using-cms-api-add-webvtt-captions-text-tracks.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> CMS API Reference</li>
+      <li><strong>Description:</strong> Added note that the get clear sources endpoints require a special permission. Credentials for these endpoints must be generated using the OAuth API or requested from Support.</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/cms/references/reference.html#tag/Clear-Sources">https://apis.support.brightcove.com/cms/references/reference.html#tag/Clear-Sources</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Implementing Delivery Rules</li>
+      <li><strong>Description:</strong> Corrected an error in a code sample</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/delivery-rules/getting-started/implementing-delivery-rules.html">https://apis.support.brightcove.com/delivery-rules/getting-started/implementing-delivery-rules.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Reviewing Live Analytics</li>
+      <li><strong>Description:</strong> Added a note that those using non-Brightcove players can get live analytics by instrumenting the player to deliver the necessary data to the Data Collection API</li>
+      <li><strong>Link:</strong> <a href="https://live.support.brightcove.com/live-module/reviewing-live-analytics.html">https://live.support.brightcove.com/live-module/reviewing-live-analytics.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Video Cloud Glossary</li>
+      <li><strong>Description:</strong> Slight modification of Analytic API</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/get-started/video-cloud-glossary.html">https://studio.support.brightcove.com/get-started/video-cloud-glossary.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Adding Captions to Videos Using the Media Module</li>
+      <li><strong>Description:</strong> Update creating caption files</li>
+      <li><strong>Link:</strong> <a href="https://studio.support.brightcove.com/media/adding-captions-videos-using-media-module.html#captionsfile">https://studio.support.brightcove.com/media/adding-captions-videos-using-media-module.html#captionsfile</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Reducing Latency for Live Streams</li>
+      <li><strong>Description:</strong> new wording added to introduction part</li>
+      <li><strong>Link:</strong> <a href="https://live.support.brightcove.com/general/reducing-latency-live-streams.html#Introduction">https://live.support.brightcove.com/general/reducing-latency-live-streams.html#Introduction</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Creating a Video Clip Using the Live Module</li>
+      <li><strong>Description:</strong> Updated note to state that VOD clipping with DRM-protected jobs is supported in the Live Module</li>
+      <li><strong>Link:</strong> <a href="https://live.support.brightcove.com/live-module/creating-video-clip-using-live-module.html">https://live.support.brightcove.com/live-module/creating-video-clip-using-live-module.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Live API: Creating VOD Clips</li>
+      <li><strong>Description:</strong> Updated note to state that VOD clipping with DRM-protected jobs is supported in the Live Module</li>
+      <li><strong>Link:</strong> <a href="https://apis.support.brightcove.com/live-api/guides/live-api-creating-vod-clips.html">https://apis.support.brightcove.com/live-api/guides/live-api-creating-vod-clips.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Custom Endscreen Plugins</li>
+      <li><strong>Description:</strong> Fixed HTML for \custom end screen when using the Players module</li>
+      <li><strong>Link:</strong> <a href="https://player.support.brightcove.com/plugins/custom-endscreen-plugin.html">https://player.support.brightcove.com/plugins/custom-endscreen-plugin.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      
+      
+      <li><strong>Title:</strong> Known Issues</li>
+      <li><strong>Description:</strong> New info on Multi-language support</li>
+      <li><strong>Link:</strong> <a href="https://beacon.support.brightcove.com/references/known-issues.html">https://beacon.support.brightcove.com/references/known-issues.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+      
+      <li><strong>Title:</strong> Using Live RTMP Outputs to Stream to Facebook and YouTube</li>
+      <li><strong>Description:</strong> ‘Documented new option to show finished RTMP outputs'</li>
+      <li><strong>Link:</strong> <a href="https://live.support.brightcove.com/live-module/using-live-rtmp-outputs-stream-facebook-and-youtube.html">https://live.support.brightcove.com/live-module/using-live-rtmp-outputs-stream-facebook-and-youtube.html</a></li>
+      <li style="margin-bottom: 1em;"><strong>Category:</strong> </li>
+      
+      
+    </ul>
+    
+    
+  </section>
+  
+</article>
+</div>
+<div class="col-sm-2 right-side-bar">
+  
+  <nav class="right-side-nav" id="right_side_nav">
+    <h6 class="toc">Page Contents</h6>
+    <ul id="in_page_nav" class="list-none"></ul>
+  </nav>
+  
+</div>
+</div>
+</div>
+
+<hr>
+<div class="last-updated">
+Page last updated on 01 Apr 2022
+</div>
+
+<div class="footer-container">
+  <footer class="bcls-footer" role="contentinfo">
+    <div class="row">
+      <div class="region region-footer-top-center col-md-12">
+        <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+          <img src="https://support.brightcove.com/site-assets/images/site/SVG/COVE004_Brightcove_Logo_093020_RGB_KO.svg" class="bc-footer-logo" alt="Brightcove">
+  
+          <h2>Brightcove Support</h2>
+  
+          <ul class="menu">
+            <li>
+              <a href="https://status.brightcove.com">System Status</a>
+            </li>
+            <li>
+              <a href="https://supportportal.brightcove.com">Contact Support</a>
+            </li>
+            <li>
+              <a href="https://support.brightcove.com/search.html">Search all Documentation</a>
+            </li>
+          </ul>
+  
+        </nav>
+        <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+  
+          <h2>Training</h2>
+  
+          <ul class="menu">
+            <li>
+              <a href="https://studio.support.brightcove.com/training/online-training-courses.html">Online Courses</a>
+            </li>
+            <li>
+              <a href="https://studio.support.brightcove.com/training/register-training.html">Register for a course</a>
+            </li>
+            <li>
+              <a href="https://university.brightcove.com/">Brightcove University</a>
+            </li>
+          </ul>
+  
+        </nav>
+        <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+  
+          <h2>Brightcove</h2>
+  
+          <ul class="menu">
+            <li>
+              <a href="https://www.brightcove.com">Brightcove.com</a>
+            </li>
+            <li>
+              <a href="https://supportportal.brightcove.com">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <div class="region region-footer-bottom-center col-md-12">
+        <div class="bcls-copyright footer-menu">
+          <table>
+            <tr>
+              <td>
+                <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> Brightcove Inc. All rights reserved.</div>
+              </td>
+              <td><a href="https://www.brightcove.com/en/legal/privacy">Privacy</a> | <a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></td>
+              <td>
+                <div class="gf-links-cols footer-menu">
+                  <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" target="_blank" class="gf-social-linkedin" style="margin-right: 1rem;"><i data-feather="linkedin" style="color:#8E9093;height: 1.25rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" target="_blank" class="gf-social-twitter" style="margin-right: 1rem;"><i data-feather="twitter" style="color:#8E9093;height: 1.25rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" target="_blank" class="gf-social-facebook"><i data-feather="facebook" style="color:#8E9093;height: 1.25rem;"></i></a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script translate="no">
+      
+  var searchBox = sajari.init({
+    mode: "search-box",
+    project: "1588255093746585379", // Set this to your project.
+    collection: "brightcove-documentation", // Set this to your collection.
+    instantPipeline: "autocomplete", // Pipeline used as you type
+    inputPlaceholder: "Search", // Input element placeholder
+    maxSuggestions: 5, // Maximum number of suggestions to show
+    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
+  });
+  
+    searchBox("sub", "pipeline.search-sent", function (_, query) {
+      window.location = "/search.html?q=" + encodeURIComponent(query.q);
+    });
+  
+
+</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/learning-paths/learning-paths.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/toc.js"></script>
+  <script src="/assets/js/sites_nav.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/bcls-utils.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/sajari-reindex.js"></script>
+  <script src="/assets/js/feedback.js"></script>
+  
+  <script src="/assets/js/sajari-search-foot.js"></script>
+  
+	<script translate="no">
+		feather.replace()
+	</script>
+  <!-- <script src="/assets/js/sajari-index.js"></script> -->
+  <style translate="no">
+    a.sj-paginator__page-number.sj-paginator__page-number--current.css-so0ov7 {
+      background-color: lightblue;
+    }
+    div.sj-tabs__tab {
+      margin-top: 3rem;
+      margin-left: .3rem;
+      border-top-left-radius: .4rem;
+      border-top-right-radius: .4rem;
+      background-color:#e8e8e8;
+    }
+
+    div.sj-tabs__tab.sj-tabs__tab--selected {
+      border-bottom-color: crimson;
+      background-color: #f8f8f8;
+    }
+
+    p.sj-results__result__description.css-p9jvyt {
+      font-size: 1rem;
+    }
+
+    .sj-result__text.css-31l7gp h3 {
+      color: navy;
+      font-size: 1.4rem;
+    }
+    </style>
+
+</body>
+
+</html>
