@@ -14,7 +14,7 @@ parent: home
         {% for doc in type.docs %}
           {% if doc.Product == 'Video Cloud'  %}
             {% if doc.Product_Update == 'true' %}
-              <h4 id="{{ doc.Feature }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
+              <h4 id="{{ doc.Feature | replace: " ", "_" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
               <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
               <p><strong>Date:</strong> {{ item.date }}</p>
               <p><strong>Description:</strong> {{ doc.Description }}</p>
@@ -34,7 +34,7 @@ parent: home
         {% for doc in type.docs %}
           {% if doc.Product == 'Live'  %}
             {% if doc.Product_Update == 'true' %}
-              <h4 id="{{ doc.Feature }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
+              <h4 id="{{ doc.Feature | replace: " ", "_" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
               <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
               <p><strong>Date:</strong> {{ item.date }}</p>
               <p><strong>Description:</strong> {{ doc.Description }}</p>
@@ -54,7 +54,7 @@ parent: home
         {% for doc in type.docs %}
           {% if doc.Product == 'Beacon'  %}
             {% if doc.Product_Update == 'true' %}
-              <h4 id="{{ doc.Feature }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
+              <h4 id="{{ doc.Feature | replace: " ", "_" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
               <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
               <p><strong>Date:</strong> {{ item.date }}</p>
               <p><strong>Description:</strong> {{ doc.Description }}</p>
@@ -74,7 +74,7 @@ parent: home
         {% for doc in type.docs %}
           {% if doc.Product == 'CorpTV'  %}
             {% if doc.Product_Update == 'true' %}
-              <h4 id="{{ doc.Feature }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
+              <h4 id="{{ doc.Feature | replace: " ", "_" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
               <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
               <p><strong>Date:</strong> {{ item.date }}</p>
               <p><strong>Description:</strong> {{ doc.Description }}</p>
@@ -94,7 +94,7 @@ parent: home
         {% for doc in type.docs %}
           {% if doc.Product == 'Audience Insights'  %}
             {% if doc.Product_Update == 'true' %}
-              <h4 id="{{ doc.Feature }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
+              <h4 id="{{ doc.Feature | replace: " ", "_" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
               <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
               <p><strong>Date:</strong> {{ item.date }}</p>
               <p><strong>Description:</strong> {{ doc.Description }}</p>
@@ -114,7 +114,7 @@ parent: home
         {% for doc in type.docs %}
           {% if doc.Product == 'SSAI'  %}
             {% if doc.Product_Update == 'true' %}
-              <h4 id="{{ doc.Feature }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
+              <h4 id="{{ doc.Feature | replace: " ", "_" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
               <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
               <p><strong>Date:</strong> {{ item.date }}</p>
               <p><strong>Description:</strong> {{ doc.Description }}</p>
@@ -134,7 +134,7 @@ parent: home
         {% for doc in type.docs %}
           {% if doc.Product == 'Zencoder'  %}
             {% if doc.Product_Update == 'true' %}
-              <h4 id="{{ doc.Feature }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
+              <h4 id="{{ doc.Feature | replace: " ", "_" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
               <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
               <p><strong>Date:</strong> {{ item.date }}</p>
               <p><strong>Description:</strong> {{ doc.Description }}</p>
