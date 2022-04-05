@@ -1,11 +1,11 @@
-- date: 1-April-2022
+- date: 8-April-2022
   types:
     - type: New Docs
       docs:
         - Title: ''
           Description: ''
           Link: 
-          Product: Video Cloud | Live | Beacon | SSAI | Zencoder
+          Product: Video Cloud | Live | Beacon | SSAI | Zencoder | CorpTV | Audience Insights
           Product_area: 
           Product_Update: 'true | false'
           Feature: '(leave blank if Product_Update is false)'
@@ -15,7 +15,7 @@
         - Title: ''
           Description: ''
           Link: 
-          Product: Video Cloud | Live | Beacon | SSAI | Zencoder
+          Product: Video Cloud | Live | Beacon | SSAI | Zencoder | CorpTV | Audience Insights
           Product_area: 
           Product_Update: 'true | false'
           Feature: '(leave blank if Product_Update is false)'
@@ -25,7 +25,7 @@
         - Title: ''
           Description: ''
           Link: 
-          Product: Video Cloud | Live | Beacon | SSAI | Zencoder
+          Product: Video Cloud | Live | Beacon | SSAI | Zencoder | CorpTV | Audience Insights
           Product_area: 
           Product_Update: 'true | false'
           Feature: '(leave blank if Product_Update is false)'
