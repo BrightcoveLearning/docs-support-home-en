@@ -1,186 +1,196 @@
-- date: 1-April-2022
+- date: 8-April-2022
   types:
     - type: New Docs
       docs:
-        - Title: 'Engagement: Usage trends'
-          Description: 'In this topic, you will learn about engagement usage trends audience insight data. These metrics will improve customer visibility and help guide company decisions.'
-          Link: https://audience-insights.support.brightcove.com/guides/engagement/engagement-usage-trends.html
-          Product: Video Cloud
-          Product_area: Audience Insights
+        - Title: 'Engagement: Status Over Time'
+          Description: 'In this topic, you will learn about engagement status over time Audience Insights data. These metrics will improve customer visibility and help guide company decisions.'
+          Link: https://audience-insights.support.brightcove.com/guides/engagement/engagement-status-over-time.html
+          Product: Audience Insights
+          Product_area: Engagement
           Product_Update: 'false'
           Feature: ''
-          Status: Staging
-        - Title: 'Engagement: Overview'
-          Description: 'In this topic, you will learn about the Engagement Audience Insights scorecard.'
-          Link: https://audience-insights.support.brightcove.com/guides/engagement/engagement-overview.html
-          Product: Video Cloud
-          Product_area: Audience Insights
+          Status: Released
+        - Title: 'Engagement: Hours Viewed By'
+          Description: 'In this topic, you will learn about engagement hours viewed by Audience Insights data. These metrics help obtain data related to the hours viewed for users.'
+          Link: https://audience-insights.support.brightcove.com/guides/engagement/engagement-hours-viewed-by.html
+          Product: Audience Insights
+          Product_area: Engagement
           Product_Update: 'false'
           Feature: ''
-          Status: Staging
-        - Title: 'Brightcove Audience Insights Documentation'
-          Description: 'Brightcove Audience Insights provides deep insights into your viewers to help you run your business effectively'
-          Link: https://audience-insights.support.brightcove.com/     
-          Product: Video Cloud
-          Product_area: Audience Insights
-          Product_Update: 'true'
-          Feature: 'Brightcove Audience Insights - initial documentation release'
           Status: Released
-        - Title: 'Exporting Registered User Data'
-          Description: 'In this topic, you will learn how to export registered user data into a CSV file.'
-          Link: https://beacon-help.support.brightcove.com/registered-users/export-registered-users.html 
-          Product: Beacon
-          Product_area: Registered Users
-          Product_Update: ' false'
+        - Title: 'Managing Slates'
+          Description: 'Enhancements to slates for Cloud PLayout channels'
+          Link: https://studio.support.brightcove.com/cloud-playout/managing-slates.html
+          Product: Video Cloud
+          Product_area: Cloud Playout
+          Product_Update: 'true'
+          Feature: 'Slates for Cloud Playout channels'
+          Status: Released
+        - Title: 'Setting a Hard Start for a Channel'
+          Description: 'Set the exact time for channel content playback to begin, and fill time before that with a slate asset'
+          Link: https://studio.support.brightcove.com/cloud-playout/hard-start.html
+          Product: Video Cloud
+          Product_area: Cloud Playout
+          Product_Update: 'true'
+          Feature: 'Set hard start time for channel content playback'
+          Status: Released
+        - Title: 'Current Customers'
+          Description: 'In this topic, you will learn about Audience Insight data for your current customers.'
+          Link: https://audience-insights.support.brightcove.com/guides/customers/current-customers.html
+          Product: Audience Insights
+          Product_area: Insights Dashboard
+          Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Creating Audio-Only Live Events'
-          Description: 'In this topic, you will learn how to create audio-only live streams'
-          Link: https://live.support.brightcove.com/live-module/audio-only-live-events.html 
-          Product: Live
-          Product_area: Audio Only
-          Product_Update: 'true'
-          Feature: 'Audio-Only Live Streams'
+        - Title: 'Conversions'
+          Description: 'In this topic, you will learn about Audience Insight data for converted subscribers.'
+          Link: https://audience-insights.support.brightcove.com/guides/conversions/conversions.html 
+          Product: Audience Insights
+          Product_area: Insights Dashboard
+          Product_Update: 'false'
+          Feature: ''
           Status: Released
+
 
     - type: Major updates
       docs:
-      - Title: 'Integration Spotlight: Evergent'
-        Description: 'This integration allows importing registration, subscription, and payment data.'
-        Link: https://audience-insights.support.brightcove.com/integration/integration_spotlight_evergent.html
-        Product: Video Cloud
-        Product_area: Audience Insight
-        Product_Update: 'false'
-        Feature: ''
-        Status: Released
-      - Title: 'Integration Spotlight: Hubspot'
-        Description: 'This integration allows exporting subscriber cohorts from our Scorecard directly into Hubspot’s.'
-        Link: https://audience-insights.support.brightcove.com/integration/integration_spotlight_hubspot.html
-        Product: Video Cloud
-        Product_area: Audience Insight
-        Product_Update: 'false'
-        Feature: ''
-        Status: Released
-      - Title: 'Integration Spotlight: Vimeo'
-        Description: 'This integration allows importing Vimeo OTT video metadata, view data, subscriber data, and revenue events.'
-        Link: https://audience-insights.support.brightcove.com/integration/integration_spotlight_vimeo.html
-        Product: Video Cloud
-        Product_area: Audience Insight
-        Product_Update: 'false'
-        Feature: ''
-        Status: Released
-      - Title: 'Key Metric: Free Trial Conversion Percent'
-        Description: 'In this topic, you will learn about the Free Trial Conversion Percent metric and a short explanation of the data shown.'
-        Link: https://audience-insights.support.brightcove.com/insights/free_trial_conversion_percent.html
-        Product: Video Cloud
-        Product_area: Audience Insight
-        Product_Update: 'false'
-        Feature: ''
-        Status: Released
-      - Title: 'Key Metric: Paid Churn Percent'
-        Description: 'In this topic, you will learn about the Paid Churn Percent metric with a short explanation of the data shown.'
-        Link: https://audience-insights.support.brightcove.com/insights/key_metric_paid_churn_percent.html
-        Product: Video Cloud
-        Product_area: Audience Insight
-        Product_Update: 'false'
-        Feature: ''
-        Status: Released
-      - Title: 'Key Metric: Average Hours Streamed'
-        Description: 'In this topic, you will learn about the Average Hours Streamed metric with a short explanation of the data shown.'
-        Link: https://audience-insights.support.brightcove.com/insights/key_metric_average_hours_streamed.html
-        Product: Video Cloud
-        Product_area: Audience Insight
-        Product_Update: 'false'
-        Feature: ''
-        Status: Released
-      - Title: 'Key Metric: Avg Unique Days Streamed'
-        Description: 'In this topic, you will learn about the Paid Churn Percent metric with a short explanation of the data shown.'
-        Link: https://audience-insights.support.brightcove.com/insights/key_metric_avg_unique_days_streamed.html
-        Product: Video Cloud
-        Product_area: Audience Insight
-        Product_Update: 'false'
-        Feature: ''
-        Status: Released
-      - Title: 'Overview: CMS API'
-        Description: 'Updated Notifications section for notification of master video asset changes for affiliate accounts'
-        Link: https://apis.support.brightcove.com/cms/getting-started/overview-cms-api.html#Notifications
-        Product: Video Cloud
-        Product_area: CMS API
-        Product_Update: 'false'
-        Feature: ''
-        Status: Released        
-      - Title: 'Working with Registered Users'
-        Description: 'Moved export functionality to new document'
-        Link: https://beacon-help.support.brightcove.com/registered-users/working-with-registered-users.html  
-        Product: Beacon
-        Product_area: Registered Users
-        Product_Update: 'false'
-        Feature: ''
-        Status: Released
-      - Title: 'Live API Reference'
-        Description: 'Added properties for audio-only live streams'
-        Link: https://apis.support.brightcove.com/live-api/references/reference.html 
-        Product: Live
-        Product_area: Audio Only
-        Product_Update: 'false'
-        Feature: ''
-        Status: Released
+        - Title: 'Overview: Channels API'
+          Description: 'Add operations for managing slate assets'
+          Link: https://apis.support.brightcove.com/cloud-playout-apis/getting-started/overview-channel-api.html
+          Product: Video Cloud
+          Product_area: Cloud Playout Channels API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Cloud Playout Channel Manager API Reference'
+          Description: 'Add operations for managing slate assets'
+          Link: https://apis.support.brightcove.com/cloud-playout-apis/references/reference-channels.html
+          Product: Video Cloud
+          Product_area: Cloud Playout Channels API
+          Product_Update: 'true'
+          Feature: 'Slate asset management'
+          Status: Released
+        - Title: 'Getting Started with Brightcove Video Connect for the WordPress CMS'
+          Description: 'New release - the documentation now points to releases and documentation on the GitHub repo'
+          Link: https://integrations.support.brightcove.com/wordpress/getting-started-brightcove-video-connect-wordpress-cms.html
+          Product: Video Cloud
+          Product_area: Word Press Connector
+          Product_Update: 'true'
+          Feature: 'New Release'
+          Status: Released
+        - Title: 'Creating Audio-Only Live Events'
+          Description: 'Added note that audio-only streams can only be defined when you create them and updated screenshots'
+          Link: https://live.support.brightcove.com/live-module/audio-only-live-events.html 
+          Product: Live
+          Product_area: Audio Only
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for iOS'
+          Description: 'Updated for SDK release 6.10.4'
+          Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html 
+          Product: Video Cloud
+          Product_area: Native SDKs
+          Product_Update: 'true'
+          Feature: 'iOS/tvOS SDK release 6.10.4'
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for tvOS'
+          Description: 'Updated for SDK release 6.10.4'
+          Link: https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html 
+          Product: Video Cloud
+          Product_area: Native SDKs
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+
 
     - type: Minor updates
       docs:
-        - Title: 'Getting Access Tokens'
-          Description: 'Images updated'
-          Link: https://apis.support.brightcove.com/oauth/guides/getting-access-tokens.html#implementation
+        - Title: 'Overview: Ingest Profiles API'
+          Description: 'URLs fixed'
+          Link: https://apis.support.brightcove.com/ingest-profiles/getting-started/overview-ingest-profiles-api-dynamic-delivery-context-aware-encoding.html#watermarks
           Product: Video Cloud 
-          Product_area: OAuth API
+          Product_area: Ingest Profiles API
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Live API Reference (1.0.0)'
-          Description: 'live_dvr_sliding_window_duration field default value updated'
+        - Title: 'Live API Reference'
+          Description: 'Added notes that audio only must be set when the job is created'
           Link: https://apis.support.brightcove.com/live-api/references/reference.html
-          Product: Live 
-          Product_area: Live API
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Implementing Server-Side Ads with Brightcove Player'
-          Description: 'Note added to code sample section'
-          Link: https://player.support.brightcove.com/plugins/implementing-server-side-ads-brightcove-player.html#Player_example
-          Product: Video Cloud 
-          Product_area: Brightcove Player
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating and Managing Live Events using the Live Module'
-          Description: 'Updated a note to indicate that 2 sets of 608 captions can be included in Live jobs'
-          Link: https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#captions
           Product: Live
-          Product_area: Live captions
+          Product_area: Audio only jobs
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Images and Their Specifications'
-          Description: 'Added more info on Hero image'
-          Link: https://beacon.support.brightcove.com/references/image-requirements.html
+        - Title: 'SSAI Performance Analytics'
+          Description: 'Updated note about latency time'
+          Link: https://studio.support.brightcove.com/analytics/ssai-performance-data.html  
+          Product: SSAI
+          Product_area: SSAI Performance
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Display Error Messages Plugin'
+          Description: 'Added section on listening for errors'
+          Link: https://player.support.brightcove.com/plugins/display-error-messages-plugin.html#getAll_method
+          Product: Brightcove Player
+          Product_area: Error Handling
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Sizing the Player'
+          Description: 'Code and verbiage updates'
+          Link: https://player.support.brightcove.com/styling/sizing-player.html
+          Product: Brightcove Player
+          Product_area: Styling
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Responsive Sizing for Brightcove Player'
+          Description: 'Code and screenshot updates'
+          Link: https://player.support.brightcove.com/styling/responsive-sizing-brightcove-player.html
+          Product: Brightcove Player
+          Product_area: Styling
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Beacon Product Release Notes'
+          Description: 'Live DRM Supported on Samsung TV'
+          Link: https://beacon.support.brightcove.com/references/product-updates.html
           Product: Beacon
-          Product_area: Page Layouts
+          Product_area: https://player.support.brightcove.com/plugins/display-error-messages-plugin.html
+          Product_Update: 'true'
+          Feature: 'Live DRM Supported on Samsung TV'
+          Status: Released
+        - Title: 'Step-by-Step: Implementing Advertising'
+          Description: 'Updated code, screenshots and content'
+          Link: https://player.support.brightcove.com/advertising/step-step-implementing-advertising.html
+          Product: Brightcove Player
+          Product_area: Advertising'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Learning Guide: Using the REST APIs'
-          Description: 'Expanded intro section'
-          Link: https://player.support.brightcove.com/getting-started/learning-guide-using-rest-apis.html
-          Product: REST APIs
-          Product_area: Video Cloud
+        - Title: 'Assigning a Video to the Player Programmatically'
+          Description: 'All code updated'
+          Link: https://player.support.brightcove.com/publish/assigning-video-player-programmatically.html
+          Product: Brightcove Player
+          Product_area: Publishing Videos
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Player Configuration Guide'
+          Description: 'Updated, added and removed options for current Brightcove Player. Changes also reflected in the docs Available Options for the Standard (iframe) Embed Code & Available Options for the Advanced (in-page) Embed Code'
+          Link: https://player.support.brightcove.com/general/player-configuration-guide.html
+          Product: Brightcove Player
+          Product_area: Player Configuration
           Product_Update: 'false'
           Feature: ''
           Status: Released
         - Title: 'Choosing the Correct Embed Code'
-          Description: 'Note Added to the Iframe Embed Code'
-          Link: https://studio.support.brightcove.com/publish/choosing-correct-embed-code.html
-          Product: Video Cloud
-          Product_area: Publishing Videos Players
+          Description: 'Code and screenshot updated'
+          Link: https://player.support.brightcove.com/publish/choosing-correct-embed-code.html
+          Product: Brightcove Player
+          Product_area: Publishing Players
           Product_Update: 'false'
-          Feature:
+          Feature: ''
           Status: Released
