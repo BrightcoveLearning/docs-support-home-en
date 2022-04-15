@@ -687,11 +687,11 @@
         }
         
         pre,
-        pre[class*="language-"],
+        pre[class="line-numbers"],
         .bcls-code {
             background-color: rgb(245, 245, 245);
             font-family: 'Source Code Pro', monospace;
-            font-size: 1rem;
+            font-size: 1.1rem;
             margin-bottom: 1.3rem;
             padding: .5rem;
             padding-left: 1rem;
