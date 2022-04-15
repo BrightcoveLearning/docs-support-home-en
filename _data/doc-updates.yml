@@ -1,3 +1,219 @@
+- date: 15-April-2022
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'Engagement: Sessions Over Time'
+          Description: In this topic, you will learn about engagement sessions over time through the Audience Insights data. These metrics will help obtain data related to the sessions over time, broken down by engagement status.'
+          Link: https://audience-insights.support.brightcove.com/guides/engagement/engagement-sessions-over-time.html
+          Product: Audience Insights
+          Product_area: Engagement
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Content: Overview'
+          Description: 'In this topic, you will learn about the Content Audience Insights scorecard.'
+          Link: https://audience-insights.support.brightcove.com/guides/content/content-overview.html
+          Product: Audience Insights
+          Product_area: Content
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Audience Insights: Distribution'
+          Description: 'In this topic, you will learn about Audience Insight data for the distribution of third-party subscriptions.'
+          Link: https://audience-insights.support.brightcove.com/guides/distribution/distribution.html
+          Product: Audience Insights
+          Product_area: Distribution by Store
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'OTT Syndication Templates'
+          Description: 'Templates used for OTT syndication, meant to be used as a reference and models for building custom templates'
+          Link: https://apis.support.brightcove.com/ott-syndication/getting-started/templates.html
+          Product: Beacon
+          Product_area: OTT Syndication and Universal Search
+          Product_Update: 'false'
+          Feature: 'Sample template for Google Sitemaps'
+          Status: Staging
+        - Title: 'Managing Slates'
+          Description: 'Enhancements to slates for Cloud PLayout channels'
+          Link: https://studio.support.brightcove.com/cloud-playout/managing-slates.html
+          Product: Beacon
+          Product_area: Cloud Playout
+          Product_Update: 'true'
+          Feature: 'Slates for Cloud Playout channels'
+          Status: Released
+        - Title: 'Setting a Hard Start for a Channel'
+          Description: 'Set the exact time for channel content playback to begin, and fill time before that with a slate asset'
+          Link: https://studio.support.brightcove.com/cloud-playout/hard-start.html
+          Product: Beacon
+          Product_area: Cloud Playout
+          Product_Update: 'true'
+          Feature: 'Set hard start time for channel content playback'
+          Status: Released
+    - type: Major updates
+      docs:
+        - Title: 'Concepts: The JavaScript Module Design Pattern'
+          Description: 'A new section was created related to JavaScript variable declaration'
+          Link: https://general.support.brightcove.com/developer/concepts-javascript-module-design-pattern.html#Using_JavaScript_variables
+          Product: Video Cloud
+          Product_area: Developers
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove CMS API Reference (1.0.0)'
+          Description: 'Get playlists sort parameters updated'
+          Link: https://apis.support.brightcove.com/cms/references/reference.html#tag/Playlists
+          Product: Video Cloud
+          Product_area: CMS API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: China Delivery'
+          Description: 'Added diagram and FAQ section'
+          Link: https://studio.support.brightcove.com/general/china-delivery-overview.html 
+          Product: Video Cloud
+          Product_area: China Delivery
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'AMP and Advertising'
+          Description: 'Restructured document and clarified info on using macros'
+          Link: https://player.support.brightcove.com/amp/amp-and-advertising.html
+          Product: Brightcove Player
+          Product_area: AMP
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: OTT Syndication API'
+          Description: 'Several new operations and fields added'
+          Link: https://apis.support.brightcove.com/ott-syndication/getting-started/ott-syndication-api-overview.html
+          Product: Beacon 
+          Product_area: OTT Syndication API
+          Product_Update: 'true'
+          Feature: 'Operations for stored jobs and handling of viewer restrictions'
+          Status: Staging
+        - Title: 'OTT Syndication API Reference'
+          Description: 'Several new operations and fields added'
+          Link: https://apis.support.brightcove.com/ott-syndication/references/reference.html
+          Product: Beacon 
+          Product_area: OTT Syndication API
+          Product_Update: 'false'
+          Feature: 'Operations for stored jobs and handling of viewer restrictions'
+          Status: Staging
+        - Title: 'Dynamic Ingest API Reference'
+          Description: 'Updated srclang field for text tracks to indicate that we validate again BCP 47 rather than ISO 639 and that both language code such as es and language-region codes such as es-MX are supported'
+          Link: https://apis.support.brightcove.com/ott-syndication/references/reference.html
+          Product: Video Cloud 
+          Product_area: Dynamic Ingest API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Content Security (DRM) with the Native SDKs'
+          Description: 'Added Android support for HLS with Widevine Modular'
+          Link: https://sdks.support.brightcove.com/features/content-security-drm-native-player-sdks.html 
+          Product: Video Cloud
+          Product_area: Native SDKs
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Digital Rights Management (DRM) in Video Cloud'
+          Description: 'Added Android support for HLS with Widevine Modular (VOD)'
+          Link: https://studio.support.brightcove.com/general/overview-digital-rights-management-drm-video-cloud.html 
+          Product: Video Cloud
+          Product_area: DRM
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'CAE Guide'
+          Description: 'Removed reference to deprecated tuning field'
+          Link: https://zencoder.support.brightcove.com/encoding-guides/cae-guide.html
+          Product: Zencoder
+          Product_area: Encoding settings
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'H.264 Advanced Guide'
+          Description: 'Removed reference to deprecated tuning field'
+          Link: https://zencoder.support.brightcove.com/encoding-guides/h264-advanced-guide.html
+          Product: Zencoder
+          Product_area: Encoding settings
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'HEVC/H.265 Guide'
+          Description: 'Removed reference to deprecated tuning field'
+          Link: https://zencoder.support.brightcove.com/encoding-guides/hevch265-guide.html
+          Product: Zencoder
+          Product_area: Encoding settings
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'H.264 Settings'
+          Description: 'Removed reference to deprecated tuning field'
+          Link: https://zencoder.support.brightcove.com/encoding-settings/formats-codecs/encoding-settings-h264.html
+          Product: Zencoder
+          Product_area: Encoding settings
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'CAE Settings'
+          Description: 'Removed reference to deprecated tuning field'
+          Link: https://zencoder.support.brightcove.com/encoding-settings/general/cae-settings.html
+          Product: Zencoder
+          Product_area: Encoding settings
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Encoding Settings'
+          Description: 'Removed reference to deprecated tuning field'
+          Link: https://zencoder.support.brightcove.com/encoding-settings/quick-reference.html
+          Product: Zencoder
+          Product_area: Encoding settings
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Zencoder API Reference'
+          Description: 'Removed reference to deprecated tuning field'
+          Link: https://zencoder.support.brightcove.com/references/reference.html
+          Product: Zencoder
+          Product_area: Encoding settings
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Dolby Atmos Audio'
+          Description: 'Added detailed steps for creating the custom ingest profile and removed a requirement that is not anymore'
+          Link: https://apis.support.brightcove.com/ingest-profiles/guides/dolby-atmos-audio.html#implementing_dolby_atmos_passthrough
+          Product: Video Cloud
+          Product_area: Ingestion
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'CMS API: Video Search v2'
+          Description: 'Added notes that the NOW operator and date ranges using .. (including open ended ranges) are not supported in this version, and also notes on how non-alphanumeric characters in search strings are treated.'
+          Link: https://apis.support.brightcove.com/ingest-profiles/guides/dolby-atmos-audio.html#implementing_dolby_atmos_passthrough
+          Product: Video Cloud
+          Product_area: CMS API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'CMS/Playback API: Videos Search v1'
+          Description: 'Added notes on ignored words and how non-alphanumeric characters in search strings are treated.'
+          Link: https://apis.support.brightcove.com/cms/searching/cmsplayback-api-videos-search.html
+          Product: Video Cloud
+          Product_area: CMS API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'How to Search for Videos and Playlists in the Media Module'
+          Description: 'Added notes on ignored words and how non-alphanumeric characters in search strings are treated.'
+          Link: https://studio.support.brightcove.com/media/how-search-videos-and-playlists-media-module.html
+          Product: Video Cloud
+          Product_area: Media Module
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
 - date: 8-April-2022
   types:
     - type: New Docs
