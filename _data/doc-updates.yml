@@ -36,7 +36,7 @@
           Status: Staging
         - Title: 'Managing Slates'
           Description: 'Enhancements to slates for Cloud PLayout channels'
-          Link: https://studio.support.brightcove.com/cloud-playout/managing-slates.html
+          Link: https://beacon-help.support.brightcove.com/cloud-playout/managing-slates.html
           Product: Beacon
           Product_area: Cloud Playout
           Product_Update: 'true'
@@ -44,8 +44,24 @@
           Status: Released
         - Title: 'Setting a Hard Start for a Channel'
           Description: 'Set the exact time for channel content playback to begin, and fill time before that with a slate asset'
-          Link: https://studio.support.brightcove.com/cloud-playout/hard-start.html
+          Link: https://beacon-help.support.brightcove.com/cloud-playout/hard-start.html
           Product: Beacon
+          Product_area: Cloud Playout
+          Product_Update: 'true'
+          Feature: 'Set hard start time for channel content playback'
+          Status: Released
+        - Title: 'Managing Slates'
+          Description: 'Enhancements to slates for Cloud PLayout channels'
+          Link: https://corptv.support.brightcove.com/cloud-playout/managing-slates.html
+          Product: CorpTV
+          Product_area: Cloud Playout
+          Product_Update: 'true'
+          Feature: 'Slates for Cloud Playout channels'
+          Status: Released
+        - Title: 'Setting a Hard Start for a Channel'
+          Description: 'Set the exact time for channel content playback to begin, and fill time before that with a slate asset'
+          Link: https://corptv.support.brightcove.com/cloud-playout/hard-start.html
+          Product: CorpTV
           Product_area: Cloud Playout
           Product_Update: 'true'
           Feature: 'Set hard start time for channel content playback'
