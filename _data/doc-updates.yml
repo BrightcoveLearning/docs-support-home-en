@@ -1,3 +1,106 @@
+- date: 22-April-2022
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'Content: Popular Content By'
+          Description: 'In this topic, you will learn about the popular content metrics listed in the Audience Insights data. These metrics will help you filter the popular content among your subscribers, allowing you to have a more detailed view of the trending content.'
+          Link: https://audience-insights.support.brightcove.com/guides/content/content-pupular-content-by.html
+          Product: Audience Insights
+          Product_area: Content
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Content: Catalog and Explorer By'
+          Description: 'In this topic, you will learn about the content catalog and content explorer metrics listed in the Audience Insights data. These metrics allows you to see really big pictures, as well as incredibly detailed views of your content consumption.'
+          Link: https://audience-insights.support.brightcove.com/guides/content/content-catalog-by.html
+          Product: Audience Insights
+          Product_area: Content
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Offline Playback with Brightcove Beacon Apps'
+          Description: 'In this topic, you will learn how to enable and use Offline Playback with your Brightcove Beacon apps.'
+          Link: https://beacon-help.support.brightcove.com/media/offline-playback-beacon.html 
+          Product: Beacon
+          Product_area: Offline Playback
+          Product_Update: 'true'
+          Feature: 'Offline Playback with Beacon Apps'
+          Status: Released
+        - Title: 'Integration Spotlight: Braze'
+          Description: 'This integration allows you to automate customer contact.'
+          Link: https://audience-insights.support.brightcove.com/integration/integration_spotlight_braze.html  
+          Product: Audience Insights
+          Product_area: Integration
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Major updates
+      docs:
+        - Title: 'Playback Restrictions with Live events using Studio'
+          Description: 'Added AES-128 and DRM details'
+          Link: https://live.support.brightcove.com/live-module/playback-restrictions-live-module.html#Create_a_live_event_with_Playback_Restrictions 
+          Product: Live
+          Product_area: Playback Restrictions
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Live DRM'
+          Description: 'Added DRM details'
+          Link: https://live.support.brightcove.com/general/live-drm.html  
+          Product: Live
+          Product_area: DRM
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Overview: Policy API'
+          Description: 'Image and code fixed'
+          Link: https://apis.support.brightcove.com/policy/getting-started/overview-policy-api.html#Authentication
+          Product: Video Cloud
+          Product_area: Policy API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Working with Remote Asset Videos'
+          Description: 'New limitation added'
+          Link: https://studio.support.brightcove.com/media/working-remote-asset-videos.html#limitations
+          Product: Video Cloud
+          Product_area: Media
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Working with Remote Asset Videos'
+          Description: 'Note added with information about live remote asset type'
+          Link: https://studio.support.brightcove.com/media/working-remote-asset-videos.html#create
+          Product: Video Cloud
+          Product_area: Media
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Remote Assets'
+          Description: 'Note added with information about live remote asset type'
+          Link: https://apis.support.brightcove.com/cms/managing-videos/using-cms-api-remote-assets.html#Replace_remote_with_VOD
+          Product: Video Cloud
+          Product_area: CMS API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Campaign Fields and Data Definitions'
+          Description: 'Clarification to the Optional field tracking section'
+          Link: https://studio.support.brightcove.com/campaign/general/campaign-fields-and-data-definitions.html#custom
+          Product: Video Cloud
+          Product_area: Campaign
+          Product_Update: 'false'
+          Feature: ''
+        - Title: 'Integrating Campaign with Single Sign-On'
+          Description: 'Added note to clarify that lead forms are not supported'
+          Link: https://studio.support.brightcove.com/campaign/integrations/non-map/integrating-campaign-single-sign.html
+          Product: Video Cloud
+          Product_area: Campaign
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
 - date: 15-April-2022
   types:
     - type: New Docs
