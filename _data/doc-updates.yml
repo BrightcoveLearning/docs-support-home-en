@@ -418,7 +418,7 @@
           Product_area: Audio Only
           Product_Update: 'false'
           Feature: ''
-          Status: Released
+          Status: Staging
         - Title: 'Overview: Brightcove Native SDK for iOS'
           Description: 'Updated for SDK release 6.10.4'
           Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html 
@@ -566,9 +566,9 @@
           Link: https://live.support.brightcove.com/live-module/audio-only-live-events.html
           Product: Live
           Product_area: Audio Only
-          Product_Update: 'true'
-          Feature: 'Audio-Only Live Streams'
-          Status: Released
+          Product_Update: 'false'
+          Feature: ''
+          Status: Staging
     - type: Major updates
       docs:
         - Title: 'Integration Spotlight: Evergent'
@@ -650,7 +650,7 @@
           Product_area: Audio Only
           Product_Update: 'false'
           Feature: ''
-          Status: Released
+          Status: Staging
     - type: Minor updates
       docs:
         - Title: 'Getting Access Tokens'
