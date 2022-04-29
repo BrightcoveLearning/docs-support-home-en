@@ -1,3 +1,139 @@
+- date: 29-April-2022
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'Audio Only with Brightcove Player'
+          Description: 'In this topic, you will learn how to use Brightcove Player with audio-only assets.'
+          Link: https://player.support.brightcove.com/playback/audio-only-player.html 
+          Product: Brightcove Player
+          Product_area: Audio only
+          Product_Update: 'true'
+          Feature: 'Audio only playback'
+          Status: Released
+        - Title: 'Content: Trial Drivers and Library Breakdown'
+          Description: 'In this topic, you will learn about the trial drivers and library breakdown metrics included in the Audience Insights data. These metrics will help you filter how engaged are new trial users with your content and also provide details about your library comsuption.'
+          Link: https://audience-insights.support.brightcove.com/guides/content/content-trial-drivers-library.html
+          Product: Audience Insights
+          Product_area: Content
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Major updates
+      docs:
+        - Title: 'Brightcove Player Sample: Audio Player Simulated'
+          Description: 'Added note and link to new Audio only player feature'
+          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-audio-player-simulated.html 
+          Product: Brightcove Player
+          Product_area: Audio only
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Player Sample: Audio-Only'
+          Description: 'Added note and link to new Audio only player feature'
+          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-audio-only.html 
+          Product: Brightcove Player
+          Product_area: Audio only
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Player Configuration Guide'
+          Description: 'Added audio only section in player configuration'
+          Link: https://player.support.brightcove.com/general/player-configuration-guide.html#configproperties  
+          Product: Brightcove Player
+          Product_area: Audio only
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Live API Reference'
+          Description: 'Added input parameters for Get Redundant Groups'
+          Link: https://apis.support.brightcove.com/live-api/references/reference.html#operation/GetRedundantGroups  
+          Product: Live
+          Product_area: Redundant Groups
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Playback Restrictions with Brightcove Player'
+          Description: 'Changed JSON Policy Key value to "none"'
+          Link: https://player.support.brightcove.com/playback/playback-restrictions-with-bcp.html   
+          Product: Brightcove Player
+          Product_area: Playback Restrictions
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Live API Reference'
+          Description: 'Removed ad_configuration_transforms from schema'
+          Link: https://apis.support.brightcove.com/live-api/references/reference.html#tag/SSAI    
+          Product: Live
+          Product_area: SSAI
+          Product_Update: 'true'
+          Feature: 'Deprecation of XSLT in Live SSAI Ad Configs'
+          Status: Released
+        - Title: 'Brightcove Live API: Server-Side Ad Insertion (SSAI)'
+          Description: 'Removed ad_configuration_transforms from samples'
+          Link: https://apis.support.brightcove.com/live-api/ssai/live-api-server-side-ad-insertion-ssai.html     
+          Product: Live
+          Product_area: SSAI
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Generic Stream Concurrency'
+          Description: 'Updated Correlator identifier examples'
+          Link: https://apis.support.brightcove.com/playback-restrictions/guides/generic-stream-concurrency.html#Implementation      
+          Product: Video Cloud
+          Product_area: Playback Restrictions
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Brightcove Player Sample: Dynamic Call to Action'
+          Description: 'Update plugins text'
+          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-dynamic-call-action.html#Player/HTML_configuration
+          Product: Brightcove Player
+          Product_area: Code Samples
+          Product_Update:  false
+          Feature: ''
+          Status: Released 
+        - Title: 'When to Use Beacon Studio and/or Beacon Classic'
+          Description: 'Update video about when to use Beacon Studio and/or Beacon Classic'
+          Link: https://studio.brightcove.com/products/videocloud/media/videos/1701556589868991001
+          Product: Video Cloud
+          Product_area: Media
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Customizing the Appearance and Behavior of a Portal Experience'
+          Description: 'Custom CSS and JavaScript files can now be uploaded as part of the Portal settings'
+          Link: https://gallery.support.brightcove.com/experiences/portal/customizing-appearance-and-behavior-portal-experience.html#custom
+          Product: Gallery
+          Product_area: 
+          Product_Update: 'true'
+          Feature: 'Custom CSS and JavaScript files can now be uploaded'
+          Status: Released
+        - Title: 'Uploading Videos Using Remote URLs'
+          Description: 'Dropbox URLs note added with info about spaces'
+          Link: https://studio.support.brightcove.com/media/uploading-videos-remote-urls.html#dropbox
+          Product: Video Cloud 
+          Product_area: Upload
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Configuring Player Controls'
+          Description: 'Note added about rates not supported in Safari'
+          Link: https://studio.support.brightcove.com/players/configuring-player-controls.html#rates
+          Product: Video Cloud 
+          Product_area: Player
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Social API'
+          Description: 'Note added about operations needed to request client credentials'
+          Link: https://apis.support.brightcove.com/social/getting-started/overview-social-api.html#authentication
+          Product: Video Cloud 
+          Product_area: Social API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
 - date: 22-April-2022
   types:
     - type: New Docs
