@@ -1,3 +1,163 @@
+- date: 13-May-2022
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'Video Custom Fields Report'
+          Description: 'This sample uses the CMS API to generate a report on custom field values for some or all the videos in your account in CSV format. It fetches the video data in batches of 25, so if there is an API timeout or some other error, you will still have some of the data.'
+          Link: https://apis.support.brightcove.com/cms/code-samples/cms-api-sample-video-custom-fields-report.html
+          Product: Video Cloud
+          Product_area: CMS API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Captions with Live Streams'
+          Description: 'In this topic, you will learn about using captions with Brightcove Live streams.'
+          Link: https://live.support.brightcove.com/general/captions-with-live-streams.html 
+          Product: Live
+          Product_area: Captions
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Audio Only with the Native SDKs'
+          Description: 'In this topic, you will learn how to work with audio-only playback with the Brightcove Native SDKs.'
+          Link: https://sdks.support.brightcove.com/features/audio-only-with-sdks.html  
+          Product: Video Cloud
+          Product_area: Native SDKs
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Major updates
+      docs:
+        - Title: 'Creating a Network Log'
+          Description: 'Updated Safari section for improvements in the browser'
+          Link: https://player.support.brightcove.com/troubleshooting/creating-network-log.html
+          Product: Brightcove Player
+          Product_area: Troubleshooting
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for Android'
+          Description: 'Android SDK release version 6.18.3'
+          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html 
+          Product: Video Cloud
+          Product_area: Native SDK for Android
+          Product_Update: 'true'
+          Feature: 'Android SDK release 6.18.3'
+          Status: Released
+        - Title: 'Brightcove Native SDK for Android Release Notes'
+          Description: 'Android SDK release version 6.18.3'
+          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html  
+          Product: Video Cloud
+          Product_area: Native SDK for Android
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Configuring the Brightcove Player for DRM'
+          Description: 'New playback restrictions section added'
+          Link: https://player.support.brightcove.com/plugins/configuring-brightcove-player-drm.html#Playback_restrictions
+          Product: Brightcove Player
+          Product_area: DRM 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Audio Only with Brightcove Player'
+          Description: 'Updated images to use the player sapphire skin'
+          Link: https://player.support.brightcove.com/playback/audio-only-player.html 
+          Product: Video Cloud
+          Product_area: Brightcove Player
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Working with Audio-Only Content'
+          Description: 'Updated player sample and link'
+          Link: https://beacon-help.support.brightcove.com/general/working-audio-content.html  
+          Product: Beacon
+          Product_area: Audio Only
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating Audio-Only Live Events'
+          Description: 'Updated audio only player image'
+          Link: https://live.support.brightcove.com/live-module/audio-only-live-events.html
+          Product: Live
+          Product_area: Audio Only
+          Product_Update: 'false'
+          Feature: ''
+          Status: Staging
+        - Title: 'Apple TV UI Controls with the Native SDK for tvOS'
+          Description: 'Added note about using the Xcode simulator remote'
+          Link: https://sdks.support.brightcove.com/tvos/playback/apple-tv-ui-controls-native-sdk-tvos.html   
+          Product: Video Cloud
+          Product_area: Native SDK for tvOS
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Using Captions with the Brightcove Native SDKs'
+          Description: 'Updated link for setting Android captions'
+          Link: https://sdks.support.brightcove.com/features/using-captions-brightcove-native-sdks.html#Captions   
+          Product: Video Cloud
+          Product_area: Native SDK for Android
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Managing Playlists on Pages'
+          Description: 'Added Edit Playlist option'
+          Link: https://beacon-help.support.brightcove.com/layout/managing-playlists-on-pages.html#Edit_playlist
+          Product: Beacon
+          Product_area: Layout
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Playlist Endscreen Plugin'
+          Description: 'Added publishTime option and playlist-endscreen-select event'
+          Link: https://player.support.brightcove.com/plugins/playlist-endscreen-plugin.html
+          Product: Brightcove Player
+          Product_area: Plugins
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Digital Rights Management (DRM)'
+          Description: 'Introduction info updated to reflect blocking screen-recording configuration'
+          Link: https://studio.support.brightcove.com/general/overview-digital-rights-management-drm-video-cloud.html
+          Product: Video Cloud
+          Product_area: DRM
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Player Management API Reference (2.0.0)'
+          Description: 'Note about player configuration request added'
+          Link: https://apis.support.brightcove.com/player-management/references/reference.html#tag/Player-Configurations
+          Product: Brightcove Player
+          Product_area: Player Managment API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'SSAI Ad tracking log'
+          Description: 'Log fields table updated'
+          Link: https://ssai.support.brightcove.com/getting-started/video-cloud-ssai-ad-logs.html#Log_fields
+          Product: SSAI
+          Product_area: Ad tracking
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating a JSON Web Token (JWT)'
+          Description: 'Claims for Playback Restrictions information updated'
+          Link: https://general.support.brightcove.com/developer/create-json-web-token.html#Claims_for_Playback_Restrictions
+          Product: Video Cloud
+          Product_area: Playback Restrictions
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Working with Multi-Lingual Metadata'
+          Description: 'Language variants note added'
+          Link: https://studio.support.brightcove.com/media/working-multi-lingual-metadata.html
+          Product: Video Cloud
+          Product_area: Multi-Lingual Metadata
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
 - date: 6-May-2022
   types:
     - type: New Docs
