@@ -73,7 +73,7 @@
         /* article should contain all content that we edit */
         
         article,
-        bcls-article. {
+        bcls-article {
             padding: 1em;
         }
         
@@ -95,7 +95,7 @@
         }
         
         article>summary {
-            display: block;
+            display: block !important;
         }
         
         header a {
