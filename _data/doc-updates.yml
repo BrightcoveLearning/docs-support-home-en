@@ -1,3 +1,125 @@
+- date: 20-May-2022
+  types:
+    - type: New Docs
+      docs:
+    - type: Major updates
+      docs:
+        - Title: 'Ingesting WebVTT'
+          Description: 'Signed Google Cloud Storage URLs are now supported for source files when using Dynamic Ingest.'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-webvtt-files-text-trackscaptions.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest API
+          Product_Update: 'true'
+          Feature: 'Google Cloud Storage as source file location'
+          Status: Released
+        - Title: 'Audio Content'
+          Description: 'Updated content and sample player to reflect new audio only player'
+          Link: https://apis.support.brightcove.com/general/audio-content.html
+          Product: Video Cloud
+          Product_area: Platform APIs
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Video Cloud Connector for Sitecore'
+          Description: 'New release provides enhanced support for Brightcove Players and In-Page Experiences'
+          Link: https://integrations.support.brightcove.com/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: 'true'
+          Feature: 'Video Cloud Connector for Sitecore'
+          Status: Released
+        - Title: 'Brightcove SSAI Documentation'
+          Description: 'Implementing Server-Side ads with Brightcove Player video updated'
+          Link: https://ssai.support.brightcove.com/
+          Product: SSAI
+          Product_area: SSAI
+          Product_Update: 'true | false'
+          Feature: ''
+          Status: Released
+        - Title: 'Lost Customers'
+          Description: 'Screen shots and text updated'
+          Link: https://audience-insights.support.brightcove.com/guides/lost-customers/lost-customers.html
+          Product: Audience Insights
+          Product_area: Guides
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - type: Minor updates
+          docs:
+        - Title: 'Brightcove Live: Best Practices'
+          Description: 'Updated contact us link'
+          Link: https://live.support.brightcove.com/get-started/live-module-guidelines-and-best-practices.html#FAQ
+          Product: Live
+          Product_area: Getting Started
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Styling Players'
+          Description: 'Styling option note added'
+          Link: https://studio.support.brightcove.com/players/styling-players.html
+          Product: Video cloud
+          Product_area: Managing Players
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Video Cloud Basics: Styling a Player'
+          Description: 'Styling option note added'
+          Link: https://studio.support.brightcove.com/get-started/basics/video-cloud-basics-styling-player.html
+          Product: Video cloud
+          Product_area: Learn the Basics
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for iOS'
+          Description: 'Release of iOS SDK 6.10.5'
+          Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html 
+          Product: Video Cloud
+          Product_area: Native SDKs
+          Product_Update: 'true'
+          Feature: 'iOS/tvOS SDK 6.10.5'
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for tvOS'
+          Description: 'Release of iOS SDK 6.10.5'
+          Link: https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html  
+          Product: Video Cloud
+          Product_area: Native SDKs
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Multi Language Audio with Live Streams'
+          Description: 'Updated for new Video PID field'
+          Link: https://live.support.brightcove.com/general/multi-language-audio.html  
+          Product: Live
+          Product_area: Multiple Language Audio
+          Product_Update: 'false'
+          Feature: ''
+          Status: Staging
+    - type: Minor updates
+      docs:
+        - Title: 'Live API Reference'
+          Description: 'Added example to clarify how to specify custom fields for VOD sent to Video Cloud'
+          Link: https://apis.support.brightcove.com/live-api/references/reference.html#operation/CreateALiveJob
+          Product: Live
+          Product_area: Live API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Integrating with the Beacon Web Store'
+          Description: 'Entitlements section JSON updated '
+          Link: https://beacon.support.brightcove.com/beacon-web-store/integration-details.html#Authentication_through_OIDC_and_entitlements
+          Product: Beacon
+          Product_area: Beacon Web Store 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Configuring the Brightcove Player for DRM'
+          Description: 'Playback technologies information table updated'
+          Link: https://player.support.brightcove.com/plugins/configuring-brightcove-player-drm.html#Playback_technologies_used
+          Product: Brightcove Player
+          Product_area: DRM
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
 - date: 13-May-2022
   types:
     - type: New Docs
@@ -130,7 +252,7 @@
           Description: 'Note about player configuration request added'
           Link: https://apis.support.brightcove.com/player-management/references/reference.html#tag/Player-Configurations
           Product: Brightcove Player
-          Product_area: Player Managment API
+          Product_area: Player Management API
           Product_Update: 'false'
           Feature: ''
           Status: Released
@@ -259,7 +381,7 @@
           Feature: 'Audio only playback'
           Status: Released
         - Title: 'Content: Trial Drivers and Library Breakdown'
-          Description: 'In this topic, you will learn about the trial drivers and library breakdown metrics included in the Audience Insights data. These metrics will help you filter how engaged are new trial users with your content and also provide details about your library comsuption.'
+          Description: 'In this topic, you will learn about the trial drivers and library breakdown metrics included in the Audience Insights data. These metrics will help you filter how engaged are new trial users with your content and also provide details about your library consumption.'
           Link: https://audience-insights.support.brightcove.com/guides/content/content-trial-drivers-library.html
           Product: Audience Insights
           Product_area: Content

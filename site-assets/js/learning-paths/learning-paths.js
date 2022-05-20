@@ -4,7 +4,7 @@
 //     learning_path_item,
 //     span,
 //     shortLink = document.querySelector('link[rel="shortlink"]'),
-//     nodePath = shortLink.getAttribute('href'),
+    // nodePath = shortLink.getAttribute('href'),
 //     thisNode = nodePath.substring(nodePath.lastIndexOf('/') + 1),
 //     body = document.querySelector('body'),
 //     surveyDiv = document.getElementById('surveyDiv');
