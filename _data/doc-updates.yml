@@ -1,3 +1,163 @@
+- date: 27-May-2022
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'Multi Language Audio with the Live Module'
+          Description: 'Updated steps for creating multiple language audio tracks'
+          Link: https://live.support.brightcove.com/live-module/multi-language-audio.html    
+          Product: Live
+          Product_area: Multiple Language Audio
+          Product_Update: 'true'
+          Feature: 'Live multiple language audio tracks'
+          Status: Released
+        - Title: 'Multi Language Audio with the Live API'
+          Description: 'Added content for Video PID field'
+          Link: https://live.support.brightcove.com/live-api/guides/live-multi-language-audio.html   
+          Product: Live
+          Product_area: Multiple Language Audio
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Publishing Brightcove Videos from Hootsuite'
+          Description: 'This topic explains how to publish Brightcove videos using Hootsuite.'
+          Link: https://integrations.support.brightcove.com/hootsuite/publishing-brightcove-video-hootsuite.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: 'true'
+          Feature: 'It is now possible to publish Brightcove videos from Hootsuite'
+          Status: Released
+        - Title: 'Integration: Summary'
+          Description: 'This topic provides an overview of the Integrations for Audience Insights.'
+          Link: https://audience-insights.support.brightcove.com/integration/integration-summary.html
+          Product: Audience Insights
+          Product_area: Integration
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Player Repositories'
+          Description: 'Postman screenshot updated with new UI'
+          Link: https://apis.support.brightcove.com/player-management/guides/player-repositories.html
+          Product: Video Cloud
+          Product_area: Player Managment API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Major updates
+      docs:
+        - Title: 'CMS API Reference'
+          Description: 'Added new Transcriptions field for videos'
+          Link: https://apis.support.brightcove.com/cms/references/reference.html
+          Product: Video Cloud
+          Product_area: CMS/Playback APIs
+          Product_Update: 'true'
+          Feature: 'Transcriptions is now a separate array, no longer included in text tracks'
+          Status: Released
+        - Title: 'Playback API Reference'
+          Description: 'Added new Transcriptions field for videos'
+          Link: https://apis.support.brightcove.com/playback/references/reference_v2.html
+          Product: Video Cloud
+          Product_area: CMS/Playback APIs
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for Android'
+          Description: 'Android SDK release 6.18.4'
+          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html 
+          Product: Video Cloud
+          Product_area: Native SDKs
+          Product_Update: 'true'
+          Feature: 'Android SDK release 6.18.4'
+          Status: Released
+        - Title: 'Brightcove Native SDK for Android Release Notes'
+          Description: 'Android SDK release 6.18.4'
+          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html  
+          Product: Video Cloud
+          Product_area: Native SDKs
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Live API Reference'
+          Description: 'Added fields for multiple language audio'
+          Link: https://apis.support.brightcove.com/live-api/references/reference.html   
+          Product: Live
+          Product_area: Multiple Language Audio
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Implementing Playback Rights'
+          Description: 'Updated the diagram for Geographic checks'
+          Link: https://apis.support.brightcove.com/playback-restrictions/getting-started/implementing-playback-rights.html   
+          Product: Video Cloud
+          Product_area: Playback Restrictions
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Player Repositories'
+          Description: 'Postman screenshot updated with new UI'
+          Link: https://apis.support.brightcove.com/player-management/guides/player-repositories.html
+          Product: Video Cloud
+          Product_area: Player Management API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Analytics API'
+          Description: 'Video updated'
+          Link: https://apis.support.brightcove.com/analytics/index.html
+          Product: Video cloud
+          Product_area: Analytics API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'CMS API Reference'
+          Description: 'Removed note indicating that client credentials for clear sources endpoints can be generated by Support, as that is not true - they must be created using the OAuth API'
+          Link: https://apis.support.brightcove.com/cms/references/reference.html
+          Product: Video Cloud
+          Product_area: CMS APIs
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Offline Playback with Brightcove Beacon Apps'
+          Description: 'Updated based on feedback'
+          Link: https://beacon-help.support.brightcove.com/media/offline-playback-beacon.html 
+          Product: Beacon
+          Product_area: 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Player System Requirements'
+          Description: 'Added note about Smart TV browser support'
+          Link: https://player.support.brightcove.com/references/brightcove-player-system-requirements.html  
+          Product: Brightcove Player
+          Product_area: General
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Implementing Server-Side Ads with Brightcove Player'
+          Description: 'Added note about SSAI midroll behavior'
+          Link: https://player.support.brightcove.com/plugins/implementing-server-side-ads-brightcove-player.html   
+          Product: Brightcove Player
+          Product_area: SSAI
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Implementing Server-Side Ads with the Native SDKs'
+          Description: 'Added note about SSAI midroll behavior'
+          Link: https://sdks.support.brightcove.com/features/implementing-server-side-ads-native-player-sdks.html   
+          Product: Video Cloud
+          Product_area: Native SDKs
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Implementing AuthVOD'
+          Description: 'Updated images and some verbiage'
+          Link: https://beacon-help.support.brightcove.com/monetization/general/implementing-authvod.html
+          Product: Beacon
+          Product_area: Monetization
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
 - date: 20-May-2022
   types:
     - type: New Docs

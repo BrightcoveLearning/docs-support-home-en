@@ -95,6 +95,11 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/support/known-issues-studio-brightcove-player-and-apis.html",
+      "oldURL": "/known-issues-studio-brightcove-player-and-apis"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/training/online-training-courses.html",
       "oldURL": "/online-training-courses"
   },
