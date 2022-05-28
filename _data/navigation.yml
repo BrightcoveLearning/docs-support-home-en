@@ -26,8 +26,6 @@
   name: Brightcove Live
   url: 'https://live.support.brightcove.com/index.html'
 - section:
-  name: Zencoder
-  url: 'https://zencoder.support.brightcove.com/index.html'
 - section:
   name: Campaign
   url: 'https://campaign.support.brightcove.com/index.html'
@@ -43,6 +41,8 @@
 - section:
   name: SSAI
   url: 'https://ssai.support.brightcove.com/index.html'
+  name: Zencoder
+  url: 'https://zencoder.support.brightcove.com/index.html'
 - section:
   name: Training
   url: /training/index.html
