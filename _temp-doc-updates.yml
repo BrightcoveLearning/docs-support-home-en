@@ -165,4 +165,12 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Guide: Ad Partner Integration'
+          Description: 'Updated example to a full implementation, working example'
+          Link: https://player.support.brightcove.com/advertising/guide-ad-partner-integration.html#Example
+          Product: Brightcove Player 
+          Product_area: Advertising
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
         
