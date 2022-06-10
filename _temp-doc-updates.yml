@@ -10,6 +10,14 @@
           Product_Update: 'true'
           Feature: 'Short Manifest TTL'
           Status: Released
+        - Title: 'Overview: Hosting Platforms'
+          Description: 'This document provides an overview of the hosting platforms for the Live Module.'
+          Link: https://live.support.brightcove.com/live-module/overview-hosting-platforms.html
+          Product: Live
+          Product_area: Hosting Platforms
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Major updates
       docs:
         - Title: 'Getting Started with Brightcove Video Connect for the WordPress CMS'
@@ -25,6 +33,14 @@
           Link: https://general.support.brightcove.com/developer/debugging-mobile-devices.html 
           Product: Video Cloud
           Product_area: General
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Video Cloud SSAI API'
+          Description: 'Ad keys description updated'
+          Link: https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html#Ad_variables
+          Product: SSAI
+          Product_area: SSAI API
           Product_Update: 'false'
           Feature: ''
           Status: Released
@@ -67,6 +83,14 @@
           Link: https://sdks.support.brightcove.com/getting-started/debugging-mobile-devices.html  
           Product: Device SDKs
           Product_area: General
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Available Options for the Advanced (in-page) Embed Code'
+          Description: 'Strings not supported by autoplay attribute note added'
+          Link: https://player.support.brightcove.com/publish/available-options-advanced-page-embed-code.html#Attributes
+          Product: Brightcove Player
+          Product_area: Publishing
           Product_Update: 'false'
           Feature: ''
           Status: Released
