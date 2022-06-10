@@ -110,3 +110,11 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Brightcove Campaign FAQ'
+          Description: 'Added explanation why analytics video views differ from Campaign video views'
+          Link: https://studio.support.brightcove.com/campaign/general/campaign-faq.html#marketing-automation
+          Product: Video Cloud
+          Product_area: Campaign
+          Product_Update: 'false'
+          Feature: '(leave blank if Product_Update is false)'
+          Status: Released
