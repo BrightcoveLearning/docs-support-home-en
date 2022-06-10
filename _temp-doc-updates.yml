@@ -44,6 +44,14 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Brightcove Player Information Modal'
+          Description: 'Updated to explain the many new fields displayed in the latest version of the Information Modal'
+          Link: https://player.support.brightcove.com/troubleshooting/brightcove-player-information-modal.html
+          Product: Brightcove Player
+          Product_area: Troubleshooting
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Minor updates
       docs:
         - Title: 'Brightcove Player Accessibility'
@@ -91,6 +99,14 @@
           Link: https://player.support.brightcove.com/publish/available-options-advanced-page-embed-code.html#Attributes
           Product: Brightcove Player
           Product_area: Publishing
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating a Stripe Account'
+          Description: 'Updated doc to match changes to Stipe UI.'
+          Link: https://beacon-help.support.brightcove.com/monetization/general/creating-stripe-account.html
+          Product: Beacon
+          Product_area: Monetization
           Product_Update: 'false'
           Feature: ''
           Status: Released
