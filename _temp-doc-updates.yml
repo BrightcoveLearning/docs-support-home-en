@@ -1,176 +1,72 @@
-- date: 3-June-2022
-  types:   
+- date: 10-June-2022
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'Short Manifest TTL'
+          Description: 'In this topic, you will learn about setting a specific TTL for the manifest URLs.'
+          Link: https://apis.support.brightcove.com/playback/guides/short-manifest-ttl.html 
+          Product: Video Cloud
+          Product_area: Playback API
+          Product_Update: 'true'
+          Feature: 'Short Manifest TTL'
+          Status: Released
     - type: Major updates
       docs:
-        - Title: 'Audio Settings'
-          Description: 'Added select_audio_language field, which allows you to select one of multiple audio tracks by language to use in a particular output'
-          Link: https://zencoder.support.brightcove.com/encoding-settings/general-audio-video/encoding-settings-audio.html#select_audio_language
-          Product: Zencoder
-          Product_area: Audio Encoding Settings
-          Product_Update: 'true '
-          Feature: 'Select audio track by language for output'
-          Status: Released
-        - Title: 'Video Cloud SSAI API'
-          Description: 'New system variable description added'
-          Link: https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html#System_variables
-          Product: SSAI
-          Product_area: SSAI API
+        - Title: 'Getting Started with Brightcove Video Connect for the WordPress CMS'
+          Description: 'New release. Releases page link updated to point to the correct location.'
+          Link: https://integrations.support.brightcove.com/wordpress/getting-started-brightcove-video-connect-wordpress-cms.html
+          Product: Video Cloud
+          Product_area:  Wordpress integration
           Product_Update: 'true'
-          Feature: 'New system variable added'
+          Feature: 'Brightcove Video Connect for the WordPress CMS'
           Status: Released
-        - Title: 'Step-by-Step: Simple Video App using the Native SDK for Android'
-          Description: 'Update gradle.properties step added'
-          Link: https://sdks.support.brightcove.com/android/basics/step-step-simple-video-app-using-native-sdk-android.html#Create_a_project
+        - Title: 'Debugging on Mobile Devices'
+          Description: 'Added new section added for Android 7'
+          Link: https://general.support.brightcove.com/developer/debugging-mobile-devices.html 
           Product: Video Cloud
-          Product_area: SDKS
+          Product_area: General
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Dimension: referrer_domain'
-          Description: 'New section about referrer policy added'
-          Link: https://apis.support.brightcove.com/analytics/dimension-guides/dimension-referrerdomain.html
-          Product: Video Cloud
-          Product_area: Analytics API
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating Social Media Publishing Destinations'
-          Description: 'Added LinkedIn information'
-          Link: https://studio.support.brightcove.com/social/creating-social-media-publishing-destinations.html
-          Product: Video Cloud
-          Product_area: Social
-          Product_Update: 'true'
-          Feature: 'Social Module supports publish to LinkedIn'
-          Status: Released
-        - Title: 'Publishing Videos to Social Media Platforms'
-          Description: 'Added LinkedIn information'
-          Link: https://studio.support.brightcove.com/social/publishing-videos-social-media-platforms.html
-          Product: Video Cloud
-          Product_area: Social
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Using Auto Sync to Synchronize Videos to Social Media Accounts'
-          Description: 'Added LinkedIn information'
-          Link: https://studio.support.brightcove.com/social/using-auto-sync-synchronize-videos-social-media-accounts.html
-          Product: Video Cloud
-          Product_area: Social
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Audio Content'
-          Description: 'Audio content section added'
-          Link: https://apis.support.brightcove.com/cms/managing-videos/audio-content.html
-          Product: Video Cloud
-          Product_area:  CMS API
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Audio Content'
-          Description: 'Audio content section added'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/index.html
-          Product: Video Cloud
-          Product_area:  Dynamic Ingest API 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Audio Content'
-          Description: 'Audio content section added'
-          Link: https://apis.support.brightcove.com/ingest-profiles/guides/index.html
-          Product: Video Cloud
-          Product_area:  Dynamic Ingest API 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: Brightcove Native SDK for Android'
-          Description: 'Android SDK version 6.18.5'
-          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html
-          Product: Video Cloud
-          Product_area: Native SDKs
-          Product_Update: 'true'
-          Feature: 'Native SDK for Android release 6.18.5'
-          Status: Released
-        - Title: 'Brightcove Native SDK for Android Release Notes'
-          Description: 'Android SDK version 6.18.5'
-          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html
-          Product: Video Cloud
-          Product_area: Native SDKs
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        
     - type: Minor updates
       docs:
-        - Title: 'Multi Language Audio with the Live Module'
-          Description: 'Added notes that multi-language audio is currently not supported for Live streams using SSAI or Redundancy groups'
-          Link: https://live.support.brightcove.com/live-module/multi-language-audio.html
-          Product: Live
-          Product_area:  Multi-language audio
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Working with Labels'
-          Description: 'Limitation about labels managment added'
-          Link: https://apis.support.brightcove.com/cms/managing-videos/working-with-labels.html#Limitations
-          Product: Video Cloud
-          Product_area: CMS API
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Choosing the Correct Embed Code'
-          Description: 'Note about referrer policy added to iframe embed code section'
-          Link: https://studio.support.brightcove.com/publish/choosing-correct-embed-code.html
+        - Title: 'Brightcove Player Accessibility'
+          Description: 'Updates to reflect compliance with WCAG 2.1 AA.'
+          Link: https://player.support.brightcove.com/general/brightcove-player-accessibility.html
           Product: Brightcove Player
-          Product_area: Publishing
+          Product_area: Accessibility
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'CMS API: Video Search v2'
-          Description: 'Null value search is not supported note added'
-          Link: https://apis.support.brightcove.com/cms/searching/cms-and-playback-apis-video-search-v2.html
-          Product: Video Cloud
-          Product_area:  CMS API
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Cue points for VOD SSAI'
-          Description: 'Cue points for VOD SSAI'
-          Link: https://studio.support.brightcove.com/media/working-cue-points-media-module.html
-          Product: Video Cloud
-          Product_area:  Managing Videos
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Viewing the Brightcove System Status Page'
-          Description: 'System status notifications'
-          Link: https://studio.support.brightcove.com/support/viewing-brightcove-system-status-page.html#subscribe
-          Product: Video Cloud
-          Product_area:  Support
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Brightcove Player System Requirements'
-          Description: 'DRM playback using Chrome Mobile on iOS info added'
-          Link: https://studio.support.brightcove.com/media/working-cue-points-media-module.html
-          Product: Video Cloud
-          Product_area:  Managing Videos
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Brightcove Native SDK for Android: Previous SDK information'
-          Description: 'Added SDK v6.18.4 to previous releases'
-          Link: https://sdks.support.brightcove.com/android/resources/brightcove-player-sdk-android-previous-sdk-information.html
-          Product: Video Cloud
-          Product_area: Native SDKs
+        - Title: 'Live API Reference'
+          Description: 'Corrected some errors in the scheduled clip request.'
+          Link: https://apis.support.brightcove.com/live-api/references/reference.html
+          Product: Live
+          Product_area: Clipping
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Guide: Ad Partner Integration'
-          Description: 'Updated example to a full implementation, working example'
-          Link: https://player.support.brightcove.com/advertising/guide-ad-partner-integration.html#Example
-          Product: Brightcove Player 
-          Product_area: Advertising
+        - Title: 'Domains and Ports that Must Be Accessible to Video Cloud'
+          Description: 'Removed a domain that Brightcove no longer uses.'
+          Link: https://studio.support.brightcove.com/general/domains-and-ports-must-be-accessible-video-cloud.html
+          Product: Video Cloud
+          Product_area: General Information
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        
+        - Title: 'Best Practices: CMS and Playback APIs'
+          Description: 'Added link to Short Manifest TTL document'
+          Link: https://apis.support.brightcove.com/cms/getting-started/best-practices-cms-and-playback-apis.html 
+          Product: Video Cloud
+          Product_area: Playback API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Debugging on Mobile Devices'
+          Description: 'Added common document (submodule) to SDKs site'
+          Link: https://sdks.support.brightcove.com/getting-started/debugging-mobile-devices.html  
+          Product: Device SDKs
+          Product_area: General
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
