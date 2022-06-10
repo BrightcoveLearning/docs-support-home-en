@@ -1,3 +1,123 @@
+- date: 10-June-2022
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'Short Manifest TTL'
+          Description: 'In this topic, you will learn about setting a specific TTL for the manifest URLs.'
+          Link: https://apis.support.brightcove.com/playback/guides/short-manifest-ttl.html 
+          Product: Video Cloud
+          Product_area: Playback API
+          Product_Update: 'true'
+          Feature: 'Short Manifest TTL'
+          Status: Released
+        - Title: 'Overview: Hosting Platforms'
+          Description: 'This document provides an overview of the hosting platforms for the Live Module.'
+          Link: https://live.support.brightcove.com/live-module/overview-hosting-platforms.html
+          Product: Live
+          Product_area: Hosting Platforms
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Major updates
+      docs:
+        - Title: 'Getting Started with Brightcove Video Connect for the WordPress CMS'
+          Description: 'New release. Releases page link updated to point to the correct location.'
+          Link: https://integrations.support.brightcove.com/wordpress/getting-started-brightcove-video-connect-wordpress-cms.html
+          Product: Video Cloud
+          Product_area:  Wordpress integration
+          Product_Update: 'true'
+          Feature: 'Brightcove Video Connect for the WordPress CMS'
+          Status: Released
+        - Title: 'Debugging on Mobile Devices'
+          Description: 'Added new section added for Android 7'
+          Link: https://general.support.brightcove.com/developer/debugging-mobile-devices.html 
+          Product: Video Cloud
+          Product_area: General
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Video Cloud SSAI API'
+          Description: 'Ad keys description updated'
+          Link: https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html#Ad_variables
+          Product: SSAI
+          Product_area: SSAI API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Player Information Modal'
+          Description: 'Updated to explain the many new fields displayed in the latest version of the Information Modal'
+          Link: https://player.support.brightcove.com/troubleshooting/brightcove-player-information-modal.html
+          Product: Brightcove Player
+          Product_area: Troubleshooting
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Brightcove Player Accessibility'
+          Description: 'Updates to reflect compliance with WCAG 2.1 AA.'
+          Link: https://player.support.brightcove.com/general/brightcove-player-accessibility.html
+          Product: Brightcove Player
+          Product_area: Accessibility
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Live API Reference'
+          Description: 'Corrected some errors in the scheduled clip request.'
+          Link: https://apis.support.brightcove.com/live-api/references/reference.html
+          Product: Live
+          Product_area: Clipping
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Domains and Ports that Must Be Accessible to Video Cloud'
+          Description: 'Removed a domain that Brightcove no longer uses.'
+          Link: https://studio.support.brightcove.com/general/domains-and-ports-must-be-accessible-video-cloud.html
+          Product: Video Cloud
+          Product_area: General Information
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Best Practices: CMS and Playback APIs'
+          Description: 'Added link to Short Manifest TTL document'
+          Link: https://apis.support.brightcove.com/cms/getting-started/best-practices-cms-and-playback-apis.html 
+          Product: Video Cloud
+          Product_area: Playback API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Debugging on Mobile Devices'
+          Description: 'Added common document (submodule) to SDKs site'
+          Link: https://sdks.support.brightcove.com/getting-started/debugging-mobile-devices.html  
+          Product: Device SDKs
+          Product_area: General
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Available Options for the Advanced (in-page) Embed Code'
+          Description: 'Strings not supported by autoplay attribute note added'
+          Link: https://player.support.brightcove.com/publish/available-options-advanced-page-embed-code.html#Attributes
+          Product: Brightcove Player
+          Product_area: Publishing
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating a Stripe Account'
+          Description: 'Updated doc to match changes to Stipe UI.'
+          Link: https://beacon-help.support.brightcove.com/monetization/general/creating-stripe-account.html
+          Product: Beacon
+          Product_area: Monetization
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Campaign FAQ'
+          Description: 'Added explanation why analytics video views differ from Campaign video views'
+          Link: https://studio.support.brightcove.com/campaign/general/campaign-faq.html#marketing-automation
+          Product: Video Cloud
+          Product_area: Campaign
+          Product_Update: 'false'
+          Feature: '(leave blank if Product_Update is false)'
+          Status: Released
 - date: 3-June-2022
   types:   
     - type: Major updates
@@ -85,16 +205,16 @@
         - Title: 'Overview: Brightcove Native SDK for Android'
           Description: 'Android SDK version 6.18.5'
           Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html
-          Product: Video Cloud
-          Product_area: Native SDKs
+          Product: Device SDKs
+          Product_area: Native SDK for Android
           Product_Update: 'true'
           Feature: 'Native SDK for Android release 6.18.5'
           Status: Released
         - Title: 'Brightcove Native SDK for Android Release Notes'
           Description: 'Android SDK version 6.18.5'
           Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html
-          Product: Video Cloud
-          Product_area: Native SDKs
+          Product: Device SDKs
+          Product_area: Native SDK for Android
           Product_Update: 'false'
           Feature: ''
           Status: Released    
@@ -159,8 +279,8 @@
         - Title: 'Brightcove Native SDK for Android: Previous SDK information'
           Description: 'Added SDK v6.18.4 to previous releases'
           Link: https://sdks.support.brightcove.com/android/resources/brightcove-player-sdk-android-previous-sdk-information.html
-          Product: Video Cloud
-          Product_area: Native SDKs
+          Product: Device SDKs
+          Product_area: Native SDK for Android
           Product_Update: 'false'
           Feature: ''
           Status: Released
@@ -237,16 +357,16 @@
         - Title: 'Overview: Brightcove Native SDK for Android'
           Description: 'Android SDK release 6.18.4'
           Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html 
-          Product: Video Cloud
-          Product_area: Native SDKs
+          Product: Device SDKs
+          Product_area: Native SDK for Android
           Product_Update: 'true'
           Feature: 'Android SDK release 6.18.4'
           Status: Released
         - Title: 'Brightcove Native SDK for Android Release Notes'
           Description: 'Android SDK release 6.18.4'
           Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html  
-          Product: Video Cloud
-          Product_area: Native SDKs
+          Product: Device SDKs
+          Product_area: Native SDK for Android
           Product_Update: 'false'
           Feature: ''
           Status: Released
@@ -319,7 +439,7 @@
         - Title: 'Implementing Server-Side Ads with the Native SDKs'
           Description: 'Added note about SSAI midroll behavior'
           Link: https://sdks.support.brightcove.com/features/implementing-server-side-ads-native-player-sdks.html   
-          Product: Video Cloud
+          Product: Device SDKs
           Product_area: Native SDKs
           Product_Update: 'false'
           Feature: ''
@@ -407,16 +527,16 @@
         - Title: 'Overview: Brightcove Native SDK for iOS'
           Description: 'Release of iOS SDK 6.10.5'
           Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html 
-          Product: Video Cloud
-          Product_area: Native SDKs
+          Product: Device SDKs
+          Product_area: Native SDK for iOS
           Product_Update: 'true'
           Feature: 'iOS/tvOS SDK 6.10.5'
           Status: Released
         - Title: 'Overview: Brightcove Native SDK for tvOS'
           Description: 'Release of iOS SDK 6.10.5'
           Link: https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html  
-          Product: Video Cloud
-          Product_area: Native SDKs
+          Product: Device SDKs
+          Product_area: Native SDK for iOS
           Product_Update: 'false'
           Feature: ''
           Status: Released
@@ -477,7 +597,7 @@
         - Title: 'Audio Only with the Native SDKs'
           Description: 'In this topic, you will learn how to work with audio-only playback with the Brightcove Native SDKs.'
           Link: https://sdks.support.brightcove.com/features/audio-only-with-sdks.html  
-          Product: Video Cloud
+          Product: Device SDKs
           Product_area: Native SDKs
           Product_Update: 'false'
           Feature: ''
@@ -495,7 +615,7 @@
         - Title: 'Overview: Brightcove Native SDK for Android'
           Description: 'Android SDK release version 6.18.3'
           Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html 
-          Product: Video Cloud
+          Product: Device SDKs
           Product_area: Native SDK for Android
           Product_Update: 'true'
           Feature: 'Android SDK release 6.18.3'
@@ -503,7 +623,7 @@
         - Title: 'Brightcove Native SDK for Android Release Notes'
           Description: 'Android SDK release version 6.18.3'
           Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html  
-          Product: Video Cloud
+          Product: Device SDKs
           Product_area: Native SDK for Android
           Product_Update: 'false'
           Feature: ''
@@ -545,7 +665,7 @@
         - Title: 'Apple TV UI Controls with the Native SDK for tvOS'
           Description: 'Added note about using the Xcode simulator remote'
           Link: https://sdks.support.brightcove.com/tvos/playback/apple-tv-ui-controls-native-sdk-tvos.html   
-          Product: Video Cloud
+          Product: Device SDKs
           Product_area: Native SDK for tvOS
           Product_Update: 'false'
           Feature: ''
@@ -553,7 +673,7 @@
         - Title: 'Using Captions with the Brightcove Native SDKs'
           Description: 'Updated link for setting Android captions'
           Link: https://sdks.support.brightcove.com/features/using-captions-brightcove-native-sdks.html#Captions   
-          Product: Video Cloud
+          Product: Device SDKs
           Product_area: Native SDK for Android
           Product_Update: 'false'
           Feature: ''
@@ -631,7 +751,7 @@
         - Title: 'Overview: Brightcove Native SDK for Android'
           Description: 'Added section about variant Android release support'
           Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html#Android_variant_support 
-          Product: Video Cloud
+          Product: Device SDKs
           Product_area: Native SDK for Android
           Product_Update: 'false'
           Feature: ''
@@ -1072,7 +1192,7 @@
         - Title: 'Content Security (DRM) with the Native SDKs'
           Description: 'Added Android support for HLS with Widevine Modular'
           Link: https://sdks.support.brightcove.com/features/content-security-drm-native-player-sdks.html 
-          Product: Video Cloud
+          Product: Device SDKs
           Product_area: Native SDKs
           Product_Update: 'false'
           Feature: ''
@@ -1262,16 +1382,16 @@
         - Title: 'Overview: Brightcove Native SDK for iOS'
           Description: 'Updated for SDK release 6.10.4'
           Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html 
-          Product: Video Cloud
-          Product_area: Native SDKs
+          Product: Device SDKs
+          Product_area: Native SDK for iOS
           Product_Update: 'true'
           Feature: 'iOS/tvOS SDK release 6.10.4'
           Status: Released
         - Title: 'Overview: Brightcove Native SDK for tvOS'
           Description: 'Updated for SDK release 6.10.4'
           Link: https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html 
-          Product: Video Cloud
-          Product_area: Native SDKs
+          Product: Device SDKs
+          Product_area: Native SDK for tvOS
           Product_Update: 'false'
           Feature: ''
           Status: Released
