@@ -60,6 +60,14 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Working with Registered Users'
+          Description: 'Added section to show how to add a subscription'
+          Link: https://beacon-help.support.brightcove.com/registered-users/working-with-registered-users.html 
+          Product: Beacon
+          Product_area: Registered Users
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Minor updates
       docs:
         - Title: 'Dynamic Delivery Ingest Priority Queueing'
