@@ -42,6 +42,14 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Sending Push Notifications to Beacon App Viewers'
+          Description: 'In this topic, you will learn how to create and send push notifications to the viewers of your Brightcove Beacon apps.'
+          Link: https://beacon-help.support.brightcove.com/registered-users/sending-push-notifications.html  
+          Product: Beacon
+          Product_area: Beacon Apps
+          Product_Update: 'true'
+          Feature: 'Push Notifications'
+          Status: Released
     - type: Major updates
       docs:
         - Title: 'Watermarks Settings'
