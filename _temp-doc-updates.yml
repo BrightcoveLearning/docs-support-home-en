@@ -68,6 +68,62 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Skins and Player Versions'
+          Description: 'New skin sapphire information added'
+          Link: https://player.support.brightcove.com/styling/skins-and-player-versions.html
+          Product: Brightcove Player
+          Product_area: Styling
+          Product_Update: 'true'
+          Feature: 'New skin update for Brightcove Players'
+          Status: Released
+        - Title: 'Player Configuration Guide'
+          Description: 'Sapphire skin information added'
+          Link: https://player.support.brightcove.com/general/player-configuration-guide.html#configproperties
+          Product: Brightcove Player
+          Product_area: General
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Player Configuration Guide'
+          Description: 'Sapphire skin information added'
+          Link: https://apis.support.brightcove.com/player-management/guides/player-configuration-guide.html#configproperties
+          Product: Video Cloud
+          Product_area: Player Managment API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Player Informational Properties'
+          Description: 'New sapphire skin information added'
+          Link: https://player.support.brightcove.com/troubleshooting/player-informational-properties.html
+          Product: Brightcove Player
+          Product_area: General
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for Android'
+          Description: 'Android SDK release 6.18.6'
+          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html
+          Product: Device SDKs
+          Product_area: Native SDKs for Android
+          Product_Update: 'true'
+          Feature: 'Android SDK release 6.18.6'
+          Status: Released
+        - Title: 'Brightcove Native SDK for Android: Previous SDK information'
+          Description: 'Android SDK release 6.18.6'
+          Link: https://sdks.support.brightcove.com/android/resources/brightcove-player-sdk-android-previous-sdk-information.html
+          Product: Device SDKs
+          Product_area: Native SDKs for Android
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Native SDK for Android Release Notes'
+          Description: 'Android SDK release 6.18.6'
+          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html
+          Product: Device SDKs
+          Product_area: Native SDKs for Android
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Minor updates
       docs:
         - Title: 'Dynamic Delivery Ingest Priority Queueing'
@@ -91,6 +147,22 @@
           Link: https://apis.support.brightcove.com/live-api/references/reference.html#operation/CreateAScheduledClip
           Product: Live
           Product_area: API - schedule clip
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Social Syndication API'
+          Description: 'Include filter object with special characters note added.'
+          Link: https://apis.support.brightcove.com/social-syndication/getting-started/public-syndication-api-overview.html#Syndication_Resource
+          Product: Video Cloud
+          Product_area: Social Syndication API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Using bc() and getPlayer() Methods'
+          Description: 'Note about bc() method added'
+          Link: https://player.support.brightcove.com/coding-topics/using-bc-and-getplayer-methods.html#bc_method_details
+          Product: Brightcove Player
+          Product_area: Coding Topics
           Product_Update: 'false'
           Feature: ''
           Status: Released
