@@ -1,3 +1,203 @@
+- date: 17-June-2022
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'TLS for Media, Player, and API URLs'
+          Description: 'Analytics, Data Collection, and Cross-Device Resume APIs added to list of APIs that will no longer support TLS 1.0/1 - this page already existed on https://studio.support.brightcove.com, but adding to to https://apis.support.brightcove.com for better visibility'
+          Link: https://apis.support.brightcove.com/general/tls-media-player-and-api-urls.html
+          Product: Video Cloud
+          Product_area: Platform APIs - Transport layer encryption
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Using Aspera for Ingestion to Video Cloud'
+          Description: 'IBM Aspera is a popular solution for reliable high-speed file transfers. Brightcove offers a simple and flexible solution for adding videos and media assets to Video Cloud using Aspera. '
+          Link: https://apis.support.brightcove.com/aspera/overview.html
+          Product: Video Cloud
+          Product_area: Ingestion
+          Product_Update: 'true'
+          Feature: 'Ingestion via Aspera'
+          Status: Released
+        - Title: 'Manifest/Metadata Reference for Ingestion via Aspera'
+          Description: 'IBM Aspera is a popular solution for reliable high-speed file transfers. Brightcove offers a simple and flexible solution for adding videos and media assets to Video Cloud using Aspera. '
+          Link: https://apis.support.brightcove.com/aspera/manifest-metadata-reference.html
+          Product: Video Cloud
+          Product_area: Ingestion
+          Product_Update: 'false'
+          Feature: 'Ingestion via Aspera'
+          Status: Released
+        - Title: 'Retrieving Subscription Info with Stripe Metadata'
+          Description: 'In this topic, you will learn how to retrieve subscription information associated with Stripe custom metadata using the Stripe API.'
+          Link: https://beacon-help.support.brightcove.com/monetization/general/stripe-custom-metadata.html  
+          Product: Beacon
+          Product_area: Monetization
+          Product_Update: 'false'
+          Feature: ''
+          Status: Staging
+        - Title: 'Brightcove Campaign Plugin FAQ'
+          Description: 'This topic contains some of the common questions asked about the Brightcove Campaign plugin.'
+          Link: https://studio.support.brightcove.com/campaign/general/campaign-plugin-faq.html
+          Product: Video Cloud
+          Product_area: Campaign
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Sending Push Notifications to Beacon App Viewers'
+          Description: 'In this topic, you will learn how to create and send push notifications to the viewers of your Brightcove Beacon apps.'
+          Link: https://beacon-help.support.brightcove.com/registered-users/sending-push-notifications.html  
+          Product: Beacon
+          Product_area: Beacon Apps
+          Product_Update: 'true'
+          Feature: 'Push Notifications'
+          Status: Released
+    - type: Major updates
+      docs:
+        - Title: 'Watermarks Settings'
+          Description: 'Added an introduction with an illustrative diagram and a sample to show how to position and size watermarks.'
+          Link: https://zencoder.support.brightcove.com/encoding-settings/assets/encoding-settings-watermarks.html
+          Product: Zencoder
+          Product_area: Watermarks
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Live API: Cue Points and Ad Beacons with SSAI'
+          Description: 'Rollover feature to interpret cue points added within the last 10 minutes of a 24-hour period as scheduling breaks for the following 24-hour period.'
+          Link: https://apis.support.brightcove.com/live-api/ssai/live-api-cue-points-and-ad-beacons-ssai.html#Cue_points
+          Product: Live
+          Product_area: Live API - SSAI cue points
+          Product_Update: 'true'
+          Feature: 'Rollover for end of "day" cue points'
+          Status: Released
+        - Title: 'TLS for Media, Player, and API URLs'
+          Description: 'Analytics, Data Collection, and Cross-Device Resume APIs added to list of APIs that will no longer support TLS 1.0/1.1'
+          Link: https://studio.support.brightcove.com/general/tls-media-player-and-api-urls.html
+          Product: Video Cloud
+          Product_area: Transport layer encryption
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Working with Registered Users'
+          Description: 'Added section to show how to add a subscription'
+          Link: https://beacon-help.support.brightcove.com/registered-users/working-with-registered-users.html 
+          Product: Beacon
+          Product_area: Registered Users
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Skins and Player Versions'
+          Description: 'New skin sapphire information added'
+          Link: https://player.support.brightcove.com/styling/skins-and-player-versions.html
+          Product: Brightcove Player
+          Product_area: Styling
+          Product_Update: 'true'
+          Feature: 'New skin update for Brightcove Players'
+          Status: Released
+        - Title: 'Player Configuration Guide'
+          Description: 'Sapphire skin information added'
+          Link: https://player.support.brightcove.com/general/player-configuration-guide.html#configproperties
+          Product: Brightcove Player
+          Product_area: General
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Player Configuration Guide'
+          Description: 'Sapphire skin information added'
+          Link: https://apis.support.brightcove.com/player-management/guides/player-configuration-guide.html#configproperties
+          Product: Video Cloud
+          Product_area: Player Managment API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Player Informational Properties'
+          Description: 'New sapphire skin information added'
+          Link: https://player.support.brightcove.com/troubleshooting/player-informational-properties.html
+          Product: Brightcove Player
+          Product_area: General
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for Android'
+          Description: 'Android SDK release 6.18.6'
+          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html
+          Product: Device SDKs
+          Product_area: Native SDKs for Android
+          Product_Update: 'true'
+          Feature: 'Android SDK release 6.18.6'
+          Status: Released
+        - Title: 'Brightcove Native SDK for Android: Previous SDK information'
+          Description: 'Android SDK release 6.18.6'
+          Link: https://sdks.support.brightcove.com/android/resources/brightcove-player-sdk-android-previous-sdk-information.html
+          Product: Device SDKs
+          Product_area: Native SDKs for Android
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Native SDK for Android Release Notes'
+          Description: 'Android SDK release 6.18.6'
+          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html
+          Product: Device SDKs
+          Product_area: Native SDKs for Android
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Dynamic Delivery Ingest Priority Queueing'
+          Description: 'Added note that there is a limit of 1000 jobs maximum in the normal priority queue, separate from the 1000 job maximum for the low priority queue.'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/dynamic-delivery-ingest-priority-queueing.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Performance Report Reference'
+          Description: 'Added more detail on what triggers a play_request.'
+          Link: https://studio.support.brightcove.com/analytics/performance-report-reference.html
+          Product: Video Cloud
+          Product_area: Analytics
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Live API Reference'
+          Description: 'Update sample response for schedule clip.'
+          Link: https://apis.support.brightcove.com/live-api/references/reference.html#operation/CreateAScheduledClip
+          Product: Live
+          Product_area: API - schedule clip
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Social Syndication API'
+          Description: 'Include filter object with special characters note added.'
+          Link: https://apis.support.brightcove.com/social-syndication/getting-started/public-syndication-api-overview.html#Syndication_Resource
+          Product: Video Cloud
+          Product_area: Social Syndication API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Using bc() and getPlayer() Methods'
+          Description: 'Note about bc() method added'
+          Link: https://player.support.brightcove.com/coding-topics/using-bc-and-getplayer-methods.html#bc_method_details
+          Product: Brightcove Player
+          Product_area: Coding Topics
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Viewing Player Events in the Campaign Module'
+          Description: 'Added FAQ section'
+          Link: https://studio.support.brightcove.com/campaign/general/viewing-player-events-campaign-module.html#faq
+          Product: Video Cloud
+          Product_area: Campaign
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Publishing Videos and Playlists with the Media Module'
+          Description: 'Added section on using Reference IDs'
+          Link: https://studio.support.brightcove.com/publish/publishing-videos-and-playlists-media-module.html
+          Product: Video Cloud
+          Product_area: Publishing
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
 - date: 10-June-2022
   types:
     - type: New Docs
