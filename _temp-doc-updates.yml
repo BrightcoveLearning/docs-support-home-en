@@ -34,6 +34,14 @@
           Product_Update: 'false'
           Feature: ''
           Status: Staging
+        - Title: 'Brightcove Campaign Plugin FAQ'
+          Description: 'This topic contains some of the common questions asked about the Brightcove Campaign plugin.'
+          Link: https://studio.support.brightcove.com/campaign/general/campaign-plugin-faq.html
+          Product: Video Cloud
+          Product_area: Campaign
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Major updates
       docs:
         - Title: 'Watermarks Settings'
@@ -163,6 +171,22 @@
           Link: https://player.support.brightcove.com/coding-topics/using-bc-and-getplayer-methods.html#bc_method_details
           Product: Brightcove Player
           Product_area: Coding Topics
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Viewing Player Events in the Campaign Module'
+          Description: 'Added FAQ section'
+          Link: https://studio.support.brightcove.com/campaign/general/viewing-player-events-campaign-module.html#faq
+          Product: Video Cloud
+          Product_area: Campaign
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Publishing Videos and Playlists with the Media Module'
+          Description: 'Added section on using Reference IDs'
+          Link: https://studio.support.brightcove.com/publish/publishing-videos-and-playlists-media-module.html
+          Product: Video Cloud
+          Product_area: Publishing
           Product_Update: 'false'
           Feature: ''
           Status: Released
