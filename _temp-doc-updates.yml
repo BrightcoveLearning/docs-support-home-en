@@ -1,120 +1,88 @@
-- date: 10-June-2022
+- date: 17-June-2022
   types:
     - type: New Docs
       docs:
-        - Title: 'Short Manifest TTL'
-          Description: 'In this topic, you will learn about setting a specific TTL for the manifest URLs.'
-          Link: https://apis.support.brightcove.com/playback/guides/short-manifest-ttl.html 
+        - Title: 'TLS for Media, Player, and API URLs'
+          Description: 'Analytics, Data Collection, and Cross-Device Resume APIs added to list of APIs that will no longer support TLS 1.0/1 - this page already existed on https://studio.support.brightcove.com, but adding to to https://apis.support.brightcove.com for better visibility'
+          Link: https://apis.support.brightcove.com/general/tls-media-player-and-api-urls.html
           Product: Video Cloud
-          Product_area: Playback API
-          Product_Update: 'true'
-          Feature: 'Short Manifest TTL'
-          Status: Released
-        - Title: 'Overview: Hosting Platforms'
-          Description: 'This document provides an overview of the hosting platforms for the Live Module.'
-          Link: https://live.support.brightcove.com/live-module/overview-hosting-platforms.html
-          Product: Live
-          Product_area: Hosting Platforms
+          Product_area: Platform APIs - Transport layer encryption
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Overview: Using Aspera for Ingestion to Video Cloud'
+          Description: 'IBM Aspera is a popular solution for reliable high-speed file transfers. Brightcove offers a simple and flexible solution for adding videos and media assets to Video Cloud using Aspera. '
+          Link: https://apis.support.brightcove.com/aspera/overview.html
+          Product: Video Cloud
+          Product_area: Ingestion
+          Product_Update: 'true'
+          Feature: 'Ingestion via Aspera'
+          Status: Released
+        - Title: 'Manifest/Metadata Reference for Ingestion via Aspera'
+          Description: 'IBM Aspera is a popular solution for reliable high-speed file transfers. Brightcove offers a simple and flexible solution for adding videos and media assets to Video Cloud using Aspera. '
+          Link: https://apis.support.brightcove.com/aspera/manifest-metadata-reference.html
+          Product: Video Cloud
+          Product_area: Ingestion
+          Product_Update: 'false'
+          Feature: 'Ingestion via Aspera'
+          Status: Released
+        - Title: 'Retrieving Subscription Info with Stripe Metadata'
+          Description: 'In this topic, you will learn how to retrieve subscription information associated with Stripe custom metadata using the Stripe API.'
+          Link: https://beacon-help.support.brightcove.com/monetization/general/stripe-custom-metadata.html  
+          Product: Beacon
+          Product_area: Monetization
+          Product_Update: 'false'
+          Feature: ''
+          Status: Staging
     - type: Major updates
       docs:
-        - Title: 'Getting Started with Brightcove Video Connect for the WordPress CMS'
-          Description: 'New release. Releases page link updated to point to the correct location.'
-          Link: https://integrations.support.brightcove.com/wordpress/getting-started-brightcove-video-connect-wordpress-cms.html
-          Product: Video Cloud
-          Product_area:  Wordpress integration
+        - Title: 'Watermarks Settings'
+          Description: 'Added an introduction with an illustrative diagram and a sample to show how to position and size watermarks.'
+          Link: https://zencoder.support.brightcove.com/encoding-settings/assets/encoding-settings-watermarks.html
+          Product: Zencoder
+          Product_area: Watermarks
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Live API: Cue Points and Ad Beacons with SSAI'
+          Description: 'Rollover feature to interpret cue points added within the last 10 minutes of a 24-hour period as scheduling breaks for the following 24-hour period.'
+          Link: https://apis.support.brightcove.com/live-api/ssai/live-api-cue-points-and-ad-beacons-ssai.html#Cue_points
+          Product: Live
+          Product_area: Live API - SSAI cue points
           Product_Update: 'true'
-          Feature: 'Brightcove Video Connect for the WordPress CMS'
+          Feature: 'Rollover for end of "day" cue points'
           Status: Released
-        - Title: 'Debugging on Mobile Devices'
-          Description: 'Added new section added for Android 7'
-          Link: https://general.support.brightcove.com/developer/debugging-mobile-devices.html 
+        - Title: 'TLS for Media, Player, and API URLs'
+          Description: 'Analytics, Data Collection, and Cross-Device Resume APIs added to list of APIs that will no longer support TLS 1.0/1.1'
+          Link: https://studio.support.brightcove.com/general/tls-media-player-and-api-urls.html
           Product: Video Cloud
-          Product_area: General
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Video Cloud SSAI API'
-          Description: 'Ad keys description updated'
-          Link: https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html#Ad_variables
-          Product: SSAI
-          Product_area: SSAI API
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Player Information Modal'
-          Description: 'Updated to explain the many new fields displayed in the latest version of the Information Modal'
-          Link: https://player.support.brightcove.com/troubleshooting/brightcove-player-information-modal.html
-          Product: Brightcove Player
-          Product_area: Troubleshooting
+          Product_area: Transport layer encryption
           Product_Update: 'false'
           Feature: ''
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Brightcove Player Accessibility'
-          Description: 'Updates to reflect compliance with WCAG 2.1 AA.'
-          Link: https://player.support.brightcove.com/general/brightcove-player-accessibility.html
-          Product: Brightcove Player
-          Product_area: Accessibility
+        - Title: 'Dynamic Delivery Ingest Priority Queueing'
+          Description: 'Added note that there is a limit of 1000 jobs maximum in the normal priority queue, separate from the 1000 job maximum for the low priority queue.'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/dynamic-delivery-ingest-priority-queueing.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Performance Report Reference'
+          Description: 'Added more detail on what triggers a play_request.'
+          Link: https://studio.support.brightcove.com/analytics/performance-report-reference.html
+          Product: Video Cloud
+          Product_area: Analytics
           Product_Update: 'false'
           Feature: ''
           Status: Released
         - Title: 'Live API Reference'
-          Description: 'Corrected some errors in the scheduled clip request.'
-          Link: https://apis.support.brightcove.com/live-api/references/reference.html
+          Description: 'Update sample response for schedule clip.'
+          Link: https://apis.support.brightcove.com/live-api/references/reference.html#operation/CreateAScheduledClip
           Product: Live
-          Product_area: Clipping
+          Product_area: API - schedule clip
           Product_Update: 'false'
           Feature: ''
-          Status: Released
-        - Title: 'Domains and Ports that Must Be Accessible to Video Cloud'
-          Description: 'Removed a domain that Brightcove no longer uses.'
-          Link: https://studio.support.brightcove.com/general/domains-and-ports-must-be-accessible-video-cloud.html
-          Product: Video Cloud
-          Product_area: General Information
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Best Practices: CMS and Playback APIs'
-          Description: 'Added link to Short Manifest TTL document'
-          Link: https://apis.support.brightcove.com/cms/getting-started/best-practices-cms-and-playback-apis.html 
-          Product: Video Cloud
-          Product_area: Playback API
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Debugging on Mobile Devices'
-          Description: 'Added common document (submodule) to SDKs site'
-          Link: https://sdks.support.brightcove.com/getting-started/debugging-mobile-devices.html  
-          Product: Device SDKs
-          Product_area: General
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Available Options for the Advanced (in-page) Embed Code'
-          Description: 'Strings not supported by autoplay attribute note added'
-          Link: https://player.support.brightcove.com/publish/available-options-advanced-page-embed-code.html#Attributes
-          Product: Brightcove Player
-          Product_area: Publishing
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating a Stripe Account'
-          Description: 'Updated doc to match changes to Stipe UI.'
-          Link: https://beacon-help.support.brightcove.com/monetization/general/creating-stripe-account.html
-          Product: Beacon
-          Product_area: Monetization
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Campaign FAQ'
-          Description: 'Added explanation why analytics video views differ from Campaign video views'
-          Link: https://studio.support.brightcove.com/campaign/general/campaign-faq.html#marketing-automation
-          Product: Video Cloud
-          Product_area: Campaign
-          Product_Update: 'false'
-          Feature: '(leave blank if Product_Update is false)'
           Status: Released
