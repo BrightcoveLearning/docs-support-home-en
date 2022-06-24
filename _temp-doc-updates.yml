@@ -44,6 +44,38 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Adobe-AEM-Brightcove Connector: Installation'
+          Description: 'Updated installation instructions for cloud-based AEM'
+          Link: https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-installation.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Getting Started with Brightcove Video Connect for the Drupal CMS'
+          Description: 'Updated for version 3.1.0 with support for in-page experiences'
+          Link: https://integrations.support.brightcove.com/drupal/getting-started-brightcove-video-connect-drupal-cms.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: 'true'
+          Feature: 'Drupal connector for Video Cloud'
+          Status: Released
+        - Title: 'Drupal 9 - Brightcove Connector: Overview'
+          Description: 'Added link to documentation for use with Gallery'
+          Link: https://integrations.support.brightcove.com/drupal/drupal-9-brightcove-connector-overview.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: 'false'
+          Feature: 'Drupal connector for Video Cloud'
+          Status: Released
+        - Title: 'Brightcove Product Overview'
+          Description: 'Added Audience Insights and Brightcove Interactivity'
+          Link: https://general.support.brightcove.com/general/brightcove-product-overview.html
+          Product: Audience Insights
+          Product_area: General Information
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Minor updates
       docs:
         - Title: 'Using Custom Metrics and Events'
@@ -67,6 +99,14 @@
           Link: https://player.support.brightcove.com/advertising/jump-start-header-bidding-ad.html 
           Product: Brightcove Player
           Product_area: Advertising
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Getting Started with Brightcove Video Connect for the Sitecore Experience Platform'
+          Description: 'Added notes on EOL for older versions'
+          Link: https://integrations.support.brightcove.com/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html
+          Product: Video Cloud
+          Product_area: Integrations
           Product_Update: 'false'
           Feature: ''
           Status: Released
