@@ -36,6 +36,14 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Reducing Latency for Live Streams'
+          Description: 'Added player versions support for Low Latency HLS with live streams'
+          Link: https://apis.support.brightcove.com/live-api/guides/reducing-latency-live-streams.html 
+          Product: Live
+          Product_area: Low Latency HLS
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Minor updates
       docs:
         - Title: 'Using Custom Metrics and Events'
@@ -51,6 +59,14 @@
           Link: https://apis.support.brightcove.com/cms/searching/cmsplayback-api-videos-search.html#Known%20Issues
           Product: Video Cloud
           Product_area: CMS API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Jump Start: Header Bidding Ad'
+          Description: 'Updated ima plugin to version 4 and prebid js URL'
+          Link: https://player.support.brightcove.com/advertising/jump-start-header-bidding-ad.html 
+          Product: Brightcove Player
+          Product_area: Advertising
           Product_Update: 'false'
           Feature: ''
           Status: Released
