@@ -2,14 +2,14 @@
   types:
     - type: New Docs
       docs:
-        - Title: ''
-          Description: ''
-          Link: 
-          Product: Video Cloud | Brightcove Player | Device SDKs | Live | Beacon | SSAI | Zencoder | CorpTV | Audience Insights
-          Product_area: 
-          Product_Update: 'true | false'
-          Feature: '(leave blank if Product_Update is false)'
-          Status: Released | Limited Availability | Staging | Internal
+        - Title: 'Parental Controls'
+          Description: 'In this topic, you will learn how parental controls work in Brightcove Beacon.'
+          Link: https://beacon-help.support.brightcove.com/publishing-apps/app-behavior/parental-controls.html
+          Product: Beacon
+          Product_area: App Behavior
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Major updates
       docs:
         - Title: 'Concepts: The JavaScript Module Design Pattern'
