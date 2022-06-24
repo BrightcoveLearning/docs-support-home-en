@@ -1,3 +1,115 @@
+- date: 24-June-2022
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'Parental Controls'
+          Description: 'In this topic, you will learn how parental controls work in Brightcove Beacon.'
+          Link: https://beacon-help.support.brightcove.com/publishing-apps/app-behavior/parental-controls.html
+          Product: Beacon
+          Product_area: App Behavior
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Major updates
+      docs:
+        - Title: 'Concepts: The JavaScript Module Design Pattern'
+          Description: 'Code Samples updated to reflect ES6 syntax'
+          Link: https://general.support.brightcove.com/developer/concepts-javascript-module-design-pattern.html#Using_JavaScript_variables
+          Product: Video Cloud
+          Product_area: General
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'CMS API: Video Search v2'
+          Description: 'Known issues section added with sort information'
+          Link: https://apis.support.brightcove.com/cms/searching/cms-and-playback-apis-video-search-v2.html
+          Product: Video Cloud
+          Product_area: CMS API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Page Search Results'
+          Description: 'Known issues section added with sort information'
+          Link: https://apis.support.brightcove.com/cms/searching/using-cms-api-page-search-results.html
+          Product: Video Cloud
+          Product_area: CMS API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Reducing Latency for Live Streams'
+          Description: 'Added player versions support for Low Latency HLS with live streams'
+          Link: https://apis.support.brightcove.com/live-api/guides/reducing-latency-live-streams.html 
+          Product: Live
+          Product_area: Low Latency HLS
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Adobe-AEM-Brightcove Connector: Installation'
+          Description: 'Updated installation instructions for cloud-based AEM'
+          Link: https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-installation.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Getting Started with Brightcove Video Connect for the Drupal CMS'
+          Description: 'Updated for version 3.1.0 with support for in-page experiences'
+          Link: https://integrations.support.brightcove.com/drupal/getting-started-brightcove-video-connect-drupal-cms.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: 'true'
+          Feature: 'Drupal connector for Video Cloud'
+          Status: Released
+        - Title: 'Drupal 9 - Brightcove Connector: Overview'
+          Description: 'Added link to documentation for use with Gallery'
+          Link: https://integrations.support.brightcove.com/drupal/drupal-9-brightcove-connector-overview.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: 'false'
+          Feature: 'Drupal connector for Video Cloud'
+          Status: Released
+        - Title: 'Brightcove Product Overview'
+          Description: 'Added Audience Insights and Brightcove Interactivity'
+          Link: https://general.support.brightcove.com/general/brightcove-product-overview.html
+          Product: Audience Insights
+          Product_area: General Information
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Using Custom Metrics and Events'
+          Description: 'Added another code snippet'
+          Link: https://studio.support.brightcove.com/campaign/general/using-custom-metrics-and-events.html
+          Product: Video Cloud
+          Product_area: Campaign
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'CMS/Playback API: Videos Search v1'
+          Description: 'Note about default sort value added'
+          Link: https://apis.support.brightcove.com/cms/searching/cmsplayback-api-videos-search.html#Known%20Issues
+          Product: Video Cloud
+          Product_area: CMS API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Jump Start: Header Bidding Ad'
+          Description: 'Updated ima plugin to version 4 and prebid js URL'
+          Link: https://player.support.brightcove.com/advertising/jump-start-header-bidding-ad.html 
+          Product: Brightcove Player
+          Product_area: Advertising
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Getting Started with Brightcove Video Connect for the Sitecore Experience Platform'
+          Description: 'Added notes on EOL for older versions'
+          Link: https://integrations.support.brightcove.com/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
 - date: 17-June-2022
   types:
     - type: New Docs
