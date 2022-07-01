@@ -59,5 +59,9 @@
     "titleBar.border": "#171515",
     "statusBar.border": "#171515"
   },
-  "colorWheel.settings.workspaceColor": "hsl(267,88%,31%)"
+  "colorWheel.settings.workspaceColor": "hsl(267,88%,31%)",
+  "cSpell.words": [
+    "MRSS",
+    "Zencoder"
+  ]
 }

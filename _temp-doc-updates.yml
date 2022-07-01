@@ -52,6 +52,30 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Using Core Pages'
+          Description: 'Updated Settings section to match latest UI changes'
+          Link: https://beacon-help.support.brightcove.com/layout/using-core-pages.html#Settings
+          Product: Beacon
+          Product_area: Layout
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Content Protection'
+          Description: 'Short Manifest TTL feature information added'
+          Link: https://player.support.brightcove.com/content-protection/overview-content-protection.html
+          Product: Brightcove Player
+          Product_area: Content Protection
+          Product_Update: 'true'
+          Feature: 'Implementation of Short Manifest TTL'
+          Status: Released
+        - Title: 'Overview: Content Protection'
+          Description: 'Short Manifest TTL feature information added'
+          Link: https://apis.support.brightcove.com/cms/getting-started/best-practices-cms-and-playback-apis.html
+          Product: Video Cloud
+          Product_area: CMS API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Minor updates
       docs:
         - Title: 'Brightcove Player Sample: Play Video Before Playlist'
@@ -62,3 +86,20 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Generic Stream Concurrency (GSC) with the Native SDK for Android'
+          Description: 'Note updated'
+          Link: https://sdks.support.brightcove.com/android/content-protection/generic-stream-concurrency-android.html
+          Product: Device SDKs
+          Product_area: Content Protection
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Product Overview'
+          Description: 'URLs updated to redirect to the right place'
+          Link: https://general.support.brightcove.com/general/brightcove-product-overview.html
+          Product: Video Cloud
+          Product_area: General
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+          
