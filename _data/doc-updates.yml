@@ -1,0 +1,120 @@
+- date: 1-July-2022
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'The Native SDK for Android Release 7.0.1'
+          Description: 'In this topic, you will learn about the new functionality provided by the Brightcove Native SDK for Android version 7.0.1.'
+          Link: https://sdks.support.brightcove.com/android/framework/android-sdk-7-release.html
+          Product: Device SDKs
+          Product_area: Native SDK for Android
+          Product_Update: 'false'
+          Feature: ''
+          Status: Staging
+        - Title: 'Installation for Cloud AEM'
+          Description: 'Installation of the Brightcove connector 5.7 for the <strong>cloud version</strong> of the Adobe Experience Manager (AEM)'
+          Link: https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connection-installation-cloud.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Ingesting via an MRSS Feed'
+          Description: 'You can ingest videos and assets to Video Cloud using MRSS feed described in this article.'
+          Link: https://apis.support.brightcove.com/mrss-ingestion/getting-started/ingesting_from_a_remotely_hosted_mrss_feed.html
+          Product: Video Cloud
+          Product_area: Ingestion
+          Product_Update: 'true'
+          Feature: 'Ingestion via MRSS feed'
+          Status: Limited Availability
+        - Title: 'XML Manifest for Ingestion via MRSS'
+          Description: 'This topic explains the structure of the XML used by MRSS ingestion to upload videos to Video Cloud.'
+          Link: https://apis.support.brightcove.com/mrss-ingestion/getting-started/xml-manifest-for-ingestion-via-mrss.html
+          Product: Video Cloud
+          Product_area: Ingestion
+          Product_Update: 'false'
+          Feature: ''
+          Status: Limited Availability
+    - type: Major updates
+      docs:
+        - Title: 'Reducing Latency for Live Streams'
+          Description: 'Added new section and expanded limitations'
+          Link: https://live.support.brightcove.com/general/reducing-latency-live-streams.html
+          Product: Live
+          Product_area: Low Latency HLS
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Code Snippets using the Native SDK for Android'
+          Description: 'Added Android code snippet for using in-manifest captions'
+          Link: https://sdks.support.brightcove.com/android/resources/code-snippets-using-native-sdk-android.html
+          Product: Device SDKs
+          Product_area: Native SDK for Android
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Using Core Pages'
+          Description: 'Updated Settings section to match latest UI changes'
+          Link: https://beacon-help.support.brightcove.com/layout/using-core-pages.html#Settings
+          Product: Beacon
+          Product_area: Layout
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Content Protection'
+          Description: 'Short Manifest TTL feature information added'
+          Link: https://player.support.brightcove.com/content-protection/overview-content-protection.html
+          Product: Brightcove Player
+          Product_area: Content Protection
+          Product_Update: 'true'
+          Feature: 'Implementation of Short Manifest TTL'
+          Status: Released
+        - Title: 'Best Practices: CMS and Playback APIs'
+          Description: 'Short Manifest TTL feature information added'
+          Link: https://apis.support.brightcove.com/cms/getting-started/best-practices-cms-and-playback-apis.html
+          Product: Video Cloud
+          Product_area: CMS API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Brightcove Player Sample: Play Video Before Playlist'
+          Description: 'Minor code update for compatibility with newer Brightcove Player version'
+          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-play-video-playlist.html
+          Product: Brightcove Player
+          Product_area: Code Sample
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Generic Stream Concurrency (GSC) with the Native SDK for Android'
+          Description: 'Note updated'
+          Link: https://sdks.support.brightcove.com/android/content-protection/generic-stream-concurrency-android.html
+          Product: Device SDKs
+          Product_area: Content Protection
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Product Overview'
+          Description: 'URLs updated to redirect to the right place'
+          Link: https://general.support.brightcove.com/general/brightcove-product-overview.html
+          Product: Video Cloud
+          Product_area: General
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Reviewing Social Analytics'
+          Description: 'Updates for LinkedIn social analytics'
+          Link: https://studio.support.brightcove.com/social/reviewing-social-analytics.html
+          Product: Video Cloud
+          Product_area: Social
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Reviewing Social Views Analytics'
+          Description: 'Updates for LinkedIn social analytics'
+          Link: https://studio.support.brightcove.com/social/reviewing-social-views-analytics.html
+          Product: Video Cloud
+          Product_area: Social
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released

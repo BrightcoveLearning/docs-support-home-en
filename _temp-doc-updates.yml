@@ -68,7 +68,7 @@
           Product_Update: 'true'
           Feature: 'Implementation of Short Manifest TTL'
           Status: Released
-        - Title: 'Overview: Content Protection'
+        - Title: 'Best Practices: CMS and Playback APIs'
           Description: 'Short Manifest TTL feature information added'
           Link: https://apis.support.brightcove.com/cms/getting-started/best-practices-cms-and-playback-apis.html
           Product: Video Cloud
@@ -99,6 +99,22 @@
           Link: https://general.support.brightcove.com/general/brightcove-product-overview.html
           Product: Video Cloud
           Product_area: General
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Reviewing Social Analytics'
+          Description: 'Updates for LinkedIn social analytics'
+          Link: https://studio.support.brightcove.com/social/reviewing-social-analytics.html
+          Product: Video Cloud
+          Product_area: Social
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Reviewing Social Views Analytics'
+          Description: 'Updates for LinkedIn social analytics'
+          Link: https://studio.support.brightcove.com/social/reviewing-social-views-analytics.html
+          Product: Video Cloud
+          Product_area: Social
           Product_Update: 'false'
           Feature: ''
           Status: Released
