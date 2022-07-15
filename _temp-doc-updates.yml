@@ -34,7 +34,6 @@
           Product_Update: 'true'
           Feature: 'Video Transcripts'
           Status: Released
-
     - type: Major updates
       docs:
         - Title: 'Multi Language Audio with the Live Module'
@@ -61,7 +60,6 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
-
     - type: Minor updates
       docs:
         - Title: 'Configuring Player Content Restrictions'

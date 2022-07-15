@@ -1,3 +1,85 @@
+- date: 15-July-2022
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'Controlling Viewer Access with Roles'
+          Description: 'In this topic, you will learn how to present content to viewers based on their assigned roles. You will manage roles in your external VMS and the Brightcove Beacon CMS.'
+          Link: https://beacon.support.brightcove.com/using-brightcove-beacon/roles-as-rights.html
+          Product: Beacon
+          Product_area: Roles as Rights
+          Product_Update: 'true'
+          Feature: 'Roles as Rights in Beacon CMS'
+          Status: Released
+        - Title: 'Insights'
+          Description: 'Essential Insights added to Video Cloud Studio Analytics'
+          Link: https://studio.support.brightcove.com/analytics/insights.html
+          Product: Video Cloud
+          Product_area: Analytics
+          Product_Update: 'true'
+          Feature: 'Insights'
+          Status: Limited Availability
+        - Title: 'Insights Glossary'
+          Description: 'Glossary of terms for Insights'
+          Link: https://studio.support.brightcove.com/analytics/insights-glossary.html
+          Product: Video Cloud
+          Product_area: Analytics
+          Product_Update: 'false'
+          Feature: 'Insights'
+          Status: Limited Availability
+        - Title: 'Managing Transcripts Using the CMS API'
+          Description: 'New transcript file generated during auto-captioning and added to videos'
+          Link: https://apis.support.brightcove.com/cms/managing-videos/managing-transcripts.html
+          Product: Video Cloud
+          Product_area: CMS API, Playback API
+          Product_Update: 'true'
+          Feature: 'Video Transcripts'
+          Status: Released
+    - type: Major updates
+      docs:
+        - Title: 'Multi Language Audio with the Live Module'
+          Description: 'Added a section for the Live control room that displays PID and Video PID'
+          Link: https://live.support.brightcove.com/live-module/multi-language-audio.html#Viewing_live_event_info
+          Product: Live
+          Product_area: Multiple Language Audio
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating Series/Seasons/Episodes'
+          Description: 'Added roles field when adding series and seasons.'
+          Link: https://beacon.support.brightcove.com/using-brightcove-beacon/series-seasons-episodes.html
+          Product: Beacon
+          Product_area: Roles as Rights
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Guides'
+          Description: 'Guides section added'
+          Link: https://sdks.support.brightcove.com/developer-support/index.html
+          Product: Device SDKs
+          Product_area: Developer Support
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Configuring Player Content Restrictions'
+          Description: 'Limit on the number of domains note improved'
+          Link: https://studio.support.brightcove.com/players/configuring-player-content-restrictions.html
+          Product: Video Cloud
+          Product_area: Managing Players
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Thumbnail Seeking with Brightcove Player'
+          Description: 'Note added about Thumbnail Scrubber image display intervals'
+          Link: https://player.support.brightcove.com/plugins/thumbnails-plugin.html
+          Product: Player
+          Product_area: Plugins
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+
+
 - date: 8-July-2022
   types:
     - type: New Docs
