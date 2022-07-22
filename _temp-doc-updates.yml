@@ -1,80 +1,136 @@
-- date: 15-July-2022
+- date: 22-July-2022
   types:
     - type: New Docs
       docs:
-        - Title: 'Controlling Viewer Access with Roles'
-          Description: 'In this topic, you will learn how to present content to viewers based on their assigned roles. You will manage roles in your external VMS and the Brightcove Beacon CMS.'
-          Link: https://beacon.support.brightcove.com/using-brightcove-beacon/roles-as-rights.html
-          Product: Beacon
-          Product_area: Roles as Rights
+        - Title: 'Overview: Image API'
+          Description: 'The Image API allows you to retrieve a resized, cropped, or rotated version of an image. Open to Beacon customers as well as Video Cloud.'
+          Link: https://apis.support.brightcove.com/images/getting-started/overview.html
+          Product: Video Cloud
+          Product_area: Platform APIs
           Product_Update: 'true'
-          Feature: 'Roles as Rights in Beacon CMS'
+          Feature: 'Image API'
           Status: Released
-        - Title: 'Insights'
-          Description: 'Essential Insights added to Video Cloud Studio Analytics'
-          Link: https://studio.support.brightcove.com/analytics/insights.html
+        - Title: 'Image API Reference'
+          Description: 'The Image API allows you to retrieve a resized, cropped, or rotated version of an image. Open to Beacon customers as well as Video Cloud.'
+          Link: https://apis.support.brightcove.com/images/references/reference.html
           Product: Video Cloud
-          Product_area: Analytics
-          Product_Update: 'true'
-          Feature: 'Insights'
-          Status: Limited Availability
-        - Title: 'Insights Glossary'
-          Description: 'Glossary of terms for Insights'
-          Link: https://studio.support.brightcove.com/analytics/insights-glossary.html
-          Product: Video Cloud
-          Product_area: Analytics
+          Product_area: Platform APIs
           Product_Update: 'false'
-          Feature: 'Insights'
-          Status: Limited Availability
-        - Title: 'Managing Transcripts Using the CMS API'
-          Description: 'New transcript file generated during auto-captioning and added to videos'
-          Link: https://apis.support.brightcove.com/cms/managing-videos/managing-transcripts.html
-          Product: Video Cloud
-          Product_area: CMS API, Playback API
-          Product_Update: 'true'
-          Feature: 'Video Transcripts'
+          Feature: ''
           Status: Released
     - type: Major updates
       docs:
-        - Title: 'Multi Language Audio with the Live Module'
-          Description: 'Added a section for the Live control room that displays PID and Video PID'
-          Link: https://live.support.brightcove.com/live-module/multi-language-audio.html#Viewing_live_event_info
-          Product: Live
-          Product_area: Multiple Language Audio
+        - Title: 'Getting Started with Brightcove Video Connect for the Sitecore Experience Platform'
+          Description: 'Major new features including working with in-page experiences and players in Sitecore, and support for multi-lingual variants for video metadata'
+          Link: https://integrations.support.brightcove.com/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html
+          Product: Video Cloud
+          Product_area: Sitecore Connector
+          Product_Update: 'true'
+          Feature: 'Players, Experiences, Multi-lingual Metadata'
+          Status: Released
+        - Title: 'Dynamic Ingest API: Best Practices'
+          Description: 'Added guidelines for migrating videos to Video Cloud and other mass ingestions'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/general/dynamic-ingest-api-best-practices.html
+          Product: Video Cloud
+          Product_area: Ingestion
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Creating Series/Seasons/Episodes'
-          Description: 'Added roles field when adding series and seasons.'
-          Link: https://beacon.support.brightcove.com/using-brightcove-beacon/series-seasons-episodes.html
+        - Title: 'Overview: Using Aspera for Ingestion to Video Cloud'
+          Description: 'Added guidelines for migrating videos to Video Cloud and other mass ingestions'
+          Link: https://apis.support.brightcove.com/aspera/overview.html
+          Product: Video Cloud
+          Product_area: Ingestion
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Ingesting via an MRSS Feed'
+          Description: 'Added guidelines for migrating videos to Video Cloud and other mass ingestions'
+          Link: https://apis.support.brightcove.com/mrss-ingestion/getting-started/ingesting_from_a_remotely_hosted_mrss_feed.html
+          Product: Video Cloud
+          Product_area: Ingestion
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Sending Push Notifications to Beacon App Viewers'
+          Description: 'Updated screenshots and added test notification'
+          Link: https://beacon-help.support.brightcove.com/registered-users/sending-push-notifications.html
           Product: Beacon
-          Product_area: Roles as Rights
+          Product_area: Beacon apps
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Guides'
-          Description: 'Guides section added'
-          Link: https://sdks.support.brightcove.com/developer-support/index.html
+        - Title: 'Android: Source Selection'
+          Description: 'Updated Android source selection for setting HLS sources'
+          Link: https://sdks.support.brightcove.com/android/playback/android-source-selection.html
           Product: Device SDKs
-          Product_area: Developer Support
+          Product_area: Native SDK for Android
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for iOS'
+          Description: 'Added link to iOS sample for rendering custom captions'
+          Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html#Samples
+          Product: Device SDKs
+          Product_area: Native SDK for iOS
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Common Configuration Settings'
+          Description: 'Updated screenshot and updated table with asset roles'
+          Link: https://beacon.support.brightcove.com/references/common-configuration-settings.html
+          Product: Beacon
+          Product_area: Beacon CMS
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Error Handling with the Native SDK for iOS'
+          Description: 'Playback errors table section add'
+          Link: https://sdks.support.brightcove.com/ios/troubleshooting/error-handling-native-sdk-ios.html#Playback_errors_table
+          Product: Device SDKs
+          Product_area: Troubleshooting
           Product_Update: 'false'
           Feature: ''
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Configuring Player Content Restrictions'
-          Description: 'Limit on the number of domains note improved'
-          Link: https://studio.support.brightcove.com/players/configuring-player-content-restrictions.html
-          Product: Video Cloud
-          Product_area: Managing Players
+        - Title: 'Live API Reference'
+          Description: 'Removed deprecated live_sliding_window_duration field'
+          Link: https://apis.support.brightcove.com/live-api/references/reference.html
+          Product: Live
+          Product_area: Live API
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Thumbnail Seeking with Brightcove Player'
-          Description: 'Note added about Thumbnail Scrubber image display intervals'
-          Link: https://player.support.brightcove.com/plugins/thumbnails-plugin.html
-          Product: Player
+        - Title: 'Overview: Dimensions, Fields, and Parameters'
+          Description: 'Added note that you can sort results on any field you are returning with the query'
+          Link: https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html
+          Product: Video Cloud
+          Product_area: Analytics API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Analytics API Reference'
+          Description: 'Added note that you can sort results on any field you are returning with the query'
+          Link: https://apis.support.brightcove.com/analytics/references/reference.html
+          Product: Video Cloud
+          Product_area: Analytics API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Implementing Server-Side Ads with Brightcove Player'
+          Description: 'Note about video configuration while implementing SSAI Ads added'
+          Link: https://player.support.brightcove.com/plugins/implementing-server-side-ads-brightcove-player.html
+          Product: Brightcove Player
           Product_area: Plugins
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Getting Started with Interactivity'
+          Description: 'Note about hapyak plugin added'
+          Link: https://studio.support.brightcove.com/interactivity/getting-started-interactivity.html#configure-player
+          Product: Brightcove Player
+          Product_area: Interactivity
           Product_Update: 'false'
           Feature: ''
           Status: Released
