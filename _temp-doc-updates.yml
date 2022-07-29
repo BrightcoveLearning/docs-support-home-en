@@ -86,3 +86,43 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Ingesting WebVTT Files'
+          Description: 'Added note that for 608 embedded close captions, only Latin characters are supported.'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-webvtt-files-text-trackscaptions.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest/Captions
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Live API: Creating VOD Clips'
+          Description: 'Added note VOD clips must use non-CAE profiles, so either the account default profile must be non-CAE or a non-CAE profile must be specified in the request.'
+          Link: https://apis.support.brightcove.com/live-api/guides/live-api-creating-vod-clips.html
+          Product: Live
+          Product_area: Live API / VOD clips
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Live API: VOD from Live Event'
+          Description: 'Added note VOD from Live must use non-CAE profiles, so either the account default profile must be non-CAE or a non-CAE profile must be specified in the request.'
+          Link: https://apis.support.brightcove.com/live-api/guides/live-api-vod-live-event.html
+          Product: Live
+          Product_area: Live API / VOD from Live
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating a Video Clip Using the Live Module'
+          Description: 'Added note clip from Live must use non-CAE profiles, so the account default profile must be non-CAE.'
+          Link: https://studio.support.brightcove.com/live/live-module/creating-video-clip-using-live-module.html
+          Product: Live
+          Product_area: Live Module / Clipping
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Live API Reference'
+          Description: 'Added note that updates to a Live Event made in the Live Module are not reflected in the live job metadata returned by the API.'
+          Link: https://apis.support.brightcove.com/live-api/references/reference.html
+          Product: Live
+          Product_area: Live API / Live job metadata
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
