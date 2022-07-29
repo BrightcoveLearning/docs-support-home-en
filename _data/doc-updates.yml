@@ -1,3 +1,92 @@
+- date: 29-July-2022
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'Gallery Virtual Event Documentation'
+          Description: 'Complete set of Gallery Virtual Event Documentation'
+          Link: https://gallery.support.brightcove.com/experiences/virtual-event/index.html
+          Product: Video Cloud
+          Product_area: Gallery
+          Product_Update: 'true'
+          Feature: 'Gallery now offers a Virtual Event template'
+          Status: Released
+        - Title: 'Implementing TVOD'
+          Description: 'In this topic, you will learn how to create a TVOD monetization package.'
+          Link: https://beacon.support.brightcove.com/monetization/general/implementing-tvod.html
+          Product: Beacon
+          Product_area: Monetization
+          Product_Update: 'false'
+          Feature: ''
+          Status: Staging
+        - Title: 'Implementing TVOD'
+          Description: 'In this topic, you will learn how to create a TVOD monetization package.'
+          Link: https://beacon.support.brightcove.com/monetization/general/implementing-tvod.html
+          Product: Beacon
+          Product_area: Monetization
+          Product_Update: 'false'
+          Feature: ''
+          Status: Staging
+        - Title: 'Creating Audio-Only Live Events'
+          Description: 'In this topic, you will learn how to create audio-only live streams.'
+          Link: https://live.support.brightcove.com/live-module/audio-only-live-events.html
+          Product: Live
+          Product_area: Audio only
+          Product_Update: 'true'
+          Feature: 'Audio-only live streams'
+          Status: Released
+    - type: Major updates
+      docs:
+        - Title: 'Developer Tools'
+          Description: 'Developer Tools section added'
+          Link: https://apis.support.brightcove.com/general/developer-tools/index.html
+          Product: Video Cloud
+          Product_area: General Information
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Features'
+          Description: 'Features section added'
+          Link: https://apis.support.brightcove.com/general/features/index.html
+          Product: Video Cloud
+          Product_area: General Information
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'General'
+          Description: 'General section added'
+          Link: https://player.support.brightcove.com/coding-topics/general/index.html
+          Product: Player
+          Product_area: Coding topics
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Beacon Store Webhook Reference'
+          Description: 'Updated for version 1.0.3 of the webhook API'
+          Link: https://beacon.support.brightcove.com/beacon-web-store/beacon-store-webhook-reference.html
+          Product: Beacon
+          Product_area: Beacon Store
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Live API Reference'
+          Description: 'New fields added to the application_ad_configuration'
+          Link: https://apis.support.brightcove.com/live-api/references/reference.html#tag/SSAI/operation/CreateAdConfiguration
+          Product: Live
+          Product_area: SSAI
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Overview: Brightcove Playback Restrictions'
+          Description: 'Added note that Forensic Watermarking is not supported with License Keys Protection'
+          Link: https://apis.support.brightcove.com/playback-restrictions/getting-started/overview-playback-restrictions.html#License_Keys_Protection
+          Product: Video Cloud
+          Product_area: Playback Restrictions
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+
 - date: 22-July-2022
   types:
     - type: New Docs
