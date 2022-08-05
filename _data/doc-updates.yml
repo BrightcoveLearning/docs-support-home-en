@@ -1,3 +1,92 @@
+- date: 05-August-2022
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'Demo Apps Access'
+          Description: 'In this topic, you will learn how to access demo apps that have been setup for testing.'
+          Link: https://beacon-help.support.brightcove.com/publishing-apps/general/demo-apps-access.html
+          Product: Beacon
+          Product_area: Apps
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Beacon Customer Demo Sites'
+          Description: 'In this topic, you will learn how to setup a customer demo site.'
+          Link: https://beacon-la.support.brightcove.com/beacon-apps/customer-demo-sites.html
+          Product: Beacon
+          Product_area: Apps
+          Product_Update: 'true'
+          Feature: 'Apps for customer testing'
+          Status: Internal
+    - type: Major updates
+      docs:
+        - Title: 'Using MTR (my traceroute)'
+          Description: 'Using MTR (my traceroute) section added'
+          Link: https://live.support.brightcove.com/general/using-mtr-to-look-at-network-traffic.html
+          Product: Live
+          Product_area: General Information
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Adding Interactive Chapters to a Video'
+          Description: 'Adding Interactive Chapters to a Video section added'
+          Link: https://interactivity.support.brightcove.com/annotations/adding-chapters-video.html
+          Product: Interactivity
+          Product_area: Annotations
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Brightcove Player Accessibility'
+          Description: 'A complete re-write of this document'
+          Link: https://player.support.brightcove.com/general/brightcove-player-accessibility.html
+          Product: Brightcove Player
+          Product_area: Accessibility'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Analytics API Glossary'
+          Description: 'Corrected some minor errors'
+          Link: https://apis.support.brightcove.com/analytics/general/analytics-api-glossary.html#reconciled
+          Product: Video Cloud
+          Product_area: Analytics API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Analytics API Glossary'
+          Description: 'Added some clarification and examples for Analytics API URL parameters'
+          Link: https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html#urlParams
+          Product: Video Cloud
+          Product_area: Analytics API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'CMS API Reference'
+          Description: 'Corrected an inaccurate assertion that you can retrieve multiple videos by reference id - that applies only to retrieving videos by video id'
+          Link: https://apis.support.brightcove.com/cms/references/reference.html#tag/Videos/operation/GetVideoByIdOrReferenceId
+          Product: Video Cloud
+          Product_area: CMS API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Adding Interactive Chapters to a Video'
+          Description: 'Updates of links about Brightcove Interactivity vs HapYak'
+          Link: https://studio.support.brightcove.com/interactivity/adding-chapters-video.html
+          Product: Video Cloud
+          Product_area:  Interactivity
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Reducing Latency for Live Streams'
+          Description: 'Added note about increased request traffic'
+          Link: https://apis.support.brightcove.com/live-api/guides/reducing-latency-live-streams.html 
+          Product: Live
+          Product_area: Low latency
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+          
 - date: 29-July-2022
   types:
     - type: New Docs
