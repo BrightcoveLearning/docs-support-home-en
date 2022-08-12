@@ -1,88 +1,96 @@
-- date: 05-August-2022
+- date: 12-August-2022
   types:
     - type: New Docs
       docs:
-        - Title: 'Demo Apps Access'
+        - Title: 'Brightcove Interactivity Javascript Embed API'
+          Description: 'Migrated and updated from old HapYak docs'
+          Link: https://interactivity.support.brightcove.com/developers/embed-api/reference.html
+          Product: Brightcove Interactivity
+          Product_area: APIs
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Annotations Client CRUD API'
+          Description: 'Migrated and updated from old HapYak docs'
+          Link: https://interactivity.support.brightcove.com/developers/annotation-api/reference.html
+          Product: Brightcove Interactivity
+          Product_area: APIs
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Interactivity Extension API'
+          Description: 'Migrated and updated from old HapYak docs'
+          Link: https://interactivity.support.brightcove.com/developers/extension-api/reference.html
+          Product: Brightcove Interactivity
+          Product_area: APIs
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Interactivity Responsive API'
+          Description: 'Migrated and updated from old HapYak docs'
+          Link: https://interactivity.support.brightcove.com/developers/responsive-api/reference.html
+          Product: Brightcove Interactivity
+          Product_area: APIs
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Interactivity Addon API'
+          Description: 'Migrated and updated from old HapYak docs'
+          Link: https://interactivity.support.brightcove.com/developers/addon-api/reference.html
+          Product: Brightcove Interactivity
+          Product_area: APIs
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Beacon Demo Apps Access'
           Description: 'In this topic, you will learn how to access demo apps that have been setup for testing.'
           Link: https://beacon-help.support.brightcove.com/publishing-apps/general/demo-apps-access.html
           Product: Beacon
           Product_area: Apps
+          Product_Update: 'true'
+          Feature: 'Demo apps for customer testing'
+          Status: Released
+    - type: Major updates
+      docs:
+        - Title: 'Dimension: viewer'
+          Description: 'Added sample code for sending the viewer id to the analytics data collector.'
+          Link: https://apis.support.brightcove.com/analytics/dimension-guides/dimension-viewer.html
+          Product: Video Cloud
+          Product_area: Analytics
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Beacon Customer Demo Sites'
-          Description: 'In this topic, you will learn how to setup a customer demo site.'
-          Link: https://beacon-la.support.brightcove.com/beacon-apps/customer-demo-sites.html
-          Product: Beacon
-          Product_area: Apps
-          Product_Update: 'true'
-          Feature: 'Apps for customer testing'
-          Status: Internal
-    - type: Major updates
-      docs:
-        - Title: 'Using MTR (my traceroute)'
-          Description: 'Using MTR (my traceroute) section added'
-          Link: https://live.support.brightcove.com/general/using-mtr-to-look-at-network-traffic.html
-          Product: Live
-          Product_area: General Information
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Adding Interactive Chapters to a Video'
-          Description: 'Adding Interactive Chapters to a Video section added'
-          Link: https://interactivity.support.brightcove.com/annotations/adding-chapters-video.html
-          Product: Interactivity
-          Product_area: Annotations
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Brightcove Player Accessibility'
-          Description: 'A complete re-write of this document'
-          Link: https://player.support.brightcove.com/general/brightcove-player-accessibility.html
-          Product: Brightcove Player
-          Product_area: Accessibility'
+        - Title: 'Concurrency Service API'
+          Description: 'Added missing path for deleting a session.'
+          Link: https://apis.support.brightcove.com/playback-restrictions/references/concurrency-service-api/reference.html
+          Product: Video Cloud
+          Product_area: Playback Restrictions
           Product_Update: 'false'
           Feature: ''
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Analytics API Glossary'
-          Description: 'Corrected some minor errors'
-          Link: https://apis.support.brightcove.com/analytics/general/analytics-api-glossary.html#reconciled
-          Product: Video Cloud
-          Product_area: Analytics API
+        - Title: 'Video Cloud SSAI API'
+          Description: 'Ad Keys metadata variable description updated'
+          Link: https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html#Metadata_variables
+          Product: SSAI
+          Product_area: SSAI API
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Analytics API Glossary'
-          Description: 'Added some clarification and examples for Analytics API URL parameters'
-          Link: https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html#urlParams
-          Product: Video Cloud
-          Product_area: Analytics API
+        - Title: 'Creating Video Cloud Custom Fields'
+          Description: 'Custom fields images updated'
+          Link: https://beacon.support.brightcove.com/syncing-with-video-cloud/vc-custom-fields.html
+          Product: Beacon
+          Product_area: Custom Fields
           Product_Update: 'false'
           Feature: ''
-          Status: Released
-        - Title: 'CMS API Reference'
-          Description: 'Corrected an inaccurate assertion that you can retrieve multiple videos by reference id - that applies only to retrieving videos by video id'
-          Link: https://apis.support.brightcove.com/cms/references/reference.html#tag/Videos/operation/GetVideoByIdOrReferenceId
-          Product: Video Cloud
-          Product_area: CMS API
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Adding Interactive Chapters to a Video'
-          Description: 'Updates of links about Brightcove Interactivity vs HapYak'
-          Link: https://studio.support.brightcove.com/interactivity/adding-chapters-video.html
-          Product: Video Cloud
-          Product_area:  Interactivity
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Reducing Latency for Live Streams'
-          Description: 'Added note about increased request traffic'
-          Link: https://apis.support.brightcove.com/live-api/guides/reducing-latency-live-streams.html 
+          Status: Release
+        - Title: 'Implementing Server-Side Ads in the Live Module'
+          Description: 'Added use cases for displaying an additional preview player'
+          Link: https://live.support.brightcove.com/live-module/implementing-server-side-ads-live-module.html#Creating_a_live_event_that_supports_server_side_ads 
           Product: Live
-          Product_area: Low latency
+          Product_area: SSAI
           Product_Update: 'false'
           Feature: ''
           Status: Released

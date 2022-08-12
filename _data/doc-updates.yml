@@ -1,3 +1,100 @@
+- date: 12-August-2022
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'Brightcove Interactivity Javascript Embed API'
+          Description: 'Migrated and updated from old HapYak docs'
+          Link: https://interactivity.support.brightcove.com/developers/embed-api/reference.html
+          Product: Brightcove Interactivity
+          Product_area: APIs
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Annotations Client CRUD API'
+          Description: 'Migrated and updated from old HapYak docs'
+          Link: https://interactivity.support.brightcove.com/developers/annotation-api/reference.html
+          Product: Brightcove Interactivity
+          Product_area: APIs
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Interactivity Extension API'
+          Description: 'Migrated and updated from old HapYak docs'
+          Link: https://interactivity.support.brightcove.com/developers/extension-api/reference.html
+          Product: Brightcove Interactivity
+          Product_area: APIs
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Interactivity Responsive API'
+          Description: 'Migrated and updated from old HapYak docs'
+          Link: https://interactivity.support.brightcove.com/developers/responsive-api/reference.html
+          Product: Brightcove Interactivity
+          Product_area: APIs
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Interactivity Addon API'
+          Description: 'Migrated and updated from old HapYak docs'
+          Link: https://interactivity.support.brightcove.com/developers/addon-api/reference.html
+          Product: Brightcove Interactivity
+          Product_area: APIs
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Beacon Demo Apps Access'
+          Description: 'In this topic, you will learn how to access demo apps that have been setup for testing.'
+          Link: https://beacon-help.support.brightcove.com/publishing-apps/general/demo-apps-access.html
+          Product: Beacon
+          Product_area: Apps
+          Product_Update: 'true'
+          Feature: 'Demo apps for customer testing'
+          Status: Released
+    - type: Major updates
+      docs:
+        - Title: 'Dimension: viewer'
+          Description: 'Added sample code for sending the viewer id to the analytics data collector.'
+          Link: https://apis.support.brightcove.com/analytics/dimension-guides/dimension-viewer.html
+          Product: Video Cloud
+          Product_area: Analytics
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Concurrency Service API'
+          Description: 'Added missing path for deleting a session.'
+          Link: https://apis.support.brightcove.com/playback-restrictions/references/concurrency-service-api/reference.html
+          Product: Video Cloud
+          Product_area: Playback Restrictions
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Video Cloud SSAI API'
+          Description: 'Ad Keys metadata variable description updated'
+          Link: https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html#Metadata_variables
+          Product: SSAI
+          Product_area: SSAI API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating Video Cloud Custom Fields'
+          Description: 'Custom fields images updated'
+          Link: https://beacon.support.brightcove.com/syncing-with-video-cloud/vc-custom-fields.html
+          Product: Beacon
+          Product_area: Custom Fields
+          Product_Update: 'false'
+          Feature: ''
+          Status: Release
+        - Title: 'Implementing Server-Side Ads in the Live Module'
+          Description: 'Added use cases for displaying an additional preview player'
+          Link: https://live.support.brightcove.com/live-module/implementing-server-side-ads-live-module.html#Creating_a_live_event_that_supports_server_side_ads 
+          Product: Live
+          Product_area: SSAI
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+          
 - date: 05-August-2022
   types:
     - type: New Docs
