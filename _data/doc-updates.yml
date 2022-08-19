@@ -1,3 +1,100 @@
+- date: 19-August-2022
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'Update Player Version'
+          Description: 'Code Sample to update palyer version'
+          Link: https://apis.support.brightcove.com/player-management/code-samples/player-managment-api-update-player-version.html
+          Product: Video Cloud 
+          Product_area: Player Managment API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Controlling Viewer Access with Roles in Studio'
+          Description: 'In this topic, you will learn how to present content to viewers based on their assigned roles. You will manage roles in your external VMS and Brightcove Beacon Studio.'
+          Link: https://beacon-help.support.brightcove.com/registered-users/roles-as-rights-studio.html
+          Product: Beacon
+          Product_area: Roles as Rights
+          Product_Update: 'false'
+          Feature: ''
+          Status: Staging
+        - Title: 'Using TVOD Plans'
+          Description: 'In this topic, you will learn how to assign a TVOD monetization package to media content.'
+          Link: https://beacon-help.support.brightcove.com/monetization/general/using-tvod-plan.html   
+          Product: Beacon
+          Product_area: Monetization
+          Product_Update: 'false'
+          Feature: ''
+          Status: Staging
+    - type: Major updates
+      docs:
+        - Title: 'Live API Reference'
+          Description: 'Added fields for low latency'
+          Link: https://apis.support.brightcove.com/live-api/references/reference.html
+          Product: Live
+          Product_area: Live Streaming 
+          Product_Update: 'true'
+          Feature: 'Low latency streaming'
+          Status: Released
+        - Title: 'Creating and Managing Live Events using the Live Module'
+          Description: 'Added information on using low latency streaming'
+          Link: https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#low-latency
+          Product: Live
+          Product_area: Live module
+          Product_Update: 'true'
+          Feature: 'Low Latency streaming now available in the Live module'
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Overview: Using Aspera for Ingestion to Video Cloud'
+          Description: 'Corrected the maximum number of videos per manifest to 20.'
+          Link: https://apis.support.brightcove.com/aspera/overview.html#mass_ingestion_migration
+          Product: Video Cloud
+          Product_area: Ingestion
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Ingesting via an MRSS Feed'
+          Description: 'Corrected the maximum number of videos per manifest to 20.'
+          Link: https://apis.support.brightcove.com/mrss-ingestion/getting-started/ingesting_from_a_remotely_hosted_mrss_feed.html
+          Product: Video Cloud
+          Product_area: Ingestion
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Playback API Reference'
+          Description: 'Added request syntax for getting a video by reference id.'
+          Link: https://apis.support.brightcove.com/playback/references/reference_v2.html#tag/Videos/operation/Get_Videos
+          Product: Video Cloud
+          Product_area: Playback API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Adding Audio Tracks to Videos using the Media Module'
+          Description: 'Audio Tracks limitations updated'
+          Link: https://studio.support.brightcove.com/media/adding-audio-tracks-videos-using-media-module.html
+          Product: Video Cloud
+          Product_area: Captions and Audio Files
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Ingesting Videos with Multi-Language Audio Tracks'
+          Description: 'Audio Tracks limitations updated'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-videos-multiple-audio-tracks.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating TVOD Plans'
+          Description: 'Added note that web is currently the only device to publish supported for TVOD'
+          Link: https://beacon-help.support.brightcove.com/monetization/general/creating-tvod-plan.html  
+          Product: Beacon
+          Product_area: Monetization
+          Product_Update: 'false'
+          Feature: ''
+          Status: Staging
+          
 - date: 12-August-2022
   types:
     - type: New Docs
