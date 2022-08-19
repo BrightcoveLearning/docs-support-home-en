@@ -18,7 +18,12 @@ parent: home
           {% for doc in type.docs %}
             {% if doc.Status == "Released" %}
             <li><strong>Title:</strong> {{ doc.Title }}</li>
-            <li><strong>Description:</strong> {{ doc.Description }}</li>
+            <li>
+              <strong>Description:</strong> {{ doc.Description }}
+              {% if doc.Product_Update == 'true' %}
+                - <span style="color:#d33e00;">New Product Feature!</span>
+              {% endif %}
+            </li>
             <li><strong>Link:</strong> <a href="{{ doc.Link }}">{{ doc.Link }}</a></li>
             <li><strong>Product:</strong> <a href="{{ doc.Product }}">{{ doc.Product }}</a></li>
             <li style="margin-bottom: 1em;"><strong>Product Area:</strong> {{ doc.Product_area }}</li>
