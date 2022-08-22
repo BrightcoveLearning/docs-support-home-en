@@ -5,8 +5,11 @@
   name: Video Cloud Studio
   url: 'https://studio.support.brightcove.com/index.html'
 - section:
-  name: Brightcove Player
+  name: Brightcove Player Development
   url: 'https://player.support.brightcove.com/index.html'
+- section:
+  name: 'Brightcove Interactivity'
+  url: 'https://interactivity.support.brightcove.com/index.html' 
 - section:
   name: Video Cloud Platform APIs
   url: 'https://apis.support.brightcove.com/index.html'
@@ -20,24 +23,32 @@
   name: Video Cloud General Information
   url: 'https://general.support.brightcove.com/index.html'
 - section:
-  name: Brightcove Beacon
+  name: Gallery
+  url: 'https://gallery.support.brightcove.com/index.html'
+- section:
+  name: Social
+  url: 'https://studio.support.brightcove.com/social/index.html'
+- section:
+  name: Brightcove Beacon Studio
+  url: 'https://beacon-help.support.brightcove.com/index.html'
+- section:
+  name: Brightcove Beacon Classic
   url: 'https://beacon.support.brightcove.com/index.html'
+- section:
+  name: Brightcove CorpTV
+  url: 'https://corptv.support.brightcove.com/index.html'
 - section:
   name: Brightcove Live
   url: 'https://live.support.brightcove.com/index.html'
 - section:
+  name: 'Zencoder'
+  url: 'https://zencoder.support.brightcove.com' 
 - section:
   name: Campaign
   url: 'https://campaign.support.brightcove.com/index.html'
 - section:
   name: Engage
   url: 'https://engage.support.brightcove.com/index.html'
-- section:
-  name: Gallery
-  url: 'https://gallery.support.brightcove.com/index.html'
-- section:
-  name: Social
-  url: 'https://studio.support.brightcove.com/social/index.html'
 - section:
   name: SSAI
   url: 'https://ssai.support.brightcove.com/index.html'
