@@ -206,6 +206,7 @@
         
         td>code {
             white-space: nowrap;
+            font-size: inherit;
         }
         
         td>ul {
@@ -449,6 +450,10 @@
         .bcls-aside {
             margin-bottom: 1em;
             padding: 1em 2em 1em 3.5em;
+        }
+        
+        .bcls-aside code {
+            font-size: inherit;
         }
         
         .bcls-aside--information {
