@@ -1,3 +1,163 @@
+- date: 9-September-2022
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'Ingesting Transcript Files'
+          Description: 'Ingest transcripts for your videos.'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-transcriptions.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest API, Transcripts
+          Product_Update: 'true'
+          Feature: 'Ingest video transcripts'
+          Status: Released
+        - Title: 'Installing a Test Build for LG (webOS)'
+          Description: 'In this topic, you will learn how to install test builds of the Brightcove Beacon app for LG using webOS.'
+          Link: https://beacon.support.brightcove.com/publishing-apps/lg/installing-lg-webos-test-build.html 
+          Product: Beacon
+          Product_area: Beacon apps
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Controlling Viewer Access with Roles in Studio'
+          Description: 'In this topic, you will learn how to present content to viewers based on their assigned roles. You will manage roles in your external VMS and Brightcove Beacon Studio'
+          Link: https://beacon-help.support.brightcove.com/registered-users/roles-as-rights-studio.html 
+          Product: Beacon
+          Product_area: Role-Based Access Control
+          Product_Update: 'true'
+          Feature: 'Role-Based Access Control in Beacon Studio'
+          Status: Released
+    - type: Major updates
+      docs:
+        - Title: 'Requesting Auto Captions'
+          Description: 'Updated with new transcript options.'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/requesting-auto-captions.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest API, Auto Captions
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Ingest Fields Reference'
+          Description: 'Updated with new transcript options.'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/references/dynamic-ingest-ingest-fields.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest API, Auto Captions and Transcripts
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Dynamic Ingest API Reference'
+          Description: 'Updated with new transcript options.'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/references/reference.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest API, Auto Captions and Transcripts
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Adobe-AEM-Brightcove Connector: Overview'
+          Description: 'New major release'
+          Link: https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-overview.html
+          Product: Video Cloud
+          Product_area: CMS Connectors
+          Product_Update: 'false'
+          Feature: 'New release with support for several additional video features'
+          Status: Released
+        - Title: 'Adobe-AEM-Brightcove Connector: Using the Connector'
+          Description: 'New major release with several added features'
+          Link: https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-using-connector.html
+          Product: Video Cloud
+          Product_area: CMS Connectors
+          Product_Update: 'true'
+          Feature: 'New release with support for several additional video features'
+          Status: Released
+        - Title: 'Interactivity section added'
+          Description: 'Interactivity section added to Video Cloud Studio'
+          Link: https://studio.support.brightcove.com/interactivity/index.html
+          Product: Video Cloud 
+          Product_area: Interactivity
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Interactivity section added'
+          Description: 'Interactivity section added to Beacon'
+          Link: https://beacon-help.support.brightcove.com/interactivity/index.html
+          Product: Beacon
+          Product_area: Interactivity
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+    - type: Minor updates
+      docs:
+        - Title: 'Source File Upload API for Dynamic Ingest'
+          Description: 'Added note on how to make the upload to S3 work in Postman.'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/getting-started/source-file-upload-api-dynamic-ingest.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Cloud Playout Channel API'
+          Description: 'Added note using a Live job from a different account as the destination for a channel.'
+          Link: https://apis.support.brightcove.com/cloud-playout-apis/references/reference-channels.html#tag/Channels/operation/CreateChannel
+          Product: Video Cloud
+          Product_area: Cloud Playout
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Cloud Playout Overview'
+          Description: 'Added note using a Live job from a different account as the destination for a channel.'
+          Link: https://studio.support.brightcove.com/cloud-playout/cloud-playout-overview.html#limitations
+          Product: Video Cloud
+          Product_area: Cloud Playout
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Live Best Practices'
+          Description: 'Added section on best practices for transmux live jobs.'
+          Link: https://studio.support.brightcove.com/live/get-started/live-module-guidelines-and-best-practices.html#transmux_live_jobs
+          Product: Live
+          Product_area: Cloud Playout
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'New FAQ'
+          Description: 'Updated page to use new FAQ style'
+          Link: https://player.support.brightcove.com/advertising/guide-ad-partner-integration.html#FAQ
+          Product: Brightcove Player
+          Product_area: Advertising
+          Product_Update: 'true | false'
+          Feature: ''
+          Status: Released 
+        - Title: 'New FAQ'
+          Description: 'Updated page to use new FAQ style'
+          Link: https://gallery.support.brightcove.com/settings/securing-portal-experience-ssl.html#faq
+          Product: Gallery
+          Product_area: Gallery settings
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'New FAQ'
+          Description: 'Updated Video Cloud pages to use the new FAQ style.'
+          Link: https://studio.support.brightcove.com/index.html
+          Product: Video Cloud
+          Product_area: General Information
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Get Status of Dynamic Ingest Requests'
+          Description: 'Note about what dynamic ingest notifications to expect added'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/general/get-status-dynamic-ingest-requests-dynamic-delivery.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Using Aspera for Ingestion to Video Cloud'
+          Description: 'Note about aspera packages added'
+          Link: https://apis.support.brightcove.com/aspera/overview.html#Using_Aspera_with_Brightcove
+          Product: Video Cloud
+          Product_area: Aspera
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
 - date: 2-September-2022
   types:
     - type: New Docs

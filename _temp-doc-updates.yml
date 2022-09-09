@@ -1,127 +1,160 @@
-- date: 2-September-2022
+- date: 9-September-2022
   types:
     - type: New Docs
       docs:
-        - Title: 'Adding Pages to Playlists'
-          Description: 'In this topic, you will learn how to create secondary pages and add them to playlists. This gives you the option to have an asset in a playlist that when clicked shows a new page.'
-          Link: https://beacon-help.support.brightcove.com/layout/adding-pages-to-playlists.html
-          Product: Beacon
-          Product_area: Managing Pages
+        - Title: 'Ingesting Transcript Files'
+          Description: 'Ingest transcripts for your videos.'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-transcriptions.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest API, Transcripts
           Product_Update: 'true'
-          Feature: 'Pages as playlist assets'
+          Feature: 'Ingest video transcripts'
           Status: Released
-        - Title: 'Managing Secondary Pages'
-          Description: 'In this topic, you will learn how to create, delete and edit secondary pages.'
-          Link: https://beacon-help.support.brightcove.com/layout/managing-secondary-pages.html
+        - Title: 'Installing a Test Build for LG (webOS)'
+          Description: 'In this topic, you will learn how to install test builds of the Brightcove Beacon app for LG using webOS.'
+          Link: https://beacon.support.brightcove.com/publishing-apps/lg/installing-lg-webos-test-build.html 
           Product: Beacon
-          Product_area: Managing Pages
-          Product_Update: 'true'
-          Feature: 'Basics of secondary pages'
-          Status: Released
-        - Title: 'OTT Catalog Export'
-          Description: 'In this topic, you will learn how to use templates and jobs to generate data reports needed for various platforms search implementations.'
-          Link: https://beacon-help.support.brightcove.com/layout/ott-catalog-export.html
-          Product: Beacon
-          Product_area: Managing Pages
-          Product_Update: 'true'
-          Feature: 'SEO and search across platforms'
-          Status: Released
-        - Title: 'Using View All Pages'
-          Description: 'In this topic, you will learn how to create, delete and edit default and custom view all pages. A view all page is used when the number of videos in a carousel meets a maximum threshold. When the threshold is exceeded, a View All link is displayed and when the link is clicked by the customer a new page appears displaying all videos, for instance in a grid.'
-          Link: https://beacon-help.support.brightcove.com/layout/using-view-all.html
-          Product: Beacon
-          Product_area: Managing Pages
-          Product_Update: 'true'
-          Feature: 'Using secondary pages as view all pages'
-          Status: Released
-        - Title: 'Bumper Videos'
-          Description: 'In this topic, you will learn how to implement bumper videos, that is videos that play before the main content video.'
-          Link: https://player.support.brightcove.com/playback/bumper-videos.html
-          Product: Brightcove Player
-          Product_area: Playback
-          Product_Update: 'true'
-          Feature: 'Add a bumper before content video playback'
+          Product_area: Beacon apps
+          Product_Update: 'false'
+          Feature: ''
           Status: Released
         - Title: 'Controlling Viewer Access with Roles in Studio'
           Description: 'In this topic, you will learn how to present content to viewers based on their assigned roles. You will manage roles in your external VMS and Brightcove Beacon Studio'
-          Link: 
+          Link: https://beacon-help.support.brightcove.com/registered-users/roles-as-rights-studio.html 
           Product: Beacon
           Product_area: Role-Based Access Control
           Product_Update: 'true'
           Feature: 'Role-Based Access Control in Beacon Studio'
+          Status: Released
     - type: Major updates
       docs:
-        - Title: 'Using an SVOD Plan'
-          Description: 'Document now shows how SVOD looks in the actual web app'
-          Link: https://beacon-help.support.brightcove.com/monetization/general/using-svod-plan.html#How_TVODSVOD_appear_in_the_apps
-          Product: Beacon
-          Product_area: Monetization
+        - Title: 'Requesting Auto Captions'
+          Description: 'Updated with new transcript options.'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/requesting-auto-captions.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest API, Auto Captions
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Overview: Brightcove Native SDK for Android'
-          Description: 'Native SDK for Android release 7.1.1'
-          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html 
-          Product: Device SDKs
-          Product_area: Native SDK for Android
+        - Title: 'Ingest Fields Reference'
+          Description: 'Updated with new transcript options.'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/references/dynamic-ingest-ingest-fields.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest API, Auto Captions and Transcripts
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Dynamic Ingest API Reference'
+          Description: 'Updated with new transcript options.'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/references/reference.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest API, Auto Captions and Transcripts
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Adobe-AEM-Brightcove Connector: Overview'
+          Description: 'New major release'
+          Link: https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-overview.html
+          Product: Video Cloud
+          Product_area: CMS Connectors
+          Product_Update: 'false'
+          Feature: 'New release with support for several additional video features'
+          Status: Released
+        - Title: 'Adobe-AEM-Brightcove Connector: Using the Connector'
+          Description: 'New major release with several added features'
+          Link: https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-using-connector.html
+          Product: Video Cloud
+          Product_area: CMS Connectors
           Product_Update: 'true'
-          Feature: 'Android SDK release 7.1.1'
+          Feature: 'New release with support for several additional video features'
           Status: Released
-        - Title: 'Brightcove Native SDK for Android Release Notes'
-          Description: 'Native SDK for Android release 7.1.1'
-          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html  
-          Product: Device SDKs
-          Product_area: Native SDK for Android
+        - Title: 'Interactivity section added'
+          Description: 'Interactivity section added to Video Cloud Studio'
+          Link: https://studio.support.brightcove.com/interactivity/index.html
+          Product: Video Cloud 
+          Product_area: Interactivity
           Product_Update: 'false'
           Feature: ''
-          Status: Released
-        - Title: 'Brightcove Native SDK for Android: Previous SDK information'
-          Description: 'Native SDK for Android release 7.1.1'
-          Link: https://sdks.support.brightcove.com/android/resources/brightcove-player-sdk-android-previous-sdk-information.html  
-          Product: Device SDKs
-          Product_area: Native SDK for Android
+          Status: Released 
+        - Title: 'Interactivity section added'
+          Description: 'Interactivity section added to Beacon'
+          Link: https://beacon-help.support.brightcove.com/interactivity/index.html
+          Product: Beacon
+          Product_area: Interactivity
           Product_Update: 'false'
           Feature: ''
-          Status: Released
+          Status: Released 
     - type: Minor updates
       docs:
-        - Title: 'Brightcove Player System Requirements'
-          Description: 'Supported browsers table updated'
-          Link: https://player.support.brightcove.com/references/brightcove-player-system-requirements.html
-          Product: Brightcove Player
-          Product_area: References
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Player System Requirements'
-          Description: 'Note about chrome mobile for IOS added'
-          Link: https://player.support.brightcove.com/references/brightcove-player-system-requirements.html
-          Product: Brightcove Player
-          Product_area: References
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Code Snippets using the Native SDK for iOS'
-          Description: 'Note about  preserve videos from another vendor added'
-          Link: https://sdks.support.brightcove.com/ios/resources/code-snippets-using-native-sdk-ios.html
-          Product: Brightcove Player
-          Product_area: References
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Code Snippets using the Native SDK for iOS'
-          Description: 'Information note added to the desription.'
-          Link: https://sdks.support.brightcove.com/ios/resources/code-snippets-using-native-sdk-ios.html
-          Product: Device SDKs
-          Product_area: Resources
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Setting the Player Update Mode and Version'
-          Description: 'Note about managed release added.'
-          Link: https://studio.support.brightcove.com/players/setting-player-update-mode-and-version.html#managed
+        - Title: 'Source File Upload API for Dynamic Ingest'
+          Description: 'Added note on how to make the upload to S3 work in Postman.'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/getting-started/source-file-upload-api-dynamic-ingest.html
           Product: Video Cloud
-          Product_area: Brightcove Player
+          Product_area: Dynamic Ingest
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Cloud Playout Channel API'
+          Description: 'Added note using a Live job from a different account as the destination for a channel.'
+          Link: https://apis.support.brightcove.com/cloud-playout-apis/references/reference-channels.html#tag/Channels/operation/CreateChannel
+          Product: Video Cloud
+          Product_area: Cloud Playout
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Cloud Playout Overview'
+          Description: 'Added note using a Live job from a different account as the destination for a channel.'
+          Link: https://studio.support.brightcove.com/cloud-playout/cloud-playout-overview.html#limitations
+          Product: Video Cloud
+          Product_area: Cloud Playout
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Live Best Practices'
+          Description: 'Added section on best practices for transmux live jobs.'
+          Link: https://studio.support.brightcove.com/live/get-started/live-module-guidelines-and-best-practices.html#transmux_live_jobs
+          Product: Live
+          Product_area: Cloud Playout
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'New FAQ'
+          Description: 'Updated page to use new FAQ style'
+          Link: https://player.support.brightcove.com/advertising/guide-ad-partner-integration.html#FAQ
+          Product: Brightcove Player
+          Product_area: Advertising
+          Product_Update: 'true | false'
+          Feature: ''
+          Status: Released 
+        - Title: 'New FAQ'
+          Description: 'Updated page to use new FAQ style'
+          Link: https://gallery.support.brightcove.com/settings/securing-portal-experience-ssl.html#faq
+          Product: Gallery
+          Product_area: Gallery settings
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'New FAQ'
+          Description: 'Updated Video Cloud pages to use the new FAQ style.'
+          Link: https://studio.support.brightcove.com/index.html
+          Product: Video Cloud
+          Product_area: General Information
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Get Status of Dynamic Ingest Requests'
+          Description: 'Note about what dynamic ingest notifications to expect added'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/general/get-status-dynamic-ingest-requests-dynamic-delivery.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Using Aspera for Ingestion to Video Cloud'
+          Description: 'Note about aspera packages added'
+          Link: https://apis.support.brightcove.com/aspera/overview.html#Using_Aspera_with_Brightcove
+          Product: Video Cloud
+          Product_area: Aspera
           Product_Update: 'false'
           Feature: ''
           Status: Released
