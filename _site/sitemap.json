@@ -85,6 +85,31 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/test-assets/captions/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/test-assets/images/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/test-assets/chapters/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/test-assets/videos/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/test-assets/audio/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/test-assets/",
       "oldURL": "/index"
   },
