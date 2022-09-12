@@ -85,7 +85,7 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/support/",
+      "newURL": "https://support.brightcove.com/test-assets/",
       "oldURL": "/index"
   },
 
@@ -95,7 +95,7 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/test-assets/",
+      "newURL": "https://support.brightcove.com/support/",
       "oldURL": "/index"
   },
 
@@ -107,6 +107,11 @@
   {
       "newURL": "https://support.brightcove.com/support/known-issues-studio-brightcove-player-and-apis.html",
       "oldURL": "/known-issues-studio-brightcove-player-and-apis"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/templates/main-landing-page.html",
+      "oldURL": "/main-landing-page"
   },
 
   {
@@ -172,6 +177,26 @@
   {
       "newURL": "https://support.brightcove.com/search.html",
       "oldURL": "/search"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/templates/section-with-pages.html",
+      "oldURL": "/section-with-pages"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/templates/section-with-subsections.html",
+      "oldURL": "/section-with-subsections"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/templates/subsection-with-pages.html",
+      "oldURL": "/subsection-with-pages"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/templates/subsection-with-subsections.html",
+      "oldURL": "/subsection-with-subsections"
   },
 
   {
