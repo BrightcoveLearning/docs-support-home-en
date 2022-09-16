@@ -1,3 +1,211 @@
+- date: 16-September-2022
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'Bumper Video with the Native SDKs'
+          Description: 'In this topic, you will learn how to add a bumper video to play before your content when using the Brightcove Native SDKs.'
+          Link: https://sdks.support.brightcove.com/features/bumper-video-with-sdks.html 
+          Product: Device SDKs
+          Product_area: Bumper videos
+          Product_Update: 'false'
+          Feature: ''
+          Status: Staging
+        - Title: 'Checking for Ad Blockers'
+          Description: 'In this topic, you will learn how to check if an ad blocker is in use.'
+          Link: https://player.support.brightcove.com/advertising/checking-for-ad-blockers.html
+          Product: Brightcove Player
+          Product_area: Advertising
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Major updates
+      docs:
+        - Title: 'Getting Started with Brightcove Video Connect for Adobe Experience Manager'
+          Description: 'Major new release for both on-premise and cloud-based AEM connector. New features include support for labels, clips, sub-folders, video scheduling, and playlist creation in AEM.'
+          Link: https://integrations.support.brightcove.com/adobe/getting-started-brightcove-video-connect-adobe-experience-manager.html
+          Product: Video Cloud
+          Product_area: CMS Connectors
+          Product_Update: 'true'
+          Feature: 'Major new release of AEM connector'
+          Status: Released
+        - Title: 'Adobe-AEM-Brightcove Connector: Overview'
+          Description: 'Major new release for both on-premise and cloud-based AEM connector. New features include support for labels, clips, sub-folders, video scheduling, and playlist creation in AEM.'
+          Link: https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-overview.html
+          Product: Video Cloud
+          Product_area: CMS Connectors
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Adobe-AEM-Brightcove Connector: Using the Connector'
+          Description: 'Major new release for both on-premise and cloud-based AEM connector. New features include support for labels, clips, sub-folders, video scheduling, and playlist creation in AEM.'
+          Link: https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-using-connector.html
+          Product: Video Cloud
+          Product_area: CMS Connectors
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Content Delivery Options'
+          Description: 'Added information on how images are delivered in different scenarios for BYO CDN customers and how this affects bandwidth billing.'
+          Link: https://studio.support.brightcove.com/general/content-delivery-options.html
+          Product: Video Cloud
+          Product_area: BYO CDN, images
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Multilingual Metadata'
+          Description: 'Added information on how Video Cloud handles missing metadata and language codes that are not recognized.'
+          Link: https://apis.support.brightcove.com/cms/managing-videos/multilingual-metadata.html
+          Product: Video Cloud
+          Product_area: CMS API, Multilingual Metadata
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Controlling Viewer Access with Roles in Studio'
+          Description: 'Updated assigning roles to viewers section'
+          Link: https://beacon-help.support.brightcove.com/registered-users/roles-as-rights-studio.html 
+          Product: Beacon
+          Product_area: Role-Based Access Control
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for iOS'
+          Description: 'Native SDK for iOS support for iOS 16'
+          Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html 
+          Product: Device SDKs
+          Product_area: Native SDK for iOS
+          Product_Update: 'true'
+          Feature: 'iOS SDK support for iOS 16'
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for tvOS'
+          Description: 'Native SDK for tvOS support for tvOS 16'
+          Link: https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html 
+          Product: Device SDKs
+          Product_area: Native SDK for tvOS
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'The Brightcove Native SDKs'
+          Description: 'Removed version support and added links to overview documents with this info'
+          Link: https://sdks.support.brightcove.com/getting-started/brightcove-native-player-sdks.html 
+          Product: Device SDKs
+          Product_area: Native SDKs
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Using Page Layouts'
+          Description: 'Added new page layout Redirect'
+          Link: https://beacon-help.support.brightcove.com/layout/using-page-layouts.html#Redirect_link
+          Product: Beacon
+          Product_area: Managing Pages
+          Product_Update: 'true'
+          Feature: 'Page layout redirects to web page'
+          Status: Released
+        - Title: 'Brightcove Player Sample: Play Video at End of Playlist'
+          Description: 'Updated as old version no longe working'
+          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-play-video-end-playlist.html
+          Product: Brightcove Player
+          Product_area: Code Samples
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Overview: Digital Rights Management (DRM)'
+          Description: 'Added some details on known issues with FairPlay'
+          Link: https://studio.support.brightcove.com/general/overview-digital-rights-management-drm-video-cloud.html#fairplay
+          Product: Video Cloud
+          Product_area: DRM
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'XML Manifest for Ingestion via MRSS'
+          Description: 'Fixed a minor issue in sample XML code that rendered it invalid.'
+          Link: https://apis.support.brightcove.com/mrss-ingestion/getting-started/xml-manifest-for-ingestion-via-mrss.html
+          Product: Video Cloud
+          Product_area: MRSS and Aspera ingestion
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Fields for Custom Live Ingest Profiles'
+          Description: 'Added a note that both audio_bitrate and audio_codec must be included in the profile to change the audio bitrate.'
+          Link: https://apis.support.brightcove.com/ingest-profiles/references/fields-custom-live-ingest-profiles.html
+          Product: Live
+          Product_area: Ingest profiles for the live stream
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Fields for Custom Live Ingest Profiles'
+          Description: 'Added a note to clarify that these ingest profiles are for the live stream itself, not VOD clips.'
+          Link: https://apis.support.brightcove.com/ingest-profiles/references/fields-custom-live-ingest-profiles.html
+          Product: Live
+          Product_area: Ingest profiles for the live stream
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Bulk Updating Brightcove Default Player'
+          Description: 'Added a note to clarify that these ingest profiles are for the live stream itself, not VOD clips.'
+          Link: https://player.support.brightcove.com/publish/bulk-updating-brightcove-default-player.html
+          Product: Live
+          Product_area: Ingest profiles for the live stream
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Bulk Updating Brightcove Default Player'
+          Description: 'Added a note to clarify that these ingest profiles are for the live stream itself, not VOD clips.'
+          Link: https://apis.support.brightcove.com/player-management/code-samples/bulk-updating-brightcove-default-player.html
+          Product: Live
+          Product_area: Ingest profiles for the live stream
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Video Fields Reference'
+          Description: 'Added values for the text track kind field from the Playback API'
+          Link: https://apis.support.brightcove.com/playback/references/playback-api-video-fields-reference.html#text_track_Object 
+          Product: Video Cloud
+          Product_area: Playback API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Managing Text Tracks Using the CMS API'
+          Description: 'Removed transcript as a valid kind value for text tracks'
+          Link: https://apis.support.brightcove.com/cms/managing-videos/managing-text-tracks.html 
+          Product: Video Cloud
+          Product_area: CMS API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Step-by-Step: Brightcove Player Debugger'
+          Description: 'Fixed BC Player Debugger to play without IMA ads, and added note'
+          Link: https://player.support.brightcove.com/troubleshooting/step-step-brightcove-player-debugger.html  
+          Product: Brightcove Player
+          Product_area: Troubleshooting
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Implementing Server-Side Ads with Brightcove Player'
+          Description: 'Added note for live SSAI, and moved these into their own section'
+          Link: https://player.support.brightcove.com/plugins/implementing-server-side-ads-brightcove-player.html   
+          Product: Brightcove Player
+          Product_area: SSAI
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Update Player Version'
+          Description: 'Note about updating player version in Studio added'
+          Link: https://apis.support.brightcove.com/player-management/code-samples/player-managment-api-update-player-version.html
+          Product: Video Cloud
+          Product_area: Player Management API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Adding Pages to Playlists'
+          Description: 'Added content and screenshot detailing that main pages can also be added to playlists'
+          Link: https://beacon-help.support.brightcove.com/layout/adding-pages-to-playlists.html
+          Product: Beacon
+          Product_area: Managing Pages
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
 - date: 9-September-2022
   types:
     - type: New Docs
