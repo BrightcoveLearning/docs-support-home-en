@@ -1,3 +1,50 @@
+- date: 23-September-2022
+  types:
+    - type: Major updates
+      docs:
+        - Title: 'Getting Started with Brightcove Video Connect for the Sitecore Experience Platform'
+          Description: 'Posted information about releases 10.1.2 and 10.1.3'
+          Link: https://integrations.support.brightcove.com/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: 'true'
+          Feature: 'Sitecore Connector'
+          Status: Released
+        - Title: 'Configuring Page Availability'
+          Description: 'Added roles based page viewer management. All Layout module docs now include roles information.'
+          Link: https://beacon-help.support.brightcove.com/layout/configuring-page-availability.html#Configuring_role_restrictions
+          Product: Beacon
+          Product_area: Managing Pages
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Player Sample: Popular Videos Playlist'
+          Description: 'Bug in currently released player caused this sample to fail. Upgraded to latest preview player and all is good.'
+          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-popular-videos-playlist.html
+          Product: Brightcove Player
+          Product_area: Code Samples
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'CMS API Video Fields Reference'
+          Description: 'New video field added'
+          Link: https://apis.support.brightcove.com/cms/references/cms-api-video-fields-reference.html
+          Product: Video Cloud
+          Product_area: CMS API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'How To: Create a Page'
+          Description: 'Added the selection of MAIN or SECONDARY page in page creation process'
+          Link: https://beacon-help.support.brightcove.com/get-started/basics/layout/creating-page.html
+          Product: Beacon
+          Product_area: Basics -> Create a Page
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+          
 - date: 16-September-2022
   types:
     - type: New Docs
