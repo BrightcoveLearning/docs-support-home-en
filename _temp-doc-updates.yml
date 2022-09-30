@@ -1,46 +1,86 @@
-- date: 23-September-2022
+- date: 30-September-2022
   types:
     - type: Major updates
       docs:
-        - Title: 'Getting Started with Brightcove Video Connect for the Sitecore Experience Platform'
-          Description: 'Posted information about releases 10.1.2 and 10.1.3'
-          Link: https://integrations.support.brightcove.com/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html
-          Product: Video Cloud
-          Product_area: Integrations
+        - Title: 'Live API Reference'
+          Description: 'Add new passphrase field for SRT captions'
+          Link: https://apis.support.brightcove.com/live-api/references/reference.html#tag/Live-Jobs/operation/CreateALiveJob
+          Product: Live
+          Product_area: Live API 
           Product_Update: 'true'
-          Feature: 'Sitecore Connector'
+          Feature: 'New passphrase field for SRT captions'
           Status: Released
-        - Title: 'Configuring Page Availability'
-          Description: 'Added roles based page viewer management. All Layout module docs now include roles information.'
-          Link: https://beacon-help.support.brightcove.com/layout/configuring-page-availability.html#Configuring_role_restrictions
+        - Title: 'CMS API Reference'
+          Description: 'New endpoint for deleting an image of any kind. Also removed deprecated endpoints for deleting poster and thumbnail'
+          Link: https://apis.support.brightcove.com/cms/references/reference.html#tag/Videos/operation/DeleteVideoImage
+          Product: Video Cloud
+          Product_area: APIs 
+          Product_Update: 'true'
+          Feature: 'CMS API - delete image'
+          Status: Released
+        - Title: 'Domains and Ports that Must Be Accessible to Video Cloud'
+          Description: 'New section about protocols for live added.'
+          Link: https://studio.support.brightcove.com/general/domains-and-ports-must-be-accessible-video-cloud.html
+          Product: Video Cloud
+          Product_area: General Information
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Using Page Layouts'
+          Description: 'Update that redirect page layout works with web, iOS and Android'
+          Link: https://beacon-help.support.brightcove.com/layout/using-page-layouts.html#Redirect_link
           Product: Beacon
           Product_area: Managing Pages
-          Product_Update: 'false'
-          Feature: ''
+          Product_Update: 'true'
+          Feature: 'Redirect Page Layout'
           Status: Released
-        - Title: 'Brightcove Player Sample: Popular Videos Playlist'
-          Description: 'Bug in currently released player caused this sample to fail. Upgraded to latest preview player and all is good.'
-          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-popular-videos-playlist.html
-          Product: Brightcove Player
-          Product_area: Code Samples
-          Product_Update: 'false'
-          Feature: ''
+        - Title: 'Getting Started with Brightcove Video Connect for Adobe Experience Manager'
+          Description: 'Added info on the 6.0.1 release of the connector'
+          Link: https://integrations.support.brightcove.com/adobe/getting-started-brightcove-video-connect-adobe-experience-manager.html
+          Product: Video Cloud
+          Product_area: Integrations 
+          Product_Update: 'true'
+          Feature: 'New version of AEM connector'
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'CMS API Video Fields Reference'
-          Description: 'New video field added'
-          Link: https://apis.support.brightcove.com/cms/references/cms-api-video-fields-reference.html
+        - Title: 'Overview: China Delivery'
+          Description: 'Android will support China Delivery at a later date'
+          Link: https://studio.support.brightcove.com/general/china-delivery-overview.html 
           Product: Video Cloud
-          Product_area: CMS API
+          Product_area: China Delivery
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'How To: Create a Page'
-          Description: 'Added the selection of MAIN or SECONDARY page in page creation process'
-          Link: https://beacon-help.support.brightcove.com/get-started/basics/layout/creating-page.html
-          Product: Beacon
-          Product_area: Basics -> Create a Page
+        - Title: 'China Delivery with the Native SDKs'
+          Description: 'Android will support China Delivery at a later date'
+          Link: https://sdks.support.brightcove.com/features/china-delivery-sdks.html 
+          Product: Video Cloud
+          Product_area: China Delivery
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Data Collection API'
+          Description: 'Indicate the requests that must include video duration'
+          Link: https://apis.support.brightcove.com/data-collection/getting-started/overview-data-collection-api-v2.html#VOD_and_Live_Events
+          Product: Video Cloud
+          Product_area: Analytics, Data Collection
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'XML Manifest for Ingestion via MRSS/Aspera'
+          Description: 'Remove remoteasset field, add note that for customfield values, custom field must exist or ingest request will fail'
+          Link: https://apis.support.brightcove.com/mrss-ingestion/getting-started/xml-manifest-for-ingestion-via-mrss.html
+          Product: Video Cloud
+          Product_area: MRSS and Aspera ingestion
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Dolby Atmos Audio'
+          Description: 'Added note on support for Dolby Atmos on Android (via the Android SDK)'
+          Link: https://apis.support.brightcove.com/ingest-profiles/guides/dolby-atmos-audio.html#limitations
+          Product: Video Cloud
+          Product_area: Ingest Profiles API, Android SDK
           Product_Update: 'false'
           Feature: ''
           Status: Released
