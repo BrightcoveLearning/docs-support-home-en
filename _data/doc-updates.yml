@@ -1,3 +1,155 @@
+- date: 14-October-2022
+  types:
+    - type: New Docs
+      docs:
+    - type: Major updates
+      docs:
+        - Title: 'Overview: Brightcove Native SDK for iOS'
+          Description: 'Brightcove Native Player for iOS release 6.11.0'
+          Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html
+          Product: Device SDKs
+          Product_area: iOS Development
+          Product_Update: 'true'
+          Feature: 'New version of Native SDK for iOS'
+          Status: Released
+        - Title: 'Brightcove Native SDK for iOS: Previous SDK information'
+          Description: 'Brightcove Native Player for iOS release 6.11.0'
+          Link: https://sdks.support.brightcove.com/ios/resources/brightcove-player-sdk-ios-previous-sdk-information.html
+          Product: Device SDKs
+          Product_area: iOS Development
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for tvOS'
+          Description: 'Brightcove Native Player for iOS release 6.11.0'
+          Link: https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html
+          Product: Device SDKs
+          Product_area: tvOS Development
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Native SDK for tvOS: Previous SDK information'
+          Description: 'Brightcove Native Player for iOS release 6.11.0'
+          Link: https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html
+          Product: Device SDKs
+          Product_area: tvOS Development
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'CMS API Reference'
+          Description: 'Added "state" field for playlists (EXPLICIT/manual only)'
+          Link: https://apis.support.brightcove.com/cms/references/reference.html
+          Product: Video Cloud
+          Product_area: Platform APIs
+          Product_Update: 'false'
+          Feature: 'CMS API'
+          Status: Released
+        - Title: 'CMS API Playlist Fields Reference'
+          Description: 'Added "state" field for playlists (EXPLICIT/manual only)'
+          Link: https://apis.support.brightcove.com/cms/references/cms-api-playlist-fields-reference.html
+          Product: Video Cloud
+          Product_area: Platform APIs
+          Product_Update: 'false'
+          Feature: 'CMS API'
+          Status: Released
+        - Title: 'Update Player Version'
+          Description: 'Note about V5 players updated'
+          Link: https://apis.support.brightcove.com/player-management/code-samples/player-managment-api-update-player-version.html#Introduction
+          Product: Video Cloud
+          Product_area: Player Management API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Managing Players'
+          Description: 'Note about V5 players added'
+          Link: https://studio.support.brightcove.com/players/index.html
+          Product: Video Cloud
+          Product_area: Managing Players
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Support for Brightcove Player 5'
+          Description: 'Information about V5 players updated'
+          Link: https://studio.support.brightcove.com/players/v5-players-support.html
+          Product: Video Cloud
+          Product_area: Managing Players
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Playback Restrictions with the Native SDKs'
+          Description: 'Added note about iOS support for Live HLSe License Keys Protection'
+          Link: https://sdks.support.brightcove.com/features/playback-restrictions-with-sdks.html
+          Product: Device SDKs
+          Product_area: Playback Restrictions
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Native SDK for Android Release Notes'
+          Description: 'Added clarification about joining SDK release mailing list'
+          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html
+          Product: Device SDKs
+          Product_area: Native SDK for Android
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for Android'
+          Description: 'Added clarification about joining SDK release mailing list'
+          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html#Getting_started
+          Product: Device SDKs
+          Product_area: Native SDK for Android
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for iOS'
+          Description: 'Added clarification about joining SDK release mailing list'
+          Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html#Getting_started
+          Product: Device SDKs
+          Product_area: Native SDK for iOS
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for tvOS'
+          Description: 'Added clarification about joining SDK release mailing list'
+          Link: https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html#Getting_started
+          Product: Device SDKs
+          Product_area: Native SDK for tvOS
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Release Notes for the Brightcove Native SDKs'
+          Description: 'Added clarification about joining SDK release mailing list'
+          Link: https://sdks.support.brightcove.com/developer-support/questions/release-notes-brightcove-native-sdks.html
+          Product: Device SDKs
+          Product_area: Release notes
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Login Durations'
+          Description: 'Added definitions and functionality of authorization and refresh tokens'
+          Link: https://beacon-help.support.brightcove.com/general/authentication/login-durations.html#Token_definitions
+          Product: https://beacon-help.support.brightcove.com/general/authentication/login-durations.html
+          Product_area: Authentication
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Player Sample: All Time Video Views'
+          Description: 'In this topic, you will learn how to display the all-time views for each video loaded into a player.'
+          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-all-time-video-views.html
+          Product: Brightcove Player
+          Product_area: Code Samples
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Styling Captions'
+          Description: 'Adding better links for CSS style guide'
+          Link: https://studio.support.brightcove.com/media/styling-captions.html
+          Product: Video Cloud 
+          Product_area: Managing Videos
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
 - date: 7-October-2022
   types:
     - type: New Docs
