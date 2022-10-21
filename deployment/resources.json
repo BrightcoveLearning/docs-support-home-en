@@ -114,16 +114,6 @@
   "lang": "private-en",
   "s3_name": "docs-staging-site",
   "cloudfront_id": "E2WK47LG1SW1KP"
-  },
-  {
-  "lang": "en",
-  "s3_name": "beacon-help",
-  "cloudfront_id": "E285C8SP18PQKO"
-  },
-  {
-  "lang": "private-en",
-  "s3_name": "docs-staging-site",
-  "cloudfront_id": "E2WK47LG1SW1KP"
   }
   ],
   "campaign": [
