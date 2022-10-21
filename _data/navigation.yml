@@ -5,6 +5,9 @@
   name: Video Cloud Studio
   url: 'https://studio.support.brightcove.com/index.html'
 - section:
+  name: Marketing Studio
+  url: 'https://mstudio.support.brightcove.com/index.html'
+- section:
   name: Brightcove Player Development
   url: 'https://player.support.brightcove.com/index.html'
 - section:
