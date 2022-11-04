@@ -1,104 +1,73 @@
-- date: 28-October-2022
+- date: 4-November-2022
   types:
     - type: New Docs
       docs:
-        - Title: 'Image Token API Reference'
-          Description: 'Create, update, and delete tokens for the Image API'
-          Link: https://apis.support.brightcove.com/images/references/images/references/image-token-api-reference.html
-          Product: Video Cloud
-          Product_area: Platform APIs
-          Product_Update: 'true'
-          Feature: 'Image Token API'
-          Status: Released 
-    - type: Major updates
-      docs:
-        - Title: 'Overview: Brightcove Native SDK for Android'
-          Description: 'Android SDK release 7.1.3'
-          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html
-          Product: Device SDKs
-          Product_area: Native SDKs for Android
-          Product_Update: 'true'
-          Feature: 'Android SDK release 7.1.3'
-          Status: Released
-        - Title: 'Brightcove Native SDK for Android: Previous SDK information'
-          Description: 'Android SDK release 7.1.3'
-          Link: https://sdks.support.brightcove.com/android/resources/brightcove-player-sdk-android-previous-sdk-information.html
-          Product: Device SDKs
-          Product_area: Native SDKs for Android
+        - Title: 'Using the Style Builder'
+          Description: 'In this topic you will learn how to use the Style Builder'
+          Link: https://interactivity.support.brightcove.com/platform/styling/using-style-builder.html
+          Product: Brightcove Interactivity
+          Product_area: 
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Brightcove Native SDK for Android Release Notes'
-          Description: 'Android SDK release 7.1.3'
-          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html
+        - Title: 'Managing Viewer Authentication'
+          Description: 'Learn about managing viewer authentication credentials.'
+          Link: https://beacon-help.support.brightcove.com/admin/managing-viewer-authentication.html
+          Product: Beacon 
+          Product_area: 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Staging
+    - type: Major updates
+      docs:
+        - Title: 'Overview: Image API'
+          Description: 'Added information about the new Image Token API'
+          Link: https://apis.support.brightcove.com/images/getting-started/overview.html
+          Product: Video Cloud
+          Product_area: PLatform API'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Step-by-Step: Simple Video App using Objective-C'
+          Description: 'Updated images and steps for latest version of Xcode'
+          Link: https://sdks.support.brightcove.com/ios/basics/step-step-simple-video-app-using-objective-c.html 
           Product: Device SDKs
-          Product_area: Native SDKs for Android
+          Product_area: Native SDK for iOS
           Product_Update: 'false'
           Feature: ''
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'CMS API Custom Fields Reference'
-          Description: 'Note about custom fields added'
-          Link: https://apis.support.brightcove.com/cms/references/cms-api-custom-fields-reference.html
-          Product: Video Cloud
-          Product_area: CMS API
+        - Title: 'Adjusting Images to Appear Only on Hover'
+          Description: 'Fixed steps in example'
+          Link: https://interactivity.support.brightcove.com/platform/styling/adjusting-images-to-appear-only-on-hover.html
+          Product: Brightcove Interactivity
+          Product_area: 
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'CMS/Playback API: Videos Search v1'
-          Description: 'Note about custom fields added'
-          Link: https://apis.support.brightcove.com/cms/searching/cmsplayback-api-videos-search.html#custom_fields
-          Product: Video Cloud
-          Product_area: CMS API
+        - Title: 'Styling Annotations'
+          Description: 'Added more context and link to style builder doc'
+          Link: https://interactivity.support.brightcove.com/platform/styling/styling-annotations.html
+          Product: Brightcove Interactivity
+          Product_area: 
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Video Fields Reference'
-          Description: 'Note about custom fields added'
-          Link: https://apis.support.brightcove.com/playback/references/playback-api-video-fields-reference.html#Primary_fields
-          Product: Video Cloud
-          Product_area: Playback API
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Native Video Playback'
-          Description: 'WebView Updated Note'
-          Link: https://sdks.support.brightcove.com/getting-started/native-video-playback.html#WebView
-          Product: Device SDKs 
-          Product_area: Getiing Started
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Creating and Managing Live Events using the Live Module'
-          Description: 'Updated adConfiguration Note'
-          Link: https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html
-          Product: Live 
-          Product_area: Using the Live Module
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Player Sample: Newest Videos in Playlist'
-          Description: 'Moved playlist to under player'
-          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-newest-videos-playlist.html
-          Product: Brightcove Player
-          Product_area: Code sample player and API integration
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Adding Pigeonhole Q&A to a Live Event In-Page Experience'
-          Description: 'Add example to display the Pigeonhole agenda'
-          Link: https://gallery.support.brightcove.com/experiences/live/adding-pigeonhole-live-event-page-experience.html#generate-code
-          Product: Gallery
-          Product_area: Live IPX
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Playback Restrictions with the Native SDKs'
-          Description: 'Updated support for Live HLSe License Keys Protection'
-          Link: https://sdks.support.brightcove.com/features/playback-restrictions-with-sdks.html 
+        - Title: 'Cast plugin for the Native SDK for Android'
+          Description: 'Added note that the Native SDKs do not support Chromecast queueing with the Brightcove Cast Receiver app'
+          Link: https://sdks.support.brightcove.com/android/tv/cast-plugin-native-sdk-android.html 
           Product: Device SDKs
-          Product_area: Playback Restrictions
+          Product_area: Chromecast
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Known Issues: Brightcove Native Player SDKs'
+          Description: 'Added note that the Native SDKs do not support Chromecast queueing with the Brightcove Cast Receiver app'
+          Link: https://sdks.support.brightcove.com/developer-support/questions/known-issues-brightcove-native-player-sdks.html 
+          Product: Device SDKs
+          Product_area: Chromecast
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+       
