@@ -76,7 +76,7 @@
       docs:
         - Title: 'Image Token API Reference'
           Description: 'Create, update, and delete tokens for the Image API'
-          Link: https://apis.support.brightcove.com/images/references/images/references/image-token-api-reference.html
+          Link: https://apis.support.brightcove.com/images/references/image-token-api-reference.html
           Product: Video Cloud
           Product_area: Platform APIs
           Product_Update: 'true'
