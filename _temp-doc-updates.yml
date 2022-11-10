@@ -1,73 +1,32 @@
-- date: 4-November-2022
+- date: 11-November-2022
   types:
     - type: New Docs
       docs:
-        - Title: 'Using the Style Builder'
-          Description: 'In this topic you will learn how to use the Style Builder'
-          Link: https://interactivity.support.brightcove.com/platform/styling/using-style-builder.html
-          Product: Brightcove Interactivity
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Managing Viewer Authentication'
-          Description: 'Learn about managing viewer authentication credentials.'
-          Link: https://beacon-help.support.brightcove.com/admin/managing-viewer-authentication.html
-          Product: Beacon 
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Staging
+        - Title: 'Managing Programs'
+          Description: 'For non-looping Cloud Playout channels, you add new programs to the channel as needed, or re-link a program to update its contents.'
+          Link: https://studio.support.brightcove.com/cloud-playout/managing-programs.html
+          Product: Video Cloud
+          Product_area: Studio
+          Product_Update: 'true'
+          Feature: 'Cloud Playout - multiple programs for non-looping channels'
+          Status: Staging 
     - type: Major updates
       docs:
-        - Title: 'Overview: Image API'
-          Description: 'Added information about the new Image Token API'
-          Link: https://apis.support.brightcove.com/images/getting-started/overview.html
-          Product: Video Cloud
-          Product_area: PLatform API'
-          Product_Update: 'false'
+        - Title: ''
+          Description: ''
+          Link: 
+          Product: Video Cloud | Brightcove Player | Device SDKs | Live | Beacon | SSAI | Zencoder | Interactivity | Audience Insights
+          Product_area: 
+          Product_Update: 'true | false'
           Feature: ''
-          Status: Released
-        - Title: 'Step-by-Step: Simple Video App using Objective-C'
-          Description: 'Updated images and steps for latest version of Xcode'
-          Link: https://sdks.support.brightcove.com/ios/basics/step-step-simple-video-app-using-objective-c.html 
-          Product: Device SDKs
-          Product_area: Native SDK for iOS
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
+          Status: Released | Limited Availability | Staging | Internal
     - type: Minor updates
       docs:
-        - Title: 'Adjusting Images to Appear Only on Hover'
-          Description: 'Fixed steps in example'
-          Link: https://interactivity.support.brightcove.com/platform/styling/adjusting-images-to-appear-only-on-hover.html
-          Product: Brightcove Interactivity
+        - Title: 'Managing Videos'
+          Description: 'Document option to delete videos'
+          Link: https://mstudio.support.brightcove.com/media/managing-videos.html
+          Product: Marketing Studio
           Product_area: 
-          Product_Update: 'false'
-          Feature: ''
+          Product_Update: 'true'
+          Feature: 'Marketing Studio now provides the option to delete videos'
           Status: Released
-        - Title: 'Styling Annotations'
-          Description: 'Added more context and link to style builder doc'
-          Link: https://interactivity.support.brightcove.com/platform/styling/styling-annotations.html
-          Product: Brightcove Interactivity
-          Product_area: 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Cast plugin for the Native SDK for Android'
-          Description: 'Added note that the Native SDKs do not support Chromecast queueing with the Brightcove Cast Receiver app'
-          Link: https://sdks.support.brightcove.com/android/tv/cast-plugin-native-sdk-android.html 
-          Product: Device SDKs
-          Product_area: Chromecast
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Known Issues: Brightcove Native Player SDKs'
-          Description: 'Added note that the Native SDKs do not support Chromecast queueing with the Brightcove Cast Receiver app'
-          Link: https://sdks.support.brightcove.com/developer-support/questions/known-issues-brightcove-native-player-sdks.html 
-          Product: Device SDKs
-          Product_area: Chromecast
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-       
