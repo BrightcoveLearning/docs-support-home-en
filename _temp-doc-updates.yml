@@ -118,3 +118,27 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Configuring Server-Side Ad Settings'
+          Description: 'Images and buttons updated'
+          Link: https://studio.support.brightcove.com/admin/configuring-server-side-ad-settings.html
+          Product: Video Cloud 
+          Product_area: Administering Accounts
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Configuring Language Settings'
+          Description: 'Images and buttons updated'
+          Link: https://studio.support.brightcove.com/admin/configuring-language-settings.html
+          Product: Video Cloud 
+          Product_area: Administering Accounts
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating Custom Metadata Fields'
+          Description: 'Images and buttons updated'
+          Link: https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html
+          Product: Video Cloud 
+          Product_area: Administering Accounts
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
