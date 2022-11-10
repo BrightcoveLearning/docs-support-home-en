@@ -9,7 +9,7 @@
           Product_area: Studio
           Product_Update: 'true'
           Feature: 'Cloud Playout - multiple programs for non-looping channels'
-          Status: Staging 
+          Status: Released 
     - type: Major updates
       docs:
         - Title: 'Google Tag Manager Plugin for Brightcove Player'
@@ -109,4 +109,12 @@
           Product_area: Monetization
           Product_Update: 'true'
           Feature: 'Beacon Classic UI update'
+          Status: Released
+        - Title: 'Trending Now Report Reference'
+          Description: 'Note information and UI images updated'
+          Link: https://studio.support.brightcove.com/analytics/trending-now-report-reference.html
+          Product: Video Cloud
+          Product_area: Analytics
+          Product_Update: 'false'
+          Feature: ''
           Status: Released
