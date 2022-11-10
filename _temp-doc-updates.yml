@@ -12,14 +12,38 @@
           Status: Staging 
     - type: Major updates
       docs:
-        - Title: ''
-          Description: ''
-          Link: 
-          Product: Video Cloud | Brightcove Player | Device SDKs | Live | Beacon | SSAI | Zencoder | Interactivity | Audience Insights
-          Product_area: 
-          Product_Update: 'true | false'
+        - Title: 'Overview: Brightcove Native SDK for iOS'
+          Description: 'Native SDK for iOS release 6.11.1'
+          Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html 
+          Product: Device SDKs
+          Product_area: Native SDK for iOS
+          Product_Update: 'true'
+          Feature: 'iOS SDK release 6.11.1'
+          Status: Released
+        - Title: 'Brightcove Native SDK for iOS: Previous SDK information'
+          Description: 'Native SDK for iOS release 6.11.1'
+          Link: https://sdks.support.brightcove.com/ios/resources/brightcove-player-sdk-ios-previous-sdk-information.html 
+          Product: Device SDKs
+          Product_area: Native SDK for iOS
+          Product_Update: 'false'
           Feature: ''
-          Status: Released | Limited Availability | Staging | Internal
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for tvOS'
+          Description: 'Native SDK for iOS release 6.11.1'
+          Link: https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html 
+          Product: Device SDKs
+          Product_area: Native SDK for tvOS
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Native SDK for tvOS: Previous SDK information'
+          Description: 'Native SDK for iOS release 6.11.1'
+          Link: https://sdks.support.brightcove.com/tvos/resources/brightcove-player-sdk-tvos-previous-sdk-information.html 
+          Product: Device SDKs
+          Product_area: Native SDK for tvOS
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Minor updates
       docs:
         - Title: 'Managing Videos'
@@ -29,4 +53,44 @@
           Product_area: 
           Product_Update: 'true'
           Feature: 'Marketing Studio now provides the option to delete videos'
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for iOS'
+          Description: 'Updated note for minimum deployment target for iOS and tvOS to 11.4'
+          Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html 
+          Product: Device SDKs
+          Product_area: Native SDK for iOS
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for tvOS'
+          Description: 'Updated note for minimum deployment target for iOS and tvOS to 11.4'
+          Link: https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html 
+          Product: Device SDKs
+          Product_area: Native SDK for tvOS
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Controlling Viewer Access with Roles'
+          Description: 'Changed feature name from Roles As Rights to Secure Experiences'
+          Link: https://beacon.support.brightcove.com/using-brightcove-beacon/roles-as-rights.html  
+          Product: Beacon
+          Product_area: Viewer access
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Controlling Viewer Access with Roles in Studio'
+          Description: 'Changed feature name from Roles As Rights to Secure Experiences'
+          Link: https://beacon-help.support.brightcove.com/registered-users/roles-as-rights-studio.html  
+          Product: Beacon
+          Product_area: Viewer access
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Content Security (DRM) with the Native SDKs'
+          Description: 'Added note that FairPlay content cannot be tested in a simulator'
+          Link: https://sdks.support.brightcove.com/features/content-security-drm-native-player-sdks.html  
+          Product: Device SDKs
+          Product_area: Native SDK for iOS
+          Product_Update: 'false'
+          Feature: ''
           Status: Released
