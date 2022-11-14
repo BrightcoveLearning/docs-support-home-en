@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="This is a template to demonstrate various CSS classes used in our documentation and provide sample code for them.">
+  <meta name="description" content="In this topic, you will learn how to cast videos to a Chromecast-connected TV.">
   
-  <title>Documentation Template</title>
+  <title>Playing Content on TV with Chromecast</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -159,7 +159,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <li class="breadcrumb-item first-item"><a href="/">Home</a></li>
     
       
-        <li class="breadcrumb-item active" aria-current="page">Documentation Template</li>
+        <li class="breadcrumb-item"><a href="/features/">Features</a></li>
+      
+    
+      
+        <li class="breadcrumb-item active" aria-current="page">Playing Content on TV with Chromecast</li>
       
     
   </nav>
@@ -394,349 +398,96 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Documentation Template</h1>
+<h1>Playing Content on TV with Chromecast</h1>
 <article class="bcls-article">
-    <summary>This is a template to demonstrate various CSS classes used in our documentation and provide sample code for them.</summary>
-    <section class="bcls-section">
-        <h2 id="Basic_page_structure">Basic page structure</h2>
-        <p>Here is the code for the basic document structure:</p>
-<pre class="line-numbers"><code class="language-html" translate="No">---
-title: 
-description: 
-parent: 
----
+  <summary>In this topic, you will learn how to cast videos to a Chromecast-connected TV.</summary>
+  <section class="bcls-section">
+    <h2 id="Introduction">Introduction</h2>
+    <p>
+      Google Chromecast is a device that you plug into your TV's HDMI port. Using your smartphone or computer as a remote control, you can use Chromecast to access video content. The Chromecast Plugin for Brightcove Player enables the player to cast video from your desktop or Android Chrome browser to the Chromecast device.
+    </p>
+    <p>The plugin supports all
+      Video Cloud videos or external streams using HLS or DASH, including DRM-encrypted streams using Widevine. Advertising is supported through Video Cloud server-side ad insertion (SSAI). Client-side ads and playlists are not supported.</p>
+    <p>To use the plugin follow these steps:</p>
+    <ol class="bcls-tasklist">
+      <li>
+        Load the Chromecast Plugin for Brightcove Player (detailed below).
+      </li>
+      <li>
+        Be sure the Chromecast device is on the same network as your device that will play the video.
+      </li>
+      <li>Start playing the video.</li>
+      <li>Click the cast button and select your Chromecast device.</li>
+    </ol>
 
-&lt;h1&gt;Documentation Template&lt;/h1&gt;
-&lt;article class=&quot;bcls-article&quot;&gt;
-  &lt;summary&gt;This is a template to demonstrate various CSS classes used in our documentation and provide sample code for them.&lt;/summary&gt;
-  &lt;section class=&quot;bcls-section&quot;&gt;
-    &lt;h2 id=&quot;&quot;&gt;&lt;/h2&gt;
-    &lt;p&gt;&lt;/p&gt;
-  &lt;/section&gt;
-&lt;/article&gt;</code></pre>
-
-<p>Dash snippet: <code translate="No">docstart</code></p>
-
-        <p>And here is how it works:</p>
-        <figure class="bcls-figure">
-            <img class="bcls-image" src="/assets/images/doc-template/basic-doc-structure.png" alt="Basic Doc Structure">
-            <figcaption class="bcls-caption--image">Basic Doc Structure</figcaption>
-        </figure>
-
-        <p>The <code translate="No">id</code> on the <code translate="No">h2</code> tag is <strong>important</strong> because it is used to build the Page Contents menu:</p>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/doc-template/page-contents.png" alt="Page Contents Menu">
-          <figcaption class="bcls-caption--image">Page Contents Menu</figcaption>
-        </figure>
-    </section>
-
-    <section class="bcls-section">
-      <h2 id="images">Images</h2>
-      <h3>Images set off on their own</h3>
-      <p>You can set off images on their own with a border added or no border.</p>
-      <figure class="bcls-figure">
-        <img class="bcls-image" src="/assets/images/doc-template/page-contents.png" alt="Page Contents Menu">
-        <figcaption class="bcls-caption--image">Page Contents Menu</figcaption>
-      </figure>
-      <pre class="line-numbers"><code class="language-html" translate="No">&lt;figure class=&quot;bcls-figure&quot;&gt;
-        &lt;img class=&quot;bcls-image&quot; src=&quot;/assets/images/doc-template/page-contents.png&quot; alt=&quot;Basic Doc Structure&quot;&gt;
-        &lt;figcaption class=&quot;bcls-caption--image&quot;&gt;Basic Doc Structure&lt;/figcaption&gt;
-      &lt;/figure&gt;</code></pre>
-      
-      <p>Dash snippet: <code translate="No">bcimg</code></p>
-              <h3>Image without border</h3>
-
-              <figure class="bcls-figure">
-                <img class="bcls-image--no-border" src="/assets/images/doc-template/page-contents.png" alt="Page Contents Menu">
-                <figcaption class="bcls-caption--image">Page Contents Menu</figcaption>
-              </figure>
-              <p>If you wanted an image with no border, use this instead:</p>
-<pre><code class="language-html" translate="No">&lt;figure class=&quot;bcls-figure&quot;&gt;
-  &lt;img class=&quot;bcls-image--no-border&quot; src=&quot;&quot; alt=&quot;description&quot;&gt;
-  &lt;figcaption class=&quot;bcls-caption--image&quot;&gt;description&lt;/figcaption&gt;
-&lt;/figure&gt;</code></pre>
-      
-      <p>Dash snippet: <code translate="No">imgnoborder</code></p>
-              <p>For inline images, just use an <code translate="No">&lt;img&gt;</code> tag without the figure and caption tags. No special classes for inline images.</p>
-
-              <p>Image formats</p>
-              <ul>
-                <li>For screenshots, use .png or .jpg (png preferred)</li>
-                <li>For diagrams use .svg if at all possible (svg resizes better than other formats). Many image editors like Lucidchart allow you to export the image as svg</li>
-              </ul>
-      
-    </section>
-
-    <section class="bcls-section">
-        <h2 id="Task_lists">Task lists</h2>
-        <p>We use some special lists for different purposes.</p>
-        <h3>Task list that resumes numbering when you restart it</h3>
-        <ol class="bcls-tasklist">
-          <li>Step 1</li>
-          <li>Step 2</li>
-          <li>
-            Step 3: code for the list:
-<pre class="line-numbers"><code class="language-html" translate="No">&lt;ol class=&quot;bcls-tasklist&quot;&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-          </li>
-          <li>Step 4: Dash snippet: <code translate="No">bctasklist</code></li>
-        </ol>
-        <h4>Subheading</h4>
-        <p>Some content you want to add before restarting the steps.</p>
-        <ol class="bcls-tasklist">
-          <li>Step 5</li>
-          <li>Step 6</li>
-        </ol>
-
-        <h3>Task list with numbers starting at 1</h3>
-        <ol class="bcls-tasklist-restart">
-            <li>Here is step 1 of the task.</li>
-            <li>Step 2 of the task.</li>
-            <li>
-                Code to create this list:
-<pre class="line-numbers"><code class="language-html" translate="No">&lt;ol class=&quot;bcls-tasklist-restart&quot;&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-            </li>
-        </ol>
-        <p>Dash snippet: <code translate="No">bcnewlist</code></p>
-    </section>
-    <section class="bcls-section">
-        <h2 id="Tables">Tables</h2>
-        <p>We have special styles for tables. Here is the basic code to create one:</p>
-<pre class="line-numbers"><code class="language-html" translate="No">&lt;div style=&quot;overflow-x: scroll;&quot;&gt;
-  &lt;table class=&quot;bcls-table&quot;&gt;
-      &lt;caption class=&quot;bcls-caption--table&quot;&gt;description&lt;/caption&gt;
-      &lt;thead class=&quot;bcls-table__head&quot;&gt;
-          &lt;tr&gt;
-              &lt;th&gt;Table Header&lt;/th&gt;
-              &lt;th&gt;Table Header&lt;/th&gt;
-          &lt;/tr&gt;
-      &lt;/thead&gt;
-      &lt;tbody class=&quot;bcls-table__body&quot;&gt;
-          &lt;tr&gt;
-              &lt;td&gt;Table cell&lt;/td&gt;
-              &lt;td&gt;Table cell&lt;/td&gt;
-          &lt;/tr&gt;
-      &lt;/tbody&gt;
-  &lt;/table&gt;
-&lt;/div&gt;</code></pre>
-
-<p>Dash snippet: <code translate="No">bctable</code></p>
-        <p>And below is a sample table:</p>
-        <div style="overflow-x: scroll;">
-            <table class="bcls-table">
-                <caption class="bcls-caption--table">Sample Table</caption>
-                <thead class="bcls-table__head">
-                    <tr>
-                        <th>Column header</th>
-                        <th>Column header</th>
-                    </tr>
-                </thead>
-                <tbody class="bcls-table__body">
-                    <tr>
-                        <td>Table cell</td>
-                        <td>Table cell</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-    <section class="bcls-section">
-        <h2 id="Notes_for_information_tips_and_warnings">Notes for information, tips, and warnings</h2>
-        <p>We have special notes styles to highlight important information, tips that might help customers, or warnings about things might go wrong.</p>
-        <aside class="bcls-aside bcls-aside--information language-editable">
-            This is an <strong>information</strong> note. You can use any HTML you want in here.
-            <pre class="line-numbers"><code class="language-html" translate="no">&lt;aside class=&quot;bcls-aside bcls-aside--information language-editable&quot;&gt;&lt;/aside&gt;</code></pre>
+    <h3 id="Chromecast_app_components">Chromecast app components</h3>
+    <p>
+      The software behind Chromecast is comprised of the following components: </p>
+    <ul>
+      <li>
+        <p>
+          <strong>Sender application</strong>: This is any application that can initiate a cast session and communicate with a receiver. The sender application can be thought of as the "client side" portion of the Chromecast ecosystem.
+        </p>
+        <p>
+          The Chromecast Plugin for Brightcove Player enables the sender app in Brightcove Player. You will learn about it in this topic.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>Receiver application</strong>: This is a custom web application that is hosted on the public internet and runs on a Chromecast device. It handles communication between the sender app and the receiver device. It can be thought of as a single page HTML app with CSS and JavaScript assets.
+        </p>
+        <!-- <p>
+ As a Brightcove Player customer, you do not need to work with the code and configuration of the receiver application. By default, this plugin uses the Brightcove receiver app.
+ </p> -->
+        <aside class="bcls-aside bcls-aside--information"> For Chromecast to work with domain restricted players, you should whitelist the Chromecast receiver's domain, which is <code translate="No">players.brightcove.net</code>.
         </aside>
-        <p>Dash snippet: <code translate="No">bclsinfo</code></p>
-        <aside class="bcls-aside bcls-aside--tip language-editable">
-            This is a <strong>tip</strong> note. You can use any HTML you want in here.
-            <pre class="line-numbers"><code class="language-html" translate="No">&lt;aside class=&quot;bcls-aside bcls-aside--tip language-editable&quot;&gt;&lt;/aside&gt;</code></pre>
-        </aside>
-        <p>Dash snippet: <code translate="No">bctip</code></p>
-        <aside class="bcls-aside bcls-aside--warning language-editable">
-            This is a <strong>warning</strong> note. You can use any HTML you want in here.
-            <pre class="line-numbers"><code class="language-html" translate="No">&lt;aside class=&quot;bcls-aside bcls-aside--warning language-editable&quot;&gt;&lt;/aside&gt;</code></pre>
-        </aside>
-        <p>Dash snippet: <code translate="No">bcwarning</code></p>
-    </section>
-
-    <section class="bcls-section">
-      <h2 id="embedding_videos">Embedding videos</h2>
-      <h3>Training videos</h3>
-      <p>For training videos, we use an <a href="https://gallery.support.brightcove.com/experiences/inpage/index.html">in-page experience</a>. The code looks like this:</p>
-<pre class="line-numbers"><code class="language-html">&lt;div class=&quot;training-video-player-ipx&quot; data-experience=&quot;5a73630f7afd7a00101bc1b5&quot; data-video-ids=&quot;<span class="bcls-highlight">4878165648001</span>&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;/span&gt;
-  &lt;script src=&quot;https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js&quot;&gt;&lt;/script&gt;
-</code></pre>
-      <p>Note that the video id (highlighted above) is the only thing that changes.</p>
-      <h3>Sample videos/players</h3>
-      <p>For samples, it will depend on what the sample is demonstrating. Where possible, use the <strong>basic</strong> (iframe) embed code, but if you need to add custom CSS or JavaScript, you will need to use the <strong>advanced</strong> (in-page) embed code. In either case, be sure to use the <strong>responsive</strong> version of the code.</p>
-      <h3>Short animated-gif style videos</h3>
-      <p>Matt created a special player for these in the In-App Help account.</p>
-      <p>These also need to be responsive, and making them so is a little more complicated, because the responsive code the Brightcove Player uses assumes a 16:9 aspect ratio, and these videos are usually odd sizes (as we try to make them as small as possible). Here's sample code to show you what needs to be done:</p>
-<pre class="line-numbers"><code class="language-html">&lt;div style=&quot;position: relative; display: block; max-width: 960px;&quot;&gt;
-  &lt;div style=&quot;<span class="bcls-highlight">padding-top: 43.64%;</span>&quot;&gt;
-    &lt;iframe src=&quot;https://players.brightcove.net/6225316964001/Qznf2bKtV_default/index.html?videoId=6267506952001&quot; allowfullscreen=&quot;&quot; allow=&quot;encrypted-media&quot; style=&quot;position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;&quot;&gt;&lt;/iframe&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-      <p>The key to responsive video is the <code translate="no">padding-top</code> value in the second <code translate="no">div</code> tag (highlighted above). The value needs to be the actual height of the video divided by the actual width, expressed as a percentage:</p>
-      <figure class="bcls-figure">
-        <img class="bcls-image" src="/assets/images/doc-template/responsive-sizing.png" alt="Calculating Padding-Top">
-        <figcaption class="bcls-caption--image">Calculating Padding-Top</figcaption>
-      </figure>
-    </section>
-
-    <section class="bcls-section">
-        <h2 id="Simulate_UI_buttons">Simulate UI buttons</h2>
-        <p>To help users identify buttons in Studio that you are referring to, we've create classes to simulate the buttons in documentation. Examples with the code are below.</p>
-        <dl>
-            <dt><span class="button-blue">Add New</span></dt>
-            <dd><code translate="No">&lt;span class=&quot;button-blue&quot;&gt;Add New&lt;/span&gt;</code></dd>
-            <dt><span class="button-blue-text">Add New</span></dt>
-            <dd><code translate="No">&lt;span class=&quot;button-blue-text&quot;&gt;Add New&lt;/span&gt;</code></dd>
-            <dt><span class="button-blue-text-bordered">Add New</span></dt>
-            <dd><code translate="No">&lt;span class=&quot;button-blue-text-bordered&quot;&gt;Add New&lt;/span&gt;</code></dd>
-            <dt><span class="button-red">Add New</span></dt>
-            <dd><code translate="No">&lt;span class=&quot;button-red&quot;&gt;Add New&lt;/span&gt;</code></dd>
-            <dt><span class="button-red-text">Add New</span></dt>
-            <dd><code translate="No">&lt;span class=&quot;button-red-text&quot;&gt;Add New&lt;/span&gt;</code></dd>
-            <dt><span class="button-red-text-border">Add New</span></dt>
-            <dd><code translate="No">&lt;span class=&quot;button-red-text-border&quot;&gt;Add New&lt;/span&gt;</code></dd>
-            <dt><span class="button-gray">Add New</span></dt>
-            <dd><code translate="No">&lt;span class=&quot;button-gray&quot;&gt;Add New&lt;/span&gt;</code></dd>
-            <dt><span class="button-blue-text-bordered"><i data-feather="edit-3"></i> Edit</span></dt>
-            <dd><code translate="No">&lt;span class=&quot;button-blue-text-bordered&quot;&gt; &lt;i data-feather=&quot;edit-3&quot;&gt;&lt;/i&gt; Edit&lt;/span&gt;</code></dd>
-        </dl>
-    </section>
-    <section class="bcls-section">
-        <h2 id="Code_and_localization">Code and localization</h2>
-        <p>The AWS machine translator we use to localize our sites translates code as if it were ordinary text, which is always wrong! To stop this, I got Amazon to add handling for a special <code translate="No">translate="no"</code> attribute that stops the content of the tag from being translated. you can use that attribute on any tag, but it's especially important to use it when you are including sample code.</p>
-        <h3>Inline code</h3>
-        <p>For inline code, just use <strong>&lt;code translate=&quot;No&quot;&gt;some same code&lt;/code&gt;</strong> (Dash snippet: <code translate="No">codent</code>)</p>
-        <h3>Code blocks</h3>
-        <p>For code blocks, we use a library that adds line numbering and syntax highlighting for the code, based on special classes.</p>
-        <h4>HTML</h4>
-        <p>For an HTML block: <code translate="no">&lt;pre class=&quot;line-numbers&quot;&gt;&lt;code class=&quot;language-html&quot; translate=&quot;No&quot;&gt;&lt;/code&gt;&lt;/pre&gt;</code> (Dash snippet: <code translate="No">pchtml</code>)</p>
-        <h5>Example</h5>
-    <pre class="line-numbers"><code class="language-html" translate="No">&lt;section class=&quot;bcls-section&quot;&gt;
-  &lt;h2 id=&quot;&quot;&gt;&lt;/h2&gt;
-  &lt;p&gt;&lt;/p&gt;
-&lt;/section&gt;</code></pre>
-        <h4>CSS</h4>
-        <p>For a CSS block: <code translate="no">&lt;pre class=&quot;line-numbers&quot;&gt;&lt;code class=&quot;language-css&quot; translate=&quot;No&quot;&gt;&lt;/code&gt;&lt;/pre&gt;</code> (Dash snippet: <code translate="No">pccss</code>)</p>
-        <h5>Example</h5>
-<pre class="line-numbers"><code class="language-css" translate="No">.bcls-tasklist-restart {
-  list-style-type: none;
-  margin-left: 0;
-  counter-reset: rstep calc(var(--s) - 1);
-}</code></pre>
-        <h4>JavaScript</h4>
-        <p>For a CSS block: <code translate="no">&lt;pre class=&quot;line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot; translate=&quot;No&quot;&gt;&lt;/code&gt;&lt;/pre&gt;</code> (Dash snippet: <code translate="No">pcjs</code>)</p>
-        <h5>Example</h5>
-<pre class="line-numbers"><code class="language-javascript" translate="No">var cookiesArray = document.cookie.split(";"), cookiesObj = {}, i, tmpArray = [];
-for (i = 0; i < cookiesArray.length; i++) {
-    tmpArray = cookiesArray[i].split("=");
-    if (tmpArray[0].indexOf('BC_TOKEN') > -1) {
-        cookiesObj.BC_TOKEN = tmpArray[1];
-    }
-}
-window.prompt("BC_TOKEN:", cookiesObj.BC_TOKEN);</code></pre>
-        <p>Several other languages are supported, including json (Dash snippet: <code translate="No">pcljson</code>), swift, objective-c, and java (Dash snippet: <code translate="No">pcjava</code>). See <a href="https://prismjs.com/#supported-languages">this page</a> for all languages Prism supports. Our implementation doesn't support all the languages, but if you need to add one that isn't supported, ask Robert.</p>
-        <p>If you don't want line numbers for a short snippet, just remove the <code translate="no">class="line-numbers"</code> from the <code translate="no">pre</code> tag.</p>
-        <h3>Highlighting and marking user input</h3>
-        <p>Sometimes it's useful to highlight an important part of code, or an item that the user needs to replace with their own information.</p>
-        <p>To highlight some code, use <span class="bcls-highlight"><code translate="No">&lt;span class=&quot;bcls-highlight&quot;&gt;(some code here)&lt;/span&gt;</code></span> (Dash snippet: select the code that you want to highlight, and then type <code translate="No">bchighlight</code>)</p>
-        <p>To mark some code that the user needs to modify, use <span class="bcls-input"><code translate="No">&lt;span class=&quot;bcls-input&quot;&gt;{your_access_token}&lt;/span&gt;</code></span> (Dash snippet: select the code that you want to apply this to, and then type <code translate="No">bcinput</code>)</p>
-    </section>
-    <section class="bcls-section">
-      <h2 id="collapsable_sections">Collapsable sections</h2>
-      We sometimes use collapsable sections for bits of information that are included on a lot of different pages (for example, how to create client credentials for an API), and also for some long code blocks that many users may not be interested in seeing (like a sample response to an API request).
-      <p>Here's an example:</p>
-      <details>
-        <summary>This part appears in the page</summary>
-        <p>What's in this part can contain any HTML and is hidden until the user clicks on the visible part.</p>
-      </details>
-      <h3>The code</h3>
-<pre class="line-numbers"><code class="language-html" translate="no">&lt;details&gt;
-  &lt;summary&gt;This part appears in the page&lt;/summary&gt;
-  &lt;p&gt;What&apos;s in this part can contain any HTML and is hidden until the user clicks on the visible part.&lt;/p&gt;
-&lt;/details&gt;</code></pre>
-    </section>
-    <section class="bcls-section">
-      <h2 id="faq">FAQ</h2>
-      <h3>Sample</h3>
-      <details>
-        <summary>Is this the question?</summary>
-        Yes, and this is the answer.
-      </details>
-      <details>
-        <summary>What HTML can you put in the answer?</summary>
-        <p>Anything you like!</p>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/test-assets/images/lunar-eclipse.png" alt="Sample Image">
-          <figcaption class="bcls-caption--image">Sample Image</figcaption>
-        </figure>
-        <h4>List</h4>
-        <ul>
-          <li>item 1</li>
-          <li>item 2</li>
-        </ul>
-      </details>
-      <h3>Code</h3>
-<pre class="line-numbers"><code class="language-html" translate="No">&lt;details&gt;
-  &lt;summary&gt;Is this the question?&lt;/summary&gt;
-  Yes, and this is the answer.
-&lt;/details&gt;
-&lt;details&gt;
-  &lt;summary&gt;What HTML can you put in the answer?&lt;/summary&gt;
-  &lt;p&gt;Anything you like!&lt;/p&gt;
-  &lt;figure class=&quot;bcls-figure&quot;&gt;
-    &lt;img class=&quot;bcls-image&quot; src=&quot;/test-assets/images/lunar-eclipse.png&quot; alt=&quot;Sample Image&quot;&gt;
-    &lt;figcaption class=&quot;bcls-caption--image&quot;&gt;Sample Image&lt;/figcaption&gt;
-  &lt;/figure&gt;
-  &lt;h4&gt;List&lt;/h4&gt;
-  &lt;ul&gt;
-    &lt;li&gt;item 1&lt;/li&gt;
-    &lt;li&gt;item 2&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/details&gt;</code></pre>
-    </section>
-    <section class="bcls-section">
-      <h2 id="Button">Button</h2>
-      <h3>Sample</h3>
-      <p><button class="bcls-button">BCLS Button</button></p>
-      <h3>Code</h3>
-<pre class="line-numbers"><code class="language-html" translate="No">&lt;button class=&quot;bcls-button&quot;&gt;BCLS Button&lt;/button&gt;</code></pre>
-    </section>
-        <section class="bcls-section">
-      <h2 id="icons">Icons</h2>
-            <div style="overflow-x: scroll;">
-  <table class="bcls-table">
-      <caption class="bcls-caption--table">Icon use</caption>
-      <thead class="bcls-table__head">
-          <tr>
-              <th width="121">Topic</th>
-              <th width="123">Icon Preview</th>
-              <th width="494">Code</th>
-          </tr>
-      </thead>
-      <tbody class="bcls-table__body">
-          <tr>
-              <td>Get Started</td>
-              <td><i class="fa-solid fa-map-pin"></i></td>
-              <td>&lt;i class=&quot;fa-solid fa-map-pin&quot;&gt;&lt;/i&gt;</td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-          </tr>
-      </tbody>
-  </table>
-</div>
+      </li>
+    </ul>
   </section>
+  
+  <section class="bcls-section">
+    <h2 id="Requirements">Requirements</h2>
+    <p>
+      The following requirements are needed for the Chromecast plugin: </p>
+    <ul>
+      <li>
+        Brightcove Player v6.45.0 or newer
+      </li>
+      <li>
+        Brightcove Chromecast plugin v2.0.0 or newer </li>
+    </ul>
+    <h3>Devices</h3>
+    <p>The following devices are supported:</p>
+    <ul>
+      <li>Chromecast (3rd Generation)</li>
+      <li>Chromecast Ultra</li>
+      <li>Chromecast with Google TV (preliminary support)</li>
+    </ul>
+    <aside class="bcls-aside bcls-aside--information"> Older versions or combinations may continue working, but they are not supported.
+    </aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="How_it_Works">How it Works</h2>
+    <p>The current implementation (plugin/receiver version 2.x) uses the CAF (Cast Application Framework) API.</p>
+    <p>
+      When the Chromecast receiver plugin is added, the player will display a cast button in the player UI when there is an available Chromecast on the local network.
+    </p>
+    <p>
+      When this button is clicked or tapped, a cast session is initiated with the current video that is loaded in the Brightcove Player. Here's how it works: </p>
+    <ol class="bcls-tasklist-restart">
+      <li>The plugin sends a set of parameters to the receiver.</li>
+      <li>The receiver mirrors the sending player by loading it from Brightcove's CDN.</li>
+      <li>Once loaded, the receiver-side player loads the video ID from the Playback API that was sent when the cast session began.</li>
+      <li>Then, the receiver-side player begins playback at the playhead position of the sending player.</li>
+    </ol>
+    <p>This process is identical for non-Video Cloud sources except there is no Playback API request.</p>
+    <h3>Analytics</h3>
+    <p>Currently, from an analytics perspective, the cast session is treated as an entirely new playback session.</p>
+    <p>From a UX perspective, the viewer will see their stream pause on the sender device and resume on the receiver.</p>
+    <p>From a data perspective, because our metrics are anonymized by default, it is logged as a new viewer starting a new stream on a separate device. This is what actually happens.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Also note that Chromecast is categorized in the Analytics Module either as <code translate="no">android</code> or <code translate="no">linux</code>, depending on its user-agent and Chromecast version.</aside>
+  </section>
+ 
 </article>
 <!-- complete bootstrap layout -->
     </div>
