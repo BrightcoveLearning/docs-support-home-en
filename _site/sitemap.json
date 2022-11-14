@@ -15,6 +15,11 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/features/chromecast.html",
+      "oldURL": "/chromecast"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/colors.html",
       "oldURL": "/colors"
   },
