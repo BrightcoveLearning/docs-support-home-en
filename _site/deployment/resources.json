@@ -1,738 +1,758 @@
 {
   "projects": {
-  "apis": [
-  {
-  "lang": "fr",
-  "s3_name": "docs-apis-fr",
-  "cloudfront_id": "E26QFFNU3ANNP"
-  },
-  {
-  "lang": "ja",
-  "s3_name": "docs-apis-ja",
-  "cloudfront_id": "E2Q9RNZ16SGFMF"
-  },
-  {
-  "lang": "ko",
-  "s3_name": "docs-apis-ko",
-  "cloudfront_id": "EQQ5TFAG1A2HK"
-  },
-  {
-  "lang": "zh-tw",
-  "s3_name": "docs-apis-zh-tw",
-  "cloudfront_id": "E1QCD2CF7ZKSUE"
-  },
-  {
-  "lang": "en",
-  "s3_name": "docs-apis",
-  "cloudfront_id": "E1N7CR90ZS6F3N"
-  },
-  {
-  "lang": "en",
-  "s3_name": "docs-apis",
-  "cloudfront_id": "E1N7CR90ZS6F3N"
+    "apis": [
+      {
+        "lang": "fr",
+        "s3_name": "docs-apis-fr",
+        "cloudfront_id": "E26QFFNU3ANNP"
+      },
+      {
+        "lang": "ja",
+        "s3_name": "docs-apis-ja",
+        "cloudfront_id": "E2Q9RNZ16SGFMF"
+      },
+      {
+        "lang": "ko",
+        "s3_name": "docs-apis-ko",
+        "cloudfront_id": "EQQ5TFAG1A2HK"
+      },
+      {
+        "lang": "zh-tw",
+        "s3_name": "docs-apis-zh-tw",
+        "cloudfront_id": "E1QCD2CF7ZKSUE"
+      },
+      {
+        "lang": "en",
+        "s3_name": "docs-apis",
+        "cloudfront_id": "E1N7CR90ZS6F3N"
+      },
+      {
+        "lang": "en",
+        "s3_name": "docs-apis",
+        "cloudfront_id": "E1N7CR90ZS6F3N"
+      }
+    ],
+    "audience": [
+      {
+        "lang": "de",
+        "s3_name": "audio-support-de",
+        "cloudfront_id": "E2ON9E3AGDS3DW"
+      },
+      {
+        "lang": "es",
+        "s3_name": "audio-support-es",
+        "cloudfront_id": "E1FY572XO47FN1"
+      },
+      {
+        "lang": "fr",
+        "s3_name": "audio-support-fr",
+        "cloudfront_id": "E3OC29O3QALS3X"
+      },
+      {
+        "lang": "ja",
+        "s3_name": "audio-support-ja",
+        "cloudfront_id": "E2ON2ML9LCCL1W"
+      },
+      {
+        "lang": "ko",
+        "s3_name": "audio-support-ko",
+        "cloudfront_id": "E1DJFAZ5W5SF2O"
+      },
+      {
+        "lang": "zh-tw",
+        "s3_name": "audio-support-zh-tw",
+        "cloudfront_id": "EH9VTPG9FDEJR"
+      },
+      {
+        "lang": "en",
+        "s3_name": "audio-support",
+        "cloudfront_id": "ESA7T03NMYCSQ"
+      },
+      {
+        "lang": "en",
+        "s3_name": "audio-support",
+        "cloudfront_id": "ESA7T03NMYCSQ"
+      }
+    ],
+    "beacon_classic": [
+      {
+        "lang": "de",
+        "s3_name": "beacon-documentation-brightcove-de",
+        "cloudfront_id": "E14V6AHNPHQPWX"
+      },
+      {
+        "lang": "es",
+        "s3_name": "beacon-documentation-brightcove-es",
+        "cloudfront_id": "E1SQP41PRJO9P5"
+      },
+      {
+        "lang": "fr",
+        "s3_name": "beacon-documentation-brightcove-fr",
+        "cloudfront_id": "E18JCVC1A6JGIS"
+      },
+      {
+        "lang": "ja",
+        "s3_name": "beacon-documentation-brightcove-ja",
+        "cloudfront_id": "E3OICGZP6FQ4UM"
+      },
+      {
+        "lang": "ko",
+        "s3_name": "beacon-documentation-brightcove-ko",
+        "cloudfront_id": "EBH7S5NL636DC"
+      },
+      {
+        "lang": "zh-tw",
+        "s3_name": "beacon-documentation-brightcove-zh-tw",
+        "cloudfront_id": "E28F2E7RTB6ZJD"
+      },
+      {
+        "lang": "private-en",
+        "s3_name": "docs-staging-site",
+        "cloudfront_id": "E2WK47LG1SW1KP"
+      }
+    ],
+    "beacon_studio": [
+      {
+        "lang": "en",
+        "s3_name": "beacon-help",
+        "cloudfront_id": "E285C8SP18PQKO"
+      },
+      {
+        "lang": "de",
+        "s3_name": "beacon-help-de",
+        "cloudfront_id": "E2XOJ2H5RDPLTG"
+      },
+      {
+        "lang": "es",
+        "s3_name": "beacon-help-es",
+        "cloudfront_id": "E16VJD4NP2RTNV"
+      },
+      {
+        "lang": "fr",
+        "s3_name": "beacon-help-fr",
+        "cloudfront_id": "E10RCB61LGCUCY"
+      },
+      {
+        "lang": "ja",
+        "s3_name": "beacon-help-ja",
+        "cloudfront_id": "E1F0GVKNU8FPN8"
+      },
+      {
+        "lang": "ko",
+        "s3_name": "beacon-help-ko",
+        "cloudfront_id": "EU9U0FPXQJ8X1"
+      },
+      {
+        "lang": "zh-tw",
+        "s3_name": "beacon-help-zh-tw",
+        "cloudfront_id": "E3NNG1M77L8KIP"
+      }
+    ],
+    "campaign": [
+      {
+        "lang": "de",
+        "s3_name": "campaign-support-brightcove-com-de",
+        "cloudfront_id": "E31PJONN4IO35C"
+      },
+      {
+        "lang": "es",
+        "s3_name": "campaign-support-brightcove-com-es",
+        "cloudfront_id": "E2X33YDL36IBC2"
+      },
+      {
+        "lang": "fr",
+        "s3_name": "campaign-support-brightcove-com-fr",
+        "cloudfront_id": "E2OCAKDWM094G"
+      },
+      {
+        "lang": "ja",
+        "s3_name": "campaign-support-brightcove-com-ja",
+        "cloudfront_id": "E3FAJEOD01VISP"
+      },
+      {
+        "lang": "ko",
+        "s3_name": "campaign-support-brightcove-com-ko",
+        "cloudfront_id": "E2TELHUP2X0ZN4"
+      },
+      {
+        "lang": "zh-tw",
+        "s3_name": "campaign-support-brightcove-com-zh-tw",
+        "cloudfront_id": "E1D4PK70O6D91L"
+      },
+      {
+        "lang": "en",
+        "s3_name": "campaign-support-brightcove-com",
+        "cloudfront_id": "E1BR99TYJ3N8B7"
+      },
+      {
+        "lang": "en",
+        "s3_name": "campaign-support-brightcove-com",
+        "cloudfront_id": "E1BR99TYJ3N8B7"
+      }
+    ],
+    "engage": [
+      {
+        "lang": "de",
+        "s3_name": "engage-support-brightcove-de",
+        "cloudfront_id": "E381LHVD6V6MS"
+      },
+      {
+        "lang": "es",
+        "s3_name": "engage-support-brightcove-es",
+        "cloudfront_id": "E1Q39T9W5XF6UV"
+      },
+      {
+        "lang": "fr",
+        "s3_name": "engage-support-brightcove-fr",
+        "cloudfront_id": "E18PVYGLIIRNWB"
+      },
+      {
+        "lang": "ja",
+        "s3_name": "engage-support-brightcove-ja",
+        "cloudfront_id": "E2GKTRNS26LKPH"
+      },
+      {
+        "lang": "ko",
+        "s3_name": "engage-support-brightcove-ko",
+        "cloudfront_id": "E1FX4JJEHZ2ULB"
+      },
+      {
+        "lang": "zh-tw",
+        "s3_name": "engage-support-brightcove-zh-tw",
+        "cloudfront_id": "E18GNSUTXGV9OG"
+      },
+      {
+        "lang": "en",
+        "s3_name": "engage-support-brightcove",
+        "cloudfront_id": "EUW9LF41CZFXM"
+      },
+      {
+        "lang": "en",
+        "s3_name": "engage-support-brightcove",
+        "cloudfront_id": "EUW9LF41CZFXM"
+      }
+    ],
+    "gallery": [
+      {
+        "lang": "de",
+        "s3_name": "gallery-documentation-de",
+        "cloudfront_id": "E3RR18BR2141KO"
+      },
+      {
+        "lang": "es",
+        "s3_name": "gallery-documentation-es",
+        "cloudfront_id": "E2ORTSV8XYEJNZ"
+      },
+      {
+        "lang": "fr",
+        "s3_name": "gallery-documentation-fr",
+        "cloudfront_id": "E11KAM0NTVBCSZ"
+      },
+      {
+        "lang": "ja",
+        "s3_name": "gallery-documentation-ja",
+        "cloudfront_id": "E18CYZQJ2WTPOZ"
+      },
+      {
+        "lang": "ko",
+        "s3_name": "gallery-documentation-ko",
+        "cloudfront_id": "E19GLY7VUI5H6V"
+      },
+      {
+        "lang": "zh-tw",
+        "s3_name": "gallery-documentation-zh-tw",
+        "cloudfront_id": "E1NEBDPGZLNVVK"
+      },
+      {
+        "lang": "en",
+        "s3_name": "gallery-documentation",
+        "cloudfront_id": "E19Q7MOUE1YBN3"
+      },
+      {
+        "lang": "en",
+        "s3_name": "gallery-documentation",
+        "cloudfront_id": "E19Q7MOUE1YBN3"
+      }
+    ],
+    "general": [
+      {
+        "lang": "de",
+        "s3_name": "docs-support-general-de",
+        "cloudfront_id": "E3IX4LEM9KO249"
+      },
+      {
+        "lang": "es",
+        "s3_name": "docs-support-general-es",
+        "cloudfront_id": "E3TP8GT3XA5P67"
+      },
+      {
+        "lang": "fr",
+        "s3_name": "docs-support-general-fr",
+        "cloudfront_id": "E3PZDEHG4PXN5R"
+      },
+      {
+        "lang": "ja",
+        "s3_name": "docs-support-general-ja",
+        "cloudfront_id": "E3579911YA9DFX"
+      },
+      {
+        "lang": "ko",
+        "s3_name": "docs-support-general-ko",
+        "cloudfront_id": "EROYDMT4TTWRQ"
+      },
+      {
+        "lang": "zh-tw",
+        "s3_name": "docs-support-general-zh-tw",
+        "cloudfront_id": "EP00OZGHA625Q"
+      },
+      {
+        "lang": "en",
+        "s3_name": "docs-support-general",
+        "cloudfront_id": "E2LQDL0LVX75T0"
+      },
+      {
+        "lang": "en",
+        "s3_name": "docs-support-general",
+        "cloudfront_id": "E2LQDL0LVX75T0"
+      }
+    ],
+    "docs-support-home": [
+      {
+        "lang": "de",
+        "s3_name": "docs-support-home-de",
+        "cloudfront_id": "EAPGTUOV24E3L"
+      },
+      {
+        "lang": "es",
+        "s3_name": "docs-support-home-es",
+        "cloudfront_id": "E9AY08D7MYKYJ"
+      },
+      {
+        "lang": "fr",
+        "s3_name": "docs-support-home-fr",
+        "cloudfront_id": "E1BNSSDVK9ZTFC"
+      },
+      {
+        "lang": "ja",
+        "s3_name": "docs-support-home-ja",
+        "cloudfront_id": "END4QKWYF2XOU"
+      },
+      {
+        "lang": "ko",
+        "s3_name": "docs-support-home-ko",
+        "cloudfront_id": "E7GMNWKRPO6B8"
+      },
+      {
+        "lang": "zh-tw",
+        "s3_name": "docs-support-home-zh-tw",
+        "cloudfront_id": "E3RQ849UU3Y74O"
+      },
+      {
+        "lang": "en",
+        "s3_name": "docs-support-home",
+        "cloudfront_id": "EDLA12YN8RKMH"
+      },
+      {
+        "lang": "en",
+        "s3_name": "docs-support-home",
+        "cloudfront_id": "EDLA12YN8RKMH"
+      }
+    ],
+    "integrations": [
+      {
+        "lang": "de",
+        "s3_name": "docs-cms-connectors-de",
+        "cloudfront_id": "E25SRBDNT3P0WP"
+      },
+      {
+        "lang": "es",
+        "s3_name": "docs-cms-connectors-es",
+        "cloudfront_id": "E14HQK15126APP"
+      },
+      {
+        "lang": "fr",
+        "s3_name": "docs-cms-connectors-fr",
+        "cloudfront_id": "E1WQHOELULXSXN"
+      },
+      {
+        "lang": "ja",
+        "s3_name": "docs-cms-connectors-ja",
+        "cloudfront_id": "E2Y927GUBE0KIV"
+      },
+      {
+        "lang": "ko",
+        "s3_name": "docs-cms-connectors-ko",
+        "cloudfront_id": "E2Y14MNSSCKI4Z"
+      },
+      {
+        "lang": "zh-tw",
+        "s3_name": "docs-cms-connectors-zh-tw",
+        "cloudfront_id": "EPDIPMU3GFDY3"
+      },
+      {
+        "lang": "en",
+        "s3_name": "docs-cms-connectors",
+        "cloudfront_id": "E9XI4PHW7NLGC"
+      },
+      {
+        "lang": "en",
+        "s3_name": "docs-cms-connectors",
+        "cloudfront_id": "E9XI4PHW7NLGC"
+      }
+    ],
+    "live": [
+      {
+        "lang": "de",
+        "s3_name": "docs-live-de",
+        "cloudfront_id": "E12S74FIGE5BUW"
+      },
+      {
+        "lang": "es",
+        "s3_name": "docs-live-es",
+        "cloudfront_id": "E197JPJ90PRL1L"
+      },
+      {
+        "lang": "fr",
+        "s3_name": "docs-live-fr",
+        "cloudfront_id": "E17ZSZ5O8OIVMR"
+      },
+      {
+        "lang": "ja",
+        "s3_name": "docs-live-ja",
+        "cloudfront_id": "E2VGFL9GMRQJDC"
+      },
+      {
+        "lang": "ko",
+        "s3_name": "docs-live-ko",
+        "cloudfront_id": "E2G7OGD3XQS9AX"
+      },
+      {
+        "lang": "zh-tw",
+        "s3_name": "docs-live-zh-tw",
+        "cloudfront_id": "E2S97P81NDG7NS"
+      },
+      {
+        "lang": "en",
+        "s3_name": "docs-live",
+        "cloudfront_id": "E3J1P0PE0GN8V9"
+      },
+      {
+        "lang": "en",
+        "s3_name": "docs-live",
+        "cloudfront_id": "E3J1P0PE0GN8V9"
+      }
+    ],
+    "player": [
+      {
+        "lang": "de",
+        "s3_name": "docs-player-de",
+        "cloudfront_id": "E3AGG0KMD235T"
+      },
+      {
+        "lang": "es",
+        "s3_name": "docs-player-es",
+        "cloudfront_id": "ET4SKECSNL3ZC"
+      },
+      {
+        "lang": "fr",
+        "s3_name": "docs-player-fr",
+        "cloudfront_id": "E3O6M1EZFGSMVI"
+      },
+      {
+        "lang": "ja",
+        "s3_name": "docs-player-ja",
+        "cloudfront_id": "E3BRJZ4HTYNU0P"
+      },
+      {
+        "lang": "ko",
+        "s3_name": "docs-player-ko",
+        "cloudfront_id": "E2A78IN4UKQPH8"
+      },
+      {
+        "lang": "zh-tw",
+        "s3_name": "docs-player-zh-tw",
+        "cloudfront_id": "E3Q4FS8IBPEEBL"
+      },
+      {
+        "lang": "en",
+        "s3_name": "docs-player",
+        "cloudfront_id": "E35M0PDCHGL9MR"
+      },
+      {
+        "lang": "en",
+        "s3_name": "docs-player",
+        "cloudfront_id": "E35M0PDCHGL9MR"
+      }
+    ],
+    "sdks": [
+      {
+        "lang": "de",
+        "s3_name": "docs-sdks-de",
+        "cloudfront_id": "EFSZPXMBIAM2J"
+      },
+      {
+        "lang": "es",
+        "s3_name": "docs-sdks-es",
+        "cloudfront_id": "EVPIWEETTNXVF"
+      },
+      {
+        "lang": "fr",
+        "s3_name": "docs-sdks-fr",
+        "cloudfront_id": "E2SWAG9HYU4C2K"
+      },
+      {
+        "lang": "ja",
+        "s3_name": "docs-sdks-ja",
+        "cloudfront_id": "EUR5JB52GCSKF"
+      },
+      {
+        "lang": "ko",
+        "s3_name": "docs-sdks-ko",
+        "cloudfront_id": "E1HIMVDGWW871Z"
+      },
+      {
+        "lang": "zh-tw",
+        "s3_name": "docs-sdks-zh-tw",
+        "cloudfront_id": "E3NFA1O6W9CN5H"
+      },
+      {
+        "lang": "en",
+        "s3_name": "docs-sdks",
+        "cloudfront_id": "E2INWLIQ34SQPW"
+      },
+      {
+        "lang": "en",
+        "s3_name": "docs-sdks",
+        "cloudfront_id": "E2INWLIQ34SQPW"
+      }
+    ],
+    "social": [
+      {
+        "lang": "de",
+        "s3_name": "docs-social-de",
+        "cloudfront_id": "E2ZT3IBXNGAQ00"
+      },
+      {
+        "lang": "es",
+        "s3_name": "docs-social-es",
+        "cloudfront_id": "E1LG7KKZSSKBNP"
+      },
+      {
+        "lang": "fr",
+        "s3_name": "docs-social-fr",
+        "cloudfront_id": "E2ENSVRWXGZJ0I"
+      },
+      {
+        "lang": "ja",
+        "s3_name": "docs-social-ja",
+        "cloudfront_id": "E140NQFB8FE0AU"
+      },
+      {
+        "lang": "ko",
+        "s3_name": "docs-social-ko",
+        "cloudfront_id": "E3NFA1O6W9CN5H"
+      },
+      {
+        "lang": "zh-tw",
+        "s3_name": "docs-social-zh-tw",
+        "cloudfront_id": "E2LK8R67S6J9ZP"
+      },
+      {
+        "lang": "en",
+        "s3_name": "docs-social",
+        "cloudfront_id": "E32LKDL3S2ZOCF"
+      },
+      {
+        "lang": "en",
+        "s3_name": "docs-social",
+        "cloudfront_id": "E32LKDL3S2ZOCF"
+      }
+    ],
+    "ssai": [
+      {
+        "lang": "de",
+        "s3_name": "docs-ssai-de",
+        "cloudfront_id": "E3OP0Q57YVELFD"
+      },
+      {
+        "lang": "es",
+        "s3_name": "docs-ssai-es",
+        "cloudfront_id": "E38NN2K49N8YTP"
+      },
+      {
+        "lang": "fr",
+        "s3_name": "docs-ssai-fr",
+        "cloudfront_id": "EN0RIOB96SAEQ"
+      },
+      {
+        "lang": "ja",
+        "s3_name": "docs-ssai-ja",
+        "cloudfront_id": "E3ITMPFEGO99SO"
+      },
+      {
+        "lang": "ko",
+        "s3_name": "docs-ssai-ko",
+        "cloudfront_id": "E2QMY6Y0POBZU6"
+      },
+      {
+        "lang": "zh-tw",
+        "s3_name": "docs-ssai-zh-tw",
+        "cloudfront_id": "EOYH2017CRDGY"
+      },
+      {
+        "lang": "en",
+        "s3_name": "docs-ssai",
+        "cloudfront_id": "E3CB9LV6TBPNO"
+      },
+      {
+        "lang": "en",
+        "s3_name": "docs-ssai",
+        "cloudfront_id": "E3CB9LV6TBPNO"
+      }
+    ],
+    "studio": [
+      {
+        "lang": "de",
+        "s3_name": "docs-studio-de",
+        "cloudfront_id": "EVXYKAUY99I20"
+      },
+      {
+        "lang": "es",
+        "s3_name": "docs-studio-es",
+        "cloudfront_id": "ECXX8SKAXUC9B"
+      },
+      {
+        "lang": "fr",
+        "s3_name": "docs-studio-fr",
+        "cloudfront_id": "EQGA7FEMM1H7W"
+      },
+      {
+        "lang": "ja",
+        "s3_name": "docs-studio-ja",
+        "cloudfront_id": "E3S6JS75Q54ST8"
+      },
+      {
+        "lang": "ko",
+        "s3_name": "docs-studio-ko",
+        "cloudfront_id": "E13CE2ZQ2CGY0Y"
+      },
+      {
+        "lang": "zh-tw",
+        "s3_name": "docs-studio-zh-tw",
+        "cloudfront_id": "E20DN31T0CQH4"
+      },
+      {
+        "lang": "en",
+        "s3_name": "docs-studio",
+        "cloudfront_id": "E28POOM3C6QETK"
+      },
+      {
+        "lang": "en",
+        "s3_name": "docs-studio",
+        "cloudfront_id": "E28POOM3C6QETK"
+      }
+    ],
+    "zencoder": [
+      {
+        "lang": "de",
+        "s3_name": "zencoder-documentation-de",
+        "cloudfront_id": "E3PNHVXP1FXV9A"
+      },
+      {
+        "lang": "es",
+        "s3_name": "zencoder-documentation-es",
+        "cloudfront_id": "EN8YOJVX16VD9"
+      },
+      {
+        "lang": "fr",
+        "s3_name": "zencoder-documentation-fr",
+        "cloudfront_id": "E29JR77C2YKK63"
+      },
+      {
+        "lang": "ja",
+        "s3_name": "zencoder-documentation-ja",
+        "cloudfront_id": "E1J869HLLBBCPW"
+      },
+      {
+        "lang": "ko",
+        "s3_name": "zencoder-documentation-ko",
+        "cloudfront_id": "E2CGJYBS9ZC30B"
+      },
+      {
+        "lang": "zh-tw",
+        "s3_name": "zencoder-documentation-zh-tw",
+        "cloudfront_id": "E2I6M3R5JXAPRH"
+      },
+      {
+        "lang": "en",
+        "s3_name": "zencoder-documenation",
+        "cloudfront_id": "E39I2V5Z4AK90T"
+      },
+      {
+        "lang": "en",
+        "s3_name": "zencoder-documenation",
+        "cloudfront_id": "E39I2V5Z4AK90T"
+      }
+    ],
+    "developerdocs": [
+      {
+        "lang": "en",
+        "s3_name": "bcls-developer-docs",
+        "cloudfront_id": "E1482N52WYZ9ZI"
+      },
+      {
+        "lang": "en",
+        "s3_name": "bcls-developer-docs",
+        "cloudfront_id": "E1482N52WYZ9ZI"
+      }
+    ],
+    "mstudio": [
+      {
+        "lang": "en",
+        "s3_name": "docs-mstudio",
+        "cloudfront_id": "EPI6LI8AA4R0V"
+      },
+      {
+        "lang": "en",
+        "s3_name": "docs-mstudio",
+        "cloudfront_id": "EPI6LI8AA4R0V"
+      }
+    ],
+    "interactivity": [
+      {
+        "lang": "en",
+        "s3_name": "docs-interactions-en",
+        "cloudfront_id": "E2NZU9VAEYBDYU"
+      },
+      {
+        "lang": "en",
+        "s3_name": "docs-interactions-en",
+        "cloudfront_id": "E2NZU9VAEYBDYU"
+      }
+    ],
+    "corptv": [
+      {
+        "lang": "en",
+        "s3_name": "corptv",
+        "cloudfront_id": "EOYDNZVKNUZ1E"
+      },
+      {
+        "lang": "en",
+        "s3_name": "corptv",
+        "cloudfront_id": "EOYDNZVKNUZ1E"
+      }
+    ],
+    "audience-insights": [
+      {
+        "lang": "en",
+        "s3_name": "docs-audience-insights",
+        "cloudfront_id": "E334G9RPSPWKF3"
+      },
+      {
+        "lang": "en",
+        "s3_name": "docs-audience-insights",
+        "cloudfront_id": "E334G9RPSPWKF3"
+      }
+    ]
   }
-  ],
-  "audience": [
-  {
-  "lang": "de",
-  "s3_name": "audio-support-de",
-  "cloudfront_id": "E2ON9E3AGDS3DW"
-  },
-  {
-  "lang": "es",
-  "s3_name": "audio-support-es",
-  "cloudfront_id": "E1FY572XO47FN1"
-  },
-  {
-  "lang": "fr",
-  "s3_name": "audio-support-fr",
-  "cloudfront_id": "E3OC29O3QALS3X"
-  },
-  {
-  "lang": "ja",
-  "s3_name": "audio-support-ja",
-  "cloudfront_id": "E2ON2ML9LCCL1W"
-  },
-  {
-  "lang": "ko",
-  "s3_name": "audio-support-ko",
-  "cloudfront_id": "E1DJFAZ5W5SF2O"
-  },
-  {
-  "lang": "zh-tw",
-  "s3_name": "audio-support-zh-tw",
-  "cloudfront_id": "EH9VTPG9FDEJR"
-  },
-  {
-  "lang": "en",
-  "s3_name": "audio-support",
-  "cloudfront_id": "ESA7T03NMYCSQ"
-  },
-  {
-  "lang": "en",
-  "s3_name": "audio-support",
-  "cloudfront_id": "ESA7T03NMYCSQ"
-  }
-  ],
-  "beacon": [
-  {
-  "lang": "de",
-  "s3_name": "beacon-documentation-brightcove-de",
-  "cloudfront_id": "E14V6AHNPHQPWX"
-  },
-  {
-  "lang": "es",
-  "s3_name": "beacon-documentation-brightcove-es",
-  "cloudfront_id": "E1SQP41PRJO9P5"
-  },
-  {
-  "lang": "fr",
-  "s3_name": "beacon-documentation-brightcove-fr",
-  "cloudfront_id": "E18JCVC1A6JGIS"
-  },
-  {
-  "lang": "ja",
-  "s3_name": "beacon-documentation-brightcove-ja",
-  "cloudfront_id": "E3OICGZP6FQ4UM"
-  },
-  {
-  "lang": "ko",
-  "s3_name": "beacon-documentation-brightcove-ko",
-  "cloudfront_id": "EBH7S5NL636DC"
-  },
-  {
-  "lang": "zh-tw",
-  "s3_name": "beacon-documentation-brightcove-zh-tw",
-  "cloudfront_id": "E28F2E7RTB6ZJD"
-  },
-  {
-  "lang": "en",
-  "s3_name": "beacon-help",
-  "cloudfront_id": "E285C8SP18PQKO"
-  },
-  {
-  "lang": "private-en",
-  "s3_name": "docs-staging-site",
-  "cloudfront_id": "E2WK47LG1SW1KP"
-  }
-  ],
-  "campaign": [
-  {
-  "lang": "de",
-  "s3_name": "campaign-support-brightcove-com-de",
-  "cloudfront_id": "E31PJONN4IO35C"
-  },
-  {
-  "lang": "es",
-  "s3_name": "campaign-support-brightcove-com-es",
-  "cloudfront_id": "E2X33YDL36IBC2"
-  },
-  {
-  "lang": "fr",
-  "s3_name": "campaign-support-brightcove-com-fr",
-  "cloudfront_id": "E2OCAKDWM094G"
-  },
-  {
-  "lang": "ja",
-  "s3_name": "campaign-support-brightcove-com-ja",
-  "cloudfront_id": "E3FAJEOD01VISP"
-  },
-  {
-  "lang": "ko",
-  "s3_name": "campaign-support-brightcove-com-ko",
-  "cloudfront_id": "E2TELHUP2X0ZN4"
-  },
-  {
-  "lang": "zh-tw",
-  "s3_name": "campaign-support-brightcove-com-zh-tw",
-  "cloudfront_id": "E1D4PK70O6D91L"
-  },
-  {
-  "lang": "en",
-  "s3_name": "campaign-support-brightcove-com",
-  "cloudfront_id": "E1BR99TYJ3N8B7"
-  },
-  {
-  "lang": "en",
-  "s3_name": "campaign-support-brightcove-com",
-  "cloudfront_id": "E1BR99TYJ3N8B7"
-  }
-  ],
-  "engage": [
-  {
-  "lang": "de",
-  "s3_name": "engage-support-brightcove-de",
-  "cloudfront_id": "E381LHVD6V6MS"
-  },
-  {
-  "lang": "es",
-  "s3_name": "engage-support-brightcove-es",
-  "cloudfront_id": "E1Q39T9W5XF6UV"
-  },
-  {
-  "lang": "fr",
-  "s3_name": "engage-support-brightcove-fr",
-  "cloudfront_id": "E18PVYGLIIRNWB"
-  },
-  {
-  "lang": "ja",
-  "s3_name": "engage-support-brightcove-ja",
-  "cloudfront_id": "E2GKTRNS26LKPH"
-  },
-  {
-  "lang": "ko",
-  "s3_name": "engage-support-brightcove-ko",
-  "cloudfront_id": "E1FX4JJEHZ2ULB"
-  },
-  {
-  "lang": "zh-tw",
-  "s3_name": "engage-support-brightcove-zh-tw",
-  "cloudfront_id": "E18GNSUTXGV9OG"
-  },
-  {
-  "lang": "en",
-  "s3_name": "engage-support-brightcove",
-  "cloudfront_id": "EUW9LF41CZFXM"
-  },
-  {
-  "lang": "en",
-  "s3_name": "engage-support-brightcove",
-  "cloudfront_id": "EUW9LF41CZFXM"
-  }
-  ],
-  "gallery": [
-  {
-  "lang": "de",
-  "s3_name": "gallery-documentation-de",
-  "cloudfront_id": "E3RR18BR2141KO"
-  },
-  {
-  "lang": "es",
-  "s3_name": "gallery-documentation-es",
-  "cloudfront_id": "E2ORTSV8XYEJNZ"
-  },
-  {
-  "lang": "fr",
-  "s3_name": "gallery-documentation-fr",
-  "cloudfront_id": "E11KAM0NTVBCSZ"
-  },
-  {
-  "lang": "ja",
-  "s3_name": "gallery-documentation-ja",
-  "cloudfront_id": "E18CYZQJ2WTPOZ"
-  },
-  {
-  "lang": "ko",
-  "s3_name": "gallery-documentation-ko",
-  "cloudfront_id": "E19GLY7VUI5H6V"
-  },
-  {
-  "lang": "zh-tw",
-  "s3_name": "gallery-documentation-zh-tw",
-  "cloudfront_id": "E1NEBDPGZLNVVK"
-  },
-  {
-  "lang": "en",
-  "s3_name": "gallery-documentation",
-  "cloudfront_id": "E19Q7MOUE1YBN3"
-  },
-  {
-  "lang": "en",
-  "s3_name": "gallery-documentation",
-  "cloudfront_id": "E19Q7MOUE1YBN3"
-  }
-  ],
-  "general": [
-  {
-  "lang": "de",
-  "s3_name": "docs-support-general-de",
-  "cloudfront_id": "E3IX4LEM9KO249"
-  },
-  {
-  "lang": "es",
-  "s3_name": "docs-support-general-es",
-  "cloudfront_id": "E3TP8GT3XA5P67"
-  },
-  {
-  "lang": "fr",
-  "s3_name": "docs-support-general-fr",
-  "cloudfront_id": "E3PZDEHG4PXN5R"
-  },
-  {
-  "lang": "ja",
-  "s3_name": "docs-support-general-ja",
-  "cloudfront_id": "E3579911YA9DFX"
-  },
-  {
-  "lang": "ko",
-  "s3_name": "docs-support-general-ko",
-  "cloudfront_id": "EROYDMT4TTWRQ"
-  },
-  {
-  "lang": "zh-tw",
-  "s3_name": "docs-support-general-zh-tw",
-  "cloudfront_id": "EP00OZGHA625Q"
-  },
-  {
-  "lang": "en",
-  "s3_name": "docs-support-general",
-  "cloudfront_id": "E2LQDL0LVX75T0"
-  },
-  {
-  "lang": "en",
-  "s3_name": "docs-support-general",
-  "cloudfront_id": "E2LQDL0LVX75T0"
-  }
-  ],
-  "docs-support-home": [
-  {
-  "lang": "de",
-  "s3_name": "docs-support-home-de",
-  "cloudfront_id": "EAPGTUOV24E3L"
-  },
-  {
-  "lang": "es",
-  "s3_name": "docs-support-home-es",
-  "cloudfront_id": "E9AY08D7MYKYJ"
-  },
-  {
-  "lang": "fr",
-  "s3_name": "docs-support-home-fr",
-  "cloudfront_id": "E1BNSSDVK9ZTFC"
-  },
-  {
-  "lang": "ja",
-  "s3_name": "docs-support-home-ja",
-  "cloudfront_id": "END4QKWYF2XOU"
-  },
-  {
-  "lang": "ko",
-  "s3_name": "docs-support-home-ko",
-  "cloudfront_id": "E7GMNWKRPO6B8"
-  },
-  {
-  "lang": "zh-tw",
-  "s3_name": "docs-support-home-zh-tw",
-  "cloudfront_id": "E3RQ849UU3Y74O"
-  },
-  {
-  "lang": "en",
-  "s3_name": "docs-support-home",
-  "cloudfront_id": "EDLA12YN8RKMH"
-  },
-  {
-  "lang": "en",
-  "s3_name": "docs-support-home",
-  "cloudfront_id": "EDLA12YN8RKMH"
-  }
-  ],
-  "integrations": [
-  {
-  "lang": "de",
-  "s3_name": "docs-cms-connectors-de",
-  "cloudfront_id": "E25SRBDNT3P0WP"
-  },
-  {
-  "lang": "es",
-  "s3_name": "docs-cms-connectors-es",
-  "cloudfront_id": "E14HQK15126APP"
-  },
-  {
-  "lang": "fr",
-  "s3_name": "docs-cms-connectors-fr",
-  "cloudfront_id": "E1WQHOELULXSXN"
-  },
-  {
-  "lang": "ja",
-  "s3_name": "docs-cms-connectors-ja",
-  "cloudfront_id": "E2Y927GUBE0KIV"
-  },
-  {
-  "lang": "ko",
-  "s3_name": "docs-cms-connectors-ko",
-  "cloudfront_id": "E2Y14MNSSCKI4Z"
-  },
-  {
-  "lang": "zh-tw",
-  "s3_name": "docs-cms-connectors-zh-tw",
-  "cloudfront_id": "EPDIPMU3GFDY3"
-  },
-  {
-  "lang": "en",
-  "s3_name": "docs-cms-connectors",
-  "cloudfront_id": "E9XI4PHW7NLGC"
-  },
-  {
-  "lang": "en",
-  "s3_name": "docs-cms-connectors",
-  "cloudfront_id": "E9XI4PHW7NLGC"
-  }
-  ],
-  "live": [
-  {
-  "lang": "de",
-  "s3_name": "docs-live-de",
-  "cloudfront_id": "E12S74FIGE5BUW"
-  },
-  {
-  "lang": "es",
-  "s3_name": "docs-live-es",
-  "cloudfront_id": "E197JPJ90PRL1L"
-  },
-  {
-  "lang": "fr",
-  "s3_name": "docs-live-fr",
-  "cloudfront_id": "E17ZSZ5O8OIVMR"
-  },
-  {
-  "lang": "ja",
-  "s3_name": "docs-live-ja",
-  "cloudfront_id": "E2VGFL9GMRQJDC"
-  },
-  {
-  "lang": "ko",
-  "s3_name": "docs-live-ko",
-  "cloudfront_id": "E2G7OGD3XQS9AX"
-  },
-  {
-  "lang": "zh-tw",
-  "s3_name": "docs-live-zh-tw",
-  "cloudfront_id": "E2S97P81NDG7NS"
-  },
-  {
-  "lang": "en",
-  "s3_name": "docs-live",
-  "cloudfront_id": "E3J1P0PE0GN8V9"
-  },
-  {
-  "lang": "en",
-  "s3_name": "docs-live",
-  "cloudfront_id": "E3J1P0PE0GN8V9"
-  }
-  ],
-  "player": [
-  {
-  "lang": "de",
-  "s3_name": "docs-player-de",
-  "cloudfront_id": "E3AGG0KMD235T"
-  },
-  {
-  "lang": "es",
-  "s3_name": "docs-player-es",
-  "cloudfront_id": "ET4SKECSNL3ZC"
-  },
-  {
-  "lang": "fr",
-  "s3_name": "docs-player-fr",
-  "cloudfront_id": "E3O6M1EZFGSMVI"
-  },
-  {
-  "lang": "ja",
-  "s3_name": "docs-player-ja",
-  "cloudfront_id": "E3BRJZ4HTYNU0P"
-  },
-  {
-  "lang": "ko",
-  "s3_name": "docs-player-ko",
-  "cloudfront_id": "E2A78IN4UKQPH8"
-  },
-  {
-  "lang": "zh-tw",
-  "s3_name": "docs-player-zh-tw",
-  "cloudfront_id": "E3Q4FS8IBPEEBL"
-  },
-  {
-  "lang": "en",
-  "s3_name": "docs-player",
-  "cloudfront_id": "E35M0PDCHGL9MR"
-  },
-  {
-  "lang": "en",
-  "s3_name": "docs-player",
-  "cloudfront_id": "E35M0PDCHGL9MR"
-  }
-  ],
-  "sdks": [
-  {
-  "lang": "de",
-  "s3_name": "docs-sdks-de",
-  "cloudfront_id": "EFSZPXMBIAM2J"
-  },
-  {
-  "lang": "es",
-  "s3_name": "docs-sdks-es",
-  "cloudfront_id": "EVPIWEETTNXVF"
-  },
-  {
-  "lang": "fr",
-  "s3_name": "docs-sdks-fr",
-  "cloudfront_id": "E2SWAG9HYU4C2K"
-  },
-  {
-  "lang": "ja",
-  "s3_name": "docs-sdks-ja",
-  "cloudfront_id": "EUR5JB52GCSKF"
-  },
-  {
-  "lang": "ko",
-  "s3_name": "docs-sdks-ko",
-  "cloudfront_id": "E1HIMVDGWW871Z"
-  },
-  {
-  "lang": "zh-tw",
-  "s3_name": "docs-sdks-zh-tw",
-  "cloudfront_id": "E3NFA1O6W9CN5H"
-  },
-  {
-  "lang": "en",
-  "s3_name": "docs-sdks",
-  "cloudfront_id": "E2INWLIQ34SQPW"
-  },
-  {
-  "lang": "en",
-  "s3_name": "docs-sdks",
-  "cloudfront_id": "E2INWLIQ34SQPW"
-  }
-  ],
-  "social": [
-  {
-  "lang": "de",
-  "s3_name": "docs-social-de",
-  "cloudfront_id": "E2ZT3IBXNGAQ00"
-  },
-  {
-  "lang": "es",
-  "s3_name": "docs-social-es",
-  "cloudfront_id": "E1LG7KKZSSKBNP"
-  },
-  {
-  "lang": "fr",
-  "s3_name": "docs-social-fr",
-  "cloudfront_id": "E2ENSVRWXGZJ0I"
-  },
-  {
-  "lang": "ja",
-  "s3_name": "docs-social-ja",
-  "cloudfront_id": "E140NQFB8FE0AU"
-  },
-  {
-  "lang": "ko",
-  "s3_name": "docs-social-ko",
-  "cloudfront_id": "E3NFA1O6W9CN5H"
-  },
-  {
-  "lang": "zh-tw",
-  "s3_name": "docs-social-zh-tw",
-  "cloudfront_id": "E2LK8R67S6J9ZP"
-  },
-  {
-  "lang": "en",
-  "s3_name": "docs-social",
-  "cloudfront_id": "E32LKDL3S2ZOCF"
-  },
-  {
-  "lang": "en",
-  "s3_name": "docs-social",
-  "cloudfront_id": "E32LKDL3S2ZOCF"
-  }
-  ],
-  "ssai": [
-  {
-  "lang": "de",
-  "s3_name": "docs-ssai-de",
-  "cloudfront_id": "E3OP0Q57YVELFD"
-  },
-  {
-  "lang": "es",
-  "s3_name": "docs-ssai-es",
-  "cloudfront_id": "E38NN2K49N8YTP"
-  },
-  {
-  "lang": "fr",
-  "s3_name": "docs-ssai-fr",
-  "cloudfront_id": "EN0RIOB96SAEQ"
-  },
-  {
-  "lang": "ja",
-  "s3_name": "docs-ssai-ja",
-  "cloudfront_id": "E3ITMPFEGO99SO"
-  },
-  {
-  "lang": "ko",
-  "s3_name": "docs-ssai-ko",
-  "cloudfront_id": "E2QMY6Y0POBZU6"
-  },
-  {
-  "lang": "zh-tw",
-  "s3_name": "docs-ssai-zh-tw",
-  "cloudfront_id": "EOYH2017CRDGY"
-  },
-  {
-  "lang": "en",
-  "s3_name": "docs-ssai",
-  "cloudfront_id": "E3CB9LV6TBPNO"
-  },
-  {
-  "lang": "en",
-  "s3_name": "docs-ssai",
-  "cloudfront_id": "E3CB9LV6TBPNO"
-  }
-  ],
-  "studio": [
-  {
-  "lang": "de",
-  "s3_name": "docs-studio-de",
-  "cloudfront_id": "EVXYKAUY99I20"
-  },
-  {
-  "lang": "es",
-  "s3_name": "docs-studio-es",
-  "cloudfront_id": "ECXX8SKAXUC9B"
-  },
-  {
-  "lang": "fr",
-  "s3_name": "docs-studio-fr",
-  "cloudfront_id": "EQGA7FEMM1H7W"
-  },
-  {
-  "lang": "ja",
-  "s3_name": "docs-studio-ja",
-  "cloudfront_id": "E3S6JS75Q54ST8"
-  },
-  {
-  "lang": "ko",
-  "s3_name": "docs-studio-ko",
-  "cloudfront_id": "E13CE2ZQ2CGY0Y"
-  },
-  {
-  "lang": "zh-tw",
-  "s3_name": "docs-studio-zh-tw",
-  "cloudfront_id": "E20DN31T0CQH4"
-  },
-  {
-  "lang": "en",
-  "s3_name": "docs-studio",
-  "cloudfront_id": "E28POOM3C6QETK"
-  },
-  {
-  "lang": "en",
-  "s3_name": "docs-studio",
-  "cloudfront_id": "E28POOM3C6QETK"
-  }
-  ],
-  "zencoder": [
-  {
-  "lang": "de",
-  "s3_name": "zencoder-documentation-de",
-  "cloudfront_id": "E3PNHVXP1FXV9A"
-  },
-  {
-  "lang": "es",
-  "s3_name": "zencoder-documentation-es",
-  "cloudfront_id": "EN8YOJVX16VD9"
-  },
-  {
-  "lang": "fr",
-  "s3_name": "zencoder-documentation-fr",
-  "cloudfront_id": "E29JR77C2YKK63"
-  },
-  {
-  "lang": "ja",
-  "s3_name": "zencoder-documentation-ja",
-  "cloudfront_id": "E1J869HLLBBCPW"
-  },
-  {
-  "lang": "ko",
-  "s3_name": "zencoder-documentation-ko",
-  "cloudfront_id": "E2CGJYBS9ZC30B"
-  },
-  {
-  "lang": "zh-tw",
-  "s3_name": "zencoder-documentation-zh-tw",
-  "cloudfront_id": "E2I6M3R5JXAPRH"
-  },
-  {
-  "lang": "en",
-  "s3_name": "zencoder-documenation",
-  "cloudfront_id": "E39I2V5Z4AK90T"
-  },
-  {
-  "lang": "en",
-  "s3_name": "zencoder-documenation",
-  "cloudfront_id": "E39I2V5Z4AK90T"
-  }
-  ],
-  "developerdocs": [
-  {
-  "lang": "en",
-  "s3_name": "bcls-developer-docs",
-  "cloudfront_id": "E1482N52WYZ9ZI"
-  },
-  {
-  "lang": "en",
-  "s3_name": "bcls-developer-docs",
-  "cloudfront_id": "E1482N52WYZ9ZI"
-  }
-  ],
-  "beacon-support": [
-  {
-  "lang": "de",
-  "s3_name": "beacon-documentation-brightcove-de",
-  "cloudfront_id": "E14V6AHNPHQPWX"
-  },
-  {
-  "lang": "en",
-  "s3_name": "beacon-documentation-brightcove",
-  "cloudfront_id": "E2X1BC6P5I3AU4"
-  }
-  ],
-  "mstudio": [
-  {
-  "lang": "en",
-  "s3_name": "docs-mstudio",
-  "cloudfront_id": "EPI6LI8AA4R0V"
-  },
-  {
-  "lang": "en",
-  "s3_name": "docs-mstudio",
-  "cloudfront_id": "EPI6LI8AA4R0V"
-  }
-  ],
-  "interactivity": [
-  {
-  "lang": "en",
-  "s3_name": "docs-interactions-en",
-  "cloudfront_id": "E2NZU9VAEYBDYU"
-  },
-  {
-  "lang": "en",
-  "s3_name": "docs-interactions-en",
-  "cloudfront_id": "E2NZU9VAEYBDYU"
-  }
-  ],
-  "corptv": [
-  {
-  "lang": "en",
-  "s3_name": "corptv",
-  "cloudfront_id": "EOYDNZVKNUZ1E"
-  },
-  {
-  "lang": "en",
-  "s3_name": "corptv",
-  "cloudfront_id": "EOYDNZVKNUZ1E"
-  }
-  ],
-  "audience-insights": [
-  {
-  "lang": "en",
-  "s3_name": "docs-audience-insights",
-  "cloudfront_id": "E334G9RPSPWKF3"
-  },
-  {
-  "lang": "en",
-  "s3_name": "docs-audience-insights",
-  "cloudfront_id": "E334G9RPSPWKF3"
-  }
-  ]
-  }
-  }
+}
