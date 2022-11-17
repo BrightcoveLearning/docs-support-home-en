@@ -74,7 +74,7 @@
         "cloudfront_id": "ESA7T03NMYCSQ"
       }
     ],
-    "beacon_classic": [
+    "beacon-support": [
       {
         "lang": "de",
         "s3_name": "beacon-documentation-brightcove-de",
@@ -104,14 +104,16 @@
         "lang": "zh-tw",
         "s3_name": "beacon-documentation-brightcove-zh-tw",
         "cloudfront_id": "E28F2E7RTB6ZJD"
-      },
+      }
+    ],
+    "beacon-private": [
       {
-        "lang": "private-en",
+        "lang": "en",
         "s3_name": "docs-staging-site",
         "cloudfront_id": "E2WK47LG1SW1KP"
       }
     ],
-    "beacon_studio": [
+    "beacon": [
       {
         "lang": "en",
         "s3_name": "beacon-help",
