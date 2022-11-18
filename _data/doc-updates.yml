@@ -9,7 +9,7 @@
           Product_area: Studio
           Product_Update: 'true'
           Feature: 'Cloud Playout - multiple programs for non-looping channels'
-          Status: Staging
+          Status: Released
     - type: Major updates
       docs:
         - Title: 'Sample Templates for Universal Syndication'
