@@ -1,3 +1,129 @@
+- date: 18-November-2022
+  types:
+    - type: New Docs
+      docs: 
+        - Title: 'Managing Multiple Programs'
+          Description: 'For non-looping Cloud Playout channels, you add new programs to the channel as needed, or re-link a program to update its contents.'
+          Link: https://beacon-help.support.brightcove.com/channels/cloud-playout/managing-programs.html
+          Product: Beacon
+          Product_area: Studio
+          Product_Update: 'true'
+          Feature: 'Cloud Playout - multiple programs for non-looping channels'
+          Status: Staging
+    - type: Major updates
+      docs:
+        - Title: 'Sample Templates for Universal Syndication'
+          Description: 'Added information on how to reference custom field values'
+          Link: https://apis.support.brightcove.com/aspera/manifest-metadata-reference.html
+          Product: Video Cloud
+          Product_area: Platform APIs
+          Product_Update: 'false'
+          Feature: 'Social Syndication API'
+          Status: Released
+        - Title: 'Customer Success Manager name updated'
+          Description: 'Mass replace Account Manager to Customer Success Manager'
+          Link: https://studio.support.brightcove.com/index.html
+          Product: Beacon
+          Product_area: Managing Players
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Step-by-Step: Simple Video App using Swift'
+          Description: 'Updated images and steps for latest version of Xcode'
+          Link: https://sdks.support.brightcove.com/ios/basics/step-step-simple-video-app-using-swift.html 
+          Product: Device SDKs
+          Product_area: Native SDK for iOS
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for Android'
+          Description: 'Updated for Android SDK release 7.1.4'
+          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html 
+          Product: Device SDKs
+          Product_area: Native SDK for Android
+          Product_Update: 'true'
+          Feature: 'Android SDK release 7.1.4'
+          Status: Released
+        - Title: 'Brightcove Native SDK for Android Release Notes'
+          Description: 'Updated for Android SDK release 7.1.4'
+          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html 
+          Product: Device SDKs
+          Product_area: Native SDK for Android
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Native SDK for Android: Previous SDK information'
+          Description: 'Updated for Android SDK release 7.1.4'
+          Link: https://sdks.support.brightcove.com/android/resources/brightcove-player-sdk-android-previous-sdk-information.html 
+          Product: Device SDKs
+          Product_area: Native SDK for Android
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Editing Video Properties using the Media Module'
+          Description: 'The ingestion profile is now displayed in the Video Files panel in the Media Module'
+          Link: https://studio.support.brightcove.com/media/editing-video-properties-using-media-module.html#videofiles
+          Product: Video Cloud
+          Product_area: Media
+          Product_Update: 'true'
+          Feature: 'The Ingestion profile is now displayed in the Video Files panel in the Media module'
+          Status: Released
+        - Title: 'Getting Started with Interactivity'
+          Description: 'Added process to get login credentials'
+          Link: https://interactivity.support.brightcove.com/platform/getting-started/getting-started-interactivity.html
+          Product: Interactivity
+          Product_area: 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Implementing Multiple Audio Tracks'
+          Description: 'Removed note about multiple audio tracks being lost during retranscoding, as this is no longer true'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/implementing-multiple-audio-tracks-using-apis.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest
+          Product_Update: 'false'
+          Feature: 'Multiple audio tracks'
+          Status: Released
+        - Title: 'Google Tag Manager Plugin for Brightcove Player'
+          Description: 'Note added to review events to track section'
+          Link: https://player.support.brightcove.com/plugins/google-tag-manager-plugin-brightcove-player.html
+          Product: Brightcove Player
+          Product_area: Plugins
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Players note deleted'
+          Description: 'Version 5 Players note deleted'
+          Link: https://studio.support.brightcove.com/players/index.html
+          Product: Video Cloud 
+          Product_area: Managing Players
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Players note deleted'
+          Description: 'Version 5 Players note deleted'
+          Link: https://beacon-help.support.brightcove.com/players/index.html
+          Product: Beacon
+          Product_area: Managing Players
+          Product_Update: 'false'
+        - Title: 'Buttons Text and Style Updated'
+          Description: 'All Button Text and Style Updated for the new UI'
+          Link: https://beacon-help.support.brightcove.com/admin/index.html
+          Product: Beacon 
+          Product_area: Administering Accounts
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Buttons Text and Style Updated'
+          Description: 'All Button Text and Style Updated for the new UI'
+          Link: https://studio.support.brightcove.com/admin/index.html
+          Product: Video Cloud
+          Product_area: Administering Accounts
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
 - date: 11-November-2022
   types:
     - type: New Docs
