@@ -1,144 +1,95 @@
-- date: 11-November-2022
+- date: 18-November-2022
   types:
     - type: New Docs
-      docs:
-        - Title: 'Managing Programs'
+      docs: 
+        - Title: 'Managing Multiple Programs'
           Description: 'For non-looping Cloud Playout channels, you add new programs to the channel as needed, or re-link a program to update its contents.'
-          Link: https://studio.support.brightcove.com/cloud-playout/managing-programs.html
-          Product: Video Cloud
+          Link: https://beacon-help.support.brightcove.com/channels/cloud-playout/managing-programs.html
+          Product: Beacon
           Product_area: Studio
           Product_Update: 'true'
           Feature: 'Cloud Playout - multiple programs for non-looping channels'
-          Status: Released 
+          Status: Staging
     - type: Major updates
       docs:
+        - Title: 'Sample Templates for Universal Syndication'
+          Description: 'Added information on how to reference custom field values'
+          Link: https://apis.support.brightcove.com/aspera/manifest-metadata-reference.html
+          Product: Video Cloud
+          Product_area: Platform APIs
+          Product_Update: 'false'
+          Feature: 'Social Syndication API'
+          Status: Released
+        - Title: 'Customer Success Manager name updated'
+          Description: 'Mass replace Account Manager to Customer Success Manager'
+          Link: https://studio.support.brightcove.com/index.html
+          Product: Beacon
+          Product_area: Managing Players
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Editing Video Properties using the Media Module'
+          Description: 'The ingestion profile is now displayed in the Video Files panel in the Media Module'
+          Link: https://studio.support.brightcove.com/media/editing-video-properties-using-media-module.html#videofiles
+          Product: Video Cloud
+          Product_area: Media
+          Product_Update: 'true'
+          Feature: 'The Ingestion profile is now displayed in the Video Files panel in the Media module'
+          Status: Released
+        - Title: 'Getting Started with Interactivity'
+          Description: 'Added process to get login credentials'
+          Link: https://interactivity.support.brightcove.com/platform/getting-started/getting-started-interactivity.html
+          Product: Interactivity
+          Product_area: 
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Implementing Multiple Audio Tracks'
+          Description: 'Removed note about multiple audio tracks being lost during retranscoding, as this is no longer true'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/implementing-multiple-audio-tracks-using-apis.html
+          Product: Video Cloud
+          Product_area: Dynamic Ingest
+          Product_Update: 'false'
+          Feature: 'Multiple audio tracks'
+          Status: Released
         - Title: 'Google Tag Manager Plugin for Brightcove Player'
-          Description: 'Google Tag Manager Configuration Steps Updated'
+          Description: 'Note added to review events to track section'
           Link: https://player.support.brightcove.com/plugins/google-tag-manager-plugin-brightcove-player.html
           Product: Brightcove Player
           Product_area: Plugins
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Overview: Brightcove Native SDK for iOS'
-          Description: 'Native SDK for iOS release 6.11.1'
-          Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html 
-          Product: Device SDKs
-          Product_area: Native SDK for iOS
-          Product_Update: 'true'
-          Feature: 'iOS SDK release 6.11.1'
-          Status: Released
-        - Title: 'Brightcove Native SDK for iOS: Previous SDK information'
-          Description: 'Native SDK for iOS release 6.11.1'
-          Link: https://sdks.support.brightcove.com/ios/resources/brightcove-player-sdk-ios-previous-sdk-information.html 
-          Product: Device SDKs
-          Product_area: Native SDK for iOS
+        - Title: 'Players note deleted'
+          Description: 'Version 5 Players note deleted'
+          Link: https://studio.support.brightcove.com/players/index.html
+          Product: Video Cloud 
+          Product_area: Managing Players
           Product_Update: 'false'
           Feature: ''
-          Status: Released
-        - Title: 'Overview: Brightcove Native SDK for tvOS'
-          Description: 'Native SDK for iOS release 6.11.1'
-          Link: https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html 
-          Product: Device SDKs
-          Product_area: Native SDK for tvOS
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Native SDK for tvOS: Previous SDK information'
-          Description: 'Native SDK for iOS release 6.11.1'
-          Link: https://sdks.support.brightcove.com/tvos/resources/brightcove-player-sdk-tvos-previous-sdk-information.html 
-          Product: Device SDKs
-          Product_area: Native SDK for tvOS
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-    - type: Minor updates
-      docs:
-        - Title: 'Managing Videos'
-          Description: 'Document option to delete videos'
-          Link: https://mstudio.support.brightcove.com/media/managing-videos.html
-          Product: Marketing Studio
-          Product_area: 
-          Product_Update: 'true'
-          Feature: 'Marketing Studio now provides the option to delete videos'
-          Status: Released
-        - Title: 'Overview: Brightcove Native SDK for iOS'
-          Description: 'Updated note for minimum deployment target for iOS and tvOS to 11.4'
-          Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html 
-          Product: Device SDKs
-          Product_area: Native SDK for iOS
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: Brightcove Native SDK for tvOS'
-          Description: 'Updated note for minimum deployment target for iOS and tvOS to 11.4'
-          Link: https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html 
-          Product: Device SDKs
-          Product_area: Native SDK for tvOS
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Controlling Viewer Access with Roles'
-          Description: 'Changed feature name from Roles As Rights to Secure Experiences'
-          Link: https://beacon.support.brightcove.com/using-brightcove-beacon/roles-as-rights.html  
+          Status: Released 
+        - Title: 'Players note deleted'
+          Description: 'Version 5 Players note deleted'
+          Link: https://beacon-help.support.brightcove.com/players/index.html
           Product: Beacon
-          Product_area: Viewer access
+          Product_area: Managing Players
+          Product_Update: 'false'
+        - Title: 'Buttons Text and Style Updated'
+          Description: 'All Button Text and Style Updated for the new UI'
+          Link: https://beacon-help.support.brightcove.com/admin/index.html
+          Product: Beacon 
+          Product_area: Administering Accounts
           Product_Update: 'false'
           Feature: ''
-          Status: Released
-        - Title: 'Controlling Viewer Access with Roles in Studio'
-          Description: 'Changed feature name from Roles As Rights to Secure Experiences'
-          Link: https://beacon-help.support.brightcove.com/registered-users/roles-as-rights-studio.html  
-          Product: Beacon
-          Product_area: Viewer access
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Content Security (DRM) with the Native SDKs'
-          Description: 'Added note that FairPlay content cannot be tested in a simulator'
-          Link: https://sdks.support.brightcove.com/features/content-security-drm-native-player-sdks.html  
-          Product: Device SDKs
-          Product_area: Native SDK for iOS
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Implementing AuthVOD'
-          Description: 'Image updated based on UI changes'
-          Link: https://beacon.support.brightcove.com/monetization/general/implementing-authvod.html
-          Product: Beacon
-          Product_area: Monetization
-          Product_Update: 'true'
-          Feature: 'Beacon Classic UI update'
-          Status: Released
-        - Title: 'Trending Now Report Reference'
-          Description: 'Note information and UI images updated'
-          Link: https://studio.support.brightcove.com/analytics/trending-now-report-reference.html
+          Status: Released 
+        - Title: 'Buttons Text and Style Updated'
+          Description: 'All Button Text and Style Updated for the new UI'
+          Link: https://studio.support.brightcove.com/admin/index.html
           Product: Video Cloud
-          Product_area: Analytics
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Configuring Server-Side Ad Settings'
-          Description: 'Images and buttons updated'
-          Link: https://studio.support.brightcove.com/admin/configuring-server-side-ad-settings.html
-          Product: Video Cloud 
           Product_area: Administering Accounts
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Configuring Language Settings'
-          Description: 'Images and buttons updated'
-          Link: https://studio.support.brightcove.com/admin/configuring-language-settings.html
-          Product: Video Cloud 
-          Product_area: Administering Accounts
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating Custom Metadata Fields'
-          Description: 'Images and buttons updated'
-          Link: https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html
-          Product: Video Cloud 
-          Product_area: Administering Accounts
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
+       
