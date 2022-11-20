@@ -7,7 +7,7 @@ parent: home
 <article class="bcls-article">
   <summary>{{ page.description }}</summary>
   <p><a href="/doc-updates-index.html">Index of all documentation updates</a></p>
-  {% for item in site.data.doc-updates-q2-2022 %}
+  {% for item in site.data.s-site-assets-data.doc-updates-q2-2022 %}
   <section class="bcls-section">
     <h2 id="{{ item.date | replace: " -", "_" }}">{{ item.date }}</h2>
     {% for type in item.types %}
