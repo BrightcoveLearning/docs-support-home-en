@@ -1,5 +1,5 @@
 * {
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'articulat-cf', sans-serif;
 }
 
 channel {
@@ -8,7 +8,7 @@ channel {
 
 channel title {
     font-size: 3.157rem;
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'articulat-cf', sans-serif;
     font-weight: 800;
     letter-spacing: -1px;
 }

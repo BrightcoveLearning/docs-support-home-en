@@ -5,7 +5,7 @@ layout: null
 @import url(https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,700;1,800&display=swap);
 
 body, .body {
-	font-family: 'Public Sans', sans-serif;
+	font-family: 'articulat-cf', sans-serif;
 	font-size: 14px;
 	counter-reset: figure 0 table 0 step 0;
 	background-color: white;
@@ -354,7 +354,7 @@ details[open] {
 
 /* in-app help text buttons */
 .button-blue, .button-blue-text, .button-blue-text-bordered, .button-red, .button-red-text, .button-gray {
-	/* font-family: 'Public Sans'; */
+	/* font-family: 'articulat-cf'; */
 	font-weight: bold;
 	font-size: .9rem;
 	padding: .4rem;
