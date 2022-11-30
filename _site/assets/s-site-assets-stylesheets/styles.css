@@ -497,7 +497,7 @@
         }
         
         .bcls-aside--information {
-            background-color: #4EA9D1;
+            background-color: #C3DCE7;
             border: none;
             border-left: 4px solid #4EA9D1;
         }
@@ -509,7 +509,7 @@
         }
         
         .bcls-aside--tip {
-            background-color: #AA6C7E;
+            background-color: #DBC3CA;
             border-left: 4px solid #AA6C7E;
         }
         
@@ -522,7 +522,7 @@
         }
         
         .bcls-aside--warning {
-            background-color: #EFD900;
+            background-color: #F0EBB6;
             border-left: 4px solid #EFD900;
         }
         
