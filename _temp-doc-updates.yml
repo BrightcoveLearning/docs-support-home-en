@@ -116,8 +116,6 @@
           Product_Update: 'true'
           Feature: 'Brightcove Video Connect for the WordPress CMS'
           Status: Released
-
-
     - type: Minor updates
       docs:
         - Title: 'Code Snippets using the Native SDK for iOS'
