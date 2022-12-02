@@ -8,7 +8,7 @@ layout: staging
 <article class="bcls-article">
   <summary>{{ page.description }}</summary>
 
-   {% for item in site.data.s-site-assets-data.doc-updates %}
+  {% for item in site.data.s-site-assets-data.doc-updates %}
   <section class="bcls-section">
     <h2 id="{{ item.date | replace: " -", "_" }}">{{ item.date }}</h2>
     <hr>
@@ -18,10 +18,10 @@ layout: staging
     {% for doc in type.docs %}
     <strong>Title:</strong> {{ doc.Title }}<br>
     <strong>Description:</strong> {{ doc.Description }}
-      {% if doc.Product_Update == 'true' %}
-        - <span style="color:#d33e00;font-weight: bold;">New Product Feature!</span>
-      {% endif %}
-      <br>
+    {% if doc.Product_Update == 'true' %}
+    - <span style="color:#d33e00;font-weight: bold;">New Product Feature!</span>
+    {% endif %}
+    <br>
     <strong>Link:</strong> <a href="{{ doc.Link }}">{{ doc.Link }}</a><br>
     <strong>Product:</strong> {{ doc.Product }}<br>
     <strong>Product Area:</strong> {{ doc.Product_area }}<br>
@@ -34,6 +34,6 @@ layout: staging
     {% endif %}
     {% endfor %}
   </section>
-  {% endfor %} 
+  {% endfor %}
 
 </article> -->
