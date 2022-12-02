@@ -1,57 +1,216 @@
-- date: 25-November-2022
+- date: 2-December-2022
   types:
     - type: New Docs
       docs: 
-        - Title: 'Chromecast with the Native SDKs'
-          Description: 'In this topic, you will learn how to cast videos to a Chromecast-connected TV from your apps built with the Brightcove Native SDKs.'
-          Link: https://sdks.support.brightcove.com/features/chromecast-with-sdks.html
+        - Title: 'Brightcove Player 7 Migration Guide'
+          Description: 'In this topic, you will learn about the new improvements and features with the major version release for Brightcove Player 7.'
+          Link: https://player.support.brightcove.com/references/bcp7-migration-guide.html
+          Product: Brightcove Player
+          Product_area: Brightcove Player 7
+          Product_Update: 'true'
+          Feature: 'Brightcove Player 7'
+          Status: Released
+        - Title: 'Bumper Videos with the Native SDKs'
+          Description: 'In this topic, you will learn how to add a bumper video to play before your content when using the Brightcove Native SDKs.'
+          Link: https://sdks.support.brightcove.com/features/bumper-video-with-sdks.html
           Product: Device SDKs
-          Product_area: Chromecast
-          Product_Update: 'false'
-          Feature: ''
+          Product_area: Native SDK for iOS
+          Product_Update: 'true'
+          Feature: 'Bumper Videos'
+          Status: Released
+        - Title: 'Brightcove Player 7 Now Default Version'
+          Description: 'New document related to the new default version of BC Player'
+          Link: https://player.support.brightcove.com/general/brightcove-player-7-default-version.html
+          Product: Brightcove Player
+          Product_area: General
+          Product_Update: 'true'
+          Feature: 'Brightcove Player version 7 release'
+          Status: Released
+        - Title: 'Viewability'
+          Description: 'In this topic you will learn about the Brightcove Player viewability feature.'
+          Link: https://player.support.brightcove.com/general/brightcove-player-viewability.html
+          Product: Brightcove Player
+          Product_area: General
+          Product_Update: 'true'
+          Feature: 'Brightcove Player 7 new feature'
           Status: Released
     - type: Major updates
       docs:
-        - Title: 'Creating a Cloud Playout Channel'
-          Description: 'Added additional considerations for choosing the destination region'
-          Link: https://studio.support.brightcove.com/cloud-playout/cloud-playout-stream-vod.html
-          Product: Video Cloud
-          Product_area: Studio - Cloud Playout Module
-          Product_Update: 'false'
-          Feature: 'Cloud Playout'
+        - Title: 'Overview: Brightcove Native SDK for iOS'
+          Description: 'Updated for iOS SDK release 6.11.2'
+          Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html
+          Product: Device SDKs
+          Product_area: Native SDK for iOS
+          Product_Update: 'true'
+          Feature: 'iOS SDK release 6.11.2'
           Status: Released
-        - Title: 'Creating a Cloud Playout Channel'
-          Description: 'Added additional considerations for choosing the destination region'
-          Link: https://beacon-help.support.brightcove.com/channels/cloud-playout/cloud-playout-stream-vod.html
-          Product: Beacon
-          Product_area: Studio - Cloud Playout Module
-          Product_Update: 'false'
-          Feature: 'Cloud Playout'
-          Status: Released
-        - Title: 'Manifest/Metadata Reference'
-          Description: 'Added item and brightcove tags to the tag descriptions'
-          Link: https://apis.support.brightcove.com/aspera/manifest-metadata-reference.html
-          Product: Video Cloud
-          Product_area: Aspera/MRSS ingestion
-          Product_Update: 'false'
-          Feature: 'XML Manifest'
-          Status: Released
-        - Title: 'Chromecast Plugin for Brightcove Player'
-          Description: 'Updated customization options'
-          Link: https://player.support.brightcove.com/plugins/chromecast-plugin-brightcove-player.html 
-          Product: Brightcove Player
-          Product_area: Chromecast
+        - Title: 'Brightcove Native SDK for iOS: Previous SDK information'
+          Description: 'Updated for iOS SDK release 6.11.2'
+          Link: https://sdks.support.brightcove.com/ios/resources/brightcove-player-sdk-ios-previous-sdk-information.html
+          Product: Device SDKs
+          Product_area: Native SDK for iOS
           Product_Update: 'false'
           Feature: ''
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for tvOS'
+          Description: 'Updated for iOS SDK release 6.11.2'
+          Link: https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html
+          Product: Device SDKs
+          Product_area: Native SDK for iOS
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Native SDK for tvOS: Previous SDK information'
+          Description: 'Updated for iOS SDK release 6.11.2'
+          Link: https://sdks.support.brightcove.com/tvos/resources/brightcove-player-sdk-tvos-previous-sdk-information.html
+          Product: Device SDKs
+          Product_area: Native SDK for iOS
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Domains and Ports that Must Be Accessible to Video Cloud'
+          Description: 'Added a note explaining that managed player releases may break content security policies and options if that is a problem for your network.'
+          Link: https://studio.support.brightcove.com/general/architecture/domains-and-ports-must-be-accessible-video-cloud.html
+          Product: Video Cloud
+          Product_area: Architecture
+          Product_Update: 'false'
+          Feature: 'Managed player releases and content security policies'
+          Status: Released
+        - Title: 'Adobe Magento Commerce Extension Installation Guide'
+          Description: 'Updated the guide to clarify some points users found confusing.'
+          Link: https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/installation-guide.html
+          Product: Video Cloud
+          Product_area: eCommerce Integrations
+          Product_Update: 'false'
+          Feature: 'Adobe Magento Commerce Extension '
+          Status: Released
+        - Title: 'Brightcove Player System Requirements'
+          Description: 'Browsers table updated and new note added related to Internet Explorer 11'
+          Link: https://player.support.brightcove.com/references/brightcove-player-system-requirements.html
+          Product: Brightcove Player
+          Product_area: References
+          Product_Update: 'true'
+          Feature: 'Brightcove Player version 7 release'
+          Status: Released
+        - Title: 'Player Events'
+          Description: 'New analytics events section and note added'
+          Link: https://player.support.brightcove.com/coding-topics/player-events.html#analytics_events
+          Product: Brightcove Player
+          Product_area: Coding Topics
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Live DRM'
+          Description: 'Playback technologies table updated and note related to DASH + PlayReady added'
+          Link: https://live.support.brightcove.com/general/live-drm.html#Playback_technologies_used
+          Product: Live
+          Product_area: DRM
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Getting Started with Brightcove Video Connect for the WordPress CMS'
+          Description: 'New release. Releases page link updated to point to the correct location.'
+          Link: https://integrations.support.brightcove.com/wordpress/getting-started-brightcove-video-connect-wordpress-cms.html
+          Product: Video Cloud
+          Product_area: Wordpress integration
+          Product_Update: 'true'
+          Feature: 'Brightcove Video Connect for the WordPress CMS'
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Brightcove Player Release Notes'
-          Description: 'Brightcove Player release 6.66.7'
-          Link: https://player.support.brightcove.com/release-notes/brightcove-player-release-notes.html
-          Product: Brightcove Player
-          Product_area: Release Notes
+        - Title: 'Code Snippets using the Native SDK for iOS'
+          Description: 'Fixed link in Custom controls for AirPlay section'
+          Link: https://sdks.support.brightcove.com/ios/resources/code-snippets-using-native-sdk-ios.html#Custom_controls_for_AirPlay
+          Product: Device SDKs
+          Product_area: Connected TV
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        
+        - Title: 'Brightcove Player Release Notes'
+          Description: 'Added note with link to update to Brightcove Player 7'
+          Link: https://player.support.brightcove.com/release-notes/brightcove-player-release-notes.html
+          Product: Brightcove Player
+          Product_area: Brightcove Player 7
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating and Managing Live Events using the Live Module'
+          Description: 'Removed a note about low latency fallback, as it turns out that feature never got implemented'
+          Link: https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#low-latency
+          Product: Live
+          Product_area: Low Latency Streaming
+          Product_Update: 'false'
+          Feature: 'Low latency fallback (there is none)'
+          Status: Released
+        - Title: 'Configuring the Brightcove Player for DRM'
+          Description: 'Note added related to enabling DRM for Brightcove Player 6 and earlier'
+          Link: https://player.support.brightcove.com/plugins/configuring-brightcove-player-drm.html
+          Product: Brightcove Player
+          Product_area: Plugins
+          Product_Update: 'true'
+          Feature: 'Brightcove Player version 7 release'
+          Status: Released
+        - Title: 'Configuring Player Controls'
+          Description: 'Note related to playback rates added'
+          Link: https://studio.support.brightcove.com/players/configuring-player-controls.html#rates
+          Product: Video Cloud
+          Product_area: Managing Players
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Player Accessibility'
+          Description: 'Updates to reflect compliance with WCAG 2.1 AA.'
+          Link: https://player.support.brightcove.com/general/brightcove-player-accessibility.html
+          Product: Brightcove Player
+          Product_area: Accessibility
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Live API Reference'
+          Description: 'Corrected some errors in the scheduled clip request.'
+          Link: https://apis.support.brightcove.com/live-api/references/reference.html
+          Product: Live
+          Product_area: Clipping
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Domains and Ports that Must Be Accessible to Video Cloud'
+          Description: 'Removed a domain that Brightcove no longer uses.'
+          Link: https://studio.support.brightcove.com/general/domains-and-ports-must-be-accessible-video-cloud.html
+          Product: Video Cloud
+          Product_area: General Information
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating Ingest Profiles for Dynamic Delivery'
+          Description: 'Added steps for how to apply custom renditions to a ingest profile'
+          Link: https://studio.support.brightcove.com/admin/creating-ingest-profiles-dynamic-delivery.html#custom-renditions
+          Product: Video Cloud
+          Product_area: Admin
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Performance Report Reference'
+          Description: 'Update play request definition when using Brightcove Player 7'
+          Link: https://studio.support.brightcove.com/analytics/performance-report-reference.html
+          Product: Video Cloud
+          Product_area: Analytics
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Multi Language Audio with the Live Module'
+          Description: 'Added note that multi-audio clipping is not supported'
+          Link: https://live.support.brightcove.com/live-module/multi-language-audio.html#Limitations
+          Product: Live
+          Product_area: Live module
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Audio Only with Brightcove Player'
+          Description: 'Added note that Advanced Embed Code must be used in code implementation.'
+          Link: https://player.support.brightcove.com/playback/audio-only-player.html
+          Product: Brightcove Player
+          Product_area: Audio Only
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
