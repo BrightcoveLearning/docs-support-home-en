@@ -503,7 +503,7 @@
         }
         
         .bcls-aside--information:before {
-            content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/info-aqua.svg);
+            content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/info.svg);
             float: left;
             margin-left: -2.5em;
         }
