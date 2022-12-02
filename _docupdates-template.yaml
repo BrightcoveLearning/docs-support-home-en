@@ -1,32 +1,32 @@
-- date: 29-July-2022
+- date: 2-December-2022
   types:
     - type: New Docs
       docs:
         - Title: ''
           Description: ''
-          Link: 
-          Product: Video Cloud | Brightcove Player | Device SDKs | Live | Beacon | SSAI | Zencoder | CorpTV | Audience Insights
-          Product_area: 
+          Link:
+          Product: Video Cloud | Brightcove Player | Device SDKs | Live | Beacon | SSAI | Zencoder | Interactivity | Audience Insights
+          Product_area:
           Product_Update: 'true | false'
-          Feature: '(leave blank if Product_Update is false)'
+          Feature: ''
           Status: Released | Limited Availability | Staging | Internal
     - type: Major updates
       docs:
         - Title: ''
           Description: ''
-          Link: 
-          Product: Video Cloud | Brightcove Player | Device SDKs | Live | Beacon | SSAI | Zencoder | CorpTV | Audience Insights
-          Product_area: 
+          Link:
+          Product: Video Cloud | Brightcove Player | Device SDKs | Live | Beacon | SSAI | Zencoder | Interactivity | Audience Insights
+          Product_area:
           Product_Update: 'true | false'
-          Feature: '(leave blank if Product_Update is false)'
+          Feature: ''
           Status: Released | Limited Availability | Staging | Internal
     - type: Minor updates
       docs:
         - Title: ''
           Description: ''
-          Link: 
-          Product: Video Cloud | Brightcove Player | Device SDKs | Live | Beacon | SSAI | Zencoder | CorpTV | Audience Insights
-          Product_area: 
+          Link:
+          Product: Video Cloud | Brightcove Player | Device SDKs | Live | Beacon | SSAI | Zencoder | Interactivity | Audience Insights
+          Product_area:
           Product_Update: 'true | false'
-          Feature: '(leave blank if Product_Update is false)'
+          Feature: ''
           Status: Released | Limited Availability | Staging | Internal
