@@ -38,3 +38,7 @@
   path = _data/s-site-assets-data
   url = https://github.com/BrightcoveLearning/s-site-assets-data
   branch = main
+[submodule "_includes/s-template-page-includes"]
+  path = _includes/s-template-page-includes
+  url = https://github.com/BrightcoveLearning/s-template-page-includes
+  branch = main
