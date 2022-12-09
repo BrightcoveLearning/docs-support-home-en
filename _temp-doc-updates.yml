@@ -18,7 +18,6 @@
         Product_Update: 'true'
         Feature: 'Player E (based on Brightcove Player) usage in Beacon web apps'
         Status: Staging
-
     - type: Major updates
       docs:
         - Title: 'Managing Slates'
@@ -29,7 +28,6 @@
           Product_Update: 'false'
           Feature: 'Slates'
           Status: Released
-
     - type: Minor updates
       docs:
       - Title: 'Managing Text Tracks Using the CMS API'
