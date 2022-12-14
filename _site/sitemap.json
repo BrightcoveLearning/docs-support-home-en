@@ -95,27 +95,12 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/test-assets/captions/",
+      "newURL": "https://support.brightcove.com/training/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://support.brightcove.com/test-assets/images/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/test-assets/chapters/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/test-assets/videos/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/test-assets/audio/",
+      "newURL": "https://support.brightcove.com/",
       "oldURL": "/index"
   },
 
@@ -125,17 +110,32 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/training/",
+      "newURL": "https://support.brightcove.com/test-assets/audio/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/test-assets/videos/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/test-assets/chapters/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/test-assets/images/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/test-assets/captions/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://support.brightcove.com/support/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/",
       "oldURL": "/index"
   },
 
