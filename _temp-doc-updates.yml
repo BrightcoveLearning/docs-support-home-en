@@ -1,56 +1,60 @@
-- date: 9-December-2022
+- date: 16-December-2022
   types:
     - type: New Docs
       docs:
-      - Title: 'Choosing Your Player'
-        Description: 'Player selection section added'
-        Link: https://beacon-help.support.brightcove.com/layout/choosing-your-player.html
-        Product: Beacon
-        Product_area: Managing Pages
-        Product_Update: 'true'
-        Feature: 'Player E coming soon'
-        Status: Staging
-      - Title: 'Brightcove Player Plugin Compatibility'
-        Description: 'In this topic, you will learn which Brightcove Player plugins are compatible with the different player instances used in Beacon web apps.'
-        Link: https://beacon-help.support.brightcove.com/general/bcp-plugin-compatibility.html
-        Product: Beacon
-        Product_area: General
-        Product_Update: 'true'
-        Feature: 'Player E (based on Brightcove Player) usage in Beacon web apps'
-        Status: Staging
+        - Title: ''
+          Description: ''
+          Link:
+          Product: Video Cloud | Brightcove Player | Device SDKs | Live | Beacon | SSAI | Zencoder | Interactivity | Audience Insights
+          Product_area:
+          Product_Update: 'true | false'
+          Feature: ''
+          Status: Released | Limited Availability | Staging | Internal
+
+
     - type: Major updates
       docs:
-        - Title: 'Managing Slates'
-          Description: 'Added notes clarifying that Cloud Playout slates are used only for Hard Starts and to fill live event time when there is no live input stream, and are not used to fill unused ad slot time (that is a different slate configured via Live SSAI setting.)'
-          Link: https://studio.support.brightcove.com/cloud-playout/managing-slates.html
-          Product: Video Cloud
-          Product_area: Cloud Playout
+        - Title: ''
+          Description: ''
+          Link:
+          Product: Video Cloud | Brightcove Player | Device SDKs | Live | Beacon | SSAI | Zencoder | Interactivity | Audience Insights
+          Product_area:
+          Product_Update: 'true | false'
+          Feature: ''
+          Status: Released | Limited Availability | Staging | Internal
+        - Title: 'Implementing Cue Points Programmatically'
+          Description: 'Updated code in the HTML5 standard cue points section so code works with Safari and iOS'
+          Link: https://player.support.brightcove.com/general/implementing-cue-points-programmatically.html#HTML5_standard_cue_points
+          Product: Brightcove Player
+          Product_area: Cue Points
           Product_Update: 'false'
-          Feature: 'Slates'
+          Feature: ''
           Status: Released
+  
+  
     - type: Minor updates
       docs:
-      - Title: 'Managing Text Tracks Using the CMS API'
-        Description: 'Added notes clarifying that the default flag is treated the same for remote and ingested text tracks and that only one file can be set as default per language'
-        Link: https://apis.support.brightcove.com/cms/managing-videos/managing-text-tracks.html
-        Product: Video Cloud
-        Product_area: CMS API
-        Product_Update: 'false'
-        Feature: 'text tracks'
-        Status: Released
-      - Title: 'Kollective eCDN Deployment Guide'
-        Description: 'Added note on TTL expiration for videos and how it can be changed'
-        Link: https://integrations.support.brightcove.com/ecdn/kollective/kollective-deployment-guide.html
-        Product: Video Cloud
-        Product_area: Integrations
-        Product_Update: 'false'
-        Feature: 'Kollective'
-        Status: Released
-      - Title: 'Brightcove Live: Best Practices'
-        Description: 'Input restrictions updated'
-        Link: https://live.support.brightcove.com/get-started/live-module-guidelines-and-best-practices.html
-        Product: Live
-        Product_area: Getting Started
-        Product_Update: 'false'
-        Feature: ''
-        Status: Released
+        - Title: 'Google Tag Manager Plugin for Brightcove Player'
+          Description: 'Updated introduction and installation steps'
+          Link: https://player.support.brightcove.com/plugins/google-tag-manager-plugin-brightcove-player.html
+          Product: Brightcove Player
+          Product_area: Plugins
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Receiving In-App Purchase Notifications'
+          Description: 'In the JSON payload specifications table added note on how Apple views renewals differently than other platforms'
+          Link: https://beacon.support.brightcove.com/monetization/general/receive-iap-notifications.html#API_endpoint_specifications
+          Product: Beacon
+          Product_area: Notifications
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Using Multiple Languages'
+          Description: 'Updated languages in the Choose the languages for your apps section'
+          Link: https://beacon-help.support.brightcove.com/general/references/using-multiple-languages.html#Choose_the_languages_for_your_apps
+          Product: Beacon
+          Product_area: General Information
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
