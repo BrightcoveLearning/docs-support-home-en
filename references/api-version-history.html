@@ -1,0 +1,12 @@
+<script>
+  var BCLS = ( function (window, document) {
+    var newURL = 'https://support.brightcove.com',
+        message = 'This page has moved to the Integrations site. The new url is: ' + newURL + ' You will be redirected in 5 seconds. Please update your bookmarks.',
+        t;
+    function goToNewURL() {
+      window.location.href = newURL;
+    }
+    // document.write(message);
+    t = window.setTimeout(goToNewURL, 0);
+  })(window, document);
+</script>
