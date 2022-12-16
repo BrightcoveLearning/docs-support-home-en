@@ -2,26 +2,56 @@
   types:
     - type: New Docs
       docs:
-        - Title: ''
-          Description: ''
-          Link:
-          Product: Video Cloud | Brightcove Player | Device SDKs | Live | Beacon | SSAI | Zencoder | Interactivity | Audience Insights
-          Product_area:
-          Product_Update: 'true | false'
+        - Title: 'Native SDK for Android v8.0.0 Migration Guide'
+          Description: 'In this topic, you will learn about the new functionality provided by the Brightcove Native SDK for Android version 8.0.0.'
+          Link: https://sdks.support.brightcove.com/android/framework/android-sdk-8-migration-guide.html
+          Product: Device SDK
+          Product_area: Native SDK for Android
+          Product_Update: 'false'
           Feature: ''
-          Status: Released | Limited Availability | Staging | Internal
-
-
+          Status: Staging
     - type: Major updates
       docs:
-        - Title: ''
-          Description: ''
-          Link:
-          Product: Video Cloud | Brightcove Player | Device SDKs | Live | Beacon | SSAI | Zencoder | Interactivity | Audience Insights
-          Product_area:
-          Product_Update: 'true | false'
+        - Title: 'Brightcove Player 7 Migration Guide'
+          Description: 'Changed upgrade steps from using JSON editor to using upgrade button in Studio'
+          Link: https://player.support.brightcove.com/references/bcp7-migration-guide.html
+          Product: Brightcove Player
+          Product_area: Brightcove Player 7
+          Product_Update: 'false'
           Feature: ''
-          Status: Released | Limited Availability | Staging | Internal
+          Status: Released
+        - Title: 'Step-by-Step: Simple TV Video App using Swift'
+          Description: 'Updated images and tested code for latest version of Xcode'
+          Link: https://sdks.support.brightcove.com/tvos/basics/step-step-simple-tv-video-app-using-swift.html
+          Product: Device SDKs
+          Product_area: Native SDK for tvOS
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released        
+        - Title: 'Salesforce (eCommerce Connector)'
+          Description: 'Added note that this connector is now free for all Marketing Studio customers'
+          Link: https://integrations.support.brightcove.com/ecommerce/salesforce/index.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Adobe Magento (eCommerce Connector)'
+          Description: 'Added note that this connector is now free for all Marketing Studio customers'
+          Link: https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/index.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Viewing Channel Output and Analytics'
+          Description: 'Added better explanation of dropped frames and the live input status icon'
+          Link: https://studio.support.brightcove.com/cloud-playout/viewing-channel-output-and-analytics.html
+          Product: Video Cloud
+          Product_area: Cloud Playout
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
         - Title: 'Implementing Cue Points Programmatically'
           Description: 'Updated code in the HTML5 standard cue points section so code works with Safari and iOS'
           Link: https://player.support.brightcove.com/general/implementing-cue-points-programmatically.html#HTML5_standard_cue_points
@@ -30,10 +60,24 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
-  
-  
     - type: Minor updates
       docs:
+        - Title: 'Chromecast Plugin for Brightcove Player'
+          Description: 'Chromecast Device Support Update'
+          Link: https://player.support.brightcove.com/plugins/chromecast-plugin-brightcove-player.html#Supported_Chromecast_devices
+          Product: Brightcove Player
+          Product_area: Plugins
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Chromecast with the Native SDKs'
+          Description: 'Chromecast Device Support Update'
+          Link: https://sdks.support.brightcove.com/features/chromecast-with-sdks.html#Supported_Chromecast_devices
+          Product: Device SDKs
+          Product_area: Features
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released        
         - Title: 'Google Tag Manager Plugin for Brightcove Player'
           Description: 'Updated introduction and installation steps'
           Link: https://player.support.brightcove.com/plugins/google-tag-manager-plugin-brightcove-player.html
