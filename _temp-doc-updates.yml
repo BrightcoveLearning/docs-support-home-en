@@ -1,104 +1,48 @@
-- date: 16-December-2022
+- date: 22-December-2022
   types:
     - type: New Docs
       docs:
-        - Title: 'Native SDK for Android v8.0.0 Migration Guide'
-          Description: 'In this topic, you will learn about the new functionality provided by the Brightcove Native SDK for Android version 8.0.0.'
-          Link: https://sdks.support.brightcove.com/android/framework/android-sdk-8-migration-guide.html
-          Product: Device SDK
-          Product_area: Native SDK for Android
-          Product_Update: 'false'
-          Feature: ''
+        - Title: '3D Secure Authentication with Beacon Apps'
+          Description: 'In this topic, you will learn how to use Stripe 3D Secure authentication with Brightcove Beacon apps.'
+          Link: https://beacon.support.brightcove.com/monetization/general/3d-secure-auth.html
+          Product: Beacon
+          Product_area: Monetization
+          Product_Update: 'true'
+          Feature: '3D Secure Authentication'
           Status: Staging
     - type: Major updates
       docs:
-        - Title: 'Brightcove Player 7 Migration Guide'
-          Description: 'Changed upgrade steps from using JSON editor to using upgrade button in Studio'
-          Link: https://player.support.brightcove.com/references/bcp7-migration-guide.html
+        - Title: 'Display Overlay Plugin'
+          Description: 'Updated paths for new version (Player 7 compatible)'
+          Link: https://player.support.brightcove.com/plugins/display-overlay-plugin.html
           Product: Brightcove Player
-          Product_area: Brightcove Player 7
-          Product_Update: 'false'
-          Feature: ''
+          Product_area: Plugins
+          Product_Update: 'true'
+          Feature: 'Overlay Plugin - new version'
           Status: Released
-        - Title: 'Step-by-Step: Simple TV Video App using Swift'
-          Description: 'Updated images and tested code for latest version of Xcode'
-          Link: https://sdks.support.brightcove.com/tvos/basics/step-step-simple-tv-video-app-using-swift.html
-          Product: Device SDKs
-          Product_area: Native SDK for tvOS
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released        
-        - Title: 'Salesforce (eCommerce Connector)'
-          Description: 'Added note that this connector is now free for all Marketing Studio customers'
-          Link: https://integrations.support.brightcove.com/ecommerce/salesforce/index.html
+        - Title: 'CMS/Playback APIs Search v1'
+          Description: 'Clarified how to enter multiple search terms for fields'
+          Link: https://apis.support.brightcove.com/cms/searching/cmsplayback-api-videos-search.html#Quoted_search_terms
           Product: Video Cloud
-          Product_area: Integrations
+          Product_area: Platform APIs
           Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Adobe Magento (eCommerce Connector)'
-          Description: 'Added note that this connector is now free for all Marketing Studio customers'
-          Link: https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/index.html
-          Product: Video Cloud
-          Product_area: Integrations
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Viewing Channel Output and Analytics'
-          Description: 'Added better explanation of dropped frames and the live input status icon'
-          Link: https://studio.support.brightcove.com/cloud-playout/viewing-channel-output-and-analytics.html
-          Product: Video Cloud
-          Product_area: Cloud Playout
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Implementing Cue Points Programmatically'
-          Description: 'Updated code in the HTML5 standard cue points section so code works with Safari and iOS'
-          Link: https://player.support.brightcove.com/general/implementing-cue-points-programmatically.html#HTML5_standard_cue_points
-          Product: Brightcove Player
-          Product_area: Cue Points
-          Product_Update: 'false'
-          Feature: ''
+          Feature: 'CMS/Playback APIs Search v1'
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Chromecast Plugin for Brightcove Player'
-          Description: 'Chromecast Device Support Update'
-          Link: https://player.support.brightcove.com/plugins/chromecast-plugin-brightcove-player.html#Supported_Chromecast_devices
+        - Title: 'Configuring a Player Overlay Using the Overlay Plugin'
+          Description: 'Modified code sample and added note to show how to add alt text for an overlay image'
+          Link: https://studio.support.brightcove.com/players/configuring-player-overlay-using-overlay-plugin.html
           Product: Brightcove Player
-          Product_area: Plugins
+          Product_area: Overlay Plugin
           Product_Update: 'false'
-          Feature: ''
+          Feature: 'Overlay Plugin'
           Status: Released
-        - Title: 'Chromecast with the Native SDKs'
-          Description: 'Chromecast Device Support Update'
-          Link: https://sdks.support.brightcove.com/features/chromecast-with-sdks.html#Supported_Chromecast_devices
-          Product: Device SDKs
-          Product_area: Features
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released        
-        - Title: 'Google Tag Manager Plugin for Brightcove Player'
-          Description: 'Updated introduction and installation steps'
-          Link: https://player.support.brightcove.com/plugins/google-tag-manager-plugin-brightcove-player.html
+        - Title: 'Brightcove Player 7 Migration Guide'
+          Description: 'Created HTML table for plugin versions'
+          Link: https://player.support.brightcove.com/references/bcp7-migration-guide.html#Plugins
           Product: Brightcove Player
-          Product_area: Plugins
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Receiving In-App Purchase Notifications'
-          Description: 'In the JSON payload specifications table added note on how Apple views renewals differently than other platforms'
-          Link: https://beacon.support.brightcove.com/monetization/general/receive-iap-notifications.html#API_endpoint_specifications
-          Product: Beacon
-          Product_area: Notifications
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Using Multiple Languages'
-          Description: 'Updated languages in the Choose the languages for your apps section'
-          Link: https://beacon-help.support.brightcove.com/general/references/using-multiple-languages.html#Choose_the_languages_for_your_apps
-          Product: Beacon
-          Product_area: General Information
+          Product_area: Player 7
           Product_Update: 'false'
           Feature: ''
           Status: Released
