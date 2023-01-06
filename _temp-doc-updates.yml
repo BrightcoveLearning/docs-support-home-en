@@ -1,48 +1,96 @@
-- date: 22-December-2022
+- date: 6-January-2022
   types:
     - type: New Docs
       docs:
-        - Title: '3D Secure Authentication with Beacon Apps'
-          Description: 'In this topic, you will learn how to use Stripe 3D Secure authentication with Brightcove Beacon apps.'
-          Link: https://beacon.support.brightcove.com/monetization/general/3d-secure-auth.html
-          Product: Beacon
-          Product_area: Monetization
-          Product_Update: 'true'
-          Feature: '3D Secure Authentication'
-          Status: Staging
+        - Title: 'Brightcove Player Sample: Viewability'
+          Description: 'In this topic, you will learn how to implement viewability events.'
+          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-viewability.html
+          Product: Brightcove Player
+          Product_area: Code Samples
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Major updates
       docs:
-        - Title: 'Display Overlay Plugin'
-          Description: 'Updated paths for new version (Player 7 compatible)'
-          Link: https://player.support.brightcove.com/plugins/display-overlay-plugin.html
-          Product: Brightcove Player
-          Product_area: Plugins
-          Product_Update: 'true'
-          Feature: 'Overlay Plugin - new version'
-          Status: Released
-        - Title: 'CMS/Playback APIs Search v1'
-          Description: 'Clarified how to enter multiple search terms for fields'
-          Link: https://apis.support.brightcove.com/cms/searching/cmsplayback-api-videos-search.html#Quoted_search_terms
+        - Title: 'Creating Ingest Profiles for Context Aware Encoding'
+          Description: 'Added note that the dynamic_profile_options block must be less than 8000 characters'
+          Link: https://studio.support.brightcove.com/admin/creating-ingest-profiles-context-aware-encoding.html
           Product: Video Cloud
-          Product_area: Platform APIs
+          Product_area: Ingest Profiles
           Product_Update: 'false'
-          Feature: 'CMS/Playback APIs Search v1'
+          Feature: 'CAE profiles'
+          Status: Released
+        - Title: 'Getting Started with Brightcove Video Connect for the Sitecore Experience Platform'
+          Description: 'New release for Sitecore 10.2'
+          Link: https://integrations.support.brightcove.com/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: 'true'
+          Feature: 'Sitecore Connector'
+          Status: Released
+        - Title: 'Getting Started with Brightcove Video Connect for SharePoint'
+          Description: 'Note that the connector for SharePoint 2019 is no longer supported.'
+          Link: https://integrations.support.brightcove.com/sharepoint/getting-started-brightcove-video-connect-sharepoint.html
+          Product: Video Cloud
+          Product_area: Integrations
+          Product_Update: 'false'
+          Feature: 'SharePoint Connector'
+          Status: Released
+        - Title: 'Understanding Events with the Native SDK for iOS'
+          Description: 'Updated list of lifecycle events to match the content of the header file'
+          Link: https://sdks.support.brightcove.com/ios/basics/understanding-events-native-sdk-ios.html#Lifecycle_events
+          Product: Device SDKs
+          Product_area: Native SDK for iOS
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Chromecast with the Native SDKs'
+          Description: 'Added notes about using your own custom receiver app'
+          Link: https://sdks.support.brightcove.com/features/chromecast-with-sdks.html
+          Product: Device SDKs
+          Product_area: Chromecast
+          Product_Update: 'false'
+          Feature: ''
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Configuring a Player Overlay Using the Overlay Plugin'
-          Description: 'Modified code sample and added note to show how to add alt text for an overlay image'
-          Link: https://studio.support.brightcove.com/players/configuring-player-overlay-using-overlay-plugin.html
-          Product: Brightcove Player
-          Product_area: Overlay Plugin
+        - Title: 'Uploading Videos Using Remote URLs'
+          Description: 'Added note that OneDrive URLs are not supported (Video Cloud doc and Japanese versions also updated)'
+          Link: https://beacon.support.brightcove.com/media/uploading-videos-remote-urls.html
+          Product: Beacon
+          Product_area: Media
           Product_Update: 'false'
-          Feature: 'Overlay Plugin'
+          Feature: 'Remote media assets'
           Status: Released
-        - Title: 'Brightcove Player 7 Migration Guide'
-          Description: 'Created HTML table for plugin versions'
-          Link: https://player.support.brightcove.com/references/bcp7-migration-guide.html#Plugins
+        - Title: 'Performance Report Reference'
+          Description: 'Added note that Today is not supported as a date range for the Viewers dimension'
+          Link: https://studio.support.brightcove.com/analytics/performance-report-reference.html
+          Product: Video Cloud
+          Product_area: Analytics
+          Product_Update: 'false'
+          Feature: 'Performance Report'
+          Status: Released
+        - Title: 'Using Reference IDs'
+          Description: 'Added note on characters that are not allowed in reference ids'
+          Link: https://studio.support.brightcove.com/publish/using-reference-ids.html
+          Product: Video Cloud
+          Product_area: Publishing Videos
+          Product_Update: 'false'
+          Feature: 'Using Reference IDs'
+          Status: Released
+        - Title: 'Viewability'
+          Description: 'Player sample added'
+          Link: https://player.support.brightcove.com/general/brightcove-player-viewability.html
           Product: Brightcove Player
-          Product_area: Player 7
+          Product_area: General Information
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Chromecast Plugin for Brightcove Player'
+          Description: 'New limitation added'
+          Link: https://player.support.brightcove.com/plugins/chromecast-plugin-brightcove-player.html#Limitations_and_known_issues
+          Product: Brightcove Player
+          Product_area: Plugins
           Product_Update: 'false'
           Feature: ''
           Status: Released

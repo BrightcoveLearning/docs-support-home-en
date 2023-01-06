@@ -70,6 +70,11 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/doc-updates-q4-2022.html",
+      "oldURL": "/doc-updates-q4-2022"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/doc-updates.html",
       "oldURL": "/doc-updates"
   },
@@ -95,17 +100,17 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/test-assets/captions/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/test-assets/images/",
+      "newURL": "https://support.brightcove.com/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://support.brightcove.com/test-assets/chapters/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/test-assets/captions/",
       "oldURL": "/index"
   },
 
@@ -135,7 +140,7 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/",
+      "newURL": "https://support.brightcove.com/test-assets/images/",
       "oldURL": "/index"
   },
 
@@ -192,6 +197,11 @@
   {
       "newURL": "https://support.brightcove.com/product-updates-q4-2021.html",
       "oldURL": "/product-updates-q4-2021"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/product-updates-q4-2022.html",
+      "oldURL": "/product-updates-q4-2022"
   },
 
   {
