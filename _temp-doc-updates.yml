@@ -56,7 +56,7 @@
       docs:
         - Title: 'Uploading Videos Using Remote URLs'
           Description: 'Added note that OneDrive URLs are not supported (Video Cloud doc and Japanese versions also updated)'
-          Link: https://beacon.support.brightcove.com/media/uploading-videos-remote-urls.html
+          Link: https://beacon-help.support.brightcove.com/media/uploading-videos-remote-urls.html
           Product: Beacon
           Product_area: Media
           Product_Update: 'false'
