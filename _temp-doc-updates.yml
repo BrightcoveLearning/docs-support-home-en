@@ -1,96 +1,104 @@
-- date: 13-January-2022
+- date: 20-January-2023
   types:
     - type: New Docs
       docs:
-        - Title: '3D Secure Authentication with Beacon Apps'
-          Description: 'In this topic, you will learn how to use Stripe 3D Secure authentication with Brightcove Beacon apps.'
-          Link: https://beacon.support.brightcove.com/monetization/general/3d-secure-auth.html 
-          Product: Beacon
-          Product_area: Monetization
-          Product_Update: 'true'
-          Feature: '3D Secure Authentication'
+        - Title: 'Advertising Troubleshooting Checklist'
+          Description: 'In this topic, you will learn about common issues associated with advertising in Brightcove Player and how to resolve these issues.'
+          Link: https://player.support.brightcove.com/troubleshooting/advertising-troubleshooting-checklist.html
+          Product: Brightcove Player
+          Product_area: Troubleshooting
+          Product_Update: 'false'
+          Feature: ''
           Status: Released
-        - Title: 'The Native SDK for Android Release 8.0.0'
-          Description: 'In this topic, you will learn about the new functionality provided by the Brightcove Native SDK for Android version 8.0.0.'
-          Link: https://sdks.support.brightcove.com/android/framework/android-sdk-8-release.html 
-          Product: Device SDKs
-          Product_area: Native SDK for Android
+        - Title: 'Brightcove Player Plugin Compatibility with Player E'
+          Description: 'In this topic, you will learn which Brightcove Player plugins are compatible with the different player instances used in Beacon web apps.'
+          Link: https://beacon-help.support.brightcove.com/general/references/bcp-plugin-compatibility.html
+          Product: Beacon
+          Product_area: Player E Web Apps
           Product_Update: 'true'
-          Feature: 'Android SDK release 8.0.0'
+          Feature: 'Brightcove Player Plugins can be used in Beacon web apps'
+          Status: Released    
+        - Title: 'Player E Selection and Features'
+          Description: 'In this topic, you will learn how to choose the Player E for your Beacon apps, and features of that player.'
+          Link: https://beacon-help.support.brightcove.com/layout/e-selection-features.html
+          Product: Beacon
+          Product_area: VOD and Live video playback
+          Product_Update: 'true'
+          Feature: 'Player E adds new features to Beacon apps on all platforms'
           Status: Released
     - type: Major updates
       docs:
-        - Title: 'Overview: Brightcove Native SDK for Android'
-          Description: 'Native SDK for Android release version 8.0.0'
-          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html 
+        - Title: 'Overview: Brightcove Native SDK for iOS'
+          Description: 'Updated for iOS SDK release 6.12.0'
+          Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html
           Product: Device SDKs
-          Product_area: Native SDK for Android
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Native SDK for Android: Previous SDK information'
-          Description: 'Native SDK for Android release version 8.0.0'
-          Link: https://sdks.support.brightcove.com/android/resources/brightcove-player-sdk-android-previous-sdk-information.html 
-          Product: Device SDKs
-          Product_area: Native SDK for Android
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Native SDK for Android Release Notes'
-          Description: 'Native SDK for Android release version 8.0.0'
-          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html 
-          Product: Device SDKs
-          Product_area: Native SDK for Android
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Audio Only with the Native SDKs'
-          Description: 'Added audio-only support for Native SDK for Android v8.0.0'
-          Link: https://sdks.support.brightcove.com/features/audio-only-with-sdks.html 
-          Product: Device SDKs
-          Product_area: Native SDK for Android
+          Product_area: Native SDK for iOS
           Product_Update: 'true'
-          Feature: 'Audio-only support with Android SDK release 8.0.0'
+          Feature: 'iOS/tvOS SDK release 6.12.0'
           Status: Released
-        - Title: 'Brightcove Player Sample: Viewability'
-          Description: 'Code sample updated.'
-          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-viewability.html
-          Product: Brightcove Player
-          Product_area: Code Samples
+        - Title: 'Brightcove Native SDK for iOS: Previous SDK information'
+          Description: 'Updated for iOS SDK release 6.12.0'
+          Link: https://sdks.support.brightcove.com/ios/resources/brightcove-player-sdk-ios-previous-sdk-information.html
+          Product: Device SDKs
+          Product_area: Native SDK for iOS
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Video Cloud SSAI API'
-          Description: 'New considerations section added.'
-          Link: https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html#Considerations
-          Product: SSAI API
-          Product_area: SSAI API
+        - Title: 'Overview: Brightcove Native SDK for tvOS'
+          Description: 'Updated for iOS SDK release 6.12.0'
+          Link: https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html
+          Product: Device SDKs
+          Product_area: Native SDK for tvOS
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Publishing a Cloud Playout Channel'
-          Description: 'Cleared up what needed to be done in Beacon Studio vs. Beacon Classic'
-          Link: https://beacon-help.support.brightcove.com/channels/cloud-playout/publish-channel-beacon.html
-          Product: Beacon
-          Product_area: Cloud Playout
+        - Title: 'Brightcove Native SDK for tvOS: Previous SDK information'
+          Description: 'Updated for iOS SDK release 6.12.0'
+          Link: https://sdks.support.brightcove.com/tvos/resources/brightcove-player-sdk-tvos-previous-sdk-information.html
+          Product: Device SDKs
+          Product_area: Native SDK for tvOS
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Brightcove Playback Restrictions'
+          Description: 'Added Playback Rights proxy properties table'
+          Link: https://apis.support.brightcove.com/playback-restrictions/getting-started/overview-playback-restrictions.html#Asset_level_restrictions
+          Product: Video Cloud
+          Product_area: Playback Restrictions
           Product_Update: 'false'
           Feature: ''
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Brightcove Live: Best Practices'
-          Description: 'Added note that support for I/B/P frames depends on the ingest profile used, not the input stream'
-          Link: https://live.support.brightcove.com/get-started/live-module-guidelines-and-best-practices.html#gop_structure
-          Product: Live
-          Product_area: Live ingest profiles
+        - Title: 'Brightcove Native SDKs Feature Support'
+          Description: 'Update iOS/tvOS integration versions for IMA SDK and FreeWheel AdManager'
+          Link: https://sdks.support.brightcove.com/getting-started/brightcove-native-sdks-feature-support.html
+          Product: Device SDKs
+          Product_area: Native SDK for iOS
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Brightcove Player 7 Migration Guide'
-          Description: 'In the introduction, added a link to the BCP7 blog post'
-          Link: https://player.support.brightcove.com/references/bcp7-migration-guide.html
-          Product: Brightcove Player
-          Product_area: Player version 7
+        - Title: 'Managing the Channel Program'
+          Description: 'Added note explain that though you can add content directly to the Cloud Playout playlist in the Media module, it is not a good idea.'
+          Link: https://studio.support.brightcove.com/cloud-playout/cloud-playout-add-content.html
+          Product: Video Cloud
+          Product_area: Cloud Playout
+          Product_Update: 'false'
+          Feature: 'Adding Content'
+          Status: Released
+        - Title: 'Fields for Custom Live Ingest Profiles'
+          Description: 'Removed a field that is not supported.'
+          Link: https://apis.support.brightcove.com/ingest-profiles/references/fields-custom-live-ingest-profiles.html
+          Product: Video Cloud
+          Product_area: Ingest Profiles
+          Product_Update: 'false'
+          Feature: 'Live Ingest Profiles'
+          Status: Released
+        - Title: 'Creating and Managing Playlists'
+          Description: 'New suggestion added to the introduction'
+          Link: https://beacon-help.support.brightcove.com/media/organize/creating-and-managing-playlists.html
+          Product: Beacon
+          Product_area: Managing Media
           Product_Update: 'false'
           Feature: ''
           Status: Released
