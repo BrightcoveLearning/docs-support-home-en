@@ -1,70 +1,110 @@
-- date: 27-January-2023
+- date: 3-February-2023
   types:
-    - type: New Docs
-      docs:
-        - Title: 'Linear Insights'
-          Description: 'In this topic, you will learn how Brightcove live channel metrics are displayed in the Engagement & Subscriber Insights.'
-          Link: https://audience-insights.support.brightcove.com/insights/linear-insights.html
-          Product: Audience Insights
-          Product_area: Linear insights
-          Product_Update: 'true'
-          Feature: 'Brightcove live channel metrics'
-          Status: Released
-        - Title: 'Installing the Kollective Player Plugin'
-          Description: 'Put this in a separate page because it applies both to Brightcove-hosted and self-hosted implementations'
-          Link: https://integrations.support.brightcove.com/ecdn/kollective/add-kollective-player-plugin.html
-          Product: Video Cloud
-          Product_area: eCDN Integrations
-          Product_Update: 'true'
-          Feature: 'Brightcove-host Kollective integrations'
-          Status: Released 
     - type: Major updates
       docs:
-        - Title: 'Managing Playback Rights'
-          Description: 'Added Playback Rights proxy properties table'
-          Link: https://studio.support.brightcove.com/admin/general/managing-playback-rights.html#proxy 
-          Product: Video Cloud
-          Product_area: Playback Rights
+        - Title: 'Non-Brightcove Players'
+          Description: 'Main section updated'
+          Link: https://integrations.support.brightcove.com/non-brightcove-players/index.html
+          Product: Brightcove Player
+          Product_area: Integrations
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Video Cloud SSAI API'
-          Description: 'Added new section to clarify using different ad response types with SSAI'
-          Link: https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html#Ad_response_types 
-          Product: SSAI
-          Product_area: Ad configuration
+        - Title: 'Code Snippets using the Native SDK for iOS'
+          Description: 'Updated tabs to use the new site framework'
+          Link: https://sdks.support.brightcove.com/ios/resources/code-snippets-using-native-sdk-ios.html
+          Product: Device SDKs
+          Product_area: Native SDK for iOS
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Managing Google Subscriptions Part 1'
+          Description: 'Updated screenshots and steps'
+          Link: https://beacon.support.brightcove.com/publishing-apps/android/managing-google-subscriptions-1.html
+          Product: Beacon
+          Product_area: Publishing apps
           Product_Update: 'false'
           Feature: ''
           Status: Released
         - Title: 'Brightcove Player 7 Migration Guide'
-          Description: 'Added section for Player video_complete Event'
-          Link: https://player.support.brightcove.com/references/bcp7-migration-guide.html  
+          Description: 'Updated notes for the Quality Selector, IE11, and automatic mode'
+          Link: https://player.support.brightcove.com/references/bcp7-migration-guide.html
           Product: Brightcove Player
-          Product_area: Brightcove Player 7
+          Product_area: Brightcove Player v7
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Brightcove Player Sample: Automatically Set Caption Language'
-          Description: 'New section added for Safari mechanism.'
-          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-automatically-set-caption-language.html
+    - type: Minor updates
+      docs:
+        - Title: 'Getting Started with the Media Module'
+          Description: 'Note about last viewed date feature added'
+          Link: https://studio.support.brightcove.com/media/module/getting-started-media-module.html#columns
+          Product: Video Cloud
+          Product_area: Media
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating and Managing Live Events using the Live Module'
+          Description: 'New not supported option added when using low latency'
+          Link: https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#low-latency
+          Product: Live
+          Product_area: Live Module
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating Custom Analytics Reports'
+          Description: 'Note about scheduled custom reports added'
+          Link: https://studio.support.brightcove.com/analytics/reports/creating-custom-analytics-reports.html
+          Product: Video Cloud
+          Product_area: Analytics
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Managing Scheduled Reports'
+          Description: 'Note about scheduled custom reports added'
+          Link: https://studio.support.brightcove.com/analytics/reports/managing-scheduled-reports.html
+          Product: Video Cloud
+          Product_area: Analytics
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: "Migrating to Brightcove's IMA Plugin 8.0.0"
+          Description: 'Changed the IMA SDK dependency to 3.27.1'
+          Link: https://sdks.support.brightcove.com/android/advertising/migrating-to-ima-plugin.html
+          Product: Device SDKs
+          Product_area: Native SDK for Android
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: "Brightcove Playback Technology App"
+          Description: 'Added note about Player Information'
+          Link: https://player.support.brightcove.com/troubleshooting/brightcove-playback-technology-app.html
           Product: Brightcove Player
-          Product_area: Player Display Behavior
+          Product_area: Playback information
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Kollective eCDN Deployment Guide'
-          Description: 'Note the new Brightcove-hosted Syndicator app for Kollective'
-          Link: https://integrations.support.brightcove.com/ecdn/kollective/kollective-deployment-guide.html
+        - Title: "Configuring Server-Side Ad Settings"
+          Description: 'Added definitions for ad response types'
+          Link: https://studio.support.brightcove.com/admin/general/configuring-server-side-ad-settings.html
           Product: Video Cloud
-          Product_area: eCDN integrations
+          Product_area: SSAI
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Standard Ingest Profiles for Dynamic Delivery and Context Aware Encoding'
-          Description: 'Overhauled doc to remove confusing information'
-          Link: https://studio.support.brightcove.com/admin/ingest-profiles/standard-ingest-profiles-dynamic-delivery-and-context-aware-encoding.html
-          Product: Video Cloud
-          Product_area: Ingest Profiles
+        - Title: 'Using Live RTMP Outputs to Stream to Facebook and YouTube'
+          Description: 'Note added about RTMP output has no redundancy function, and only a single rendition can be selected for RTMP output per live job.'
+          Link: https://live.support.brightcove.com/live-module/using-live-rtmp-outputs-stream-facebook-and-youtube.html
+          Product: Live 
+          Product_area: Guides
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Creating Your Application Design - Layout Options'
+          Description: 'Changed player options to display a video of Player E features since that is the only player now available.'
+          Link: https://beacon.support.brightcove.com/getting-started/creating-your-app-design-layout-options.html
+          Product: Beacon
+          Product_area: Getting Started
           Product_Update: 'false'
           Feature: ''
           Status: Released
