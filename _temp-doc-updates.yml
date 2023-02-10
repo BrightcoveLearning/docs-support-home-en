@@ -1,110 +1,88 @@
-- date: 3-February-2023
+- date: 10-February-2023
   types:
+    - type: New Docs
+      docs:
+        - Title: 'Live Event States'
+          Description: 'In this topic, you will learn about different states a live event reports.'
+          Link: https://beacon-help.support.brightcove.com/live/general/live-events-states.html
+          Product: Beacon
+          Product_area: Live Streaming
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Major updates
       docs:
-        - Title: 'Non-Brightcove Players'
-          Description: 'Main section updated'
-          Link: https://integrations.support.brightcove.com/non-brightcove-players/index.html
-          Product: Brightcove Player
-          Product_area: Integrations
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Code Snippets using the Native SDK for iOS'
-          Description: 'Updated tabs to use the new site framework'
-          Link: https://sdks.support.brightcove.com/ios/resources/code-snippets-using-native-sdk-ios.html
-          Product: Device SDKs
-          Product_area: Native SDK for iOS
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Managing Google Subscriptions Part 1'
-          Description: 'Updated screenshots and steps'
-          Link: https://beacon.support.brightcove.com/publishing-apps/android/managing-google-subscriptions-1.html
+        - Title: 'Creating a TVOD Plan'
+          Description: 'Added support for Evergent payment method with TVOD'
+          Link: https://beacon-help.support.brightcove.com/monetization/general/creating-tvod-plan.html 
           Product: Beacon
-          Product_area: Publishing apps
-          Product_Update: 'false'
-          Feature: ''
+          Product_area: Monetization
+          Product_Update: 'true'
+          Feature: 'Evergent TVOD'
           Status: Released
-        - Title: 'Brightcove Player 7 Migration Guide'
-          Description: 'Updated notes for the Quality Selector, IE11, and automatic mode'
-          Link: https://player.support.brightcove.com/references/bcp7-migration-guide.html
-          Product: Brightcove Player
-          Product_area: Brightcove Player v7
+        - Title: 'Offline Playback with the Native Player SDKs'
+          Description: 'Added section for rendition downloaded when using Offline Playback'
+          Link: https://sdks.support.brightcove.com/features/offline-playback-native-player-sdks.html#Content_delivery
+          Product: Device SDKs
+          Product_area: Offline Playback
           Product_Update: 'false'
           Feature: ''
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Getting Started with the Media Module'
-          Description: 'Note about last viewed date feature added'
-          Link: https://studio.support.brightcove.com/media/module/getting-started-media-module.html#columns
-          Product: Video Cloud
-          Product_area: Media
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating and Managing Live Events using the Live Module'
-          Description: 'New not supported option added when using low latency'
-          Link: https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#low-latency
-          Product: Live
-          Product_area: Live Module
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating Custom Analytics Reports'
-          Description: 'Note about scheduled custom reports added'
-          Link: https://studio.support.brightcove.com/analytics/reports/creating-custom-analytics-reports.html
-          Product: Video Cloud
-          Product_area: Analytics
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Managing Scheduled Reports'
-          Description: 'Note about scheduled custom reports added'
-          Link: https://studio.support.brightcove.com/analytics/reports/managing-scheduled-reports.html
-          Product: Video Cloud
-          Product_area: Analytics
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: "Migrating to Brightcove's IMA Plugin 8.0.0"
-          Description: 'Changed the IMA SDK dependency to 3.27.1'
-          Link: https://sdks.support.brightcove.com/android/advertising/migrating-to-ima-plugin.html
-          Product: Device SDKs
-          Product_area: Native SDK for Android
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: "Brightcove Playback Technology App"
-          Description: 'Added note about Player Information'
-          Link: https://player.support.brightcove.com/troubleshooting/brightcove-playback-technology-app.html
+        - Title: 'AMP'
+          Description: 'AMP icon modified'
+          Link: https://player.support.brightcove.com/amp/index.html
           Product: Brightcove Player
-          Product_area: Playback information
+          Product_area: AMP
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: "Configuring Server-Side Ad Settings"
-          Description: 'Added definitions for ad response types'
-          Link: https://studio.support.brightcove.com/admin/general/configuring-server-side-ad-settings.html
+        - Title: 'Overview: Adding Captions to a Video'
+          Description: 'Modified a note indicating the 608 captions embedded in the source video will not be passed through to renditions, as this is no longer the case - they are retained now'
+          Link: https://studio.support.brightcove.com/media/captions/overview-adding-captions-video.html
           Product: Video Cloud
-          Product_area: SSAI
+          Product_area: Captions
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Using Live RTMP Outputs to Stream to Facebook and YouTube'
-          Description: 'Note added about RTMP output has no redundancy function, and only a single rendition can be selected for RTMP output per live job.'
-          Link: https://live.support.brightcove.com/live-module/using-live-rtmp-outputs-stream-facebook-and-youtube.html
-          Product: Live 
-          Product_area: Guides
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Creating Your Application Design - Layout Options'
-          Description: 'Changed player options to display a video of Player E features since that is the only player now available.'
-          Link: https://beacon.support.brightcove.com/getting-started/creating-your-app-design-layout-options.html
+        - Title: 'Using a TVOD Plan'
+          Description: 'Added Live TVOD and note about Stripe or Everygent TVOD plans'
+          Link: https://beacon-help.support.brightcove.com/monetization/general/using-tvod-plan.html 
           Product: Beacon
-          Product_area: Getting Started
+          Product_area: Monetization
           Product_Update: 'false'
           Feature: ''
+          Status: Released
+        - Title: 'Chromecast with the Native SDKs'
+          Description: 'Added note about using the Brightcove Cast Receiver app with the Native SDKs'
+          Link: https://sdks.support.brightcove.com/features/chromecast-with-sdks.html
+          Product: Device SDKs
+          Product_area: Chromecast
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Programmatically Localizing Brightcove Player'
+          Description: 'Update the documentation to be more consistent with what we can offer to our customers in the supported languages section.'
+          Link: https://player.support.brightcove.com/coding-topics/programmatically-localizing-brightcove-player.html
+          Product: Brightcove Player
+          Product_area: Coding Topics
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Securing a Portal Experience with SSL'
+          Description: 'Added a note about CNAME configuration'
+          Link: https://gallery.support.brightcove.com/settings/securing-portal-experience-ssl.html
+          Product: Gallery
+          Product_area: Settings
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Getting Started with the Media Module'
+          Description: 'Documented new Upload button'
+          Link: https://studio.support.brightcove.com/media/module/getting-started-media-module.html#upload
+          Product: Video Cloud
+          Product_area: Managing Videos
+          Product_Update: 'true'
+          Feature: 'Upload button added to media module'
           Status: Released
