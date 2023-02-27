@@ -25,7 +25,7 @@ parent: home
               {% endif %}
             </li>
             <li><strong>Link:</strong> <a href="{{ doc.Link }}">{{ doc.Link }}</a></li>
-            <li><strong>Product:</strong> <a href="{{ doc.Product }}">{{ doc.Product }}</a></li>
+            <li><strong>Product:</strong> {{ doc.Product }}</li>
             <li style="margin-bottom: 1em;"><strong>Product Area:</strong> {{ doc.Product_area }}</li>
             {% endif %}
           {% endfor %}
