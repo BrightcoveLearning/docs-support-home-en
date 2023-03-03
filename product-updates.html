@@ -19,6 +19,7 @@ parent: home
 <article class="bcls-article">
   <summary>{{ page.description }}</summary>
   <p><a href="/product-updates-index.html">Index of all product release notes</a></p>
+  <p><a href="/doc-updates.html">Also see Recent Learning Resource Updates</a></p>
   <!-- <p><a href="/doc-updates-index.html">Index of all product updates</a></p> -->
   <aside class="bcls-aside bcls-aside--tip language-editable">Tips:
     <ul>
@@ -37,7 +38,15 @@ parent: home
     <p id="{{ doc.Product_area }}"><strong>Product Area:</strong> {{ doc.Product_area}}</p>
     <p id="{{ item.date | replace: " -", "_" }}"><strong>Date:</strong> {{ item.date }}</p>
     <p><strong>Description:</strong> {{ doc.Description }}</p>
+    {% if type.type == 'New Brightcove Academy Courses' %}
+    <p><strong><a href="{{ doc.Customer_Link }}">Go to Course</a></strong></p>
+    {% else %}
+    {% if type.type == 'New Brightcove Academy Courses' %}
+    <p><strong><a href="{{ doc.Customer_Link }}">Go to Course</a></strong></p>
+    {% else %}
     <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
+    {% endif %}
+    {% endif %}
     <hr>
     {% endif %}
     {% endif %}
@@ -58,7 +67,11 @@ parent: home
     <p id="{{ doc.Product_area }}"><strong>Product Area:</strong> {{ doc.Product_area}}</p>
     <p id="{{ item.date | replace: " -", "_" }}"><strong>Date:</strong> {{ item.date }}</p>
     <p><strong>Description:</strong> {{ doc.Description }}</p>
+    {% if type.type == 'New Brightcove Academy Courses' %}
+    <p><strong><a href="{{ doc.Customer_Link }}">Go to Course</a></strong></p>
+    {% else %}
     <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
+    {% endif %}
     <hr>
     {% endif %}
     {% endif %}
@@ -79,7 +92,11 @@ parent: home
     <p id="{{ doc.Product_area }}"><strong>Product Area:</strong> {{ doc.Product_area}}</p>
     <p id="{{ item.date | replace: " -", "_" }}"><strong>Date:</strong> {{ item.date }}</p>
     <p><strong>Description:</strong> {{ doc.Description }}</p>
+    {% if type.type == 'New Brightcove Academy Courses' %}
+    <p><strong><a href="{{ doc.Customer_Link }}">Go to Course</a></strong></p>
+    {% else %}
     <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
+    {% endif %}
     <hr>
     {% endif %}
     {% endif %}
@@ -100,7 +117,11 @@ parent: home
     <p id="{{ doc.Product_area }}"><strong>Product Area:</strong> {{ doc.Product_area}}</p>
     <p id="{{ item.date | replace: " -", "_" }}"><strong>Date:</strong> {{ item.date }}</p>
     <p><strong>Description:</strong> {{ doc.Description }}</p>
+    {% if type.type == 'New Brightcove Academy Courses' %}
+    <p><strong><a href="{{ doc.Customer_Link }}">Go to Course</a></strong></p>
+    {% else %}
     <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
+    {% endif %}
     <hr>
     {% endif %}
     {% endif %}
@@ -121,7 +142,11 @@ parent: home
     <p id="{{ doc.Product_area }}"><strong>Product Area:</strong> {{ doc.Product_area}}</p>
     <p id="{{ item.date | replace: " -", "_" }}"><strong>Date:</strong> {{ item.date }}</p>
     <p><strong>Description:</strong> {{ doc.Description }}</p>
+    {% if type.type == 'New Brightcove Academy Courses' %}
+    <p><strong><a href="{{ doc.Customer_Link }}">Go to Course</a></strong></p>
+    {% else %}
     <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
+    {% endif %}
     <hr>
     {% endif %}
     {% endif %}
@@ -142,7 +167,11 @@ parent: home
     <p id="{{ doc.Product_area }}"><strong>Product Area:</strong> {{ doc.Product_area}}</p>
     <p id="{{ item.date | replace: " -", "_" }}"><strong>Date:</strong> {{ item.date }}</p>
     <p><strong>Description:</strong> {{ doc.Description }}</p>
+    {% if type.type == 'New Brightcove Academy Courses' %}
+    <p><strong><a href="{{ doc.Customer_Link }}">Go to Course</a></strong></p>
+    {% else %}
     <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
+    {% endif %}
     <hr>
     {% endif %}
     {% endif %}
@@ -163,7 +192,11 @@ parent: home
     <p><strong>Date:</strong> {{ item.date }}</p>
     <p><strong>Description:</strong> {{ doc.Description }}</p>
     <p><strong>Status:</strong> {{ doc.Status }}</p>
+    {% if type.type == 'New Brightcove Academy Courses' %}
+    <p><strong><a href="{{ doc.Customer_Link }}">Go to Course</a></strong></p>
+    {% else %}
     <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
+    {% endif %}
     <hr>
     {% endif %}
     {% endif %}
@@ -183,7 +216,11 @@ parent: home
     <p><strong>Date:</strong> {{ item.date }}</p>
     <p><strong>Description:</strong> {{ doc.Description }}</p>
     <p><strong>Status:</strong> {{ doc.Status }}</p>
+    {% if type.type == 'New Brightcove Academy Courses' %}
+    <p><strong><a href="{{ doc.Customer_Link }}">Go to Course</a></strong></p>
+    {% else %}
     <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
+    {% endif %}
     <hr>
     {% endif %}
     {% endif %}
@@ -203,7 +240,11 @@ parent: home
     <p id="{{ doc.Product_area }}"><strong>Product Area:</strong> {{ doc.Product_area}}</p>
     <p id="{{ item.date | replace: " -", "_" }}"><strong>Date:</strong> {{ item.date }}</p>
     <p><strong>Description:</strong> {{ doc.Description }}</p>
+    {% if type.type == 'New Brightcove Academy Courses' %}
+    <p><strong><a href="{{ doc.Customer_Link }}">Go to Course</a></strong></p>
+    {% else %}
     <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
+    {% endif %}
     <hr>
     {% endif %}
     {% endif %}
@@ -224,7 +265,11 @@ parent: home
     <p id="{{ doc.Product_area }}"><strong>Product Area:</strong> {{ doc.Product_area}}</p>
     <p id="{{ item.date | replace: " -", "_" }}"><strong>Date:</strong> {{ item.date }}</p>
     <p><strong>Description:</strong> {{ doc.Description }}</p>
+    {% if type.type == 'New Brightcove Academy Courses' %}
+    <p><strong><a href="{{ doc.Customer_Link }}">Go to Course</a></strong></p>
+    {% else %}
     <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
+    {% endif %}
     <hr>
     {% endif %}
     {% endif %}

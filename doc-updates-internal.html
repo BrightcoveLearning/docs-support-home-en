@@ -22,7 +22,12 @@ layout: staging
     - <span style="color:#d33e00;font-weight: bold;">New Product Feature!</span>
     {% endif %}
     <br>
-    <strong>Link:</strong> <a href="{{ doc.Link }}">{{ doc.Link }}</a><br>
+    {% if type.type == 'New Brightcove Academy Courses' %}
+    <li><strong>Customer Link:</strong> <a href="{{ doc.Customer_Link }}">{{ doc.Customer_Link }}</a></li>
+    <li><strong>Employee Link:</strong> <a href="{{ doc.Employee_Link }}">{{ doc.Employee_Link }}</a></li>
+    {% else %}
+    <li><strong>Link:</strong> <a href="{{ doc.Link }}">{{ doc.Link }}</a></li>
+    {% endif %}
     <strong>Product:</strong> {{ doc.Product }}<br>
     <strong>Product Area:</strong> {{ doc.Product_area }}<br>
     <strong>Status:</strong> {{ doc.Status }}<br>
