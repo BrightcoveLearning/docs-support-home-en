@@ -11,241 +11,241 @@ layout: staging
   <section class="bcls-section">
     <h2 id="video_cloud">Video Cloud</h2>
     {% for item in site.data.s-site-assets-data.doc-updates %}
-    {% for type in item.types %}
-    {% for doc in type.docs %}
-    {% if doc.Product == 'Video Cloud' %}
-    {% if doc.Product_Update == 'true' %}
-    <h4 id="{{ doc.Feature | replace: " ", " _" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
-    <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
-    <p><strong>Date:</strong> {{ item.date }}</p>
-    <p><strong>Description:</strong> {{ doc.Description }}</p>
-    <p><strong>Status:</strong> {{ doc.Status }}</p>
-    {% if type.type == 'New Brightcove Academy Courses' %}
-    <p><strong><a href="{{ doc.Employee_Link }}">Go to Course</a></strong></p>
-    {% else %}
-    <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
-    {% endif %}
-    <hr>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-    {% endfor %}
+      {% for type in item.types %}
+        {% for doc in type.docs %}
+          {% if doc.Product == 'Video Cloud' %}
+            {% if doc.Product_Update == 'true' %}
+            <h4 id="{{ doc.Feature | replace: " ", " _" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
+            <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
+            <p><strong>Date:</strong> {{ item.date }}</p>
+            <p><strong>Description:</strong> {{ doc.Description }}</p>
+            <p><strong>Status:</strong> {{ doc.Status }}</p>
+            {% if type.type == 'New Brightcove Academy Courses' %}
+            <p><strong><a href="{{ doc.Employee_Link }}">Go to Course</a></strong></p>
+            {% else %}
+            <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
+            {% endif %}
+            <hr>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
     {% endfor %}
   </section>
   <section class="bcls-section">
     <h2 id="brightcove_player">Brightcove Player</h2>
     {% for item in site.data.s-site-assets-data.doc-updates %}
-    {% for type in item.types %}
-    {% for doc in type.docs %}
-    {% if doc.Product == 'Brightcove Player' %}
-    {% if doc.Product_Update == 'true' %}
-    <h4 id="{{ doc.Feature | replace: " ", " _" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
-    <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
-    <p><strong>Date:</strong> {{ item.date }}</p>
-    <p><strong>Description:</strong> {{ doc.Description }}</p>
-    <p><strong>Status:</strong> {{ doc.Status }}</p>
-    {% if type.type == 'New Brightcove Academy Courses' %}
-    <p><strong><a href="{{ doc.Employee_Link }}">Go to Course</a></strong></p>
-    {% else %}
-    <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
-    {% endif %}
-    <hr>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-    {% endfor %}
+      {% for type in item.types %}
+        {% for doc in type.docs %}
+          {% if doc.Product == 'Brightcove Player' %}
+            {% if doc.Product_Update == 'true' %}
+            <h4 id="{{ doc.Feature | replace: " ", " _" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
+            <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
+            <p><strong>Date:</strong> {{ item.date }}</p>
+            <p><strong>Description:</strong> {{ doc.Description }}</p>
+            <p><strong>Status:</strong> {{ doc.Status }}</p>
+            {% if type.type == 'New Brightcove Academy Courses' %}
+            <p><strong><a href="{{ doc.Employee_Link }}">Go to Course</a></strong></p>
+            {% else %}
+            <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
+            {% endif %}
+            <hr>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
     {% endfor %}
   </section>
   <section class="bcls-section">
     <h2 id="brightcove_interactivity">Brightcove Interactivity</h2>
     {% for item in site.data.s-site-assets-data.doc-updates %}
-    {% for type in item.types %}
-    {% for doc in type.docs %}
-    {% if doc.Product == 'Brightcove Interactivity' %}
-    {% if doc.Product_Update == 'true' %}
-    <h4 id="{{ doc.Feature | replace: " ", " _" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
-    <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
-    <p><strong>Date:</strong> {{ item.date }}</p>
-    <p><strong>Description:</strong> {{ doc.Description }}</p>
-    <p><strong>Status:</strong> {{ doc.Status }}</p>
-    {% if type.type == 'New Brightcove Academy Courses' %}
-    <p><strong><a href="{{ doc.Employee_Link }}">Go to Course</a></strong></p>
-    {% else %}
-    <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
-    {% endif %}
-    <hr>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-    {% endfor %}
+      {% for type in item.types %}
+        {% for doc in type.docs %}
+          {% if doc.Product == 'Brightcove Interactivity' %}
+            {% if doc.Product_Update == 'true' %}
+            <h4 id="{{ doc.Feature | replace: " ", " _" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
+            <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
+            <p><strong>Date:</strong> {{ item.date }}</p>
+            <p><strong>Description:</strong> {{ doc.Description }}</p>
+            <p><strong>Status:</strong> {{ doc.Status }}</p>
+            {% if type.type == 'New Brightcove Academy Courses' %}
+            <p><strong><a href="{{ doc.Employee_Link }}">Go to Course</a></strong></p>
+            {% else %}
+            <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
+            {% endif %}
+            <hr>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
     {% endfor %}
   </section>
   <section class="bcls-section">
     <h2 id="video_cloud">Device SDKs</h2>
     {% for item in site.data.s-site-assets-data.doc-updates %}
-    {% for type in item.types %}
-    {% for doc in type.docs %}
-    {% if doc.Product == 'Device SDKs' %}
-    {% if doc.Product_Update == 'true' %}
-    <h4 id="{{ doc.Feature | replace: " ", " _" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
-    <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
-    <p><strong>Date:</strong> {{ item.date }}</p>
-    <p><strong>Description:</strong> {{ doc.Description }}</p>
-    <p><strong>Status:</strong> {{ doc.Status }}</p>
-    {% if type.type == 'New Brightcove Academy Courses' %}
-    <p><strong><a href="{{ doc.Employee_Link }}">Go to Course</a></strong></p>
-    {% else %}
-    <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
-    {% endif %}
-    <hr>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-    {% endfor %}
+      {% for type in item.types %}
+        {% for doc in type.docs %}
+          {% if doc.Product == 'Device SDKs' %}
+            {% if doc.Product_Update == 'true' %}
+            <h4 id="{{ doc.Feature | replace: " ", " _" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
+            <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
+            <p><strong>Date:</strong> {{ item.date }}</p>
+            <p><strong>Description:</strong> {{ doc.Description }}</p>
+            <p><strong>Status:</strong> {{ doc.Status }}</p>
+            {% if type.type == 'New Brightcove Academy Courses' %}
+            <p><strong><a href="{{ doc.Employee_Link }}">Go to Course</a></strong></p>
+            {% else %}
+            <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
+            {% endif %}
+            <hr>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
     {% endfor %}
   </section>
   <section class="bcls-section">
     <h2 id="live">Live</h2>
     {% for item in site.data.s-site-assets-data.doc-updates %}
-    {% for type in item.types %}
-    {% for doc in type.docs %}
-    {% if doc.Product == 'Live' %}
-    {% if doc.Product_Update == 'true' %}
-    <h4 id="{{ doc.Feature | replace: " ", " _" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
-    <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
-    <p><strong>Date:</strong> {{ item.date }}</p>
-    <p><strong>Description:</strong> {{ doc.Description }}</p>
-    <p><strong>Status:</strong> {{ doc.Status }}</p>
-    {% if type.type == 'New Brightcove Academy Courses' %}
-    <p><strong><a href="{{ doc.Employee_Link }}">Go to Course</a></strong></p>
-    {% else %}
-    <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
-    {% endif %}
-    <hr>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-    {% endfor %}
+      {% for type in item.types %}
+        {% for doc in type.docs %}
+          {% if doc.Product == 'Live' %}
+            {% if doc.Product_Update == 'true' %}
+            <h4 id="{{ doc.Feature | replace: " ", " _" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
+            <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
+            <p><strong>Date:</strong> {{ item.date }}</p>
+            <p><strong>Description:</strong> {{ doc.Description }}</p>
+            <p><strong>Status:</strong> {{ doc.Status }}</p>
+            {% if type.type == 'New Brightcove Academy Courses' %}
+            <p><strong><a href="{{ doc.Employee_Link }}">Go to Course</a></strong></p>
+            {% else %}
+            <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
+            {% endif %}
+            <hr>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
     {% endfor %}
   </section>
   <section class="bcls-section">
     <h2 id="beacon">Beacon</h2>
     {% for item in site.data.s-site-assets-data.doc-updates %}
-    {% for type in item.types %}
-    {% for doc in type.docs %}
-    {% if doc.Product == 'Beacon' %}
-    {% if doc.Product_Update == 'true' %}
-    <h4 id="{{ doc.Feature | replace: " ", " _" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
-    <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
-    <p><strong>Date:</strong> {{ item.date }}</p>
-    <p><strong>Description:</strong> {{ doc.Description }}</p>
-    <p><strong>Status:</strong> {{ doc.Status }}</p>
-    {% if type.type == 'New Brightcove Academy Courses' %}
-    <p><strong><a href="{{ doc.Employee_Link }}">Go to Course</a></strong></p>
-    {% else %}
-    <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
-    {% endif %}
-    <hr>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-    {% endfor %}
+      {% for type in item.types %}
+        {% for doc in type.docs %}
+          {% if doc.Product == 'Beacon' %}
+            {% if doc.Product_Update == 'true' %}
+            <h4 id="{{ doc.Feature | replace: " ", " _" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
+            <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
+            <p><strong>Date:</strong> {{ item.date }}</p>
+            <p><strong>Description:</strong> {{ doc.Description }}</p>
+            <p><strong>Status:</strong> {{ doc.Status }}</p>
+            {% if type.type == 'New Brightcove Academy Courses' %}
+            <p><strong><a href="{{ doc.Employee_Link }}">Go to Course</a></strong></p>
+            {% else %}
+            <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
+            {% endif %}
+            <hr>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
     {% endfor %}
   </section>
   <section class="bcls-section">
     <h2 id="beacon">CorpTV</h2>
     {% for item in site.data.s-site-assets-data.doc-updates %}
-    {% for type in item.types %}
-    {% for doc in type.docs %}
-    {% if doc.Product == 'CorpTV' %}
-    {% if doc.Product_Update == 'true' %}
-    <h4 id="{{ doc.Feature | replace: " ", " _" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
-    <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
-    <p><strong>Date:</strong> {{ item.date }}</p>
-    <p><strong>Description:</strong> {{ doc.Description }}</p>
-    <p><strong>Status:</strong> {{ doc.Status }}</p>
-    {% if type.type == 'New Brightcove Academy Courses' %}
-    <p><strong><a href="{{ doc.Employee_Link }}">Go to Course</a></strong></p>
-    {% else %}
-    <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
-    {% endif %}
-    <hr>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-    {% endfor %}
+      {% for type in item.types %}
+        {% for doc in type.docs %}
+          {% if doc.Product == 'CorpTV' %}
+            {% if doc.Product_Update == 'true' %}
+            <h4 id="{{ doc.Feature | replace: " ", " _" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
+            <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
+            <p><strong>Date:</strong> {{ item.date }}</p>
+            <p><strong>Description:</strong> {{ doc.Description }}</p>
+            <p><strong>Status:</strong> {{ doc.Status }}</p>
+            {% if type.type == 'New Brightcove Academy Courses' %}
+            <p><strong><a href="{{ doc.Employee_Link }}">Go to Course</a></strong></p>
+            {% else %}
+            <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
+            {% endif %}
+            <hr>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
     {% endfor %}
   </section>
   <section class="bcls-section">
     <h2 id="beacon">Audience Insights</h2>
     {% for item in site.data.s-site-assets-data.doc-updates %}
-    {% for type in item.types %}
-    {% for doc in type.docs %}
-    {% if doc.Product == 'Audience Insights' %}
-    {% if doc.Product_Update == 'true' %}
-    <h4 id="{{ doc.Feature | replace: " ", " _" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
-    <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
-    <p><strong>Date:</strong> {{ item.date }}</p>
-    <p><strong>Description:</strong> {{ doc.Description }}</p>
-    <p><strong>Status:</strong> {{ doc.Status }}</p>
-    {% if type.type == 'New Brightcove Academy Courses' %}
-    <p><strong><a href="{{ doc.Employee_Link }}">Go to Course</a></strong></p>
-    {% else %}
-    <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
-    {% endif %}
-    <hr>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-    {% endfor %}
+      {% for type in item.types %}
+        {% for doc in type.docs %}
+          {% if doc.Product == 'Audience Insights' %}
+            {% if doc.Product_Update == 'true' %}
+            <h4 id="{{ doc.Feature | replace: " ", " _" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
+            <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
+            <p><strong>Date:</strong> {{ item.date }}</p>
+            <p><strong>Description:</strong> {{ doc.Description }}</p>
+            <p><strong>Status:</strong> {{ doc.Status }}</p>
+            {% if type.type == 'New Brightcove Academy Courses' %}
+            <p><strong><a href="{{ doc.Employee_Link }}">Go to Course</a></strong></p>
+            {% else %}
+            <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
+            {% endif %}
+            <hr>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
     {% endfor %}
   </section>
   <section class="bcls-section">
     <h2 id="ssai">SSAI</h2>
     {% for item in site.data.s-site-assets-data.doc-updates %}
-    {% for type in item.types %}
-    {% for doc in type.docs %}
-    {% if doc.Product == 'SSAI' %}
-    {% if doc.Product_Update == 'true' %}
-    <h4 id="{{ doc.Feature | replace: " ", " _" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
-    <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
-    <p><strong>Date:</strong> {{ item.date }}</p>
-    <p><strong>Description:</strong> {{ doc.Description }}</p>
-    <p><strong>Status:</strong> {{ doc.Status }}</p>
-    {% if type.type == 'New Brightcove Academy Courses' %}
-    <p><strong><a href="{{ doc.Employee_Link }}">Go to Course</a></strong></p>
-    {% else %}
-    <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
-    {% endif %}
-    <hr>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-    {% endfor %}
+      {% for type in item.types %}
+        {% for doc in type.docs %}
+          {% if doc.Product == 'SSAI' %}
+            {% if doc.Product_Update == 'true' %}
+            <h4 id="{{ doc.Feature | replace: " ", " _" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
+            <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
+            <p><strong>Date:</strong> {{ item.date }}</p>
+            <p><strong>Description:</strong> {{ doc.Description }}</p>
+            <p><strong>Status:</strong> {{ doc.Status }}</p>
+            {% if type.type == 'New Brightcove Academy Courses' %}
+            <p><strong><a href="{{ doc.Employee_Link }}">Go to Course</a></strong></p>
+            {% else %}
+            <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
+            {% endif %}
+            <hr>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
     {% endfor %}
   </section>
   <section class="bcls-section">
     <h2 id="zencoder">Zencoder</h2>
     {% for item in site.data.s-site-assets-data.doc-updates %}
-    {% for type in item.types %}
-    {% for doc in type.docs %}
-    {% if doc.Product == 'Zencoder' %}
-    {% if doc.Product_Update == 'true' %}
-    <h4 id="{{ doc.Feature | replace: " ", " _" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
-    <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
-    <p><strong>Date:</strong> {{ item.date }}</p>
-    <p><strong>Description:</strong> {{ doc.Description }}</p>
-    <p><strong>Status:</strong> {{ doc.Status }}</p>
-    {% if type.type == 'New Brightcove Academy Courses' %}
-    <p><strong><a href="{{ doc.Employee_Link }}">Go to Course</a></strong></p>
-    {% else %}
-    <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
-    {% endif %}
-    <hr>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-    {% endfor %}
+      {% for type in item.types %}
+        {% for doc in type.docs %}
+          {% if doc.Product == 'Zencoder' %}
+            {% if doc.Product_Update == 'true' %}
+            <h4 id="{{ doc.Feature | replace: " ", " _" }}"><strong>Feature:</strong> {{ doc.Feature }}</h4>
+            <p><strong>Product Area:</strong> {{ doc.Product_area}}</p>
+            <p><strong>Date:</strong> {{ item.date }}</p>
+            <p><strong>Description:</strong> {{ doc.Description }}</p>
+            <p><strong>Status:</strong> {{ doc.Status }}</p>
+            {% if type.type == 'New Brightcove Academy Courses' %}
+            <p><strong><a href="{{ doc.Employee_Link }}">Go to Course</a></strong></p>
+            {% else %}
+            <p><strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
+            {% endif %}
+            <hr>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
     {% endfor %}
   </section>
 </article> -->
