@@ -26,7 +26,7 @@ parent: home
       <li>If you would like be sent an email whenever this page changes, please see the <a href="/distill-setup.html">Setup Automatic Email on Product Updates</a> document.</li>
     </ul>
   </aside>
-  {% for product in site.data.s-site-assets-data.products %}
+  {% for product in site.data.s-site-assets-data.products.products %}
     <section class="bcls-section">
       <h2 id="{{ product | replace: " ", "_" }}">{{ product }}</h2>
       {% for item in site.data.s-site-assets-data.doc-updates %}

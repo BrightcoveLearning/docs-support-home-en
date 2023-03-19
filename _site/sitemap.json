@@ -215,6 +215,11 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/product-updates2.html",
+      "oldURL": "/product-updates2"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/training/register-training.html",
       "oldURL": "/register-training"
   },
