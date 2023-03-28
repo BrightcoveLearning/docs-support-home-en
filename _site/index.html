@@ -886,8 +886,38 @@
 
 </div>
 
+<!-- <script translate="n0">
+  var BCLS_tab_hash = ( function (window, document) {
+  let tab_headers = document.querySelectorAll('button>h5'),
+    i,
+    iMax,
+    hash = [];
 
+  console.log('tab_headers', tab_headers);
 
+  // create event handlers for tab headers
+  iMax = tab_headers.length;
+  for (i = 0; i < iMax; i++) {
+    hash[i] = tab_headers[i].parentElement.getAttribute('id');
+    console.log('hash', tab_headers[i].getAttribute('data-hash'));
+  }
+  for (i = 0; i < iMax; i++) {
+    console.log('hash', hash[i]);
+    tab_headers[i].addEventListener('click', function(){
+      window.location.hash = this.parentElement.getAttribute('id');
+      console.log('url', window.location.href);
+    });
+  }
+
+  for (i = 0; i < iMax; i++) {
+    if (window.location.hash === tab_headers[i].getAttribute('data-hash')) {
+      tab_headers[i]
+
+    }
+  }
+
+})(window, document);
+</script> -->
 </div>
 </div>
 </div>
