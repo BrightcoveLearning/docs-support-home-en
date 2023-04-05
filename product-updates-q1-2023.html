@@ -105,27 +105,6 @@ parent: home
     {% endfor %}
   </section>
   <section class="bcls-section">
-    <h2 id="beacon">Beacon</h2>
-    {% for item in site.data.s-site-assets-data.doc-updates-q1-2023 %}
-    {% for type in item.types %}
-    {% for doc in type.docs %}
-    {% if doc.Product == 'Beacon' %}
-    {% if doc.Product_Update == 'true' %}
-    {% if doc.Status == 'Released' %}
-    <h2 id="{{ doc.Feature }}"><strong>Feature:</strong> {{ doc.Feature }}</h2>
-    <p id="{{ doc.Product_area }}"><strong>Product Area:</strong> {{ doc.Product_area}}</p>
-    <p id="{{ item.date | replace: " -", "_" }}"><strong>Date:</strong> {{ item.date }}</p>
-    <p><strong>Description:</strong> {{ doc.Description }}</p>
-    <p><strong></strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
-    <hr>
-    {% endif %}
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-    {% endfor %}
-    {% endfor %}
-  </section>
-  <section class="bcls-section">
     <h2 id="ssai">SSAI</h2>
     {% for item in site.data.s-site-assets-data.doc-updates-q1-2023 %}
     {% for type in item.types %}
@@ -147,11 +126,11 @@ parent: home
     {% endfor %}
   </section>
   <section class="bcls-section">
-    <h2 id="Brightcove_Interactivity">Brightcove Interactivity</h2>
+    <h2 id="beacon">Beacon</h2>
     {% for item in site.data.s-site-assets-data.doc-updates-q1-2023 %}
     {% for type in item.types %}
     {% for doc in type.docs %}
-    {% if doc.Product == 'Brightcove Interactivity' %}
+    {% if doc.Product == 'Beacon' %}
     {% if doc.Product_Update == 'true' %}
     {% if doc.Status == 'Released' %}
     <h2 id="{{ doc.Feature }}"><strong>Feature:</strong> {{ doc.Feature }}</h2>
@@ -168,11 +147,33 @@ parent: home
     {% endfor %}
   </section>
   <section class="bcls-section">
-    <h2 id="zencoder">Zencoder</h2>
+    <h2 id="audience_insights">Audience Insights</h2>
     {% for item in site.data.s-site-assets-data.doc-updates-q1-2023 %}
     {% for type in item.types %}
     {% for doc in type.docs %}
-    {% if doc.Product == 'Zencoder' %}
+    {% if doc.Product == 'Audience Insights' %}
+    {% if doc.Product_Update == 'true' %}
+    {% if doc.Status == 'Released' %}
+    <h2 id="{{ doc.Feature }}"><strong>Feature:</strong> {{ doc.Feature }}</h2>
+    <p id="{{ doc.Product_area }}"><strong>Product Area:</strong> {{ doc.Product_area}}</p>
+    <p id="{{ item.date | replace: " -", "_" }}"><strong>Date:</strong> {{ item.date }}</p>
+    <p><strong>Description:</strong> {{ doc.Description }}</p>
+    <p><strong></strong><a href="{{ doc.Link }}">Go to Documentation</a></strong></p>
+    <hr>
+    {% endif %}
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+    {% endfor %}
+  </section>
+  
+  <section class="bcls-section">
+    <h2 id="Brightcove_Interactivity">Brightcove Interactivity</h2>
+    {% for item in site.data.s-site-assets-data.doc-updates-q1-2023 %}
+    {% for type in item.types %}
+    {% for doc in type.docs %}
+    {% if doc.Product == 'Brightcove Interactivity' %}
     {% if doc.Product_Update == 'true' %}
     {% if doc.Status == 'Released' %}
     <h2 id="{{ doc.Feature }}"><strong>Feature:</strong> {{ doc.Feature }}</h2>
@@ -210,11 +211,11 @@ parent: home
     {% endfor %}
   </section>
   <section class="bcls-section">
-    <h2 id="audience_insights">Audience Insights</h2>
+    <h2 id="zencoder">Zencoder</h2>
     {% for item in site.data.s-site-assets-data.doc-updates-q1-2023 %}
     {% for type in item.types %}
     {% for doc in type.docs %}
-    {% if doc.Product == 'Audience Insights' %}
+    {% if doc.Product == 'Zencoder' %}
     {% if doc.Product_Update == 'true' %}
     {% if doc.Status == 'Released' %}
     <h2 id="{{ doc.Feature }}"><strong>Feature:</strong> {{ doc.Feature }}</h2>
