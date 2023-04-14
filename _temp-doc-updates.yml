@@ -13,6 +13,29 @@
           Status: Released
     - type: New Docs
       docs:
+        - Title: 'Overview of the Integrations Module'
+          Description: 'The Integrations module allows you to set up integrations with popular 3rd party systems without working with APIs.'
+          Link: https://studio.support.brightcove.com/integrations/integrations-module/getting-started/getting-started-integrations-module.html
+          Product: Integrations
+          Product_area: Integrations module
+          Product_Update: 'true'
+          Feature: 'New integrations module'
+        - Title: 'Setting Up an Automatic Ingestion Folder on Dropbox'
+          Description: 'Brightcove allows you to select a folder on the popular cloud storage platform Dropbox that we will automatically ingest videos from.'
+          Link: https://studio.support.brightcove.com/integrations/integrations-module/watched-folders/dropbox.html
+          Product: Integrations
+          Product_area: Integrations module
+          Product_Update: 'true'
+          Feature: 'Dropbox ingestion folder'
+          Status: Staging
+        - Title: 'Setting Up an Automatic Ingestion Folder on Google Drive'
+          Description: 'Brightcove allows you to select a folder on the popular cloud storage platform Google Drive that we will automatically ingest videos from.'
+          Link: https://studio.support.brightcove.com/integrations/integrations-module/watched-folders/google-drive.html
+          Product: Integrations
+          Product_area: Integrations module
+          Product_Update: 'true'
+          Feature: 'Google Drive ingestion folder'
+          Status: Staging
         - Title: 'Brightcove Player Sample: Display Duration'
           Description: 'In this topic, you will learn to display the duration of the video over the video poster that is displayed. The duration disappears when the play button is pressed.'
           Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-display-duration.html
@@ -31,6 +54,14 @@
           Status: Released
     - type: Major updates
       docs:
+        - Title: 'Getting Started with Brightcove Video Connect for the Drupal CMS'
+          Description: 'The current version of the connector is now verified to work with Drupal 10.x'
+          Link: https://integrations.support.brightcove.com/drupal/getting-started-brightcove-video-connect-drupal-cms.html
+          Product: Integrations
+          Product_area: Drupal Connector
+          Product_Update: 'true'
+          Feature: 'Support for Drupal 10.0'
+          Status: Released
         - Title: 'Brightcove Player Sample: Download Video Plugin'
           Description: 'This sample has a note at the top to point to the new built in Download Button Plugin document.'
           Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-download-video-plugin.html
