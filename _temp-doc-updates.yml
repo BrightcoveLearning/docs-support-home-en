@@ -21,6 +21,14 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released 
+        - Title: 'Seek Buttons Plugin'
+          Description: 'In this topic, you will learn about the seek buttons plugin for Brightcove Player. This plugin will allow you to seek forward/back through a video for a configurable amount of time.'
+          Link: https://player.support.brightcove.com/plugins/seek-buttons-plugin.html
+          Product: Brightcove Player
+          Product_area: Plugins
+          Product_Update: 'true'
+          Feature: 'Seek buttons'
+          Status: Released
     - type: Major updates
       docs:
         - Title: 'Brightcove Player Sample: Download Video Plugin'
@@ -71,6 +79,30 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Download Button Plugin'
+          Description: 'Steps listed in the Implement using Players module section updated'
+          Link: https://player.support.brightcove.com/plugins/download-button-plugin.html#Implement_using_Players_module
+          Product: Brightcove Player
+          Product_area: Plugins
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'React Player Loader'
+          Description: 'onEmbedCreated information added to parameters section'
+          Link: https://player.support.brightcove.com/coding-topics/react-player-loader.html#Parameters
+          Product: Brightcove Player
+          Product_area: Coding Topics
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Implementing Server-Side Ads with Brightcove Player'
+          Description: 'vmapURLParams information added to options section'
+          Link: https://player.support.brightcove.com/plugins/implementing-server-side-ads-brightcove-player.html#Options
+          Product: Brightcove Player
+          Product_area: Plugins
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Minor updates
       docs:
         - Title: 'Player E VOD Features'
@@ -94,6 +126,38 @@
           Link: https://studio.support.brightcove.com/general/content-protection/overview-digital-rights-management-drm-video-cloud.html 
           Product: Video Cloud
           Product_area: Content protection (DRM)
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Player E Selection'
+          Description: 'Update Player E Selection doc to match latest UI'
+          Link: https://beacon-help.support.brightcove.com/layout/e-selection.html
+          Product: Beacon
+          Product_area: Managing Pages
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Overview: Delivery System API'
+          Description: 'Delivery System API: highlight warning note added to create repository, and not to update a player repository'
+          Link: https://apis.support.brightcove.com/delivery-system/overview-delivery-system-api.html
+          Product: APIs
+          Product_area: Delivery System API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Step-by-Step: Delivery System API'
+          Description: 'Delivery System API: highlight warning note added to create repository, and not to update a player repository'
+          Link: https://apis.support.brightcove.com/delivery-system/step-step-delivery-system-api.html
+          Product: APIs
+          Product_area: Delivery System API
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Configuring App Settings'
+          Description: 'Update Configuring App Settings to latest UI'
+          Link: https://beacon-help.support.brightcove.com/layout/configuring-app-settings.html
+          Product: Beacon 
+          Product_area:  Managing Pages
           Product_Update: 'false'
           Feature: ''
           Status: Released
