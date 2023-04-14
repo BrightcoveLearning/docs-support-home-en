@@ -1,77 +1,101 @@
-- date: 7-April-2023
+- date: 14-April-2023
   types:
     - type: New Brightcove Academy Courses
       docs:
-        - Title: 'Video Connector Integration'
-          Description: 'In this walkthrough, we will demonstrate the full setup of the Brightcove Video Connector integration in the Shopify e-commerce platform.'
-          Customer_Link: https://academy.brightcove.com/video-connector-integration
-          Employee_Link: https://employee-academy.brightcove.com/video-connector-integration-employees
+        - Title: ''
+          Description: ''
+          Customer_Link: 
+          Employee_Link: 
           Product: Video Cloud
           Product_area: Integrations
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: "What's New Section"
-          Description: "See the latest additions to Brightcove Academy's learning offerings."
-          Customer_Link: https://academy.brightcove.com
-          Employee_Link: https://employee-academy.brightcove.com/page/tool-torials
-          Product: Video Cloud
-          Product_area: General
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
     - type: New Docs
       docs:
-        - Title: 'SpringServe Ad Macros with the Native SDKs'
-          Description: 'In this topic, you will learn how to take advantage of ad monetization when using client-side ad insertion (CSAI) with the Brightcove Native SDKs.'
-          Link: https://sdks.support.brightcove.com/features/springserve-with-sdks.html
-          Product: Device SDKs
-          Product_area: Ad monetization
-          Product_Update: 'true'
-          Feature: 'SpringServe Ad Macro support'
+        - Title: 'Brightcove Player Sample: Display Duration'
+          Description: 'In this topic, you will learn to display the duration of the video over the video poster that is displayed. The duration disappears when the play button is pressed.'
+          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-display-duration.html
+          Product: Brightcove Player
+          Product_area: Code Samples
+          Product_Update: 'false'
+          Feature: ''
           Status: Released 
     - type: Major updates
       docs:
-        - Title: 'Using Content Layouts'
-          Description: 'Updated the App Settings screenshots to include the new Channels option'
-          Link: https://beacon-help.support.brightcove.com/layout/using-content-layouts.html
-          Product: Beacon
-          Product_area: Managing Pages & Layouts
+        - Title: 'Brightcove Player Sample: Download Video Plugin'
+          Description: 'This sample has a note at the top to point to the new built in Download Button Plugin document.'
+          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-download-video-plugin.html
+          Product: Brightcove Player
+          Product_area: Download Button Plugin
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Player Configuration Guide'
-          Description: 'Added properties download_button and skip_buttons (Player v7.4.0 and above) to the configuration properties list'
-          Link: https://player.support.brightcove.com/general/player-configuration-guide.html
+        - Title: 'Brightcove Player Sample: Download Transcript'
+          Description: 'This sample has a note at the top to point to the new built in Download Button Plugin document.'
+          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-download-transcript.html
           Product: Brightcove Player
-          Product_area: Player Features
+          Product_area: Download Button Plugin
           Product_Update: 'false'
           Feature: ''
-          Status: Released  
-        - Title: 'Sending Brightcove Analytics from the Native SDK for Android'
-          Description: 'Updated text and code snippet for sending account ID'
-          Link: https://sdks.support.brightcove.com/android/analytics/sending-brightcove-analytics-native-sdk-android.html
-          Product: Device SDKs
-          Product_area: Native SDK for Android
+          Status: Released
+        - Title: 'Creating a TVOD Plan'
+          Description: 'Added Setup section to open a support ticket'
+          Link: https://beacon.support.brightcove.com/monetization/general/creating-tvod-plan.html
+          Product: Beacon
+          Product_area: Monetization
           Product_Update: 'false'
           Feature: ''
           Status: Released
         - Title: 'Creating an SVOD Plan'
-          Description: 'Updated for Evergent SVOD trials'
+          Description: 'Added Setup section to open a support ticket'
           Link: https://beacon.support.brightcove.com/monetization/general/creating-svod-plan.html
           Product: Beacon
           Product_area: Monetization
-          Product_Update: 'true'
-          Feature: 'Evergent SVOD trials'
+          Product_Update: 'false'
+          Feature: ''
           Status: Released
-    - type: Minor updates
-      docs:
-        - Title: 'Brightcove Native SDK for Android Release Notes'
-          Description: 'Added ExoPlayer version to the Android release notes'
-          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html
+        - Title: 'Code Snippets using the Native SDK for iOS'
+          Description: 'Added snippet to detect when the player is in view to start and stop video playback'
+          Link: https://sdks.support.brightcove.com/ios/resources/code-snippets-using-native-sdk-ios.html#Start_playback_when_in_view
+          Product: Device SDKs
+          Product_area: Native SDK for iOS
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Code Snippets using the Native SDK for Android'
+          Description: 'Added snippet to detect when the player is in view to start and stop video playback'
+          Link: https://sdks.support.brightcove.com/android/resources/code-snippets-using-native-sdk-android.html#Start_playback_when_in_view 
           Product: Device SDKs
           Product_area: Native SDK for Android
           Product_Update: 'false'
           Feature: ''
           Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Player E VOD Features'
+          Description: 'Feature availability table updated to show thumbnail scrubbing available for all platforms except Smart TV'
+          Link: https://beacon-help.support.brightcove.com/layout/e-vod-features.html#Feature_availability_table
+          Product: Beacon
+          Product_area: App Behavior
+          Product_Update: 'true'
+          Feature: 'Thumbnail Scrubbing Availability'
+          Status: Released
+        - Title: 'Fallback HDCP'
+          Description: 'Added note that Fallback HDCP with Playready in Windows is not supported.'
+          Link: https://apis.support.brightcove.com/playback-restrictions/guides/fallback-hdcp.html 
+          Product: Video Cloud
+          Product_area: Playback Restrictions
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Digital Rights Management (DRM)'
+          Description: 'Playready in Chromium Edge is available only in Windows 10+'
+          Link: https://studio.support.brightcove.com/general/content-protection/overview-digital-rights-management-drm-video-cloud.html 
+          Product: Video Cloud
+          Product_area: Content protection (DRM)
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        
           
