@@ -1,16 +1,5 @@
 - date: 14-April-2023
   types:
-    - type: New Brightcove Academy Courses
-      docs:
-        - Title: ''
-          Description: ''
-          Customer_Link: 
-          Employee_Link: 
-          Product: Video Cloud
-          Product_area: Integrations
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
     - type: New Docs
       docs:
         - Title: 'Overview of the Integrations Module'
