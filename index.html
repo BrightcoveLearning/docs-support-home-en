@@ -4,8 +4,57 @@ parent: null
 layout: landing_page
 ---
 
+<style>
+  .nav-tabs {
+    border-color: #898A93;
+  }
+
+  .nav-tabs .nav-link.active{
+    border-color: #898A93;
+    border-bottom: none;
+    color: #c3c3cb;
+  }
+
+  .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus{
+    border-color: #898A93;
+  }
+
+  .card-arrow-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  .card-arrow-link:hover {
+    color: black;
+    text-decoration: underline;
+  }
+
+  .gradient-1{
+    background: -webkit-linear-gradient(left, #A96c7E , #F86430);
+    background: -o-linear-gradient(right, #A96c7E, #F86430);
+    background: -moz-linear-gradient(right, #A96c7E, #F86430);
+    background: linear-gradient(to right, #A96c7E , #F86430); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gradient-2{
+    background: -webkit-linear-gradient(left, #9F7387 , #4EA9D1);
+    background: -o-linear-gradient(right, #9F7387, #4EA9D1);
+    background: -moz-linear-gradient(right, #9F7387, #4EA9D1);
+    background: linear-gradient(to right, #9F7387 , #4EA9D1); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+
+</style>
+
 <div class="justify-content-center">
-  <h2>Browse by product</h2>
+
+    <h2 class="gradient-1"><strong>BROWSE BY PRODUCT</strong></h2>
+ 
   <br/>
   <!-- CODE FOR TABS -->
   <nav>
@@ -13,7 +62,7 @@ layout: landing_page
       <button class="nav-link active" id="nav-video-cloud-tab" data-bs-toggle="tab" data-bs-target="#nav-video-cloud" type="button" role="tab" aria-controls="nav-video-cloud" aria-selected="true"><h5>Video Cloud</h5></button>
       <button class="nav-link" id="nav-beacon-tab" data-bs-toggle="tab" data-bs-target="#nav-beacon" type="button" role="tab" aria-controls="nav-beacon" aria-selected="false"><h5>Brightcove OTT</h5></button>
       <button class="nav-link" id="nav-audience-tab" data-bs-toggle="tab" data-bs-target="#nav-audience" type="button" role="tab" aria-controls="nav-audience" aria-selected="false"><h5>Audience Insights</h5></button>
-      <button class="nav-link" id="nav-developers-tab" data-bs-toggle="tab" data-bs-target="#nav-developers" type="button" role="tab" aria-controls="nav-developers" aria-selected="false"><h5>Players/APIs</h5></button>
+      <button class="nav-link" id="nav-developers-tab" data-bs-toggle="tab" data-bs-target="#nav-developers" type="button" role="tab" aria-controls="nav-developers" aria-selected="false"><h5>Player / APIs / SDKs</h5></button>
       <button class="nav-link" id="nav-zencoder-tab" data-bs-toggle="tab" data-bs-target="#nav-zencoder" type="button" role="tab" aria-controls="nav-zencoder" aria-selected="false"><h5>Zencoder</h5></button>
       <button class="nav-link" id="nav-training-tab" data-bs-toggle="tab" data-bs-target="#nav-training" type="button" role="tab" aria-controls="nav-training" aria-selected="false"><h5>Training</h5></button>
     </div>
@@ -410,58 +459,59 @@ layout: landing_page
     </div> 
   </div>
 
-  <h3>Resources</h3>
   <br/>
-  <div class="container" style="background-color: #FAFBFC; width: 80%;">
+  <h2 class="gradient-2"><strong>RESOURCES</strong></h2>
+  <br/>
+  <div class="container" style="background-color: #fbfbfb;">
    
-    <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
-      <div class="col">
+    <div class="row justify-content-center p-5" >
+      <div class="col-12 col-lg-4 py-3">
         <div class="card card-hover shadow-sm">
           <div class="card-body">
-            <h5 class="card-title mb-3">
-              <span class="span-icon card-icon-holder icon-theme me-2" >
-                <i class="fa-duotone fa-note"></i>
+            <h4 class="card-title mb-3">
+              <span class="span-icon me-2" >
+                <i class="fa-duotone fa-note fa-xl" style="--fa-secondary-color: rgb(216, 212, 194); --fa-primary-color: #f0ab8b;"></i>
               </span>
               <span class="card-title-text">Product Release Notes</span>
-            </h5>
-            <div class="card-text text-center">
+            </h4>
+            <div class="card-text ms-5">
               <p>Our most recent Product Release notes.</p>
-              <a href="/product-updates.html" class="btn btn-info">View notes</a>
+              <a class="card-arrow-link" href="/product-updates.html"><i class="fa-solid fa-arrow-right fa-bounce"></i> View notes</a>
             </div>
           </div><!--//card-body-->
         </div><!--//card-->         
       </div><!--//col-->
 
-      <div class="col">
+      <div class="col-12 col-lg-4 py-3">
         <div class="card card-hover shadow-sm">
           <div class="card-body">
-            <h5 class="card-title mb-3">
-              <span class="span-icon card-icon-holder icon-theme me-2" >
-                <i class="fa-duotone fa-books"></i>
+            <h4 class="card-title mb-3">
+              <span class="span-icon me-2" >
+                <i class="fa-duotone fa-books fa-xl" style="--fa-secondary-color: #4d9dad; --fa-primary-color: #4d96d2;"></i>
               </span>
               <span class="card-title-text">Documentation Updates</span>
-            </h5>
-            <div class="card-text text-center">
+            </h4>
+            <div class="card-text ms-5">
               <p>Our most recent Documentation Updates.</p>
-               <a href="/doc-updates.html" class="btn btn-info">View updates</a>         
+               <a class="card-arrow-link" href="/doc-updates.html"> <i class="fa-solid fa-arrow-right fa-bounce"></i> View updates</a>         
             </div>
           
           </div><!--//card-body-->
         </div><!--//card-->         
       </div><!--//col-->
 
-      <div class="col">
+      <div class="col-12 col-lg-4 py-3">
         <div class="card card-hover shadow-sm">
           <div class="card-body">
-            <h5 class="card-title mb-3">
-              <span class="span-icon card-icon-holder icon-theme me-2" >
-                <i class="fa-duotone fa-lightbulb-on"></i>
+            <h4 class="card-title mb-3">
+              <span class="span-icon me-2" >
+                <i class="fa-duotone fa-lightbulb-on fa-xl" style="--fa-secondary-color: gold; --fa-primary-color: #F76D2E;"></i>
               </span>
               <span class="card-title-text">Bright Spot Community</span>
-            </h5>
-            <div class="card-text text-center">
+            </h4>
+            <div class="card-text ms-5">
               <p>Need more help? ask the community.</p>
-             <a href="https://community.brightcove.com/s/" class="btn btn-info">View forum</a>
+             <a class="card-arrow-link" href="https://community.brightcove.com/s/"><i class="fa-solid fa-arrow-right fa-bounce"></i> View forum</a>
             </div>
           </div><!--//card-body-->
         </div><!--//card-->         
@@ -476,8 +526,7 @@ layout: landing_page
 
   <!-- CONTACT SUPPORT SECTION -->
   <div class="text-center">
-    <h4>Contact our Support Team</h4>
-    <a href="https://supportportal.brightcove.com/s/login/?language=en_US&ec=302&startURL=%2Fs%2F" class="btn btn-secondary">Contact Support</a>
+    <a class="btn btn-outline-dark" href="https://supportportal.brightcove.com/s/login/?language=en_US&ec=302&startURL=%2Fs%2F" style="border: 2px solid black; border-radius: 50px;">CONTACT OUR SUPPORT TEAM</a>
   </div>
 
 </div>
