@@ -1,185 +1,178 @@
-- date: 14-April-2023
+- date: 21-April-2023
   types:
     - type: New Docs
       docs:
-        - Title: 'Overview of the Integrations Module'
-          Description: 'The Integrations module allows you to set up integrations with popular 3rd party systems without working with APIs.'
-          Link: https://studio.support.brightcove.com/integrations/integrations-module/getting-started/getting-started-integrations-module.html
-          Product: Integrations
-          Product_area: Integrations module
+        - Title: 'Interactivity Documentation'
+          Description: 'Interactivity documentation and videos'
+          Link: https://studio.support.brightcove.com/interactivity/index.html
+          Product: Video Cloud
+          Product_area: Interactivity
           Product_Update: 'true'
-          Feature: 'New integrations module'
-        - Title: 'Setting Up an Automatic Ingestion Folder on Dropbox'
-          Description: 'Brightcove allows you to select a folder on the popular cloud storage platform Dropbox that we will automatically ingest videos from.'
-          Link: https://studio.support.brightcove.com/integrations/integrations-module/watched-folders/dropbox.html
-          Product: Integrations
-          Product_area: Integrations module
-          Product_Update: 'true'
-          Feature: 'Dropbox ingestion folder'
-          Status: Staging
-        - Title: 'Setting Up an Automatic Ingestion Folder on Google Drive'
-          Description: 'Brightcove allows you to select a folder on the popular cloud storage platform Google Drive that we will automatically ingest videos from.'
-          Link: https://studio.support.brightcove.com/integrations/integrations-module/watched-folders/google-drive.html
-          Product: Integrations
-          Product_area: Integrations module
-          Product_Update: 'true'
-          Feature: 'Google Drive ingestion folder'
-          Status: Staging
-        - Title: 'Brightcove Player Sample: Display Duration'
-          Description: 'In this topic, you will learn to display the duration of the video over the video poster that is displayed. The duration disappears when the play button is pressed.'
-          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-display-duration.html
+          Feature: 'New Interactivity Module'
+          Status: Released
+        - Title: 'Interactivity Viewer Plugin'
+          Description: 'In this topic, you will learn about using the interactivity plugin to allow usage of Brightcove Interactivity functionality.'
+          Link: https://player.support.brightcove.com/plugins/interactivity-viewer.html
           Product: Brightcove Player
-          Product_area: Code Samples
+          Product_area: Plugins
           Product_Update: 'false'
           Feature: ''
-          Status: Released 
+          Status: Released
+        - Title: 'Kollective eCDN Plugin'
+          Description: 'In this topic, you will learn to implement the Kollective eCDN plugin.'
+          Link: https://player.support.brightcove.com/plugins/kollective-ecdn-plugin.html
+          Product: Brightcove Player
+          Product_area: Plugins
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released       
+    - type: Major updates
+      docs:
+        - Title: 'Installing a Test Build for LG (webOS)'
+          Description: 'LG installation guide updated: VS code instructions (supported) added and (depricated/ not supported) IDE instructions removed'
+          Link: https://beacon.support.brightcove.com/publishing-apps/lg/installing-lg-webos-test-build.html
+          Product:  Beacon
+          Product_area:  App Publishing and Behavior
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'CAE Settings'
+          Description: 'Updated settings for CAE a la carte'
+          Link: https://zencoder.support.brightcove.com/encoding-settings/general/cae-settings.html
+          Product: Zencoder
+          Product_area: CAE settings
+          Product_Update: 'true'
+          Feature: 'CAE a la carte'
+          Status: Released
+        - Title: 'General Output Settings'
+          Description: 'Updated settings for CAE a la carte'
+          Link: https://zencoder.support.brightcove.com/encoding-settings/general/encoding-settings-general-output-settings.html
+          Product: Zencoder
+          Product_area: CAE settings
+          Product_Update: 'false'
+          Feature: 'CAE a la carte'
+          Status: Released
+        - Title: 'CAE Guide'
+          Description: 'Updated guide for CAE a la carte'
+          Link: https://zencoder.support.brightcove.com/encoding-guides/cae-guide.html
+          Product: Zencoder
+          Product_area: CAE settings
+          Product_Update: 'false'
+          Feature: 'CAE a la carte'
+          Status: Released
+        - Title: 'Creating a Video Clip Using the Live Module'
+          Description: 'Removed note that CAE profiles cannot be used for clips as that is no longer true'
+          Link: https://live.support.brightcove.com/live-module/creating-video-clip-using-live-module.html
+          Product: Live
+          Product_area: Clipping
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Live API Reference'
+          Description: 'Removed note that CAE profiles cannot be used for clips as that is no longer true'
+          Link: https://apis.support.brightcove.com/live-api/references/reference.html
+          Product: Live
+          Product_area: Clipping
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Live: Best Practices'
+          Description: 'Changed the maximum input bitrate from 10 MBPS to 20 MBPS'
+          Link: https://live.support.brightcove.com/get-started/live-module-guidelines-and-best-practices.html
+          Product: Live
+          Product_area: Live Streaming
+          Product_Update: 'true'
+          Feature: 'Live input max bitrate'
+          Status: Released
         - Title: 'Seek Buttons Plugin'
-          Description: 'In this topic, you will learn about the seek buttons plugin for Brightcove Player. This plugin will allow you to seek forward/back through a video for a configurable amount of time.'
+          Description: 'Code sample for seek buttons added'
           Link: https://player.support.brightcove.com/plugins/seek-buttons-plugin.html
           Product: Brightcove Player
           Product_area: Plugins
-          Product_Update: 'true'
-          Feature: 'Seek buttons'
-          Status: Released
-    - type: Major updates
-      docs:
-        - Title: 'Getting Started with Brightcove Video Connect for the Drupal CMS'
-          Description: 'The current version of the connector is now verified to work with Drupal 10.x'
-          Link: https://integrations.support.brightcove.com/drupal/getting-started-brightcove-video-connect-drupal-cms.html
-          Product: Integrations
-          Product_area: Drupal Connector
-          Product_Update: 'true'
-          Feature: 'Support for Drupal 10.0'
-          Status: Released
-        - Title: 'Brightcove Player Sample: Download Video Plugin'
-          Description: 'This sample has a note at the top to point to the new built in Download Button Plugin document.'
-          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-download-video-plugin.html
-          Product: Brightcove Player
-          Product_area: Download Button Plugin
           Product_Update: 'false'
           Feature: ''
-          Status: Released
-        - Title: 'Brightcove Player Sample: Download Transcript'
-          Description: 'This sample has a note at the top to point to the new built in Download Button Plugin document.'
-          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-download-transcript.html
-          Product: Brightcove Player
-          Product_area: Download Button Plugin
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating a TVOD Plan'
-          Description: 'Added Setup section to open a support ticket'
-          Link: https://beacon.support.brightcove.com/monetization/general/creating-tvod-plan.html
-          Product: Beacon
-          Product_area: Monetization
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating an SVOD Plan'
-          Description: 'Added Setup section to open a support ticket'
-          Link: https://beacon.support.brightcove.com/monetization/general/creating-svod-plan.html
-          Product: Beacon
-          Product_area: Monetization
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Code Snippets using the Native SDK for iOS'
-          Description: 'Added snippet to detect when the player is in view to start and stop video playback'
-          Link: https://sdks.support.brightcove.com/ios/resources/code-snippets-using-native-sdk-ios.html#Start_playback_when_in_view
-          Product: Device SDKs
-          Product_area: Native SDK for iOS
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Code Snippets using the Native SDK for Android'
-          Description: 'Added snippet to detect when the player is in view to start and stop video playback'
-          Link: https://sdks.support.brightcove.com/android/resources/code-snippets-using-native-sdk-android.html#Start_playback_when_in_view 
-          Product: Device SDKs
-          Product_area: Native SDK for Android
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Download Button Plugin'
-          Description: 'Steps listed in the Implement using Players module section updated'
-          Link: https://player.support.brightcove.com/plugins/download-button-plugin.html#Implement_using_Players_module
-          Product: Brightcove Player
-          Product_area: Plugins
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'React Player Loader'
-          Description: 'onEmbedCreated information added to parameters section'
-          Link: https://player.support.brightcove.com/coding-topics/react-player-loader.html#Parameters
-          Product: Brightcove Player
-          Product_area: Coding Topics
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Implementing Server-Side Ads with Brightcove Player'
-          Description: 'vmapURLParams information added to options section'
-          Link: https://player.support.brightcove.com/plugins/implementing-server-side-ads-brightcove-player.html#Options
-          Product: Brightcove Player
-          Product_area: Plugins
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
+          Status: Released      
     - type: Minor updates
       docs:
-        - Title: 'Player E VOD Features'
-          Description: 'Feature availability table updated to show thumbnail scrubbing available for all platforms except Smart TV'
-          Link: https://beacon-help.support.brightcove.com/layout/e-vod-features.html#Feature_availability_table
-          Product: Beacon
-          Product_area: App Behavior
-          Product_Update: 'true'
-          Feature: 'Thumbnail Scrubbing Availability'
-          Status: Released
-        - Title: 'Fallback HDCP'
-          Description: 'Added note that Fallback HDCP with Playready in Windows is not supported.'
-          Link: https://apis.support.brightcove.com/playback-restrictions/guides/fallback-hdcp.html 
+        - Title: 'Analytics Report Reference'
+          Description: 'Added Interactivity analytics information'
+          Link: https://studio.support.brightcove.com/analytics/reports/analytics-report-reference.html
           Product: Video Cloud
-          Product_area: Playback Restrictions
+          Product_area: Analytics
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Overview: Digital Rights Management (DRM)'
-          Description: 'Playready in Chromium Edge is available only in Windows 10+'
-          Link: https://studio.support.brightcove.com/general/content-protection/overview-digital-rights-management-drm-video-cloud.html 
+        - Title: 'Getting Started with Video Cloud Studio'
+          Description: 'Added Interactivity module info'
+          Link: https://studio.support.brightcove.com/get-started/getting-started-video-cloud-studio.html
           Product: Video Cloud
-          Product_area: Content protection (DRM)
+          Product_area: Analytics
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Player E Selection'
-          Description: 'Update Player E Selection doc to match latest UI'
-          Link: https://beacon-help.support.brightcove.com/layout/e-selection.html
-          Product: Beacon
-          Product_area: Managing Pages
+        - Title: 'Setting Player Properties'
+          Description: 'Added Interactivity plugin info'
+          Link: https://studio.support.brightcove.com/players/properties/setting-player-properties.html#interactivity
+          Product: Video Cloud
+          Product_area: Players
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Working with the Immersion Portal Template'
+          Description: 'Added note that player v6 is required when using Immersion template'
+          Link: https://gallery.support.brightcove.com/experiences/portal/templates/working-with-immersion-template.html
+          Product: Video Cloud
+          Product_area: Gallery
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Installing the Kollective Player Plugin'
+          Description: 'including the the URL and policy key as part of the plugin configuration'
+          Link: https://integrations.support.brightcove.com/ecdn/kollective/add-kollective-player-plugin.html
+          Product: CMS Integrations
+          Product_area: Kollective
           Product_Update: 'false'
           Feature: ''
           Status: Released 
-        - Title: 'Overview: Delivery System API'
-          Description: 'Delivery System API: highlight warning note added to create repository, and not to update a player repository'
-          Link: https://apis.support.brightcove.com/delivery-system/overview-delivery-system-api.html
-          Product: APIs
-          Product_area: Delivery System API
+        - Title: 'Plugin Version Reference'
+          Description: 'Plugins Updates'
+          Link: https://player.support.brightcove.com/plugins/plugin-version-reference.html
+          Product: Brightcove Player
+          Product_area: Plugins
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Step-by-Step: Delivery System API'
-          Description: 'Delivery System API: highlight warning note added to create repository, and not to update a player repository'
-          Link: https://apis.support.brightcove.com/delivery-system/step-step-delivery-system-api.html
-          Product: APIs
-          Product_area: Delivery System API
+        - Title: 'Seek Buttons Plugin'
+          Description: 'Seek Buttons Plugins Updated to New Version'
+          Link: https://player.support.brightcove.com/plugins/seek-buttons-plugin.html
+          Product:  Brightcove Player 
+          Product_area: Plugins
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Configuring App Settings'
-          Description: 'Update Configuring App Settings to latest UI'
-          Link: https://beacon-help.support.brightcove.com/layout/configuring-app-settings.html
-          Product: Beacon 
-          Product_area:  Managing Pages
+        - Title: 'Getting Started with Ramp Multicast+ and Video Cloud'
+          Description: 'Updated outdated links'
+          Link: https://integrations.support.brightcove.com/ecdn/ramp/getting-started-ramp-multicast-and-video-cloud.html
+          Product: Video Cloud
+          Product_area: Integrations
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        
+        - Title: 'Zencoder Pricing'
+          Description: 'Updated FAQ on charges for unsuccessful jobs to clarify that charges will apply for outputs that are created, but not for outputs that fail'
+          Link: https://zencoder.support.brightcove.com/general-information/faq-zencoder-pricing.html
+          Product: Zencoder
+          Product_area: Pricing
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Player Configuration Guide'
+          Description: 'Added interactivity_project_id to the list of properties'
+          Link: https://player.support.brightcove.com/general/player-configuration-guide.html#interactivity_project_id
+          Product: Brightcove Player
+          Product_area: Plugins
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+          
           
