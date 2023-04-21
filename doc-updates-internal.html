@@ -4,11 +4,11 @@ description: 'Below are recent documentation updates. <strong>This is the <span 
 parent: home
 layout: staging
 ---
-<h1>{{ page.title }}</h1>
+<!-- <h1>{{ page.title }}</h1>
 <article class="bcls-article">
   <summary>{{ page.description }}</summary>
 
-  <!-- {% for item in site.data.s-site-assets-data.doc-updates %}
+  {% for item in site.data.s-site-assets-data.doc-updates %}
   <section class="bcls-section">
     <h2 id="{{ item.date | replace: " -", "_" }}">{{ item.date }}</h2>
     <hr>
@@ -23,14 +23,14 @@ layout: staging
     {% endif %}
     <br>
     {% if type.type == 'New Brightcove Academy Courses' %}
-    <li><strong>Customer Link:</strong> <a href="{{ doc.Customer_Link }}">{{ doc.Customer_Link }}</a></li>
-    <li><strong>Employee Link:</strong> <a href="{{ doc.Employee_Link }}">{{ doc.Employee_Link }}</a></li>
+    <strong>Customer Link:</strong> <a href="{{ doc.Customer_Link }}">{{ doc.Customer_Link }}</a><br>
+    <strong>Employee Link:</strong> <a href="{{ doc.Employee_Link }}">{{ doc.Employee_Link }}</a><br>
     {% else %}
-    <li><strong>Link:</strong> <a href="{{ doc.Link }}">{{ doc.Link }}</a></li>
+    <strong>Link:</strong> <a href="{{ doc.Link }}">{{ doc.Link }}</a><br>
     {% endif %}
     <strong>Product:</strong> {{ doc.Product }}<br>
     <strong>Product Area:</strong> {{ doc.Product_area }}<br>
-    <strong>Status:</strong> {{ doc.Status }}<br>
+    <strong>Status:</strong> <span style="color:#990000;">{{ doc.Status }}</span><br>
     <hr>
     {% endfor %}
     {% else %}
