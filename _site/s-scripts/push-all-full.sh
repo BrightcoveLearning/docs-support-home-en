@@ -1,7 +1,12 @@
 bold=`tput bold`
 normal=`tput sgr0`
+if [ $NB -eq 'true' ]
+then
+COMMITMESSAGE=$NBMessage
+else
 echo "Enter your ${bold}COMMIT MESSAGE${normal}:"
-read COMMITMESSAGE 
+read COMMITMESSAGE
+fi 
 cd ..
 git pull
 bundle update
