@@ -1,8 +1,8 @@
 bold=`tput bold`
 normal=`tput sgr0`
-if [ $NB -eq 'true' ]
+if [ -v NB ]
 then
-COMMITMESSAGE=$NBMessage
+COMMITMESSAGE="Nightly Build"
 else
 echo "Enter your ${bold}COMMIT MESSAGE${normal}:"
 read COMMITMESSAGE
