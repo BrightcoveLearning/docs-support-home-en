@@ -5,6 +5,7 @@ echo $0
 if [[ $0 == nightly-build.sh ]]
 then
   COMMITMESSAGE="Nightly Build"
+  echo $COMMITMESSAGE
 else
   echo "Enter your ${bold}COMMIT MESSAGE${normal}:"
   read COMMITMESSAGE
