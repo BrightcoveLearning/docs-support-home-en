@@ -1,0 +1,31 @@
+---
+title: Learning Resource Updates
+description: New docs and major updates.
+parent: home
+layout: staging
+---
+<h1>{{ page.title }}</h1>
+<article class="bcls-article">
+  <summary>{{ page.description }}</summary>
+  {% for item in site.data.s-site-assets-data.doc-updates-q1-2023 %}
+    <section class="bcls-section">
+      <h2 id="{{ item.date | replace: " -", "_" }}">{{ item.date }}</h2>
+      {% for type in item.types %}
+        {% if type.type == 'New Docs' or type.type == 'Major updates' %}
+          <h3>{{ type.type }}</h3>
+          {% if type.docs %}
+            <ul style="list-style: none;">
+              {% for doc in type.docs %}
+                {% if doc.Status == "Released" %}
+                <li><strong>Title:</strong> {{ doc.Title }}</li>
+                <li><strong>Description:</strong> {{ doc.Description }}</li>
+                <li style="margin-bottom: 1rem;"><strong>Link:</strong> <a href="{{ doc.Link }}">{{ doc.Link }}</a></li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </section>
+  {% endfor %}
+</article>
