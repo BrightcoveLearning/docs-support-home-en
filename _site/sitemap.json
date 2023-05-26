@@ -165,6 +165,11 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/new-docs-q1-23.html",
+      "oldURL": "/new-docs-q1-23"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/new-docs.html",
       "oldURL": "/new-docs"
   },
