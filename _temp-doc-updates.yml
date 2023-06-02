@@ -1,15 +1,15 @@
 - date: 2-June-2023
   types:
     - type: New Docs
-      docs:
-        - Title: ''
-          Description: ''
-          Link: https://apis.support.brightcove.com/live-api/guides/live-auto-captions.html 
-          Product: Live
-          Product_area: Captions
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released      
+      docs:  
+        - Title: 'Brightcove Ad Insights'
+          Description: 'In this topic, you will learn how advertising insights can help you optimize your ad monetization plans.'
+          Link: https://studio.support.brightcove.com/analytics/module/ad-insights.html
+          Product: Video Cloud
+          Product_area: 'Analytics'
+          Product_Update: 'true'
+          Feature: 'New Ad Insights feature'
+          Status: Released    
     - type: Major updates
       docs:
         - Title: 'Playlist Endscreen Plugin'
@@ -17,6 +17,30 @@
           Link: https://player.support.brightcove.com/plugins/playlist-endscreen-plugin.html 
           Product: Brightcove Player 
           Product_area: 'Playlist'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Configuring Third-Party Tracking for a Portal Experience'
+          Description: 'Steps for migrating from UA to GA4 added to Integrating with Google Analytics section.'
+          Link: https://gallery.support.brightcove.com/experiences/portal/other/configuring-third-party-tracking-portal-experience.html#google
+          Product: Video Cloud
+          Product_area: 'Gallery'
+          Product_Update: 'true'
+          Feature: 'Support for the new version of Google Analytics (GA4)'
+          Status: Released
+        - Title: 'Google Analytics Plugin'
+          Description: 'Steps for migrating from UA to GA4 added'
+          Link: https://player.support.brightcove.com/plugins/google-analytics-plugin.html
+          Product: Brightcove Player
+          Product_area: 'Plugins'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Google Tag Manager Plugin for Brightcove Player'
+          Description: 'Information about GA4 added'
+          Link: https://player.support.brightcove.com/plugins/google-tag-manager-plugin-brightcove-player.html
+          Product: Brightcove Player
+          Product_area: 'Plugins'
           Product_Update: 'false'
           Feature: ''
           Status: Released
@@ -59,6 +83,14 @@
           Link: https://live.support.brightcove.com/get-started/live-module-guidelines-and-best-practices.html#Content_context 
           Product: Live 
           Product_area: 'Best Practices'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Configuring the Settings for an In-Page Experience'
+          Description: 'Note with information for GA4 added to Configuring tracking section'
+          Link: https://gallery.support.brightcove.com/experiences/inpage/customizing/configuring-settings-page-experience.html#tracking
+          Product: Video Cloud
+          Product_area: 'Gallery'
           Product_Update: 'false'
           Feature: ''
           Status: Released
