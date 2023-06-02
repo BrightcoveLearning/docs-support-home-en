@@ -44,6 +44,30 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Overview: Content Protection'
+          Description: 'Added explanation of how token authentication works in Video Cloud'
+          Link: https://player.support.brightcove.com/content-protection/overview-content-protection.html#ttl
+          Product: Video Cloud
+          Product_area: 'Content Protection'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Test Jobs and Integration Mode'
+          Description: 'Added details on getting an API Key and using the Request Builder'
+          Link: https://zencoder.support.brightcove.com/integration/test-jobs-and-integration-mode.html
+          Product: Zencoder
+          Product_area: 'Integrations'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Platform APIs'
+          Description: 'Added new APIs'
+          Link: https://apis.support.brightcove.com/getting-started/getting-started-brightcove-apis.html#videocloudapis
+          Product: Video Cloud
+          Product_area: 'Platform APIs'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Minor updates
       docs:
         - Title: 'Using Captions with the Brightcove Native SDKs'
@@ -89,6 +113,14 @@
         - Title: 'Configuring the Settings for an In-Page Experience'
           Description: 'Note with information for GA4 added to Configuring tracking section'
           Link: https://gallery.support.brightcove.com/experiences/inpage/customizing/configuring-settings-page-experience.html#tracking
+          Product: Video Cloud
+          Product_area: 'Gallery'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Gallery In-Page Experience Client API'
+          Description: 'Added videoEnded event'
+          Link: https://apis.support.brightcove.com/in-page-exerience-client-api/ClientApi.html#event:videoEnded
           Product: Video Cloud
           Product_area: 'Gallery'
           Product_Update: 'false'
