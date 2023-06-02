@@ -1,160 +1,64 @@
-- date: 28-April-2023
+- date: 2-June-2023
   types:
     - type: New Docs
       docs:
-        - Title: 'Automated Captions using the Live API'
-          Description: 'In this topic you will learn how to use the Live API to enable automated captions in your live stream.'
+        - Title: ''
+          Description: ''
           Link: https://apis.support.brightcove.com/live-api/guides/live-auto-captions.html 
           Product: Live
           Product_area: Captions
           Product_Update: 'false'
           Feature: ''
-          Status: Released
-        - Title: 'Brightcove QoE Analytics'
-          Description: 'In this topic, you will learn about Quality of Experience (QoE) analytics associated with Brightcove Player.'
-          Link: https://studio.support.brightcove.com/analytics/module/qoe-analytics.html 
-          Product: Video Cloud
-          Product_area: Analytics
-          Product_Update: 'true'
-          Feature: 'Brightcove QoE Analytics'
-          Status: Released
-        - Title: 'Configuring a Non-Brightcove Player for QoE'
-          Description: 'In this topic, you will learn how to send Quality of Experience (QoE) Analytics data to Brightcove from your custom, non-Brightcove player.'
-          Link: https://apis.support.brightcove.com/data-collection/getting-started/configuring-nonbc-player-qoe.html  
-          Product: Video Cloud
-          Product_area: Analytics
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released       
+          Status: Released      
     - type: Major updates
       docs:
-        - Title: 'Creating and Managing Live Events using the Live Module'
-          Description: 'Added support for automated captions'
-          Link: https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#create 
-          Product: Live
-          Product_area: Captions
-          Product_Update: 'true'
-          Feature: 'Live Automated Captions'
-          Status: Released
-        - Title: 'Live API Reference'
-          Description: 'Added properties related to automated captions'
-          Link: https://apis.support.brightcove.com/live-api/references/reference.html 
-          Product: Live
-          Product_area: Captions
+        - Title: 'Playlist Endscreen Plugin'
+          Description: 'Fixed playlist endscreen plugin sample and updated code'
+          Link: https://player.support.brightcove.com/plugins/playlist-endscreen-plugin.html 
+          Product: Brightcove Player 
+          Product_area: 'Playlist'
           Product_Update: 'false'
           Feature: ''
-          Status: Released
-        - Title: 'Overview: Data Collection API v2'
-          Description: 'Added Fields and events for QoE section'
-          Link: https://apis.support.brightcove.com/data-collection/getting-started/overview-data-collection-api-v2.html#Fields_and_events_for_QoE  
-          Product: Video Cloud
-          Product_area: Analytics
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating a JSON Web Token (JWT)'
-          Description: 'Added new ip claim for Playback Restrictions'
-          Link: https://apis.support.brightcove.com/general/features/create-json-web-token.html 
-          Product: Video Cloud
-          Product_area: Playback Restrictions
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Jump Start: Pre-roll Ad'
-          Description: 'Pre-roll Ad sample updated'
-          Link: https://player.support.brightcove.com/advertising/jump-start-pre-roll-ad.html
-          Product: Brightcove Player
-          Product_area: Advertising
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Player Sample: Scrolling Player into View with Ads'
-          Description: 'Updated code to correct problem with audio form ad and video both playing at the same time'
-          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-scrolling-player-view-ads.html
-          Product: Brightcove Player
-          Product_area: Code Sample
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Dynamic Ingest API: Best Practices'
-          Description: 'Updated concurrent job and ingest queue limits for changes.'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/general/dynamic-ingest-api-best-practices.html#best_practices
-          Product: Video Cloud
-          Product_area: Platform APIs
-          Product_Update: 'true'
-          Feature: 'Dynamic Ingest API ingest queues and priorities'
-          Status: Released
-        - Title: 'Dynamic Delivery Ingest Priority Queueing'
-          Description: 'Updated concurrent job and ingest queue limits for changes.'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/dynamic-delivery-ingest-priority-queueing.html
-          Product: Video Cloud
-          Product_area: Platform APIs
-          Product_Update: 'false'
-          Feature: 'Dynamic Ingest API ingest queues and priorities'
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Creating a Video Clip Using the Live Module'
-          Description: 'Added note about automated captions and video clipping'
-          Link: https://live.support.brightcove.com/live-module/creating-video-clip-using-live-module.html 
-          Product: Live
-          Product_area: Captions
+        - Title: 'Using Captions with the Brightcove Native SDKs'
+          Description: 'Added note about using captions with PiP and the Native SDKs'
+          Link: https://sdks.support.brightcove.com/features/using-captions-brightcove-native-sdks.html#Picture_in_Picture_mode 
+          Product: Device SDKs
+          Product_area: 'Picture-in-Picture'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Brightcove Player Sample: Automatically Set Caption Language'
-          Description: 'Code sample fixed'
-          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-automatically-set-caption-language.html
-          Product: Brightcove Player
-          Product_area: Code Samples
+        - Title: 'Picture in Picture with the Native SDKs'
+          Description: 'Added note about using captions with PiP and the Native SDKs'
+          Link: https://sdks.support.brightcove.com/features/picture-picture-native-sdks.html#Android_implementation  
+          Product: Device SDKs
+          Product_area: 'Picture-in-Picture'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Adding Audio Tracks to Videos'
-          Description: 'Limitation related to videos shared from other accounts added'
-          Link: https://corptv.support.brightcove.com/media/captions/adding-audio-tracks-videos-using-media-module.html
-          Product: CorpTV
-          Product_area: Media
+        - Title: 'Brightcove Player 7 Migration Guide'
+          Description: 'Added note about using playlist plugins with BC Player 7'
+          Link: https://player.support.brightcove.com/references/bcp7-migration-guide.html#Plugins 
+          Product: Brightcove Player 
+          Product_area: 'Playlist'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Dynamic Ingest API: Best Practices'
-          Description: 'Link for fetch the available profiles for the account updated.'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/general/dynamic-ingest-api-best-practices.html
-          Product: Video Cloud
-          Product_area: Dynamic Ingest API
+        - Title: 'Playlist API Guide'
+          Description: 'Added note about using playlist plugins with BC Player 7'
+          Link: https://player.support.brightcove.com/references/guide-playlist-api.html#playlist 
+          Product: Brightcove Player 
+          Product_area: 'Playlist'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Dynamic Ingest API: Best Practices'
-          Description: 'Link for fetch the available profiles for the account updated.'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/general/dynamic-ingest-api-best-practices.html
-          Product: Video Cloud
-          Product_area: Dynamic Ingest API
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Live API: Static Entry Points'
-          Description: 'Link for create job updated.'
-          Link: https://apis.support.brightcove.com/live-api/guides/live-api-static-entry-points.html#Creating_a_static_entry_point
-          Product: Video Cloud
-          Product_area: Live API
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Reviewing Social Analytics'
-          Description: 'Added note that Instagram analytics are not displayed'
-          Link: https://studio.support.brightcove.com/social/analytics/reviewing-social-analytics.html
-          Product: Video Cloud
-          Product_area: Social
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Downloading Videos from Video Cloud'
-          Description: 'Added more information on download options'
-          Link: https://studio.support.brightcove.com/media/manage/downloading-videos-video-cloud.html
-          Product: Video Cloud
-          Product_area: Media
+        - Title: 'Brightcove Live: Best Practices'
+          Description: 'Updated note about input bitrate to top profile ratio'
+          Link: https://live.support.brightcove.com/get-started/live-module-guidelines-and-best-practices.html#Content_context 
+          Product: Live 
+          Product_area: 'Best Practices'
           Product_Update: 'false'
           Feature: ''
           Status: Released
