@@ -19,7 +19,7 @@ layout: staging
                 {% if doc.Status == "Released" %}
                 <li><strong>Title:</strong> {{ doc.Title }}</li>
                 <li><strong>Description:</strong> {{ doc.Description }}</li>
-                <li><strong style="margin-bottom: 1rem;">Link:</strong> <a href="{{ doc.Link }}">{{ doc.Link }}</a></li>
+                <li style="margin-bottom: 2rem;"><strong>Link:</strong> <a href="{{ doc.Link }}">{{ doc.Link }}</a></li>
                 {% endif %}
               {% endfor %}
             </ul>
