@@ -1,15 +1,5 @@
-- date: 2-June-2023
+- date: 9-June-2023
   types:
-    - type: New Docs
-      docs:  
-        - Title: ''
-          Description: ''
-          Link: https://studio.support.brightcove.com/analytics/module/ad-insights.html
-          Product: Video Cloud
-          Product_area: 'Analytics'
-          Product_Update: 'true'
-          Feature: 'New Ad Insights feature'
-          Status: Released    
     - type: Major updates
       docs:
         - Title: 'Creating a Network Log'
