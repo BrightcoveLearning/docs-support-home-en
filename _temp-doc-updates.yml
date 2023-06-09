@@ -44,6 +44,14 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Brightcove Player 7 Migration Guide'
+          Description: 'Plugins table updated'
+          Link: https://player.support.brightcove.com/references/bcp7-migration-guide.html#Plugins
+          Product: Brightcove Player
+          Product_area: 'References'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Minor updates
       docs:
         - Title: 'Brightcove Ad Insights'
@@ -59,6 +67,14 @@
           Link: https://apis.support.brightcove.com/dynamic-ingest/general/dynamic-ingest-api-best-practices.html
           Product: Video Cloud
           Product_area: 'Platform APIs'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Download Button Plugin'
+          Description: 'Note about the events added'
+          Link: https://player.support.brightcove.com/plugins/download-button-plugin.html#Events
+          Product: Brightcove Player
+          Product_area: 'Plugins'
           Product_Update: 'false'
           Feature: ''
           Status: Released
