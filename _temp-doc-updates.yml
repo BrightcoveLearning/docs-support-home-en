@@ -2,8 +2,8 @@
   types:
     - type: New Docs
       docs:  
-        - Title: 'Brightcove Ad Insights'
-          Description: 'In this topic, you will learn how advertising insights can help you optimize your ad monetization plans.'
+        - Title: ''
+          Description: ''
           Link: https://studio.support.brightcove.com/analytics/module/ad-insights.html
           Product: Video Cloud
           Product_area: 'Analytics'
@@ -12,37 +12,21 @@
           Status: Released    
     - type: Major updates
       docs:
-        - Title: 'Playlist Endscreen Plugin'
-          Description: 'Fixed playlist endscreen plugin sample and updated code'
-          Link: https://player.support.brightcove.com/plugins/playlist-endscreen-plugin.html 
-          Product: Brightcove Player 
-          Product_area: 'Playlist'
+        - Title: 'Creating a Network Log'
+          Description: 'Added more general instructions beyond the specific use case the doc addressed'
+          Link: https://player.support.brightcove.com/troubleshooting/creating-network-log.html
+          Product: Brightcove Player
+          Product_area: 'Troubleshooting'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Configuring Third-Party Tracking for a Portal Experience'
-          Description: 'Steps for migrating from UA to GA4 added to Integrating with Google Analytics section.'
-          Link: https://gallery.support.brightcove.com/experiences/portal/other/configuring-third-party-tracking-portal-experience.html#google
-          Product: Video Cloud
-          Product_area: 'Gallery'
+        - Title: 'Viewability'
+          Description: 'Added new pause_in_background_tab settings'
+          Link: https://player.support.brightcove.com/playback/brightcove-player-viewability.html
+          Product: Brightcove Player
+          Product_area: 'Viewability settings'
           Product_Update: 'true'
-          Feature: 'Support for the new version of Google Analytics (GA4)'
-          Status: Released
-        - Title: 'Google Analytics Plugin'
-          Description: 'Steps for migrating from UA to GA4 added'
-          Link: https://player.support.brightcove.com/plugins/google-analytics-plugin.html
-          Product: Brightcove Player
-          Product_area: 'Plugins'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Google Tag Manager Plugin for Brightcove Player'
-          Description: 'Information about GA4 added'
-          Link: https://player.support.brightcove.com/plugins/google-tag-manager-plugin-brightcove-player.html
-          Product: Brightcove Player
-          Product_area: 'Plugins'
-          Product_Update: 'false'
-          Feature: ''
+          Feature: 'pause_in_background_tab'
           Status: Released
         - Title: 'Overview: Content Protection'
           Description: 'Added explanation of how token authentication works in Video Cloud'
@@ -52,77 +36,29 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Test Jobs and Integration Mode'
-          Description: 'Added details on getting an API Key and using the Request Builder'
-          Link: https://zencoder.support.brightcove.com/integration/test-jobs-and-integration-mode.html
-          Product: Zencoder
-          Product_area: 'Integrations'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: Platform APIs'
-          Description: 'Added new APIs'
-          Link: https://apis.support.brightcove.com/getting-started/getting-started-brightcove-apis.html#videocloudapis
+        - Title: 'Interactive Examples Gallery'
+          Description: 'Updated the embed code for all samples to make them work with the new release of Interactivity'
+          Link: https://studio.support.brightcove.com/interactivity/examples/index.html
           Product: Video Cloud
-          Product_area: 'Platform APIs'
+          Product_area: 'Interactivity'
           Product_Update: 'false'
           Feature: ''
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Using Captions with the Brightcove Native SDKs'
-          Description: 'Added note about using captions with PiP and the Native SDKs'
-          Link: https://sdks.support.brightcove.com/features/using-captions-brightcove-native-sdks.html#Picture_in_Picture_mode 
-          Product: Device SDKs
-          Product_area: 'Picture-in-Picture'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Picture in Picture with the Native SDKs'
-          Description: 'Added note about using captions with PiP and the Native SDKs'
-          Link: https://sdks.support.brightcove.com/features/picture-picture-native-sdks.html#Android_implementation  
-          Product: Device SDKs
-          Product_area: 'Picture-in-Picture'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Player 7 Migration Guide'
-          Description: 'Added note about using playlist plugins with BC Player 7'
-          Link: https://player.support.brightcove.com/references/bcp7-migration-guide.html#Plugins 
-          Product: Brightcove Player 
-          Product_area: 'Playlist'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Playlist API Guide'
-          Description: 'Added note about using playlist plugins with BC Player 7'
-          Link: https://player.support.brightcove.com/references/guide-playlist-api.html#playlist 
-          Product: Brightcove Player 
-          Product_area: 'Playlist'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Live: Best Practices'
-          Description: 'Updated note about input bitrate to top profile ratio'
-          Link: https://live.support.brightcove.com/get-started/live-module-guidelines-and-best-practices.html#Content_context 
-          Product: Live 
-          Product_area: 'Best Practices'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Configuring the Settings for an In-Page Experience'
-          Description: 'Note with information for GA4 added to Configuring tracking section'
-          Link: https://gallery.support.brightcove.com/experiences/inpage/customizing/configuring-settings-page-experience.html#tracking
+        - Title: 'Brightcove Ad Insights'
+          Description: 'Removed LA note'
+          Link: https://studio.support.brightcove.com/analytics/module/ad-insights.html
           Product: Video Cloud
-          Product_area: 'Gallery'
+          Product_area: 'Analytics'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Gallery In-Page Experience Client API'
-          Description: 'Added videoEnded event'
-          Link: https://apis.support.brightcove.com/in-page-exerience-client-api/ClientApi.html#event:videoEnded
+        - Title: 'BDynamic Ingest API: Best Practices'
+          Description: 'Removed a section that is no longer relevant'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/general/dynamic-ingest-api-best-practices.html
           Product: Video Cloud
-          Product_area: 'Gallery'
+          Product_area: 'Platform APIs'
           Product_Update: 'false'
           Feature: ''
           Status: Released
