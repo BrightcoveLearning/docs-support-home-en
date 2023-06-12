@@ -6,6 +6,7 @@ git submodule add https://github.com/BrightcoveLearning/s-jekyll-page-includes
 git submodule add https://github.com/BrightcoveLearning/s-support
 git submodule add https://github.com/BrightcoveLearning/s-training
 git submodule add https://github.com/BrightcoveLearning/s-template-page-includes
+git submodule add https://github.com/BrightcoveLearning/s-brightcove-academy
 cd ..
 cd assets/images
 git submodule add https://github.com/BrightcoveLearning/s-support-img

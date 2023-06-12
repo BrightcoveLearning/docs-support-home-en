@@ -54,3 +54,6 @@
   path = assets/images/s-training-img
   url = https://github.com/BrightcoveLearning/s-training-img
   branch = main
+[submodule "_includes/s-brightcove-academy"]
+	path = _includes/s-brightcove-academy
+	url = https://github.com/BrightcoveLearning/s-brightcove-academy

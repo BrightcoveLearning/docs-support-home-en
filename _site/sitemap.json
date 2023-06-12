@@ -110,7 +110,7 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/training/",
+      "newURL": "https://support.brightcove.com/test-assets/captions/",
       "oldURL": "/index"
   },
 
@@ -140,12 +140,22 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/test-assets/captions/",
+      "newURL": "https://support.brightcove.com/training/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://support.brightcove.com/support/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/video-connector-walkthrough/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/advertising-with-brightcove/",
       "oldURL": "/index"
   },
 
