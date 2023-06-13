@@ -165,6 +165,11 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/jekyll-test.html",
+      "oldURL": "/jekyll-test"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/support/known-issues-studio-brightcove-player-and-apis.html",
       "oldURL": "/known-issues-studio-brightcove-player-and-apis"
   },
