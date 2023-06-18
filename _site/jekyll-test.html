@@ -429,14 +429,54 @@
 <p>DIR /</p>
 <p>PATH jekyll-test.html</p>
 
-<h3>Watch some videos!</h3>
-<div style="position: relative; display: block; max-width: 960px;"><div style="padding-top: 56.25%;"><iframe src="https://players.brightcove.net/6122266905001/default_default/index.html?videoId=1762885838409960144" allowfullscreen="" allow="encrypted-media" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div></div>
+<h3>Enter your email address and watch some videos!</h3>
+<p>Enter your email address: <input type="text" id="email"></p>
+<div style="max-width: 960px;"><style>video-js.video-js.vjs-fluid:not(.vjs-audio-only-mode) {padding-top: 56.25%;}</style><video-js id="player1" data-account="6122266905001" data-player="default" data-embed="default" controls="" data-video-id="1762885838409960144" data-playlist-id="" data-application-id="" class="vjs-fluid"></video-js></div><script src="https://players.brightcove.net/6122266905001/default_default/index.min.js"></script>
 
-<div style="position: relative; display: block; max-width: 960px;"><div style="padding-top: 56.25%;"><iframe src="https://players.brightcove.net/6122266905001/default_default/index.html?videoId=1762885838457121201" allowfullscreen="" allow="encrypted-media" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div></div>
+<div style="max-width: 960px;"><style>video-js.video-js.vjs-fluid:not(.vjs-audio-only-mode) {padding-top: 56.25%;}</style><video-js id="player2" data-account="6122266905001" data-player="default" data-embed="default" controls="" data-video-id="1762885838457121201" data-playlist-id="" data-application-id="" class="vjs-fluid"></video-js></div><script src="https://players.brightcove.net/6122266905001/default_default/index.min.js"></script>
 
-<div style="position: relative; display: block; max-width: 960px;"><div style="padding-top: 56.25%;"><iframe src="https://players.brightcove.net/6122266905001/default_default/index.html?videoId=6125938754001" allowfullscreen="" allow="encrypted-media" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div></div>
+<div style="max-width: 960px;"><style>video-js.video-js.vjs-fluid:not(.vjs-audio-only-mode) {padding-top: 56.25%;}</style><video-js id="player3" data-account="6122266905001" data-player="default" data-embed="default" controls="" data-video-id="6228856551001" data-playlist-id="" data-application-id="" class="vjs-fluid"></video-js></div><script src="https://players.brightcove.net/6122266905001/default_default/index.min.js"></script>
 
-<div style="position: relative; display: block; max-width: 960px;"><div style="padding-top: 56.25%;"><iframe src="https://players.brightcove.net/6122266905001/default_default/index.html?videoId=1758662340481346984" allowfullscreen="" allow="encrypted-media" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div></div>
+<div style="max-width: 960px;"><style>video-js.video-js.vjs-fluid:not(.vjs-audio-only-mode) {padding-top: 56.25%;}</style><video-js id="player4" data-account="6122266905001" data-player="default" data-embed="default" controls="" data-video-id="1758662340481346984" data-playlist-id="" data-application-id="" class="vjs-fluid"></video-js></div><script src="https://players.brightcove.net/6122266905001/default_default/index.min.js"></script>
+
+<script>
+
+  var BCLS_senduser = ( function (window, document, videojs) {
+    var  email_element = document.querySelector('#email'),
+    email_address = 'none';
+    email_element.addEventListener("input", updateValue);
+  
+    function updateValue(e) {
+      email_address = e.target.value;
+      console.log('email_address', email_address);
+    }
+  
+    videojs.getPlayer('player1').ready(function() {
+      var myPlayer = this;
+  
+      // Set the viewer id for Brightcove analytics
+      myPlayer.bcAnalytics.client.setUser(email_address);
+    });
+    videojs.getPlayer('player2').ready(function() {
+      var myPlayer = this;
+  
+      // Set the viewer id for Brightcove analytics
+      myPlayer.bcAnalytics.client.setUser(email_address);
+    });
+    videojs.getPlayer('player3').ready(function() {
+      var myPlayer = this;
+  
+      // Set the viewer id for Brightcove analytics
+      myPlayer.bcAnalytics.client.setUser(email_address);
+    });
+    videojs.getPlayer('player4').ready(function() {
+      var myPlayer = this;
+  
+      // Set the viewer id for Brightcove analytics
+      myPlayer.bcAnalytics.client.setUser(email_address);
+    });
+  })(window, document);
+</script>
 <!-- <div class="col-sm-2 right-side-bar" style="display: inline-block;max-width: 20%;"> -->
   
   <nav class="right-side-nav" id="right_side_nav">
