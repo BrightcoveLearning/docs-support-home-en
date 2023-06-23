@@ -10,6 +10,46 @@
           Product_Update: 'false'
           Feature: 'Deprecated version'
           Status: Released
+        - Title: 'Overview: Brightcove Native SDK for tvOS'
+          Description: 'Brightcove Native Player for iOS release'
+          Link: https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html
+          Product:  Device SDKs
+          Product_area: 'tvOS Development'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Native SDK for tvOS: Previous SDK information'
+          Description: 'New previous release table added'
+          Link: https://sdks.support.brightcove.com/tvos/resources/brightcove-player-sdk-tvos-previous-sdk-information.html
+          Product:  Device SDKs
+          Product_area: ' tvOS Development'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Native SDK for iOS: Previous SDK information'
+          Description: 'New previous release table added'
+          Link: https://sdks.support.brightcove.com/ios/resources/brightcove-player-sdk-ios-previous-sdk-information.html
+          Product: Device SDKs
+          Product_area: 'Native SDK for Android'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for iOS'
+          Description: 'Brightcove Native Player for iOS release'
+          Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html
+          Product: Device SDKs
+          Product_area: 'Native SDK for Android'
+          Product_Update: 'true'
+          Feature: 'New Android SDK Version'
+          Status: Released
+        - Title: 'Google Tag Manager Plugin for Brightcove Player'
+          Description: 'Configuration steps updated'
+          Link: https://player.support.brightcove.com/plugins/google-tag-manager-plugin-brightcove-player.html          
+          Product: Brightcove Player
+          Product_area: 'Plugins'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Minor updates
       docs:
         - Title: 'Beacon App Skip Intros and Credits'
@@ -41,6 +81,14 @@
           Link: https://apis.support.brightcove.com/live-api/guides/using-live-redundancy.html
           Product: Live
           Product_area: 'Live Redundancy'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Dynamic Delivery Ingest Priority Queueing'
+          Description: 'Ingest queue capacity numbers updated'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/dynamic-delivery-ingest-priority-queueing.html
+          Product: APIs
+          Product_area: 'Dynamic Ingest API'
           Product_Update: 'false'
           Feature: ''
           Status: Released
