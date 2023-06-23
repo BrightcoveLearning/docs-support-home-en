@@ -1,110 +1,46 @@
-- date: 9-June-2023
+- date: 23-June-2023
   types:
     - type: Major updates
       docs:
-        - Title: 'Creating a Network Log'
-          Description: 'Added more general instructions beyond the specific use case the doc addressed'
-          Link: https://player.support.brightcove.com/troubleshooting/creating-network-log.html
-          Product: Brightcove Player
-          Product_area: 'Troubleshooting'
+        - Title: 'Brightcove Interactivity Documentation'
+          Description: 'Added a warning to all pages that this is documentation for the deprecated HapYak version of Interactivity (with a link to the current documentation)'
+          Link: https://interactivity.support.brightcove.com/index.html
+          Product: Brightcove Interactivity
+          Product_area: ''
           Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Viewability'
-          Description: 'Added new pause_in_background_tab settings'
-          Link: https://player.support.brightcove.com/playback/brightcove-player-viewability.html
-          Product: Brightcove Player
-          Product_area: 'Viewability settings'
-          Product_Update: 'true'
-          Feature: 'pause_in_background_tab'
-          Status: Released
-        - Title: 'Overview: Content Protection'
-          Description: 'Added explanation of how token authentication works in Video Cloud'
-          Link: https://player.support.brightcove.com/content-protection/overview-content-protection.html#ttl
-          Product: Video Cloud
-          Product_area: 'Content Protection'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Interactive Examples Gallery'
-          Description: 'Updated the embed code for all samples to make them work with the new release of Interactivity'
-          Link: https://studio.support.brightcove.com/interactivity/examples/index.html
-          Product: Video Cloud
-          Product_area: 'Interactivity'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Player 7 Migration Guide'
-          Description: 'Plugins table updated'
-          Link: https://player.support.brightcove.com/references/bcp7-migration-guide.html#Plugins
-          Product: Brightcove Player
-          Product_area: 'References'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Google Analytics Self Configuration with Beacon'
-          Description: 'Added section for creating a stars custom metric'
-          Link: https://beacon-help.support.brightcove.com/analytics/third-party/ga-self-configuration.html 
-          Product: Beacon
-          Product_area: 'Google Analytics 4'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating a JSON Web Token (JWT)'
-          Description: 'Added audience claim for Playback Restrictions'
-          Link: https://general.support.brightcove.com/developer/create-json-web-token.html#Claims_for_Playback_Restrictions 
-          Product: Video Cloud
-          Product_area: 'Playback Restrictions'
-          Product_Update: 'false'
-          Feature: ''
+          Feature: 'Deprecated version'
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Brightcove Ad Insights'
-          Description: 'Removed LA note'
-          Link: https://studio.support.brightcove.com/analytics/module/ad-insights.html
-          Product: Video Cloud
-          Product_area: 'Analytics'
+        - Title: 'Beacon App Skip Intros and Credits'
+          Description: 'Updated based on feedback'
+          Link: https://beacon-help.support.brightcove.com/publishing-apps/app-behavior/skip-intro-credits.html 
+          Product: Beacon
+          Product_area: 'App behavior'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Staging
+        - Title: 'The Native SDK for Android Release 8.0.0'
+          Description: 'Removed support for Android OS 13'
+          Link: https://sdks.support.brightcove.com/android/framework/android-sdk-8-release.html  
+          Product: Device SDKs
+          Product_area: 'Native SDK for Android'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'BDynamic Ingest API: Best Practices'
-          Description: 'Removed a section that is no longer relevant'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/general/dynamic-ingest-api-best-practices.html
-          Product: Video Cloud
-          Product_area: 'Platform APIs'
+        - Title: 'The Brightcove Native SDKs'
+          Description: 'Updated text to remove latest OS version'
+          Link: https://sdks.support.brightcove.com/getting-started/brightcove-native-player-sdks.html   
+          Product: Device SDKs
+          Product_area: 'Native SDK for Android'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Download Button Plugin'
-          Description: 'Note about the events added'
-          Link: https://player.support.brightcove.com/plugins/download-button-plugin.html#Events
-          Product: Brightcove Player
-          Product_area: 'Plugins'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Download Button Plugin'
-          Description: 'Fixed download-failed event'
-          Link: https://player.support.brightcove.com/plugins/download-button-plugin.html#Events 
-          Product: Brightcove Player
-          Product_area: 'Player plugins'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Static URL Delivery'
-          Description: 'Removed references to Playback API v2 since it is the only version available now'
-          Link: https://apis.support.brightcove.com/playback/guides/static-url-delivery.html 
-          Product: Video Cloud
-          Product_area: 'Playback API'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Generic Stream Concurrency'
-          Description: 'Changed the Active Sessions method to GET, and fixed the Stop Sessions endpoint'
-          Link: https://apis.support.brightcove.com/playback-restrictions/guides/generic-stream-concurrency.html#implementation_via_API  
-          Product: Video Cloud
-          Product_area: 'Concurrency Service API'
+        - Title: 'Using Live Redundancy'
+          Description: 'Added a note that the labels for all output renditions must be unique or redundancy may fail'
+          Link: https://apis.support.brightcove.com/live-api/guides/using-live-redundancy.html
+          Product: Live
+          Product_area: 'Live Redundancy'
           Product_Update: 'false'
           Feature: ''
           Status: Released
