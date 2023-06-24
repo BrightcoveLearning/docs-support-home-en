@@ -95,6 +95,11 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/brightcove-academy/advertising-with-brightcove/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/icons.html",
       "oldURL": "/icons"
   },
@@ -151,11 +156,6 @@
 
   {
       "newURL": "https://support.brightcove.com/brightcove-academy/video-connector-walkthrough/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/brightcove-academy/advertising-with-brightcove/",
       "oldURL": "/index"
   },
 
