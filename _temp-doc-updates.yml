@@ -31,7 +31,7 @@
           Status: Released
     - type: Major updates
       docs:
-        - Title: 'Viewing Beacon App Data in Google Analytics 4'
+        - Title: 'Viewing Beacon App Data in Google Analytics'
           Description: 'Updated with Looker Studio and GA4 events and parameters'
           Link: https://beacon-help.support.brightcove.com/analytics/third-party/viewing-analytics-data-google.html 
           Product: Beacon
