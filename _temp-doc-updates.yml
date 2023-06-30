@@ -1,94 +1,75 @@
-- date: 23-June-2023
+- date: 30-June-2023
   types:
+    - type: New Brightcove Academy Courses
+      docs:
+        - Title: 'The Player Series'
+          Description: "We've ranked Brightcove customer's most-requested, 'How Do I...' Player topics and have kicked off a microlearning series focused on one of our most powerful and versatile products, the Brightcove Player."
+          Customer_Link: https://player.support.brightcove.com/player-series/
+          Employee_Link: https://player.support.brightcove.com/player-series/ 
+          Product: Brightcove Player
+          Product_area: 'Brightcove Player'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: New Docs
+      docs:
+        - Title: 'SwiftUI Development with the Native SDK for iOS'
+          Description: 'In this topic, you will be introduced to SwiftUI for developing apps with the Brightcove Native SDK for iOS/tvOS.'
+          Link: https://sdks.support.brightcove.com/ios/framework/swiftui-development.html
+          Product: Device SDKs
+          Product_area: 'Native SDK for iOS'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Player Series'
+          Description: 'New player series page created'
+          Link: https://player.support.brightcove.com/player-series/
+          Product: Brightcove Player
+          Product_area: 'Player'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Major updates
       docs:
-        - Title: 'Brightcove Interactivity Documentation'
-          Description: 'Added a warning to all pages that this is documentation for the deprecated HapYak version of Interactivity (with a link to the current documentation)'
-          Link: https://interactivity.support.brightcove.com/index.html
-          Product: Brightcove Interactivity
-          Product_area: ''
-          Product_Update: 'false'
-          Feature: 'Deprecated version'
-          Status: Released
-        - Title: 'Overview: Brightcove Native SDK for tvOS'
-          Description: 'Brightcove Native Player for iOS release'
-          Link: https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html
-          Product:  Device SDKs
-          Product_area: 'tvOS Development'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Native SDK for tvOS: Previous SDK information'
-          Description: 'New previous release table added'
-          Link: https://sdks.support.brightcove.com/tvos/resources/brightcove-player-sdk-tvos-previous-sdk-information.html
-          Product:  Device SDKs
-          Product_area: ' tvOS Development'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Native SDK for iOS: Previous SDK information'
-          Description: 'New previous release table added'
-          Link: https://sdks.support.brightcove.com/ios/resources/brightcove-player-sdk-ios-previous-sdk-information.html
-          Product: Device SDKs
-          Product_area: 'Native SDK for Android'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: Brightcove Native SDK for iOS'
-          Description: 'Brightcove Native Player for iOS release'
-          Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html
-          Product: Device SDKs
-          Product_area: 'Native SDK for Android'
+        - Title: 'Viewing Beacon App Data in Google Analytics 4'
+          Description: 'Updated with Looker Studio and GA4 events and parameters'
+          Link: https://beacon-help.support.brightcove.com/analytics/third-party/viewing-analytics-data-google.html 
+          Product: Beacon
+          Product_area: 'Analytics'
           Product_Update: 'true'
-          Feature: 'New Android SDK Version'
+          Feature: 'Google Looker Studio'
           Status: Released
-        - Title: 'Google Tag Manager Plugin for Brightcove Player'
-          Description: 'Configuration steps updated'
-          Link: https://player.support.brightcove.com/plugins/google-tag-manager-plugin-brightcove-player.html          
-          Product: Brightcove Player
-          Product_area: 'Plugins'
+        - Title: '概要 iOS用BrightcoveプレーヤーSDK'
+          Description: 'Brightcove Player SDK for iOS Updated'
+          Link: https://ja.sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html
+          Product:  Device SDKs
           Product_Update: 'false'
           Feature: ''
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Beacon App Skip Intros and Credits'
-          Description: 'Updated based on feedback'
-          Link: https://beacon-help.support.brightcove.com/publishing-apps/app-behavior/skip-intro-credits.html 
-          Product: Beacon
-          Product_area: 'App behavior'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Staging
-        - Title: 'The Native SDK for Android Release 8.0.0'
-          Description: 'Removed support for Android OS 13'
-          Link: https://sdks.support.brightcove.com/android/framework/android-sdk-8-release.html  
-          Product: Device SDKs
-          Product_area: 'Native SDK for Android'
+        - Title: 'Implementing Server-Side Ads with Brightcove Player'
+          Description: 'Updated player behavior for VOD SSAI midroll ads'
+          Link: https://player.support.brightcove.com/plugins/implementing-server-side-ads-brightcove-player.html#Notes 
+          Product: Brightcove Player
+          Product_area: 'SSAI'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'The Brightcove Native SDKs'
-          Description: 'Updated text to remove latest OS version'
-          Link: https://sdks.support.brightcove.com/getting-started/brightcove-native-player-sdks.html   
-          Product: Device SDKs
-          Product_area: 'Native SDK for Android'
+        - Title: 'Using a Non-Brightcove Player'
+          Description: 'Description of the document updated'
+          Link: https://player.support.brightcove.com/publish/using-non-brightcove-player.html
+          Product: Brightcove Player
+          Product_area: 'Publish'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Using Live Redundancy'
-          Description: 'Added a note that the labels for all output renditions must be unique or redundancy may fail'
-          Link: https://apis.support.brightcove.com/live-api/guides/using-live-redundancy.html
-          Product: Live
-          Product_area: 'Live Redundancy'
+        - Title: 'Getting Started'
+          Description: 'Note about the Campaign Module added'
+          Link: https://campaign.support.brightcove.com/get-started/index.html
+          Product: Video Cloud
+          Product_area: 'Campaign'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Dynamic Delivery Ingest Priority Queueing'
-          Description: 'Ingest queue capacity numbers updated'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/dynamic-delivery-ingest-priority-queueing.html
-          Product: APIs
-          Product_area: 'Dynamic Ingest API'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
+        
