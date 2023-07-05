@@ -105,12 +105,22 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/brightcove-academy/virtual-event-essentials/frame.html",
+      "newURL": "https://support.brightcove.com/brightcove-academy/brightcove-support-essentials/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/ingest-profiles-essentials/frame.html",
       "oldURL": "/frame"
   },
 
   {
       "newURL": "https://support.brightcove.com/brightcove-academy/content-management-essentials/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/virtual-event-essentials/frame.html",
       "oldURL": "/frame"
   },
 
@@ -135,22 +145,12 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/brightcove-academy/gallery-essentials-part-3/frame.html",
-      "oldURL": "/frame"
-  },
-
-  {
       "newURL": "https://support.brightcove.com/brightcove-academy/campaign-module-essentials/frame.html",
       "oldURL": "/frame"
   },
 
   {
       "newURL": "https://support.brightcove.com/brightcove-academy/advertising-with-brightcove/frame.html",
-      "oldURL": "/frame"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/brightcove-academy/gallery-essentials-part-2/frame.html",
       "oldURL": "/frame"
   },
 
@@ -180,22 +180,27 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/brightcove-academy/gallery-module-essentials/gallery-essentials-part-3/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/gallery-module-essentials/gallery-essentials-part-2/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/gallery-module-essentials/gallery-essentials-part-1/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/gallery-module-essentials/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/brightcove-academy/advertising-in-the-live-module/frame.html",
-      "oldURL": "/frame"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/brightcove-academy/brightcove-support-essentials/frame.html",
-      "oldURL": "/frame"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/brightcove-academy/gallery-essentials-part-1/frame.html",
-      "oldURL": "/frame"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/brightcove-academy/ingest-profiles-essentials/frame.html",
       "oldURL": "/frame"
   },
 
@@ -220,37 +225,7 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/brightcove-academy/video-connector-walkthrough/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/support/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/test-assets/captions/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/training/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/test-assets/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/test-assets/audio/",
+      "newURL": "https://support.brightcove.com/test-assets/chapters/",
       "oldURL": "/index"
   },
 
@@ -260,7 +235,37 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/test-assets/chapters/",
+      "newURL": "https://support.brightcove.com/test-assets/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/video-connector-walkthrough/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/test-assets/audio/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/training/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/support/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/test-assets/captions/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/",
       "oldURL": "/index"
   },
 
