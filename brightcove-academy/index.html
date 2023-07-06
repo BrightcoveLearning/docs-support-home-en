@@ -6,10 +6,27 @@ layout: brightcove-academy-page
 ---
 
 <img src="/assets/images/brightcove-academy/brightcove-academy-head.webp" alt="Brightcove Academy" style="width: 100%;">
-<article class="bcls-article">
-  <summary>{{ page.description }}</summary>
-  <section class="bcls-section">
-    <h2 id=""></h2>
-    <p></p>
-  </section>
+<!-- Template for section that has just pages -->
+{% for item in site.data.navigation %}
+  {% if item.name == page.title %}
+  <article class="bcls-article" style="margin-left: 10rem;">
+    <summary>{{ page.description }}</summary>
+
+    <div class="col-12 col-lg-4 py-3">
+      <div class="card shadow-sm" style="background: white" onclick="window.location.href = '{{ item.url }}'">
+        <div class="card-body">
+          <section class="flex-container">
+            <div>
+              <ul class="list-group list-group-flush">
+                {% for entry in item.docs %}
+                <li class="list-group-item"><a href="{{ entry.url }}" style="text-decoration: none;">{{ entry.name }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
 </article>
