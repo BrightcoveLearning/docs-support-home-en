@@ -100,7 +100,7 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/brightcove-academy/brightcove-support-essentials/frame.html",
+      "newURL": "https://support.brightcove.com/brightcove-academy/advertising-in-the-live-module/frame.html",
       "oldURL": "/frame"
   },
 
@@ -110,7 +110,7 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/brightcove-academy/advertising-in-the-live-module/frame.html",
+      "newURL": "https://support.brightcove.com/brightcove-academy/brightcove-support-essentials/frame.html",
       "oldURL": "/frame"
   },
 
@@ -126,6 +126,11 @@
 
   {
       "newURL": "https://support.brightcove.com/brightcove-academy/beacon-studio-essentials/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/advertising-essentials/frame.html",
       "oldURL": "/frame"
   },
 
