@@ -1,75 +1,97 @@
-- date: 30-June-2023
+- date: 7-July-2023
   types:
-    - type: New Brightcove Academy Courses
-      docs:
-        - Title: 'The Player Series'
-          Description: "We've ranked Brightcove customer's most-requested, 'How Do I...' Player topics and have kicked off a microlearning series focused on one of our most powerful and versatile products, the Brightcove Player."
-          Customer_Link: https://player.support.brightcove.com/player-series/
-          Employee_Link: https://player.support.brightcove.com/player-series/ 
-          Product: Brightcove Player
-          Product_area: 'Brightcove Player'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
     - type: New Docs
       docs:
-        - Title: 'SwiftUI Development with the Native SDK for iOS'
-          Description: 'In this topic, you will be introduced to SwiftUI for developing apps with the Brightcove Native SDK for iOS/tvOS.'
-          Link: https://sdks.support.brightcove.com/ios/framework/swiftui-development.html
-          Product: Device SDKs
-          Product_area: 'Native SDK for iOS'
+        - Title: Brightcove Academy
+          Description: Brightcove Academy courses can now be accessed on the documentation sites as well.
+          Link: https://support.brightcove.com/brightcove-academy/
+          Product: Video Cloud
+          Product_area: 'Multiple'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Player Series'
-          Description: 'New player series page created'
-          Link: https://player.support.brightcove.com/player-series/
-          Product: Brightcove Player
-          Product_area: 'Player'
+        - Title: 'Skip Intros and Credits within Beacon Apps'
+          Description: 'In this topic, you will learn how to place cue points to allow viewers to skip introductions and credits.'
+          Link: https://beacon-help.support.brightcove.com/publishing-apps/app-behavior/skip-intro-credits.html 
+          Product: Beacon
+          Product_area: 'App Behavior'
+          Product_Update: 'true'
+          Feature: 'Skip Intros and Credits'
+          Status: Released
+        - Title: 'Brightcove Player with Beacon Web Apps'
+          Description: 'In this topic, you will learn about using Brightcove Player with Beacon web apps.'
+          Link: https://beacon-help.support.brightcove.com/players/getting-started/bcp-with-beacon-web-apps.html 
+          Product: Beacon
+          Product_area: 'Beacon Web Apps'
+          Product_Update: 'true'
+          Feature: 'Brightcove Player 7 Updates'
+          Status: Released
+        - Title: 'Continue Watching with Beacon Apps'
+          Description: 'In this topic, you will learn how continue watching work in Brightcove Beacon apps'
+          Link: https://beacon.support.brightcove.com/publishing-apps/app-behavior/continue-watching.html
+          Product:  Beacon
+          Product_area: 'App behavior'
           Product_Update: 'false'
           Feature: ''
           Status: Released
     - type: Major updates
       docs:
         - Title: 'Viewing Beacon App Data in Google Analytics'
-          Description: 'Updated with Looker Studio and GA4 events and parameters'
+          Description: 'Updated steps for custom dimensions and metrics'
           Link: https://beacon-help.support.brightcove.com/analytics/third-party/viewing-analytics-data-google.html 
           Product: Beacon
           Product_area: 'Analytics'
-          Product_Update: 'true'
-          Feature: 'Google Looker Studio'
+          Product_Update: 'false'
+          Feature: ''
           Status: Released
-        - Title: '概要 iOS用BrightcoveプレーヤーSDK'
-          Description: 'Brightcove Player SDK for iOS Updated'
-          Link: https://ja.sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html
-          Product:  Device SDKs
+        - Title: 'Implementing Delivery Rules'
+          Description: 'Added clarification for preferred CDN provider and domain'
+          Link: https://apis.support.brightcove.com/delivery-rules/getting-started/implementing-delivery-rules.html#Defining_rules  
+          Product: Video Cloud
+          Product_area: 'Delivery Rules'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Player Release Notes'
+          Description: 'Brightcove player new release'
+          Link: https://player.support.brightcove.com/release-notes/brightcove-player-release-notes.html
+          Product:  Brightcove Player
+          Product_area: 'Release notes'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Plugin Version Reference'
+          Description: 'New IMA3 Advertising and Social Media plugins'
+          Link: https://player.support.brightcove.com/plugins/plugin-version-reference.html
+          Product:  Brightcove Player
+          Product_area: 'Plugins'
           Product_Update: 'false'
           Feature: ''
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Implementing Server-Side Ads with Brightcove Player'
-          Description: 'Updated player behavior for VOD SSAI midroll ads'
-          Link: https://player.support.brightcove.com/plugins/implementing-server-side-ads-brightcove-player.html#Notes 
-          Product: Brightcove Player
-          Product_area: 'SSAI'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Using a Non-Brightcove Player'
-          Description: 'Description of the document updated'
-          Link: https://player.support.brightcove.com/publish/using-non-brightcove-player.html
-          Product: Brightcove Player
-          Product_area: 'Publish'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Getting Started'
-          Description: 'Note about the Campaign Module added'
-          Link: https://campaign.support.brightcove.com/get-started/index.html
+        - Title: 'Performance Report Reference'
+          Description: 'Removed an out-of-date note indicating that for players in iframes the destination domain would be be the player page, not the parent page'
+          Link: https://studio.support.brightcove.com/analytics/reports/performance-report-reference.html
           Product: Video Cloud
-          Product_area: 'Campaign'
+          Product_area: 'Analytics'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        
+        - Title: 'Player E VOD Features'
+          Description: 'Added note that Roku does not support EIA608/708 Closed Captions'
+          Link: https://beacon-help.support.brightcove.com/layout/e-vod-features.html 
+          Product: Beacon
+          Product_area: 'Layouts'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Live API Reference (1.0.0)'
+          Description: 'Pass through API request added'
+          Link: https://apis.support.brightcove.com/live-api/references/reference.html#tag/Live-Jobs/operation/CreateALiveJob
+          Product: APIs
+          Product_area: 'Live api'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    
