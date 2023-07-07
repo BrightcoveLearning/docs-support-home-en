@@ -86,9 +86,9 @@
 - section:
   name: 'Zencoder'
   url: 'https://zencoder.support.brightcove.com' 
-- section:
-  name: Campaign
-  url: 'https://campaign.support.brightcove.com/index.html'
+# - section:
+#   name: Campaign
+#   url: 'https://campaign.support.brightcove.com/index.html'
 # - section:
 #   name: Engage
 #   url: 'https://engage.support.brightcove.com/index.html'
