@@ -100,12 +100,12 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/brightcove-academy/advertising-in-the-live-module/frame.html",
+      "newURL": "https://support.brightcove.com/brightcove-academy/cloud-playout-essentials/frame.html",
       "oldURL": "/frame"
   },
 
   {
-      "newURL": "https://support.brightcove.com/brightcove-academy/gallery-module-essentials/frame.html",
+      "newURL": "https://support.brightcove.com/brightcove-academy/advertising-in-the-live-module/frame.html",
       "oldURL": "/frame"
   },
 
@@ -190,11 +190,6 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/brightcove-academy/cloud-playout-essentials/frame.html",
-      "oldURL": "/frame"
-  },
-
-  {
       "newURL": "https://support.brightcove.com/brightcove-academy/gallery-module-essentials/gallery-essentials-part-3/frame.html",
       "oldURL": "/frame"
   },
@@ -206,6 +201,11 @@
 
   {
       "newURL": "https://support.brightcove.com/brightcove-academy/gallery-module-essentials/gallery-essentials-part-1/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/gallery-module-essentials/frame.html",
       "oldURL": "/frame"
   },
 
@@ -261,11 +261,6 @@
 
   {
       "newURL": "https://support.brightcove.com/support/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/brightcove-academy/video-connector-walkthrough/",
       "oldURL": "/index"
   },
 
