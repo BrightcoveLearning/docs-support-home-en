@@ -1,96 +1,64 @@
-- date: 7-July-2023
+- date: 14-July-2023
   types:
     - type: New Docs
       docs:
-        - Title: Brightcove Academy
-          Description: Brightcove Academy courses can now be accessed on the documentation sites as well.
-          Link: https://support.brightcove.com/brightcove-academy/
-          Product: Video Cloud
-          Product_area: 'Multiple'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Skip Intros and Credits within Beacon Apps'
-          Description: 'In this topic, you will learn how to place cue points to allow viewers to skip introductions and credits.'
-          Link: https://beacon-help.support.brightcove.com/publishing-apps/app-behavior/skip-intro-credits.html 
-          Product: Beacon
-          Product_area: 'App Behavior'
+        - Title: 'Integration Spotlight: Blueshift'
+          Description: 'In this topic you will learn about Blueshift, this integration allows external imports via an S3 bucket.'
+          Link: https://audience-insights.support.brightcove.com/integrations/integration_spotlight_blueshift.html
+          Product: Audience Insights
+          Product_area: 'Integrations'
           Product_Update: 'true'
-          Feature: 'Skip Intros and Credits'
-          Status: Released
-        - Title: 'Brightcove Player with Beacon Web Apps'
-          Description: 'In this topic, you will learn about using Brightcove Player with Beacon web apps.'
-          Link: https://beacon-help.support.brightcove.com/players/getting-started/bcp-with-beacon-web-apps.html 
-          Product: Beacon
-          Product_area: 'Beacon Web Apps'
-          Product_Update: 'true'
-          Feature: 'Brightcove Player 7 Updates'
-          Status: Released
-        - Title: 'Continue Watching with Beacon Apps'
-          Description: 'In this topic, you will learn how continue watching work in Brightcove Beacon apps'
-          Link: https://beacon.support.brightcove.com/publishing-apps/app-behavior/continue-watching.html
-          Product:  Beacon
-          Product_area: 'App behavior'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
+          Feature: 'New Blueshift integration'
+          Status: Staging
     - type: Major updates
       docs:
-        - Title: 'Viewing Beacon App Data in Google Analytics'
-          Description: 'Updated steps for custom dimensions and metrics'
-          Link: https://beacon-help.support.brightcove.com/analytics/third-party/viewing-analytics-data-google.html 
-          Product: Beacon
-          Product_area: 'Analytics'
+        - Title: 'Advertising with the IMA3 Plugin'
+          Description: 'Added section for Brightcove Ad Monetization macros'
+          Link: https://player.support.brightcove.com/plugins/advertising-ima3-plugin.html#Ad_macros_and_the_serverUrl
+          Product: Brightcove Player
+          Product_area: 'Advertising'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Implementing Delivery Rules'
-          Description: 'Added clarification for preferred CDN provider and domain'
-          Link: https://apis.support.brightcove.com/delivery-rules/getting-started/implementing-delivery-rules.html#Defining_rules  
-          Product: Video Cloud
-          Product_area: 'Delivery Rules'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Player Release Notes'
-          Description: 'Brightcove player new release'
-          Link: https://player.support.brightcove.com/release-notes/brightcove-player-release-notes.html
-          Product:  Brightcove Player
-          Product_area: 'Release notes'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Plugin Version Reference'
-          Description: 'New IMA3 Advertising and Social Media plugins'
-          Link: https://player.support.brightcove.com/plugins/plugin-version-reference.html
-          Product:  Brightcove Player
-          Product_area: 'Plugins'
+        - Title: 'Video Cloud SSAI API'
+          Description: 'Added section for Brightcove Ad Monetization macros'
+          Link: https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html
+          Product: SSAI
+          Product_area: 'Advertising'
           Product_Update: 'false'
           Feature: ''
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Performance Report Reference'
-          Description: 'Removed an out-of-date note indicating that for players in iframes the destination domain would be be the player page, not the parent page'
-          Link: https://studio.support.brightcove.com/analytics/reports/performance-report-reference.html
-          Product: Video Cloud
-          Product_area: 'Analytics'
+        - Title: 'Live DRM'
+          Description: 'Added note about token authentication with live redundancy, DRM, and SSAI'
+          Link: https://live.support.brightcove.com/general/live-drm.html
+          Product: Live
+          Product_area: 'Content Protection'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Player E VOD Features'
-          Description: 'Added note that Roku does not support EIA608/708 Closed Captions'
-          Link: https://beacon-help.support.brightcove.com/layout/e-vod-features.html 
+        - Title: 'Step-by-Step: Simple Video App using Objective-C'
+          Description: 'Updated to use findVideoWithConfiguration'
+          Link: https://sdks.support.brightcove.com/ios/basics/step-step-simple-video-app-using-objective-c.html
+          Product: Device SDKs
+          Product_area: 'Native SDK for iOS - Obj-C'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Step-by-Step: Simple Video App using Swift'
+          Description: 'Updated to use findVideoWithConfiguration'
+          Link: https://sdks.support.brightcove.com/ios/basics/step-step-simple-video-app-using-swift.html
+          Product: Device SDKs
+          Product_area: 'Native SDK for iOS - Swift'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Training on Demand: Implementing VOD Server-Side Ads'
+          Description: 'Implementing VOD SSAI links fixed'
+          Link: https://beacon.support.brightcove.com/training/training-demand-vod-ssai.html
           Product: Beacon
-          Product_area: 'Layouts'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Live API Reference (1.0.0)'
-          Description: 'Pass through API request added'
-          Link: https://apis.support.brightcove.com/live-api/references/reference.html#tag/Live-Jobs/operation/CreateALiveJob
-          Product: APIs
-          Product_area: 'Live api'
+          Product_area: 'Training'
           Product_Update: 'false'
           Feature: ''
           Status: Released
