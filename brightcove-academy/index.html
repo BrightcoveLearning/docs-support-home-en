@@ -5,21 +5,25 @@ parent: Home
 layout: brightcove-academy-page
 ---
 
-<img src="/assets/images/brightcove-academy/brightcove-academy-head.webp" alt="Brightcove Academy" style="width: 100%;">
+<img src="/assets/images/brightcove-academy/brightcove-academy-head.webp"
+  alt="Brightcove Academy" style="width: 100%;">
 <!-- Template for section that has just pages -->
 {% for item in site.data.navigation %}
-  {% if item.name == page.title %}
-  <article class="bcls-article" style="margin-left: 10rem;">
-    <summary>{{ page.description }}</summary>
-
+{% if item.name == page.title %}
+<article class="bcls-article">
+  <summary class="text-center">{{ page.description }}</summary>
+  <div class="row">
+    <div class="col-12 col-lg-4 py-3"></div>
     <div class="col-12 col-lg-4 py-3">
-      <div class="card shadow-sm" style="background: white" onclick="window.location.href = '{{ item.url }}'">
+      <div class="card shadow-sm" style="background: white"
+        onclick="window.location.href = '{{ item.url }}'">
         <div class="card-body">
           <section class="flex-container">
             <div>
               <ul class="list-group list-group-flush">
                 {% for entry in item.docs %}
-                <li class="list-group-item"><a href="{{ entry.url }}" style="text-decoration: none;">{{ entry.name }}</a></li>
+                <li class="list-group-item text-center"><a href="{{ entry.url }}"
+                    style="text-decoration: none;">{{ entry.name }}</a></li>
                 {% endfor %}
               </ul>
             </div>
@@ -27,6 +31,8 @@ layout: brightcove-academy-page
         </div>
       </div>
     </div>
+    <div class="col-12 col-lg-4 py-3"></div>
+  </div>
   {% endif %}
-{% endfor %}
+  {% endfor %}
 </article>
