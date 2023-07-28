@@ -1,65 +1,106 @@
-- date: 14-July-2023
+- date: 28-July-2023
   types:
+    - type: New Brightcove Academy Courses
+      docs:
+        - Title: 'Player Series: Accessibility Standards'
+          Description: 'Meeting web content accessibility guidelines can sometimes be a challenge. Brightcove has committed to ensure that the Brightcove Player meets the standards set out in the WCAG 2.1 AA accessibility guidelines. Learn more in this video!'
+          Customer_Link: https://player.support.brightcove.com/player-series/
+          Employee_Link: https://player.support.brightcove.com/player-series/
+          Product: Brightcove Player
+          Product_area: 'Brightcove Player'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Player Series: Audio Only Player'
+          Description: 'Learn how to configure the Brightcove Player for playback of audio-only assets with either the player UI hidden except for the control bar, or with the poster image permanently displayed during playback.'
+          Customer_Link: https://player.support.brightcove.com/player-series/
+          Employee_Link: https://player.support.brightcove.com/player-series/
+          Product: Brightcove Player
+          Product_area: ''
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: New Docs
       docs:
-        - Title: 'Integration Spotlight: Blueshift'
-          Description: 'In this topic you will learn about Blueshift, this integration allows external imports via an S3 bucket.'
-          Link: https://audience-insights.support.brightcove.com/integrations/integration_spotlight_blueshift.html
-          Product: Audience Insights
-          Product_area: 'Integrations'
-          Product_Update: 'true'
-          Feature: 'New Blueshift integration'
-          Status: Staging
+        - Title: 'Segment Sync'
+          Description: 'The Segments feature, found in Custom Reports, allows you to create audience segments of your audience based on video viewing/engagement metrics.'
+          Link: https://studio.support.brightcove.com/analytics/reports/segments-report.html
+          Product: Video Cloud 
+          Product_area: 'Analytics'
+          Product_Update: 'false'
+          Feature: ''
+          Status:  Staging 
     - type: Major updates
       docs:
-        - Title: 'Advertising with the IMA3 Plugin'
-          Description: 'Added section for Brightcove Ad Monetization macros'
-          Link: https://player.support.brightcove.com/plugins/advertising-ima3-plugin.html#Ad_macros_and_the_serverUrl
-          Product: Brightcove Player
-          Product_area: 'Advertising'
+        - Title: 'Editing Video Properties using the Media Module'
+          Description: 'Document updated to reflect the new UI for Video Properties section'
+          Link: https://studio.support.brightcove.com/media/properties/editing-video-properties-using-media-module.html
+          Product: Video Cloud
+          Product_area: 'Media'
+          Product_Update: 'true'
+          Feature: ''
+          Status: Released
+        - Title: 'Adding Captions to Videos using the Media Module'
+          Description: 'Document updated to reflect the new way of adding captions with the new UI for Video Properties section'
+          Link: https://studio.support.brightcove.com/media/captions/adding-captions-videos-using-media-module.html
+          Product: Video Cloud
+          Product_area: 'Media'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Video Cloud SSAI API'
-          Description: 'Added section for Brightcove Ad Monetization macros'
-          Link: https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html
-          Product: SSAI
-          Product_area: 'Advertising'
+        - Title: 'Adding Audio Tracks to Videos using the Media Module'
+          Description: 'Document updated to reflect the new way of adding audio tracks with the new UI for Video Properties section'
+          Link: https://studio.support.brightcove.com/media/captions/adding-audio-tracks-videos-using-media-module.html
+          Product: Video Cloud
+          Product_area: 'Media'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-    - type: Minor updates
-      docs:
-        - Title: 'Live DRM'
-          Description: 'Added note about token authentication with live redundancy, DRM, and SSAI'
-          Link: https://live.support.brightcove.com/general/live-drm.html
-          Product: Live
-          Product_area: 'Content Protection'
+        - Title: 'Adding Chapters to a Video'
+          Description: 'Document updated to reflect the new way of adding chapters with the new UI for Video Properties section'
+          Link: https://studio.support.brightcove.com/media/captions/adding-chapters-video.html
+          Product: Video Cloud
+          Product_area: 'Media'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Step-by-Step: Simple Video App using Objective-C'
-          Description: 'Updated to use findVideoWithConfiguration'
-          Link: https://sdks.support.brightcove.com/ios/basics/step-step-simple-video-app-using-objective-c.html
-          Product: Device SDKs
-          Product_area: 'Native SDK for iOS - Obj-C'
+        - Title: 'Adding Chapters to a Video'
+          Description: 'Document updated to reflect the new way of adding chapters with the new UI for Video Properties section'
+          Link: https://studio.support.brightcove.com/media/captions/adding-chapters-video.html
+          Product: Video Cloud
+          Product_area: 'Media'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Step-by-Step: Simple Video App using Swift'
-          Description: 'Updated to use findVideoWithConfiguration'
-          Link: https://sdks.support.brightcove.com/ios/basics/step-step-simple-video-app-using-swift.html
-          Product: Device SDKs
-          Product_area: 'Native SDK for iOS - Swift'
+        - Title: 'Generating Captions for Videos'
+          Description: 'Document updated to reflect the new way of generating captions with the new UI for Video Properties section'
+          Link: https://studio.support.brightcove.com/media/captions/generating-captions-videos.html
+          Product: Video Cloud
+          Product_area: 'Media'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Training on Demand: Implementing VOD Server-Side Ads'
-          Description: 'Implementing VOD SSAI links fixed'
-          Link: https://beacon.support.brightcove.com/training/training-demand-vod-ssai.html
-          Product: Beacon
-          Product_area: 'Training'
+        - Title: 'Styling Captions'
+          Description: 'Document updated to reflect the new way of styling captions with the new UI for Video Properties section'
+          Link: https://studio.support.brightcove.com/media/captions/styling-captions.html
+          Product: Video Cloud
+          Product_area: 'Media'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-    
+        - Title: 'Using the Caption Editor'
+          Description: 'Document updated to reflect the new way of using the caption editor with the new UI for Video Properties section'
+          Link: https://studio.support.brightcove.com/media/captions/using-the-caption-editor.html
+          Product: Video Cloud
+          Product_area: 'Media'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Integration Spotlight: Braze'
+          Description: 'In this topic you will learn about Braze, this integration allows you to automate customer contact.'
+          Link: https://audience-insights.support.brightcove.com/integrations/integration_spotlight_braze.html
+          Product: Audience Insights
+          Product_area: 'Integrations'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
