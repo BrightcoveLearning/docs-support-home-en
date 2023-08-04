@@ -1,106 +1,54 @@
-- date: 28-July-2023
+- date: 04-Aug-2023
   types:
-    - type: New Brightcove Academy Courses
-      docs:
-        - Title: 'Player Series: Accessibility Standards'
-          Description: 'Meeting web content accessibility guidelines can sometimes be a challenge. Brightcove has committed to ensure that the Brightcove Player meets the standards set out in the WCAG 2.1 AA accessibility guidelines. Learn more in this video!'
-          Customer_Link: https://player.support.brightcove.com/player-series/
-          Employee_Link: https://player.support.brightcove.com/player-series/
-          Product: Brightcove Player
-          Product_area: 'Brightcove Player'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Player Series: Audio Only Player'
-          Description: 'Learn how to configure the Brightcove Player for playback of audio-only assets with either the player UI hidden except for the control bar, or with the poster image permanently displayed during playback.'
-          Customer_Link: https://player.support.brightcove.com/player-series/
-          Employee_Link: https://player.support.brightcove.com/player-series/
-          Product: Brightcove Player
-          Product_area: ''
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-    - type: New Docs
-      docs:
-        - Title: 'Segment Sync'
-          Description: 'The Segments feature, found in Custom Reports, allows you to create audience segments of your audience based on video viewing/engagement metrics.'
-          Link: https://studio.support.brightcove.com/analytics/reports/segments-report.html
-          Product: Video Cloud 
-          Product_area: 'Analytics'
-          Product_Update: 'false'
-          Feature: ''
-          Status:  Staging 
     - type: Major updates
       docs:
-        - Title: 'Editing Video Properties using the Media Module'
-          Description: 'Document updated to reflect the new UI for Video Properties section'
-          Link: https://studio.support.brightcove.com/media/properties/editing-video-properties-using-media-module.html
+        - Title: 'Reviewing Social Engagement Analytics'
+          Description: 'Removing twitter references'
+          Link: https://studio.support.brightcove.com/social/analytics/reviewing-social-engagement-analytics.html
           Product: Video Cloud
-          Product_area: 'Media'
-          Product_Update: 'true'
-          Feature: ''
-          Status: Released
-        - Title: 'Adding Captions to Videos using the Media Module'
-          Description: 'Document updated to reflect the new way of adding captions with the new UI for Video Properties section'
-          Link: https://studio.support.brightcove.com/media/captions/adding-captions-videos-using-media-module.html
-          Product: Video Cloud
-          Product_area: 'Media'
+          Product_area: 'Social'
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Accessing Reporting Endpoints'
+          Description: 'Sample code updated and link to get credentials added'
+          Link: https://apis.support.brightcove.com/interactivity/accessing-reporting-endpoints.html
+          Product: Video Cloud
+          Product_area: 'Interactivity API'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Interactive Examples Gallery'
+          Description: 'Fix the responsiveness of the videos'
+          Link: https://studio.support.brightcove.com/interactivity/examples/index.html
+          Product: Brightcove Interactivity 
+          Product_area: 'Examples'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Audience Sync Configuration'
+          Description: 'Update Document Images'
+          Link: https://studio.support.brightcove.com/integrations/integrations-module/customer-data-platforms/audience-sync-configuration.html#Set_up_an_integration
+          Product: Integrations 
+          Product_area: 'Customer Data Platforms'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Signed URLs and Token Auth with a Live Stream'
+          Description: 'Add new Limitations Section'
+          Link: https://apis.support.brightcove.com/live-api/guides/signed-urls-and-token-auth-live-stream.html#Limitations
+          Product: Video Cloud 
+          Product_area: 'Guides'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
         - Title: 'Adding Audio Tracks to Videos using the Media Module'
-          Description: 'Document updated to reflect the new way of adding audio tracks with the new UI for Video Properties section'
+          Description: 'Notes section updated to add the default option'
           Link: https://studio.support.brightcove.com/media/captions/adding-audio-tracks-videos-using-media-module.html
           Product: Video Cloud
           Product_area: 'Media'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Adding Chapters to a Video'
-          Description: 'Document updated to reflect the new way of adding chapters with the new UI for Video Properties section'
-          Link: https://studio.support.brightcove.com/media/captions/adding-chapters-video.html
-          Product: Video Cloud
-          Product_area: 'Media'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Adding Chapters to a Video'
-          Description: 'Document updated to reflect the new way of adding chapters with the new UI for Video Properties section'
-          Link: https://studio.support.brightcove.com/media/captions/adding-chapters-video.html
-          Product: Video Cloud
-          Product_area: 'Media'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Generating Captions for Videos'
-          Description: 'Document updated to reflect the new way of generating captions with the new UI for Video Properties section'
-          Link: https://studio.support.brightcove.com/media/captions/generating-captions-videos.html
-          Product: Video Cloud
-          Product_area: 'Media'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Styling Captions'
-          Description: 'Document updated to reflect the new way of styling captions with the new UI for Video Properties section'
-          Link: https://studio.support.brightcove.com/media/captions/styling-captions.html
-          Product: Video Cloud
-          Product_area: 'Media'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Using the Caption Editor'
-          Description: 'Document updated to reflect the new way of using the caption editor with the new UI for Video Properties section'
-          Link: https://studio.support.brightcove.com/media/captions/using-the-caption-editor.html
-          Product: Video Cloud
-          Product_area: 'Media'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Integration Spotlight: Braze'
-          Description: 'In this topic you will learn about Braze, this integration allows you to automate customer contact.'
-          Link: https://audience-insights.support.brightcove.com/integrations/integration_spotlight_braze.html
-          Product: Audience Insights
-          Product_area: 'Integrations'
           Product_Update: 'false'
           Feature: ''
           Status: Released

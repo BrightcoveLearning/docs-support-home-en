@@ -380,11 +380,6 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/yahoo/release-notes.html",
-      "oldURL": "/release-notes"
-  },
-
-  {
       "newURL": "https://support.brightcove.com/support/reset-support-portal-password.html",
       "oldURL": "/reset-support-portal-password"
   },
