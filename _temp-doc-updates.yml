@@ -8,7 +8,7 @@
           Product: Video Cloud
           Product_area: 'Dynamic Ingest API'
           Product_Update: 'true'
-          Feature: 'New Late Bindind feature'
+          Feature: 'New Late Binding feature'
           Status: Released
     - type: Major updates
       docs:
