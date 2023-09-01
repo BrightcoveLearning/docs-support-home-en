@@ -1,184 +1,88 @@
-- date: 25-Aug-2023
+- date: 01-Sep-2023
   types:
     - type: New Docs
       docs:
-        - Title: 'Requesting Late Binding'
-          Description: 'Requesting late binding provides a way to add or modify progressive MP4 renditions for an existing video without re-creating other existing renditions. This allows you to reduce processing time while adding needed features to existing videos.'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/requesting-late-binding.html
-          Product: Video Cloud
-          Product_area: 'Dynamic Ingest API'
+        - Title: 'Brightcove Interactivity API Reference'
+          Description: 'Interactivity Read/Write API Documentation'
+          Link: https://apis.support.brightcove.com/interactivity/references/reference.html
+          Product: Brightcove Interactivity
+          Product_area: 'References'
           Product_Update: 'true'
-          Feature: 'New Late Binding feature'
-          Status: Released
+          Feature: 'Brightcove Interactivity API Reference'
+          Status: Released 
     - type: Major updates
       docs:
-        - Title: 'Continue Watching Configuration in Studio'
-          Description: 'Continue Watching playlist in Beacon Studio'
-          Link: https://beacon.support.brightcove.com/publishing-apps/app-behavior/continue-watching.html#Continue%20watching%20configuration
-          Product:  Beacon
-          Product_area: 'App Publishing and Behavior'
+        - Title: 'Brightcove Live: Best Practices'
+          Description: 'Input and Output bitrate values for Live Streaming Updated'
+          Link: https://live.support.brightcove.com/get-started/live-module-guidelines-and-best-practices.html
+          Product:  Brightcove Player
+          Product_area: 'Getting Started'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Playlist UI Plugin'
+          Description: 'Add/remove playlist items section added'
+          Link: https://player.support.brightcove.com/plugins/playlist-ui-plugin.html
+          Product: Brightcove Player
+          Product_area: 'Plugins'
           Product_Update: 'true'
-          Feature: 'Continue Watching Configuration in Beacon Studio'
-          Status: Released
-        - Title: 'Brightcove QoE Analytics'
-          Description: 'Glossary updated'
-          Link: https://studio.support.brightcove.com/analytics/module/qoe-analytics.html#Glossary
-          Product: Video Cloud
-          Product_area: 'Analytics'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Native SDK for Android: Previous SDK information'
-          Description: 'Android SDK Release v8.2.1'
-          Link: https://sdks.support.brightcove.com/android/resources/brightcove-player-sdk-android-previous-sdk-information.html
-          Product: SDKs
-          Product_area: 'Android Development'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: Brightcove Native SDK for Android'
-          Description: 'Android SDK Release v8.2.1'
-          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html
-          Product:  SDKs
-          Product_area: 'Android Development'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Native SDK for Android Release Notes'
-          Description: 'Android SDK Release v8.2.1'
-          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html
-          Product: SDKs
-          Product_area: 'Android Development'
-          Product_Update: 'false'
-          Feature: ''
+          Feature: 'New add/remove playlist items feature'
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Brightcove Player System Requirements'
-          Description: 'Non supported browsers removed from the table'
-          Link: https://player.support.brightcove.com/references/brightcove-player-system-requirements.html
-          Product: Brightcove Player
+        - Title: 'Creating and Managing Live Events using the Live Module'
+          Description: 'add instructions'
+          Link: https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#work_recurring
+          Product: Live 
+          Product_area: 'live-module'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Remote Assets'
+          Description: 'fix image'
+          Link: https://apis.support.brightcove.com/cms/managing-videos/using-cms-api-remote-assets.html#workflow
+          Product: Video Cloud
+          Product_area: 'managing-videos'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Native Player for iOS Reference'
+          Description: 'fix section links'
+          Link: https://sdks.support.brightcove.com/ios/reference/sdk/index.html
+          Product: Device SDKs
+          Product_area: 'sdk'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Live API Reference (1.0.0)'
+          Description: 'Max output video bitrate updated'
+          Link: https://apis.support.brightcove.com/live-api/references/reference.html
+          Product: APIs
           Product_area: 'References'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Using an SVOD Plan'
-          Description: 'Update documentation description'
-          Link: https://beacon.support.brightcove.com/monetization/general/using-svod-plan.html#Understanding_the_rights_management_custom_fields
-          Product: Beacon
-          Product_area: 'general'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Using Live Redundancy'
-          Description: 'Health field description'
-          Link: https://apis.support.brightcove.com/live-api/guides/using-live-redundancy.html#Get_Redundant_Group_Status
+        - Title: 'Managing Text Tracks'
+          Description: 'Limitations section added'
+          Link: https://mstudio.support.brightcove.com/media/managing-text-tracks.html
           Product: Video Cloud
-          Product_area: 'guides'
+          Product_area: 'Media'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Remove all references to Engage'
-          Description: 'Remove all references to Engage'
-          Link: https://support.brightcove.com/
+        - Title: 'Adding WebVTT Captions (Text Tracks)'
+          Description: 'Note about remote text tracks added'
+          Link: https://mstudio.support.brightcove.com/media/managing-text-tracks.html#Limitations
           Product: Video Cloud
-          Product_area: 'support'
+          Product_area: 'CMS API'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Implementing Server-Side Ads in the Live Module'
-          Description: 'live analytics information note'
-          Link: https://live.support.brightcove.com/live-module/implementing-server-side-ads-live-module.html#Publishing_a_remote_live_event
-          Product: Live
-          Product_area: 'live-module'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Step-by-Step: Player Management'
-          Description: 'image update'
-          Link: https://apis.support.brightcove.com/player-management/getting-started/step-step-player-management.html
+        - Title: 'Remote Assets'
+          Description: 'Limitation about remote text tracks added'
+          Link: https://apis.support.brightcove.com/cms/managing-videos/using-cms-api-remote-assets.html
           Product: Video Cloud
-          Product_area: 'player-management'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Multi Language Audio with the Live Module'
-          Description: 'updating limitations'
-          Link: https://corptv.support.brightcove.com/live/live-module/multi-language-audio.html
-          Product: CorpTV
-          Product_area: 'live-module'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Multi Language Audio with the Live Module'
-          Description: 'updating limitations'
-          Link: https://live.support.brightcove.com/live-module/multi-language-audio.html
-          Product: Live
-          Product_area: 'live-module'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Multi Language Audio with the Live Module'
-          Description: 'updating limitations'
-          Link: https://beacon-help.support.brightcove.com/live/live-module/multi-language-audio.html
-          Product: Beacon
-          Product_area: 'live-module'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Best Practices: The Video Creating, Transcoding, and Uploading Workflow'
-          Description: 'updating HEVC Video info'
-          Link: https://studio.support.brightcove.com/general/references/best-practices-video-creating-transcoding-and-uploading-workflow.html
-          Product: Video Cloud
-          Product_area: 'references'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'UploadTimeoutError'
-          Description: 'typo'
-          Link: https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-uploadtimeouterror.html
-          Product: Zencoder
-          Product_area: 'error-codes'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating Ingest Profiles for Context Aware Encoding'
-          Description: 'correct the redirection link'
-          Link: https://studio.support.brightcove.com/admin/creating-ingest-profiles-context-aware-encoding.html
-          Product: Video Cloud
-          Product_area: 'admin'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating a Cloud Playout Channel'
-          Description: 'clarify broken link'
-          Link: https://studio.support.brightcove.com/channels/cloud-playout/getting-started/cloud-playout-stream-vod.html
-          Product: Video Cloud
-          Product_area: 'getting-started'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Picture-in-Picture Plugin'
-          Description: 'update link'
-          Link: https://player.support.brightcove.com/plugins/picture-picture-plugin-aka-floating-or-pinned.html#Implement_using_code
-          Product: Video Cloud
-          Product_area: 'plugins'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'ClientApi'
-          Description: 'fix broken link'
-          Link: https://apis.support.brightcove.com/in-page-exerience-client-api/ClientApi.html#~Player
-          Product: Video Cloud
-          Product_area: 'in-page-exerience-client-api'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Learning Guide: Video Advertising'
-          Description: 'image update'
-          Link: https://player.support.brightcove.com/getting-started/learning-guide-video-advertising.html
-          Product: Video Cloud
-          Product_area: 'getting-started'
+          Product_area: 'CMS API'
           Product_Update: 'false'
           Feature: ''
           Status: Released
