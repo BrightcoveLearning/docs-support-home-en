@@ -1,88 +1,109 @@
-- date: 01-Sep-2023
+- date: 08-Sep-2023
   types:
-    - type: New Docs
-      docs:
-        - Title: 'Brightcove Interactivity API Reference'
-          Description: 'Interactivity Read/Write API Documentation'
-          Link: https://apis.support.brightcove.com/interactivity/references/reference.html
-          Product: Brightcove Interactivity
-          Product_area: 'References'
-          Product_Update: 'true'
-          Feature: 'Brightcove Interactivity API Reference'
-          Status: Released 
     - type: Major updates
       docs:
-        - Title: 'Brightcove Live: Best Practices'
-          Description: 'Input and Output bitrate values for Live Streaming Updated'
-          Link: https://live.support.brightcove.com/get-started/live-module-guidelines-and-best-practices.html
-          Product:  Brightcove Player
-          Product_area: 'Getting Started'
+        - Title: 'Creating and Managing Templates'
+          Description: 'update image with new settings and settings description'
+          Link: https://studio.support.brightcove.com/interactivity/templates/creating-and-managing-templates.html
+          Product: Video Cloud
+          Product_area: 'Interactivity'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Playlist UI Plugin'
-          Description: 'Add/remove playlist items section added'
-          Link: https://player.support.brightcove.com/plugins/playlist-ui-plugin.html
-          Product: Brightcove Player
-          Product_area: 'Plugins'
-          Product_Update: 'true'
-          Feature: 'New add/remove playlist items feature'
+        - Title: 'Applying Templates to Projects'
+          Description: 'update image with new settings and workflow description'
+          Link: https://studio.support.brightcove.com/interactivity/templates/applying-templates-projects.html
+          Product: Video Cloud
+          Product_area: 'Interactivity'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Getting Started with Brightcove Social'
+          Description: 'Add clip videos section'
+          Link: https://studio.support.brightcove.com/social/module/getting-started-brightcove-social.html#view
+          Product: Video Cloud
+          Product_area: 'module'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Native SDK for Android: Previous SDK information'
+          Description: 'Android SDK Release Previous SDK Information Updated'
+          Link: https://sdks.support.brightcove.com/android/resources/brightcove-player-sdk-android-previous-sdk-information.html
+          Product:  Device SDKs
+          Product_area: 'Android Development'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Overview: Brightcove Native SDK for Android'
+          Description: 'Android SDK Release v8.2.2'
+          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html
+          Product:  Device SDKs 
+          Product_area: 'Android Development'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Brightcove Native SDK for Android Release Notes'
+          Description: 'Android SDK Release v8.2.2 Release Notes'
+          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html
+          Product: Device SDKs 
+          Product_Update: 'false'
+          Feature: ''
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Creating and Managing Live Events using the Live Module'
-          Description: 'add instructions'
-          Link: https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#work_recurring
-          Product: Live 
-          Product_area: 'live-module'
+        - Title: 'Video Cloud SSAI Overview'
+          Description: 'Add SSAI audio-only limitation'
+          Link: https://ssai.support.brightcove.com/getting-started/video-cloud-ssai-overview.html#Limitations
+          Product: SSAI 
+          Product_area: 'getting-started'
           Product_Update: 'false'
           Feature: ''
-          Status: Released
-        - Title: 'Remote Assets'
-          Description: 'fix image'
-          Link: https://apis.support.brightcove.com/cms/managing-videos/using-cms-api-remote-assets.html#workflow
+          Status: Released 
+        - Title: 'Working with the Immersion Portal Template'
+          Description: 'typo correction'
+          Link: https://gallery.support.brightcove.com/experiences/portal/templates/working-with-immersion-template.html#menu
           Product: Video Cloud
-          Product_area: 'managing-videos'
+          Product_area: 'Gallery'
           Product_Update: 'false'
           Feature: ''
-          Status: Released
-        - Title: 'Brightcove Native Player for iOS Reference'
-          Description: 'fix section links'
-          Link: https://sdks.support.brightcove.com/ios/reference/sdk/index.html
-          Product: Device SDKs
-          Product_area: 'sdk'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Live API Reference (1.0.0)'
-          Description: 'Max output video bitrate updated'
-          Link: https://apis.support.brightcove.com/live-api/references/reference.html
-          Product: APIs
-          Product_area: 'References'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Managing Text Tracks'
-          Description: 'Limitations section added'
-          Link: https://mstudio.support.brightcove.com/media/managing-text-tracks.html
+          Status: Released 
+        - Title: 'Working with the Immersion Portal Template'
+          Description: 'typo correction'
+          Link: https://gallery.support.brightcove.com/experiences/portal/templates/working-with-immersion-template.html#menu
           Product: Video Cloud
-          Product_area: 'Media'
+          Product_area: 'Gallery'
           Product_Update: 'false'
           Feature: ''
-          Status: Released
-        - Title: 'Adding WebVTT Captions (Text Tracks)'
-          Description: 'Note about remote text tracks added'
-          Link: https://mstudio.support.brightcove.com/media/managing-text-tracks.html#Limitations
+          Status: Released 
+        - Title: 'Adding Text Tracks to a Video'
+          Description: 'typo correction'
+          Link: https://campaign.support.brightcove.com/videos/adding-text-tracks-to-a-video.html
           Product: Video Cloud
-          Product_area: 'CMS API'
+          Product_area: 'videos'
           Product_Update: 'false'
           Feature: ''
-          Status: Released
-        - Title: 'Remote Assets'
-          Description: 'Limitation about remote text tracks added'
-          Link: https://apis.support.brightcove.com/cms/managing-videos/using-cms-api-remote-assets.html
+          Status: Released 
+        - Title: 'Publishing Videos to Social Media Platforms'
+          Description: 'typo correction'
+          Link: https://studio.support.brightcove.com/social/general/publishing-videos-social-media-platforms.html#youtube
           Product: Video Cloud
-          Product_area: 'CMS API'
+          Product_area: 'general'
           Product_Update: 'false'
           Feature: ''
-          Status: Released
+          Status: Released 
+        - Title: 'Adding Pigeonhole Q&A to a Live Event In-Page Experience'
+          Description: 'Add limitation'
+          Link: https://gallery.support.brightcove.com/experiences/live/in-page/adding-pigeonhole-live-event-page-experience.html#limitations
+          Product: Video Cloud
+          Product_area: 'Gallery'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Video Cloud SSAI Overview'
+          Description: 'Add note'
+          Link: https://ssai.support.brightcove.com/getting-started/video-cloud-ssai-overview.html
+          Product: SSAI
+          Product_area: 'getting-started'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
