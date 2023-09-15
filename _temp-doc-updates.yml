@@ -1,109 +1,125 @@
-- date: 08-Sep-2023
+- date: 15-Sep-2023
   types:
     - type: Major updates
       docs:
-        - Title: 'Creating and Managing Templates'
-          Description: 'update image with new settings and settings description'
-          Link: https://studio.support.brightcove.com/interactivity/templates/creating-and-managing-templates.html
+        - Title: 'Creating Custom Analytics Reports'
+          Description: 'Add Limitations secction'
+          Link: https://studio.support.brightcove.com/analytics/reports/creating-custom-analytics-reports.html#limitations
           Product: Video Cloud
-          Product_area: 'Interactivity'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Applying Templates to Projects'
-          Description: 'update image with new settings and workflow description'
-          Link: https://studio.support.brightcove.com/interactivity/templates/applying-templates-projects.html
-          Product: Video Cloud
-          Product_area: 'Interactivity'
+        - Title: 'Google Play Store Account Deletion Compliance for Beacon'
+          Description: 'In this topic, you will learn that Beacon iOS and Android Apps must have a Delete Account button, and what that button does.'
+          Link: https://beacon.support.brightcove.com/publishing-apps/app-behavior/account-deletion1.html
+          Product:  Beacon 
+          Product_area: Apps Behavior
+          Product_Update: 'false'
+          Feature: ''
+          Status: Staging 
+        - Title: 'Beacon Apps Ad Targeting'
+          Description: 'Add support for metadata ad variables in the Beacon SSAI document.'
+          Link: https://beacon.support.brightcove.com/monetization/ssai/beacon-apps-ad-targeting.html
+          Product:  Beacon 
+          Product_area: Monetization
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Getting Started with Brightcove Social'
-          Description: 'Add clip videos section'
-          Link: https://studio.support.brightcove.com/social/module/getting-started-brightcove-social.html#view
+        - Title: 'Engagement: Overview'
+          Description: 'Document updated to reflect the new Engagement UI for Video Cloud Studio'
+          Link: https://studio.support.brightcove.com/analytics/engagement/engagement-overview.html
           Product: Video Cloud
-          Product_area: 'module'
+          Product_area: 'Analytics'
+          Product_Update: 'true'
+          Feature: 'New Engagement Insights UI'
+          Status: Released
+        - Title: 'Engagement: Usage trends'
+          Description: 'Document updated to reflect the new Engagement UI for Video Cloud Studio'
+          Link: https://studio.support.brightcove.com/analytics/engagement/engagement-usage-trends.html
+          Product: Video Cloud
+          Product_area: 'Analytics'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Brightcove Native SDK for Android: Previous SDK information'
-          Description: 'Android SDK Release Previous SDK Information Updated'
-          Link: https://sdks.support.brightcove.com/android/resources/brightcove-player-sdk-android-previous-sdk-information.html
-          Product:  Device SDKs
-          Product_area: 'Android Development'
+        - Title: 'Engagement: Status Over Time'
+          Description: 'Document updated to reflect the new Engagement UI for Video Cloud Studio'
+          Link: https://studio.support.brightcove.com/analytics/engagement/engagement-status-over-time.html
+          Product: Video Cloud
+          Product_area: 'Analytics'
           Product_Update: 'false'
           Feature: ''
-          Status: Released 
-        - Title: 'Overview: Brightcove Native SDK for Android'
-          Description: 'Android SDK Release v8.2.2'
-          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html
-          Product:  Device SDKs 
-          Product_area: 'Android Development'
+          Status: Released
+        - Title: 'Engagement: Sessions Over Time'
+          Description: 'Document updated to reflect the new Engagement UI for Video Cloud Studio'
+          Link: https://studio.support.brightcove.com/analytics/engagement/engagement-sessions-over-time.html
+          Product: Video Cloud
+          Product_area: 'Analytics'
           Product_Update: 'false'
           Feature: ''
-          Status: Released 
-        - Title: 'Brightcove Native SDK for Android Release Notes'
-          Description: 'Android SDK Release v8.2.2 Release Notes'
-          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html
-          Product: Device SDKs 
+          Status: Released
+        - Title: 'Engagement: Hours Viewed By'
+          Description: 'Document updated to reflect the new Engagement UI for Video Cloud Studio'
+          Link: https://studio.support.brightcove.com/analytics/engagement/engagement-hours-viewed-by.html
+          Product: Video Cloud
+          Product_area: 'Analytics'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Content: Overview'
+          Description: 'Document updated to reflect the new Content UI for Video Cloud Studio'
+          Link: https://studio.support.brightcove.com/analytics/engagement/engagement-overview.html
+          Product: Video Cloud
+          Product_area: 'Analytics'
+          Product_Update: 'true'
+          Feature: 'New Content Insights UI'
+          Status: Released
+        - Title: 'Content: Catalog and Explorer'
+          Description: 'Document updated to reflect the new Content UI for Video Cloud Studio'
+          Link: https://studio.support.brightcove.com/analytics/content/content-catalog-by.html
+          Product: Video Cloud
+          Product_area: 'Analytics'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Content: Popular Content'
+          Description: 'Document updated to reflect the new Content UI for Video Cloud Studio'
+          Link: https://studio.support.brightcove.com/analytics/content/content-pupular-content-by.html
+          Product: Video Cloud
+          Product_area: 'Analytics'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Content: Library Breakdown and First Watched'
+          Description: 'Document updated to reflect the new Content UI for Video Cloud Studio'
+          Link: https://studio.support.brightcove.com/analytics/content/content-trial-drivers-library.html
+          Product: Video Cloud
+          Product_area: 'Analytics'
           Product_Update: 'false'
           Feature: ''
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Video Cloud SSAI Overview'
-          Description: 'Add SSAI audio-only limitation'
-          Link: https://ssai.support.brightcove.com/getting-started/video-cloud-ssai-overview.html#Limitations
-          Product: SSAI 
-          Product_area: 'getting-started'
+        - Title: 'Multi Language Audio with the Live Module'
+          Description: 'DRM Limitation Update'
+          Link: https://studio.support.brightcove.com/live/live-module/multi-language-audio.html#Limitations
+          Product: Live
+          Product_area: 'live-module'
           Product_Update: 'false'
           Feature: ''
-          Status: Released 
-        - Title: 'Working with the Immersion Portal Template'
-          Description: 'typo correction'
-          Link: https://gallery.support.brightcove.com/experiences/portal/templates/working-with-immersion-template.html#menu
+          Status: Released
+        - Title: 'Brightcove Ad Insights'
+          Description: 'new requirement'
+          Link: https://studio.support.brightcove.com/analytics/module/ad-insights.html#Requirements
+          Product: Video Cloud 
+          Product_area: 'module'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Social Syndication API'
+          Description: 'API Endpoints updated'
+          Link: https://apis.support.brightcove.com/social-syndication/getting-started/public-syndication-api-overview.html
           Product: Video Cloud
-          Product_area: 'Gallery'
+          Product_area: 'Social Syndication API'
           Product_Update: 'false'
           Feature: ''
-          Status: Released 
-        - Title: 'Working with the Immersion Portal Template'
-          Description: 'typo correction'
-          Link: https://gallery.support.brightcove.com/experiences/portal/templates/working-with-immersion-template.html#menu
-          Product: Video Cloud
-          Product_area: 'Gallery'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Adding Text Tracks to a Video'
-          Description: 'typo correction'
-          Link: https://campaign.support.brightcove.com/videos/adding-text-tracks-to-a-video.html
-          Product: Video Cloud
-          Product_area: 'videos'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Publishing Videos to Social Media Platforms'
-          Description: 'typo correction'
-          Link: https://studio.support.brightcove.com/social/general/publishing-videos-social-media-platforms.html#youtube
-          Product: Video Cloud
-          Product_area: 'general'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Adding Pigeonhole Q&A to a Live Event In-Page Experience'
-          Description: 'Add limitation'
-          Link: https://gallery.support.brightcove.com/experiences/live/in-page/adding-pigeonhole-live-event-page-experience.html#limitations
-          Product: Video Cloud
-          Product_area: 'Gallery'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Video Cloud SSAI Overview'
-          Description: 'Add note'
-          Link: https://ssai.support.brightcove.com/getting-started/video-cloud-ssai-overview.html
-          Product: SSAI
-          Product_area: 'getting-started'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
+          Status: Released
