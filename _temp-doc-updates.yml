@@ -1,125 +1,72 @@
-- date: 15-Sep-2023
+- date: 22-Sep-2023
   types:
+    - type: New Docs
+      docs:
+        - Title: 'Adding Transcripts to Videos using the Media Module'
+          Description: 'In this topic you will learn how to add transcripts to videos using the Media module.'
+          Link: https://studio.support.brightcove.com/media/captions/adding-transcripts-videos.html
+          Product: Video Cloud
+          Product_area: 'Media Module'
+          Product_Update: 'true'
+          Feature: 'New Transcripts UI'
+          Status: Released
     - type: Major updates
       docs:
-        - Title: 'Creating Custom Analytics Reports'
-          Description: 'Add Limitations secction'
-          Link: https://studio.support.brightcove.com/analytics/reports/creating-custom-analytics-reports.html#limitations
-          Product: Video Cloud
+        - Title: 'Overview: Brightcove Native SDK for iOS'
+          Description: 'Brightcove Native Player for iOS new release v6.12.4'
+          Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html
+          Product: Device SDKs 
+          Product_area: 'iOS Development'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Brightcove Native SDK for iOS: Previous SDK information'
+          Description: 'SDK v6.12.3 Previous release added'
+          Link: https://sdks.support.brightcove.com/ios/resources/brightcove-player-sdk-ios-previous-sdk-information.html
+          Product: Device SDKs 
+          Product_area: 'iOS Development'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Overview: Brightcove Native SDK for tvOS'
+          Description: 'Brightcove Native Player for iOS new release v6.12.4'
+          Link: https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html
+          Product: Device SDKs
+          Product_area: 'tvOS Development'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Google Play Store Account Deletion Compliance for Beacon'
-          Description: 'In this topic, you will learn that Beacon iOS and Android Apps must have a Delete Account button, and what that button does.'
-          Link: https://beacon.support.brightcove.com/publishing-apps/app-behavior/account-deletion1.html
-          Product:  Beacon 
-          Product_area: Apps Behavior
+        - Title: 'Brightcove Native SDK for tvOS: Previous SDK information'
+          Description: 'SDK v6.12.3 Previous release added'
+          Link: https://sdks.support.brightcove.com/tvos/resources/brightcove-player-sdk-tvos-previous-sdk-information.html
+          Product: Device SDKs
+          Product_area: ' tvOS Development'
           Product_Update: 'false'
           Feature: ''
-          Status: Staging 
-        - Title: 'Beacon Apps Ad Targeting'
-          Description: 'Add support for metadata ad variables in the Beacon SSAI document.'
-          Link: https://beacon.support.brightcove.com/monetization/ssai/beacon-apps-ad-targeting.html
-          Product:  Beacon 
-          Product_area: Monetization
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Engagement: Overview'
-          Description: 'Document updated to reflect the new Engagement UI for Video Cloud Studio'
-          Link: https://studio.support.brightcove.com/analytics/engagement/engagement-overview.html
-          Product: Video Cloud
-          Product_area: 'Analytics'
-          Product_Update: 'true'
-          Feature: 'New Engagement Insights UI'
-          Status: Released
-        - Title: 'Engagement: Usage trends'
-          Description: 'Document updated to reflect the new Engagement UI for Video Cloud Studio'
-          Link: https://studio.support.brightcove.com/analytics/engagement/engagement-usage-trends.html
-          Product: Video Cloud
-          Product_area: 'Analytics'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Engagement: Status Over Time'
-          Description: 'Document updated to reflect the new Engagement UI for Video Cloud Studio'
-          Link: https://studio.support.brightcove.com/analytics/engagement/engagement-status-over-time.html
-          Product: Video Cloud
-          Product_area: 'Analytics'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Engagement: Sessions Over Time'
-          Description: 'Document updated to reflect the new Engagement UI for Video Cloud Studio'
-          Link: https://studio.support.brightcove.com/analytics/engagement/engagement-sessions-over-time.html
-          Product: Video Cloud
-          Product_area: 'Analytics'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Engagement: Hours Viewed By'
-          Description: 'Document updated to reflect the new Engagement UI for Video Cloud Studio'
-          Link: https://studio.support.brightcove.com/analytics/engagement/engagement-hours-viewed-by.html
-          Product: Video Cloud
-          Product_area: 'Analytics'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Content: Overview'
-          Description: 'Document updated to reflect the new Content UI for Video Cloud Studio'
-          Link: https://studio.support.brightcove.com/analytics/engagement/engagement-overview.html
-          Product: Video Cloud
-          Product_area: 'Analytics'
-          Product_Update: 'true'
-          Feature: 'New Content Insights UI'
-          Status: Released
-        - Title: 'Content: Catalog and Explorer'
-          Description: 'Document updated to reflect the new Content UI for Video Cloud Studio'
-          Link: https://studio.support.brightcove.com/analytics/content/content-catalog-by.html
-          Product: Video Cloud
-          Product_area: 'Analytics'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Content: Popular Content'
-          Description: 'Document updated to reflect the new Content UI for Video Cloud Studio'
-          Link: https://studio.support.brightcove.com/analytics/content/content-pupular-content-by.html
-          Product: Video Cloud
-          Product_area: 'Analytics'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Content: Library Breakdown and First Watched'
-          Description: 'Document updated to reflect the new Content UI for Video Cloud Studio'
-          Link: https://studio.support.brightcove.com/analytics/content/content-trial-drivers-library.html
-          Product: Video Cloud
-          Product_area: 'Analytics'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
+          Status: Released 
     - type: Minor updates
       docs:
-        - Title: 'Multi Language Audio with the Live Module'
-          Description: 'DRM Limitation Update'
-          Link: https://studio.support.brightcove.com/live/live-module/multi-language-audio.html#Limitations
-          Product: Live
-          Product_area: 'live-module'
+        - Title: 'Learning Guide: Brightcove Beacon'
+          Description: 'Note added about how to use Beacon Studio and Beacon Classic'
+          Link: https://beacon-help.support.brightcove.com/get-started/learning-guide-bc-beacon.html
+          Product:  Beacon 
+          Product_area: 'Getting Started'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Brightcove Ad Insights'
-          Description: 'new requirement'
-          Link: https://studio.support.brightcove.com/analytics/module/ad-insights.html#Requirements
-          Product: Video Cloud 
-          Product_area: 'module'
+        - Title: 'How to Search for Videos'
+          Description: 'CMS API Searching updated'
+          Link: https://engage.support.brightcove.com/videos/how-to-search-for-videos.html
+          Product: Engage
+          Product_area: 'Managing Videos'
           Product_Update: 'false'
           Feature: ''
-          Status: Released
-        - Title: 'Overview: Social Syndication API'
-          Description: 'API Endpoints updated'
-          Link: https://apis.support.brightcove.com/social-syndication/getting-started/public-syndication-api-overview.html
-          Product: Video Cloud
-          Product_area: 'Social Syndication API'
+          Status: Released 
+        - Title: 'CMS API Searching update'
+          Description: 'CMS API Searching updated'
+          Link: https://apis.support.brightcove.com/cms/searching/cms-and-playback-apis-video-search-v2.html
+          Product: APIs
+          Product_area: 'CMS API'
           Product_Update: 'false'
           Feature: ''
           Status: Released
