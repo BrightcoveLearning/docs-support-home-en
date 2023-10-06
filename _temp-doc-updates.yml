@@ -1,142 +1,119 @@
-- date: 29-Sep-2023
+- date: 06-Oct-2023
   types:
+    - type: New Brightcove Academy Courses
+      docs:
+        - Title: 
+          Description: 
+          Customer_Link: 
+          Employee_Link: 
+          Product: Video Cloud | Brightcove Player | Device SDKs | Live | Beacon | SSAI | Zencoder | CorpTV | Audience Insights | Brightcove Interactivity | Integrations
+          Product_area: ''
+          Product_Update: 'true | false'
+          Feature: ''
+          Status: Released
+    
+    - type: New Docs
+      docs:
+        - Title: ''
+          Description: ''
+          Link: 
+          Product: Video Cloud | Brightcove Player | Device SDKs | Live | Beacon | SSAI | Zencoder | CorpTV | Audience Insights | Brightcove Interactivity | Integrations
+          Product_area: ''
+          Product_Update: 'true | false'
+          Feature: ''
+          Status: Released | Limited Availability | Staging | Internal
+    
     - type: Major updates
       docs:
-        - Title: 'Downloading links'
-          Description: 'adding limitations section and related toppics'
-          Link: https://apis.support.brightcove.com/cms/code-samples/cms-api-sample-download-links.html
+        - Title: 'Brightcove QoE Insights'
+          Description: 'New Error Codes Section added'
+          Link: https://studio.support.brightcove.com/analytics/module/qoe-insights.html
           Product: Video Cloud
-          Product_area: 'code-samples'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'How the Campaign Module Identifies Viewers'
-          Description: 'add do not track section'
-          Link: https://studio.support.brightcove.com/campaign/general/how-campaign-module-identifies-viewers.html#dnt
-          Product: Video Cloud
-          Product_area: 'general'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Integration Spotlight: HubSpot'
-          Description: 'add multiple sections to how to integrate HubSpot'
-          Link: https://audience-insights.support.brightcove.com/integrations/integration_spotlight_hubspot.html
-          Product: Video Cloud
-          Product_area: 'integrations'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Account Deletion'
-          Description: 'Google Play Account Deletion Section added'
-          Link: https://beacon.support.brightcove.com/publishing-apps/app-behavior/account-deletion1.html
-          Product: Beacon 
-          Product_area: 'App Behavior'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Player E VOD Features'
-          Description: 'Audio Only section added'
-          Link: https://beacon-help.support.brightcove.com/layout/e-vod-features.html
-          Product:  Beacon 
-          Product_area: 'Managing Pages'
+          Product_area: 'Analytics'
           Product_Update: 'true'
-          Feature: 'Beacon Players identify if the media is an Audio Only format and can playback this across all platforms'
+          Feature: 'New Error Codes section for QoE'
+          Status: Released
+
+        - Title: 'Brightcove Videos on Roku Trick Play'
+          Description: 'New section about using DASH'
+          Link: https://general.support.brightcove.com/general/roku-trick-play.html
+          Product: Video Cloud 
+          Product_area: 'General Information'
+          Product_Update: 'false'
+          Feature: ''
           Status: Released 
-        - Title: 'Overview: Brightcove Native SDK for Android'
-          Description: 'Android SDK Release v8.2.3'
-          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html
+        - Title: 'Overview: Social Syndication API'
+          Description: 'Added limitations section'
+          Link: https://apis.support.brightcove.com/social-syndication/getting-started/public-syndication-api-overview.html#introduction
+          Product: Video Cloud
+          Product_area: 'Social Syndication API'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        
+        - Title: 'Sending Brightcove Analytics from the Native SDK for iOS'
+          Description: 'New Cross platform analytics fields'
+          Link: https://sdks.support.brightcove.com/ios/analytics/sending-brightcove-analytics-native-sdk-ios.html#Customize_properties
           Product: Device SDKs
-          Product_area: 'Android Development'
+          Product_area: 'Analytics'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Brightcove Native SDK for Android: Previous SDK information'
-          Description: 'Updated Previous releases section'
-          Link: https://sdks.support.brightcove.com/android/resources/brightcove-player-sdk-android-previous-sdk-information.html
-          Product:  Device SDKs 
-          Product_area: 'Android Development'
+        - Title: 'Sending Brightcove Analytics from the Native SDK for Android'
+          Description: 'New Cross platform analytics fields'
+          Link: https://sdks.support.brightcove.com/android/analytics/sending-brightcove-analytics-native-sdk-android.html#Customize_properties
+          Product: Device SDKs
+          Product_area: 'Analytics'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Brightcove Native SDK for Android Release Notes'
-          Description: 'Release Notes for new Android SDK Release v8.2.3'
-          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html
-          Product:  Device SDKs
-          Product_area: ''
+        - Title: 'Configuring Player Localization'
+          Description: 'New section Languages supported'
+          Link: https://studio.support.brightcove.com/players/appearance/configuring-player-localization.html
+          Product: Video Cloud
+          Product_area: 'Players'
           Product_Update: 'false'
           Feature: ''
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Overview of Experiences'
-          Description: 'typo fix'
-          Link: https://studio.support.brightcove.com/interactivity/experiences/experiences-overview.html
-          Product: Video Cloud
-          Product_area: 'experiences'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Remote Assets'
-          Description: 'typo fix'
-          Link: https://apis.support.brightcove.com/cms/managing-videos/using-cms-api-remote-assets.html
-          Product: Video Cloud
-          Product_area: 'managing-videos'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: Brightcove Native SDK for iOS'
-          Description: 'delete link'
-          Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html
-          Product: Device SDKs
-          Product_area: 'basics'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Configuring Gallery Settings'
-          Description: 'typo fix'
-          Link: https://gallery.support.brightcove.com/settings/configuring-gallery-settings.html
-          Product: Video Cloud
-          Product_area: 'settings'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: Playback API'
-          Description: 'typo fix'
-          Link: https://apis.support.brightcove.com/playback/getting-started/overview-playback-api.html
-          Product: Video Cloud
-          Product_area: 'getting-started'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Implementing Multiple Audio Tracks'
-          Description: 'typo fix'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/implementing-multiple-audio-tracks-using-apis.html
-          Product: Video Cloud
-          Product_area: 'ingest-guides'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Step-by-Step: Delivery System API'
-          Description: 'typo fix'
-          Link: https://apis.support.brightcove.com/delivery-system/step-step-delivery-system-api.html
-          Product: Video Cloud
-          Product_area: 'delivery-system'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Playback Restrictions Error Reference'
-          Description: '403s error code update'
-          Link: https://apis.support.brightcove.com/playback-restrictions/references/playback-rights-errors.html
-          Product: Video Cloud
-          Product_area: 'references'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Player E VOD Features'
-          Description: 'Under Skip 10 seconds and Forward Back is now supported for Web and Apple TV'
-          Link: https://beacon-help.support.brightcove.com/layout/e-vod-features.html
-          Product:  Beacon 
+        - Title: 'OTT Catalog Export'
+          Description: 'Roku Search Feed section updated'
+          Link: https://beacon-help.support.brightcove.com/layout/ott-catalog-export.html
+          Product: Beacon 
           Product_area: 'Managing Pages'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating a Network Log'
+          Description: 'update term for safari'
+          Link: https://player.support.brightcove.com/troubleshooting/creating-network-log.html#Create_a_web_archive_from_Safari
+          Product: Brightcove Player
+          Product_area: 'troubleshooting'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating a Network Log'
+          Description: 'update steps and images for firefox'
+          Link: https://player.support.brightcove.com/troubleshooting/creating-network-log.html#Create_a_network_log_from_Firefox
+          Product: Brightcove Player
+          Product_area: 'troubleshooting'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Data Collection API v2'
+          Description: 'new values added to device_os field'
+          Link: https://apis.support.brightcove.com/data-collection/getting-started/overview-data-collection-api-v2.html#all-event-parameters
+          Product: Video Cloud
+          Product_area: 'Data Collection API'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Data Collection API v2'
+          Description: 'New Cross platform analytics fields'
+          Link: https://apis.support.brightcove.com/data-collection/getting-started/overview-data-collection-api-v2.html#all-event-parameters
+          Product: Video Cloud
+          Product_area: 'Data Collection API'
           Product_Update: 'false'
           Feature: ''
           Status: Released
