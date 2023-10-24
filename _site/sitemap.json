@@ -80,6 +80,11 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/doc-updates-q3-2023.html",
+      "oldURL": "/doc-updates-q3-2023"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/doc-updates-q4-2021.html",
       "oldURL": "/doc-updates-q4-2021"
   },
@@ -100,32 +105,7 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/brightcove-academy/cloud-playout-essentials/frame.html",
-      "oldURL": "/frame"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/brightcove-academy/advertising-in-the-live-module/frame.html",
-      "oldURL": "/frame"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/brightcove-academy/brightcove-support-essentials/frame.html",
-      "oldURL": "/frame"
-  },
-
-  {
       "newURL": "https://support.brightcove.com/brightcove-academy/ingest-profiles-essentials/frame.html",
-      "oldURL": "/frame"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/brightcove-academy/content-management-essentials/frame.html",
-      "oldURL": "/frame"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/brightcove-academy/beacon-studio-essentials/frame.html",
       "oldURL": "/frame"
   },
 
@@ -190,6 +170,11 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/brightcove-academy/cloud-playout-essentials/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/brightcove-academy/gallery-module-essentials/gallery-essentials-part-3/frame.html",
       "oldURL": "/frame"
   },
@@ -206,6 +191,26 @@
 
   {
       "newURL": "https://support.brightcove.com/brightcove-academy/gallery-module-essentials/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/advertising-in-the-live-module/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/brightcove-support-essentials/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/content-management-essentials/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/beacon-studio-essentials/frame.html",
       "oldURL": "/frame"
   },
 
@@ -347,6 +352,11 @@
   {
       "newURL": "https://support.brightcove.com/product-updates-q3-2022.html",
       "oldURL": "/product-updates-q3-2022"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/product-updates-q3-2023.html",
+      "oldURL": "/product-updates-q3-2023"
   },
 
   {
