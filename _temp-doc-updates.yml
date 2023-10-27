@@ -1,130 +1,64 @@
-- date: 20-Oct-2023
+- date: 27-Oct-2023
   types:
     - type: New Docs
       docs:
-        - Title: 'Text tracks List'
-          Description: 'This describes how text tracks work in Brightcove Beacon Apps.'
-          Link: https://beacon-help.support.brightcove.com/layout/text-tracks-list.html
-          Product: Beacon
-          Product_area: 'Layout'
+        - Title: 'Deep Linking For Mobile Apps'
+          Description: 'The Beacon Deep Linking feature allows audiences to either download the Beacon App or to be directed to a specific section or page of the Beacon App'
+          Link: https://beacon-help.support.brightcove.com/general/notifications/app-deep-linking.html
+          Product:  Beacon 
+          Product_area: ''
           Product_Update: 'true'
-          Feature: 'Text tracks Labels for Beacon Apps'
-          Status: Released
+          Feature: 'App Deep Linking'
+          Status: Released 
     - type: Major updates
       docs:
-        - Title: 'Known Issues: Brightcove Native Player SDKs'
-          Description: 'Add Play/Pause button does not work on FireTV apps known issue'
-          Link: https://sdks.support.brightcove.com/developer-support/questions/known-issues-brightcove-native-player-sdks.html
-          Product: Device SDKs
-          Product_area: 'Developer Support'
+        - Title: 'Skip Intros and Credits within Beacon Apps'
+          Description: 'Updated Information about Skip Intros and Credits within Beacon Apps'
+          Link: https://beacon-help.support.brightcove.com/publishing-apps/app-behavior/skip-intro-credits.html
+          Product:  Beacon
+          Product_area: 'Publishing Apps'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Step-by-Step: Simple Video App using the Native SDK for Android'
-          Description: 'Update workflow example'
-          Link: https://sdks.support.brightcove.com/android/basics/step-step-simple-video-app-using-native-sdk-android.html
-          Product: Device SDKs
-          Product_area: 'Android'
+        - Title: 'Engagement Subscribers Insights'
+          Description: 'New name for Insights in Beacon: Engagement Subscribers Insights'
+          Link: https://beacon-help.support.brightcove.com/analytics/engagement-insights/index.html
+          Product:  Beacon
+          Product_area: 'Analytics'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Ingesting Transcript Files'
-          Description: 'Add Supported languages section'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-transcriptions.html#supported_languages
+        - Title: 'Signed URLs and Token Auth with a Live Stream'
+          Description: 'Update document to add new optional fields'
+          Link: https://apis.support.brightcove.com/live-api/guides/signed-urls-and-token-auth-live-stream.html
           Product: Video Cloud
-          Product_area: 'Dynamic Ingest'
+          Product_area: 'Live API'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-
-        - Title: 'Installing the Kollective Player Plugin'
-          Description: 'Added several changes for the new Kollective Plugin'
-          Link: https://integrations.support.brightcove.com/ecdn/kollective/add-kollective-player-plugin.html
+        - Title: 'Adding Captions to Videos Programmatically'
+          Description: 'Added and additional approach to the code implementation'
+          Link: https://player.support.brightcove.com/user-interface/adding-captions-videos-programmatically.html
           Product: Brightcove Player
-          Product_area: 'Plugins'
-          Product_Update: 'true'
-          Feature: 'New Kollective Plugin for Brightcove Player'
-          Status: Released
-        - Title: 'Kollective eCDN User Guide'
-          Description: 'Added several changes for the new Kollective Plugin'
-          Link: https://integrations.support.brightcove.com/ecdn/kollective/kollective-user-guide.html
-          Product: Brightcove Player
-          Product_area: 'Plugins'
-          Product_Update: 'true'
-          Feature: 'New Kollective Plugin for Brightcove Player'
-          Status: Released
-        - Title: 'Overview: OAuth API'
-          Description: 'Added a known issues section'
-          Link: https://apis.support.brightcove.com/oauth/getting-started/overview-oauth-api-v4.html
-          Product: Video Cloud
-          Product_area: 'Outh API'
+          Product_area: 'Captions'
           Product_Update: 'false'
           Feature: ''
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Player E VOD Features'
-          Description: 'Add text tracks titles to Feature availability table'
-          Link: https://beacon-help.support.brightcove.com/layout/e-vod-features.html
-          Product: Beacon
-          Product_area: 'Layout'
+        - Title: 'Kollective eCDN User Guide'
+          Description: 'Note added to Synchronizing live events section'
+          Link: https://integrations.support.brightcove.com/ecdn/kollective/kollective-user-guide.html#Synchronizing_live_events
+          Product: Live 
+          Product_area: 'eCDN'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Configuring Server-Side Ad Settings'
-          Description: 'Comment Client Options'
-          Link: https://beacon-help.support.brightcove.com/admin/general/configuring-server-side-ad-settings.html
-          Product: Beacon
-          Product_area: 'admin'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: Data Collection API v2'
-          Description: 'Update play_request event on Player V7'
-          Link: https://apis.support.brightcove.com/data-collection/getting-started/overview-data-collection-api-v2.html#video-cloud-events
+        - Title: 'Creating and Managing Live Events using the Live Module'
+          Description: 'Note added to Duplicating an event section'
+          Link: https://studio.support.brightcove.com/live/live-module/creating-and-managing-live-events-using-live-module.html#duplicate
           Product: Video Cloud
-          Product_area: 'Data Colection API'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Analytics Module UI Glossary'
-          Description: 'Update play_request event on Player V7'
-          Link: https://studio.support.brightcove.com/analytics/module/analytics-module-ui-glossary.html#P
-          Product: Video Cloud
-          Product_area: 'Analytics'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Analytics API Glossary'
-          Description: 'Update play_request event on Player V7'
-          Link: https://apis.support.brightcove.com/analytics/general/analytics-api-glossary.html#--P--
-          Product: Video Cloud
-          Product_area: 'Analytics'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Installing the Kollective Player Plugin'
-          Description: 'delete policy_key option'
-          Link: https://integrations.support.brightcove.com/ecdn/kollective/add-kollective-player-plugin.html
-          Product: Integrations
-          Product_area: 'Kollective'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-
-        - Title: 'Video Fields Reference'
-          Description: 'Added transcripts as a primary field'
-          Link: https://apis.support.brightcove.com/playback/references/playback-api-video-fields-reference.html
-          Product: Video Cloud
-          Product_area: 'Playback API'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: Forensic Watermarking'
-          Description: 'Added a dimensions limitation'
-          Link: https://apis.support.brightcove.com/general/features/overview-forensic-watermarking.html
-          Product: Video Cloud
-          Product_area: 'API'
+          Product_area: 'Live Module'
           Product_Update: 'false'
           Feature: ''
           Status: Released
