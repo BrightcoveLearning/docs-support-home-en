@@ -1,48 +1,22 @@
-- date: 03-Nov-2023
+- date: 10-Nov-2023
   types:
     - type: New Docs
       docs:
-        - Title: 'Choosing a Favorite Player'
-          Description: 'New feature Choosing a Favorite Player'
-          Link: https://studio.support.brightcove.com/publish/publishing/choosing-favorite-player.html
-          Product: Video Cloud
-          Product_area: 'Publishing'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Staging
-    - type: Major updates
-      docs:
-        - Title: 'Integrating a Zoom meeting into Brightcove Live'
-          Description: 'Changed the zoom integration to a Brightcove LE process'
-          Link: https://studio.support.brightcove.com/live/live-module/zoom-live-integration.html
-          Product: Live
+        - Title: 'Integration: Eloqua'
+          Description: 'The Eloqua integration enables sending audience data to an Eloqua application'
+          Link: https://audience-insights.support.brightcove.com/integrations/integration_eloqua.html
+          Product: Audience Insights
           Product_area: 'Integrations'
-          Product_Update: 'false'
-          Feature: ''
+          Product_Update: 'true'
+          Feature: 'Eloqua integration'
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Programmatically Localizing Brightcove Player'
-          Description: 'Changed screenshot'
-          Link: https://player.support.brightcove.com/coding-topics/programmatically-localizing-brightcove-player.html
-          Product: Brightcove Player
-          Product_area: 'Player'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: OAuth API'
-          Description: 'Fixed typo'
-          Link: https://apis.support.brightcove.com/oauth/getting-started/overview-oauth-api-v4.html
-          Product: Video Cloud
-          Product_area: 'API'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: Audience API'
-          Description: 'Changed leads workflow'
-          Link: https://apis.support.brightcove.com/audience/getting-started/overview-audience-api.html
-          Product: Video Cloud
-          Product_area: 'API'
-          Product_Update: 'false'
+        - Title: 'Overview: Brightcove Native SDK for iOS'
+          Description: 'Update to support iOS 17'
+          Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html#Supported_versions
+          Product: Device SDKs
+          Product_area: 'ios'
+          Product_Update: ' false'
           Feature: ''
           Status: Released
