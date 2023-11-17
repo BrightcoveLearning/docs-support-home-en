@@ -1,22 +1,86 @@
-- date: 10-Nov-2023
-  types:
-    - type: New Docs
+- date: 17-Nov-2023
+  types:  
+    - type: Major updates
       docs:
-        - Title: 'Integration: Eloqua'
-          Description: 'The Eloqua integration enables sending audience data to an Eloqua application'
-          Link: https://audience-insights.support.brightcove.com/integrations/integration_eloqua.html
-          Product: Audience Insights
-          Product_area: 'Integrations'
-          Product_Update: 'true'
-          Feature: 'Eloqua integration'
+        - Title: 'Creating Series/Seasons/Episodes'
+          Description: 'Covered a new creation process using beacon studio'
+          Link: https://beacon.support.brightcove.com/using-brightcove-beacon/series-seasons-episodes.html
+          Product: Beacon
+          Product_area: 'Beacon Studio'
+          Product_Update: 'false'
+          Feature: ''
           Status: Released
+        - Title: 'Deleting an App User'
+          Description: 'App users create their own accounts when they first use a Brightcove Beacon app. These accounts can be deleted when the app users no longer need it.'
+          Link: https://beacon.support.brightcove.com/references/delete-app-user.html
+          Product:  Beacon 
+          Product_area: 'References'
+          Product_Update: 'true'
+          Feature: 'Account deletion functionality from platforms'
+          Status: Released 
+        - Title: 'Managing Google Subscriptions Part 1'
+          Description: 'Create a service account section updated with new steps'
+          Link: https://beacon.support.brightcove.com/publishing-apps/android/managing-google-subscriptions-1.html
+          Product:  Beacon 
+          Product_area: 'App Publishing and Behavior'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Brightcove Image Token Management API'
+          Description: 'Include the base URL and Bearer token'
+          Link: https://apis.support.brightcove.com/images/references/image-token-api-reference.html
+          Product: Video Cloud 
+          Product_area: 'images'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Image API'
+          Description: 'New feature spritesheets'
+          Link: https://apis.support.brightcove.com/images/getting-started/spritesheet.html
+          Product: Video Cloud 
+          Product_area: 'images'
+          Product_Update: 'true'
+          Feature: 'Spritesheets'
+          Status: Staging
     - type: Minor updates
       docs:
-        - Title: 'Overview: Brightcove Native SDK for iOS'
-          Description: 'Update to support iOS 17'
-          Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html#Supported_versions
-          Product: Device SDKs
-          Product_area: 'ios'
-          Product_Update: ' false'
+        - Title: 'Configuring a Brightcove Player with the Interactivity Plugin'
+          Description: 'Link added to Custom tracking events section'
+          Link: https://studio.support.brightcove.com/interactivity/getting-started/configuring-player-plugin.html#:~:text=Custom%20tracking%20events
+          Product: Brightcove Interactivity
+          Product_area: 'Interactivity Plugin'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Installation Guide: Brightcove Video Connect for Sitecore'
+          Description: 'Wording for Pre-requisites updated'
+          Link: https://integrations.support.brightcove.com/sitecore/installation-guide.html#Pre_requisites
+          Product: Integrations
+          Product_area: 'Sitecore'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'OTT Catalog Export'
+          Description: 'Google automatically crawls sitemaps periodically Information added'
+          Link: https://beacon-help.support.brightcove.com/layout/ott-catalog-export.html
+          Product: Beacon 
+          Product_area: 'Managing Pages'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Advertising with the FreeWheel Plugin'
+          Description: 'Fix blank script snippet'
+          Link: https://player.support.brightcove.com/plugins/advertising-freewheel-plugin.html#Consent_GDPR_support
+          Product: Brightcove Player
+          Product_area: 'plugings'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating a Lesson Experience'
+          Description: 'update LTI not supported anymore'
+          Link: https://studio.support.brightcove.com/interactivity/experiences/creating-lesson-experience.html
+          Product: Brightcove Interactivity
+          Product_area: 'experiences'
+          Product_Update: 'false'
           Feature: ''
           Status: Released
