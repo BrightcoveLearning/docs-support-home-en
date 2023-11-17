@@ -3,7 +3,7 @@
     - type: Major updates
       docs:
         - Title: 'Creating Series/Seasons/Episodes'
-          Description: 'Covered a new creation process using beacon studio'
+          Description: 'Covered a new creation process using Beacon Studio'
           Link: https://beacon.support.brightcove.com/using-brightcove-beacon/series-seasons-episodes.html
           Product: Beacon
           Product_area: 'Beacon Studio'
