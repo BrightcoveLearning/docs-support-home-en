@@ -1,86 +1,64 @@
-- date: 17-Nov-2023
-  types:  
+- date: 24-Nov-2023
+  types:
+    - type: New Docs
+      docs:
+        - Title: 'Roku SDK Developer Guide'
+          Description: 'The Brightcove Roku SDK allows an easy access to Brightcove’s Playback services in a Roku channel'
+          Link: https://beacon-help.support.brightcove.com/publishing-apps/roku/sdk-developer-guide.html
+          Product: Beacon
+          Product_area: ''
+          Product_Update: 'true'
+          Feature: 'Roku SDK Developer Guide'
+          Status: Staging
     - type: Major updates
       docs:
-        - Title: 'Creating Series/Seasons/Episodes'
-          Description: 'Covered a new creation process using Beacon Studio'
-          Link: https://beacon.support.brightcove.com/using-brightcove-beacon/series-seasons-episodes.html
-          Product: Beacon
-          Product_area: 'Beacon Studio'
+        - Title: 'Domains and Ports that Must Be Accessible to Video Cloud'
+          Description: 'Content Security Policies section updated'
+          Link: https://studio.support.brightcove.com/general/architecture/domains-and-ports-must-be-accessible-video-cloud.html#content_security_policies
+          Product: Video Cloud
+          Product_area: 'Architecture'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Deleting an App User'
-          Description: 'App users create their own accounts when they first use a Brightcove Beacon app. These accounts can be deleted when the app users no longer need it.'
-          Link: https://beacon.support.brightcove.com/references/delete-app-user.html
-          Product:  Beacon 
-          Product_area: 'References'
-          Product_Update: 'true'
-          Feature: 'Account deletion functionality from platforms'
-          Status: Released 
-        - Title: 'Managing Google Subscriptions Part 1'
-          Description: 'Create a service account section updated with new steps'
-          Link: https://beacon.support.brightcove.com/publishing-apps/android/managing-google-subscriptions-1.html
-          Product:  Beacon 
-          Product_area: 'App Publishing and Behavior'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Brightcove Image Token Management API'
-          Description: 'Include the base URL and Bearer token'
-          Link: https://apis.support.brightcove.com/images/references/image-token-api-reference.html
-          Product: Video Cloud 
-          Product_area: 'images'
+        - Title: 'Capturing Poster and Thumbnail Images'
+          Description: 'New limitation added'
+          Link: https://studio.support.brightcove.com/media/properties/capturing-poster-and-thumbnail-images.html
+          Product: Video Cloud
+          Product_area: 'Media Module'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Overview: Image API'
-          Description: 'New feature spritesheets'
-          Link: https://apis.support.brightcove.com/images/getting-started/spritesheet.html
-          Product: Video Cloud 
-          Product_area: 'images'
-          Product_Update: 'true'
-          Feature: 'Spritesheets'
-          Status: Staging
+        - Title: 'Multi Language Audio with the Live Module'
+          Description: 'New limitation added'
+          Link: https://live.support.brightcove.com/live-module/multi-language-audio.html#Limitations
+          Product: Video Cloud
+          Product_area: 'Live Module'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Multi Language Audio with the Live API'
+          Description: 'New limitation added'
+          Link: https://apis.support.brightcove.com/live-api/guides/live-multi-language-audio.html#Limitations
+          Product: Video Cloud
+          Product_area: 'Live API'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Configuring a Brightcove Player with the Interactivity Plugin'
-          Description: 'Link added to Custom tracking events section'
-          Link: https://studio.support.brightcove.com/interactivity/getting-started/configuring-player-plugin.html#:~:text=Custom%20tracking%20events
-          Product: Brightcove Interactivity
-          Product_area: 'Interactivity Plugin'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Installation Guide: Brightcove Video Connect for Sitecore'
-          Description: 'Wording for Pre-requisites updated'
-          Link: https://integrations.support.brightcove.com/sitecore/installation-guide.html#Pre_requisites
-          Product: Integrations
-          Product_area: 'Sitecore'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'OTT Catalog Export'
-          Description: 'Google automatically crawls sitemaps periodically Information added'
-          Link: https://beacon-help.support.brightcove.com/layout/ott-catalog-export.html
-          Product: Beacon 
-          Product_area: 'Managing Pages'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Advertising with the FreeWheel Plugin'
-          Description: 'Fix blank script snippet'
-          Link: https://player.support.brightcove.com/plugins/advertising-freewheel-plugin.html#Consent_GDPR_support
+        - Title: 'Brightcove Player Sample: Automatically Set Caption Language'
+          Description: 'Outdated links removed'
+          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-automatically-set-caption-language.html
           Product: Brightcove Player
-          Product_area: 'plugings'
+          Product_area: 'Captions'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Creating a Lesson Experience'
-          Description: 'update LTI not supported anymore'
-          Link: https://studio.support.brightcove.com/interactivity/experiences/creating-lesson-experience.html
-          Product: Brightcove Interactivity
-          Product_area: 'experiences'
+        - Title: 'Configuring Google Analytics Event Tracking'
+          Description: 'Wording fixed'
+          Link: https://studio.support.brightcove.com/players/general/configuring-google-analytics-event-tracking.html
+          Product: Brightcove Player
+          Product_area: 'General'
           Product_Update: 'false'
           Feature: ''
           Status: Released
