@@ -1,103 +1,117 @@
-- date: 08-Dec-2023
+- date: 15-Dec-2023
   types:
-    - type: New Docs
-      docs:
-        - Title: 'Choosing a Favorite Player'
-          Description: 'Choosing a Favorite Player will prioritize this player while publishing.'
-          Link: https://studio.support.brightcove.com/publish/publishing/choosing-favorite-player.html
-          Product: Brightcove Player
-          Product_area: 'Player'
-          Product_Update: 'true'
-          Feature: 'Favorite Player'
-          Status: Released
     - type: Major updates
       docs:
-        - Title: 'Dimension: region'
-          Description: 'The <code>region_name</code> field mapping is fixed. Reports obtained before December 6 may reflect different values for this dimension. You can re-run old reports and update the values for previous date reports to fix it. The changes retain the same Region identifier, but the number of unknowns in City or Region Name should be reduced.'
-          Link: https://apis.support.brightcove.com/analytics/dimension-guides/dimension-region.html
-          Product: Video Cloud
-          Product_area: 'Analytics API'
+        - Title: 'CAE Settings'
+          Description: 'New CAE setting added'
+          Link: https://zencoder.support.brightcove.com/encoding-settings/general/cae-settings.html#true_resolution
+          Product: Zencoder
+          Product_area: 'CAE'
           Product_Update: 'true'
-          Feature: 'Region name field mapping fixed'
+          Feature: 'New CAE setting'
           Status: Released
-        - Title: 'Publishing Videos to Social Media Platforms'
-          Description: 'Choosing multiple social destinations is now available.'
-          Link: https://studio.support.brightcove.com/social/general/publishing-videos-social-media-platforms.html
+        - Title: 'Working with Audio-Only Content'
+          Description: 'New limitations section added'
+          Link: https://beacon-help.support.brightcove.com/general/references/working-audio-content.html
+          Product: Beacon
+          Product_area: 'Audio Content'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Adding Captions to Videos using the Media Module'
+          Description: 'Embed on mp4 section added.'
+          Link: https://studio.support.brightcove.com/media/captions/adding-captions-videos-using-media-module.html
           Product: Video Cloud
-          Product_area: 'Social'
-          Product_Update: 'true'
-          Feature: 'Publishing videos to social media'
-          Status: Released
-        - Title: 'Adding/Deleting an App User'
-          Description: 'New section added about how to add an app user'
-          Link: https://beacon.support.brightcove.com/references/add-delete-app-user.html
-          Product:  Beacon 
-          Product_area: 'References'
+          Product_area: 'Captions'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Google Analytics Plugin'
-          Description: 'The GA plugin does not support specific parameters'
-          Link: https://player.support.brightcove.com/plugins/google-analytics-plugin.html
-          Product: Brightcove Player
-          Product_area: 'Plugins'
+        - Title: 'Brightcove Native SDK for Android Release Notes'
+          Description: 'Current release section updated'
+          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html
+          Product:  Device SDKs
+          Product_area: 'Android Development'
           Product_Update: 'false'
           Feature: ''
-          Status: Released
-        - Title: 'Google Analytics Plugin'
-          Description: 'New section added: Configuring Google Analytics'
-          Link: https://player.support.brightcove.com/plugins/google-analytics-plugin.html
-          Product: Brightcove Player
-          Product_area: 'Plugins'
+          Status: Released 
+        - Title: 'Brightcove Native SDK for Android: Previous SDK information'
+          Description: 'Previous releases section updated'
+          Link: https://sdks.support.brightcove.com/android/resources/brightcove-player-sdk-android-previous-sdk-information.html
+          Product: Device SDKs 
+          Product_area: 'Android Development'
           Product_Update: 'false'
           Feature: ''
-          Status: Released
-        - Title: 'Brightcove Native SDK for iOS 6.12.6'
-          Description: 'Release 6.12.630 Nov 2023Brightcove Player SDK for iOS'
-          Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html
+          Status: Released 
+        - Title: 'Overview: Brightcove Native SDK for Android'
+          Description: 'New information added in the notes section'
+          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html
           Product: Device SDKs
-          Product_area: 'ios'
-          Product_Update: 'false'
+          Product_area: 'Android Development'
+          Product_Update: ''
           Feature: ''
-          Status: Released
-        - Title: 'Brightcove Native SDK for tvOS 6.12.6'
-          Description: 'Release 6.12.630 Nov 2023Brightcove Player SDK for iOS'
-          Link: https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html
-          Product: Device SDKs
-          Product_area: 'ios'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
+          Status: Released 
     - type: Minor updates
       docs:
-        - Title: 'Video SEO Schema Generator Plugin'
-          Description: 'Added skipRules as a plugin option.'
-          Link: https://player.support.brightcove.com/plugins/video-seo-schema-generator-plugin.html
-          Product:  Brightcove Player
-          Product_area: 'Plugins'
-          Product_Update: 'true'
-          Feature: 'Plugin options'
+        - Title: 'Publishing Videos to Social Media Platforms'
+          Description: 'Note added to reflect latest X (Twitter) updates'
+          Link: 
+          Product: Video Cloud
+          Product_area: 'Social Module'
+          Product_Update: 'false'
+          Feature: ''
           Status: Released
-        - Title: 'Determining Which Rendition Will Play'
-          Description: 'Info added about MSE meaning'
-          Link: https://player.support.brightcove.com/playback/determining-which-rendition-will-play.html
-          Product: Brightcove Player 
-          Product_area: 'Playback'
+        - Title: 'Brightcove QoE Insights'
+          Description: 'Note about Error rate metric added'
+          Link: https://studio.support.brightcove.com/analytics/module/qoe-insights.html#Error_rate
+          Product: Video Cloud
+          Product_area: 'QOE'
           Product_Update: 'false'
           Feature: ''
-          Status: Released 
-        - Title: 'Overview: Digital Rights Management (DRM)'
-          Description: 'Chrome Incognito for Android - DRM support information added'
-          Link: https://studio.support.brightcove.com/general/content-protection/overview-digital-rights-management-drm-video-cloud.html#DRM_support_details
-          Product: Video Cloud 
-          Product_area: 'General Information'
+          Status: Released
+        - Title: 'Overview: Brightcove Playback Restrictions'
+          Description: 'Note about playback restrictions with in-page experiences added'
+          Link: https://apis.support.brightcove.com/playback-restrictions/getting-started/overview-playback-restrictions.html#Which_products_support_Playback_Restrictions
+          Product: Video Cloud
+          Product_area: 'Playback Restrictions'
           Product_Update: 'false'
           Feature: ''
-          Status: Released 
+          Status: Released
+        - Title: 'Applying Templates to Projects'
+          Description: 'Note about videos already added to a project added'
+          Link: https://studio.support.brightcove.com/interactivity/templates/applying-templates-projects.html#all-projects
+          Product: Video Cloud
+          Product_area: 'Interactivity'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Playback API Reference (2.0.0)'
+          Description: 'Transcripts added as a response.'
+          Link: https://apis.support.brightcove.com/playback/references/reference_v2.html
+          Product: Video Cloud
+          Product_area: 'API'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Advertising with the IMA3 Plugin'
+          Description: 'Added impression prefixed event'
+          Link: https://player.support.brightcove.com/plugins/advertising-ima3-plugin.html
+          Product: Brightcove Player
+          Product_area: 'ima3'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Configuring Player Advertising using the Players Module'
+          Description: 'Beacon does not support CSAI. Only SSAI'
+          Link: https://beacon-help.support.brightcove.com/players/general/configuring-player-advertising-using-players-module.html
+          Product:  Beacon
+          Product_area: 'Managing Players'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
         - Title: 'Creating Promo Coupons'
-          Description: 'Editing coupon fields'
+          Description: 'How Stripe coupons works'
           Link: https://beacon.support.brightcove.com/monetization/general/promo-codes.html
-          Product:  Beacon 
+          Product:  Beacon
           Product_area: 'Monetization'
           Product_Update: 'false'
           Feature: ''
