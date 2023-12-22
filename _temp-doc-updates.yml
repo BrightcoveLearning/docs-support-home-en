@@ -84,3 +84,51 @@
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Overview: Dimensions, Fields, and Parameters'
+          Description: 'Link fixed'
+          Link: https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html
+          Product: Video Cloud
+          Product_area: 'Analytics API'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: OAuth API'
+          Description: 'Images fixed'
+          Link: https://apis.support.brightcove.com/oauth/getting-started/overview-oauth-api-v4.html
+          Product: Video Cloud
+          Product_area: 'OAuth API'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Live API Reference'
+          Description: 'Broken link fixed'
+          Link: https://apis.support.brightcove.com/live-api/references/reference.html
+          Product: Live
+          Product_area: 'Live API'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Introducing Pages'
+          Description: 'Added description image and 2 additional texts'
+          Link: https://beacon.support.brightcove.com/using-brightcove-beacon/introducing-pages.html
+          Product: Beacon
+          Product_area: 'Pages'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Managing Users'
+          Description: 'Added 2 information notes'
+          Link: https://studio.support.brightcove.com/admin/managing-users.html
+          Product: Video Cloud
+          Product_area: 'Studio user management'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Player System Requirements'
+          Description: 'Added 1 additional text note'
+          Link: https://player.support.brightcove.com/references/brightcove-player-system-requirements.html
+          Product: Brightcove Player
+          Product_area: 'System Requirements'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
