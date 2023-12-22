@@ -1,118 +1,86 @@
-- date: 15-Dec-2023
+- date: 22-Dec-2023
   types:
     - type: Major updates
       docs:
-        - Title: 'CAE Settings'
-          Description: 'New CAE setting added'
-          Link: https://zencoder.support.brightcove.com/encoding-settings/general/cae-settings.html#true_resolution
-          Product: Zencoder
-          Product_area: 'CAE'
-          Product_Update: 'true'
-          Feature: 'New CAE setting'
-          Status: Released
-        - Title: 'Working with Audio-Only Content'
-          Description: 'New limitations section added'
-          Link: https://beacon-help.support.brightcove.com/general/references/working-audio-content.html
-          Product: Beacon
-          Product_area: 'Audio Content'
+        - Title: 'Getting Started with Brightcove Video Connect for the Sitecore Experience Platform'
+          Description: 'New Sitecore version added'
+          Link: https://integrations.support.brightcove.com/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html
+          Product: Integrations
+          Product_area: 'Sitecore'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Adding Captions to Videos using the Media Module'
-          Description: 'Embed on mp4 section added.'
-          Link: https://studio.support.brightcove.com/media/captions/adding-captions-videos-using-media-module.html
-          Product: Video Cloud
-          Product_area: 'Captions'
+        - Title: 'AMP and Advertising'
+          Description: 'Note about ampSupport plugin added'
+          Link: https://player.support.brightcove.com/amp/amp-and-advertising.html#AMP_consent_and_Advertising
+          Product: Brightcove Player
+          Product_area: 'ZMP'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Brightcove Native SDK for Android Release Notes'
-          Description: 'Current release section updated'
-          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html
-          Product:  Device SDKs
-          Product_area: 'Android Development'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Brightcove Native SDK for Android: Previous SDK information'
-          Description: 'Previous releases section updated'
-          Link: https://sdks.support.brightcove.com/android/resources/brightcove-player-sdk-android-previous-sdk-information.html
-          Product: Device SDKs 
-          Product_area: 'Android Development'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Overview: Brightcove Native SDK for Android'
-          Description: 'New information added in the notes section'
-          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html
-          Product: Device SDKs
-          Product_area: 'Android Development'
-          Product_Update: ''
-          Feature: ''
-          Status: Released 
     - type: Minor updates
       docs:
-        - Title: 'Publishing Videos to Social Media Platforms'
-          Description: 'Note added to reflect latest X (Twitter) updates'
-          Link: 
+        - Title: 'Configuring Access Control Profiles'
+          Description: 'Add new Track SAML attribute'
+          Link: https://gallery.support.brightcove.com/settings/configuring-access-control-profiles.html
           Product: Video Cloud
-          Product_area: 'Social Module'
+          Product_area: 'Gallery'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Brightcove QoE Insights'
-          Description: 'Note about Error rate metric added'
-          Link: https://studio.support.brightcove.com/analytics/module/qoe-insights.html#Error_rate
+        - Title: 'Implementing Client-Side Ads with the Native SDKs'
+          Description: 'Add the SSAI and IMA combination are supported comment'
+          Link: https://sdks.support.brightcove.com/features/implementing-client-side-ads-native-sdks.html
+          Product: Device SDKs
+          Product_area: 'Features'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Implementing Server-Side Ads with the Native SDKs'
+          Description: 'Add the SSAI and IMA combination are supported comment'
+          Link: https://sdks.support.brightcove.com/features/implementing-server-side-ads-native-player-sdks.html
+          Product: Device SDKs
+          Product_area: 'Features'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Playback API'
+          Description: 'Clarification about cache added'
+          Link: https://apis.support.brightcove.com/playback/getting-started/overview-playback-api.html#avoid_hardcoded_urls
           Product: Video Cloud
-          Product_area: 'QOE'
+          Product_area: 'Playback API'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Overview: Brightcove Playback Restrictions'
-          Description: 'Note about playback restrictions with in-page experiences added'
-          Link: https://apis.support.brightcove.com/playback-restrictions/getting-started/overview-playback-restrictions.html#Which_products_support_Playback_Restrictions
+        - Title: 'Best Practices: CMS and Playback APIs'
+          Description: 'Clarification about cache added'
+          Link: https://apis.support.brightcove.com/cms/getting-started/best-practices-cms-and-playback-apis.html#using_media_urls
           Product: Video Cloud
-          Product_area: 'Playback Restrictions'
+          Product_area: 'Playback & CMS APIs'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Applying Templates to Projects'
-          Description: 'Note about videos already added to a project added'
-          Link: https://studio.support.brightcove.com/interactivity/templates/applying-templates-projects.html#all-projects
-          Product: Video Cloud
-          Product_area: 'Interactivity'
+        - Title: 'The Brightcove Native SDKs'
+          Description: 'Added a note about not supporting frameworks.'
+          Link: https://sdks.support.brightcove.com/getting-started/brightcove-native-player-sdks.html
+          Product: Device SDKs
+          Product_area: 'Mobile SDKs'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Playback API Reference (2.0.0)'
-          Description: 'Transcripts added as a response.'
-          Link: https://apis.support.brightcove.com/playback/references/reference_v2.html
-          Product: Video Cloud
-          Product_area: 'API'
+        - Title: 'Integration Spotlight: HubSpot'
+          Description: 'Added a note about selected scopes.'
+          Link: https://audience-insights.support.brightcove.com/integrations/integration_spotlight_hubspot.html
+          Product: Integrations
+          Product_area: 'Audience Insights'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Advertising with the IMA3 Plugin'
-          Description: 'Added impression prefixed event'
-          Link: https://player.support.brightcove.com/plugins/advertising-ima3-plugin.html
-          Product: Brightcove Player
-          Product_area: 'ima3'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Configuring Player Advertising using the Players Module'
-          Description: 'Beacon does not support CSAI. Only SSAI'
-          Link: https://beacon-help.support.brightcove.com/players/general/configuring-player-advertising-using-players-module.html
-          Product:  Beacon
-          Product_area: 'Managing Players'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating Promo Coupons'
-          Description: 'How Stripe coupons works'
-          Link: https://beacon.support.brightcove.com/monetization/general/promo-codes.html
-          Product:  Beacon
-          Product_area: 'Monetization'
+        - Title: 'Implementing Server-Side Ads with the Native SDKs.'
+          Description: 'Added a note about mixing plugins.'
+          Link: https://sdks.support.brightcove.com/features/implementing-server-side-ads-native-player-sdks.html
+          Product: Device SDKs
+          Product_area: 'SSAI'
           Product_Update: 'false'
           Feature: ''
           Status: Released
