@@ -1,134 +1,113 @@
-- date: 22-Dec-2023
+- date: 29-Dec-2023
   types:
     - type: Major updates
       docs:
-        - Title: 'Getting Started with Brightcove Video Connect for the Sitecore Experience Platform'
-          Description: 'New Sitecore version added'
-          Link: https://integrations.support.brightcove.com/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html
-          Product: Integrations
-          Product_area: 'Sitecore'
+        - Title: 'Overview: Brightcove Native SDK for Android'
+          Description: 'ExoPlayer, Google IMA versions updated. Also, Notes section is with new information'
+          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html
+          Product:  Device SDKs 
+          Product_area: 'Android Development'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'AMP and Advertising'
-          Description: 'Note about ampSupport plugin added'
-          Link: https://player.support.brightcove.com/amp/amp-and-advertising.html#AMP_consent_and_Advertising
+        - Title: 'Brightcove Player Release Notes'
+          Description: 'New Brightcove Player version'
+          Link: https://player.support.brightcove.com/release-notes/brightcove-player-release-notes.html
           Product: Brightcove Player
-          Product_area: 'ZMP'
+          Product_area: 'Release Notes'
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Brightcove Player Documentation'
+          Description: 'New Brightcove Player version'
+          Link: https://player.support.brightcove.com/
+          Product: Brightcove Player
+          Product_area: 'Brightcove Player'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        
     - type: Minor updates
       docs:
-        - Title: 'Configuring Access Control Profiles'
-          Description: 'Add new Track SAML attribute'
-          Link: https://gallery.support.brightcove.com/settings/configuring-access-control-profiles.html
+        - Title: 'Google Tag Manager Plugin for Brightcove Player'
+          Description: 'Updated statement for Creating Triggers, Variables & Tags'
+          Link: https://player.support.brightcove.com/plugins/google-tag-manager-plugin-brightcove-player.html
+          Product: Brightcove Player 
+          Product_area: 'Plugins'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Ingesting Videos with Multi-Language Audio Tracks'
+          Description: 'Note added about adding multiple audio tracks'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-videos-multiple-audio-tracks.html
+          Product: APIs
+          Product_area: 'Dynamic Ingest API'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+
+        - Title: 'Overview: Live Scheduler'
+          Description: 'Removed extra final dot'
+          Link: https://apis.support.brightcove.com/live-api/guides/live-scheduler.html
           Product: Video Cloud
-          Product_area: 'Gallery'
+          Product_area: 'Live API'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Implementing Client-Side Ads with the Native SDKs'
-          Description: 'Add the SSAI and IMA combination are supported comment'
-          Link: https://sdks.support.brightcove.com/features/implementing-client-side-ads-native-sdks.html
-          Product: Device SDKs
-          Product_area: 'Features'
+        - Title: 'Overview: Player API'
+          Description: 'Removed word from text'
+          Link: https://player.support.brightcove.com/coding-topics/overview-player-api.html
+          Product: Brightcove Player
+          Product_area: 'Player API'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Implementing Server-Side Ads with the Native SDKs'
-          Description: 'Add the SSAI and IMA combination are supported comment'
-          Link: https://sdks.support.brightcove.com/features/implementing-server-side-ads-native-player-sdks.html
-          Product: Device SDKs
-          Product_area: 'Features'
+        - Title: 'Beacon Apps Ad Targeting'
+          Description: 'Added note to SSAI documents'
+          Link: https://beacon.support.brightcove.com/monetization/ssai/beacon-apps-ad-targeting.html
+          Product: Beacon
+          Product_area: 'Monetization'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Overview: Playback API'
-          Description: 'Clarification about cache added'
-          Link: https://apis.support.brightcove.com/playback/getting-started/overview-playback-api.html#avoid_hardcoded_urls
+        - Title: 'Video Cloud SSAI API'
+          Description: 'Added note to SSAI documents'
+          Link: https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html
           Product: Video Cloud
-          Product_area: 'Playback API'
+          Product_area: 'SSAI API'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Best Practices: CMS and Playback APIs'
-          Description: 'Clarification about cache added'
-          Link: https://apis.support.brightcove.com/cms/getting-started/best-practices-cms-and-playback-apis.html#using_media_urls
+        - Title: 'Overview: HTTPS Support'
+          Description: 'Corrected typo'
+          Link: https://player.support.brightcove.com/playback/overview-https-support.html
+          Product: Brightcove Player
+          Product_area: 'HTTPS Support'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Restricting Video Playback Using IP Address'
+          Description: 'Corrected typo'
+          Link: https://player.support.brightcove.com/content-protection/restricting-video-playback-using-ip-address.html
+          Product: Brightcove Player
+          Product_area: 'DRM and Content protection'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating Custom Metadata Fields'
+          Description: 'Corrected wording'
+          Link: https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html
           Product: Video Cloud
-          Product_area: 'Playback & CMS APIs'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'The Brightcove Native SDKs'
-          Description: 'Added a note about not supporting frameworks.'
-          Link: https://sdks.support.brightcove.com/getting-started/brightcove-native-player-sdks.html
-          Product: Device SDKs
-          Product_area: 'Mobile SDKs'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Integration Spotlight: HubSpot'
-          Description: 'Added a note about selected scopes.'
-          Link: https://audience-insights.support.brightcove.com/integrations/integration_spotlight_hubspot.html
-          Product: Integrations
-          Product_area: 'Audience Insights'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Implementing Server-Side Ads with the Native SDKs.'
-          Description: 'Added a note about mixing plugins.'
-          Link: https://sdks.support.brightcove.com/features/implementing-server-side-ads-native-player-sdks.html
-          Product: Device SDKs
-          Product_area: 'SSAI'
+          Product_area: 'Studio'
           Product_Update: 'false'
           Feature: ''
           Status: Released
         - Title: 'Overview: Dimensions, Fields, and Parameters'
-          Description: 'Link fixed'
+          Description: 'Corrected two typos'
           Link: https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html
           Product: Video Cloud
           Product_area: 'Analytics API'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Overview: OAuth API'
-          Description: 'Images fixed'
-          Link: https://apis.support.brightcove.com/oauth/getting-started/overview-oauth-api-v4.html
-          Product: Video Cloud
-          Product_area: 'OAuth API'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Live API Reference'
-          Description: 'Broken link fixed'
-          Link: https://apis.support.brightcove.com/live-api/references/reference.html
-          Product: Live
-          Product_area: 'Live API'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Introducing Pages'
-          Description: 'Added description image and 2 additional texts'
-          Link: https://beacon.support.brightcove.com/using-brightcove-beacon/introducing-pages.html
-          Product: Beacon
-          Product_area: 'Pages'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Managing Users'
-          Description: 'Added 2 information notes'
-          Link: https://studio.support.brightcove.com/admin/managing-users.html
-          Product: Video Cloud
-          Product_area: 'Studio user management'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Player System Requirements'
-          Description: 'Added 1 additional text note'
-          Link: https://player.support.brightcove.com/references/brightcove-player-system-requirements.html
-          Product: Brightcove Player
-          Product_area: 'System Requirements'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
+        
