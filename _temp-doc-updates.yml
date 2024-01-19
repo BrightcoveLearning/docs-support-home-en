@@ -1,161 +1,136 @@
-- date: 12-January-2024
+- date: 19-January-2024
   types:
     - type: New Docs
       docs:
-        - Title: 'Consent Management in Beacon Web'
-          Description: 'New OneTrust Web documentation'
-          Link: https://beacon.support.brightcove.com/references/consent-management-using-onetrust/consent-management-in-beacon-web.html
-          Product: Beacon
-          Product_area: 'consent management'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Managing Cookie Compliance for Mobile/CTVs Using OneTrust Cookie Consent'
-          Description: 'New OneTrust Mobile/CTV documentation'
-          Link: https://beacon.support.brightcove.com/references/consent-management-using-onetrust/consent-management-in-ctv-mobile-beacon-apps.html
-          Product: Beacon
-          Product_area: 'consent management'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Create GDPR Template for OneTrust Consent Management'
-          Description: 'New OneTrust about how to create a GDPR OneTrust Template'
-          Link: https://beacon.support.brightcove.com/references/consent-management-using-onetrust/template-creation/gdpr-template.html
-          Product: Beacon
-          Product_area: 'consent management'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Create a Quebec Law 25 Template for OneTrust Consent Management'
-          Description: 'New OneTrust about how to create a Quebec Law 25 OneTrust Template'
-          Link: https://beacon.support.brightcove.com/references/consent-management-using-onetrust/template-creation/law-25-template.html
-          Product: Beacon
-          Product_area: 'consent management'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Create CCPA Template for OneTrust Consent Management'
-          Description: 'New OneTrust about how to create a CCPA OneTrust Template'
-          Link: https://beacon.support.brightcove.com/references/consent-management-using-onetrust/template-creation/ccpa-template.html
-          Product: Beacon
-          Product_area: 'consent management'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Create Global Template for OneTrust Consent Management'
-          Description: 'New OneTrust about how to create a Global OneTrust Template'
-          Link: https://beacon.support.brightcove.com/references/consent-management-using-onetrust/template-creation/global-template.html
-          Product: Beacon
-          Product_area: 'consent management'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating a Sprinklr app'
-          Description: 'New Document of how to create an app in the Sprinklr developer portal in order to get an API key/secret.'
-          Link: https://studio.support.brightcove.com/social/module/creating-sprinklr-app.html
-          Product: Video Cloud
-          Product_area: 'social'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Adding Pigeonhole Reactions to a Gallery Experience'
-          Description: 'New Document of how to add Pigeonhole Reactions to a Gallery Template.'
-          Link: https://gallery.support.brightcove.com/experiences/live/in-page/adding-pigeonhole-live-event-reactions.html
-          Product: Video Cloud
-          Product_area: 'gallery'
+        - Title: 'Integration: Marketo'
+          Description: 'With this integration, you can update user data gathered from Audience Insights to a Marketo application.'
+          Link: https://audience-insights.support.brightcove.com/integrations/integration_marketo.html
+          Product: Audience Insights
+          Product_area: Integrations
           Product_Update: 'true'
-          Feature: 'Add Pigeonhole Reactions to Gallery Templates'
+          Feature: 'Marketo'
+          Status: Released
+        - Title: 'Adding Pigeonhole Chat Support to a Gallery Experience'
+          Description: 'Created documentation regarding new Pigeonhole Chat feature'
+          Link: https://gallery.support.brightcove.com/experiences/portal/other/adding-pigeonhole-live-event-chat-support.html
+          Product: Integrations
+          Product_area: 'Pigeonhole'
+          Product_Update: 'true'
+          Feature: 'Pigeonhole Chat'
           Status: Released
     - type: Major updates
       docs:
-        - Title: 'Overview: Brightcove Native SDK for iOS'
-          Description: 'Brightcove Player SDK for iOS v6.12.7'
-          Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html
-          Product: SDKs
-          Product_area: 'iOS Development'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Brightcove Native SDK for iOS: Previous SDK information'
-          Description: 'Updated previous information section'
-          Link: https://sdks.support.brightcove.com/ios/resources/brightcove-player-sdk-ios-previous-sdk-information.html
-          Product: Video Cloud | Brightcove Player | Device SDKs | Live | Beacon | SSAI | Zencoder | CorpTV | Audience Insights | Brightcove Interactivity | Integrations
-          Product_area: 'iOS Development'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Overview: Brightcove Native SDK for tvOS'
-          Description: 'Brightcove Player SDK for iOS v6.12.7'
-          Link: https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html
-          Product: SDKs
-          Product_area: 'tvOS Development'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Native SDK for tvOS: Previous SDK information'
-          Description: 'Updated previous information section'
-          Link: https://sdks.support.brightcove.com/tvos/resources/brightcove-player-sdk-tvos-previous-sdk-information.html
-          Product: SDKs
-          Product_area: 'tvOS Development'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Creating Social Media Publishing Destinations'
-          Description: 'New section about how to create a Sprinklr destination'
-          Link: https://studio.support.brightcove.com/social/module/creating-social-media-publishing-destinations.html#sprinklr
+        - Title: 'Overview: Using Aspera for Ingestion to Video Cloud'
+          Description: 'Considerations for the new Aspera version added'
+          Link: https://apis.support.brightcove.com/aspera/overview.html
           Product: Video Cloud
-          Product_area: 'social'
+          Product_area: 'Aspera'
+          Product_Update: 'true'
+          Feature: 'Aspera upgrade to 4.4.1'
+          Status: Released
+        - Title: 'Chromecast with the Native SDKs'
+          Description: 'Nee Limitations Section added'
+          Link: https://sdks.support.brightcove.com/features/chromecast-with-sdks.html
+          Product: Device SDKs
+          Product_area: 'Features'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Using Auto Sync to Synchronize Videos to Social Media Accounts'
-          Description: 'New section about how to use autosync for Sprinklr'
-          Link: https://studio.support.brightcove.com/social/general/using-auto-sync-synchronize-videos-social-media-accounts.html#sprinklr
-          Product: Video Cloud
-          Product_area: 'social'
+        - Title: 'Chromecast Plugin for Brightcove Player'
+          Description: 'Nee Limitations Section added'
+          Link: https://player.support.brightcove.com/plugins/chromecast-plugin-brightcove-player.html
+          Product: Brightcove Pleyr
+          Product_area: 'Plugins'
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Overview: Brightcove Native SDK for Android'
+          Description: 'Android SDK Release v8.4.0'
+          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html
+          Product:  Device SDKs 
+          Product_area: 'Android Development'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Brightcove Native SDK for Android: Previous SDK information'
+          Description: 'Previous SDK information section updated'
+          Link: https://sdks.support.brightcove.com/android/resources/brightcove-player-sdk-android-previous-sdk-information.html
+          Product: Device SDKs 
+          Product_area: 'Android Development'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Brightcove Native SDK for Android Release Notes'
+          Description: 'Current Release updated for Android SDK Release v8.4.0'
+          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html
+          Product:  Device SDKs 
+          Product_area: 'Android Development'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
     - type: Minor updates
       docs:
-        - Title: 'Implementing Playback Rights'
-          Description: 'Link added to documentation about JSON Web Token (JWT)'
-          Link: https://apis.support.brightcove.com/playback-restrictions/getting-started/implementing-playback-rights.html#Configure_your_player
-          Product: APIs
-          Product_area: ' Playback Restrictions'
+        - Title: 'Getting Started with Brightcove Video Connect for the Sitecore Experience Platform'
+          Description: 'Note added to reflect that the version 10.0 is no longer supported'
+          Link: https://integrations.support.brightcove.com/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html
+          Product: Integrations
+          Product_area: 'Integrations'
+          Product_Update: 'true'
+          Feature: ''
+          Status: Released
+        - Title: 'Configuring Video Availability'
+          Description: 'Note about Availability Tab added'
+          Link: https://beacon-help.support.brightcove.com/media/properties/configuring-video-availability.html
+          Product: Beacon
+          Product_area: 'Media'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'FairPlay Certificate Registration'
+          Description: 'New information added'
+          Link: https://beacon.support.brightcove.com/publishing-apps/ios-tvos/fairplay-certificate.html
+          Product: Beacon
+          Product_area: 'App Publishing'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating Custom Metadata Fields'
+          Description: 'Added a note about required custom fields'
+          Link: https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html
+          Product: Video Cloud
+          Product_area: Custom fields
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Configuring Player Controls'
+          Description: 'Replaced image'
+          Link: https://studio.support.brightcove.com/players/appearance/configuring-player-controls.html#picture-in-picture
+          Product: Brightcove Player
+          Product_area: 'Appearance'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Live API Reference'
+          Description: 'Adding 1 extra field on JSON'
+          Link: https://apis.support.brightcove.com/live-api/references/reference.html
+          Product: Live
+          Product_area: 'API parameters'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Configuring Players Plugins'
+          Description: 'Replaced images'
+          Link: https://studio.support.brightcove.com/players/general/configuring-player-plugins.html
+          Product: Brightcove Player
+          Product_area: 'Plugins'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Deep Linking For Mobile Apps'
+          Description: 'Note added about linking for mobile'
+          Link: https://beacon-help.support.brightcove.com/general/notifications/app-deep-linking.html
+          Product:  Beacon 
+          Product_area: 'General Information'
           Product_Update: 'false'
           Feature: ''
           Status: Released 
-
-        - Title: 'Overview: Brightcove Playback Restrictions'
-          Description: 'Replaced image'
-          Link: https://apis.support.brightcove.com/playback-restrictions/getting-started/overview-playback-restrictions.html
-          Product: Video Cloud
-          Product_area: 'Playback Restrictions'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Adding Audio Tracks to Videos using the Media Module'
-          Description: 'Added note'
-          Link: https://studio.support.brightcove.com/media/captions/adding-audio-tracks-videos-using-media-module.html
-          Product: Video Cloud
-          Product_area: 'Captions and Audiofiles'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Using a Non-Brightcove Player'
-          Description: 'Corrected typo'
-          Link: https://player.support.brightcove.com/publish/using-non-brightcove-player.html
-          Product: Brightcove Player
-          Product_area: 'Non Brightcove player'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: Data Collection API v2'
-          Description: 'Rephrase wording'
-          Link: https://apis.support.brightcove.com/data-collection/getting-started/overview-data-collection-api-v2.html
-          Product: Brightcove Player
-          Product_area: 'Player API'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
