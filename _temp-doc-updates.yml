@@ -1,68 +1,70 @@
-- date: 26-January-2024
+- date: 02-February-2024
   types:
+    - type: Major updates
+      docs:
+        - Title: 'CMS/Playback APIs Release Notes'
+          Description: 'Re-uploaded the release notes'
+          Link: https://apis.support.brightcove.com/cms/references/catalog-apis-cms-api-and-playback-api-release-notes.html
+          Product: Video Cloud
+          Product_area: 'CMS API'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for Android'
+          Description: 'New devices added in the device group list'
+          Link: https://apis.support.brightcove.com/delivery-rules/getting-started/implementing-delivery-rules.html#Conditions
+          Product: APIs
+          Product_area: 'Delivery Rules API'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Overview: Brightcove Native SDK for Android'
+          Description: 'Supported versions list updated'
+          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html
+          Product:  Device SDKs 
+          Product_area: 'Basics'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Adobe AEM Brightcove Connector: Overview'
-          Description: 'Rearrange the side menu'
-          Link: https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-overview.html
-          Product: Integrations
-          Product_area: 'adobe'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Video SEO Schema Generator Plugin'
-          Description: 'Add instructions on how to remove flash tech from the BC Player.'
-          Link: https://player.support.brightcove.com/plugins/video-seo-schema-generator-plugin.html#Configuring_the_player
+        - Title: 'AMP Using a Video Cloud Video'
+          Description: 'Added note'
+          Link: https://player.support.brightcove.com/amp/amp-using-video-cloud-video.html
           Product: Video Cloud
-          Product_area: 'plugins'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Google Analytics Plugin'
-          Description: 'Sentence updated'
-          Link: https://player.support.brightcove.com/plugins/google-analytics-plugin.html
-          Product: Video Cloud
-          Product_area: 'plugins'
+          Product_area: 'AMP'
           Product_Update: 'false'
           Feature: ''
           Status: Released
         - Title: 'Creating and Managing Live Events using the Live Module'
-          Description: 'External key generator tool link removed'
-          Link: https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#advanced
-          Product: Live
-          Product_area: 'live-module'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating and Managing Live Events using the Live Module'
-          Description: 'Added a note about DVR not being supported on Chromecast.'
+          Description: 'Information added about maximum value allowed for this DVR Window field'
           Link: https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html
-          Product: Live
-          Product_area: DVR
+          Product: Live 
+          Product_area: 'Using the Live Module'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Fields for Custom Live Ingest Profiles'
+          Description: 'Explanation of live sliding window duration is a legacy alias for live dvr sliding window duration.'
+          Link: https://live.support.brightcove.com/admin/ingest-profiles/fields-custom-live-ingest-profiles.html
+          Product:  Live 
+          Product_area: 'Administering Accounts'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Requesting Late Binding'
+          Description: 'Late Binding workflow currently does not support removing existing MP4 renditions'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/requesting-late-binding.html#notes_and_limitations
+          Product: APIs
+          Product_area: 'Dynamic Ingest API'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: '已知問題：工作室、布萊特灣播放器和 API'
-          Description: 'Fix broken image'
-          Link: https://zh-tw.apis.support.brightcove.com/support/known-issues-studio-brightcove-player-and-apis.html
+        - Title: 'Generic Stream Concurrency'
+          Description: 'Updated the introduction for clarity'
+          Link: https://apis.support.brightcove.com/playback-restrictions/guides/generic-stream-concurrency.html
           Product: Video Cloud
-          Product_area: 'Known issues'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Adding Pigeonhole Q&A to a Live Event Portal Experience'
-          Description: 'Removed documentation about PH QA.'
-          Link: https://gallery.support.brightcove.com/experiences/live/portal/adding-pigeonhole-live-event-portal-experience.html
-          Product: Pigeonhole
-          Product_area: 'QA Live chat.'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Standard Ingest Profiles for Dynamic Delivery and Context Aware Encoding'
-          Description: 'Fixed broken links'
-          Link: https://studio.support.brightcove.com/admin/ingest-profiles/standard-ingest-profiles-dynamic-delivery-and-context-aware-encoding.html#multi-platform-extended-dynamic-hevc-mixed-codec
-          Product: Video Cloud
-          Product_area: 'Ingest Profiles'
+          Product_area: 'Playback restrictions'
           Product_Update: 'false'
           Feature: ''
           Status: Released
