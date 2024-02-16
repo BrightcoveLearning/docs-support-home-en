@@ -1,152 +1,104 @@
-- date: 09-February-2024
+- date: 16-Feb-2024
   types:
     - type: New Docs
       docs:
-        - Title: 'MAPs Section'
-          Description: 'Marketo Munchkin or Hubspot Clientside integration with a BC player'
-          Link: https://studio.support.brightcove.com/players/general/maps.html
-          Product: Integrations
-          Product_area: 'Player'
-          Product_Update: 'true'
-          Feature: 'MAPs'
-          Status: Staging
-        - Title: 'Advertising with Google IMA DAI Plugin'
-          Description: 'The use of the IMA DAI plugin and how it can be implemented using Studio and through custom coding.'
-          Link: https://player.support.brightcove.com/plugins/google-ima-dai.html
-          Product: Beacon
-          Product_area: 'plugins'
-          Product_Update: 'true'
-          Feature: 'IMA DAI plugin'
-          Status: Staging 
-        - Title: 'Implementing DAI Plugin for Android'
-          Description: 'The use of the IMA DAI plugin and how it can be implemented using Studio and through custom coding.'
-          Link: https://sdks.support.brightcove.com/features/dai-plugin.html
-          Product: Beacon
-          Product_area: 'plugins'
-          Product_Update: 'true'
-          Feature: 'IMA DAI plugin'
-          Status: Staging 
-        - Title: 'Implementing DAI Plugin for iOS'
-          Description: 'The use of the IMA DAI plugin and how it can be implemented using Studio and through custom coding.'
-          Link: https://sdks.support.brightcove.com/ios/advertising/dai-plugin.html
-          Product: Beacon
-          Product_area: 'plugins'
-          Product_Update: 'true'
-          Feature: 'IMA DAI plugin'
-          Status: Staging
-        - Title: 'Configuring Viewer ID Tracking'
-          Description: 'In this topic you will learn how to configure the Viewer ID Tracking for a player.'
-          Link: https://studio.support.brightcove.com/players/properties/viewer-id-tracking.html
+        - Title: 'Publisher Insights: Overview'
+          Description: 'Aimed to provide relevant and time-sensitive insights about the viewers consumption habits.'
+          Link: https://studio.support.brightcove.com/analytics/reports/publisher-insights.html
           Product: Video Cloud
-          Product_area: 'Player Module'
+          Product_area: 'Analytics'
           Product_Update: 'true'
-          Feature: 'New Viewer ID Tracking section added to the Player Module'
-          Status: Staging
+          Feature: 'Publisher Insights'
+          Status: Released
+        - Title: 'Publisher Insights: Trending'
+          Description: 'Explores the Trending tab in Publisher Insights.'
+          Link: https://studio.support.brightcove.com/analytics/pi-trending.html
+          Product: Video Cloud
+          Product_area: 'Analytics'
+          Product_Update: 'true'
+          Feature: 'Publisher Insights'
+          Status: Released
+        - Title: 'Publisher Insights: Engagement'
+          Description: 'Explores the Engagement tab in Publisher Insights.'
+          Link: https://studio.support.brightcove.com/analytics/pi-engagement.html
+          Product: Video Cloud
+          Product_area: 'Analytics'
+          Product_Update: 'true'
+          Feature: 'Publisher Insights'
+          Status: Released
+        - Title: 'Publisher Insights: Content'
+          Description: 'Explores the Content tab in Publisher Insights.'
+          Link: https://studio.support.brightcove.com/analytics/pi-content.html
+          Product: Video Cloud
+          Product_area: 'Analytics'
+          Product_Update: 'true'
+          Feature: 'Publisher Insights'
+          Status: Released
     - type: Major updates
       docs:
-        - Title: 'Android SDK Release v8.4.1'
-          Description: ' Brightcove Native SDK for Android version 8.4.1'
-          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html
-          Product: Device SDKs
-          Product_area: 'basics'
+        - Title: 'Localizing Plugins'
+          Description: 'new section Localizing Brightcove Plugins Loaded In-Page'
+          Link: https://player.support.brightcove.com/coding-topics/localizing-plugins.html
+          Product: Brightcove Player
+          Product_area: 'coding-topics'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Codecs And Formats'
-          Description: 'Information updated'
-          Link: https://zencoder.support.brightcove.com/general-information/faq-codecs-and-formats.html
-          Product: Zencoder
-          Product_area: 'General Information'
+        - Title: 'Demo Apps Access'
+          Description: 'New QR code on Apple TV'
+          Link: https://beacon.support.brightcove.com/publishing-apps/general/demo-apps-access.html
+          Product: Beacon 
+          Product_area: 'App Publishing and Behavior'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Creating a JSON Web Token (JWT)'
-          Description: 'Information about Delivery Rules drules claim updated'
-          Link: https://general.support.brightcove.com/developer/create-json-web-token.html
-          Product: Video Cloud
-          Product_area: 'Developers'
+        - Title: 'Advertising with the IMA3 Plugin'
+          Description: 'This document is for two versions of the Brightcove Player IMA3 Plugin: version 5 for Brightcove Player 7, and legacy version 4 for Brightcove Player version 6 (6.59.1 or later)'
+          Link: https://player.support.brightcove.com/plugins/advertising-ima3-plugin.html
+          Product: Brightcove Player
+          Product_area: 'Advertising'
           Product_Update: 'false'
           Feature: ''
-          Status: Released
-        - Title: 'Editing Video Properties using the Media Module'
-          Description: 'Information about how to create a custom field for Genre tag'
-          Link: https://studio.support.brightcove.com/media/properties/editing-video-properties-using-media-module.html
-          Product: Video Cloud
-          Product_area: 'Video Properties'
+          Status: Released 
+        - Title: 'Advertising with the IMA3 Plugin'
+          Description: 'Updated OM Access Modes support in IMA3 plugin'
+          Link: https://player.support.brightcove.com/plugins/advertising-ima3-plugin.html#omidAccessModeRules
+          Product: Brightcove Player
+          Product_area: 'Plugins'
           Product_Update: 'false'
           Feature: ''
-          Status: Released
+          Status: Released 
     - type: Minor updates
       docs:
-        - Title: 'Adding Captions to Videos using the Media Module'
-          Description: 'Added limitation note'
-          Link: https://studio.support.brightcove.com/media/captions/adding-captions-videos-using-media-module.html
-          Product: Video Cloud 
-          Product_area: 'Adding captions'
+        - Title: 'Advertising with the IMA3 Plugin v3'
+          Description: 'Note added about Brightcove Player IMA3 Plugin version 3, which has been deprecated and is no longer supported'
+          Link: https://player.support.brightcove.com/plugins/advertising-ima3-v3-plugin.html
+          Product: Brightcove Player 
+          Product_area: 'Plugins'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Media Sharing using the Media Module'
-          Description: 'Added informative note about media acceptance'
-          Link: https://studio.support.brightcove.com/media/general/media-sharing-using-media-module.html
-          Product: Video Cloud 
-          Product_area: 'Media sharing'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Time Stamp'
-          Description: 'Added Known issues note about t parameter'
-          Link: https://studio.support.brightcove.com/publish/general/time-stamp.html
+        - Title: 'Brightcove Player Accessibility'
+          Description: 'Add another keyboard control PageUp and PageDown buttons'
+          Link: https://player.support.brightcove.com/playback/brightcove-player-accessibility.html#Keyboard_controls
           Product: Brightcove Player
-          Product_area: 'Player time stamp'
+          Product_area: 'playback'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Overview: Dynamic Ingest API'
-          Description: 'Added note about API call size'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/getting-started/overview-dynamic-ingest-api-dynamic-delivery.html
-          Product: APIs
-          Product_area: 'Dynamic Ingest API'
+        - Title: 'Advertising with the IMA3 Plugin'
+          Description: 'Change order of how to implement the plugin'
+          Link: https://player.support.brightcove.com/plugins/advertising-ima3-plugin.html#Implement_using_Players_module_plugins_section
+          Product: Brightcove Player
+          Product_area: 'playback'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Overview: CMS API'
-          Description: 'hyperlink updated'
-          Link: https://support.brightcove.com/overview-cms-api.html#Notifications
-          Product: Video Cloud 
-          Product_area: 'home'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating and Managing Live Events using the Live Module'
-          Description: 'Information added about maximum value allowed for this DVR Window field'
-          Link: https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html
-          Product: Live 
-          Product_area: 'Using the Live Module'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Fields for Custom Live Ingest Profiles'
-          Description: 'Explanation of live sliding window duration is a legacy alias for live dvr sliding window duration.'
-          Link: https://live.support.brightcove.com/admin/ingest-profiles/fields-custom-live-ingest-profiles.html
-          Product:  Live 
-          Product_area: 'Administering Accounts'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Requesting Late Binding'
-          Description: 'Late Binding workflow currently does not support removing existing MP4 renditions'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/requesting-late-binding.html#notes_and_limitations
-          Product: APIs
-          Product_area: 'Dynamic Ingest API'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Generic Stream Concurrency'
-          Description: 'Updated the introduction for clarity'
-          Link: https://apis.support.brightcove.com/playback-restrictions/guides/generic-stream-concurrency.html
-          Product: Video Cloud
-          Product_area: 'Playback restrictions'
+        - Title: 'Brightcove Live: Best Practices'
+          Description: 'Added warning note regarding live encoder'
+          Link: https://live.support.brightcove.com/get-started/live-module-guidelines-and-best-practices.html
+          Product: Brightcove Live
+          Product_area: 'Best Practices'
           Product_Update: 'false'
           Feature: ''
           Status: Released
