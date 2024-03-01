@@ -1,104 +1,176 @@
-- date: 16-Feb-2024
+- date: 01-March-2024
   types:
     - type: New Docs
       docs:
-        - Title: 'Publisher Insights: Overview'
-          Description: 'Aimed to provide relevant and time-sensitive insights about the viewers consumption habits.'
-          Link: https://studio.support.brightcove.com/analytics/reports/publisher-insights.html
+        - Title: 'Program Scheduler API (1.0)'
+          Description: 'New EPG Scheduling API'
+          Link: https://apis.support.brightcove.com/cloud-playout-apis/references/reference-epg-scheduler.html
           Product: Video Cloud
-          Product_area: 'Analytics'
+          Product_area: 'Cloud Playout API'
           Product_Update: 'true'
-          Feature: 'Publisher Insights'
-          Status: Released
-        - Title: 'Publisher Insights: Trending'
-          Description: 'Explores the Trending tab in Publisher Insights.'
-          Link: https://studio.support.brightcove.com/analytics/pi-trending.html
-          Product: Video Cloud
-          Product_area: 'Analytics'
-          Product_Update: 'true'
-          Feature: 'Publisher Insights'
-          Status: Released
-        - Title: 'Publisher Insights: Engagement'
-          Description: 'Explores the Engagement tab in Publisher Insights.'
-          Link: https://studio.support.brightcove.com/analytics/pi-engagement.html
-          Product: Video Cloud
-          Product_area: 'Analytics'
-          Product_Update: 'true'
-          Feature: 'Publisher Insights'
-          Status: Released
-        - Title: 'Publisher Insights: Content'
-          Description: 'Explores the Content tab in Publisher Insights.'
-          Link: https://studio.support.brightcove.com/analytics/pi-content.html
-          Product: Video Cloud
-          Product_area: 'Analytics'
-          Product_Update: 'true'
-          Feature: 'Publisher Insights'
+          Feature: 'Program Scheduler API'
           Status: Released
     - type: Major updates
       docs:
-        - Title: 'Localizing Plugins'
-          Description: 'new section Localizing Brightcove Plugins Loaded In-Page'
-          Link: https://player.support.brightcove.com/coding-topics/localizing-plugins.html
-          Product: Brightcove Player
-          Product_area: 'coding-topics'
+        - Title: 'Creating Custom Metadata Fields'
+          Description: 'Warning added about custom field deletion'
+          Link: https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html#remove
+          Product: Video Cloud 
+          Product_area: 'General Information'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Demo Apps Access'
-          Description: 'New QR code on Apple TV'
-          Link: https://beacon.support.brightcove.com/publishing-apps/general/demo-apps-access.html
-          Product: Beacon 
-          Product_area: 'App Publishing and Behavior'
+        - Title: 'Sending Push Notifications to Beacon App Viewers'
+          Description: 'beacon Studio content updated'
+          Link: https://beacon-help.support.brightcove.com/registered-users/sending-push-notifications.html
+          Product: Beacon
+          Product_area: 'Registered Users'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Advertising with the IMA3 Plugin'
-          Description: 'This document is for two versions of the Brightcove Player IMA3 Plugin: version 5 for Brightcove Player 7, and legacy version 4 for Brightcove Player version 6 (6.59.1 or later)'
-          Link: https://player.support.brightcove.com/plugins/advertising-ima3-plugin.html
-          Product: Brightcove Player
-          Product_area: 'Advertising'
+        - Title: 'Brightcove Cloud Playout Channel Manager API Reference (1.0.0)'
+          Description: 'New updates related to FAST'
+          Link: https://apis.support.brightcove.com/cloud-playout-apis/references/reference-channels.html
+          Product: Video Cloud
+          Product_area: 'Cloud Playout API'
+          Product_Update: 'true'
+          Feature: 'New endpoints for FAST'
+          Status: Released
+        - Title: 'Video Cloud SSAI API'
+          Description: 'Update SSAI docs - URL variables'
+          Link: https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html#Ad_variables
+          Product:  SSAI
+          Product_area: 'getting started'
           Product_Update: 'false'
           Feature: ''
-          Status: Released 
-        - Title: 'Advertising with the IMA3 Plugin'
-          Description: 'Updated OM Access Modes support in IMA3 plugin'
-          Link: https://player.support.brightcove.com/plugins/advertising-ima3-plugin.html#omidAccessModeRules
-          Product: Brightcove Player
-          Product_area: 'Plugins'
+          Status: Released
+        - Title: 'Configuring Third-Party Tracking for a Portal Experience'
+          Description: '3rd-party tracking capabilities in Immersion template'
+          Link: https://gallery.support.brightcove.com/experiences/portal/other/configuring-third-party-tracking-portal-experience.html
+          Product: Video Cloud
+          Product_area: 'experiences'
           Product_Update: 'false'
           Feature: ''
-          Status: Released 
+          Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Advertising with the IMA3 Plugin v3'
-          Description: 'Note added about Brightcove Player IMA3 Plugin version 3, which has been deprecated and is no longer supported'
-          Link: https://player.support.brightcove.com/plugins/advertising-ima3-v3-plugin.html
-          Product: Brightcove Player 
-          Product_area: 'Plugins'
+        - Title: 'Overview: Overview: Salesforce Sales Cloud Integration Integration'
+          Description: 'Prerequisites section updated'
+          Link: https://audience-insights.support.brightcove.com/integrations/salesforce-sales-cloud/overview-sfsc-integration.html
+          Product: Audience Insights 
+          Product_area: 'Integrations'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Brightcove Player Accessibility'
-          Description: 'Add another keyboard control PageUp and PageDown buttons'
-          Link: https://player.support.brightcove.com/playback/brightcove-player-accessibility.html#Keyboard_controls
+        - Title: 'Download Video Masters'
+          Description: 'Paging the feed URL updated'
+          Link: https://apis.support.brightcove.com/social-syndication/getting-started/download-video-masters.html#Paging_the_feed
+          Product: Video Cloud
+          Product_area: 'Social Syndication API'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating a Sprinklr Destination'
+          Description: 'Note abour Sprinklr APIs added'
+          Link: https://studio.support.brightcove.com/social/module/sprinklr.html
+          Product: Video Cloud
+          Product_area: 'Social Module'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: China Delivery'
+          Description: 'New Limitation related to Playback Restrictions added'
+          Link: https://studio.support.brightcove.com/general/references/china-delivery-overview.html#Limitations
+          Product: Video Cloud
+          Product_area: 'China Delivery'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating Ingest Profiles for Dynamic Delivery'
+          Description: 'note about custom renditions do not show their properties'
+          Link: https://studio.support.brightcove.com/admin/creating-ingest-profiles-dynamic-delivery.html#custom-renditions
+          Product: Video Cloud
+          Product_area: 'admin'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Native Player for iOS Reference'
+          Description: 'iOS SDK Reference - Broken internal links from the page index'
+          Link: https://sdks.support.brightcove.com/ios/reference/sdk/index.html
+          Product: Device SDKs
+          Product_area: 'ios'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Implementing Server-Side Ads with Brightcove Player'
+          Description: 'Update SSAI docs - URL variables endpoints'
+          Link: https://player.support.brightcove.com/plugins/implementing-server-side-ads-brightcove-player.html#Options
           Product: Brightcove Player
-          Product_area: 'playback'
+          Product_area: 'plugins'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Configuring Third-Party Tracking for a Portal Experience'
+          Description: 'Instructions for GA4 migration using Gallery module updated'
+          Link: https://gallery.support.brightcove.com/experiences/portal/other/configuring-third-party-tracking-portal-experience.html#google
+          Product: Gallery
+          Product_area: 'Experiences'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Creating a Cloud Playout Channel'
+          Description: 'Updated note about SSAI-enabled channels, '
+          Link: https://beacon.support.brightcove.com/using-brightcove-beacon/cloud-playout/getting-started/cloud-playout-stream-vod.html
+          Product: Beacon
+          Product_area: 'Using Brightcove Beacon'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating Ingest Profiles for Dynamic Delivery'
+          Description: 'Added a note regarding Audio renditions.'
+          Link: https://studio.support.brightcove.com/admin/creating-ingest-profiles-dynamic-delivery.html
+          Product: Video Cloud
+          Product_area: 'Studio Ingest Profiles'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Step-by-Step: Using the Live Module with Open Broadcaster Software (OBS)'
+          Description: 'Added a note about FPS limitation.'
+          Link: https://live.support.brightcove.com/get-started/step-step-using-live-module-open-broadcaster-software-obs.html
+          Product: Live
+          Product_area: 'OBS'
           Product_Update: 'false'
           Feature: ''
           Status: Released
         - Title: 'Advertising with the IMA3 Plugin'
-          Description: 'Change order of how to implement the plugin'
-          Link: https://player.support.brightcove.com/plugins/advertising-ima3-plugin.html#Implement_using_Players_module_plugins_section
+          Description: 'Added a note about PAL SDK.'
+          Link: https://player.support.brightcove.com/plugins/advertising-ima3-plugin.html
           Product: Brightcove Player
-          Product_area: 'playback'
+          Product_area: 'SDKs'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Brightcove Live: Best Practices'
-          Description: 'Added warning note regarding live encoder'
-          Link: https://live.support.brightcove.com/get-started/live-module-guidelines-and-best-practices.html
-          Product: Brightcove Live
-          Product_area: 'Best Practices'
+        - Title: 'Known Issues: Brightcove Native Player SDKs'
+          Description: 'Added a note about Android 12 known issue.'
+          Link: https://sdks.support.brightcove.com/developer-support/questions/known-issues-brightcove-native-player-sdks.html
+          Product: Device SDKs
+          Product_area: 'Android 12 Known issues'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Configuring Player Controls'
+          Description: 'Added a note about PIP behaviour with Firefox.'
+          Link: https://studio.support.brightcove.com/players/appearance/configuring-player-controls.html
+          Product: Video Cloud
+          Product_area: 'Configuring player controls'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Sending Push Notifications to Beacon App Viewers'
+          Description: 'Added a note about this behaviour is not supported with iOS.'
+          Link: https://beacon-help.support.brightcove.com/registered-users/sending-push-notifications.html
+          Product: Beacon
+          Product_area: 'Push Notifications'
           Product_Update: 'false'
           Feature: ''
           Status: Released
