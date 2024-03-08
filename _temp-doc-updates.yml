@@ -1,176 +1,98 @@
-- date: 01-March-2024
+- date: 8-March-2024
   types:
     - type: New Docs
       docs:
-        - Title: 'Program Scheduler API (1.0)'
-          Description: 'New EPG Scheduling API'
-          Link: https://apis.support.brightcove.com/cloud-playout-apis/references/reference-epg-scheduler.html
+        - Title: 'Video Details Analytics'
+          Description: 'This topic covers the metrics available in the Video Details Analytics Tab in Video Cloud Studio.'
+          Link: https://studio.support.brightcove.com/analytics/reports/video-editor-analytics.html
           Product: Video Cloud
-          Product_area: 'Cloud Playout API'
+          Product_area: 'Media and Analytics Module'
           Product_Update: 'true'
-          Feature: 'Program Scheduler API'
+          Feature: 'New Video Editor Analytics'
           Status: Released
+        - Title: 'Scheduled Channels with Beacon Classic'
+          Description: 'In this topic, you will learn how to use scheduled channels in Beacon Classic.'
+          Link: https://beacon.support.brightcove.com/using-brightcove-beacon/cloud-playout/getting-started/scheduled-channels-beacon.html
+          Product:  Beacon 
+          Product_area: 'Cloud Playout Channels'
+          Product_Update: 'true'
+          Feature: 'Scheduled Channels'
+          Status: Released 
+        - Title: 'Getting Started with Scheduled Channels'
+          Description: 'This topic explains what Scheduled Channels are for and how to use them.'
+          Link: https://studio.support.brightcove.com/channels/fast/getting-started.html
+          Product:  Video Cloud
+          Product_area: 'Managing Channels'
+          Product_Update: 'true'
+          Feature: 'Scheduled Channels'
+          Status: Released 
+        - Title: 'Publishing Videos with the Player programmatically'
+          Description: 'Brightcove Player-only pulishing videos without media module'
+          Link: https://player.support.brightcove.com/standalone-player/publishing-videos.html
+          Product: Video Cloud
+          Product_area: 'standalone-player'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Staging
+        - Title: 'Managing a Schedule Channel'
+          Description: 'Created documentation regarding Cloud Playout 2.0 Scheduled Channels for Video Cloud.'
+          Link: https://studio.support.brightcove.com/channels/fast/scheduled-calendar.html
+          Product: Video Cloud
+          Product_area: 'Cloud Playout'
+          Product_Update: 'true'
+          Feature: 'Scheduled Channels'
+          Status: Released
+
     - type: Major updates
       docs:
-        - Title: 'Creating Custom Metadata Fields'
-          Description: 'Warning added about custom field deletion'
-          Link: https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html#remove
-          Product: Video Cloud 
-          Product_area: 'General Information'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Sending Push Notifications to Beacon App Viewers'
-          Description: 'beacon Studio content updated'
-          Link: https://beacon-help.support.brightcove.com/registered-users/sending-push-notifications.html
-          Product: Beacon
-          Product_area: 'Registered Users'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Cloud Playout Channel Manager API Reference (1.0.0)'
-          Description: 'New updates related to FAST'
-          Link: https://apis.support.brightcove.com/cloud-playout-apis/references/reference-channels.html
-          Product: Video Cloud
-          Product_area: 'Cloud Playout API'
-          Product_Update: 'true'
-          Feature: 'New endpoints for FAST'
-          Status: Released
-        - Title: 'Video Cloud SSAI API'
-          Description: 'Update SSAI docs - URL variables'
-          Link: https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html#Ad_variables
-          Product:  SSAI
-          Product_area: 'getting started'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Configuring Third-Party Tracking for a Portal Experience'
-          Description: '3rd-party tracking capabilities in Immersion template'
-          Link: https://gallery.support.brightcove.com/experiences/portal/other/configuring-third-party-tracking-portal-experience.html
-          Product: Video Cloud
-          Product_area: 'experiences'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-    - type: Minor updates
-      docs:
-        - Title: 'Overview: Overview: Salesforce Sales Cloud Integration Integration'
-          Description: 'Prerequisites section updated'
-          Link: https://audience-insights.support.brightcove.com/integrations/salesforce-sales-cloud/overview-sfsc-integration.html
-          Product: Audience Insights 
-          Product_area: 'Integrations'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Download Video Masters'
-          Description: 'Paging the feed URL updated'
-          Link: https://apis.support.brightcove.com/social-syndication/getting-started/download-video-masters.html#Paging_the_feed
-          Product: Video Cloud
-          Product_area: 'Social Syndication API'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating a Sprinklr Destination'
-          Description: 'Note abour Sprinklr APIs added'
-          Link: https://studio.support.brightcove.com/social/module/sprinklr.html
-          Product: Video Cloud
-          Product_area: 'Social Module'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: China Delivery'
-          Description: 'New Limitation related to Playback Restrictions added'
-          Link: https://studio.support.brightcove.com/general/references/china-delivery-overview.html#Limitations
-          Product: Video Cloud
-          Product_area: 'China Delivery'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating Ingest Profiles for Dynamic Delivery'
-          Description: 'note about custom renditions do not show their properties'
-          Link: https://studio.support.brightcove.com/admin/creating-ingest-profiles-dynamic-delivery.html#custom-renditions
-          Product: Video Cloud
-          Product_area: 'admin'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Native Player for iOS Reference'
-          Description: 'iOS SDK Reference - Broken internal links from the page index'
-          Link: https://sdks.support.brightcove.com/ios/reference/sdk/index.html
-          Product: Device SDKs
-          Product_area: 'ios'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Implementing Server-Side Ads with Brightcove Player'
-          Description: 'Update SSAI docs - URL variables endpoints'
-          Link: https://player.support.brightcove.com/plugins/implementing-server-side-ads-brightcove-player.html#Options
-          Product: Brightcove Player
-          Product_area: 'plugins'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Configuring Third-Party Tracking for a Portal Experience'
-          Description: 'Instructions for GA4 migration using Gallery module updated'
-          Link: https://gallery.support.brightcove.com/experiences/portal/other/configuring-third-party-tracking-portal-experience.html#google
-          Product: Gallery
-          Product_area: 'Experiences'
+        - Title: 'Getting Started with Brightcove Video Connect for Adobe Experience Manager'
+          Description: 'Plug-in Version Updated'
+          Link: https://integrations.support.brightcove.com/adobe/getting-started-brightcove-video-connect-adobe-experience-manager.html
+          Product: Integrations
+          Product_area: 'Adobe'
           Product_Update: 'false'
           Feature: ''
           Status: Released 
-        - Title: 'Creating a Cloud Playout Channel'
-          Description: 'Updated note about SSAI-enabled channels, '
-          Link: https://beacon.support.brightcove.com/using-brightcove-beacon/cloud-playout/getting-started/cloud-playout-stream-vod.html
-          Product: Beacon
-          Product_area: 'Using Brightcove Beacon'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating Ingest Profiles for Dynamic Delivery'
-          Description: 'Added a note regarding Audio renditions.'
-          Link: https://studio.support.brightcove.com/admin/creating-ingest-profiles-dynamic-delivery.html
-          Product: Video Cloud
-          Product_area: 'Studio Ingest Profiles'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Step-by-Step: Using the Live Module with Open Broadcaster Software (OBS)'
-          Description: 'Added a note about FPS limitation.'
-          Link: https://live.support.brightcove.com/get-started/step-step-using-live-module-open-broadcaster-software-obs.html
-          Product: Live
-          Product_area: 'OBS'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Advertising with the IMA3 Plugin'
-          Description: 'Added a note about PAL SDK.'
-          Link: https://player.support.brightcove.com/plugins/advertising-ima3-plugin.html
+        - Title: 'Video Cloud SSAI API'
+          Description: 'Update URL variables'
+          Link: https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html#Ad_variables
           Product: Brightcove Player
-          Product_area: 'SDKs'
+          Product_area: 'ssai'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Known Issues: Brightcove Native Player SDKs'
-          Description: 'Added a note about Android 12 known issue.'
-          Link: https://sdks.support.brightcove.com/developer-support/questions/known-issues-brightcove-native-player-sdks.html
-          Product: Device SDKs
-          Product_area: 'Android 12 Known issues'
+    
+    - type: Minor updates
+      docs:
+        - Title: 'Audio Only with Brightcove Player'
+          Description: 'Note about player height added'
+          Link: https://player.support.brightcove.com/playback/audio-only-player.html#Implementation_notes
+          Product: Brightcove Player
+          Product_area: 'Playback'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Configuring Player Controls'
-          Description: 'Added a note about PIP behaviour with Firefox.'
-          Link: https://studio.support.brightcove.com/players/appearance/configuring-player-controls.html
+        - Title: 'Setting Up an Automatic Ingestion Folder on Dropbox'
+          Description: 'Note added about how connect to a integration folders works'
+          Link: https://studio.support.brightcove.com/integrations/integrations-module/watched-folders/dropbox.html
+          Product: Video Cloud 
+          Product_area: ' Integrations'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Interactivity Javascript Embed API'
+          Description: 'Update Custom User ID Methods for Brightcove Interactivity'
+          Link: https://apis.support.brightcove.com/interactivity/embed-api/reference.html#custom_user_identification_variables
+          Product: Brightcove Player
+          Product_area: 'interactivity'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Working with Remote Asset Videos'
+          Description: 'Added limitation note about remote assets'
+          Link: https://studio.support.brightcove.com/media/manage/working-remote-asset-videos.html#limitations
           Product: Video Cloud
-          Product_area: 'Configuring player controls'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Sending Push Notifications to Beacon App Viewers'
-          Description: 'Added a note about this behaviour is not supported with iOS.'
-          Link: https://beacon-help.support.brightcove.com/registered-users/sending-push-notifications.html
-          Product: Beacon
-          Product_area: 'Push Notifications'
+          Product_area: 'Video assets'
           Product_Update: 'false'
           Feature: ''
           Status: Released
