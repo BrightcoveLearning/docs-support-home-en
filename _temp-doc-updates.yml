@@ -1,48 +1,70 @@
-- date: 15-March-2024
+- date: 22-March-2024
   types:
-    - type: New Docs
-      docs:
-        - Title: 'Brightcove Video Editor'
-          Description: 'Transform media content using the Brightcove Video Editor'
-          Link: https://studio.support.brightcove.com/media/manage/video-editor.html
-          Product: Video Cloud
-          Product_area: 'Media'
-          Product_Update: 'true'
-          Feature: 'Video Editor'
-          Status: Released
     - type: Major updates
       docs:
-        - Title: 'Getting Started with Brightcove Social'
-          Description: 'Limitations of Redundancy in RTMP Outputs for Social Module Streaming note added'
-          Link: https://studio.support.brightcove.com/social/module/getting-started-brightcove-social.html#publish-live
-          Product: Video Cloud 
-          Product_area: 'Social Sharing'
+        - Title: 'Video Processing Settings'
+          Description: 'New <code>video_format_conversion</code> and <code>video_color_format</code> encoding settings added'
+          Link: https://zencoder.support.brightcove.com/encoding-settings/general-audio-video/encoding-settings-video-processing.html#video_format_conversion
+          Product: Zencoder
+          Product_area: 'Encoding Settings'
+          Product_Update: 'true'
+          Feature: 'New encoding settings'
+          Status: Released
+        - Title: 'HDR Settings'
+          Description: 'Encoding settings updated'
+          Link: https://zencoder.support.brightcove.com/encoding-settings/formats-codecs/encoding-settings-hdr10.html#video_color_format
+          Product: Zencoder
+          Product_area: 'Encoding Settings'
           Product_Update: 'false'
           Feature: ''
-          Status: Released 
-        - Title: 'Determining Which Rendition Will Play'
-          Description: 'Information added about how does the web player choose renditions'
-          Link: https://player.support.brightcove.com/playback/determining-which-rendition-will-play.html
-          Product: Player
-          Product_area: 'Playback'
+          Status: Released
+        - Title: 'Supported HDR Video Formats'
+          Description: 'Encoding settings updated'
+          Link: https://zencoder.support.brightcove.com/encoding-guides/hdr10-video-output.html
+          Product: Zencoder
+          Product_area: 'Encoding Settings'
           Product_Update: 'false'
           Feature: ''
-          Status: Released 
+          Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Player Configuration Guide'
-          Description: 'hls section updated with new information'
-          Link: https://apis.support.brightcove.com/player-management/guides/player-configuration-guide.html#hls
-          Product: Brightcove Player 
-          Product_area: 'Player Management API'
+        - Title: 'Supported Encoders for Live Events'
+          Description: 'Note about encoders added'
+          Link: https://studio.support.brightcove.com/live/general/supported-encoders-live-events.html
+          Product: Video Cloud
+          Product_area: 'Live'
           Product_Update: 'false'
           Feature: ''
-          Status: Released 
-        - Title: 'Integrating Pigeonhole with a Virtual Event Experience'
-          Description: 'New screenshot in Integrating Pigeonhole with a Virtual Event Experience documentation'
-          Link: https://gallery.support.brightcove.com/experiences/virtual-event/customizing/integrating-pigeonhole-virtual-event-experience.html#sso-attributes
-          Product: Gallery
-          Product_area: 'Experiences'
+          Status: Released
+        - Title: 'HLS Plugin'
+          Description: 'Added warning note about the HLS Plugin is no longer available as of Brightcove Player version 7'
+          Link: https://player.support.brightcove.com/plugins/hls-plugin.html
+          Product: Brightcove Player
+          Product_area: 'HLS Plugin'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Picture-in-Picture Plugin (aka "floating" or "pinned")'
+          Description: 'Added informative note about using PIP in an AMP page'
+          Link: https://player.support.brightcove.com/plugins/picture-picture-plugin-aka-floating-or-pinned.html
+          Product: Brightcove Player
+          Product_area: 'Picture-in-Picture'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Programmatically Localizing Brightcove Player'
+          Description: 'Added tip note about process for setting the language in localization'
+          Link: https://player.support.brightcove.com/coding-topics/programmatically-localizing-brightcove-player.html
+          Product: Brightcove Player
+          Product_area: 'Localizing Brightcove Player'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Adding WebVTT Captions (Text Tracks)'
+          Description: 'Added informative note about srclang'
+          Link: https://apis.support.brightcove.com/cms/managing-videos/using-cms-api-add-webvtt-captions-text-tracks.html
+          Product: Video Cloud
+          Product_area: 'APIs'
           Product_Update: 'false'
           Feature: ''
           Status: Released
