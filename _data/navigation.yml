@@ -1,0 +1,129 @@
+- section:
+  name: Home
+  url: /index.html
+- section:
+  name: Brightcove Academy
+  url: /brightcove-academy/
+  docs:
+    - name: Account Administration Essentials
+      url: /brightcove-academy/account-admin-essentials/frame.html
+    - name: Advertising Essentials
+      url: /brightcove-academy/advertising-essentials/frame.html
+    - name: Advertising in the Live Module
+      url: /brightcove-academy/advertising-in-the-live-module/frame.html
+    - name: Advertising with Brightcove
+      url: /brightcove-academy/advertising-with-brightcove/frame.html
+    - name: Analytics Module Essentials
+      url: /brightcove-academy/analytics-module-essentials/frame.html
+    - name: Beacon Studio Essentials
+      url: /brightcove-academy/beacon-studio-essentials/frame.html
+    - name: Brightcove Support Essentials
+      url: /brightcove-academy/brightcove-support-essentials/frame.html
+    - name: Campaign Module Essentials
+      url: /brightcove-academy/campaign-module-essentials/frame.html
+    - name: Cloud Playout Essentials
+      url: /brightcove-academy/cloud-playout-essentials/frame.html
+    - name: Content Management Essentials
+      url: /brightcove-academy/content-management-essentials/frame.html
+    - name: Gallery Module Essentials
+      url: /brightcove-academy/gallery-module-essentials/frame.html
+    - name: Ingest Profiles Essentials
+      url: /brightcove-academy/ingest-profiles-essentials/frame.html
+    - name: Live Ingest Profiles Essentials
+      url: /brightcove-academy/live-ingest-profiles-essentials/frame.html
+    - name: Live Module Essentials
+      url: /brightcove-academy/live-module-essentials/frame.html
+    - name: Marketing Studio Essentials
+      url: /brightcove-academy/marketing-studio-essentials/frame.html
+    - name: Players Module Essentials
+      url: /brightcove-academy/players-module-essentials/frame.html
+    - name: Social Module Essentials
+      url: /brightcove-academy/social-module-essentials/frame.html
+    - name: Video Connector Walkthrough
+      url: /brightcove-academy/video-connector-walkthrough/frame.html
+    - name: Virtual Event Essentials
+      url: /brightcove-academy/virtual-event-essentials/frame.html
+- section:
+  name: Video Cloud Studio
+  url: 'https://studio.support.brightcove.com/index.html'
+- section:
+  name: Marketing Studio
+  url: 'https://mstudio.support.brightcove.com/index.html'
+- section:
+  name: Brightcove Player Development
+  url: 'https://player.support.brightcove.com/index.html'
+- section:
+  name: 'Brightcove Interactivity'
+  url: 'https://interactivity.support.brightcove.com/index.html' 
+- section:
+  name: Video Cloud Platform APIs
+  url: 'https://apis.support.brightcove.com/index.html'
+- section:
+  name: Video Cloud Device SDKs
+  url: 'https://sdks.support.brightcove.com/index.html'
+- section:
+  name: Video Cloud Integrations
+  url: 'https://integrations.support.brightcove.com/index.html'
+- section:
+  name: Video Cloud General Information
+  url: 'https://general.support.brightcove.com/index.html'
+- section:
+  name: Gallery
+  url: 'https://gallery.support.brightcove.com/index.html'
+- section:
+  name: Social
+  url: 'https://studio.support.brightcove.com/social/index.html'
+- section:
+  name: Brightcove Beacon Studio
+  url: 'https://beacon-help.support.brightcove.com/index.html'
+- section:
+  name: Brightcove Beacon Classic
+  url: 'https://beacon.support.brightcove.com/index.html'
+- section:
+  name: Brightcove CorpTV
+  url: 'https://corptv.support.brightcove.com/index.html'
+- section:
+  name: Brightcove Live
+  url: 'https://live.support.brightcove.com/index.html'
+- section:
+  name: 'Zencoder'
+  url: 'https://zencoder.support.brightcove.com' 
+# - section:
+#   name: Campaign
+#   url: 'https://campaign.support.brightcove.com/index.html'
+# - section:
+#   name: Engage
+#   url: 'https://engage.support.brightcove.com/index.html'
+- section:
+  name: SSAI
+  url: 'https://ssai.support.brightcove.com/index.html'
+- section:
+  name: Training
+  url: /training/index.html
+  docs:
+    - name: All Online Training Courses
+      url: /training/online-training-courses.html
+    - name: Register for Instructor-led Training
+      url: /training/register-training.html
+    - name: 'Training: Introduction to Video Cloud'
+      url: /training/training-demand-introduction-video-cloud.html
+    - name: 'Training:  Introduction to Video Cloud Analytics'
+      url: /training/training-demand-introduction-video-cloud-analytics.html
+    - name: 'Training: Video Cloud Basics'
+      url: /training/training-demand-video-cloud-basics.html
+    - name: Video Cloud Studio Training Videos
+      url: /training/video-cloud-studio-training-videos.html
+    - name: Brightcove University Training Courses
+      url: /training/brightcove-university.html
+- section:
+  name: 'Support'
+  url: '/support/index.html'
+  docs:
+    - name: 'Viewing the Brightcove System Status Page'
+      url: '/support/viewing-brightcove-system-status-page.html'
+    - name: 'Contact Sales'
+      url: '/support/contact-sales.html'
+    - name: 'Opening a Support Case'
+      url: '/support/opening-case-with-brightcove-support.html'
+    - name: 'Reset Your Support Portal Password'
+      url: '/support/reset-support-portal-password.html'
