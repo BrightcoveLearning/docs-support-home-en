@@ -1,154 +1,88 @@
-- date: 05-April-2024
+- date: 12-April-2024
   types:
     - type: New Docs
       docs:
-        - Title: 'Adding a Lead Form to a video'
-          Description: 'In this topic you will learn how to add a lead form to a video.'
-          Link: https://studio.support.brightcove.com/interactivity/annotations/adding-lead-form.html
-          Product: Brightcove Interactivity
-          Product_area: 'Annotations'
-          Product_Update: 'true'
-          Feature: 'New Lead Form Annotation'
-          Status: Staging
-        - Title: 'Watching from Start'
-          Description: 'In this topic, you will learn about the Restart button.'
-          Link: https://beacon-help.support.brightcove.com/publishing-apps/app-behavior/watch-from-start.html
-          Product:  Beacon 
-          Product_area: App Publishing and Behavior
-          Product_Update: 'true'
-          Feature: 'Restart button'
-          Status: Released
-    
     - type: Major updates
       docs:
-        - Title: 'Overview of Context Aware Encoding'
-          Description: 'Updates for CAE 2.0 added'
-          Link: https://zencoder.support.brightcove.com/general-information/overview-context-aware-encoding.html
-          Product: Zencoder
-          Product_area: 'CAE'
-          Product_Update: 'true'
-          Feature: 'Updated for CAE 2.0'
-          Status: Released
-        - Title: 'CAE Guide'
-          Description: 'Updates for CAE 2.0 added'
-          Link: https://zencoder.support.brightcove.com/encoding-guides/cae-guide.html
-          Product: Zencoder
-          Product_area: 'CAE'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'CAE Settings'
-          Description: 'Updates for CAE 2.0 added'
-          Link: https://zencoder.support.brightcove.com/encoding-settings/general/cae-settings.html
-          Product: Zencoder
-          Product_area: 'CAE'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Job Settings'
-          Description: 'Updates for CAE 2.0 added'
-          Link: https://zencoder.support.brightcove.com/encoding-settings/general/encoding-settings-job.html
-          Product: Zencoder
-          Product_area: 'CAE'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'HDR Settings'
-          Description: 'Updates for CAE 2.0 added. Insync Frameformer & Color Format'
-          Link: https://zencoder.support.brightcove.com/encoding-settings/formats-codecs/encoding-settings-hdr10.html
-          Product: Zencoder
-          Product_area: 'CAE'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Supported HDR Video Formats'
-          Description: 'Updates for CAE 2.0 added. Insync Frameformer & Color Format'
-          Link: https://zencoder.support.brightcove.com/encoding-guides/hdr10-video-output.html#Overview
-          Product: Zencoder
-          Product_area: 'CAE'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Live API Reference (1.0.0)'
-          Description: 'New attribute (number_of_segments_in_live_chunklist) added'
-          Link: https://apis.support.brightcove.com/live-api/references/reference.html#tag/Live-Jobs/operation/CreateALiveJob
+        - Title: 'Automated Captions using the Live API'
+          Description: 'Automated Captions using the Live API - Limitations'
+          Link: https://apis.support.brightcove.com/live-api/guides/live-auto-captions.html#Limitations
           Product: Video Cloud
           Product_area: 'Live API'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Roku SDK Developer Guide'
-          Description: 'Roku SDK - GA Release Documentation update'
-          Link: https://sdks.support.brightcove.com/developer-support/guides/roku-sdk-developer-guide.html
-          Product: Device SDKs
-          Product_area: 'Guides'
+        - Title: 'Overview: OAuth API'
+          Description: 'Issue behavior explained'
+          Link: https://apis.support.brightcove.com/oauth/getting-started/overview-oauth-api-v4.html
+          Product: Video Cloud
+          Product_area: 'OAuth API'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Configuring Adobe Analytics Event Tracking'
-          Description: 'Adobe docs eVar format delete'
-          Link: https://studio.support.brightcove.com/players/general/configuring-adobe-analytics-event-tracking.html#review_parameters
-          Product: Brightcove Player
-          Product_area: 'General'
+        - Title: 'Getting Started with Scheduled Channels'
+          Description: 'FAST channels with SSAI work with the Gallery Immersion template'
+          Link: https://studio.support.brightcove.com/channels/fast/getting-started.html
+          Product: Video Cloud
+          Product_area: 'Managing Channels'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-
+        - Title: 'Portal Experiences'
+          Description: 'Brightcove allows FAST channels with SSAI work and the Gallery Immersion template.'
+          Link: https://gallery.support.brightcove.com/experiences/portal/
+          Product: Gallery
+          Product_area: 'Experiences'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Overview: Using Aspera for Ingestion to Video Cloud'
-          Description: 'Added note about time gap between a metadata file and a video file'
-          Link: https://apis.support.brightcove.com/aspera/overview.html
+        - Title: 'Protecting Videos with HLS Encryption'
+          Description: 'New note added'
+          Link: https://studio.support.brightcove.com/general/content-protection/protecting-videos-hls-encryption.html
           Product: Video Cloud
-          Product_area: 'Aspera ingestion'
+          Product_area: 'HLS Encryption'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Overview: Brightcove Playback Restrictions'
-          Description: 'Added informative note about zip code limit'
-          Link: https://apis.support.brightcove.com/playback-restrictions/getting-started/overview-playback-restrictions.html
-          Product: Video Cloud
-          Product_area: 'Playback Restrictions'
+        - Title: 'Known Issues'
+          Description: 'Known issue related to AndroidTV App added'
+          Link: https://beacon-help.support.brightcove.com/general/references/known-issues.html
+          Product: Beacon
+          Product_area: 'Known Issue'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Brightcove Player Error Reference'
-          Description: 'Added QoE Analytics module error codes for iOS'
-          Link: https://player.support.brightcove.com/references/brightcove-player-error-reference.html
+        - Title: 'Reducing Latency for Live Streams'
+          Description: 'New information added'
+          Link: https://studio.support.brightcove.com/live/general/reducing-latency-live-streams.html
+          Product: Live
+          Product_area: ''
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Player 7 Migration Guide'
+          Description: 'delete the limitations reference since it doesn't exist any more'
+          Link: https://player.support.brightcove.com/references/bcp7-migration-guide.html#Limitations
           Product: Brightcove Player
-          Product_area: 'QoE Error codes'
+          Product_area: 'references'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Google Analytics Plugin'
-          Description: 'Removed GA custom dimensions section'
-          Link: https://player.support.brightcove.com/plugins/google-analytics-plugin.html
-          Product: Brightcove Player
-          Product_area: 'Google Analytics Plugin'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Configuring Player Content Restrictions'
-          Description: 'If  you are using Playback Rights, you should NOT use the Content Restriction page in the players module.'
-          Link: https://studio.support.brightcove.com/players/properties/configuring-player-content-restrictions.html
+        - Title: 'Viewing Billing Information'
+          Description: 'Reference to legacy VOD storage removed'
+          Link: https://studio.support.brightcove.com/admin/viewing-billing-information.html
           Product: Video Cloud 
-          Product_area: 'Managing Players'
+          Product_area: 'Administration'
           Product_Update: 'false'
           Feature: ''
-          Status: Released
-        - Title: 'Configuring Player Content Restrictions'
-          Description: 'If  you are using Playback Rights, you should NOT use the Content Restriction page in the players module.'
-          Link: https://corptv.support.brightcove.com/players/properties/configuring-player-content-restrictions.html
-          Product: CorpTV
-          Product_area: 'Managing Players'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: OAuth API'
-          Description: 'Clarify wording about limitations account behavior'
-          Link: https://apis.support.brightcove.com/oauth/getting-started/overview-oauth-api-v4.html
-          Product: APIs
-          Product_area: 'OAuth API'
+          Status: Released 
+        - Title: 'Editing Video Properties using Quick Edit'
+          Description: 'Section added pointing to the basics documentation'
+          Link: https://studio.support.brightcove.com/media/properties/editing-video-properties-using-quick-edit.html
+          Product: Video Cloud 
+          Product_area: 'Managing Videos'
           Product_Update: 'false'
           Feature: ''
           Status: Released
