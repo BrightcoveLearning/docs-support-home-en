@@ -1,88 +1,120 @@
-- date: 12-April-2024
+- date: 19-April-2024
   types:
     - type: New Docs
       docs:
+        - Title: 'Managing Users'
+          Description: 'This doc explains how to manage the users, roles and permissions in Video Cloud.'
+          Link: https://studio.support.brightcove.com/admin/general/managing-users.html
+          Product: Video Cloud
+          Product_area: 'User management'
+          Product_Update: 'true'
+          Feature: 'Roles and Permissions'
+          Status: Limited Availability
     - type: Major updates
       docs:
-        - Title: 'Automated Captions using the Live API'
-          Description: 'Automated Captions using the Live API - Limitations'
-          Link: https://apis.support.brightcove.com/live-api/guides/live-auto-captions.html#Limitations
-          Product: Video Cloud
-          Product_area: 'Live API'
+        - Title: '360°/VR Video Plugin'
+          Description: 'New option added'
+          Link: https://player.support.brightcove.com/plugins/360degvr-video-plugin.html#Options
+          Product: Brightcove Player
+          Product_area: 'Plugins'
+          Product_Update: 'true'
+          Feature: 'sphereDetail option added'
+          Status: Released
+        - Title: 'Brightcove Native SDK for Android Release Notes'
+          Description: 'add links to download previews releases'
+          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html
+          Product: Device SDKs
+          Product_area: 'android'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Overview: OAuth API'
-          Description: 'Issue behavior explained'
-          Link: https://apis.support.brightcove.com/oauth/getting-started/overview-oauth-api-v4.html
-          Product: Video Cloud
-          Product_area: 'OAuth API'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Getting Started with Scheduled Channels'
-          Description: 'FAST channels with SSAI work with the Gallery Immersion template'
-          Link: https://studio.support.brightcove.com/channels/fast/getting-started.html
-          Product: Video Cloud
-          Product_area: 'Managing Channels'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Portal Experiences'
-          Description: 'Brightcove allows FAST channels with SSAI work and the Gallery Immersion template.'
-          Link: https://gallery.support.brightcove.com/experiences/portal/
-          Product: Gallery
-          Product_area: 'Experiences'
+        - Title: 'Video Cloud native sdks documentation'
+          Description: 'move the Roku SDK documentation to its permanent home'
+          Link: https://sdks.support.brightcove.com/
+          Product: Device SDKs
+          Product_area: 'Roku'
           Product_Update: 'false'
           Feature: ''
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Protecting Videos with HLS Encryption'
-          Description: 'New note added'
-          Link: https://studio.support.brightcove.com/general/content-protection/protecting-videos-hls-encryption.html
-          Product: Video Cloud
-          Product_area: 'HLS Encryption'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Known Issues'
-          Description: 'Known issue related to AndroidTV App added'
-          Link: https://beacon-help.support.brightcove.com/general/references/known-issues.html
-          Product: Beacon
-          Product_area: 'Known Issue'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Reducing Latency for Live Streams'
-          Description: 'New information added'
-          Link: https://studio.support.brightcove.com/live/general/reducing-latency-live-streams.html
-          Product: Live
-          Product_area: ''
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Player 7 Migration Guide'
-          Description: 'delete the limitations reference since it doesn't exist any more'
-          Link: https://player.support.brightcove.com/references/bcp7-migration-guide.html#Limitations
-          Product: Brightcove Player
-          Product_area: 'references'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Viewing Billing Information'
-          Description: 'Reference to legacy VOD storage removed'
-          Link: https://studio.support.brightcove.com/admin/viewing-billing-information.html
-          Product: Video Cloud 
-          Product_area: 'Administration'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
         - Title: 'Editing Video Properties using Quick Edit'
-          Description: 'Section added pointing to the basics documentation'
+          Description: 'New bullet added to the notes section'
           Link: https://studio.support.brightcove.com/media/properties/editing-video-properties-using-quick-edit.html
-          Product: Video Cloud 
-          Product_area: 'Managing Videos'
+          Product: Video Cloud
+          Product_area: 'Media Module'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Video Cloud SSAI API'
+          Description: 'Note related to SSAI Macros added to the notes section'
+          Link: https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html
+          Product: Video Cloud
+          Product_area: 'SSAI API'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Dolby Atmos Audio'
+          Description: 'New limitation added'
+          Link: https://apis.support.brightcove.com/ingest-profiles/guides/dolby-atmos-audio.html#limitations
+          Product: Video Cloud
+          Product_area: 'Ingest Profiles API'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating and Managing Live Events using the Live Module'
+          Description: 'Step to enable CDN added'
+          Link: https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#publish
+          Product: Live
+          Product_area: 'Live Module'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating a JSON Web Token (JWT)'
+          Description: 'Description for exp claim updated'
+          Link: https://player.support.brightcove.com/coding-topics/general/create-json-web-token.html#Claims_for_Playback_Restrictions
+          Product: Brightcove Player
+          Product_area: 'Playback Restrictions'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for Android'
+          Description: 'add information on how to download SDK releases'
+          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html#Download_the_SDK
+          Product: Device SDKs 
+          Product_area: 'android'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Native SDK for Android Release Notes'
+          Description: 'update a Support document to remove redundant content'
+          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html
+          Product: Device SDKs 
+          Product_area: 'android'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'MP4s in Dynamic Delivery'
+          Description: 'Added using the video editor as a reason to use the MP4 format.'
+          Link: https://apis.support.brightcove.com/ingest-profiles/guides/mp4s-dynamic-delivery.html#Do_I_need_MP4_renditions
+          Product: Video Cloud
+          Product_area: Ingest profiles
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Implementing Live with DVR'
+          Description: 'Added informative note'
+          Link: https://beacon-help.support.brightcove.com/live/get-started/implement-live-with-dvr.html
+          Product: Beacon
+          Product_area: 'Live streaming'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Media Sharing using the Media Module'
+          Description: 'Added informative note about media sharing'
+          Link: https://studio.support.brightcove.com/media/general/media-sharing-using-media-module.html
+          Product: Video Cloud
+          Product_area: 'Media Sharing'
           Product_Update: 'false'
           Feature: ''
           Status: Released
