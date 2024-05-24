@@ -1,159 +1,120 @@
-- date: 10-May-2024
+- date: 24-May-2024
   types:
+    - type: New Docs
+      docs:
+        - Title: 'Integration Properties: Definitions'
+          Description: 'Properties Documentation'
+          Link: https://audience-insights.support.brightcove.com/integrations/properties.html
+          Product: Audience Insights
+          Product_area: 'integrations'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Major updates
       docs:
-        - Title: 'Managing Text and Audio Tracks'
-          Description: 'Include information about managing audio tracks'
-          Link: https://mstudio.support.brightcove.com/media/managing-text-audio-tracks.html
-          Product: Marketing Studio 
-          Product_area: 'Managing Videos'
+        - Title: 'Live API: Notifications'
+          Description: 'Clarify the state "waiting" returned via notification of Live API'
+          Link: https://apis.support.brightcove.com/live-api/guides/live-api-notifications.html
+          Product: Live
+          Product_area: 'live-api'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Getting Started with Scheduled Channels'
+          Description: 'Recommendations section added'
+          Link: https://studio.support.brightcove.com/channels/fast/getting-started.html
+          Product: Video Cloud
+          Product_area: 'Managing Channels'
           Product_Update: 'false'
           Feature: ''
           Status: Released 
-        - Title: 'Adding Audio Tracks to Videos using the Media Module'
-          Description: 'Adding audio track file section updated'
-          Link: https://studio.support.brightcove.com/media/captions/adding-audio-tracks-videos-using-media-module.html
-          Product: Video Cloud
-          Product_area: 'Captions and Audio Files'
+        - Title: 'Overview: Brightcove Native SDK for iOS'
+          Description: 'Brightcove Player SDK for iOS v6.13.1'
+          Link: Overview Brightcove Native SDK for iOS
+          Product:  Device SDKs 
+          Product_area: 'iOS Development'
           Product_Update: 'false'
           Feature: ''
-          Status: Released  
-        - Title: 'Overview: Dimensions, Fields, and Parameters'
-          Description: 'take down dimension combination tester'
-          Link: https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html
-          Product:  Audience Insights
-          Product_area: 'analytics'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Pinning Plugin (aka "Picture-in-Picture Plugin" or "pinned")'
-          Description: 'Picture-in-Picture Plugin Name Change to "Pinning"'
-          Link: https://player.support.brightcove.com/plugins/picture-picture-plugin-aka-floating-or-pinned.html
-          Product: Brightcove Player
-          Product_area: 'Plugins'
+          Status: Released 
+        - Title: 'Overview: Brightcove Native SDK for tvOS'
+          Description: 'Brightcove Player SDK for iOS v6.13.1'
+          Link: https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html
+          Product: Device SDKs 
+          Product_area: 'tvOS Development'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Creating a JSON Web Token (JWT)'
-          Description: 'Claims for Static URL Delivery value added'
-          Link: https://general.support.brightcove.com/developer/create-json-web-token.html#Claims_for_Static_URL_Delivery
-          Product: Video Cloud
-          Product_area: 'Plugins'
+        - Title: 'Brightcove QoE Insights'
+          Description: 'Note for Android Errors'
+          Link: https://studio.support.brightcove.com/analytics/module/qoe-insights.html#Error_codes
+          Product: Video Cloud 
+          Product_area: ' Reviewing Analytics'
           Product_Update: 'false'
           Feature: ''
           Status: Released
+        - Title: 'Google Tag Manager Plugin for Brightcove Player'
+          Description: 'New Prerequisites section added'
+          Link: https://player.support.brightcove.com/plugins/google-tag-manager-plugin-brightcove-player.html
+          Product: Brightcove Player 
+          Product_area: ''
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Getting Started with Ramp Multicast+ and Video Cloud'
+          Description: 'RAMP Multicast plugin document updated'
+          Link: https://integrations.support.brightcove.com/ecdn/ramp/getting-started-ramp-multicast-and-video-cloud.html
+          Product: Integrations
+          Product_area: 'eCDN'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Native SDK for Android: Previous SDK information'
+          Description: 'Previous section updated'
+          Link: https://sdks.support.brightcove.com/android/resources/brightcove-player-sdk-android-previous-sdk-information.html
+          Product:  Device SDKs 
+          Product_area: 'Android Development'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
     - type: Minor updates
       docs:
-        - Title: 'CMS API: Video Search v2'
-          Description: 'To see Version 1, go to CMS/Playback API: Videos Search v1.'
-          Link: https://apis.support.brightcove.com/cms/searching/cms-and-playback-apis-video-search-v2.html
-          Product: APIs
-          Product_area: 'CMS API'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Interactivity Javascript Embed API'
-          Description: 'Update to interactivity viewer rather than HapYak'
-          Link: https://apis.support.brightcove.com/interactivity/embed-api/reference.html#viewer_api_hapyakviewer
-          Product: APIs
-          Product_area: 'Brightcove Interactivity APIs'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: Dimensions, Fields, and Parameters'
-          Description: 'Viewer" Category Missing in Dimension Combinations table'
-          Link: https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html#metrics
-          Product:  Audience Insights
-          Product_area: 'analytics'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Reducing Latency for Live Streams'
-          Description: 'Add a restriction/limitation to this documentation to call out that a 2-second segment length is not compatible with live jobs that have a redundancy aspect'
-          Link: https://live.support.brightcove.com/general/reducing-latency-live-streams.html
+        - Title: 'Setting a Hard Start for a Channel'
+          Description: 'Broken link fix'
+          Link: https://studio.support.brightcove.com/channels/cloud-playout/publishing/hard-start.html
           Product: Live
-          Product_area: 'general'
+          Product_area: 'Cloud Playout'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Studio System Requirements'
-          Description: 'update supported OS versions'
-          Link: https://studio.support.brightcove.com/general/references/studio-system-requirements.html
+        - Title: 'Protecting Videos with HLS Encryption'
+          Description: 'Limitation added'
+          Link: https://studio.support.brightcove.com/general/content-protection/protecting-videos-hls-encryption.html
           Product: Video Cloud
-          Product_area: 'general'
+          Product_area: 'Encription'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Viewing Billing Information'
-          Description: 'Total storage in the billing dashboard explanation'
-          Link: https://studio.support.brightcove.com/admin/viewing-billing-information.html
-          Product: Video Cloud 
-          Product_area: 'Admin'
+        - Title: 'Brightcove Native SDK for tvOS: Previous SDK information'
+          Description: 'Previous SDK information updated'
+          Link: https://sdks.support.brightcove.com/tvos/resources/brightcove-player-sdk-tvos-previous-sdk-information.html
+          Product:  Device SDKs 
+          Product_area: 'tvOS Development'
           Product_Update: 'false'
           Feature: ''
-          Status: Released 
-        - Title: 'Debugging on Mobile Devices'
-          Description: 'Using Charles with Android 7 and later'
-          Link: https://sdks.support.brightcove.com/developer-support/guides/debugging-mobile-devices.html#Using_Charles_with_Android_7
+          Status: Released
+        - Title: 'Brightcove Native SDK for iOS: Previous SDK information'
+          Description: 'Previous SDK information updated'
+          Link: https://sdks.support.brightcove.com/ios/resources/brightcove-player-sdk-ios-previous-sdk-information.html
+          Product:  Device SDKs 
+          Product_area: 'iOS Development'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Brightcove Native SDK for Android'
+          Description: 'Android SDK Release v8.4.2'
+          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html
           Product: Device SDKs 
-          Product_area: 'Getting Started'
+          Product_area: 'Android Development'
           Product_Update: 'false'
           Feature: ''
           Status: Released 
-        - Title: 'Brightcove Player Release Notes'
-          Description: 'Brightcove Player current version'
-          Link: https://player.support.brightcove.com/release-notes/brightcove-player-release-notes.html
-          Product:  Brightcove Player 
-          Product_area: 'Release Notes'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Player Sample: Automatically Set Caption Language'
-          Description: 'Disclaimer about code sample added.'
-          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-automatically-set-caption-language.html
-          Product: Brightcove Player
-          Product_area: 'Captions'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Player Sample: Full Window Background Video'
-          Description: 'Disclaimer about code sample added.'
-          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-full-window-background-video.html
-          Product: Brightcove Player
-          Product_area: 'Player'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Player Sample: Automatically Set Audio Track Language'
-          Description: 'Disclaimer about code sample added'
-          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-automatically-set-audio-track-language.html
-          Product: Brightcove Player
-          Product_area: 'Audio track'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Code Sample Index'
-          Description: 'Disclaimer about code sample added'
-          Link: https://player.support.brightcove.com/code-samples/index.html
-          Product: Brightcove Player
-          Product_area: 'Player'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Using Live Redundancy'
-          Description: 'Changed on air variable.'
-          Link: https://apis.support.brightcove.com/live-api/guides/using-live-redundancy.html
-          Product: Live
-          Product_area: 'API'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: Dynamic Ingest API'
-          Description: 'Added warning notes about not using a special character.'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/getting-started/overview-dynamic-ingest-api-dynamic-delivery.html
-          Product: Video Cloud
-          Product_area: 'API'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        
