@@ -3,7 +3,7 @@
     - type: New Docs
       docs:
         - Title: 'Integration Properties: Definitions'
-          Description: 'Properties Documentation'
+          Description: 'Audience insights Properties Definitions'
           Link: https://audience-insights.support.brightcove.com/integrations/properties.html
           Product: Audience Insights
           Product_area: 'integrations'
