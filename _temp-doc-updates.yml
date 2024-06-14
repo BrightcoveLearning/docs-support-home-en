@@ -1,181 +1,96 @@
-- date: 07-June-2024
+- date: 14-Jun-2024
   types:
+    - type: New Docs
+      docs:
     - type: Major updates
       docs:
-        - Title: 'Chromecast Plugin for Brightcove Player'
-          Description: 'New uncommon options added (appId)'
-          Link: https://player.support.brightcove.com/plugins/chromecast-plugin-brightcove-player.html#Configuration_options
+        - Title: 'Overview: Brightcove Native SDK for Android'
+          Description: 'Android SDK v8.4.4 Release'
+          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html
+          Product: Device SDKs
+          Product_area: 'android'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'iOS: Working with Media Content'
+          Description: 'iOS SDK update deprecated method findVideoWithConfiguration'
+          Link: https://sdks.support.brightcove.com/ios/basics/ios-working-media-content.html
+          Product: Device SDKs
+          Product_area: 'ios'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Player Configuration Guide'
+          Description: 'Add Player setting control_bar'
+          Link: https://player.support.brightcove.com/references/player-configuration-guide.html#control_bar
+          Product: Brightcove Player
+          Product_area: 'references'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Getting Started with Brightcove Video Connect for Adobe Experience Manager'
+          Description: 'Add bug fixes for 6.1.4 and 6.1.5 versions'
+          Link: https://integrations.support.brightcove.com/adobe/getting-started-brightcove-video-connect-adobe-experience-manager.html
+          Product: Integrations
+          Product_area: 'adobe'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Advertising with Google IMA DAI Plugin'
+          Description: 'replaceAdTagParameters table added'
+          Link: https://player.support.brightcove.com/plugins/google-ima-dai.html#instance-methods
           Product: Brightcove Player
           Product_area: 'Plugins'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Implementing Server-Side Ads in the Live Module'
-          Description: 'Warning and information notes added'
-          Link: https://live.support.brightcove.com/live-module/implementing-server-side-ads-live-module.html
-          Product: Live
-          Product_area: 'SSAI'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Use Postman for API Requests'
-          Description: 'Postman instructions update'
-          Link: https://apis.support.brightcove.com/general/developer-tools/use-postman-api-requests.html
-          Product: Video Cloud
-          Product_area: 'general'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: Brightcove Native SDK for Android'
-          Description: 'Android SDK Release v8.4.3'
-          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html
-          Product:  Device SDKs
-          Product_area: 'Android Development'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Native SDK for Android Release Notes'
-          Description: 'Brightcove Native SDK for Android Release Notes Section Updated'
-          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html
-          Product: Device SDKs
-          Product_area: 'Android Development'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Native SDK for Android: Previous SDK information'
-          Description: 'Previous SDK and plugin versions for the Native SDK for Android updated.'
-          Link: https://sdks.support.brightcove.com/android/resources/brightcove-player-sdk-android-previous-sdk-information.html
-          Product: Brightcove Player
-          Product_area: 'Android Development'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Jump Start: Header Bidding Ad'
-          Description: 'AppNexus section added'
-          Link: https://player.support.brightcove.com/advertising/jump-start-header-bidding-ad.html#AppNexus_Overview
-          Product: Brightcove Player
-          Product_area: 'Advertising'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Managing Slates'
-          Description: 'Updated the Adding a slate to a channel section'
-          Link: https://studio.support.brightcove.com/channels/cloud-playout/general/managing-slates.html
-          Product: Live 
-          Product_area: 'Cloud Playout'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Live API Reference (1.0.0)'
-          Description: 'Note about duration_in_ms added'
-          Link: https://apis.support.brightcove.com/live-api/references/reference.html#tag/Live-Jobs/operation/GetLiveJobDetails
-          Product: Video Cloud
-          Product_area: 'Live API'
+        - Title: 'Brightcove Native SDK for Android Release Notes'
+          Description: 'Add release notes for Android SDK v8.4.2'
+          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html
+          Product: Device SDKs
+          Product_area: 'android'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Static URL Delivery'
-          Description: 'Note about Static URLs added'
-          Link: https://apis.support.brightcove.com/playback/guides/static-url-delivery.html#Static_URLs
+        - Title: 'Quick Start: Using RTMP Outputs for Live Events'
+          Description: 'Update logo'
+          Link: https://apis.support.brightcove.com/live-api/code-samples/quick-start-using-rtmp-outputs-live-events.html
           Product: Video Cloud
-          Product_area: 'Playback API'
+          Product_area: 'live-api'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Digital Master Delete API'
-          Description: 'Warning added'
-          Link: https://apis.support.brightcove.com/cms/managing-videos/digital-master-delete-api.html
+        - Title: 'Images and the Dynamic Ingest API'
+          Description: 'Code indentation '
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/images-and-dynamic-ingest-api.html
           Product: Video Cloud
-          Product_area: 'API'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Dynamic Delivery Ingest Priority Queueing'
-          Description: 'Changed a limitation'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/dynamic-delivery-ingest-priority-queueing.html
-          Product: Video Cloud
-          Product_area: 'Ingest'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'OAuth API Error Message Reference'
-          Description: 'Code fix to display correctly the document'
-          Link: https://apis.support.brightcove.com/oauth/references/oauth-api-error-message-reference.html
-          Product: Video Cloud
-          Product_area: 'oauth'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Using Live RTMP Outputs to Stream to Facebook and YouTube'
-          Description: 'Add a note about new Facebook live events requirements'
-          Link: https://live.support.brightcove.com/live-module/using-live-rtmp-outputs-stream-facebook-and-youtube.html
-          Product: Live
-          Product_area: 'live-module'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Publishing a Live Event to Facebook'
-          Description: 'Add a note about new Facebook live events requirements'
-          Link: https://studio.support.brightcove.com/social/general/publishing-live-event-facebook.html
-          Product: Video Cloud
-          Product_area: 'social'
+          Product_area: 'dynamic-ingest'
           Product_Update: 'false'
           Feature: ''
           Status: Released
         - Title: 'Brightcove Player Release Notes'
-          Description: 'Player version updated'
+          Description: 'Brightcove Player current version updated'
           Link: https://player.support.brightcove.com/release-notes/brightcove-player-release-notes.html
-          Product: Brightcove Player 
+          Product: Brightcove Player
           Product_area: 'Release Notes'
           Product_Update: 'false'
           Feature: ''
           Status: Released
         - Title: 'Brightcove Player Documentation'
-          Description: 'Player version updated'
+          Description: 'Brightcove Player current version updated'
           Link: https://player.support.brightcove.com/index.html
           Product:  Brightcove Player 
-          Product_area: 'Getting Started'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Download Button Plugin'
-          Description: 'To add the Download Plugin, see Implement using Players module.'
-          Link: https://player.support.brightcove.com/plugins/download-button-plugin.html
-          Product: Brightcove Player
-          Product_area: ' Plugins'
+          Product_area: 'Home'
           Product_Update: 'false'
           Feature: ''
           Status: Released 
-        - Title: 'What is new? box updated (from UI)'
-          Description: 'What is new? box updated with latest feature'
-          Link: https://studio.brightcove.com/products/videocloud/home
-          Product: Video Cloud
-          Product_area: ''
-          Product_Update: ''
-          Feature: ''
-          Status: Released 
-        - Title: 'Video Details Analytics'
-          Description: 'Note related to engagement and all time added'
-          Link: https://studio.support.brightcove.com/analytics/reports/video-editor-analytics.html
+        - Title: 'Supported Encoders for Live Events'
+          Description: 'Not listed encoders that can meet our best practices should work, we recommend testing'
+          Link: https://studio.support.brightcove.com/live/general/supported-encoders-live-events.html
           Product: Video Cloud 
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Multiple Audio and Text Tracks for Offline Playback with the Native SDK for Android'
-          Description: 'Changed the title to better reflect the content of this document'
-          Link: https://sdks.support.brightcove.com/android/playback/multiple-audio-tracks-offline-playback-native-sdk-android.html
-          Product: Device SDKs
-          Product_area: 'Android'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Video Cloud SSAI API'
-          Description: 'Added a note about a limitation with UID2'
-          Link: https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html
-          Product: Video Cloud
-          Product_area: 'API'
+          Product_area: 'Live Streaming'
           Product_Update: 'false'
           Feature: ''
           Status: Released
