@@ -1,46 +1,152 @@
-- date: 12-Jul-2024
+- date: 19-Jul-2024
   types:
     - type: New Docs
       docs:
-        - Title: 'Google PAL SDK for Brightcove SSAI'
-          Description: 'In this topic, you will learn about Google PAL SDK.'
-          Link: https://player.support.brightcove.com/plugins/google-pal-sdk.html
-          Product:  Brightcove Player 
-          Product_area: 'Plugins'
+        - Title: 'Bright Spot: Community Access'
+          Description: 'In this topic, you will learn how to access Bright Spot Community through Video Cloud Studio.'
+          Link: https://studio.support.brightcove.com/general/community/bright-spot-redirect.html
+          Product: Video Cloud
+          Product_area: 'General'
           Product_Update: 'true'
+          Feature: 'Community Link'
+          Status: Released
+        - Title: 'Adding a Lead Form'
+          Description: 'In this topic you will learn how to add a lead form annotation.'
+          Link: https://studio.support.brightcove.com/marketing-automation/general/lead-forms/adding-lead-form.html
+          Product: Video Cloud
+          Product_area: 'Marketing Automation 2.0'
+          Product_Update: 'true'
+          Feature: 'Marketing Automation 2.0 release'
+          Status: Released
+        - Title: 'Integrating Video Cloud with HubSpot Using the Client-Side APIs'
+          Description: 'This topic explains how to configure the integration with HubSpot using the Client-Side APIs.'
+          Link: https://studio.support.brightcove.com/marketing-automation/general/data-to-external-systems/client-side/integrating-video-cloud-hubspot-using-client-side-apis.html
+          Product: Video Cloud
+          Product_area: 'Marketing Automation 2.0'
+          Product_Update: 'false'
           Feature: ''
-          Status: Released 
+          Status: Released
+        - Title: 'Integrating Video Cloud with Marketo using Munchkin'
+          Description: 'This topic explains the integration with Marketo Munchkin.'
+          Link: https://studio.support.brightcove.com/marketing-automation/general/data-to-external-systems/client-side/integrating-video-cloud-marketo-using-munchkin.html
+          Product: Video Cloud
+          Product_area: 'Marketing Automation 2.0'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Overview: Server-side Connections'
+          Description: 'In this topic, you will learn about the Viewing Data and Contact Object integrations.'
+          Link: https://studio.support.brightcove.com/marketing-automation/general/data-to-external-systems/server-side/overview-server-side.html
+          Product: Video Cloud
+          Product_area: 'Marketing Automation 2.0'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Viewing Data Integration: Eloqua'
+          Description: 'In this topic, you will learn how to set up the Eloqua integration in the Viewing Data Integration section.'
+          Link: https://studio.support.brightcove.com/marketing-automation/general/data-to-external-systems/server-side/eloqua-integration.html
+          Product: Video Cloud
+          Product_area: 'Marketing Automation 2.0'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Viewing Data Integration: S3'
+          Description: 'In this topic, you will learn how to set up the S3 integration in the Viewing Data Integration section'
+          Link: https://studio.support.brightcove.com/marketing-automation/general/data-to-external-systems/server-side/s3-integration.html
+          Product: Video Cloud
+          Product_area: 'Marketing Automation 2.0'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Client-Side Troubleshooting for Marketo Munchkin and HubSpot'
+          Description: 'Campaign 2.0: client-side Troubleshooting'
+          Link: https://studio.support.brightcove.com/marketing-automation/general/troubleshooting/client-side-ts.html#general-troubleshooting
+          Product: Video Cloud
+          Product_area: 'marketing'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Immersion builder'
+          Description: 'In this topic, you will learn about the Immersion Builder.'
+          Link: https://gallery.support.brightcove.com/experiences/immersion-template/immersion-builder.html
+          Product: Gallery
+          Product_area: 'Experiences'
+          Product_Update: 'true'
+          Feature: 'Immersion builder'
+          Status: Released
         - Title: 'Agenda Widget on the Immersion Gallery template'
           Description: 'In this topic, you will learn how to use the Agenda widget using the Immersion Gallery Template.'
           Link: https://gallery.support.brightcove.com/experiences/immersion-template/agenda-widget.html
           Product: Gallery
-          Product_area: ''
-          Product_Update: 'false'
-          Feature: ''
-          Status: Staging
+          Product_area: 'Experiences'
+          Product_Update: 'true'
+          Feature: 'Agenda Widget on the Immersion Gallery template'
+          Status: Released 
         - Title: 'People Widget on the Immersion Gallery template'
           Description: 'In this topic you will learn about how to use the People Widget using the Immersion Gallery Template.'
           Link: https://gallery.support.brightcove.com/experiences/immersion-template/people-widget.html
           Product: Gallery
-          Product_area: ''
-          Product_Update: 'false'
-          Feature: ''
-          Status:  Staging
+          Product_area: 'Experiences'
+          Product_Update: 'true'
+          Feature: 'People Widget on the Immersion Gallery template'
+          Status: Released
+        - Title: 'Using setUser'
+          Description: 'In this topic, you will learn about how to obtain data on unique users via the Analytics API.'
+          Link: https://studio.support.brightcove.com/marketing-automation/general/viewer-id/analytics-api-unique-users.html
+          Product: Video Cloud
+          Product_area: 'Marketing Automation 2.0'
+          Product_Update: 'true'
+          Feature: 'Using setUser'
+          Status: Released
+        - Title: 'Configuring Viewer ID Tracking'
+          Description: 'In this topic you will learn how to configure the Viewer ID Tracking for a player.'
+          Link: https://studio.support.brightcove.com/marketing-automation/general/viewer-id/viewer-id-tracking.html
+          Product: Video Cloud
+          Product_area: 'Marketing Automation 2.0'
+          Product_Update: 'true'
+          Feature: 'Configuring Viewer ID Tracking'
+          Status: Released
     - type: Major updates
       docs:
-        - Title: 'Getting Started with Scheduled Channels'
-          Description: 'Documentation updated to reflect the changes for supporting CP schedules on existing BC Live channels'
-          Link: https://studio.support.brightcove.com/channels/fast/getting-started.html
+        - Title: 'Creating Custom Analytics Reports'
+          Description: 'new section Quick Reports'
+          Link: https://studio.support.brightcove.com/analytics/reports/creating-custom-analytics-reports.html#quick-reports
           Product: Video Cloud
-          Product_area: 'Channels'
-          Product_Update: 'true'
-          Feature: 'Support for re-use of existing 24x7 live channels'
+          Product_area: 'analytics'
+          Product_Update: 'false'
+          Feature: ''
           Status: Released
-        - Title: 'Managing a Schedule Channel'
-          Description: 'Documentation updated to reflect the changes for supporting CP schedules on existing BC Live channels'
-          Link: https://studio.support.brightcove.com/channels/fast/scheduled-calendar.html
-          Product: Video Cloud
-          Product_area: 'Channels'
+        - Title: 'Android SDK Release v9.1.0'
+          Description: 'Android SDK Release v9.1.0'
+          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html
+          Product: Device SDKs
+          Product_area: 'android'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Native Player for iOS release 6.3.13'
+          Description: 'Brightcove Native Player for iOS release 6.3.13'
+          Link: https://sdks.support.brightcove.com/ios/basics/overview-brightcove-player-sdk-ios.html
+          Product: ios
+          Product_area: 'basics'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Native Player for tvOS release 6.3.13'
+          Description: 'Brightcove Native Player for tvOS release 6.3.13'
+          Link: https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html
+          Product: tvos
+          Product_area: 'basics'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Customizing the Style of an In-Page Experience'
+          Description: 'Note added about custom CSS'
+          Link: https://gallery.support.brightcove.com/experiences/inpage/customizing/customizing-style-page-experience.html#customcss
+          Product: Gallery
+          Product_area: 'Experiences'
           Product_Update: 'false'
           Feature: ''
           Status: Released
