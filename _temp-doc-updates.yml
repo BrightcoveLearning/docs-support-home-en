@@ -1,40 +1,63 @@
-- date: 16-Agust-2024
+- date: 23-Agust-2024
   types:
     - type: New Docs
       docs:
         - Title: 'Quality Selector'
-          Description: 'The Quality Selector allows Beacon users to access, view, and select from various rendition levels, which allows the viewer to save bandwidth or watch a higher-quality video.'
+          Description: 'In this topic you will learn how use the quality selector feature.'
           Link: https://beacon-help.support.brightcove.com/media/properties/quality-selector.html
-          Product: Beacon 
-          Product_area: 'Media'
+          Product: Beacon
+          Product_area: 'Managing Media'
+          Product_Update: 'true'
+          Feature: 'Quality Selector'
+          Status: Released
+        - Title: 'Server-Side Troubleshooting'
+          Description: 'This guide outlines comprehensive troubleshooting steps for server-side connections with Eloqua.'
+          Link: https://studio.support.brightcove.com/marketing-automation/general/troubleshooting/server-side-ts.html
+          Product: Video Cloud
           Product_Update: 'false'
-          Feature: ''
-          Status:  Staging
+          Feature: 'Troubleshooting'
+          Status: Released
     - type: Major updates
       docs:
-        - Title: 'Static URL Delivery'
-          Description: 'Limitations section added'
-          Link: https://player.support.brightcove.com/playback/static-url-delivery.html
-          Product: Brightcove Player
-          Product_area: 'Playback'
+        - Title: 'Linear Channel integration for Immersion Template'
+          Description: 'The scope has changed for the FAST solution. Now, this does not support ads. This mean what we really are supporting is a linear channel'
+          Link: https://gallery.support.brightcove.com/experiences/portal/other/fast-streams-for-immersion.html
+          Product: Gallery
+          Product_area: 'Experiences'
           Product_Update: 'false'
           Feature: ''
-          Status: Released
-        - Title: 'Creating and Managing Live Events using the Live Module'
-          Description: 'Limitations section added'
-          Link: https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#Limitations
-          Product: Live
-          Product_area: 'Live Module'
+          Status: Released 
+        - Title: 'Images and the Dynamic Ingest API'
+          Description: 'New Correct way to send images using Images API section added'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/images-and-dynamic-ingest-api.html
+          Product: APIs
+          Product_area: 'Dynamic Ingest API'
           Product_Update: 'false'
           Feature: ''
-          Status: Released
+          Status: Released 
+        - Title: 'Configuring Player Controls'
+          Description: 'Seek forward/backward section added'
+          Link: https://studio.support.brightcove.com/players/appearance/configuring-player-controls.html
+          Product: Video Cloud
+          Product_area: 'Configuring Player Controls'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
     - type: Minor updates
       docs:
-        - Title: 'Creating and Managing Live Events using the Live Module'
-          Description: 'Note about creating a Live event selecting a Convert event to video asset when complete option, added'
-          Link: https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#create
-          Product: Live
-          Product_area: 'Live Module'
+        - Title: 'Managing Account Settings'
+          Description: 'Removed references to Video Content Type'
+          Link: https://studio.support.brightcove.com/admin/general/managing-account-settings.html#account_settings
+          Product: Video Cloud 
+          Product_area: 'Administration'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Ad Insights'
+          Description: 'Updated document according the real workflow of the product'
+          Link: https://studio.support.brightcove.com/analytics/module/ad-insights.html#Key_metrics
+          Product: Video Cloud 
+          Product_area: 'Reviewing Analytics'
           Product_Update: 'false'
           Feature: ''
           Status: Released
