@@ -1,63 +1,120 @@
-- date: 23-Agust-2024
+- date: 30-Agust-2024
   types:
     - type: New Docs
       docs:
-        - Title: 'Quality Selector'
-          Description: 'In this topic you will learn how use the quality selector feature.'
-          Link: https://beacon-help.support.brightcove.com/media/properties/quality-selector.html
-          Product: Beacon
-          Product_area: 'Managing Media'
-          Product_Update: 'true'
-          Feature: 'Quality Selector'
+        - Title: 'IMA クライアントサイドと Brightcove ウェブ & スマートTV SDK の統合'
+          Description: 'Integrating IMA Client Side with Brightcove Web & Smart TV SDK Japanese'
+          Link: https://ja.sdks.support.brightcove.com/web-sdk/code-samples/ima-csai.html
+          Product: Device SDKs
+          Product_area: 'Web SDK'
+          Product_Update: 'false'
+          Feature: ''
           Status: Released
-        - Title: 'Server-Side Troubleshooting'
-          Description: 'This guide outlines comprehensive troubleshooting steps for server-side connections with Eloqua.'
-          Link: https://studio.support.brightcove.com/marketing-automation/general/troubleshooting/server-side-ts.html
+        - Title: 'SSAI と Brightcove ウェブ & スマートTV SDK の統合'
+          Description: 'Integrating SSAI with Brightcove Web & Smart TV SDK Japanese'
+          Link: https://ja.sdks.support.brightcove.com/web-sdk/code-samples/ima-ssai.html
+          Product: Device SDKs
+          Product_area: 'Web SDK'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'EndScreen と Brightcove ウェブ & スマートTV SDK の統合'
+          Description: 'Integrating EndScreen with Brightcove Web & Smart TV SDK Japanese'
+          Link: https://ja.sdks.support.brightcove.com/web-sdk/code-samples/endscreen.html
+          Product: Device SDKs
+          Product_area: 'Web SDK'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Web & Smart TV SDK とピンニング統合'
+          Description: 'Integrating Pinning with Brightcove Web & Smart TV SDK Japanese'
+          Link: https://ja.sdks.support.brightcove.com/web-sdk/code-samples/pinning.html
+          Product: Device SDKs
+          Product_area: 'Web SDK'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove ウェブ & スマートTV SDK によるソーシャル共有の統合'
+          Description: 'Integrating Social Sharing with Brightcove Web & Smart TV SDK Japanese'
+          Link: https://ja.sdks.support.brightcove.com/web-sdk/code-samples/social-sharing.html
+          Product: Device SDKs
+          Product_area: 'Web SDK'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'サムネイルと Brightcove Web & Smart TV SDK の統合'
+          Description: 'Integrating Thumbnails with Brightcove Web & Smart TV SDK Japanese'
+          Link: https://ja.sdks.support.brightcove.com/web-sdk/code-samples/thumbnails.html
+          Product: Device SDKs
+          Product_area: 'Web SDK'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'サムネイルと Brightcove Web & Smart TV SDK の統合'
+          Description: 'Integrating Thumbnails with Brightcove Web & Smart TV SDK Japanese'
+          Link: https://ja.sdks.support.brightcove.com/web-sdk/code-samples/thumbnails.html
+                https://ja.sdks.support.brightcove.com/web-sdk/getting-started/getting-started.html
+          Product: Device SDKs
+          Product_area: 'Web SDK'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Viewing Data Integration: Salesforce'
+          Description: 'In this topic, you will learn how to set up the Salesforce integration in the Viewing Data Integration section.'
+          Link: https://studio.support.brightcove.com/marketing-automation/general/data-to-external-systems/server-side/salesforce-integration.html
           Product: Video Cloud
           Product_Update: 'false'
-          Feature: 'Troubleshooting'
+          Feature: 'Salesforce Integration'
           Status: Released
     - type: Major updates
       docs:
-        - Title: 'Linear Channel integration for Immersion Template'
-          Description: 'The scope has changed for the FAST solution. Now, this does not support ads. This mean what we really are supporting is a linear channel'
-          Link: https://gallery.support.brightcove.com/experiences/portal/other/fast-streams-for-immersion.html
-          Product: Gallery
-          Product_area: 'Experiences'
-          Product_Update: 'false'
+        - Title: 'Analytics API: Live Metrics'
+          Description: 'Add the base URL in the document'
+          Link: https://apis.support.brightcove.com/analytics/general/live-metrics.html
+          Product: Audience Insights
+          Product_area: ''
+          Product_Update: 'true | false'
           Feature: ''
-          Status: Released 
-        - Title: 'Images and the Dynamic Ingest API'
-          Description: 'New Correct way to send images using Images API section added'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/images-and-dynamic-ingest-api.html
-          Product: APIs
-          Product_area: 'Dynamic Ingest API'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Configuring Player Controls'
-          Description: 'Seek forward/backward section added'
-          Link: https://studio.support.brightcove.com/players/appearance/configuring-player-controls.html
+          Status: Released | Limited Availability | Staging | Internal
+        - Title: 'Dimension: viewer'
+          Description: 'Added requirements'
+          Link: https://apis.support.brightcove.com/analytics/dimension-guides/dimension-viewer.html#Send_viewer_id_web_player
           Product: Video Cloud
-          Product_area: 'Configuring Player Controls'
+          Product_area: 'Apis'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Brightcove Ad Insights'
+          Description: 'VOD Completion Rates section updated'
+          Link: https://studio.support.brightcove.com/analytics/module/ad-insights.html#Key_metrics
+          Product: Video Cloud 
+          Product_area: 'Reviewing Analytics'
           Product_Update: 'false'
           Feature: ''
           Status: Released 
     - type: Minor updates
       docs:
-        - Title: 'Managing Account Settings'
-          Description: 'Removed references to Video Content Type'
-          Link: https://studio.support.brightcove.com/admin/general/managing-account-settings.html#account_settings
-          Product: Video Cloud 
-          Product_area: 'Administration'
+        - Title: 'Styling Captions'
+          Description: 'fix misleading information in Styling Captions documentation'
+          Link: https://studio.support.brightcove.com/media/captions/styling-captions.html#studio
+          Product: Video Cloud
+          Product_area: 'media'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Brightcove Ad Insights'
-          Description: 'Updated document according the real workflow of the product'
-          Link: https://studio.support.brightcove.com/analytics/module/ad-insights.html#Key_metrics
+        - Title: 'Social Sharing Plugin'
+          Description: 'Replaced images with X logo'
+          Link: https://player.support.brightcove.com/plugins/social-sharing-plugin.html
+          Product: Brightcove Player
+          Product_area: 'Plugins'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Configuring a Brightcove Player with the Interactivity Plugin'
+          Description: 'Interactivity Plugin not supported on player 6'
+          Link: https://studio.support.brightcove.com/interactivity/getting-started/configuring-player-plugin.html#:~:text=note%3A%20the%20interactivity%20plugin%20requires%20brightcove%20player%20version%206.66%20or%20newer
           Product: Video Cloud 
-          Product_area: 'Reviewing Analytics'
+          Product_area: ''
           Product_Update: 'false'
           Feature: ''
           Status: Released
