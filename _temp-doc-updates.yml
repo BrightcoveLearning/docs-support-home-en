@@ -1,120 +1,117 @@
-- date: 30-Agust-2024
+- date: 13-September-2024
   types:
-    - type: New Docs
-      docs:
-        - Title: 'IMA クライアントサイドと Brightcove ウェブ & スマートTV SDK の統合'
-          Description: 'Integrating IMA Client Side with Brightcove Web & Smart TV SDK Japanese'
-          Link: https://ja.sdks.support.brightcove.com/web-sdk/code-samples/ima-csai.html
-          Product: Device SDKs
-          Product_area: 'Web SDK'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'SSAI と Brightcove ウェブ & スマートTV SDK の統合'
-          Description: 'Integrating SSAI with Brightcove Web & Smart TV SDK Japanese'
-          Link: https://ja.sdks.support.brightcove.com/web-sdk/code-samples/ima-ssai.html
-          Product: Device SDKs
-          Product_area: 'Web SDK'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'EndScreen と Brightcove ウェブ & スマートTV SDK の統合'
-          Description: 'Integrating EndScreen with Brightcove Web & Smart TV SDK Japanese'
-          Link: https://ja.sdks.support.brightcove.com/web-sdk/code-samples/endscreen.html
-          Product: Device SDKs
-          Product_area: 'Web SDK'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Web & Smart TV SDK とピンニング統合'
-          Description: 'Integrating Pinning with Brightcove Web & Smart TV SDK Japanese'
-          Link: https://ja.sdks.support.brightcove.com/web-sdk/code-samples/pinning.html
-          Product: Device SDKs
-          Product_area: 'Web SDK'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove ウェブ & スマートTV SDK によるソーシャル共有の統合'
-          Description: 'Integrating Social Sharing with Brightcove Web & Smart TV SDK Japanese'
-          Link: https://ja.sdks.support.brightcove.com/web-sdk/code-samples/social-sharing.html
-          Product: Device SDKs
-          Product_area: 'Web SDK'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'サムネイルと Brightcove Web & Smart TV SDK の統合'
-          Description: 'Integrating Thumbnails with Brightcove Web & Smart TV SDK Japanese'
-          Link: https://ja.sdks.support.brightcove.com/web-sdk/code-samples/thumbnails.html
-          Product: Device SDKs
-          Product_area: 'Web SDK'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'サムネイルと Brightcove Web & Smart TV SDK の統合'
-          Description: 'Integrating Thumbnails with Brightcove Web & Smart TV SDK Japanese'
-          Link: https://ja.sdks.support.brightcove.com/web-sdk/code-samples/thumbnails.html
-                https://ja.sdks.support.brightcove.com/web-sdk/getting-started/getting-started.html
-          Product: Device SDKs
-          Product_area: 'Web SDK'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Viewing Data Integration: Salesforce'
-          Description: 'In this topic, you will learn how to set up the Salesforce integration in the Viewing Data Integration section.'
-          Link: https://studio.support.brightcove.com/marketing-automation/general/data-to-external-systems/server-side/salesforce-integration.html
-          Product: Video Cloud
-          Product_Update: 'false'
-          Feature: 'Salesforce Integration'
-          Status: Released
     - type: Major updates
       docs:
-        - Title: 'Analytics API: Live Metrics'
-          Description: 'Add the base URL in the document'
-          Link: https://apis.support.brightcove.com/analytics/general/live-metrics.html
-          Product: Audience Insights
-          Product_area: ''
-          Product_Update: 'true | false'
+        - Title: 'Playback Restrictions with Brightcove Player'
+          Description: 'Using Concurrency and Registration section new steps'
+          Link: https://player.support.brightcove.com/playback/playback-restrictions-with-bcp.html#Using_Concurrency_and_Registration
+          Product:  Brightcove Player
+          Product_area: ' Playback'
+          Product_Update: 'false'
+          Status: Released 
+        - Title: 'Overview: In-Page Experience Client API'
+          Description: 'Gallery IPX: document a way to track user/viewer (Audience Insights)'
+          Link: https://gallery.support.brightcove.com/develop/overview-page-experience-client-api.html
+          Product: Gallery
+          Product_area: 'Developers'
+          Product_Update: 'false'
           Feature: ''
-          Status: Released | Limited Availability | Staging | Internal
-        - Title: 'Dimension: viewer'
-          Description: 'Added requirements'
-          Link: https://apis.support.brightcove.com/analytics/dimension-guides/dimension-viewer.html#Send_viewer_id_web_player
+          Status: Released 
+        - Title: 'Understanding SCORM Integration'
+          Description: 'update section SCORM download option is only available with Lesson Experience projects'
+          Link: https://studio.support.brightcove.com/interactivity/general/understanding-scorm-integration.html#user-experience
           Product: Video Cloud
-          Product_area: 'Apis'
+          Product_area: 'interactivity'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Brightcove Ad Insights'
-          Description: 'VOD Completion Rates section updated'
-          Link: https://studio.support.brightcove.com/analytics/module/ad-insights.html#Key_metrics
+        - Title: 'Overview: Using Aspera for Ingestion to Video Cloud'
+          Description: 'Include minimum version info for Aspera'
+          Link: https://apis.support.brightcove.com/aspera/overview.html
+          Product: Video Cloud
+          Product_area: 'aspera'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+    - type: Minor updates
+      docs:
+        - Title: 'Configuring a Brightcove Player with the Interactivity Plugin'
+          Description: 'Note added about only player 7 is supported'
+          Link: https://studio.support.brightcove.com/interactivity/getting-started/configuring-player-plugin.html#:~:text=note%3A%20the%20interactivity%20plugin%20requires%20brightcove%20player%20version%206.66%20or%20newer
+          Product: Video Cloud 
+          Product_area: 'Managing Players'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Creating and Managing Live Events using the Live Module'
+          Description: 'If you would like to enable the extended monitoring, please contact your Brightcove account representative'
+          Link: https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#ext-monitoring
+          Product: Live
+          Product_area: 'Using the Live Module'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Using the Caption Editor'
+          Description: 'The preview player in the caption editor does not support custom CSS'
+          Link: https://studio.support.brightcove.com/media/captions/using-the-caption-editor.html
+          Product: Video Cloud
+          Product_area: 'Managing Videos'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Source File Upload API for Dynamic Ingest'
+          Description: 'Note: Video upload can fail if any part of the source file URL contains illegal characters'
+          Link: https://apis.support.brightcove.com/dynamic-ingest/getting-started/source-file-upload-api-dynamic-ingest.html#Source_file_names
+          Product: APIs
+          Product_area: 'Dynamic Ingest API'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Getting Started with the Analytics Module'
+          Description: 'Audience Insights Essentials note added'
+          Link: https://studio.support.brightcove.com/analytics/module/getting-started-analytics-module.html
           Product: Video Cloud 
           Product_area: 'Reviewing Analytics'
           Product_Update: 'false'
           Feature: ''
           Status: Released 
-    - type: Minor updates
-      docs:
-        - Title: 'Styling Captions'
-          Description: 'fix misleading information in Styling Captions documentation'
-          Link: https://studio.support.brightcove.com/media/captions/styling-captions.html#studio
-          Product: Video Cloud
-          Product_area: 'media'
+        - Title: 'Customizing Portals'
+          Description: 'Script tags are not supported in the Header and Footer sections note added to the documents'
+          Link: https://gallery.support.brightcove.com/experiences/portal/customizing/index.html
+          Product: Gallery
+          Product_area: 'Customizing'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Social Sharing Plugin'
-          Description: 'Replaced images with X logo'
-          Link: https://player.support.brightcove.com/plugins/social-sharing-plugin.html
-          Product: Brightcove Player
-          Product_area: 'Plugins'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Configuring a Brightcove Player with the Interactivity Plugin'
-          Description: 'Interactivity Plugin not supported on player 6'
-          Link: https://studio.support.brightcove.com/interactivity/getting-started/configuring-player-plugin.html#:~:text=note%3A%20the%20interactivity%20plugin%20requires%20brightcove%20player%20version%206.66%20or%20newer
+        - Title: 'Core Reports Reference'
+          Description: 'Replacing anonymize word for legal purposes'
+          Link: https://studio.support.brightcove.com/interactivity/analytics/core-reports-reference.html
           Product: Video Cloud 
-          Product_area: ''
+          Product_area: 'Interactivity'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Debugging on Mobile Devices'
+          Description: 'Added Charles Proxy note'
+          Link: https://general.support.brightcove.com/developer/debugging-mobile-devices.html#Using_Charles_with_iOS_devices
+          Product: Video Cloud
+          Product_area: 'mobile'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Viewing Data Integration: Salesforce'
+          Description: 'Added data requirements'
+          Link: https://studio.support.brightcove.com/marketing-automation/general/data-to-external-systems/server-side/salesforce-integration.html
+          Product: Video Cloud
+          Product_area: 'server side integration'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Customizing the Site Features of a Portal Experience'
+          Description: 'Added tag note'
+          Link: https://gallery.support.brightcove.com/experiences/portal/customizing/customizing-site-features-portal-experience.html#search
+          Product: Video Cloud
+          Product_area: 'Gallery'
           Product_Update: 'false'
           Feature: ''
           Status: Released
