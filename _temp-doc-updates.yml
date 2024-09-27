@@ -1,117 +1,80 @@
-- date: 13-September-2024
+- date: 27-Sep-2024
   types:
+    - type: New Docs
+      docs:
+        - Title: 'Test Integration'
+          Description: 'Allows you to test the connection of your MAP integrations.'
+          Link: https://audience-insights.support.brightcove.com/integrations/test_integration.html
+          Product: Integrations
+          Product_area: 'MAP Integrations'
+          Product_Update: 'true'
+          Feature: 'Integrations'
+          Status: Released
     - type: Major updates
       docs:
-        - Title: 'Playback Restrictions with Brightcove Player'
-          Description: 'Using Concurrency and Registration section new steps'
-          Link: https://player.support.brightcove.com/playback/playback-restrictions-with-bcp.html#Using_Concurrency_and_Registration
-          Product:  Brightcove Player
-          Product_area: ' Playback'
-          Product_Update: 'false'
-          Status: Released 
-        - Title: 'Overview: In-Page Experience Client API'
-          Description: 'Gallery IPX: document a way to track user/viewer (Audience Insights)'
-          Link: https://gallery.support.brightcove.com/develop/overview-page-experience-client-api.html
-          Product: Gallery
-          Product_area: 'Developers'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Understanding SCORM Integration'
-          Description: 'update section SCORM download option is only available with Lesson Experience projects'
-          Link: https://studio.support.brightcove.com/interactivity/general/understanding-scorm-integration.html#user-experience
-          Product: Video Cloud
-          Product_area: 'interactivity'
+        - Title: 'Overview: Brightcove Native SDK for Android'
+          Description: 'Android SDK Release v9.2.1'
+          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html
+          Product: Device SDKs
+          Product_area: 'Android'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Overview: Using Aspera for Ingestion to Video Cloud'
-          Description: 'Include minimum version info for Aspera'
-          Link: https://apis.support.brightcove.com/aspera/overview.html
+        - Title: 'Creating and Managing Live Events using the Live Module'
+          Description: 'Visual example of live regions added'
+          Link: https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html
+          Product: Live 
+          Product_area: 'Using the Live Module'
+          Product_Update: ' false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Available Options for the Advanced (in-page) Embed Code'
+          Description: 'Preload details section modify about using HLS and DASH as a main playback tech (Mp4 is less popular)'
+          Link: https://player.support.brightcove.com/publish/available-options-advanced-page-embed-code.html
+          Product: Brightcove Player 
+          Product_area: 'Publishing Videos & Players'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Beacon Apps Ad Targeting'
+          Description: 'Added macro to table'
+          Link: https://beacon.support.brightcove.com/monetization/ssai/beacon-apps-ad-targeting.html
+          Product: Beacon
+          Product_area: 'ssai'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Campaign 2.0 Setup and Integration Manual'
+          Description: 'Added new section to the Integrations Setup'
+          Link: https://studio.support.brightcove.com/marketing-automation/getting-started/campaign-migration-set-up.html#Set_up_an_integration
           Product: Video Cloud
-          Product_area: 'aspera'
+          Product_area: 'campaign'
           Product_Update: 'false'
           Feature: ''
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Configuring a Brightcove Player with the Interactivity Plugin'
-          Description: 'Note added about only player 7 is supported'
-          Link: https://studio.support.brightcove.com/interactivity/getting-started/configuring-player-plugin.html#:~:text=note%3A%20the%20interactivity%20plugin%20requires%20brightcove%20player%20version%206.66%20or%20newer
-          Product: Video Cloud 
-          Product_area: 'Managing Players'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating and Managing Live Events using the Live Module'
-          Description: 'If you would like to enable the extended monitoring, please contact your Brightcove account representative'
-          Link: https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#ext-monitoring
-          Product: Live
-          Product_area: 'Using the Live Module'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Using the Caption Editor'
-          Description: 'The preview player in the caption editor does not support custom CSS'
-          Link: https://studio.support.brightcove.com/media/captions/using-the-caption-editor.html
-          Product: Video Cloud
-          Product_area: 'Managing Videos'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Source File Upload API for Dynamic Ingest'
-          Description: 'Note: Video upload can fail if any part of the source file URL contains illegal characters'
-          Link: https://apis.support.brightcove.com/dynamic-ingest/getting-started/source-file-upload-api-dynamic-ingest.html#Source_file_names
-          Product: APIs
-          Product_area: 'Dynamic Ingest API'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Getting Started with the Analytics Module'
-          Description: 'Audience Insights Essentials note added'
-          Link: https://studio.support.brightcove.com/analytics/module/getting-started-analytics-module.html
+        - Title: 'FAQ: Analytics Module'
+          Description: 'Note added: it is not possible to filter out the deleted video from analytics reports'
+          Link: https://studio.support.brightcove.com/analytics/module/faq-analytics-module.html 
           Product: Video Cloud 
           Product_area: 'Reviewing Analytics'
           Product_Update: 'false'
           Feature: ''
           Status: Released 
-        - Title: 'Customizing Portals'
-          Description: 'Script tags are not supported in the Header and Footer sections note added to the documents'
-          Link: https://gallery.support.brightcove.com/experiences/portal/customizing/index.html
-          Product: Gallery
-          Product_area: 'Customizing'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Core Reports Reference'
-          Description: 'Replacing anonymize word for legal purposes'
-          Link: https://studio.support.brightcove.com/interactivity/analytics/core-reports-reference.html
+        - Title: 'Setting Up an Automatic Ingestion Folder on Google Drive'
+          Description: 'Note added about how is needed an administrator account for a managed Google services, such as Google Workspace or Cloud Identity'
+          Link: https://studio.support.brightcove.com/integrations/integrations-module/watched-folders/google-drive.html#whitelisting_app
           Product: Video Cloud 
-          Product_area: 'Interactivity'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Debugging on Mobile Devices'
-          Description: 'Added Charles Proxy note'
-          Link: https://general.support.brightcove.com/developer/debugging-mobile-devices.html#Using_Charles_with_iOS_devices
-          Product: Video Cloud
-          Product_area: 'mobile'
+          Product_area: 'Integrations'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Viewing Data Integration: Salesforce'
-          Description: 'Added data requirements'
-          Link: https://studio.support.brightcove.com/marketing-automation/general/data-to-external-systems/server-side/salesforce-integration.html
-          Product: Video Cloud
-          Product_area: 'server side integration'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Customizing the Site Features of a Portal Experience'
-          Description: 'Added tag note'
-          Link: https://gallery.support.brightcove.com/experiences/portal/customizing/customizing-site-features-portal-experience.html#search
-          Product: Video Cloud
-          Product_area: 'Gallery'
+        - Title: 'Brightcove Player Accessibility'
+          Description: 'Added keyboard instructions'
+          Link: https://player.support.brightcove.com/playback/brightcove-player-accessibility.html#Keyboard_controls
+          Product: Brightcove Player
+          Product_area: 'accesibility'
           Product_Update: 'false'
           Feature: ''
           Status: Released
