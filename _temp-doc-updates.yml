@@ -1,80 +1,73 @@
-- date: 27-Sep-2024
+
+- date: 04-Oct-2024
   types:
     - type: New Docs
       docs:
-        - Title: 'Test Integration'
-          Description: 'Allows you to test the connection of your MAP integrations.'
-          Link: https://audience-insights.support.brightcove.com/integrations/test_integration.html
+        - Title: 'Finding your customer ID'
+          Description: 'Describes how to find your customer ID across different platforms'
+          Link: https://studio.support.brightcove.com/marketing-automation/general/data-to-external-systems/server-side/finding-your-customer-id.html
           Product: Integrations
-          Product_area: 'MAP Integrations'
-          Product_Update: 'true'
-          Feature: 'Integrations'
+          Product_area: 'Test Integration'
+          Product_Update: 'false'
+          Feature: ''
           Status: Released
     - type: Major updates
       docs:
-        - Title: 'Overview: Brightcove Native SDK for Android'
-          Description: 'Android SDK Release v9.2.1'
-          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html
-          Product: Device SDKs
-          Product_area: 'Android'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating and Managing Live Events using the Live Module'
-          Description: 'Visual example of live regions added'
-          Link: https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html
-          Product: Live 
-          Product_area: 'Using the Live Module'
-          Product_Update: ' false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Available Options for the Advanced (in-page) Embed Code'
-          Description: 'Preload details section modify about using HLS and DASH as a main playback tech (Mp4 is less popular)'
-          Link: https://player.support.brightcove.com/publish/available-options-advanced-page-embed-code.html
-          Product: Brightcove Player 
-          Product_area: 'Publishing Videos & Players'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Beacon Apps Ad Targeting'
-          Description: 'Added macro to table'
-          Link: https://beacon.support.brightcove.com/monetization/ssai/beacon-apps-ad-targeting.html
-          Product: Beacon
-          Product_area: 'ssai'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Campaign 2.0 Setup and Integration Manual'
-          Description: 'Added new section to the Integrations Setup'
-          Link: https://studio.support.brightcove.com/marketing-automation/getting-started/campaign-migration-set-up.html#Set_up_an_integration
-          Product: Video Cloud
-          Product_area: 'campaign'
+        - Title: 'Test Integration'
+          Description: 'Migrated section'
+          Link: https://audience-insights.support.brightcove.com/integrations/test_integration.html
+          Product: Integrations
+          Product_area: 'Test Integration'
           Product_Update: 'false'
           Feature: ''
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'FAQ: Analytics Module'
-          Description: 'Note added: it is not possible to filter out the deleted video from analytics reports'
-          Link: https://studio.support.brightcove.com/analytics/module/faq-analytics-module.html 
-          Product: Video Cloud 
-          Product_area: 'Reviewing Analytics'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Setting Up an Automatic Ingestion Folder on Google Drive'
-          Description: 'Note added about how is needed an administrator account for a managed Google services, such as Google Workspace or Cloud Identity'
-          Link: https://studio.support.brightcove.com/integrations/integrations-module/watched-folders/google-drive.html#whitelisting_app
-          Product: Video Cloud 
-          Product_area: 'Integrations'
+        - Title: 'Brightcove Live: Best Practices'
+          Description: 'VBR description'
+          Link: https://live.support.brightcove.com/get-started/live-module-guidelines-and-best-practices.html
+          Product: Live
+          Product_area: ''
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Brightcove Player Accessibility'
-          Description: 'Added keyboard instructions'
-          Link: https://player.support.brightcove.com/playback/brightcove-player-accessibility.html#Keyboard_controls
-          Product: Brightcove Player
-          Product_area: 'accesibility'
+        - Title: 'Publishing a Video to One Social Media Platform'
+          Description: 'Social platforms are required to have a business account note added'
+          Link:  https://studio.support.brightcove.com/social/general/publishing-video-one-social-platform.html
+          Product: Video Cloud
+          Product_area: 'Social Sharing'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Creating Social Media Publishing Destinations'
+          Description: 'Social platforms are required to have a business account note added'
+          Link: https://studio.support.brightcove.com/social/module/creating-social-media-publishing-destinations.html
+          Product: Video Cloud
+          Product_area: 'Social Sharing'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Performance Report Reference'
+          Description: 'Explanation of how Video Engagement Score works'
+          Link: https://studio.support.brightcove.com/analytics/reports/performance-report-reference.html
+          Product: Video Cloud
+          Product_area: 'Reviewing Analytics'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Engagement Report Reference'
+          Description: 'Explanation of how Video Engagement Score works'
+          Link: https://studio.support.brightcove.com/analytics/reports/engagement-report-reference.html
+          Product: Video Cloud
+          Product_area: 'Reviewing Analytics'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Setting the Player Update Mode and Version'
+          Description: 'Images and Setting the player version section updated'
+          Link: https://studio.support.brightcove.com/players/properties/setting-player-update-mode-and-version.html
+          Product: Video Cloud
+          Product_area: 'Player Module'
           Product_Update: 'false'
           Feature: ''
           Status: Released
