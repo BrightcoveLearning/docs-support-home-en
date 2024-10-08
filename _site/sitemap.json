@@ -75,6 +75,11 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/doc-updates-q3-2024.html",
+      "oldURL": "/doc-updates-q3-2024"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/doc-updates-q4-2023.html",
       "oldURL": "/doc-updates-q4-2023"
   },
@@ -90,52 +95,7 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/brightcove-academy/cloud-playout-essentials/frame.html",
-      "oldURL": "/frame"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/brightcove-academy/campaign-module-essentials/frame.html",
-      "oldURL": "/frame"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/brightcove-academy/advertising-with-brightcove/frame.html",
-      "oldURL": "/frame"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/brightcove-academy/live-ingest-profiles-essentials/frame.html",
-      "oldURL": "/frame"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/brightcove-academy/analytics-module-essentials/frame.html",
-      "oldURL": "/frame"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/brightcove-academy/marketing-studio-essentials/frame.html",
-      "oldURL": "/frame"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/brightcove-academy/players-module-essentials/frame.html",
-      "oldURL": "/frame"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/brightcove-academy/gallery-module-essentials/gallery-essentials-part-3/frame.html",
-      "oldURL": "/frame"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/brightcove-academy/gallery-module-essentials/gallery-essentials-part-2/frame.html",
-      "oldURL": "/frame"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/brightcove-academy/gallery-module-essentials/gallery-essentials-part-1/frame.html",
+      "newURL": "https://support.brightcove.com/brightcove-academy/brightcove-support-essentials/frame.html",
       "oldURL": "/frame"
   },
 
@@ -146,11 +106,6 @@
 
   {
       "newURL": "https://support.brightcove.com/brightcove-academy/advertising-in-the-live-module/frame.html",
-      "oldURL": "/frame"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/brightcove-academy/brightcove-support-essentials/frame.html",
       "oldURL": "/frame"
   },
 
@@ -200,6 +155,56 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/brightcove-academy/campaign-module-essentials/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/advertising-with-brightcove/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/live-ingest-profiles-essentials/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/analytics-module-essentials/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/marketing-studio-essentials/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/players-module-essentials/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/cloud-playout-essentials/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/gallery-module-essentials/gallery-essentials-part-3/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/gallery-module-essentials/gallery-essentials-part-2/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/gallery-module-essentials/gallery-essentials-part-1/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/icons.html",
       "oldURL": "/icons"
   },
@@ -215,17 +220,7 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/test-assets/videos/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/test-assets/chapters/",
+      "newURL": "https://support.brightcove.com/test-assets/captions/",
       "oldURL": "/index"
   },
 
@@ -235,17 +230,22 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/brightcove-academy/",
+      "newURL": "https://support.brightcove.com/test-assets/chapters/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/test-assets/videos/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/test-assets/audio/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://support.brightcove.com/test-assets/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/test-assets/captions/",
       "oldURL": "/index"
   },
 
@@ -260,7 +260,12 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/test-assets/audio/",
+      "newURL": "https://support.brightcove.com/brightcove-academy/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/",
       "oldURL": "/index"
   },
 
@@ -337,6 +342,11 @@
   {
       "newURL": "https://support.brightcove.com/product-updates-q3-2023.html",
       "oldURL": "/product-updates-q3-2023"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/product-updates-q3-2024.html",
+      "oldURL": "/product-updates-q3-2024"
   },
 
   {
