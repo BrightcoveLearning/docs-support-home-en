@@ -1,78 +1,80 @@
-- date: 11-Oct-2024
+- date: 18-Oct-2024
   types:
+    - type: New Docs
+      docs:
+        - Title: 'Marketing Insights: Overview'
+          Description: 'Include Marketing Insights to measure and optimize the impact of your video content.'
+          Link: https://studio.support.brightcove.com/analytics/reports/marketing-comms-insights.html
+          Product: Video Cloud
+          Product_area: 'analytics'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Marketing Insights: Engagement'
+          Description: 'The Engagement dashboard for Marketing Insights delivers essential metrics that offer a clear view of how viewers interact with video content over time.'
+          Link: https://studio.support.brightcove.com/analytics/marketing-engagement.html
+          Product: Video Cloud
+          Product_area: 'analytics'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Marketing Insights: Content'
+          Description: 'The Content dashboard was designed to understand audience engagement, and optimize content based on key metrics.'
+          Link: https://studio.support.brightcove.com/analytics/marketing-content.html
+          Product: Video Cloud
+          Product_area: 'analytics'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Marketing Insights: Segments'
+          Description: 'The Segments section allows you to define and monitor the performance and status of each segment based on user behaviors and content interaction.'
+          Link: https://studio.support.brightcove.com/analytics/marketing-segments.html
+          Product: Video Cloud
+          Product_area: 'analytics'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Marketing Insights: Quick Reports'
+          Description: 'Quick Reports offers a streamlined way to generate and access predefined reports for key data insights.'
+          Link: https://studio.support.brightcove.com/analytics/marketing-quick-reports.html
+          Product: Video Cloud
+          Product_area: 'analytics'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Major updates
       docs:
-        - Title: 'Creating a JSON Web Token (JWT)'
-          Description: 'Update workflow Creating a JSON Web Token (JWT)'
-          Link: https://general.support.brightcove.com/developer/create-json-web-token.html
+        - Title: 'Campaign 2.0 Setup and Integration Manual'
+          Description: 'New section Customer ID vs Viewer Token'
+          Link: https://studio.support.brightcove.com/marketing-automation/getting-started/campaign-migration-set-up.html#custumer-id-vs-viewer-token
           Product: Video Cloud
-          Product_area: 'developer'
+          Product_area: 'marketing automation'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Overview: Using Aspera for Ingestion to Video Cloud'
-          Description: 'Updated instructions to reflect the correct ingestion process with Aspera'
-          Link: https://apis.support.brightcove.com/aspera/overview.html
+        - Title: 'Campaign 2.0 Setup and Integration Manual'
+          Description: 'Arrange Campaign 2.0 Setup and Integration Manual by Use Case'
+          Link: https://studio.support.brightcove.com/marketing-automation/getting-started/campaign-migration-set-up.html
           Product: Video Cloud
-          Product_area: 'Aspera'
+          Product_area: 'marketing automation'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'China Delivery with the Native SDKs'
-          Description: 'New section for custom players added'
-          Link: https://sdks.support.brightcove.com/features/china-delivery-sdks.html
-          Product: Device SDKs
-          Product_area: 'China Delivery'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'SSAI Performance Analytics'
-          Description: 'Information about response codes added'
-          Link: https://studio.support.brightcove.com/analytics/general/ssai-performance-data.html#SSAI_Performance
+        - Title: 'Brightcove Video Editor'
+          Description: 'Video editor new updates'
+          Link: https://studio.support.brightcove.com/media/manage/video-editor.html
           Product: Video Cloud
-          Product_area: 'Analytics'
-          Product_Update: 'false'
-          Feature: ''
+          Product_area: 'Video Editor'
+          Product_Update: 'true'
+          Feature: 'Video Editor'
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Brightcove Native SDK for Android Version Support'
-          Description: 'The Brightcove Native Player SDK for Android now provides passive support for Android OS versions 5.0 and 5.1.'
-          Link: https://sdks.support.brightcove.com/developer-support/announcements/announcement-brightcove-sdk-android-version-support.html
-          Product: Device SDKs
-          Product_area: 'developer-support'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating a Beacon Channel'
-          Description: 'Character limits added to Textual Data section'
-          Link: https://beacon-help.support.brightcove.com/channels/beacon-channels/creating-a-channel.html#textual-data
-          Product: Beacon
-          Product_area: 'Channels'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Integration: S3'
-          Description: 'Note added for AWS Account ID'
-          Link: https://studio.support.brightcove.com/integrations/integrations-module/customer-data-platforms/integration-s3.html
+        - Title: 'Viewing Data Integration: Eloqua'
+          Description: 'Add links to several Integration documents'
+          Link: https://studio.support.brightcove.com/marketing-automation/general/data-to-external-systems/server-side/eloqua-integration.html
           Product: Video Cloud
-          Product_area: 'Integrations'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Overview: China Delivery'
-          Description: 'Limitations updated'
-          Link: https://studio.support.brightcove.com/general/references/china-delivery-overview.html#Limitations
-          Product: Video Cloud 
-          Product_area: 'China Delivery'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Adding a Lead Form'
-          Description: 'Note about Google and Microsoft forms added'
-          Link: https://studio.support.brightcove.com/marketing-automation/general/lead-forms/adding-lead-form.html#Adding_a_Lead_Form
-          Product: Video Cloud
-          Product_area: 'Marketing Automation 2.0'
+          Product_area: 'marketing automation'
           Product_Update: 'false'
           Feature: ''
           Status: Released
