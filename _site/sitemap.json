@@ -95,12 +95,12 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/brightcove-academy/brightcove-support-essentials/frame.html",
+      "newURL": "https://support.brightcove.com/brightcove-academy/gallery-module-essentials/frame.html",
       "oldURL": "/frame"
   },
 
   {
-      "newURL": "https://support.brightcove.com/brightcove-academy/gallery-module-essentials/frame.html",
+      "newURL": "https://support.brightcove.com/brightcove-academy/brightcove-support-essentials/frame.html",
       "oldURL": "/frame"
   },
 
@@ -115,12 +115,12 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/brightcove-academy/content-management-essentials/frame.html",
+      "newURL": "https://support.brightcove.com/brightcove-academy/beacon-studio-essentials/frame.html",
       "oldURL": "/frame"
   },
 
   {
-      "newURL": "https://support.brightcove.com/brightcove-academy/beacon-studio-essentials/frame.html",
+      "newURL": "https://support.brightcove.com/brightcove-academy/content-management-essentials/frame.html",
       "oldURL": "/frame"
   },
 
@@ -220,12 +220,27 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/test-assets/captions/",
+      "newURL": "https://support.brightcove.com/training/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/test-assets/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://support.brightcove.com/test-assets/images/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/support/",
       "oldURL": "/index"
   },
 
@@ -245,22 +260,7 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/test-assets/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/training/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/support/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/brightcove-academy/",
+      "newURL": "https://support.brightcove.com/test-assets/captions/",
       "oldURL": "/index"
   },
 
@@ -282,6 +282,11 @@
   {
       "newURL": "https://support.brightcove.com/templates/main-landing-page.html",
       "oldURL": "/main-landing-page"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/ai-features/metadata-enhancer.html",
+      "oldURL": "/metadata-enhancer"
   },
 
   {
