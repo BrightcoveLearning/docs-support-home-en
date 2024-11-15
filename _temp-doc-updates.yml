@@ -1,80 +1,85 @@
-- date: 18-Oct-2024
+- date: 15-Nov-2024
   types:
-    - type: New Docs
-      docs:
-        - Title: 'Marketing Insights: Overview'
-          Description: 'Include Marketing Insights to measure and optimize the impact of your video content.'
-          Link: https://studio.support.brightcove.com/analytics/reports/marketing-comms-insights.html
-          Product: Video Cloud
-          Product_area: 'analytics'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Marketing Insights: Engagement'
-          Description: 'The Engagement dashboard for Marketing Insights delivers essential metrics that offer a clear view of how viewers interact with video content over time.'
-          Link: https://studio.support.brightcove.com/analytics/marketing-engagement.html
-          Product: Video Cloud
-          Product_area: 'analytics'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Marketing Insights: Content'
-          Description: 'The Content dashboard was designed to understand audience engagement, and optimize content based on key metrics.'
-          Link: https://studio.support.brightcove.com/analytics/marketing-content.html
-          Product: Video Cloud
-          Product_area: 'analytics'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Marketing Insights: Segments'
-          Description: 'The Segments section allows you to define and monitor the performance and status of each segment based on user behaviors and content interaction.'
-          Link: https://studio.support.brightcove.com/analytics/marketing-segments.html
-          Product: Video Cloud
-          Product_area: 'analytics'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Marketing Insights: Quick Reports'
-          Description: 'Quick Reports offers a streamlined way to generate and access predefined reports for key data insights.'
-          Link: https://studio.support.brightcove.com/analytics/marketing-quick-reports.html
-          Product: Video Cloud
-          Product_area: 'analytics'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
     - type: Major updates
       docs:
-        - Title: 'Campaign 2.0 Setup and Integration Manual'
-          Description: 'New section Customer ID vs Viewer Token'
-          Link: https://studio.support.brightcove.com/marketing-automation/getting-started/campaign-migration-set-up.html#custumer-id-vs-viewer-token
-          Product: Video Cloud
-          Product_area: 'marketing automation'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Campaign 2.0 Setup and Integration Manual'
-          Description: 'Arrange Campaign 2.0 Setup and Integration Manual by Use Case'
-          Link: https://studio.support.brightcove.com/marketing-automation/getting-started/campaign-migration-set-up.html
-          Product: Video Cloud
-          Product_area: 'marketing automation'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Video Editor'
-          Description: 'Video editor new updates'
-          Link: https://studio.support.brightcove.com/media/manage/video-editor.html
-          Product: Video Cloud
-          Product_area: 'Video Editor'
+        - Title: 'Brightcove Video Connect for the Sitecore Experience Platform'
+          Description: 'New Sitecore version added'
+          Link: https://integrations.support.brightcove.com/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html
+          Product: Integrations
+          Product_area: 'Sitecore'
           Product_Update: 'true'
-          Feature: 'Video Editor'
+          Feature: 'Sitecore v10.4'
+        - Title: 'Video Cloud Search'
+          Description: 'Media module search function updates'
+          Link: https://studio.support.brightcove.com/media/module/video-cloud-search.html
+          Product: Video Cloud
+          Product_area: ''
+          Product_Update: 'false'
+          Feature: ''
           Status: Released
+        - Title: 'Brightcove Player Sample: Download Transcript'
+          Description: 'New download transcript sample'
+          Link: https://player.support.brightcove.com/code-samples/brightcove-player-sample-download-transcript.html
+          Product: Brightcove Player
+          Product_area: ''
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'People Widget on the Immersion Gallery Template'
+          Description: 'People widget UI updates and upgrades.'
+          Link: https://gallery.support.brightcove.com/experiences/immersion-template/people-widget.html
+          Product: Video Cloud
+          Product_area: ''
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Getting Started with Brightcove Video Connect for Adobe Experience Manager'
+          Description: 'AEM connector version 6.1.6'
+          Link: https://integrations.support.brightcove.com/adobe/getting-started-brightcove-video-connect-adobe-experience-manager.html
+          Product: Integrations
+          Product_area: 'Adobe'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
     - type: Minor updates
       docs:
-        - Title: 'Viewing Data Integration: Eloqua'
-          Description: 'Add links to several Integration documents'
-          Link: https://studio.support.brightcove.com/marketing-automation/general/data-to-external-systems/server-side/eloqua-integration.html
-          Product: Video Cloud
-          Product_area: 'marketing automation'
+        - Title: 'Creating Custom Live Ingest Profiles'
+          Description: 'Updated the live pricebook to reflect the most recent changes.'
+          Link: https://live.support.brightcove.com/admin/creating-custom-live-ingest-profiles.html
+          Product: Brightcove Live
+          Product_area: ''
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'WordPress-Brightcove Connector: Frequently Asked Questions'
+          Description: 'How can I increase Maximum upload file size section updated to reflect the right information'
+          Link: https://integrations.support.brightcove.com/wordpress/wordpress-brightcove-connector-frequently-asked-questions.html
+          Product: Integrations
+          Product_area: 'Wordpress'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Native Video Playback'
+          Description: 'iOS Native Player link updated'
+          Link: https://sdks.support.brightcove.com/getting-started/native-video-playback.html#Using_the_Native_Player
+          Product: Device SDKs
+          Product_area: 'Playback'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Getting Started with Brightcove Video Connect for Adobe Experience Manager'
+          Description: 'On-Premise Version added for 6.1.5 version'
+          Link: https://integrations.support.brightcove.com/adobe/getting-started-brightcove-video-connect-adobe-experience-manager.html
+          Product: Integrations
+          Product_area: 'Adobe'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released 
+        - Title: 'Generic Stream Concurrency'
+          Description: 'GSC Heartbeat Intervals - Note added that its minimum value is 60000'
+          Link: https://apis.support.brightcove.com/playback-restrictions/guides/generic-stream-concurrency.html
+          Product: APIs
+          Product_area: 'Playback Restrictions'
           Product_Update: 'false'
           Feature: ''
           Status: Released
