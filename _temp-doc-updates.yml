@@ -1,52 +1,44 @@
-- date: 29-Nov-2024
+- date: 20-Dec-2024
   types:
     - type: New Docs
       docs:
+        - Title: 'Packaged Plugins'
+          Description: 'In this topic, we introduced Packaged Plugins with Brightcove Player version 7.21.0, a new way to manage core player features. This replaces the Plugin Registry.'
+          Link: https://apis.support.brightcove.com/player-management/guides/packaged-plugin.html
+          Product: Video Cloud
+          Product_area: 'APIs'
+          Product_Update: 'False'
+          Feature: 'Plugins'
+          Status: Released
+        - Title: 'Stripe Purchase'
+          Description: 'In this topic, you will learn how to facilitate payments in Brightcove Beacon'
+          Link: https://beacon-help.support.brightcove.com/monetization/general/stripe-purchase.html
+          Product:  Beacon 
+          Product_area: 'Monetizing Content'
+          Product_Update: 'true'
+          Feature: 'Stripe Purchase'
+          Status: Released 
+        - Title: 'Android SDK v10 Migration Guide'
+          Description: 'In this topic, you will learn about Brightcove Android SDK has been migrated from the ExoPlayer library (v2.19.1) to the Media3 library (v1.4.1)'
+          Link: https://sdks.support.brightcove.com/android/basics/bc-android-sdk-migration.html
+          Product:  Device SDKs 
+          Product_area: 'Android Development'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
     - type: Major updates
       docs:
-        - Title: 'Brightcove Native SDK for iOS: Previous SDK information'
-          Description: 'New Previous SDK section added'
-          Link: https://sdks.support.brightcove.com/ios/resources/brightcove-player-sdk-ios-previous-sdk-information.html
-          Product:  Device SDKs 
-          Product_area: ''
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Brightcove Native SDK for tvOS: Previous SDK information'
-          Description: 'New Previous releases section added'
-          Link: https://sdks.support.brightcove.com/tvos/resources/brightcove-player-sdk-tvos-previous-sdk-information.html
-          Product: Device SDKs
-          Product_area: ''
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Brightcove Native SDK for Android: Previous SDK information'
-          Description: 'New Previous releases section added'
-          Link: https://sdks.support.brightcove.com/android/resources/brightcove-player-sdk-android-previous-sdk-information.html
-          Product:  Device SDKs 
-          Product_area: ''
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Brightcove Native SDK for Android Release Notes'
-          Description: 'Current release Version 9.2.3'
-          Link: https://sdks.support.brightcove.com/android/resources/brightcove-native-sdk-android-release-notes.html
-          Product:  Device SDKs
-          Product_area: ''
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Creating Custom Analytics Reports'
-          Description: 'Troubleshooting section added'
-          Link: https://studio.support.brightcove.com/analytics/reports/creating-custom-analytics-reports.htm
+        - Title: 'Publisher Insights: Engagement'
+          Description: 'Update new parameters'
+          Link: https://studio.support.brightcove.com/analytics/pi-engagement.html
           Product: Video Cloud
           Product_area: 'Analytics'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Marketing Insights: Quick Reports'
-          Description: 'Troubleshooting section added'
-          Link: https://studio.support.brightcove.com/analytics/marketing-quick-reports.html
+        - Title: 'Publisher Insights: Content'
+          Description: 'Update new parameters'
+          Link: https://studio.support.brightcove.com/analytics/pi-content.html
           Product: Video Cloud
           Product_area: 'Analytics'
           Product_Update: 'false'
@@ -54,43 +46,11 @@
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Overview: Brightcove Native SDK for iOS'
-          Description: 'Brightcove Native Player for iOS release 7.0.0'
-          Link: Overview Brightcove Native SDK for iOS
-          Product:  Device SDKs 
-          Product_area: ''
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Overview: Brightcove Native SDK for tvOS'
-          Description: 'Brightcove Native Player for iOS release 7.0.0'
-          Link: https://sdks.support.brightcove.com/tvos/basics/overview-brightcove-player-sdk-tvos.html
-          Product:  Device SDKs 
-          Product_area: ''
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
-        - Title: 'Implementing Server-Side Ads with Brightcove Player'
-          Description: 'Note about  option in the SSAI plugin is available from v2.1.0'
-          Link: https://player.support.brightcove.com/plugins/implementing-server-side-ads-brightcove-player.html#Options
-          Product: Brightcove Player
-          Product_area: ''
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Adding a Sign In Form to a Video'
-          Description: 'Viewing sign in results section updated'
-          Link: https://studio.support.brightcove.com/interactivity/widgets/adding-sign-in-video.html
+        - Title: 'Creating Social Media Publishing Destinations'
+          Description: 'X reference update'
+          Link: https://studio.support.brightcove.com/social/module/creating-social-media-publishing-destinations.html
           Product: Video Cloud
-          Product_area: ''
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released 
-        - Title: 'Overview: Brightcove Native SDK for Android'
-          Description: 'Android SDK Release v9.2.3'
-          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html
-          Product: Device SDKs
-          Product_area: ''
+          Product_area: 'Social'
           Product_Update: 'false'
           Feature: ''
           Status: Released
