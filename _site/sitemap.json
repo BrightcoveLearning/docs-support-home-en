@@ -85,6 +85,11 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/doc-updates-q4-2024.html",
+      "oldURL": "/doc-updates-q4-2024"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/doc-updates.html",
       "oldURL": "/doc-updates"
   },
@@ -92,6 +97,11 @@
   {
       "newURL": "https://support.brightcove.com/doc.html",
       "oldURL": "/doc"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/advertising-in-the-live-module/frame.html",
+      "oldURL": "/frame"
   },
 
   {
@@ -105,22 +115,17 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/brightcove-academy/advertising-in-the-live-module/frame.html",
-      "oldURL": "/frame"
-  },
-
-  {
       "newURL": "https://support.brightcove.com/brightcove-academy/ingest-profiles-essentials/frame.html",
       "oldURL": "/frame"
   },
 
   {
-      "newURL": "https://support.brightcove.com/brightcove-academy/beacon-studio-essentials/frame.html",
+      "newURL": "https://support.brightcove.com/brightcove-academy/content-management-essentials/frame.html",
       "oldURL": "/frame"
   },
 
   {
-      "newURL": "https://support.brightcove.com/brightcove-academy/content-management-essentials/frame.html",
+      "newURL": "https://support.brightcove.com/brightcove-academy/beacon-studio-essentials/frame.html",
       "oldURL": "/frame"
   },
 
@@ -220,27 +225,12 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/training/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/test-assets/",
+      "newURL": "https://support.brightcove.com/test-assets/captions/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://support.brightcove.com/test-assets/images/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/brightcove-academy/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://support.brightcove.com/support/",
       "oldURL": "/index"
   },
 
@@ -260,7 +250,22 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/test-assets/captions/",
+      "newURL": "https://support.brightcove.com/test-assets/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/training/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/support/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/",
       "oldURL": "/index"
   },
 
@@ -357,6 +362,11 @@
   {
       "newURL": "https://support.brightcove.com/product-updates-q4-2023.html",
       "oldURL": "/product-updates-q4-2023"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/product-updates-q4-2024.html",
+      "oldURL": "/product-updates-q4-2024"
   },
 
   {
