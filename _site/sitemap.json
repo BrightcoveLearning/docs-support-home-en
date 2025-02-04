@@ -30,6 +30,11 @@
   },
 
   {
+      "newURL": "https://support.brightcove.com/ai-features/content-multiplier.html",
+      "oldURL": "/content-multiplier"
+  },
+
+  {
       "newURL": "https://support.brightcove.com/distill-setup.html",
       "oldURL": "/distill-setup"
   },
@@ -100,12 +105,12 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/brightcove-academy/advertising-in-the-live-module/frame.html",
+      "newURL": "https://support.brightcove.com/brightcove-academy/analytics-module-essentials/frame.html",
       "oldURL": "/frame"
   },
 
   {
-      "newURL": "https://support.brightcove.com/brightcove-academy/gallery-module-essentials/frame.html",
+      "newURL": "https://support.brightcove.com/brightcove-academy/advertising-in-the-live-module/frame.html",
       "oldURL": "/frame"
   },
 
@@ -175,11 +180,6 @@
   },
 
   {
-      "newURL": "https://support.brightcove.com/brightcove-academy/analytics-module-essentials/frame.html",
-      "oldURL": "/frame"
-  },
-
-  {
       "newURL": "https://support.brightcove.com/brightcove-academy/marketing-studio-essentials/frame.html",
       "oldURL": "/frame"
   },
@@ -206,6 +206,11 @@
 
   {
       "newURL": "https://support.brightcove.com/brightcove-academy/gallery-module-essentials/gallery-essentials-part-1/frame.html",
+      "oldURL": "/frame"
+  },
+
+  {
+      "newURL": "https://support.brightcove.com/brightcove-academy/gallery-module-essentials/frame.html",
       "oldURL": "/frame"
   },
 
