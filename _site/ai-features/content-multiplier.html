@@ -557,7 +557,7 @@
           <img class="bcls-image" src="/assets/images/ai-features/nav-content.webp">
         </figure>
         <p></p>
-        <aside class="bcls-aside bcls-aside--warning language-editable">Source videos should be at least 3 minutes long.</aside>
+        <aside class="bcls-aside bcls-aside--warning language-editable">Source videos should be at least 3 minutes long, and include spoken words.</aside>
       </li>
       
       <li>Click on the <strong>AI</strong> Button and select <strong>Clips</strong>.
@@ -569,10 +569,15 @@
         <p>Content you can generate with this process:</p>
         <p>
           <ul>
-            <li>Key Moments: Your video's most relevant moments.</li>
-            <li>Summaries: Key moments stitched together.</li>
-            <li>Reels: Key moments in vertical format.</li>
-            <li>Chapters: Longer video sections based on topic.</li>
+            <li><strong>Key Moments & Reels:</strong> Ready-to-publish clips of the most engaging excerpts from the  video. <br>The number  of clips will be determined by the model.  Key Moments will also be converted to vertical video in the form of Insta Reels (under 90 seconds) and YouTube Shorts (under 60 seconds).</li>
+            <p></p>
+            <li><strong>Summaries:</strong>  A concise rendering of the source video consisting of all the Key Moments stitched together.</li>
+            <p></p>
+            <li><strong>Reels:</strong> Key moments in vertical format.</li>
+            <p></p>
+            <li><strong>Chapters:</strong> All content within source video is organized and clipped by topic.</li>
+            <p></p>
+            <li><strong>Original + Metadata :</strong> Add a full length version of the original clip with metadata and transcript.</li>
           </ul>
         </p>
         <p></p>
@@ -588,6 +593,27 @@
             <img class="bcls-image" src="/assets/images/ai-features/gen-clips.webp">
         </figure>
     </li>
+    <li>You will see this message letting you know this process has started.
+      <figure class="bcls-figure">
+        <img class="bcls-image" src="/assets/images/ai-features/status.webp">
+      </figure>
+      <aside class="bcls-aside bcls-aside--tip language-editable">you can see what frammer is doing by looking at the custom field of the videos
+        these are the possible status values for the original video: 
+        <ul>
+          <li>video_processed.inqueue</li>
+          <li>video_processed.partial-success: if several clips are being generated and video is part of that batch, some of them are done and some of them are still being processed.</li>
+          <li>video_processed.success</li>
+        </ul>
+        <p></p>
+        <ul>these are the possible status values for clips
+          <li>not started</li>
+          <li>in progress</li>
+          <li>done</li>
+        </ul>
+      
+      </aside>
+    </li>
+
     <li>
         Once the process is completed, you will be able to see your <strong>new content</strong> as separate entities from your original video in your <strong>media module</strong>.
         <p></p>
@@ -596,9 +622,12 @@
         </figure>
         <aside class="bcls-aside bcls-aside--warning language-editable">Please allow this process some time to complete.</aside>
         <p></p>
-        <aside class="bcls-aside bcls-aside--information language-editable">When little or no metadata is provided, the new asset name will be generated with a content multiplier format.<br>This can be edited after the requested videos are created.</aside>
+        <aside class="bcls-aside bcls-aside--information language-editable">When the model does not have enough information from the video snippet to determine a title, it will default the new asset's name to "content multiplier".</aside>
     </li>
-    <h2 id="cropp">Cropping a video to a vertical format</h2>
+    </section>
+
+    <section class="bcls-section">
+    <h2 id="vertical">Create a vertical video</h2>
     <ol class="bcls-tasklist-restart">
         <li>Click the <strong>AI</strong> Button and select <strong>Crop to vertical.</strong>
             <p></p>
@@ -613,7 +642,7 @@
             </figure>
         </li>
         <li>
-            Once the process is completed, you will be able to see your <strong>new content</strong> as separate entities from your original video in your <strong>media module</strong>.
+            Once the process is completed, a <strong>vertical version</strong> of your content will appear as a separate entity in your media library.
             <p></p>
             <figure class="bcls-figure">
                 <img class="bcls-image" src="/assets/images/ai-features/vertical-vid.webp">
@@ -624,6 +653,89 @@
     </ol>
     
   </section>
+
+  <section class="bcls-section">
+    <h2 id="edit">Editing a content Multiplier Asset</h2>
+    <h4>To edit a generated video follow the next steps</h4>
+    <ol class="bcls-tasklist-restart">
+      <li>Navigate to the media module and select <strong>your video</strong>.
+        <p></p>
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/ai-features/select-video.webp">
+        </figure>
+      </li>
+      <li>Click <strong>Edit</strong> and <strong>Adjust Clip</strong>
+          <p></p>
+          <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/ai-features/edit-gen-video.webp">
+          </figure>
+      </li>
+      <li> You will be redirected to a Frammer page where you can edit your content.<br>You can find more information in <a href="https://www.frammer.com/docs/help.htm#making-changes">Frammer's documentation</a>.
+          <p></p>
+          <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/ai-features/frammer-redirect.webp">
+          </figure>
+      </li>
+      <li> After making your desired changes, click <strong>Publish to Brightcove</strong>
+        <p></p>
+        <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/ai-features/frammer--publish.webp">
+        </figure>
+    </li>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="faq">FAQ</h2>
+    <h4>Is the algorithm learning from my data?</h4>
+    <ul>
+      <li> No, Brightcove does not store data or train models using data from your videos or account.</li>
+    </ul>
+
+    <!-- <h4>What model are you using?</h4>
+    <ul>
+      <li> Different models including OpenAI and Anthropic are being leveraged by CM.</li>
+    </ul> -->
+
+    <h4>How long will Frammer store my videos after processing?</h4>
+    <ul>
+      <li> 1 month. If the account is deactivated, Frammer will expire videos after 15 days.</li>
+    </ul>
+
+    <!-- <h4>My content is not being transformed correctly</h4>
+    <ul>
+      <li> Content Multiplier performs better with specific video types. If you believe that your content does not belong to any of these categories, let us know and we will contact you to refine our model.</li>
+    </ul> -->
+
+    <h4>If I edit a video in Content Multiplier and re-render it, will it be incurred in AI Credits?</h4>
+    <ul>
+      <li> No.</li>
+    </ul>
+
+    <h4>What are the requisites for generating clips?</h4>
+    <ul>
+      <li> Ideally, the video is longer than 3 minutes and has spoken words. Music videos are not recommended.</li>
+    </ul>
+
+    <h4>What are the requisites for cropping to vertical?</h4>
+    <ul>
+      <li> The video should be shorter than 10 minutes.</li>
+    </ul>
+
+    <!-- <h4>For vertical video, does it capture the best camera angle?</h4>
+    <ul>
+      <li> To transform horizontal videos into vertical format, we leverage a proprietary computer vision model specifically trained to identify regions of interest and crop them intelligently to fit within a vertical frame. Our approach integrates business logic to optimize reframing based on the content type. For example, in interviews or podcasts, speakers are arranged within vertical grids to maintain focus, while in automobile reviews, the model ensures the vehicle—be it a car or bike—remains centered in the frame.</li>
+    </ul> -->
+
+    <h4>Does Frammer analyze a video picture or text track to decide Summary or Key Moments?</h4>
+    <ul>
+      <li> Key moments prioritize text but leverage some visual cues as well.</li>
+    </ul>
+
+    <h4>If it's text-based, could it be affected by loud background music with lyrics?</h4>
+    <ul>
+      <li> Yes, it could be impacted. The Content Multiplier's autocaptioning system is intelligent enough to distinguish one from the other, but it could impact the accuracy in some cases. The capability to denoise and reduce the impact of background noise can be activated in Frammer and will be added in future iterations.</li>
+    </ul>
+</section>
  
 </article>
 
