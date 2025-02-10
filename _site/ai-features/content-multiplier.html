@@ -557,7 +557,7 @@
           <img class="bcls-image" src="/assets/images/ai-features/nav-content.webp">
         </figure>
         <p></p>
-        <aside class="bcls-aside bcls-aside--warning language-editable">Source videos should be at least 3 minutes long and include spoken words.</aside>
+        <aside class="bcls-aside bcls-aside--warning language-editable">To be clipped, source videos should be  at least 3 minutes and include spoken words.</aside>
       </li>
       
       <li>Click on the <strong>AI</strong> Button and select <strong>Clips</strong>.
@@ -592,12 +592,16 @@
         <figure class="bcls-figure">
             <img class="bcls-image" src="/assets/images/ai-features/gen-clips.webp">
         </figure>
+        <p></p>
+        <aside class="bcls-aside bcls-aside--information language-editable">If your specific category is missing from the list, try to match the source video with the category that's closer in terms of structure.</aside>
+        <p></p>
+        <aside class="bcls-aside bcls-aside--warning language-editable">Please allow this process some time to complete.</aside>
     </li>
     <li>You will see this message letting you know this process has started.
       <figure class="bcls-figure">
         <img class="bcls-image" src="/assets/images/ai-features/status.webp">
       </figure>
-      <aside class="bcls-aside bcls-aside--tip language-editable">You can monitor Frammer's process by looking at the custom fields of the original videos <br><br>
+      <aside class="bcls-aside bcls-aside--tip language-editable">You can monitor the Content Multiplier's process by looking at the custom fields section of the original video and the newly generated content. You will find this information in the (frammer_integration) custom field.<br><br>
         These are the possible status values for the original video: 
         <ul>
           <li>video_processed.inqueue</li>
@@ -605,22 +609,23 @@
           <li>video_processed.success</li>
         </ul>
         <p></p>
-        <ul>Possible status values for clips:
+        <ul>In your generated clips you will can find the next statuses in the custom fields section:
           <li>not started</li>
           <li>in progress</li>
           <li>done</li>
         </ul>
       
       </aside>
+      <p></p>
+      <aside class="bcls-aside bcls-aside--warning language-editable">The custom field <strong>frammer_integration</strong> cannot be edited.</aside>
     </li>
 
     <li>
-        Once the process is completed, you will be able to see your <strong>new content</strong> as separate entities from your original video in your <strong>media module</strong>.
+        Once the process is completed, you will be able to see your <strong>new content</strong> as separate entities from your original video in your <strong>media module</strong><br><br> The generated content will contain the Title (Reels, Chapter, Summary or Key Moment) plus ":", and the suggested title based on your clip's content.
         <p></p>
         <figure class="bcls-figure">
             <img class="bcls-image" src="/assets/images/ai-features/new-content.webp">
         </figure>
-        <aside class="bcls-aside bcls-aside--warning language-editable">Please allow this process some time to complete.</aside>
         <p></p>
         <aside class="bcls-aside bcls-aside--information language-editable">When the model does not have enough information from the video snippet to determine a title, it will default the new asset's name to "content multiplier". <br><br> You cand edit the thumbnail and other aspects of the new asset; visit our <a href="https://support.brightcove.com/ai-features/content-multiplier.html#edit">Edit section</a> to learn more.</aside>
     </li>
@@ -635,11 +640,17 @@
                 <img class="bcls-image" src="/assets/images/ai-features/crop.webp">
             </figure>
         </li>
+        <p></p>
+        <aside class="bcls-aside bcls-aside--warning language-editable">Original content should be shorter than 10 minutes for vertical cropping.</aside>
+        <p></p>
         <li> Select your <strong>Video Type</strong> and click <span class="button-blue">Start</span>
             <p></p>
             <figure class="bcls-figure">
                 <img class="bcls-image" src="/assets/images/ai-features/clip-vertical.webp">
             </figure>
+            <p></p>
+              <aside class="bcls-aside bcls-aside--information language-editable">If your specific category is missing from the list, try to match the source video with the category that's closer in terms of structure.</aside>
+            <p></p>
         </li>
         <li>
             Once the process is completed, a <strong>vertical version</strong> of your content will appear as a separate entity in your media library.
@@ -647,6 +658,7 @@
             <figure class="bcls-figure">
                 <img class="bcls-image" src="/assets/images/ai-features/vertical-vid.webp">
             </figure>
+            <aside class="bcls-aside bcls-aside--information language-editable">The generated content will contain the Title Vertical: plus the suggested title based on your clip's content.</aside>
             <aside class="bcls-aside bcls-aside--warning language-editable">Please allow this process some time to complete.</aside>
             <p></p>
         </li>
