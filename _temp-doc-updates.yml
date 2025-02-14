@@ -1,56 +1,64 @@
-- date: 20-Dec-2024
+- date: 14-Feb-2025
   types:
     - type: New Docs
       docs:
-        - Title: 'Packaged Plugins'
-          Description: 'In this topic, we introduced Packaged Plugins with Brightcove Player version 7.21.0, a new way to manage core player features. This replaces the Plugin Registry.'
-          Link: https://apis.support.brightcove.com/player-management/guides/packaged-plugin.html
-          Product: Video Cloud
-          Product_area: 'APIs'
-          Product_Update: 'False'
-          Feature: 'Plugins'
-          Status: Released
-        - Title: 'Stripe Purchase'
-          Description: 'In this topic, you will learn how to facilitate payments in Brightcove Beacon'
-          Link: https://beacon-help.support.brightcove.com/monetization/general/stripe-purchase.html
-          Product:  Beacon 
-          Product_area: 'Monetizing Content'
-          Product_Update: 'true'
-          Feature: 'Stripe Purchase'
-          Status: Released 
-        - Title: 'Android SDK v10 Migration Guide'
-          Description: 'In this topic, you will learn about Brightcove Android SDK has been migrated from the ExoPlayer library (v2.19.1) to the Media3 library (v1.4.1)'
-          Link: https://sdks.support.brightcove.com/android/basics/bc-android-sdk-migration.html
-          Product:  Device SDKs 
-          Product_area: 'Android Development'
-          Product_Update: 'false'
-          Feature: ''
-          Status: Released
+      - Title: 'Quick Start from Live 1.0 to Live 2.0'
+        Description: 'From Live 1.0 to Live 2.0'
+        Link: https://studio.support.brightcove.com/live-2-0/migrating-2-0.html
+        Product: Video Cloud
+        Product_area: ' Live Streaming'
+        Product_Update: 'true'
+        Feature: 'Live 2.0'
+        Status: Released 
+      - Title: 'New Beacon Search'
+        Description: 'Improved search functionalities in Brightcove Beacon OTT apps'
+        Link: https://beacon-help.support.brightcove.com/publishing-apps/app-behavior/search.html
+        Product: Beacon
+        Product_area: 'apps'
+        Product_Update: 'true'
+        Feature: 'Improved search functionalities'
+        Status: Limited Availability
     - type: Major updates
       docs:
-        - Title: 'Publisher Insights: Engagement'
-          Description: 'Update new parameters'
-          Link: https://studio.support.brightcove.com/analytics/pi-engagement.html
-          Product: Video Cloud
-          Product_area: 'Analytics'
+        - Title: 'Android SDK Release v10.0.1'
+          Description: 'Android SDK Release v10.0.1'
+          Link: https://sdks.support.brightcove.com/android/basics/overview-brightcove-player-sdk-android.html
+          Product: Device SDKs
+          Product_area: 'android'
           Product_Update: 'false'
           Feature: ''
           Status: Released
-        - Title: 'Publisher Insights: Content'
-          Description: 'Update new parameters'
-          Link: https://studio.support.brightcove.com/analytics/pi-content.html
+        - Title: 'Simplified UI'
+          Description: 'Hide inactive modules and display only the modules that are relevant to the role.'
+          Link: https://studio.support.brightcove.com/admin/general/managing-users.html#add
           Product: Video Cloud
-          Product_area: 'Analytics'
+          Product_area: 'admin'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'Sharing Options'
+          Description: 'You can now choose whether to upload a video as Private or Shared. '
+          Link: https://studio.support.brightcove.com/media/manage/uploading-videos-using-upload-module.html#sharing
+          Product: Video Cloud
+          Product_area: 'Upload module'
+          Product_Update: 'false'
+          Feature: ''
+          Status: Released
+        - Title: 'minutes instead of months'
+          Description: 'Change the months into minutes in from and to params Analytics API'
+          Link: https://apis.support.brightcove.com/analytics/dimension-guides/dimension-player.html
+          Product: Audience Insights
+          Product_area: 'dimensions'
           Product_Update: 'false'
           Feature: ''
           Status: Released
     - type: Minor updates
       docs:
-        - Title: 'Creating Social Media Publishing Destinations'
-          Description: 'X reference update'
-          Link: https://studio.support.brightcove.com/social/module/creating-social-media-publishing-destinations.html
-          Product: Video Cloud
-          Product_area: 'Social'
+        - Title: 'Core Reports Reference'
+          Description: 'Note added about valours of report meaning'
+          Link: https://studio.support.brightcove.com/interactivity/analytics/core-reports-reference.html#:~:text=not%20necessarily%20played)-,User%20Activity%20Stream,-The%20User%20Activity
+          Product: Video Cloud 
+          Product_area: 'Interactivity'
           Product_Update: 'false'
           Feature: ''
-          Status: Released
+          Status: Released 
